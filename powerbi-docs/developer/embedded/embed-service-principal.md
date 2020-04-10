@@ -9,24 +9,18 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403464"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751631"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI-tartalom beágyazása szolgáltatásnév és titkos alkalmazáskód használatával
 
-A szolgáltatásnév olyan hitelesítési módszer, amellyel egy Azure AD-alkalmazás hozzáférhet a Power BI szolgáltatásbeli tartalmakhoz és API-khoz.
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-Azure Active Directory- (Azure AD-) alkalmazás létrehozásakor egy [szolgáltatásnév objektum](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is létre lesz hozva. A szolgáltatásnév objektum, röviden *szolgáltatásnév* teszi lehetővé az Azure AS számára az alkalmazás hitelesítését. A hitelesítést követően az alkalmazás hozzáférhet az Azure AD-bérlő erőforrásaihoz.
-
-A hitelesítéshez a szolgáltatásnév az Azure AD-alkalmazás *alkalmazásazonosítóját*, és a következők egyikét használja:
-* Alkalmazás titkos kódja
-* Tanúsítvány
-
-Ez a cikk az *alkalmazásazonosító* és az *alkalmazás titkos kódja* használatával történő szolgáltatásnév-hitelesítést ismerteti. A szolgáltatásnév és tanúsítvány használatával történő hitelesítéshez a [Tanúsítványalapú Power BI-hitelesítés]() című cikk nyújt segítséget.
+Ez a cikk az *alkalmazásazonosító* és az *alkalmazás titkos kódja* használatával történő szolgáltatásnév-hitelesítést ismerteti.
 
 ## <a name="method"></a>Módszer
 
@@ -55,12 +49,12 @@ Szolgáltatásnevet és alkalmazásazonosítót az alábbi lépésekben használ
 ## <a name="step-1---create-an-azure-ad-app"></a>1\. lépés – Azure AD-alkalmazás létrehozása
 
 Hozzon létre Azure AD-alkalmazást az alábbi módszerek egyikével:
-* Hozza létre az alkalmazást a [Microsoft Azure Portalon](https://ms.portal.azure.com/#allservices)
+* Hozza létre az alkalmazást a [Microsoft Azure Portalon](https://portal.azure.com/#allservices)
 * Hozza létre az alkalmazást a [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1) használatával.
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Azure AD-alkalmazás létrehozása a Microsoft Azure Portalon
 
-1. Jelentkezzen be a [Microsoft Azure-ba](https://ms.portal.azure.com/#allservices).
+1. Jelentkezzen be a [Microsoft Azure-ba](https://portal.azure.com/#allservices).
 
 2. Keressen rá az **alkalmazásregisztrációk** szóra és kattintson az **Alkalmazásregisztrációk** hivatkozásra.
 
@@ -72,7 +66,7 @@ Hozzon létre Azure AD-alkalmazást az alábbi módszerek egyikével:
 
 4. Adja meg a kötelező adatokat:
     * **Név** – Adja meg az alkalmazás nevét
-    * **Támogatott fióktípusok** – Jelölje ki a támogatott fióktípusokat
+    * **Támogatott fióktípusok** – Válassza ki a kívánt Azure AD-fiókot
     * (Nem kötelező) **URI-átirányítás** – Szükség esetén adjon meg egy URI-azonosítót
 
 5. Kattintson a **Regisztrálás** parancsra.
@@ -205,5 +199,3 @@ A tartalom beágyazása után minden készen áll [az éles üzemre való átál
 * [Power BI Embedded az ügyfelek számára](embed-sample-for-customers.md)
 
 * [Helyszíni adatátjárót szolgáltatásnévvel használó sorszintű biztonság](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Power BI-tartalom beágyazása szolgáltatásnévvel és tanúsítvánnyal]()

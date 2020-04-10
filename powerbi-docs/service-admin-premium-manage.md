@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: e60aed5b538eab3b630f42a665d96256cc07879c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2aa62197bc9af359962f25394d4f202a945d97d8
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700096"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813098"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>A Power BI Premium kapacitásainak konfigurálása és kezelése
 
@@ -94,6 +94,10 @@ A Power BI Premium-kapacitásokat a Power BI-rendszergazdák és az Office 365 g
     A rendszergazdák szabadon hozhatnak létre, méretezhetnek át és törölhetnek csomópontokat, amennyiben rendelkeznek a megfelelő számú virtuális maggal.
 
     A P termékváltozatok nem minősíthetők vissza EM termékváltozatokká. Ha az egérmutatót a letiltott beállítás fölé húzza, megjelenik a hozzá tartozó magyarázat.
+
+> [!IMPORTANT]
+> Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
 
 ### <a name="manage-user-permissions"></a>Felhasználói engedélyek kezelése
 

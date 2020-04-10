@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 51d7b29eee1394ec1bbcad8d69b39b4e45ecdb18
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7f300cca6614f638f88886a913b30a93d0f52cfd
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700073"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813006"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Kapacitások monitorozása a felügyeleti portálon
 
@@ -23,6 +23,9 @@ A felügyeleti portál **Kapacitásbeállítások** területén található **Á
 ![A Kapacitásállapot lap a portálon](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
 Ha átfogóbb metrikákra van szüksége, használja a [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) alkalmazást. Az alkalmazás részletekbe menő elemzést, szűrést, és a kapacitásteljesítményre hatást gyakorló szinte minden tényezőhöz részletes mérőszámokat biztosít. További tudnivalókért lásd: [Prémium szintű kapacitások monitorozása az alkalmazással](service-admin-premium-monitor-capacity.md).
+
+> [!IMPORTANT]
+> Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="system-metrics"></a>Rendszermetrikák
 

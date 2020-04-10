@@ -7,19 +7,19 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/06/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 432312b5ceb7632e0249d1d7dda6158bf97d0224
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80472060"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979776"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-nyomonkövetési minta az USA tagállami és helyi szintű közigazgatási szervei részére
 
-A Power BI csapata létrehozott egy COVID-19-nyomonkövetési mintát, amellyel az USA tagállami és helyi szintű közigazgatási szervei közzétehetnek és testre szabhatnak egy interaktív jelentést a COVID-19-ről. A Power BI Desktop használatával elemezhetik és megjeleníthetik a COVID-19-járvánnyal kapcsolatos adatokat belső használatra megyei, tagállami és országos szinten. Ezt követően a Power BI Webes közzététel funkciójával nyilvánosan megoszthatják a jelentést a polgárok tájékoztatása céljából. Ez a cikk három lehetőséget mutat be a Power BI interaktív vizualizációinak nyilvános híradásokhoz, blogon vagy webhelyen történő felhasználására.
+A Power BI csapata létrehozott egy COVID-19-nyomonkövetési mintát, amellyel az USA tagállami és helyi szintű közigazgatási szervei közzétehetnek és testre szabhatnak egy interaktív jelentést a COVID-19-ről. A Power BI Desktop használatával elemezhetik és megjeleníthetik a COVID-19-járvánnyal kapcsolatos adatokat belső használatra megyei, tagállami és országos szinten. Ezt követően a Power BI Webes közzététel funkciójával nyilvánosan megoszthatják a jelentést a polgárok tájékoztatása céljából. Ez a cikk különböző lehetőségeket mutat be az interaktív Power BI-vizualizációk nyilvános híradásokhoz, blogon vagy webhelyen történő felhasználására.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19-minta USA-beli adatokkal":::
 
@@ -45,10 +45,10 @@ A Microsoft közzétette a mintajelentést, és készített hozzá egy webes be�
 Ha szeretné felvenni az interaktív grafikát a webhelyén, másolja és illessze be az alábbi beágyazási kódot arra a helyre, ahol meg kívánja jeleníteni azt a weblapján.  
 
 ```
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](https://docs.microsoft.com/power-bi/service-publish-to-web#tips-and-tricks-for-iframe-height-and-width).
+A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width).
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>2\. lehetőség A Power BI-mintafájl testreszabása
 
@@ -104,9 +104,9 @@ A lépések végrehajtásakor válassza az alábbi beállításokat:
 1. Adatforrás azonosító adatainak hitelesítési módszere: Névtelen
 2. Az adatforrás adatvédelmi szintjének beállítása: Nyilvános
 
-A frissítési beállítás ellenőrzéséhez kattintson az [Adathalmazelemből elérhető azonnali frissítés](../refresh-data.md#data-refresh) lehetőségre.
+A frissítési beállítás ellenőrzéséhez kattintson az adathalmazelemből elérhető [Azonnali frissítés](../refresh-data.md#data-refresh) lehetőségre.
 
-A frissített adatok az ütemezés minden futtatásakor betöltődnek. Vegye figyelembe, hogy az alapadatokat az USAFacts bocsátja rendelkezésre, és előfordulhat, hogy nem frissülnek olyan gyakran, mint a frissítési ütemezése. Az [USAFacts webhelyén](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) megtekintheti a jelentésben használt adatok legutóbbi frissülésének idejét. 
+A frissített adatok az ütemezés minden futtatásakor betöltődnek. Az alapadatokat az USAFacts bocsátja rendelkezésre, és előfordulhat, hogy nem frissülnek olyan gyakran, mint a frissítési ütemezése. Az [USAFacts webhelyén](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) megtekintheti a jelentésben használt adatok legutóbbi frissülésének idejét. 
 
 Ha szeretné a saját webhelyén közzétenni a testreszabott jelentést, érdemes úgy beállítani az ütemezett frissítést, hogy legalább olyan gyakorisággal fusson, mint az USAFacts adatainak frissítése. Mivel az USAFacts minden nap eltérő időpontokban frissítheti az adatait, érdemes naponta több frissítést ütemezni. 
 
@@ -147,6 +147,11 @@ A jelentés adatait más forrásból származó adatokkal is egyesítheti. Az al
     
 Ezt követően megjelenítheti az adatokat a Power BI Desktopban. Végül hajtsa végre a **2. lehetőség** lépéseit: A jelentés közzétételéhez és az egyéni beágyazási kód létrehozásához kövesse a [Jelentés közzététele a Power BI szolgáltatásban](#publish-your-report-to-the-power-bi-service) című cikk utasításait. 
 
+## <a name="option-4-use-the-covid-19-us-tracking-template-app"></a>4\. lehetőség: A COVID-19 USA-beli nyomon követésére szolgáló sablonalkalmazás használata
+
+Egy további lehetőségként a Power BI csapata létrehozta a COVID-19-nyomkövetési *sablonalkalmazást* az azonnali induláshoz. A sablonalkalmazások egy adott adatforráshoz készült jelentésekből, irányítópultokból és adathalmazokból álló csomagok. Az AppSource-ról letölthetők, használhatók, igény szerint módosíthatók és terjeszthetők a munkatársak körében. 
+
+A COVID-19 nyomkövetési sablonalkalmazás tartalmaz egy előre elkészített jelentést a COVID-19 metrikákról, amely használható változtatás nélkül, testre szabható közvetlenül a Power BI szolgáltatásban, vagy igény esetén letölthető, hogy más adatforrásokhoz is hozzáadhassa. Tájékozódjon [A COVID-19 USA-beli nyomon követésére szolgáló sablonalkalmazás](../connect-data/service-connect-to-covid-19-tracking.md) telepítéséről és az azonnal megtehető első lépésekről.
 
 ## <a name="about-the-data-source-for-this-report"></a>A jelentés adatforrásáról
 Az interaktív jelentés az USA járványügyi és betegségmegelőzési központjától (CDC), valamint a tagállami és helyi szintű közegészségügyi intézményektől származó adatokat gyűjti. A megyei szintű adatokat az állami és helyi intézmények közvetlenül erősítik meg (hivatkozás).

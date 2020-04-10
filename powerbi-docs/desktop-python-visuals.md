@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/03/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 72c285fd57af21fcb3d1a4568a5ff2e83016072f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609829"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979868"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Power BI-vizualizációk létrehozása a Python használatával
 
@@ -155,9 +155,9 @@ Ha a **Futtatás** gombra kattint, megjelenik a következő sávdiagram:
 > **Python-szkriptek biztonsága:** A Python-vizualizációk alapjait a Python-szkriptek jelentik, amelyek biztonsági vagy adatvédelmi kockázatot jelentő kódot tartalmazhatnak. Egy Python-vizualizáció első alkalommal való megtekintésekor vagy használatakor egy biztonsági figyelmeztető üzenet jelenik meg. Csak akkor engedélyezze a Python-vizualizációkat, ha megbízik a szerzőben és a forrásban, vagy ha már áttekintette és értelmezte a Python-szkriptet.
 >  
 
-## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>További információ ábrázolásáról a Matprolib, a Pandas és a Python használatával
+## <a name="more-information-about-plotting-with-matplotlib-pandas-and-python"></a>További információk a Matplotlib, a Pandas és a Python használatával megvalósított ábrázolásról
 
-Ez az oktatóanyag segítséget nyújt az első lépésekhez vizualizációk Python használatával történő létrehozásához a Power BI Desktopban. Csak egy kis részletét mutatja be annak a sok-sok lehetőségnek és funkciónak, melyek elérhetőek vizualizációs jelentések létrehozásához a Python, a Pandas és a Matprolib kódtár használatával. Ezen kívül számos más forrás is elérhető még, de az első lépésekhez az alábbi néhány hivatkozást is használhatja.
+Ez az oktatóanyag segítséget nyújt az első lépésekhez vizualizációk Python használatával történő létrehozásához a Power BI Desktopban. Csak egy kis részletét mutatja be annak a sok-sok lehetőségnek és funkciónak, melyek elérhetőek vizualizációs jelentések létrehozásához a Python, a Pandas és a Matplotlib kódtár használatával. Ezen kívül számos más forrás is elérhető még, de az első lépésekhez az alábbi néhány hivatkozást is használhatja.
 
 - Dokumentáció a [Matplotlib](https://matplotlib.org/) webhelyén. 
 - [Matplotlib-oktatóanyag: Alapszintű útmutató a Matplotlib és a Python használatához](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
@@ -177,6 +177,7 @@ A Power BI Desktopban a Python-vizualizációkra vonatkozik néhány korlátozá
 - A Python-vizualizációk az adatok frissítésekor, szűrésekor és kiemelésekor frissülnek. Ugyanakkor a kép maga nem interaktív és nem szolgálhat keresztszűrés forrásaként.
 - A Python-vizualizációk reagálnak más vizualizációk kiemeléseire, de nem lehet az elemeikre kattintva keresztszűrni más elemeket.
 - A vásznon csak az alapértelmezett Python megjelenítőeszközön ábrázolt ábrázolások jelennek meg helyesen. Kerülje az eltérő Python megjelenítőeszközök használatát.
+- A Python-vizualizációk nem támogatják a bemeneti oszlopok átnevezését. Az oszlopokra a szkriptek végrehajtása során azok eredeti nevével kell hivatkozni.
 
 ## <a name="next-steps"></a>Következő lépések
 

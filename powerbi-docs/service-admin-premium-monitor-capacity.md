@@ -7,20 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698877"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813075"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
 A kapacitások figyelése elengedhetetlen a megalapozott döntések meghozatalához, hogy a prémium szintű kapacitás erőforrásait a legjobban használhassa ki. A kapacitás monitorozható a felügyeleti portálon vagy a **Power BI Premium kapacitásmetrikák** alkalmazással. Ez a cikk a Prémium szintű kapacitásmetrikák alkalmazás használatát ismerteti. Az alkalmazás adja a legmélyrehatóbb információkat a kapacitások teljesítményéről. Az elmúlt hét nap átlagos használatára vonatkozó metrikák magasabb szintű áttekintésére használhatja a felügyeleti portált. A monitorozás portálon történő használatáról további információt a [Prémium szintű kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md) szakaszban talál.
 
 Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez.
+
+> [!IMPORTANT]
+> Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. Ez egyszerű módot kínálhat a kapacitások túlterheléséből eredő hibák elhárítására. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítse
 
@@ -60,7 +63,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="top"></a>Felső
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | Verzió | Az alkalmazás verziója. | 
 | Kapacitások | Azoknak a kapacitásoknak a száma, amelyeknél Ön rendszergazda. | 
@@ -69,7 +72,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="system-summary"></a>Rendszer összegzése
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | A legmagasabb CPU-kihasználtságú kapacitás | Az a kapacitás, ahol a CPU-használat a legutóbbi hét napban a legtöbbször haladta meg a küszöbérték 80%-át. |
 | Legmagasabb CPU-kihasználtság száma | Az a szám, ahányszor a megnevezett kapacitásban a CPU-használat meghaladta a küszöbérték 80%-át a legutóbbi hét napban. | 
@@ -79,7 +82,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="dataset-summary"></a>Adatkészlet összegzése
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | Adathalmazok | A kapacitásokon belüli összes munkaterület adathalmazainak teljes száma.|
 | Átlagos adathalmazméret (MB) | A kapacitásokon belüli összes munkaterület adatkészleteinek átlagos mérete.|  
@@ -106,7 +109,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="dataflow-summary"></a>Adatfolyam összegzése
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | Adatfolyamok |  A kapacitásokon belüli összes munkaterület adatfolyamainak teljes száma.|
 | Frissítések összesen | A frissítések teljes száma a legutóbbi hét napban.|  
@@ -120,7 +123,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="paginated-report-summary"></a>Lapszámozott jelentés összefoglalás
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | Lapszámozott jelentések |  A kapacitásokon belüli összes munkaterület lapszámozott jelentéseinek teljes száma. |
 | Megtekintések összesen | Az összes jelentés felhasználók általi megtekintésének teljes száma. | 
@@ -134,7 +137,7 @@ Az irányítópult a következő metrikákat tartalmazza:
 
 #### <a name="ai-summary"></a>Mesterséges intelligencia összegzése
 
-| Mérték | Leírás |
+| Metric | Leírás |
 | --- | --- |
 | Mesterségesintelligencia-függvények végrehajtása | A végrehajtások teljes száma a legutóbbi hét napban. |
 | Mesterségesintelligencia-függvények végrehajtásának megbízhatósága (%) | A legutóbbi hét napban történt sikeres végrehajtások teljes száma elosztva a végrehajtások teljes számával. |

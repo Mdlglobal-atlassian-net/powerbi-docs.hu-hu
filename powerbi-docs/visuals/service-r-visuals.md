@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114842"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979822"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-vizualizációk létrehozása és használata a Power BI-ban
 R-vizualizációk jelenleg csak a **Power BI Desktopban** hozhatók létre és tehetők közzé a Power BI szolgáltatásban. R-vizualizációk létrehozásáról a [Power BI-vizualizációk létrehozása az R használatával](../desktop-r-visuals.md) című cikk nyújt további információt.
@@ -94,6 +94,7 @@ A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:
 * Az R-vizualizációk reagálnak más vizualizációk kijelöléseire, de az R-vizualizáció elemeire nem lehet rákattintani más elemekkel való keresztszűréshez.
 * Az R-vizualizációk *Time* (Idő) típusú adatokhoz jelenleg nem támogatottak. Használja helyette a Date/Time típust.
 * Az R-vizualizációk nem jelennek meg a **Webes közzététel** használatakor.
+* Az R-vizualizációk nem támogatják a bemeneti oszlopok átnevezését. Az oszlopokra a szkriptek végrehajtása során azok eredeti nevével kell hivatkozni.
 * Az R-vizualizációk jelenleg nem nyomtatódnak ki az irányítópultok és jelentések nyomtatásakor
 * Az R-vizualizációk jelenleg nem támogatottak az Analysis Services DirectQuery módjában
 * A R-vizualizációk át tudják alakítani a szövegcímkéket grafikus elemekké. Ehhez a Power BI szolgáltatásban a következő további lépésekre van szükség:

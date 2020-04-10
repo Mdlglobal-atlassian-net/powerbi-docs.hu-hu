@@ -8,13 +8,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
-ms.date: 09/10/2019
-ms.openlocfilehash: 35df214da19d5f35130408ce8128643f52682428
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 04/02/2020
+ms.openlocfilehash: df59d09a1e8557842904b46eded0a83c86448224
+ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922229"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80647713"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-paraméterek lapszámozott jelentésekben a Power BI-ban
 
@@ -78,6 +78,14 @@ Az **exportálási formátum** azt határozza meg, hogy milyen formátumban jele
 - CSV 
 - PDF 
 - XML 
+
+**Paraméterpanel állapota** – Megadja, hogy a jelentés betöltésekor a paraméterpanel meg van nyitva, be van zárva, vagy teljesen rejtett.
+
+-   rdl:parameterPanelState
+
+    - „collapsed” (összecsukva): bezárt paraméterpanellel nyitja meg a jelentést. A paraméter gomb engedélyezve van, hogy a felhasználók a gombra kattintva kibonthassák;
+    - „hidden” (rejtett): bezárt paraméterpanellel nyitja meg a jelentést, és a paraméter gomb le van tiltva;
+    - „expanded” (kibontva, alapértelmezés): megnyitott paraméterpanellel nytja meg a jelentést és a paraméter gomb engedélyezve van;
 
 **Eszközinformáció** – További kimeneti paramétereket adhat meg az alábbi exportálási formátumhoz. 
 

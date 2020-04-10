@@ -7,21 +7,21 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74163771"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621634"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Adatriasztások a Power BI szolgáltatásban
 
 Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai meghaladják a beállított korlátokat.
 
-Ha Power BI Pro-licenccel rendelkezik, beállíthat riasztásokat csempékhez. Akkor is beállíthat riasztásokat, ha valaki megoszt egy [Premium-kapacitású](service-premium-what-is.md) irányítópultot. Csak a jelentések vizualizációiról rögzített csempéken, és kizárólag mérőműszerekhez, KPI-khez és kártyákhoz állíthatók be riasztások. A riasztások olyan vizualizációkon állíthatók be, amelyeket egy jelentésből egy irányítópulton rögzített streamelési adatkészletekből hozott létre. Nem állíthatók be riasztások a közvetlenül az irányítópulton, a **Csempe hozzáadása** > **Egyéni streamelési adatok** funkcióval létrehozott csempéken.
+Csempékre vonatkozó riasztásokat állíthat be a Saját munkaterületen. Ahhoz is állíthat be riasztást, ha valaki megoszt egy [prémium szintű kapacitásban](service-premium-what-is.md) lévő irányítópultot. Ha Power BI Pro-licenccel rendelkezik, bármely más munkaterületen lévő csempékhez is állíthat be riasztásokat. Csak a jelentések vizualizációiról rögzített csempéken, és kizárólag mérőműszerekhez, KPI-khez és kártyákhoz állíthatók be riasztások. A riasztások olyan vizualizációkon állíthatók be, amelyeket egy jelentésből egy irányítópulton rögzített streamelési adatkészletekből hozott létre. Nem állíthatók be riasztások a közvetlenül az irányítópulton, a **Csempe hozzáadása** > **Egyéni streamelési adatok** funkcióval létrehozott csempéken.
 
 Mindenki csak a saját riasztásait látja, még az irányítópult megosztása esetén is. Az irányítópult saját nézetén beállított riasztásokat még az irányítópult tulajdonosa sem láthatja. A rendszer teljes mértékben szinkronizálja az adatriasztásokat a platformok között, így [a Power BI mobilalkalmazásokban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) és a Power BI szolgáltatásban is beállíthatja és megtekintheti őket. A Power BI Desktopban azonban nem érhetők el. A Power Automate-tel még automatizálhatja és integrálhatja is a riasztásokat. Ezt Ön is kipróbálhatja ebben a [Power Automate-tel és Power BI-jal](service-flow-integration.md) foglalkozó cikkben.
 

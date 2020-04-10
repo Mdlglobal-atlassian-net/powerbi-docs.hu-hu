@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133252"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751600"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
@@ -75,7 +75,7 @@ A mértékek létrehozása mellett azonban még egyszerű, oszlopszintű összeg
 
 - Ha tudja, hogy a jelentéskészítők [többdimenziós kifejezések (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) használatával fogják lekérdezni a modellt, akkor a modellnek _explicit mértékeket_ kell tartalmaznia. Az explicit mértékek meghatározása a DAX segítségével történik. Ez a tervezési megközelítés különösen fontos, ha Power BI-adatkészleteket kérdez le az MDX használatával, mivel az MDX nem tudja elérni az oszlopok értékeinek összegzését. A rendszer az MDX-et használja az [Excelben való elemzéshez](https://docs.microsoft.com/power-bi/service-analyze-in-excel) mert a kimutatások MDX-lekérdezéseket adnak ki.
 - Ha tudja, hogy a jelentésszerzők lapszámozott Power BI-jelentéseket fognak létrehozni az MDX-lekérdezéstervezővel, a modellnek explicit mértékeket kell tartalmaznia. Csak az MDX-lekérdezéstervező támogatja a [kiszolgálói összesítéseket](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Ha tehát a jelentéskészítőknek a Power BI (és nem a lapszámozott jelentések motorja) által kiértékelt mértékekre van szükségük, az MDX-lekérdezéstervezőt kell használniuk.
-- Ha biztosítania kell, hogy a jelentéskészítők csak bizonyos módokon összegezhessenek oszlopokat. A viszonteladói értékesítések **Egységár** oszlopa (amely az egységenkénti árat jelenti) összesíthető, de csak meghatározott összesítő függvényekkel. Összeadni értelmetlen, más összesítő függvényekkel (minimum, maximum, átlag stb.) viszont összesíthető. Ebben az esetben a modellező elrejtheti az **Egységár** oszlopot, és mértékeket hozhat létre az összes megfelelő összesítő függvényhez.
+- Ha biztosítania kell, hogy a jelentéskészítők csak bizonyos módokon összegezhessenek oszlopokat. A viszonteladói értékesítések **Egységár** oszlopa (amely az egységenkénti árat jelenti) összesíthető, de csak meghatározott összesítő függvényekkel. Összeadni értelmetlen, más összesítő függvényekkel (például minimum, maximum, átlag stb.) viszont összesíthető. Ebben az esetben a modellező elrejtheti az **Egységár** oszlopot, és mértékeket hozhat létre az összes megfelelő összesítő függvényhez.
 
 Ez a kialakítási elv jól megfelel a Power BI szolgáltatásban készített jelentésekhez és a Q&A-hoz. A Power BI Desktop élő kapcsolatai viszont lehetővé teszik, hogy a jelentéskészítők felfedjék a rejtett mezőket a **Mezők** panelen, ezáltal megkerüljék a tervező szándékát.
 
@@ -188,7 +188,7 @@ A Power BI-modellben az értékesítési rendelésszám oszlopát érdemesebb le
 
 ![Példa ténybe ágyazott dimenzióra](media/star-schema/degenerate-dimension.png)
 
-További információ: [Útmutató egy-az-egyhez kapcsolatokhoz (Ténybe ágyazott dimenziók)](relationships-one-to-one.md#degenerate-dimensions).
+Ha azonban az Adventure Works viszonteladói táblája rendelésszám _és_ sorszám oszlopot is tartalmaz, és ezek szükségesek a szűréshez, érdemes lehet ténybe ágyazott dimenziótáblát használni. További információ: [Útmutató egy-az-egyhez kapcsolatokhoz (Ténybe ágyazott dimenziók)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## <a name="factless-fact-tables"></a>Tények nélküli ténytáblák
 
@@ -196,7 +196,7 @@ A **tények nélküli tény** típusú táblák nem tartalmaznak mértékoszlopo
 
 Egy tények nélküli ténytáblában dimenziókulcsok által meghatározott megfigyelések tárolhatók. Ilyen például, hogy egy adott dátum egy adott időpontjában egy adott ügyfél bejelentkezett a webhelyre. Definiálható egy mérték, amely a tény nélküli ténytábla sorait számolja meg annak elemzéséhez, hogy mikor hány ügyfél jelentkezett be.
 
-A tény nélküli ténytáblák felhasználásának egy érdekesebb módja a dimenziók közötti kapcsolatok tárolása. Ezt a megközelítést javasoljuk Power BI-modell tervezésekor a több-a-többhöz kapcsolatok definiálására. Több-a-többhöz kapcsolat tervezésekor a tény nélküli ténytáblát _áthidaló táblának_ nevezzük.
+A tény nélküli ténytáblák felhasználásának egy érdekesebb módja a dimenziók közötti kapcsolatok tárolása. Ezt a megközelítést javasoljuk Power BI-modell tervezésekor a több-a-többhöz kapcsolatok definiálására. [Több-a-többhöz kapcsolat tervezésekor](relationships-many-to-many.md#relate-many-to-many-dimensions) a tény nélküli ténytáblát _áthidaló táblának_ nevezzük.
 
 Tegyük fel például, hogy az értékesítők egy _vagy több_ értékesítési régióhoz is hozzárendelhetők. Az áthidaló tábla tények nélküli ténytáblaként volna megtervezve, amely két oszlopot tartalmaz: értékesítőazonosító és régióazonosító. Mindkét oszlopban tárolhatók ismétlődő értékek.
 

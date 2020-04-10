@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 04/08/2020
 ms.author: maggies
-ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237523"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979845"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
 A Power Bi-jelentések számos adatforráshoz csatlakozhatnak. Az adatok használatának módjától függően eltérő adatforrások érhetők el. Az adatok importálhatók, vagy közvetlenül DirectQuery- vagy élő SQL Server Analysis Services-kapcsolattal lehet lekérdezni azokat.
@@ -156,7 +156,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | SharePoint Online-lista |Nem |Nem |Nem |Nem |
 | Snowflake |Nem |Nem |Nem |Nem |
 | Sybase-adatbázis |Nem |Nem |Igen |Igen |
-| Teradata |Nem |Nem |Igen |Igen |
+| Teradata |Nem |Nem |Igen |Igen** |
 | appFigures (bétaverzió) |Nem |Nem |Nem |Nem |
 | Azure Analysis Services-adatbázis (bétaverzió) |Nem |Nem |Nem |Nem |
 | Azure Cosmos DB (bétaverzió) |Nem |Nem |Nem |Nem |
@@ -189,6 +189,8 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Visual Studio Team Services (bétaverzió) |Nem |Nem |Nem |Nem |
 | Webtrends (bétaverzió) |Nem |Nem |Nem |Nem |
 | Zendesk (bétaverzió) |Nem |Nem |Nem |Nem |
+
+**Az LDAP-hitelesítés használata a Teradatával (a Power BI Desktopban a „setx PBI_EnableTeradataLdap true” parancssori paranccsal engedélyezhető) modellfrissítéshez nem támogatott.
 
 ## <a name="list-of-supported-authentication-methods-for-directquery"></a>A DirectQueryhez támogatott hitelesítési módszerek listája
 

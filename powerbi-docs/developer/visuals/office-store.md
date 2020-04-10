@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: bfdac85b50851f840db04d2b3d8e88d434ab7b7e
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80550893"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621460"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
 
@@ -100,6 +100,8 @@ Kövesse az alábbi lépéseket a Power BI-vizualizáció Partnerközpontba val�
 10. Válassza a **Termék beállítása** lehetőséget, és kattintson az **Áttekintés és közzététel** lehetőségre.
 
 ## <a name="tracking-submission-status-and-usage"></a>A beküldési állapot és a használat nyomon követése
+
+Áttekintheti az [érvényesítési szabályzatokat](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.microsoft.com/Application/Summary/) tekintheti meg a beküldés állapotát.
 

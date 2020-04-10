@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329632"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979914"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -65,7 +65,7 @@ Az adathalmazok számítási feladat alapértelmezés szerint engedélyezve van,
 | **Maximális memória (%)** | Az adatkészletek által a kapacitásban felhasználható, rendelkezésre álló memória maximális százalékos aránya. |
 | **XMLA-végpont** | Megadja, hogy a csatlakozó ügyfélalkalmazások figyelembe vegyék a munkaterület és az alkalmazás szintjén meghatározott biztonságicsoport-tagságot. További információ: [Csatlakozás adathalmazokhoz ügyfélalkalmazásokkal és -eszközökkel](service-premium-connect-tools.md). |
 | **Köztes sorok maximális száma** | A DirectQuery által visszaadott köztes sorok maximális száma. Az alapértelmezett érték 1 000 000, a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
-| **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett értéket a termékváltozat szabja meg, a megengedett tartomány pedig 0,1 GB-tól 10 GB-ig terjed. |
+| **Offline adathalmaz maximális mérete (GB)** | A memóriában lévő offline adathalmaz maximális mérete. Ez a tömörített méret a lemezen. Az alapértelmezett érték 0, ami a legmagasabb SKU-val meghatározott korlát. A megengedett tartomány 0-tól a kapacitásméret korlátjáig tart. |
 | **Eredménysorok maximális száma** | A DAX-lekérdezés által visszaadott sorok maximális száma. Az alapértelmezett érték -1 (nincs korlát), a megengedett tartomány pedig 100 000-től 2 147 483 647-ig terjed. |
 | **Lekérdezés memóriakorlátja (%)** | Az MDX- vagy DAX-lekérdezések végrehajtásához használható számítási feladatban rendelkezésre álló memória maximális százalékaránya. Az alapértelmezett érték 0, amely az adott SKU-specifikus automatikus lekérdezési memória korlátozását eredményezi. |
 | **Lekérdezés időkorlátja (másodpercben)** | A lekérdezés időtúllépéséig eltelt idő maximuma. Az alapértelmezett érték 3600 másodperc (1 óra). A 0 érték azt jelenti, hogy a lekérdezések lépik túl az időt. |
@@ -203,6 +203,9 @@ Számítási feladatokat a [Kapacitások](https://docs.microsoft.com/rest/api/po
 ## <a name="monitoring-workloads"></a>Számítási feladatok monitorozása
 
 A [Power BI Premium-kapacitásmetrikák alkalmazás](service-admin-premium-monitor-capacity.md) metrikákat tesz elérhetővé az adatkészletről, az adatfolyamokról és a lapszámozott jelentésekről, amelyekkel monitorozhatja a kapacitásokhoz engedélyezett számítási feladatokat. 
+
+> [!IMPORTANT]
+> Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="next-steps"></a>Következő lépések
 

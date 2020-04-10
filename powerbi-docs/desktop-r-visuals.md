@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 061a2a99ad4cc812aac0d66ec4993001187179a0
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114865"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979891"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Power BI-vizualizációk létrehozása az R programozási nyelvvel
 A Power BI Desktopban az *R* használatával vizualizálhatja az adatokat. Az [R](https://mran.revolutionanalytics.com/documents/what-is-r) egy statisztikai számításokhoz és grafikus megjelenítéshez használható nyelv és környezet.
@@ -142,6 +142,8 @@ A Power BI Desktop-beli R-vizualizációk a következő korlátozásokkal rendel
 * Legfontosabb tudnivalók: Az R-vizualizációk reagálnak más vizualizációk kiemeléseire, de nem lehet az elemeiket kijelölve keresztszűrni más elemeket.
 
 * Eszközök megjelenítése: A vásznon csak az alapértelmezett R megjelenítő eszközön ábrázolt ábrázolások jelennek meg helyesen. Kerülje az eltérő R megjelenítő eszközök használatát.
+
+* Oszlop átnevezése: Az R-vizualizációk nem támogatják a bemeneti oszlopok átnevezését. Az oszlopokra a szkriptek végrehajtása során azok eredeti nevével kell hivatkozni.
 
 * RRO-telepítések: Ebben a kiadásban az RRO-telepítéseket a Power BI Desktop 32 bites verziója nem azonosítja automatikusan, így az R telepítési könyvtárának elérési útját manuálisan kell megadni a **Lehetőségek és beállítások** > **Beállítások** > **R-szkript használata** ablakban.
 
