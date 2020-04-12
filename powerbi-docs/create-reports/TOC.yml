@@ -15,7 +15,7 @@
           href: ../paginated-reports/paginated-reports-online-course.md
         - name: Többoldalas jelentés készítése és feltöltése
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
-    - name: Példák
+    - name: Minták
       expanded: true
       items:
         - name: Power BI-minták beszerzése
@@ -42,22 +42,22 @@
           href: ../sample-supplier-quality.md
         - name: A Pénzügyi minta munkafüzet letöltése
           href: ../sample-financial-download.md
-    - name: Alapelvek
+    - name: Fogalmak
       expanded: true
       items:
         - name: Power BI-jelentések
           items:
             - name: A jelentés nézet használata
               href: ../desktop-report-view.md
-            - name: Szűrőtípusok Power BI-jelnetésekben
+            - name: Szűrőtípusok a jelentésekben
               href: ../power-bi-report-filter-types.md
             - name: Szűrők és kiemelések a jelentésekben
               href: ../power-bi-reports-filters-and-highlighting.md
             - name: Nagy sűrűségű vonalas mintavétel
               href: ../desktop-high-density-sampling.md
-            - name: A Power BI-beli Q&A-vizualizációk bemutatása
+            - name: Q&A-vizualizációk ismertetése
               href: ../visuals/power-bi-visualization-q-and-a.md
-            - name: Tudnivalók a Power BI akadálymentességéről
+            - name: Akadálymentesség
               href: ../desktop-accessibility-overview.md
             - name: Természetes nyelv és Q&A
               items:
@@ -125,7 +125,7 @@
               href: ../desktop-bookmarks.md
             - name: Jelentéskészítési témák használata
               href: ../desktop-report-themes.md
-            - name: Szűrők használata Power BI-jelentésekben
+            - name: Szűrők használata jelentésekben
               href: ../power-bi-report-filter.md
             - name: A részletezési funkció használata
               href: ../desktop-drillthrough.md
@@ -139,7 +139,7 @@
               href: ../desktop-r-powered-custom-visuals.md
             - name: Rácsvonalak és rácsvonalhoz igazítás használata
               href: ../desktop-gridlines-snap-to-grid.md
-            - name: Oldal megjelenítési beállításai Power BI-jelentésben
+            - name: Oldal megjelenítési beállításai jelentésekben
               href: ../power-bi-report-display-settings.md
             - name: Oszlop hozzáadása mintából
               href: ../desktop-add-column-from-example.md
@@ -147,12 +147,16 @@
               href: ../desktop-add-custom-column.md
             - name: Beágyazott hierarchiák feliratai használata
               href: ../desktop-inline-hierarchy-labels.md
-            - name: Numerikustartomány-szeletelő használata
+            - name: Szeletelők
+              href: ../visuals/power-bi-visualization-slicers.md
+            - name: Numerikustartomány-szeletelő
               href: ../desktop-slicer-numeric-range.md
-            - name: Relatív dátumszeletelő és -szűrő használata
-              href: ../desktop-slicer-filter-date-range.md
+            - name: Relatív dátumszeletelők és -szűrők
+              href: ../visuals/desktop-slicer-filter-date-range.md
             - name: Átméretezhető szeletelő létrehozása
               href: ../power-bi-slicer-filter-responsive.md
+            - name: Több mező hozzáadása egy szeletelőhöz
+              href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Az adathozzáférés korlátozása sorszintű biztonsággal
               href: ../desktop-rls.md
             - name: Az elemleírások testreszabása
@@ -205,17 +209,17 @@
               href: ../desktop-upload-desktop-files.md
         - name: Vizualizációk
           items:
-            - name: Vizualizációk hozzáadása Power BI-jelentéshez (1. rész)
+            - name: Vizualizációk hozzáadása egy jelentéshez (1. rész)
               href: ../visuals/power-bi-report-add-visualizations-i.md
-            - name: Vizualizációk hozzáadása Power BI-jelentéshez (2. rész)
+            - name: Vizualizációk hozzáadása egy jelentéshez (2. rész)
               href: ../visuals/power-bi-report-add-visualizations-ii.md
-            - name: Vizualizációk hozzáadása Power BI-jelentéshez
+            - name: Vizualizációk hozzáadása jelentésekhez
               href: ../visuals/power-bi-report-visualizations.md
-            - name: Vizualizációk módosítása Power BI-jelentésekben
+            - name: Vizualizációk módosítása jelentésekben
               href: ../visuals/power-bi-report-change-visualization-type.md
             - name: 'Vizuális címek, hátterek és jelmagyarázatok testreszabása'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-            - name: Adatot nem tartalmazó elemek megjelenítése a Power BI-ban
+            - name: Adatot nem tartalmazó elemek megjelenítése
               href: ../desktop-show-items-no-data.md
             - name: Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
               href: ../visuals/power-bi-data-points.md
@@ -233,7 +237,7 @@
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: Vizualizációk jelentésen belüli működésének módosítása
               href: ../service-reports-visual-interactions.md
-            - name: Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
+            - name: Tippek és trükkök térképvizualizációkhoz
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X és Y tengely tulajdonságainak testreszabása
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
@@ -241,47 +245,45 @@
               href: ../visuals/power-bi-visualizations-arcgis.md
             - name: ArcGIS-térképek létrehozása Power BI-vizualizációkhoz
               href: ../visuals/power-bi-visualization-arcgis.md
-            - name: Alapszintű területdiagram létrehozása és használata
+            - name: Egyszerű területdiagramok
               href: ../visuals/power-bi-visualization-basic-area-chart.md
             - name: Kártyavizualizációk (nagy méretű numerikus csempék) létrehozása
               href: ../visuals/power-bi-visualization-card.md
-            - name: Kombinált diagramok létrehozása és használata
+            - name: Kombinált diagramok
               href: ../visuals/power-bi-visualization-combo-chart.md
-            - name: Felbontásfa vizualizációjának használata (előzetes verzió)
+            - name: Felbontásfa vizualizációk (előzetes verzió)
               href: ../visuals/power-bi-visualization-decomposition-tree.md
-            - name: Perecdiagramok létrehozása és használata
+            - name: Perecdiagramok
               href: ../visuals/power-bi-visualization-doughnut-charts.md
-            - name: Kitöltött (koropletikus) térképek létrehozása és használata
+            - name: Kitöltött (koropletikus) térképek
               href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
-            - name: Tölcsérdiagramok létrehozása és használata
+            - name: Tölcsérdiagramok
               href: ../visuals/power-bi-visualization-funnel-charts.md
-            - name: Főbb befolyásolók vizualizáció használata
+            - name: Főbb befolyásolók vizualizációk
               href: ../visuals/power-bi-visualization-influencers.md
-            - name: KPI-vizualizációk létrehozása és használata
+            - name: KPI (teljesítménymutatós) vizuális elemek
               href: ../visuals/power-bi-visualization-kpi.md
-            - name: Mátrixvizualizációk létrehozása és használata
+            - name: Mátrixvizualizációk
               href: ../visuals/desktop-matrix-visual.md
-            - name: Power Apps-vizualizációk létrehozása és használata
+            - name: Power Apps-vizualizációk
               href: ../visuals/power-bi-visualization-powerapp.md
-            - name: R-vizualizációk létrehozása és használata
+            - name: R vizualizációk
               href: ../visuals/service-r-visuals.md
-            - name: Kör alakú mérőműszer-diagramok létrehozása és használata
+            - name: Tárcsadiagramok
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
-            - name: Szalagdiagramok létrehozása és használata
+            - name: Szalagdiagramok
               href: ../visuals/desktop-ribbon-charts.md
-            - name: 'Pont-, buborék- és pöttydiagramok létrehozása és használata'
+            - name: 'Pont-, buborék- és pöttydiagramok'
               href: ../visuals/power-bi-visualization-scatter.md
             - name: Nagy sűrűségű pontdiagramok használata
               href: ../visuals/desktop-high-density-scatter-charts.md
-            - name: Alakzat leképezése típusú vizualizációk létrehozása és használata (előzetes verzió)
+            - name: Alakzat leképezése típusú vizualizációk (előzetes verzió)
               href: ../visuals/desktop-shape-map.md
-            - name: Szeletelők létrehozása és használata
-              href: ../visuals/power-bi-visualization-slicers.md
-            - name: Táblák létrehozása és használata a Power BI-jelentésekben és -irányítópultokon
+            - name: Táblák jelentésekben és irányítópultokon
               href: ../visuals/power-bi-visualization-tables.md
-            - name: Fatérképek létrehozása és használata
+            - name: Fatérképek
               href: ../visuals/power-bi-visualization-treemaps.md
-            - name: Vízesésdiagramok létrehozása és használata
+            - name: Vízesésdiagramok
               href: ../visuals/power-bi-visualization-waterfall-charts.md
         - name: Természetes nyelv és Q&A
           items:
@@ -301,17 +303,17 @@
               href: ../service-q-and-a-create-featured-questions.md
             - name: A Q&A használata élő kapcsolatokkal
               href: ../service-q-and-a-direct-query.md
-            - name: Gyors elemzések a Power BI-ban
+            - name: Gyors elemzések
               href: ../service-insights.md
             - name: Adatok optimalizálása gyors elemzésekhez
               href: ../service-insights-optimize.md
-        - name: Kisegítő lehetőségek
+        - name: Akadálymentesség
           items:
-            - name: Akadálymentes Power BI-jelentések tervezése
+            - name: Akadálymentes jelentések tervezése
               href: ../desktop-accessibility-creating-reports.md
-            - name: Akadálymentességi eszközökkel rendelkező Power BI-jelentések létrehozása
+            - name: Akadálymentességi eszközökkel rendelkező jelentések létrehozása
               href: ../desktop-accessibility-creating-tools.md
-            - name: Akadálymentességi eszközökkel rendelkező Power BI-jelentések használata
+            - name: Akadálymentességi eszközökkel rendelkező jelentések használata
               href: ../desktop-accessibility-consuming-tools.md
             - name: Billentyűparancsok a Power BI Desktopban
               href: ../desktop-accessibility-keyboard-shortcuts.md
@@ -351,7 +353,7 @@
               href: ../service-dashboard-pin-tile-from-q-and-a.md
             - name: Teljes jelentésoldal rögzítése irányítópultra
               href: ../service-dashboard-pin-live-tile-from-report.md
-            - name: Adatriasztások a Power BI szolgáltatásban
+            - name: Adatriasztások a szolgáltatásban
               href: ../service-set-data-alerts.md
             - name: 'Kép, szövegmező, videó vagy kód felvétele az irányítópultra'
               href: ../service-dashboard-add-widget.md
@@ -369,9 +371,9 @@
               href: ../service-dashboard-themes.md
         - name: Egyéb feladatok
           items:
-            - name: Tartalom átnevezése a Power BI-ban
+            - name: Tartalom átnevezése
               href: ../service-rename.md
             - name: Elemek névjegyének beállítása
               href: ../service-item-contact.md
-            - name: A Power BI szinte bármelyik elemének törlése
+            - name: Szinte bármelyik elem törlése
               href: ../service-delete.md
