@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435973"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802095"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -24,6 +24,20 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 
 >[!NOTE]
 >A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="march-2020"></a>2020. március
+
+### <a name="use-shortcuts-and-google-search-to-launch-your-content-android"></a>Tartalom megjelenítése parancsikonok és a Google Search szolgáltatás használatával (Android)
+Az adatok könnyebb keresése és megjelenítése érdekében integráltuk a parancsikonokat és a Google Search szolgáltatást a Power BI alkalmazással. Parancsikonokat hozhat létre, amelyekkel közvetlenül az eszköze kezdőképernyőjéről érheti el kedvenc jelentéseit és irányítópultjait. A Google Search szolgáltatás használatával gyorsan megkeresheti és megnyithatja a Power BI-beli tartalmakat. További információ az [androidos alkalmazás-parancsikonokról](mobile-app-quick-access-shortcuts.md) és a [Google Search](mobile-app-find-access-google-search.md) szolgáltatásról.
+
+### <a name="enhanced-security-using-device-protection-preview-android"></a>Fokozott biztonság az eszközvédelem használatával (előzetes verzió) (Android)
+Eszköze beépített védelmi képességei révén biztonságossá teheti a Power BI alkalmazást, és kialakíthatja a szükséges adatvédelmet. Ha biometrikus hitelesítést (ujjlenyomat-azonosítót) kér a Power BI alkalmazás eléréséhez, biztonságban lesznek az adatai, és csak Ön láthatja őket. [A natív biztonságos hozzáférés megismerése](mobile-native-secure-access.md)
+
+### <a name="scanning-is-now-available-on-ipad"></a>Már elérhető az iPaden a szkennelés
+Mostantól közvetlenül az iPadjéről szkennelhet be vonalkódokat a jelentések szűréséhez, és QR-kódok segítségével nyithatja meg gyorsan a jelentéseket.  
+
+### <a name="updated-filtering-experience"></a>Frissített szűrési élmény
+A Power BI-alkalmazás szűrői új funkciókkal és megjelenéssel rendelkeznek. Ilyen például a jelentésekben szereplő vizualizációkra ható szűrők jobb láthatósága, és a szűrők zárolása vagy akár elrejtése. Ezek a változások javítják a Power BI szolgáltatás szűrőivel való kompatibilitást is.
 
 ## <a name="february-2020"></a>2020. február
 
