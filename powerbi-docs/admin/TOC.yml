@@ -76,6 +76,8 @@
               href: service-security-data-protection-metrics-report.md
         - name: Sorszintű biztonság
           href: ../service-admin-rls.md
+        - name: Adatkészlet és adatfolyam-tanúsítvány beállítása
+          href: service-admin-setup-certification.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal
           href: ../service-admin-mobile-intune.md
         - name: Power BI Premium

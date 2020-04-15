@@ -48,6 +48,8 @@
           href: embed-from-apps.md
         - name: Jelentés exportálása fájlba
           href: export-to.md
+        - name: Lapszámozott jelentés exportálása egy fájlba
+          href: export-paginated-report.md
         - name: Alkalmazások automatikus telepítése
           href: embed-auto-install-app.md
         - name: Azure Active Directory-bérlő létrehozása

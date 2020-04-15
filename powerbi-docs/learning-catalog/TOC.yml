@@ -1,0 +1,21 @@
+- name: Learning-katalógus
+  href: index.yml
+  items:
+    - name: Üzleti döntéshozók
+      href: learning-catalog-bdm.md
+    - name: Fogyasztók
+      href: learning-catalog-consumer.md
+    - name: Jelentéskészítők
+      href: learning-catalog-report-creator.md
+    - name: Adatelemzők
+      href: learning-catalog-data-analyst.md
+    - name: Rendszergazdák
+      href: learning-catalog-administrator.md
+    - name: Fejlesztők
+      href: learning-catalog-developer.md
+    - name: Partneri értékesítés előtti szerepkörök
+      href: learning-catalog-presales.md
+    - name: Funkcionális tanácsadók
+      href: learning-catalog-functional-consultant.md
+    - name: Megoldáskészítők
+      href: learning-catalog-solution-architect.md

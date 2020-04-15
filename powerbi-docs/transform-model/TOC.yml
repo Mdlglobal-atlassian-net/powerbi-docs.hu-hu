@@ -81,6 +81,8 @@
           items:
             - name: Adatfolyamok létrehozása és használata
               href: ../service-dataflows-create-use.md
+            - name: Adatfolyamok előléptetése vagy hitelesítése
+              href: service-dataflows-promote-certify.md
             - name: A továbbfejlesztett számítási motor használata adatfolyamokkal
               href: ../service-dataflows-enhanced-compute-engine.md
             - name: Számított entitások a Power BI Premiummal

@@ -1,0 +1,132 @@
+### YamlMime:Landing
+title: Power BI képzési katalógus
+summary: Itt megtalálhatja a Power BI-jal kapcsolatos összes képzési lehetőséget
+metadata:
+  title: Power BI képzési katalógus
+  description: Itt megtalálhatja a Power BI-jal kapcsolatos összes képzési lehetőséget, amelyeket szervezeti szerepköreihez használhat.
+  ms.service: powerbi
+  ms.topic: landing-page
+  author: loreleishannonmsft
+  ms.author: v-lshann
+  ms.date: 04/08/2020
+  ms.openlocfilehash: aff1866616a10e5df124619261d8398bda5c51a3
+  ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+  ms.translationtype: HT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 04/13/2020
+  ms.locfileid: "81269041"
+landingContent:
+- title: Üzleti döntéshozók
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Üzleti és technikai döntéshozók – képzési katalógus
+      url: learning-catalog-bdm.md#
+- title: Fogyasztók
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Fogyasztói képzési katalógus
+      url: learning-catalog-consumer.md#
+- title: Jelentéskészítők
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Jelentéskészítői képzési katalógus
+      url: learning-catalog-report-creator.md#
+    - text: Első lépések
+      url: learning-catalog-report-creator.md#get-started
+    - text: Irányítópultok
+      url: learning-catalog-report-creator.md#dashboards
+    - text: Jelentéstervezés
+      url: learning-catalog-report-creator.md#report-design
+    - text: Vizualizáció
+      url: learning-catalog-report-creator.md#visualization
+    - text: Integráció
+      url: learning-catalog-report-creator.md#integration
+- title: Adatelemzők
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Adatelemzői képzési katalógus
+      url: learning-catalog-data-analyst.md#
+    - text: Első lépések
+      url: learning-catalog-data-analyst.md#get-started
+    - text: Ajánlott eljárások
+      url: learning-catalog-data-analyst.md#best-practices
+    - text: Esettanulmányok
+      url: learning-catalog-data-analyst.md#case-studies
+    - text: Irányítópultok
+      url: learning-catalog-data-analyst.md#dashboards
+    - text: Vizualizációk
+      url: learning-catalog-data-analyst.md#visualizations
+    - text: Irányítás és üzembe helyezés
+      url: learning-catalog-data-analyst.md#governance-deployment
+    - text: Integráció
+      url: learning-catalog-data-analyst.md#integration
+    - text: Biztonság
+      url: learning-catalog-data-analyst.md#security
+- title: Rendszergazdák
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Adminisztrátori képzési katalógus
+      url: learning-catalog-administrator.md
+    - text: Első lépések
+      url: learning-catalog-administrator.md#get-started
+    - text: Üzembe helyezés
+      url: learning-catalog-administrator.md#deploy
+- title: Fejlesztők
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Fejlesztői képzési katalógus
+      url: learning-catalog-developer.md
+    - text: Első lépések
+      url: learning-catalog-developer.md#get-started
+    - text: Beágyazott
+      url: learning-catalog-developer.md#embedded
+    - text: DAX
+      url: learning-catalog-developer.md#dax
+    - text: Fejlesztés
+      url: learning-catalog-developer.md#development
+- title: Partneri előértékesítési szerepkörök
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Partneri értékesítési képzési katalógus
+      url: learning-catalog-presales.md#
+- title: Funkcionális tanácsadók
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Funkcionális alkalmazási tanácsadó képzési katalógus
+      url: learning-catalog-functional-consultant.md
+    - text: Első lépések
+      url: learning-catalog-functional-consultant.md#get-started
+    - text: Ajánlott eljárások
+      url: learning-catalog-functional-consultant.md#best-practices
+    - text: Esettanulmányok
+      url: learning-catalog-functional-consultant.md#case-studies
+    - text: Irányítópultok
+      url: learning-catalog-functional-consultant.md#dashboards
+    - text: Irányítás és üzembe helyezés
+      url: learning-catalog-functional-consultant.md#governance-deployment
+    - text: Integráció
+      url: learning-catalog-functional-consultant.md#integration
+    - text: Biztonság
+      url: learning-catalog-functional-consultant.md#security
+    - text: Vizualizációk
+      url: learning-catalog-functional-consultant.md#visualizations
+- title: Megoldáskészítők
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Megoldáskészítői képzési katalógus
+      url: learning-catalog-solution-architect.md
+    - text: Első lépések
+      url: learning-catalog-solution-architect.md#get-started
+    - text: Esettanulmányok
+      url: learning-catalog-solution-architect.md#case-studies
+    - text: Teljesítmény
+      url: learning-catalog-solution-architect.md#performance
