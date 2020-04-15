@@ -96,7 +96,7 @@ A probléma megoldásához a felhasználónak meg kell hívnia a [refreshUserPer
 
 A PBI-portál használatával megtalálhatja a PBI-bérlő régióját.
 
-[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > A Power BI bemutatása
+`https://app.powerbi.com/` > ? > A Power BI bemutatása
 
 ![A Power BI bemutatása](media/embedded-faq/about-01.png)
 ![Bérlői régió](media/embedded-faq/tenant-location-01.png)

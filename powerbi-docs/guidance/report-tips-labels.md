@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 453800da038dedacaa78202e633e601525025273
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 54364162b48b591e0f8eccdeb05e07f02656632a
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78238052"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006572"
 ---
 # <a name="tips-to-optimize-the-use-of-labels-in-power-bi-reports"></a>Tippek a címkék használatának optimalizálásához Power BI-jelentésekben
 
@@ -22,7 +22,7 @@ Ez a cikk olyan Power BI-jelentések készítőinek szól, akik címkékkel rend
 
 Tekintse meg a Power BI-jelentések címkehasználatának optimalizálásához kapcsolódó négy legfontosabb tippet bemutató videót.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ywx5xUN5VQM" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ywx5xUN5VQM]
 
 ## <a name="tips"></a>Tippek
 
