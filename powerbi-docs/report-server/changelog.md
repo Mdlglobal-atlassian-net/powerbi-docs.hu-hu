@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/08/2020
-ms.openlocfilehash: ff63e38e52a3c8970edfa5b6d9e2ccabeff2e16a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: abe0b97a4c4f593f8bb22be8b72c12295d0f656c
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979799"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006457"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló változásnaplója
 
@@ -29,7 +29,7 @@ Az új funkciókról az [A Power BI jelentéskészítő kiszolgáló újdonsága
            -  Javítás a bizonyos adatforrások esetében nem feltölthető Power BI-jelentésekhez
            -  Javítás a Power BI Jelentéskészítő kiszolgáló asztali hivatkozásához a portálról való letöltéshez
            -  Javítás a DynamicImageDPI for Excel megjelenítéséhez
-           -  Javítás a bizonyos többfelhasználós helyzetekben nem megfelelő szálkultúrát használó Oracle-kapcsolatokhoz (további információ: [UseInstalledUICulture documentation] (https://docs.microsoft.com/power-bi/report-server/connect-data-sources) )
+           -  Javítás a bizonyos többfelhasználós helyzetekben nem megfelelő szálkultúrát használó Oracle-kapcsolatokhoz (további részletek a [UseInstalledUICulture dokumentációjában](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) találhatók)
            -  Javítása a CustomHeaders a jelentés beágyazásakor hibát okozó alapértelmezett értékeihez
            -  Javítás a bizonyos esetekben helytelenül generált SQL-paraméternevekhez
     - *Verzió: 1.6.7327.3007 (Build 15.0.1102.759), Kiadás dátuma: 2020. január 23.*

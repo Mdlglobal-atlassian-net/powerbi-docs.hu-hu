@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: cb58b71d4fe15458516dc0b1d3f25d79e6ef1a62
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79126052"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267273"
 ---
 # <a name="data-lineage-preview"></a>Adatéletút (előzetes verzió)
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén. Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A kérdések megválaszolásában egy adatéletút-nézet lesz a segítségére.
@@ -93,3 +93,4 @@ A származtatott nézet egy interaktív vászon. Az egér és az érintőpad has
 ## <a name="next-steps"></a>Következő lépések
 
 * [Adathalmazok használata több munkaterületen (előzetes verzió)](../service-datasets-across-workspaces.md)
+* [Adatkészletek hatáselemzése](service-dataset-impact-analysis.md)

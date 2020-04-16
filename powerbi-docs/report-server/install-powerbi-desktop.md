@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
+ms.sourcegitcommit: a9ebab692c670192b62a31bfe99447908506251b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404184"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81122266"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop telepítése
 
@@ -96,6 +96,10 @@ A Power BI jelentéskészítő kiszolgálón tárolt jelentések nem támogatjá
 ### <a name="custom-security"></a>Egyéni biztonság
 
 A Power BI Jelentéskészítő kiszolgálóhoz optimalizált Power BI Desktop nem támogatja az egyéni biztonságot. Ha a Power BI Jelentéskészítő kiszolgáló egyéni biztonsági bővítménnyel van konfigurálva, nem menthet Power BI-jelentést a (Power BI Jelentéskészítő kiszolgálóhoz optimalizált) Power BI Desktopból a Power BI Jelentéskészítő kiszolgáló-példányba. Ki kell mentenie a .pbix-jelentésfájlt a Power BI Desktopból, és fel kell töltenie azt a Power BI Jelentéskészítő kiszolgáló portál webhelyén.
+
+### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Jelentések mentése más tartományban lévő Power BI jelentéskészítő kiszolgálóba
+
+A Power BI-jelentéseket a windowsos hitelesítő adatait használva mentheti Power BI jelentéskészítő kiszolgálóba. A jelentések olyan jelentéskészítő kiszolgálóba mentése, amely a windowsos hitelesítő adatoktól eltérő tartományban van, nem támogatott. Ehelyett megteheti, hogy webböngészővel tekinti meg a jelentéskészítő kiszolgálót, és manuálisan tölti fel a fájlt a számítógépéről.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop a Power BI jelentéskészítő kiszolgáló korábbi verzióihoz
 

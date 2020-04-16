@@ -1,31 +1,35 @@
 ---
 title: Szeletelők a Power BI-ban
 description: A szűrés másféle lehetőségét kínáló Power BI-szeletelőkkel az adathalmaz a jelentés más vizualizációiban szereplő részére szűkíthető.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265405"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006793"
 ---
 # <a name="slicers-in-power-bi"></a>Szeletelők a Power BI-ban
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Tegyük fel, hogy a jelentést olvasók számára az összesítő értékesítési metrikák megjelenítése mellett az egyes körzeti vezetők teljesítményét és a különböző időkereteket is ki szeretné mutatni. Létrehozhat különálló jelentéseket vagy összehasonlító diagramokat. Vagy használhat szeletelőket is. A szűrés másféle lehetőségét kínáló szeletelőkkel az adathalmaz a jelentés más vizualizációiban szereplő részére szűkíthető. 
-
-Ez az útmutató az ingyenes [Kiskereskedelmi elemzési minta](../sample-retail-analysis.md) használatával mutatja be a lista és dátumtartomány típusú szeletelők létrehozásának, formázásának és használatának lépéseit. Jó szórakozást a szeletelők formázásának és használatának felfedezéséhez! 
+Tegyük fel, hogy a jelentést olvasók számára az összesítő értékesítési metrikák megjelenítése mellett az egyes körzeti vezetők teljesítményét és a különböző időkereteket is ki szeretné mutatni. Létrehozhat különálló jelentéseket vagy összehasonlító diagramokat. Vagy használhat *szeletelőket* is. A szűrés másféle lehetőségét kínáló szeletelőkkel az adathalmaz a jelentés más vizualizációiban szereplő részére szűkíthető. 
 
 ![Szeletelő animációja](media/power-bi-visualization-slicers/slicer2.gif)
+
+Ez a cikk egy egyszerű szeletelő létrehozását és formázását mutatja be lépésenként az ingyenes [Kiskereskedelmi elemzési minta](../sample-retail-analysis.md) használatával. Azt is bemutatja, hogyan szabályozható a szeletelő által befolyásolt vizualizációk köre, és hogyan lehet más oldalakon lévő szeletelőkkel szinkronizálni. A következő cikkek bizonyos szeletelőtípusok elkészítését ismertetik:
+
+- [Numerikustartomány-szeletelők](../desktop-slicer-numeric-range.md).
+- [Relatívdátum-szeletelők](desktop-slicer-filter-date-range.md).
+- Rugalmas, [átméretezhető szeletelők](../power-bi-slicer-filter-responsive.md).
+- Több mezőt tartalmazó [hierarchia-szeletelők](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md).
 
 ## <a name="when-to-use-a-slicer"></a>Mikor érdemes szeletelőt használni?
 A szeletelő kitűnően alkalmas a következő célokra:
@@ -40,14 +44,11 @@ A Power BI-szeletelők nem támogatják a következőket:
 - Beviteli mezők
 - Lehatolás
 
+## <a name="create-a-slicer"></a>Szeletelő létrehozása
 
-## <a name="create-slicers"></a>Szeletelők létrehozása
+Ez a szeletelő a körzeti vezető alapján szűri az adatokat. Ha követni szeretné a folyamatot, töltse le a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Új szeletelő létrehozása az adatok körzeti vezető szerinti szűréséhez**
-
-1. Töltse le a [Kiskereskedelmi elemzési minta PBIX-fájlját](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. A Power BI Desktop menüsávban válassza a **Fájl** > **Megnyitás** elemet.
+1. Nyissa meg a Power BI Desktopot, majd válassza a menüsáv **Fájl** > **Megnyitás** elemét.
    
 1. Keresse meg a **Retail Analysis sample PBIX.pbix** fájlt, majd válassza a **Megnyitás** lehetőséget.
 
@@ -73,36 +74,6 @@ A Power BI-szeletelők nem támogatják a következőket:
 
    >[!TIP]
    >Alapértelmezés szerint a szeletelő listaelemei növekvő sorrendbe vannak rendezve. A rendezés csökkenő irányba való módosításához válassza a szeletelő jobb felső sarkában levő három pontot ( **...** ), majd a **Rendezés csökkenő sorrendben** lehetőséget.
-
-**Új szeletelő létrehozása az adatok dátumtartomány szerinti szűréséhez**
-
-1. Válassza ki a jelentés **Áttekintés** lapját. Ha semmi sincs kiválasztva a jelentés vászonján, a **Mezők** panelen válassza a **Tárolás** >  **OpenDate** lehetőséget.
-
-    Ez a művelet kitölti a **Vizualizációk** panel **Értékek** mezőjét egy új vizualizáció létrehozásához.
-
-1. Az új vizualizáció szeletelővé való átalakításához a jelentésben kiválasztott új vizualizációval válassza a **Vizualizációk** panelen a **Szeletelő** ikont. Ez az **OpenDate** szeletelő egy csúszkavezérlő, amely fel van töltve a dátumtartománnyal.
-    
-    ![OpenDate-vizualizáció létrehozása](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. A szeletelő számára a szeletelő és a vásznon levő egyéb elemek átméretezésével, illetve elmozdításával biztosíthat helyet. Bár a szeletelő méretének módosításával a csúszka is átméreteződik, ha a szeletelőt túl kicsire méretezi, akkor a csúszka eltűnik, és a dátumokat a rendszer levágja. 
-
-1. A csúszkával különféle dátumtartományokat jelölhet ki, illetve egy dátummezőt kiválasztva dátumot is megadhat vagy felugró naptárt is használhat a pontosabb kijelöléshez. Figyelje meg a hatást a lapon lévő többi vizualizáción.
-    
-    >[!NOTE]
-    >A numerikus és a dátum/idő adattípusok alapértelmezés szerint tartomány típusú csúszka szeletelőt eredményeznek. A Power BI 2018. februári frissítésétől kezdődően az egész szám adattípusú tartománycsúszkák már egész számértékekhez igazodnak, a tizedesjegyek megjelenítése helyett. 
-
-1. A szeletelő típusának módosításához a szeletelő kijelölt állapota mellett mutasson az egérmutatóval a szeletelő jobb felső részére, válassza ki a lefelé mutató nyíl ikont, majd válasszon egy lehetőséget, például a **Lista** vagy az **Előtt** elemet. Figyelje meg a szeletelő megjelenésének és a választási lehetőségeknek a módosulását. 
- 
-    ![Új tartomány a szeletelőhöz](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-A dátum és numerikus típusú szeletelők létrehozásáról és használatáról a következő videóból vagy [A numerikustartomány-szeletelő használata a Power BI Desktopban](../desktop-slicer-numeric-range.md) című cikkből tájékozódhat bővebben.
-   > [!NOTE]
-   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>A lap szeletelők által érintett vizualizációinak kijelölése
 Alapértelmezés szerint a jelentésoldalakon levő szeletelők az adott oldalon levő összes többi vizualizációra, valamint egymásra is hatással vannak. Az imént létrehozott lista és dátum típusú szeletelők értékeinek kiválasztása közben figyelje meg a többi vizualizációra gyakorolt hatásokat. A szűrt adatok a mindkét szeletelőben kijelölt értékek metszetét képezik. 
@@ -208,7 +179,7 @@ A vízszintes tájolásokról és a rugalmas elrendezésekről az [Átméretezhe
 
 ### <a name="title-options"></a>Cím beállításai
 A **Cím** alapértelmezés szerint **Be** van kapcsolva. Ez a kijelölés a szeletelő tetején található adatmező nevét jeleníti meg. 
-- Ebben az oktatóanyagban a következőképpen formázza a cím szövegét: 
+- Ebben a cikkben a következőképpen formázza a cím szövegét: 
    - **Betűszín**: piros
    - **Szövegméret**: **14 pt**
    - **Igazítás**: **Középre**
@@ -216,7 +187,7 @@ A **Cím** alapértelmezés szerint **Be** van kapcsolva. Ez a kijelölés a sze
 
 
 ### <a name="items-options-list-slicers-only"></a>Elemek beállításai (csak lista típusú szeletelők esetén)
-1. Ebben az oktatóanyagban a következőképpen formázza az **Elemek** beállításait:
+1. Ebben a cikkben a következőképpen formázza az **Elemek** lehetőséget:
     - **Betűszín**: fekete
     - **Háttér**: világospiros
     - **Szövegméret**: **10 pt**

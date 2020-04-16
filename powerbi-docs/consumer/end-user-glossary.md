@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377236"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267227"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -36,8 +36,7 @@ A *Premium*(más néven *Premium-kapacitás*) szervezeti fiók számos további 
 
 **annotate (jegyzetkészítés)** A csempék, jelentések és vizualizációk pillanatképeinek sorokat, szövegeket vagy bélyegeket tartalmazó jegyzetekkel való ellátása az iOS- és Android-eszközökre készült Power BI-mobilalkalmazásokban.
 
-**app, apps (alkalmazás, alkalmazások)** 
-
+**app, apps (alkalmazás, alkalmazások)** Irányítópultokból, jelentésekből és adathalmazokból álló csomagok. Jelentheti a tartalom felhasználásához használt olyan mobilalkalmazásokat is, mint az iOS-hez készült Power BI alkalmazás.
 
 **AppSource** Központosított online adattár, ahol letölthető irányítópultokat, jelentéseket, adathalmazokat és alkalmazásokat tallózhat és fedezhet fel.
 
@@ -203,7 +202,7 @@ A kifejezés első előfordulásakor navigációs ablaktábla, utána vagy helys
 
 **OneDrive for Business (OneDrive Vállalati verzió)** vagy **OneDrive** A OneDrive egy személyes fiók, míg a OneDrive Vállalati verzió munkahelyi fiókokhoz való.  
 
-**On-premises (Helyszíni)** A helyi számítástechnikát (amelyben a számítási erőforrások az ügyfél saját létesítményeiben találhatók) a felhőalapú számítástechnikától megkülönböztető kifejezés.
+**On-premises (helyszíni)** A helyi számítástechnikát (amelyben a számítási erőforrások az ügyfél saját létesítményeiben találhatók) a felhőalapú számítástechnikától megkülönböztető kifejezés.
 
 
 ## <a name="p"></a>P

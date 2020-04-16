@@ -1,28 +1,41 @@
 ---
-title: A numerikustartomány-szeletelő használata a Power BI Desktopban
-description: Megismerheti, hogyan használhatja a szeletelőt a numerikus tartományokra való korlátozásra a Power BI Desktopban
+title: A numerikustartomány-szeletelő használata a Power BI-ban
+description: Útmutató numerikus tartományokra szűkítő szeletelő használatához a Power BI-ban.
 author: davidiseminger
 ms.reviewer: ''
+featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 04/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0fcc666febb4444b5ee83a1646e1e0c3ef9c6d82
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539302"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006641"
 ---
-# <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>A numerikustartomány-szeletelő használata a Power BI Desktopban
+# <a name="use-the-numeric-range-slicer-in-power-bi"></a>A numerikustartomány-szeletelő használata a Power BI-ban
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 A numerikustartomány-szeletelővel számos különféle szűrőt alkalmazhat az adatmodellek bármely numerikus oszlopára. Numerikus adatok háromféleképpen szűrhetők: két szám közötti, egy számnál kisebb vagy egyenlő vagy egy számnál nagyobb vagy egyenlő értékekre szűrhet. Ezzel az egyszerű technikával hatékonyan szűrheti az adatokat.
 
 ![Vizualizáció numerikustartomány-szeletelővel](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="use-the-numeric-range-slicer"></a>Numerikustartomány-szeletelő használata
+## <a name="video"></a>Videó
+
+Ebben a videóban Will lépésenként bemutatja a numerikustartomány-szeletelők létrehozását.
+
+> [!NOTE]
+> Ez a videó a Power BI Desktop egy régebbi verzióját használja.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
+
+
+## <a name="add-a-numeric-range-slicer"></a>Numerikustartomány-szeletelő hozzáadása
 
 A numerikustartomány-szeletelőt bármely más szeletelőhöz hasonlóan használhatja. Csak hozzon létre egy **Szeletelő** vizualizációt a jelentéshez, majd válasszon ki egy numerikus értéket a **Mező** értékeként. A következő képen a **LineTotal** (Sor összege) mezőt jelöltük ki.
 

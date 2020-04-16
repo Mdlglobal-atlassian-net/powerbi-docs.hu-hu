@@ -1,22 +1,24 @@
 ---
-title: Relatív dátumszeletelő vagy -szűrő használata a Power BI Desktopban
-description: Ismerje meg, hogyan használhat szeletelőket és szűrőket a relatív dátumtartományok korlátozására a Power BI Desktopban.
+title: Relatívdátum-szeletelő vagy -szűrő használata a Power BI-ban
+description: Útmutató a relatív dátumtartományok szeletelővel vagy szűrővel végzett korlátozásához a Power BI-ban.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9d7173225cc52df5d7221b32a6fad81617afa422
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876808"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006787"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Relatív dátumszeletelő és -szűrő használata a Power BI Desktopban
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Relatívdátum-szeletelő és -szűrő használata a Power BI-ban
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 A **relatív dátumszeletelővel** vagy **relatív dátumszűrővel** időalapú szűrőket alkalmazhat az adatmodellek bármely dátumoszlopára. A **relatív dátumszeletelővel** például a megjelenítést az utóbbi 30 napban (vagy hónapban, naptári hónapban stb.) történt értékesítési eseményekre korlátozhatja. Az adatok frissítésekor a relatív időszak automatikusan alkalmazza a vonatkozó relatív dátumkorlátokat.
 
@@ -98,7 +100,7 @@ A **relatív dátumtartomány-szeletelők** és -szűrők használatára jelenle
 
 * A **Power BI** adatmodelljei nem tartalmaznak időzóna-információkat. A modellek tudják tárolni az időadatokat, de nem jelölik az időzónákat.
 
-* A szeletelők és a szűrők minden esetben az UTC-időn alapulnak. Így ha beállít egy szűrőt egy jelentésben, majd elküldi azt egy másik időzónában tartózkodó munkatársának, mindketten ugyanazokat az adatokat fogják látni. Hacsak nem az UTC időzónában vannak, Önnek és a munkatársának figyelembe kell vennie az időeltolódást.
+* A szeletelők és a szűrők minden esetben az UTC-időn alapulnak. Így ha beállít egy szűrőt egy jelentésben, majd elküldi azt egy másik időzónában tartózkodó munkatársának, mindketten ugyanazokat az adatokat fogják látni. Hacsak nem a UTC időzónában vannak, Önnek és a munkatársának figyelembe kell vennie az időeltolódást.
 
 * A helyi időzónában rögzített adatok a **Lekérdezésszerkesztővel** alakíthatók át UTC-idővé.
 

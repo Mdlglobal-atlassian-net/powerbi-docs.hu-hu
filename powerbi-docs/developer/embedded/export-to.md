@@ -7,36 +7,36 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273294"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267503"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI-jelentés exportálása fájlba (előzetes verzió)
 
 Az `exportToFile` API lehetővé tesz a Power BI-jelentések exportálását REST-hívással. A támogatott fájlformátumok a következők:
-* **PPTX** (PowerPoint)
-* **PDF**
-* **PNG**
-    * PNG-be való exportáláskor a többoldalas jelentések egy ZIP-fájlba lesznek tömörítve
-    * A tömörített fájlban minden PNG-fájl egy jelentésoldalnak felel meg
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.png**
+    * .png-be való exportáláskor a többoldalas jelentések egy .zip-fájlba lesznek tömörítve
+    * A tömörített fájlban minden fájl egy jelentésoldalnak felel meg
     * Az oldalnevek a [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) vagy a [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) API visszatérési értékeivel egyeznek meg
 
 ## <a name="usage-examples"></a>Használati példák
 
 Az exportálási funkció többféleképpen is felhasználható. Bemutatunk néhány példát:
 
-* **Küldés nyomtatóra gomb** – Létrehozhat egy gombot az alkalmazásban, amely kattintásra elindít egy exportálási feladatot. A feladat PDF vagy PPTX formátumban exportálhatja a megtekintett jelentést, és amikor az elkészül, a felhasználó letöltheti a fájlt. Könyvjelzők használatával egy meghatározott állapotban exportálhatja a jelentést, a konfigurált szűrőkkel, szeletelőkkel és más beállításokkal. Mivel az API aszinkron, a fájlok esetleg csak valamivel később lesznek elérhetők.
+* **Küldés nyomtatóra gomb** – Létrehozhat egy gombot az alkalmazásban, amely kattintásra elindít egy exportálási feladatot. A feladat .pdf vagy .pptx formátumban exportálhatja a megtekintett jelentést, és amikor az elkészül, a felhasználó letöltheti a fájlt. Könyvjelzők használatával egy meghatározott állapotban exportálhatja a jelentést, a konfigurált szűrőkkel, szeletelőkkel és más beállításokkal. Mivel az API aszinkron, a fájlok esetleg csak valamivel később lesznek elérhetők.
 
-* **E-mail-melléklet** – Automatikusan e-mailt küldhet a beállított időközökkel, egy ahhoz mellékelt PDF-jelentéssel. Ez a megoldás hasznos például akkor, ha automatizálni szeretné a vezetőknek küldött heti jelentést.
+* **E-mail-melléklet** – Automatikusan e-mailt küldhet a beállított időközökkel, egy ahhoz mellékelt .pdf-jelentéssel. Ez a megoldás hasznos például akkor, ha automatizálni szeretné a vezetőknek küldött heti jelentést.
 
 ## <a name="using-the-api"></a>Az API használata
 
 Az API használatba vétele előtt ellenőrizze, hogy engedélyezve vannak az alábbi [rendszergazdai bérlő-beállítások](../../service-admin-portal.md#tenant-settings):
 * **Jelentések exportálása PowerPoint-bemutatóként vagy PDF-dokumentumként** – Alapértelmezés szerint engedélyezett.
-* **Jelentések exportálása képfájlokként** – Csak a PNG formátumhoz szükséges, és alapértelmezés szerint le van tiltva.
+* **Jelentések exportálása képfájlokként** – Csak a *.png* formátumhoz szükséges, és alapértelmezés szerint le van tiltva.
 
 Az API aszinkron. Az [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API a meghívásakor egy exportálási feladatot indít el. Az exportálási feladat elindítása után [ciklikus lekérdezéssel](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) követi nyomon a feladatot annak befejezéséig.
 
@@ -73,9 +73,9 @@ Az RLS használatával végzett exportálsához rendelkeznie kell az alábbi eng
 
 ### <a name="data-protection"></a>Adatvédelem
 
-A PDF és a PPTX formátum támogatja a [bizalmassági címkék](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) használatát. Ha bizalmassági címkével ellátott jelentést exportál PDF vagy PPTX formátumba, az exportált fájl a bizalmassági címkével jeleníti meg a jelentést.
+A .pdf és a .pptx formátum támogatja a [bizalmassági címkék](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) használatát. Ha bizalmassági címkével ellátott jelentést exportál .pdf vagy .pptx formátumba, az exportált fájl a bizalmassági címkével jeleníti meg a jelentést.
 
-A bizalmassági címkével rendelkező jelentések nem exportálhatók PDF- vagy PPTX-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
+A bizalmassági címkével rendelkező jelentések nem exportálhatók .pdf- vagy .pptx-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
 
 ### <a name="localization"></a>Honosítás
 
@@ -102,8 +102,8 @@ Az egyidejű kérések számát meghaladó feladatok sem lesznek megszakítva. H
 * Az exportálni kívánt jelentés adathalmazának Premium vagy Embedded kapacitásban kell lennie.
 * Nyilvános előzetes verzió esetében az óránként exportált Power BI-jelentésoldalak száma kapacitásonként 50-re van korlátozva.
 * Az exportált jelentések fájlmérete nem haladhatja meg a 250 MB-ot.
-* PNG-be exportálás esetén a bizalmassági címkék nem támogatottak.
-* A bizalmassági címkével rendelkező jelentések nem exportálhatók PDF- vagy PPTX-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
+* .png-be exportálás esetén a bizalmassági címkék nem támogatottak.
+* A bizalmassági címkével rendelkező jelentések nem exportálhatók .pdf- vagy .pptx-fájlba [egyszerű szolgáltatásnév](embed-service-principal.md) használatával.
 * Az egy exportált jelentésbe foglalható oldalak száma legfeljebb 30. Ha a jelentés több oldalból áll, az API hibát jelez, és az exportálási feladat megszakad.
 * A [személyes könyvjelzők](../../consumer/end-user-bookmarks.md#personal-bookmarks) és az [állandó szűrők](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) nem támogatottak.
 * Az alábbiakban felsorolt Power BI-vizualizációk nem támogatottak. Ilyen vizualizációt tartalmazó jelentés exportálásakor a jelentésnek az ezen vizualizációkat tartalmazó része helyett hibajelzés lesz megjelenítve.
@@ -263,6 +263,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## <a name="next-steps"></a>Következő lépések
 
 Tekintse át, hogyan ágyazhat be tartalmat ügyfelei és vállalata számára:
+
+> [!div class="nextstepaction"]
+>[Többoldalas jelentés fájlba exportálása](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Beágyazás az ügyfelek számára](embed-sample-for-customers.md)

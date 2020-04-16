@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: be8716cebb091dafcc927b4bd1ecd0942ad88b47
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cd2086facbeb581a4418a3358a79cca0e80140ff
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79208057"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267342"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Adathalmaz-módok a Power BI szolgáltatásban
 
@@ -77,18 +77,9 @@ A DirectQuery módú modellek használata számos előnnyel jár:
 - Valós idejű jelentések készíthetők az [Automatikus oldalfrissítés](desktop-automatic-page-refresh.md) funkcióval
 - A DirectQuery módú modelleken alapuló irányítópult-csempék akár 15 percenként is frissülhetnek automatikusan
 
-A DirectQuery-modellek használata azonban hátrányokkal és korlátozásokkal is jár:
+A DirectQuery-modellek használata azonban néhány korlátozással is jár:
 
-- A modell csak egyetlen támogatott adatforrásra épülhet. Ez az oka annak, hogy az adatintegrációt előre meg kell valósítani az adatforrásban. A támogatott adatforrás relációs és elemzési rendszerek, amelyek számos népszerű adattárat támogatnak.
-
-    > [!TIP]
-    > Számos Microsoft-adatforrás is támogatott. Microsoft-adatforrás többek között az SQL Server, az Azure Data Bricks, az Azure HDInsight Spark (bétaverzió), az Azure SQL Database és az Azure SQL Data Warehouse. További információ: [A DirectQuery által támogatott adatforrások a Power BI-ban](desktop-directquery-data-sources.md).
-
-- A működés lassú lehet, ani negatívan befolyásolhatja a Power BI szolgáltatást. Ez a probléma azért merülhet fel, mert egyes lekérdezések CPU-igényesek a Power BI szolgáltatás számára. Ezt az is okozhatja, hogy az adatforrás nincs a Power BI által küldött lekérdezésekre optimalizálva.
-- A Power Query-lekérdezéseknek átadhatóknak kell lenniük. Ez a követelmény azt jelenti, hogy a Power Query logikája nem lehet túlságosan összetett. A logikának továbbá olyan M-kifejezések és -függvények használatára kell korlátozódnia, amelyek az adatforrás által érthető natív lekérdezésekre transzponálhatók.
-- A DAX-kifejezések csak az adatforrás által érthető natív lekérdezésekre transzponálható függvényeket használhatnak. A számított táblák és a DAX időintelligencia-függvények sem támogatottak.
-- A modell egymilliónál több sor lekérését igénylő lekérdezései sikertelenek lesznek
-- A több vizualizációt tartalmazó jelentések és irányítópultok következetlen eredményeket jeleníthetnek meg, különösen akkor, ha az adatforrás gyorsan változik
+- A DAX-kifejezések csak az adatforrás által érthető natív lekérdezésekre transzponálható függvényeket használhatnak. A számított táblák nem támogatottak.
 - A Q&A és a gyors elemzések funkció nem támogatott
 
 A Power BI szolgáltatás erőforrásainak szempontjából a DirectQuery módú modellek a következőket igénylik:

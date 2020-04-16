@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 0f2d6bae607383eb8934b3f395add540c6754690
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076664"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006710"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 
@@ -98,7 +98,7 @@ Az alábbi táblázat olyan helyzeteket foglal össze, amikor a DirectQueryvel v
 
 | Korlátozás | Leírás |
 | --- | --- |
-| Az adatok gyakran változnak, és közel valós idejű jelentéskészítésre van szükség |Az importált adatokat használó modellek legfeljebb óránként egyszer frissíthetők. Ha az adatok folyamatosan változnak, és fontos, hogy a jelentések a legfrissebb adatokat jelenítsék meg, akkor előfordulhat, hogy az importálás és az ütemezett frissítés használata nem lesz elegendő. Az adatok közvetlenül is streamelhetők a Power BI-ba, bár ebben az esetben adatmennyiségi korlátozásokkal kell számolni. <br/> <br/> Ezzel ellentétben a DirectQuery használata azt jelenti, hogy egy jelentés vagy irányítópult megnyitásakor vagy frissítésekor mindig a forrásban szereplő legfrissebb adatok jelennek meg. Emellett az irányítópult csempéi gyakrabban, akár 15 percenként is frissíthetők. |
+| Az adatok gyakran változnak, és közel valós idejű jelentéskészítésre van szükség |Az importált adatokat tartalmazó modellek óránként legfeljebb egyszer frissíthetők (Power BI Pro vagy Power BI Premium előfizetéssel gyakrabban is). Ha az adatok folyamatosan változnak, és fontos, hogy a jelentések a legfrissebb adatokat jelenítsék meg, akkor előfordulhat, hogy az importálás és az ütemezett frissítés használata nem lesz elegendő. Az adatok közvetlenül is streamelhetők a Power BI-ba, bár ebben az esetben adatmennyiségi korlátozásokkal kell számolni. <br/> <br/> Ezzel ellentétben a DirectQuery használata azt jelenti, hogy egy jelentés vagy irányítópult megnyitásakor vagy frissítésekor mindig a forrásban szereplő legfrissebb adatok jelennek meg. Emellett az irányítópult csempéi gyakrabban, akár 15 percenként is frissíthetők. |
 | Nagy méretű adatok |Nagy adattömeg esetén az összes adat betöltése nem volna megvalósítható. A DirectQueryvel viszont nincs szükség nagy mennyiségű adatátvitelre, mivel a lekérdezés helyben történik. <br/> <br/> Nagy adatmennyiség esetén azonban az is előfordulhat, hogy a mögöttes forrásra irányuló lekérdezések lassúak, amint ezt [A DirectQuery használatának következményei](#implications-of-using-directquery) című szakasz ismerteti. Nem mindig kell az összes részletes adatot importálni. Az adatok az importálás során előre összesíthetők. A *Lekérdezésszerkesztő* egyszerűvé teszi az importálás közbeni előzetes összesítést. Szélsőséges esetben lehetséges lenne minden vizualizációhoz pontosan a szükséges összesített adatokat importálni. Habár nagy mennyiségű adat feldolgozásának a DirectQuery a legegyszerűbb módja, az összesített adatok importálása is megoldás lehet, ha az alapul szolgáló adatforrás túl lassú. |
 | A biztonsági szabályok meghatározása az alapul szolgáló adatforrásban történik |Az adatok importálásakor a Power BI a Power BI Desktopból az aktuális felhasználói hitelesítő adatokkal, a Power BI szolgáltatásból pedig az ütemezett frissítés részeként megadott hitelesítő adatokkal kapcsolódik az adatforráshoz. Ilyen jelentések közzétételekor és megosztásakor ügyelni kell arra, hogy csak olyan felhasználókkal osszuk meg a jelentést, akik jogosultak az adatok megtekintésére, vagy határozzunk meg sorszintű biztonságot az adathalmazban. <br/> <br/> Ideális esetben – mivel a DirectQuery mindig lekérdezi az alapul szolgáló forrást – ezzel a konfigurációval az adott forrás minden biztonsági intézkedése alkalmazható lenne. Azonban jelenleg a Power BI mindig az importáláshoz használt hitelesítő adatok használatával kapcsolódik az alapul szolgáló forráshoz. <br/> <br/> Amíg a Power BI nem teszi lehetővé, hogy a jelentés fogyasztójának identitása továbbítódjon a mögöttes forrás felé, addig a DirectQuery semmilyen előnyt nem nyújt az adatforrások biztonsága szempontjából. |
 | Az adatok szuverenitására korlátozások vonatkoznak |Egyes intézmények az adatok szuverenitására vonatkozó szabályzatokat határoznak meg, ami azt jelenti, hogy az adatok nem hagyhatják el az intézmény területét. Egy importáláson alapuló megoldás bizonyosan problémákat okozna. Ezzel szemben a DirectQuery használatakor az adatok az alapul szolgáló forrásban maradnak. <br/> <br/> A csempék ütemezett frissítéséből adódóan azonban a vizualizáció szintjén gyorsítótárazott bizonyos adatok még a DirectQuery használata esetén is megmaradnak a Power BI szolgáltatásban. |
