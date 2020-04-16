@@ -32,6 +32,9 @@
             - name: Interaktív tanulás
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
+            - name: Learning-katalógus
+              tocHref: /power-bi/learning-catalog/
+              topicHref: /power-bi/learning-catalog/index
             - name: Jelentéskészítő kiszolgáló
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index
