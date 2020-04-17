@@ -108,6 +108,8 @@
               href: gateway-onprem-sizing.md
             - name: A jelentésteljesítmény figyelése
               href: monitor-report-performance.md
+            - name: Jelentésteljesítménnyel kapcsolatos problémák elhárítása
+              href: report-performance-troubleshoot.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
