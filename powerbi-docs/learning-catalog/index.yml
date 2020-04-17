@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Power BI képzési katalógus
-summary: Itt megtalálhatja a Power BI-jal kapcsolatos összes képzési lehetőséget
+summary: Itt megtalálhatja a Power BI-jal kapcsolatos képzési lehetőségeket
 metadata:
   title: Power BI képzési katalógus
   description: Itt megtalálhatja a Power BI-jal kapcsolatos összes képzési lehetőséget, amelyeket szervezeti szerepköreihez használhat.
@@ -9,12 +9,12 @@ metadata:
   author: loreleishannonmsft
   ms.author: v-lshann
   ms.date: 04/08/2020
-  ms.openlocfilehash: aff1866616a10e5df124619261d8398bda5c51a3
-  ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+  ms.openlocfilehash: 9f03f812eb20454f655a876438312ba50b521a29
+  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 04/13/2020
-  ms.locfileid: "81269041"
+  ms.lasthandoff: 04/16/2020
+  ms.locfileid: "81439296"
 landingContent:
 - title: Üzleti döntéshozók
   linkLists:

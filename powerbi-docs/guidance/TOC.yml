@@ -64,6 +64,8 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Power BI-jelentések
           items:
+            - name: Jelentések elkülönítése a modellektől
+              href: report-separate-from-model.md
             - name: Vizualizációk kibővítése a jelentésoldalak elemleírásával
               href: report-page-tooltips.md
             - name: Jelentésoldal részletezésének használata

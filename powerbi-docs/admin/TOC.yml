@@ -16,14 +16,24 @@
       items:
         - name: Felügyeleti szerepkör a Microsoft 365-ben
           href: ../service-admin-role.md
+        - name: Szervezeti licencelés
+          href: ../service-admin-licensing-organization.md
+        - name: Power BI az USA kormányzati szervei számára
+          items:
+            - name: Power BI az USA kormányzati szervei számára
+              href: ../service-govus-overview.md
+            - name: USA kormányzati szerv regisztrálása
+              href: ../service-govus-signup.md
+        - name: Power BI a regionális felhőkben
+          items:
+            - name: Migrate to Go helyi német régiók
+              href: service-admin-migrate-data-germany.md
+            - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
+              href: ../service-govde-faq.md
         - name: Gyakori kérdések (GYIK)
           href: ../service-admin-faq.md
         - name: Magas rendelkezésre állás és feladatátvétel – GYIK
           href: ../service-admin-failover.md
-        - name: Migrate to Go helyi német régiók
-          href: service-admin-migrate-data-germany.md
-        - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
-          href: ../service-govde-faq.md
         - name: Power BI Premium
           items:
             - name: Prémium szintű kapacitások kezelése
@@ -38,14 +48,14 @@
       items:
         - name: Licencelés és regisztráció
           items:
-            - name: Szervezeti licencelés
-              href: ../service-admin-licensing-organization.md
+            - name: Power BI beszerzése szervezeteknek
+              href: service-admin-org-subscription.md
             - name: A Power BI Pro megvásárlása
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Power BI az USA kormányzati szervei számára
-              href: ../service-govus-overview.md
-            - name: USA kormányzati szerv regisztrálása
-              href: ../service-govus-signup.md
+            - name: Az önkiszolgáló regisztráció letiltása
+              href: service-admin-disable-self-service.md
+            - name: Felhasználói licencek megtekintése és kezelése
+              href: service-admin-manage-licenses.md
             - name: Regisztráció egy Microsoft 365-próbaverzióval
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Power BI hozzáadása Microsoft 365 partnerrel
