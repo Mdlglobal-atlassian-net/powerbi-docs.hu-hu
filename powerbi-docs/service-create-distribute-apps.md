@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80147377"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006337"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -43,25 +43,26 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
 
 1. A munkaterület listanézetében határozhatja meg, mely irányítópultokat és jelentéseket szeretné **felvenni az alkalmazásba**.
 
-     ![A közzétenni kívánt irányítópult kiválasztása](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+    ![A közzétenni kívánt irányítópult kiválasztása](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-     Ha úgy dönt, hogy nem épít be egy irányítópulthoz tartozó jelentést, akkor a jelentés mellett figyelmeztetés jelenik meg. Az alkalmazást így is közzéteheti, de az érintett irányítópulton nem fognak megjelenni az ebből a jelentésből származó csempék.
+    Ha úgy dönt, hogy nem épít be egy irányítópulthoz tartozó jelentést, akkor a jelentés mellett figyelmeztetés jelenik meg. Az alkalmazást így is közzéteheti, de az érintett irányítópulton nem fognak megjelenni az ebből a jelentésből származó csempék.
 
-     ![Figyelmeztetés kapcsolódó irányítópultról](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
+    ![Figyelmeztetés kapcsolódó irányítópultról](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
 2. A munkaterületről a jobb felső **Alkalmazás közzététele** gombbal indíthatja el az alkalmazás létrehozásának és közzétételének folyamatát.
    
-     ![Alkalmazás közzététele](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+    ![Alkalmazás közzététele](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. A **Beállításnál** töltse ki a nevet és a leírást, hogy mások könnyebben megtalálják az alkalmazást. A személyre szabásához beállíthat egy témaszínt. Felvehet egy támogatási webhelyre mutató hivatkozást is.
    
-     ![Az alkalmazás létrehozása](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
+    ![Az alkalmazás létrehozása](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
 4. A **Navigáció** panelen jelölheti ki az alkalmazás részeként közzétenni kívánt tartalmat. Ez után adhat hozzá alkalmazásnavigációt, hogy szakaszokba szervezze a tartalmat. A részletes ismertetést ennek a cikknek [Az alkalmazás navigációs felületének megtervezése](#design-the-navigation-experience) című szakasza nyújt.
    
-     ![Alkalmazásnavigáció](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    ![Alkalmazásnavigáció](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. A **Jogosultságok** panelen adhatja meg, hogy ki férhet hozzá az alkalmazáshoz, és mit tehet vele. 
+
     - [Klasszikus munkaterületeken](service-create-workspaces.md): a vállalatnál mindenki, megadott személyek vagy Azure Active Directory (AAD) biztonsági csoportok.
     - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, AAD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
     - Az Összeállítási engedély megadásával engedélyezheti az alkalmazás felhasználóinak, hogy az alkalmazás mögöttes adathalmazaihoz csatlakozzanak. Így ők látni fogják ezeket az adathalmazokat, amikor megosztott adathalmazokat keresnek. Ebben a cikkben több információt is talál [az alkalmazás adathalmazaihoz való kapcsolódás engedélyezéséről felhasználók számára](#allow-users-to-connect-to-datasets).
@@ -73,11 +74,11 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
 
 6. Az alkalmazást automatikusan telepítheti a címzettek számára, ha Power BI-rendszergazdája engedélyezte Önnek ezt a beállítást a Power BI Felügyeleti portálon. Az [Alkalmazás automatikus telepítéséről](#automatically-install-apps-for-end-users) bővebben is szó lesz ebben a cikkben.
 
-     ![Alkalmazásengedélyek](media/service-create-distribute-apps/power-bi-apps-permissions.png)
+    ![Alkalmazásengedélyek](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
 7. Amikor az **Alkalmazás közzététele** lehetőséget választja, a rendszer egy üzenetben kéri, hogy erősítse meg, tényleg készen áll-e a közzétételre. Az **Alkalmazás megosztása** párbeszédpanelről kimásolhatja a közvetlenül az alkalmazásra mutató URL-hivatkozást.
    
-     ![Alkalmazás befejezése](media/service-create-distribute-apps/power-bi-apps-success.png)
+    ![Alkalmazás befejezése](media/service-create-distribute-apps/power-bi-apps-success.png)
 
 Azoknak, akikkel az alkalmazást megosztotta, elküldheti ezt a közvetlen hivatkozást, de megtalálhatják alkalmazását a **További alkalmazások felfedezése és letöltése az AppSource-ból** helyen az Alkalmazások lapon. További információk az [üzleti felhasználóknak elérhető alkalmazásélményről](consumer/end-user-apps.md).
 
@@ -86,11 +87,11 @@ Előfordulhat, hogy módosítani vagy frissíteni szeretné az alkalmazást a k�
 
 1. Nyissa meg az alkalmazáshoz tartozó munkaterületet. 
    
-     ![Munkaterület megnyitása](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    ![Munkaterület megnyitása](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Bármilyen módosítást végrehajthat az irányítópultokon és a jelentéseken.
  
-     A munkaterület a tervezési terület, tehát a módosításokat a rendszer nem küldi le élőben az alkalmazásba, amíg közzé nem teszi azokat. Ez lehetővé anélkül teszi lehetővé a módosításokat, hogy azok a közzétett alkalmazásokat érintenék.  
+    A munkaterület a tervezési terület, tehát a módosításokat a rendszer nem küldi le élőben az alkalmazásba, amíg közzé nem teszi azokat. Ez lehetővé anélkül teszi lehetővé a módosításokat, hogy azok a közzétett alkalmazásokat érintenék.  
  
     > [!IMPORTANT]
     > Ha eltávolít egy jelentést, majd frissíti az alkalmazást, az alkalmazás fogyasztói akkor is elvesztik az összes személyre szabást, például a könyvjelzőket és megjegyzéseket, ha a jelentést újra hozzáadja.  
@@ -111,6 +112,7 @@ Az **Új navigáció készítése** bekapcsolásával egyéni navigációt terve
 ![Alkalmazásnavigáció](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 Az alkalmazásbeli navigációt a következőkkel is testre szabhatja:
+
 * Az elemek átrendezése a fel / le nyilak használatával. 
 * A **Jelentés adatai**, az **Irányítópult adatai** és a **Munkafüzet adatai** elemeinek átnevezése.
 * Egyes elemek elrejtése a navigációban.
@@ -121,16 +123,20 @@ Az alkalmazásbeli navigációt a következőkkel is testre szabhatja:
 
 ### <a name="considerations-for-using-the-new-navigation-builder-option"></a>Az új navigáció készítésekor megfontolandó szempontok
 Az alábbiakat általában érdemes szem előtt tartani az új navigáció készítése lehetőség használatakor:
-* A jelentésoldalak kibontható szakaszként jelennek meg az alkalmazás navigációs területén.
+
+* A jelentésoldalak kibontható szakaszként jelennek meg az alkalmazás navigációs területén. Ha egy jelentésnek csak egy látható oldala van, csak a jelentés neve jelenik meg. A jelentés nevére kattintva megnyílik a jelentés első oldala. 
+
+    > [!NOTE]
+    > Lehetséges, hogy csak azért van egy látható oldala a jelentésnek, mert a többi oldal elérését gombokkal vagy részletezési műveletekkel állította be.
+
 * Ha kikapcsolja az új navigáció készítőt, majd közzéteszi vagy frissíti az alkalmazást, az elvégzett testreszabások elvesznek. Elvesznek például a szakaszok, a rendezés, a hivatkozások és a navigációs elemek egyéni nevei.
+* Az alkalmazáskészítő használata nem kötelező.
 
 Amikor hivatkozásokat ad az alkalmazásnavigációhoz és a Tartalomterület lehetőséget választja:
 * Ellenőrizze, hogy a hivatkozás beágyazható-e. Bizonyos szolgáltatások blokkolják a tartalmuk beágyazását olyan külső webhelyeken, amilyen a Power BI.
 * Olyan Power BI-szolgáltatástartalmak, mint a jelentések és irányítópultok más munkaterületeken való beágyazása nem támogatott. 
 * Power BI jelentéskészítő kiszolgáló-tartalmat annak natív beágyazási URL-tartalmával ágyazhat be annak helyszíni üzemelő példányából. Az URL beszerzéséhez hajtsa végre a [Power BI jelentéskészítő kiszolgálóval készült jelentés URL-címének létrehozása](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) című szakaszban leírt lépéseket. Tartsa szem előtt, hogy a szokásos hitelesítési szabályok érvényesek, így a tartalom megtekintéséhez a helyszíni kiszolgálóval való VPN-kapcsolat szükséges. 
 * A beágyazott tartalom felső részén figyelmeztetés jelenik meg arról, hogy a tartalom nem Power BI-beli.
-
-
 
 ## <a name="automatically-install-apps-for-end-users"></a>Alkalmazások automatikus telepítése a végfelhasználók számára
 Ha egy rendszergazda erre jogosultságot ad Önnek, automatikusan telepíthet alkalmazásokat úgy, hogy *leküldi* azokat a végfelhasználóknak. Ezzel a leküldési funkcióval egyszerűbben terjeszthető a megfelelő alkalmazás a megfelelő személyek vagy csoportok körében. Alkalmazása automatikusan megjelenik a végfelhasználók Alkalmazások tartalomlistájában. Nekik nem kell a Microsoft AppSource-on megkeresniük, vagy telepítési hivatkozást követniük. A Power BI Felügyeleti portál cikkéből megtudhatja, hogyan engedélyezhetik a rendszergazdák az [alkalmazások végfelhasználókhoz való leküldését](service-admin-portal.md#push-apps-to-end-users).
@@ -181,22 +187,28 @@ Egy munkaterület bármely tagja visszavonhatja az alkalmazás közzétételét.
 
 * A munkaterületen válassza a jobb felső sarokban a három pontot ( **...** ), majd az **Alkalmazás közzétételének visszavonása** lehetőséget.
   
-     ![App közzétételének visszavonása](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+    ![App közzétételének visszavonása](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 Ez a művelet törli az alkalmazás telepítését mindenkitől, akivel megosztotta, és ezután nem fognak hozzáférni. Ezzel nem törli a munkaterületet vagy annak tartalmát.
 
 ## <a name="view-your-published-app"></a>A közzétett alkalmazás megtekintése
 
-Amikor az alkalmazás felhasználói megnyitják az alkalmazást, a Power BI szokásos navigációs panelje helyett az Ön által létrehozott navigációs felület jelenik meg. Az alkalmazásnavigáció az Ön által megadott szakaszokban sorolja fel a jelentéseket és az irányítópultokat. Nem csak a jelentés neve jelenik meg, a jelentések egyes oldalait is külön listázza ki.
+Amikor az alkalmazás felhasználói megnyitják az alkalmazást, a Power BI szokásos navigációs panelje helyett az Ön által létrehozott navigációs felület jelenik meg. Az alkalmazásnavigáció az Ön által megadott szakaszokban sorolja fel a jelentéseket és az irányítópultokat. Nem csak a jelentés neve jelenik meg, a jelentések egyes oldalait is külön listázza ki. A bal oldali navigációs területet a menüsáv nyilaival bonthatja ki és csukhatja össze.
 
 ![Alkalmazás navigációval](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+Teljes képernyős módban megjelenítheti vagy elrejtheti a navigációs területet a sarokban található lehetőség kiválasztásával.
+
+![Teljes képernyős navigálás](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 Alkalmazás közzétételekor a következőket kell szem előtt tartani:
 
+* Az engedélyek lapja nem módosítja a más munkaterületeken lévő adatkészletek engedélyeit. Megjelenik azonban egy figyelmeztetés, amely emlékezteti, hogy adjon független hozzáférést ezekhez az adatkészletekhez. Az ajánlott eljárás az, hogy az alkalmazásfejlesztés megkezdése előtt felveszi a kapcsolatot az adatkészlet tulajdonosával, hogy meggyőződjön arról, hogy minden felhasználónak adhat hozzáférést az adatkészletekhez. 
 * Az alkalmazás hozzáférési listájában legfeljebb 100 felhasználó vagy csoport szerepelhet. Az alkalmazáshoz azonban 100-nál több felhasználónak is adhat hozzáférést. Ehhez használjon egy vagy több csoportot, amelyek ezeket a felhasználókat tartalmazzák.
 * Az új munkaterület esetében azok az alkalmazás hozzáférési listájára felvett felhasználók, akik a munkaterületen keresztül már rendelkeznek hozzáféréssel, nem jelennek meg az alkalmazás hozzáférési listájában.  
-
+* A Power BI szolgáltatás új kinézetének használatakor a támogatási webhely URL-címe az elem információs kártyáján jelenik meg. További információ [a Power BI új kinézetéről](service-new-look.md).
+* Az alkalmazások lehetővé tehetik a felhasználóknak, hogy a megosztási engedély használatával megosszák az alkalmazást és annak mögöttes adathalmazait. Új alkalmazások esetén ez a beállítás alapértelmezés szerint ki van kapcsolva. Azt javasoljuk, hogy ezt a beállítást kapcsolja ki a meglévő alkalmazásaihoz, az engedélyt pedig frissítse a mögöttes adatkészletekhez. A beállítás engedélyezve van a meglévő alkalmazásokhoz, mert ezek eredetileg tartalomcsomagokat voltak hivatottak helyettesíteni, amelyek rendelkeztek ezzel a viselkedéssel.
 
 ## <a name="next-steps"></a>Következő lépések
 * [Munkaterület létrehozása](service-create-workspaces.md)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979914"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267480"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Számítási feladatok konfigurálása egy Premium-kapacitásban
 
@@ -24,23 +24,13 @@ Ez a cikk azt ismerteti, hogy hogyan engedélyezhet és konfigurálhat számít�
 
 A lekérdezési számítási feladatok a Premium-kapacitás SKU-ja által meghatározott erőforrásokhoz vannak optimalizálva, valamint ez szabja meg azok korlátait. A Premium-kapacitások emellett kapacitás-erőforrások használatára képes, további számítási feladatokat is támogatnak. A számítási feladatok alapértelmezett memóriaértékei az SKU-ban elérhető kapacitás-csomópontokon alapulnak. A maximum memóriabeállítások nem halmozottak. A megadott maximum értékig terjedő memória mesterséges intelligenciához és adatfolyamokhoz dinamikusan, lapszámozott jelentésekhez viszont statikusan van lefoglalva.
 
-### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office SKU-k szoftverszolgáltatásokhoz (SaaS)
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Mesterséges intelligencia | Alapértelmezés szerint 40%; minimum 40% | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4% | Alapértelmezés szerint 20%; minimum 2% |
-| Adatfolyamok | N.A. |Alapértelmezés szerint 20%; minimum 12%  | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 3% | Alapértelmezés szerint 20%; minimum 2%  |
-| Oldalakra osztott jelentések | N.A. |N.A. | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
-| | | | | | |
-
-### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Office SKU-k platformszolgáltatásokhoz (PaaS)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Mesterséges intelligencia | N.A.  | Alapértelmezés szerint 40%; minimum 40%  | Alapértelmezés szerint 20%; minimum 20% | Alapértelmezés szerint 20%; minimum 8% | Alapértelmezés szerint 20%; minimum 4% | Alapértelmezés szerint 20%; minimum 2% |
-| Adatfolyamok         | Alapértelmezés szerint 40%; minimum 40% | Alapértelmezés szerint 24%; minimum 24% | Alapértelmezés szerint 20%; minimum 12% | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 3% | Alapértelmezés szerint 20%; minimum 2%   |
-| Oldalakra osztott jelentések | N.A.                      | N.A.                      | N.A.                     | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5% | Alapértelmezés szerint 20%; minimum 2,5% |
-| | | | | | |
+|                   | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| Mesterséges intelligencia                | Nem támogatott               | Alapértelmezés szerint 40%; minimum 40%  | Alapértelmezés szerint 20%; minimum 20%  | Alapértelmezés szerint 20%; minimum 8%  | Alapértelmezés szerint 20%; minimum 4%  | Alapértelmezés szerint 20%; minimum 2%   |
+| Adathalmazok          | Alapértelmezés szerint 100%; minimum 67% | Alapértelmezés szerint 100%; minimum 40% | Alapértelmezés szerint 100%; minimum 20% | Alapértelmezés szerint 100%; minimum 8% | Alapértelmezés szerint 100%; minimum 4% | Alapértelmezés szerint 100%; minimum 2%  |
+| Adatfolyamok         | Alapértelmezés szerint 40%; minimum 40%  | Alapértelmezés szerint 24%; minimum 24%  | Alapértelmezés szerint 20%; minimum 12%  | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 3%  | Alapértelmezés szerint 20%; minimum 2%   |
+| Oldalakra osztott jelentések | Nem támogatott               | Nem támogatott               | Nem támogatott               | Alapértelmezés szerint 20%; minimum 10% | Alapértelmezés szerint 20%; minimum 5%  | Alapértelmezés szerint 20%; minimum 2,5% |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## <a name="workload-settings"></a>Számítási feladat beállításai
 
@@ -85,7 +75,14 @@ Vegye figyelembe, hogy ez a beállítás csak a DirectQuery-lekérdezésekre, m�
 
 A beállítással megakadályozhatja, hogy a jelentéskészítők a kapacitást hátrányosan érintő, nagyméretű adathalmazt tegyenek közzé. Vegye figyelembe, hogy a Power BI mindaddig nem tudja meghatározni a tényleges memóriabeli méretet, amíg az adatkészlet be van töltve a memóriába. Előfordulhat, hogy egy kisebb offline méretű adatkészletnek nagyobb a memóriaigénye, mint egy nagyobb offline méretűnek.
 
-Ha egy meglévő adatkészlet mérete túllépi az ehhez a beállításhoz megadott értéket, az adatkészlet nem fog tudni betöltődni, amikor egy felhasználó megkísérli elérni azt.
+Ha egy meglévő adatkészlet mérete túllépi az ehhez a beállításhoz megadott értéket, az adatkészlet nem fog tudni betöltődni, amikor egy felhasználó megkísérli elérni azt. Az adatkészlet betöltése meghiúsulhat abban az esetben is, ha az nagyobb az adatkészletek számítási feladatához konfigurált maximális memóriánál.
+
+A rendszer teljesítményének védelme érdekében egy további, SKU-specifikus felső határt alkalmazunk az offline adatkészletek maximális méretére, a konfigurált értéktől függetlenül. Ez a határérték nem vonatkozik a nagyméretű adatokhoz optimalizált Power BI-adatkészletekre. További információ: [Nagyméretű modellek a Power BI Premiumban](service-premium-large-models.md).
+
+|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Az offline adatkészletek maximális méretének felső határa | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+|                                           |          |          |          |         |         |         |
 
 #### <a name="max-result-row-set-count"></a>Eredménysorok maximális száma
 
@@ -110,6 +107,7 @@ Az alapértelmezett beállítás 0, amely az alábbi SKU-specifikus automatikus 
 | Lekérdezés automatikus memóriakorlátja | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
+A rendszer teljesítményének védelme érdekében egy 10 GB-os felső határt alkalmazunk a Power BI-jelentések által elvégzett lekérdezésekre, a felhasználó által konfigurált lekérdezésimemória-korláttól függetlenül. Ez a határérték nem vonatkozik az Analysis Services-protokollt (XMLA-t) használó eszközök által kiadott lekérdezésekre. Ha a lekérdezés túl sok memóriát igényel, a felhasználóknak célszerű leegyszerűsíteni a lekérdezést vagy annak számításait.
 
 #### <a name="query-timeout"></a>Lekérdezés időkorlátja
 
@@ -132,8 +130,8 @@ Vegye figyelembe, hogy a Power BI-jelentések ezt az alapértelmezett beállít�
 
 Ha engedélyezve van, az automatikus oldalfrissítés lehetővé teszi a prémium szintű felhasználók számára, hogy a jelentésben szereplő oldalakat a DirectQuery-források esetén meghatározott időközönként frissítse. Kapacitás-rendszergazdaként a következőket teheti:
 
-1.  Az automatikus oldalfrissítés be- és kikapcsolása
-2.  A minimális frissítési időköz meghatározása
+- Az automatikus oldalfrissítés be- és kikapcsolása
+- A minimális frissítési időköz meghatározása
 
 Az alábbi képen az automatikus frissítési időköz beállításának helye látható:
 

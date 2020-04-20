@@ -9,16 +9,16 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621493"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267595"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Online kurzus: Többoldalas Power BI-jelentések egy nap alatt
 
-A **Többoldalas Power BI-jelentések egy nap alatt** című online kurzusban a jelentésszerzők elsajátíthatják azokat a technikai ismereteket, amelyekkel a Power BI-ban többoldalas jelentéseket tudnak létrehozni, közzétenni és terjeszteni. Csaknem 4 óra és 20 percnyi megtekinthető anyagot tartalmaz – felvételről is megtekinthető díjmentesen.
+A **Többoldalas Power BI-jelentések egy nap alatt** című online kurzusban a jelentésszerzők elsajátíthatják azokat a technikai ismereteket, amelyekkel a Power BI-ban többoldalas jelentéseket tudnak létrehozni, közzétenni és terjeszteni. Csaknem 4 óra és 20 percnyi megtekinthető anyagot tartalmaz – felvételről is megtekinthető díjmentesen. Egy [önálló tanulási csomagot](#self-study-kit) is letölthet, amellyel nyolc gyakorlati labort végezhet el.
 
 A tanfolyam célközönsége:
 
@@ -39,7 +39,7 @@ A tanfolyam befejezése után az alábbiakra lesz képes:
 
 A tanfolyam elkezdéséhez tekintse meg az üdvözlő és a bevezető videót.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## <a name="course-outline"></a>Tanfolyam vázlata
 
@@ -79,9 +79,32 @@ A [24 videóból álló sorozat](https://www.youtube.com/playlist?list=PL1N57mwB
   - 23. videó: [Bónusz tartalom: A többoldalas jelentéskészítés fejlődése](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - 24. videó: [Bónusz tartalom: A belépési korlátok csökkentése](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## <a name="additional-content"></a>További tartalom
+## <a name="self-study-kit"></a>Önálló tanulási csomag
 
-Hamarosan közzé fogjuk tenni a PowerPoint-bemutatót és a gyakorlati laborokat önálló tanulási csomagként. A letöltési hivatkozásokért térjen vissza erre a cikkre később.
+Letölthet és beállíthat egy önálló tanulási csomagot, amely a prezentáció tartalmát és nyolc gyakorlati labort tartalmaz:
+
+1. [Ezzel a hivatkozással](https://aka.ms/priad-ilt-student) letöltheti a helyi számítógépre az önálló tanulási csomagot (.zip-fájl).
+1. Nyissa meg a fájl tulajdonságait, és jelölje be a „Tiltás feloldása” jelölőnégyzetet (előfordulhat, hogy a Windows nem megbízhatóként jelöli meg a fájlt).
+1. Bontsa ki a fájl tartalmát a fájlrendszer egyik mappájába. Javasoljuk, hogy egy könnyen megtalálható mappát hozzon létre, esetleg **Képzés** néven. A gyakorlat dokumentumai **&lt;CourseFolderként&gt;** hivatkoznak erre a mappára.
+
+A kibontás után megjelenik a **PowerBIPRIAD** mappa, amelyben a következő mappák találhatók:
+
+- **Lab01A** (és az összes többi labormappa). A labormappák tartalmazzák a laborgyakorlat dokumentumait és erőforrásait, amelyek eszközöket és megoldásfájlokat is tartalmazhatnak.
+- **MySolution**: Ez a mappa tárolja a megoldás fájljait. A gyakorlat utasításai közlik Önnel, hogy mikor használja őket.
+- **Prezentáció**: Ez a mappa tartalmazza a kurzus prezentációs fájlját, amely PDF-dokumentumként érhető el.
+
+### <a name="getting-started"></a>Első lépések
+
+Javasoljuk, hogy először tekintse meg az online tanfolyamot. A prezentáció elméletét a **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** fájlban találhatja. A prezentáció nyolc diát tartalmaz, amelyek jelzik, hogy mikor kell az elméletet gyakorlatba helyezni. Emellett számos erőforrás-hivatkozást is tartalmaz, amelyek segítenek a kapcsolódó tartalmak megkeresésében.
+
+Amikor készen áll az első laborgyakorlat megkezdésére, nyissa meg a **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** fájlt. Ez a dokumentum segít bejelentkezni a Power BI szolgáltatásba, feltölteni egy adatkészletet, majd telepíteni a [Power BI Jelentéskészítőt](report-builder-power-bi.md).
+
+> [!NOTE]
+> Power BI-fiókot Önnek kell létrehoznia. Ha még nem rendelkezik eggyel, [regisztráljon a Power BI-ra egyéni felhasználóként](../service-self-service-signup-for-power-bi.md).
+>
+> Ha egy Power BI Desktop-fájlt szeretne közzétenni egy munkaterületen, be kell jelentkeznie a Power BI-ba. A közzététel eredményeképp létrejött adatkészlet a jelentés adatforrása. Ahhoz, hogy a jelentés adatforrásaként egy adatkészletet használjon, nem szükséges Power BI Pro-licenccel vagy Power BI Premium-előfizetéssel rendelkeznie.
+>
+> Néhány laborgyakorlatban azonban közzé kell tennie egy lapszámozott jelentést egy munkaterületen. Lapszámozott jelentést csak akkor nyithat meg, ha az egy olyan [dedikált kapacitáson](../service-premium-what-is.md#dedicated-capacities) található munkaterületen van mentve, amelyen engedélyezve van a lapszámozott jelentések számítási feladata. Ha nem rendelkezik megfelelő munkaterülettel, egy hivatkozással megtekinthet egy videót arról, hogy hogyan teheti közzé a jelentést.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -1,0 +1,38 @@
+---
+title: Adminisztrátori képzési katalógus
+description: Itt megtalálhatja a Power BI-jal kapcsolatos összes képzési lehetőséget
+author: loreleishannonmsft
+ms.prod: powerbi
+ms.topic: article
+ms.date: 03/25/2020
+ms.author: v-lshann
+ms.openlocfilehash: b5a3abd76cd8dd09c89ac62831b3389091ae3bd3
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81268535"
+---
+# <a name="administrators-learning-catalog"></a>Adminisztrátori képzési katalógus
+
+Fenn kell tartania a rendszerek és adatok folyamatos működését és áramlását, kiépítettségét és mindenkori biztonságát?
+
+A következő katalógus úgy van összeállítva, hogy az alapvető tudásanyagtól a specifikus területek ismereteiig, az alapoktól a legfelsőbb szintekig tartalmazzon képzési anyagokat. Jelezni fogjuk, ha a tartalom több formában is létezik, hogy az igényeinek leginkább megfelelő képzési formát választhassa.
+
+## <a name="get-started"></a>Első lépések<a name="get-started"></a>
+| Tartalom | Leírás  | Formátum | Hossz |
+|-------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------|--------|
+| [A Microsoft Power BI YouTube-csatornája](https://www.youtube.com/user/mspowerbi/videos) | A Microsoft Power BI termékcsapatának tartalmait bemutató YouTube-csatorna | Videók |        |
+## <a name="deploy"></a>Üzembe helyezés<a name="deploy"></a>
+| Tartalom | Leírás  | Formátum | Hossz |
+|-------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------|--------|
+| [Power BI-bevezetési keretrendszer webinárium, 1. rész: Adatvezérelt kulturális környezet bevezetése](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)                                | Vezesse be cégénél az adatvezérelt megközelítést, és regisztráljon a webinárium-sorozatra, amelyben bevezetési keretrendszert kaphat a Microsofttól a Power BI-hoz. Az önkiszolgáló üzleti intelligencia (BI) bevezetése problémákat rejthet, és a megfelelő eszközök beszerzése csupán az első lépés. A sikeres bevezetéshez változások szükségesek az emberek hozzáállásában, a folyamatokban és a technológiában is. Ez az előadás egy olyan ötrészes sorozat első része, amely segít kiaknázni a Power BI lehetőségeit a cége számára. Az 1. rész a Power BI és az adatvezérelt megközelítés céges bevezetésére szolgáló strukturált módszer kidolgozását ismerteti.   | Webinárium |                 |
+| [Power BI-bevezetési keretrendszer webinárium, 2. rész: Vállalatirányítás](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)  | Sikerrel vezetheti be cégénél a Microsoft Power BI önkiszolgáló üzleti intelligenciáját (BI). Vegyen részt ezen a webináriumon, amely a vállalatirányítás Power BI bevezetésében játszott szerepét mutatja be. Ismerje meg a különböző BI-megoldásokhoz illő vállalatirányítási módszereket, valamint a hatékony BI-gyakorlathoz szükséges szerepeket és hatásköröket.  | Webinárium |                 |
+| [Power BI-bevezetési keretrendszer webinárium, 3. rész: Szolgáltatásfelügyelet](https://info.microsoft.com/ww-ondemand-pbi-adoption-framework-part3.html)  | Tervezze meg a Power BI hatékony bevezetését vállalatánál, és fedezze fel a hatékony SaaS (Software as a Service) felügyelet részleteit. Ez a webinárium egy olyan ötrészes sorozat harmadik része, amely segít kiaknázni a Power BI lehetőségeit a cége számára. A 3. részben arról tájékozódhat, hogy miképpen kezelheti a bérlői felügyelet és az átjárókezelés elemeit, valamint hogy miképpen tervezheti meg a Power BI zökkenőmentes és sikeres bevezetését.  | Webinárium |                 |
+| [Power BI-bevezetési keretrendszer webinárium, 4. rész: Biztonság](https://info.microsoft.com/ww-ondemand-pbi-adoption-framework-part4.html)  | Ez az előadás egy olyan ötrészes sorozat negyedik része, amely segít kiaknázni a Power BI lehetőségeit a cége számára. A 4. részben megtudhatja, hogyan tarthatja biztonságban az adatait, és kezelheti azok megfelelő elérését.  | Webinárium |                 |
+| [Power BI-bevezetési keretrendszer webinárium, 5. rész: Kibocsátás](https://info.microsoft.com/ww-ondemand-powerbi-adoption-part5-rollout.html)   | A döntéshozatali funkciókat szervezeti szinten átalakíthatja, és teljes Power BI-bevezetési keretrendszert vehet át a Microsofttól. Ez a webinárium egy olyan ötrészes sorozat utolsó része, amely segít kiaknázni a Power BI lehetőségeit a cége számára. Az 5. részben egyértelmű útmutatást kaphat a szervezet átállásával, valamint azzal kapcsolatban, hogy hogyan vihet véghez egy sikeres kibocsátást a meglévő eszközökkel, illetve a felhasználók az adatalapú kultúrára való váltásának ösztönzésével.  | Webinárium |                 |
+| [CICD-folyamat Power BI-jelentésekhez (Azure DevOps)](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/CICD-Pipeline-for-PowerBI-Reports-Azure-DevOps/td-p/864450)  | Ebből a videóból megtudhatja, hogyan automatizálható a Power BI-jelentések üzembe helyezésének folyamata Power BI Desktop nélkül, és hogyan használható az Azure DevOps/PowerShell az ilyen műveletek hatékony elvégzésére. | Webinárium | 1 óra 12 perc 32 másodperc |
+| [Személyes könyvjelzők a Power BI szolgáltatásban](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Personal-Bookmarks-in-the-Power-BI-Service/td-p/616418)  | Charles Sterling és a Yana Berkovich bemutatják, hogyan használhat személyes könyvjelzőket a Power BI szolgáltatásban, valamint ismertetnek néhány általános ajánlott eljárást a Power BI könyvjelzőihez. Ha még nem ismeri a személyes könyvjelzőket, jelentéshasználóként mostantól saját könyvjelzőket hozhat létre minden jelentéshez, amelyekkel a jelentésoldalak különböző állapotait (így például szűrők, szeletelők és vizualizációk állapotát) rögzítheti, majd elnevezheti őket, és később visszatérhet hozzájuk egyetlen kattintással. Emellett bármilyen létrehozott könyvjelzőt kijelölhet alapértelmezett nézetnek, így a jelentés megnyitásakor mindig a kedvenc nézetéről indulhat. | Webinárium | 43 perc 4 másodperc      |
+| [Lassú a Power BI-jelentésem: mit tegyek? – Marco Russo](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/My-Power-BI-report-is-slow-what-should-I-do-by-Marco-Russo/td-p/547348) | Ez a foglalkozás a Power BI-jelentések lassú működését okozó lehetséges tényezők feltárását mutatja be. A Feladatkezelő és a DAX Studio használatával képes lesz megállapítani, hogy a jelentés elrendezését kellene megváltoztatnia, esetleg a DAX-képletekben vagy az adatmodellben van olyasmi, ami a hosszú válaszidőket okozza.  A foglalkozás végére megtudhatja, hogyan keresheti meg egy Power BI-jelentés teljesítményének szűk keresztmetszeteit, hogy aztán a nagyobb problémával foglalkozhasson.  | Webinárium | 34 perc 35 másodperc     |
+| [10/18/18 webinárium: Prémium szintű kapacitások kezelése – kérdések és válaszok](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/10-18-18-Webinar-Q-amp-A-on-Managing-Premium-Capacities/td-p/535555)  | Charles Sterling és Josh Caplan a Power BI ügyfeleinek a prémium kapacitások kezelésére vonatkozó kérdéseit válaszolják meg.  | Webinárium | 59 perc 20 másodperc     |
+| [Power BI-alkalmazások terhelésének tesztelése Geoff Grayjel](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Load-Test-your-Power-BI-Applications-with-Geoff-Gray/td-p/397357)  | Power BI-alkalmazások terhelésének tesztelése Geoff Grayjel  | Webinárium | 59 perc 50 másodperc     |
