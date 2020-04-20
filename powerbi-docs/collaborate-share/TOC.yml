@@ -23,6 +23,8 @@
           items:
             - name: Új munkaterületek létrehozása
               href: ../service-create-the-new-workspaces.md
+            - name: A munkaterületek új megjelenésének kipróbálása
+              href: service-workspaces-new-look.md
             - name: Klasszikus munkaterületek frissítése
               href: ../designer/service-upgrade-workspaces.md
             - name: Munkaterületek létrehozása
@@ -65,8 +67,6 @@
               href: ../service-publish-to-web.md
             - name: A OneDrive-ban tárolt Excel-munkafüzetre hivatkozó irányítópult megosztása
               href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: Excelhez készült Power BI Publisher
-              href: ../publisher-for-excel.md
         - name: A Power BI kiterjesztése
           items:
             - name: Elemzés az Excelben
