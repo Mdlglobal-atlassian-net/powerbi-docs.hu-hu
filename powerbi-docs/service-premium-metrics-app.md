@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c15576ac6ab9b20a3492341c05d2f9d8eb42e107
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 80f870f1657e629786cec299484f3b3c97609e79
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80813052"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637941"
 ---
 # <a name="power-bi-premium-metrics-app"></a>A Power BI Premium Metrics alkalmazás
 
@@ -28,8 +28,9 @@ A **Power BI Premium Metrics alkalmazással** kezelheti a Power BI Premium-előf
 
 A következő szakaszok részletesen ismertetik a kezdőlapot és a három metrika jelentéslapjait. 
 
-> [!IMPORTANT]
-> Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+
+
 
 ## <a name="premium-capacity-health-center"></a>Prémium szintű kapacitás állapotközpontja
 

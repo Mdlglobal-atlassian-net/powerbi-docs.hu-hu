@@ -1,20 +1,20 @@
 ---
 title: Gombok használata a Power BI-ban
 description: A Power BI-jelentésekhez gombokat adhat, amelyek az alkalmazásokéhoz hasonlóvá teszik a jelentés működését, és mélyebb interakciót kínálnak a felhasználókkal.
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201642"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439825"
 ---
 # <a name="use-buttons-in-power-bi"></a>Gombok használata a Power BI-ban
 A Power BI-ban elérhető **gombokkal** alkalmazásokhoz hasonlóan működő jelentéseket hozhat létre, melyekben a felhasználók az elemekre kattintva és mutatva interaktívabban használhatják a Power BI-tartalmakat. Gombokat a **Power BI Desktopban** és a **Power BI szolgáltatásban** is felvehet a jelentésekhez. Ha a jelentéseket a Power BI szolgáltatásban osztja meg, az alkalmazásokéhoz hasonló felületet kínálhat a felhasználóknak.

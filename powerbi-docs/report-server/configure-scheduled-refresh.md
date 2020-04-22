@@ -1,19 +1,19 @@
 ---
 title: A Power BI-jelentések ütemezett frissítésének konfigurálása
 description: A Power BI-jelentések adatainak frissítéséhez létre kell hozni egy ütemezett frissítési tervet.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maggies
-ms.openlocfilehash: 2b4bcf0734f7bec85d2d152c4745d373c63dc230
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.author: davidi
+ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699521"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439963"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>A Power BI-jelentések ütemezett frissítésének konfigurálása
 A Power BI-jelentések adatainak frissítéséhez létre kell hozni egy ütemezett frissítési tervet. Ez a Power BI-jelentések *Kezelés* területén lehetséges.
@@ -83,7 +83,7 @@ Az ütemezett frissítési tervek állapota a webportálon tekinthető meg.
 
 Az aktuális állapot megtekintéséhez frissíteni kell a weblapot. Az állapot nem fog automatikusan változni.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 Az ütemezések létrehozásával és módosításával kapcsolatban lásd: [Ütemezések létrehozása, módosítása és törlése](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Az ütemezett frissítések hibaelhárításával kapcsolatos információkért lásd: [Power BI jelentéskészítési kiszolgálók ütemezett frissítésének hibaelhárítása](scheduled-refresh-troubleshoot.md).

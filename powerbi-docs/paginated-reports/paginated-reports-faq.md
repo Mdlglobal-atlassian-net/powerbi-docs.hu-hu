@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 04/21/2020
+ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
+ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113610"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81766285"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -88,6 +88,8 @@ A lapszámozott jelentések olyan forgatókönyvekhez ideálisak, amelyek magas 
 
 A Power BI-jelentések áttekintéshez és interaktivitáshoz tökéletesek.  Például egy Power BI-jelentés a legmegfelelőbb választás egy olyan értékesítési jelentés esetében, amelyben különböző értékesítők saját régiójuk/iparáguk/ügyfeleik szerint szeretnék szeletelni ugyanazon jelentés adatait, és megtekinteni, hogyan változnak a számok.
 
+További információ: [Többoldalas jelentések használata a Power BI-ban](../guidance/report-paginated-or-power-bi.md).
+
 ### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>A dokumentáció szerint a Power BI Jelentéskészítő az előnyben részesített jelentéskészítő eszköz. Létrehozhatok lapszámozott jelentéseket az SQL Server Data Tools for Power BI szolgáltatással is?
 
 Igen, azonban a Power BI szolgáltatással egyszerre csak egy elem tölthető fel, így számos SQL Server Data Tools- (SSDT-) forgatókönyve még nem támogatott. A [nem támogatott funkciók teljes listáját](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) a gyakori kérdések későbbi egy szakaszában tekintheti meg.  
@@ -110,10 +112,8 @@ A lapszámozott jelentések jelenleg a következő elemeket nem támogatják:
 
 - Megosztott adatforrások
 - Megosztott adathalmazok
-- Segédjelentések
 - Részletezés és átkattintás más jelentésekbe
 - Csatolt jelentések
-- Bing-térképrétegek
 - Egyéni betűtípusok
 
 Ha egy nem támogatott funkcióval rendelkező fájlt próbál meg feltölteni a Power BI szolgáltatásba, hibaüzenetet kap egy átváltás/rendezés elem helyett.

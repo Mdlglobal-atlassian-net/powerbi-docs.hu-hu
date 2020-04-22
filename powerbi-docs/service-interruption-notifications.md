@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 ms.author: kfollis
-ms.openlocfilehash: 984991d8640df04c19b6461f5f0faaf0a50fe4ed
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 85b26b68c4943e0bc100be7a298730cec34cfc78
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80812970"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637754"
 ---
 # <a name="service-interruption-notifications"></a>Szolgáltatáskimaradásokkal kapcsolatos értesítések
 
@@ -32,26 +32,8 @@ Jelenleg a következő _megbízhatósági eseményekről_küld e-mailt a rendsze
 > [!NOTE]
 > Ez a funkció jelenleg csak a Power BI Premium dedikált kapacitásainak esetében érhető el. A megosztott vagy beágyazott kapacitások esetében nem érhető el.
 
-## <a name="capacity-and-reliability-notifications"></a>Kapacitási és megbízhatósági értesítések
-
-Ha egy Power BI Premium-kapacitásban időnként tartósan magas erőforráshasználat tapasztalható, amely a megbízhatóságot is befolyásolhatja, a rendszer e-mail-értesítést küld. Ilyen következmény lehet az olyan műveletek késleltetése, mint a jelentések megnyitása, az adathalmazok frissítése és a lekérdezések végrehajtása. 
-
-Az értesítő e-mail a magas erőforráshasználat okairól nyújt információt, többek között a következőket:
-
-* A felelős adathalmaz azonosítója
-* Művelettípus
-* A magas erőforráshasználathoz kapcsolódó CPU-idő
-
-A Power BI arról is e-mail-értesítést küld, ha egy Power BI Premium-kapacitásban túlterhelést észlel. Az e-mail leírja a terhelés feltételezhető okát, az utolsó 10 percben a terhelést okozó műveleteket, és az egyes műveletek által okozott terhelés mértékét. 
-
-Ha egynél több prémium szintű kapacitással rendelkezik, az e-mail ezekről a kapacitásokról is tartalmaz a túlterhelés időszakára vonatkozó információkat, így Ön mérlegelheti a sok erőforrást felhasználó elemeket tartalmazó munkaterületek áthelyezését a legkevésbé terhelt kapacitásokba.
-
-Túlterhelési e-mail-értesítéseket csak a túlterhelési küszöbérték átlépésekor küld a rendszer. Nem kap újabb e-mail-értesítést akkor, amikor a prémium szintű kapacitás terhelése a túlterhelési szint alá esik vissza.
-
-Az alábbi ábra az értesítési e-mailre mutat egy példát:
 
 
-![kapacitás túlterheléséről értesítő e-mail](media/service-interruption-notifications/refresh-notification-email-2.png)
 
 
 ## <a name="enable-notifications"></a>Értesítések engedélyezése

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 45f3ff801b2f1bffd2396fe9f59ea32dd4b11ffb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a6dd3040fd765010c5d6baaf76991f7d1be4cfa7
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877069"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637891"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Adatok elérése Excel-munkafüzetfájlokból
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -124,8 +124,6 @@ Az Importálás funkció kiválasztása esetén a Power BI jelenleg csak a neves
 **Frissítés ütemezése** – Ha az Excel-munkafüzetfájl külső adatforrásokhoz csatlakozik, vagy helyi meghajtóról importálta azt, ütemezett frissítések beállításával biztosíthatja, hogy az adatkészlet vagy jelentések mindig naprakészek legyenek. Az ütemezett frissítés beállítása a legtöbb esetben elég egyszerű, de ebben a cikkben nem térünk ki a részletekre. További információkért lásd: [Adatfrissítés a Power BI-ban](refresh-data.md).
 
 [Közzététel a Power BI-ban Excel 2016-ból](service-publish-from-excel.md)
-
-[Excelhez készült Power BI Publisher](publisher-for-excel.md)
 
 [Adatfrissítés a Power BI-ban](refresh-data.md)
 

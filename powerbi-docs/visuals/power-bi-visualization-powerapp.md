@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3be5f9efe3a6e18ba46f6990b09952d37b967e16
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 5628a114b872b7c0d92d5079198616a20fe85b87
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79525936"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637812"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Oktatóanyag: Power Apps-vizualizáció beágyazása egy Power BI-jelentésbe
 
@@ -53,7 +53,7 @@ Amikor a Power Apps-vizualizációt hozzáadja a jelentéshez, elindul a Power A
 
 3. A **Mezők** ablaktáblában válassza ki a **Name** (Név), **Product Code** (Termékkód) és **Sales Stage** (Értékesítési szakasz) mezőket. 
 
-    ![mezők kijelölése](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+    ![mezők kijelölése](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
 4. A Power Apps-vizualizáció csempéjén válassza ki azt a Power Apps-környezetet, amelyben az alkalmazást szeretné létrehozni, majd válassza az **Új létrehozása** lehetőséget.
 

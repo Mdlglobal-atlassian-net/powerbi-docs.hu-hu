@@ -1,5 +1,5 @@
 ---
-title: Adatéletút (előzetes verzió)
+title: Adatéletút
 description: A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kulcsfontosságú kihívást jelent számos ügyfél számára.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267273"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525399"
 ---
-# <a name="data-lineage-preview"></a>Adatéletút (előzetes verzió)
+# <a name="data-lineage"></a>Adatéletút
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén. Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A kérdések megválaszolásában egy adatéletút-nézet lesz a segítségére.
 
 ![A Power BI életútnézete](media/service-data-lineage/service-data-lineage-view.png)
