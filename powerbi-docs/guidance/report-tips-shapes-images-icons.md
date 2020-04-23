@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a4c1357ba2bcd4e4703a09974ee01a3ee10ad87b
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: f03daf65ab938923906351acef9440fe0de88c5c
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006549"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065570"
 ---
 # <a name="tips-to-improve-analysis-with-shapes-images-and-icons-in-power-bi-reports"></a>Tippek a Power BI-jelentésekben lévő alakzatokkal, képekkel és ikonokkal való elemzés javításához
 
@@ -37,7 +37,7 @@ A négy legfontosabb tipp a Power BI-jelentésekben lévő alakzatokkal, képekk
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Tippek lenyűgöző jelentések készítéséhez](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tippek lenyűgöző jelentések készítéséhez](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-videó: [A 4 legjobb tipp az elemzések fejlesztéséhez a Power BI piktogramokkal](https://www.youtube.com/watch?v=-gLwXonWNsI)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
