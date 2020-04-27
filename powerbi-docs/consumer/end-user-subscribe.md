@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bfec81aaa47f210855c4db4c8c97ab259b685110
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302448"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525445"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Feliratkozás jelentésre vagy irányítópultra a Power BI szolgáltatásban 
 
@@ -33,7 +33,7 @@ Amikor e-mail érkezik, abban szerepel egy „ugrás a jelentésre vagy irányí
 
 
 ## <a name="requirements"></a>Követelmények
-Ha előfizetést szeretne **létrehozni** saját maga számára, ahhoz egy bizonyos típusú [licencre](end-user-license.md) van szükség. Ha nem tud előfizetést létrehozni, forduljon a Power BI rendszergazdájához. **Mások feliratkoztatása** csak az irányítópult vagy a jelentés tulajdonosa számára érhető el. A lapszámozott jelentésekre való feliratkozás egy kissé eltér ettől. A részletekről a  [Feliratkozás és mások feliratkoztatása többoldalas jelentésre a Power BI szolgáltatásban](paginated-reports-subscriptions.md)  című cikkből tájékozódhat. 
+Ha előfizetést szeretne **létrehozni** saját maga számára, ahhoz egy bizonyos típusú [licencre](end-user-license.md) van szükség. Ha nem tud előfizetést létrehozni, forduljon a Power BI rendszergazdájához. **Mások feliratkoztatása** csak az irányítópult vagy a jelentés tulajdonosa számára érhető el. A lapszámozott jelentésekre való feliratkozás egy kissé eltér ettől. A részletekről a [Feliratkozás és mások feliratkoztatása egy lapszámozott jelentésre a Power BI szolgáltatásban](paginated-reports-subscriptions.md) című cikkből tájékozódhat. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Feliratkozás irányítópultra vagy jelentésoldalra
 Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a folyamat hasonló. Ugyanazzal a gombbal iratkozhat fel a Power BI szolgáltatás irányítópultjaira és jelentéseire.
@@ -55,9 +55,9 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 
     c. Ha szeretné, az e-mail-üzenet tárgyát és részleteit is megadhatja. 
 
-    d. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből. Ha a  **Havi** lehetőséget választja, adja meg a hónap azon napját/napjait, amikor e-mailt szeretne kapni a feliratkozásokról.   
+    d. Válasszon **Gyakoriságot** feliratkozásához.  Napi, Heti, vagy Adatfrissítések utáni (Napi) gyakoriságot választhat.  Ha az e-mailt, amelyre feliratkozott, csak bizonyos napokon szeretné megkapni, válassza a **Heti** értéket, majd jelölje ki a napokat.  Ha például az e-mailt csak munkanapokon szeretné megkapni, válassza a **Heti** gyakoriságot, majd távolítsa el a jelölést a szombat és a vasárnap jelölőnégyzetéből. Ha a **Havi** lehetőséget választja, adja meg a hónap azon napját/napjait, amikor e-mailt szeretne kapni a feliratkozásokról.   
 
-    e. Ha Napi, Óránkénti, Havi vagy Heti gyakoriságot választ, akkor Ütemezett időpontot is megadhat a feliratkozáshoz. Futtathatja egész órakor, vagy 15, 30, 45 perccel az után. Választhat délelőtti (AM) vagy délutáni (PM) időpontot. Az időzónát is megadhatja. Ha az Óránkénti beállítást választotta, válassza ki az Ütemezett időpontot, amikorra a feliratkozás indítását szeretné beállítani, és azt követően óránként érkezik majd.  
+    e. Ha a napi, óránkénti, havi vagy heti gyakoriságot választja, akkor ütemezett időpontot is megadhat a feliratkozáshoz. Futtathatja egész órakor, vagy 15, 30, 45 perccel az után. Választhat délelőtti (AM) vagy délutáni (PM) időpontot. Az időzónát is megadhatja. Ha az Óránkénti beállítást választotta, válassza ki az Ütemezett időpontot, amikorra a feliratkozás indítását szeretné beállítani, és azt követően óránként érkezik majd.  
 
     f. A kezdő és záró dátum a dátummezőkbe bevitt értékekkel ütemezhető. A feliratkozás kezdő dátuma alapértelmezés szerint a létrehozás napja, a záró dátum pedig egy évvel későbbi. Ezt a feliratkozás lejárta előtt bármikor módosíthatja bármely jövőbeli dátumra (a 9999-es évig). Amikor egy feliratkozás záró dátuma elérkezik, a küldés leáll, amíg újra nem engedélyezi.  Az ütemezett záró dátum előtt értesítés(eke)t kap, amelyek rákérdeznek a kiterjesztésére.     
 
@@ -73,7 +73,7 @@ Függetlenül attól, hogy irányítópultra vagy jelentésre iratkozik fel, a f
 
 
 ## <a name="manage-your-subscriptions"></a>Feliratkozások kezelése
-Az Ön által létrehozott feliratkozásokat csak Ön kezelheti. Válassza ismét az **Előfizetés** lehetőséget, és válassza **Az összes előfizetés kezelése** elemet a bal alsó sarokban (lásd a fenti képernyőképet). Hogy mely feliratkozások jelennek meg, az attól függ, hogy éppen melyik munkaterület aktív. Ha az összes munkaterülethez tartozó feliratkozásokat szeretné megjeleníteni, győződjön meg arról, hogy a  **Saját munkaterület**  aktív. A munkaterületek működéséről a  [Munkaterületek a Power BI-ban](end-user-workspaces.md) című cikkben olvashat bővebben. 
+Az Ön által létrehozott feliratkozásokat csak Ön kezelheti. Válassza ismét az **Előfizetés** lehetőséget, és válassza **Az összes előfizetés kezelése** elemet a bal alsó sarokban (lásd a fenti képernyőképet). Hogy mely feliratkozások jelennek meg, az attól függ, hogy éppen melyik munkaterület aktív. Ha az összes munkaterülethez tartozó feliratkozásokat szeretné megjeleníteni, győződjön meg arról, hogy a **Saját munkaterület** aktív. A munkaterületek működéséről a [Munkaterületek a Power BI-ban](end-user-workspaces.md) című cikkben olvashat bővebben. 
 
 ![összes előfizetés megtekintése a Saját munkaterületen](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 

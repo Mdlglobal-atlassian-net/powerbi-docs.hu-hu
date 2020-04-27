@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ab74ec7f7f6594450ec2cf95528d06dc45f613
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77610018"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525537"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Jelentések teljesítményének figyelése a Power BI-ban
 
@@ -85,6 +85,7 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 
 - [Lekérdezési diagnosztika](/power-query/QueryDiagnostics)
 - [Teljesítményelemző](../desktop-performance-analyzer.md)
+- [Jelentésteljesítménnyel kapcsolatos problémák elhárítása a Power BI-ban](report-performance-troubleshoot.md)
 - [Power BI Premium Metrics alkalmazás](../service-premium-metrics-app.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

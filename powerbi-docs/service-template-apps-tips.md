@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2020
 ms.author: tebercov
-ms.openlocfilehash: 92d5a5177b0fa03af583e9e89ce574c0197f3f7a
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273225"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066282"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
@@ -128,7 +128,7 @@ A sablonalkalmazások csak mintaadatokkal szerepelhetnek, ügyeljen rá, hogy be
 * Rendelkezzen útmutatóval az érvényesítési csapat számára, amely tartalmazza az adatokhoz való csatlakozáshoz szükséges hitelesítő adatokat és paramétereket is.
 * Az alkalmazásnak tartalmaznia kell egy alkalmazásikont a Power BI-ban és a CPP-ajánlatban is. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Konfigurált kezdőlap. [További információ](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Kövesse a [Power BI-alkalmazások ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) dokumentációját.
+* Kövesse a [Partnerközpontban a Power BI-alkalmazások ajánlat](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) dokumentációját.
 * Ha az alkalmazáshoz irányítópult is tartozik, ügyeljen rá, hogy az ne legyen üres.
 * A beküldés előtt az alkalmazást az alkalmazáshivatkozás használatával telepítse, ellenőrizze, hogy lehet-e csatlakozni az adatkészlethez, és hogy az alkalmazás a tervek szerint használható-e.
 * Mielőtt feltöltené a pbix-et a sablon munkaterületére, távolítson el minden felesleges kapcsolatot.

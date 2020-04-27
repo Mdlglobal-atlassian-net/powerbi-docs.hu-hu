@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436019"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066348"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Sablonalkalmazás létrehozása a Power BI-ban
 
@@ -166,7 +166,7 @@ Vegyük sorra a szakaszokat:
 
     Ha ez a lehetőség nem jelenik meg, a lépjen kapcsolatba a felügyeleti portálon a Power BI rendszergazdájával, hogy adjon az Ön számára [engedélyeket sablonalkalmazások fejlesztéséhez](service-admin-portal.md#template-apps-settings).
 11. A választás megerősítéséhez válassza az **Előléptetés** lehetőséget.
-12. Másolja le ezt az új URL-címet, hogy megoszthassa a bérlőn kívül a teszteléshez. Ezt a hivatkozást kell elküldenie az alkalmazás AppSource-ban történő terjesztési folyamatának megkezdéséhez is. Ehhez hozzon létre egy [új Cloud Partner Portal-ajánlatot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). A Cloud Partner Portalra csak éles üzem előtti hivatkozásokat küldjön be. A csomagot Power BI-gyártáshoz csak az alkalmazás jóváhagyása és az AppSource-on való sikeres közzététele után léptetheti elő.
+12. Másolja le ezt az új URL-címet, hogy megoszthassa a bérlőn kívül a teszteléshez. Ezt a hivatkozást kell elküldenie az alkalmazás AppSource-ban történő terjesztési folyamatának megkezdéséhez is. Ehhez hozzon létre egy [új Partnerközpont-ajánlatot](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). A Partnerközpontba csak éles üzem előtti hivatkozásokat küldjön be. A csomagot Power BI-gyártáshoz csak az alkalmazás jóváhagyása és az AppSource-on való sikeres közzététele után léptetheti elő.
 13. Ha az alkalmazás készen áll az üzemi használatra vagy az AppSource-on keresztüli megosztásra, térjen vissza a **Kiadáskezelés** panelre, és válassza az **Alkalmazás előléptetése** lehetőséget az **Üzem előtti** elem mellett.
 14. A választás megerősítéséhez válassza az **Előléptetés** lehetőséget.
 
@@ -174,10 +174,10 @@ Vegyük sorra a szakaszokat:
 
     ![Alkalmazás üzemi környezetben](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Az alkalmazás világszerte több ezer Power BI-felhasználó számára történő elérhetővé tételéhez javasoljuk, hogy töltse fel az AppSource-ba. Részletekért tekintse át [A Power BI-alkalmazásra vonatkozó ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) weblapot.
+Az alkalmazás világszerte több ezer Power BI-felhasználó számára történő elérhetővé tételéhez javasoljuk, hogy töltse fel az AppSource-ba. Részletekért tekintse át [A Power BI-alkalmazásra vonatkozó ajánlat](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) weblapot.
 
 ## <a name="next-steps"></a>Következő lépések
 
 Arról, hogyan használják a sablonalkalmazást az ügyfelek a [Sablonalkalmazások telepítése, testreszabása és terjesztése a szervezetnél](service-template-apps-install-distribute.md) szakaszban olvashat.
 
-Az alkalmazás terjesztését részletesen [A Power BI-alkalmazásra vonatkozó ajánlat](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) weblapon ismerheti meg.
+Az alkalmazás terjesztését részletesen [A Power BI-alkalmazásra vonatkozó ajánlat](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) weblapon ismerheti meg.

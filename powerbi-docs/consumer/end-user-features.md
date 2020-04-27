@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/05/2020
+ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 60ac58c2d1cb815ca322abf6806d9e866f719660
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268006"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065753"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-other-free-users"></a>A Power BI funkcióinak listája *fogyasztók* és más ingyenes felhasználók számára
+# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>A Power BI funkcióinak listája *fogyasztók* és más, ingyenes licencekkel rendelkező felhasználók számára
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -27,40 +27,47 @@ A tervezők számos különböző módon oszthatják meg a tartalmaikat. Ez a ci
 
 ![A Power BI navigációs panelje](media/end-user-features/power-bi-share.png)
 
-Az [előző cikk](end-user-license.md) ismertette a különböző típusú Power BI-licenceket (ingyenes és Pro) és előfizetéseket (prémium), és azt is bemutatta, hogyan ellenőrizheti, hogy melyik licencet és előfizetést használja. Ebben a cikkben felsoroljuk, hogy mely Power BI-funkciók érhetők el a licenc és az előfizetés alapján.   
+Az [előző cikkben](end-user-license.md)megtudta, hogy az, hogy mit végezhet el a Power BI szolgáltatásban az irányítópultokkal, a jelentésekkel és az alkalmazásokkal (tartalommal), három dologtól függ: a licenctől, a szerepköreitől és az engedélyeitől, valamint a tartalom tárolási helyétől.
+
+Ez a cikk felsorolja, hogy a Power BI szolgáltatás mely funkciói érhetők el a *fogyasztók*, például az Ön számára. Definíció szerint *a felhasználók* ingyenes licenccel használják a Power BI szolgáltatást (nem a Power BI Desktopot), és olyan szervezetek tagjai, amelyek prémium szintű kapacitással rendelkeznek.
 
 <art>
 
 ## <a name="quick-review-of-terminology"></a>A terminológia gyors áttekintése
-A funkciók listája előtt tekintsünk át néhány Power BI-jal kapcsolatos fogalmat. Ez csak egy gyors áttekintés, ezért ha további részletekre van szüksége, tekintse meg a [Fogyasztók licencei és előfizetései](end-user-license.md), illetve [A Power BI alapfogalmai](end-user-basic-concepts.md) című cikket.
+A funkciók listája előtt tekintsünk át néhány Power BI-jal kapcsolatos fogalmat. Ez csak egy gyors áttekintés, ezért ha további részletekre van szüksége, tekintse meg a [Fogyasztók licencei](end-user-license.md) és [A Power BI alapfogalmai](end-user-basic-concepts.md) című cikket.
 
 ### <a name="workspaces-and-roles"></a>Munkaterületek és szerepkörök
-A munkaterületeknek két típusa van: A **Saját munkaterület** és az alkalmazás-munkaterületek. A **Saját munkaterületéhez** csak Ön férhet hozzá. Az együttműködéshez és a megosztáshoz a tartalomfejlesztőknek az alkalmazás-munkaterületeket kell használniuk. 
+A munkaterületeknek két típusa van: A **Saját munkaterület** és az alkalmazás-munkaterületek. A **Saját munkaterületéhez** csak Ön fér hozzá. Az együttműködéshez és a megosztáshoz az szükséges, hogy a tartalom *tervezői*, akik Pro-licencekkel rendelkeznek, alkalmazás-munkaterületeket használjanak. 
 
-A munkaterületi *szerepkörök* használatával a Power BI-tartalomfejlesztők megszabhatják, hogy ki milyen műveletet végezhet a munkaterületeken. A *Felhasználók* általában **Megtekintő** szerepkört kapnak. 
+Az alkalmazás-munkaterületeken belül a *szerepköröket* a tervezők osztják ki, és ezzel felügyelik, hogy az adott munkaterületen ki mit végezhet el. A *Felhasználók* általában **Megtekintő** szerepkört kapnak. 
 
-### <a name="premium-capacity-subscription"></a>Előfizetés prémium szintű kapacitásra
-Ha egy vállalat prémium szintű kapacitásra rendelkezik előfizetéssel, a rendszergazdák és a Pro-felhasználók *Prémium szintű kapacitást* rendelhetnek hozzá munkaterületeikhez. A prémium szintű kapacitásba tartozó munkaterületek olyan területek, ahol a Pro-felhasználók megoszthatják tartalmaikat és együttműködhetnek az ingyenes felhasználókkal anélkül, hogy ehhez az ingyenes felhasználóknak Pro-licencre lenne szükségük. Ezeken a munkaterületeken az ingyenes felhasználók emelt szintű engedélyekkel rendelkeznek (lásd a következő listát). 
+### <a name="premium-capacity"></a>Prémium-kapacitás
+Ha egy vállalat prémium szintű kapacitásra rendelkezik előfizetéssel, a rendszergazdák és a Pro-felhasználók *dedikált kapacitást* rendelhetnek hozzá munkaterületeikhez. A dedikált kapacitásba tartozó munkaterületek olyan területek, ahol a Pro-felhasználók megoszthatják tartalmaikat és együttműködhetnek az ingyenes felhasználókkal anélkül, hogy ehhez az ingyenes felhasználóknak Pro-licencre lenne szükségük. Ezeken a munkaterületeken az ingyenes felhasználók emelt szintű engedélyekkel rendelkeznek (lásd a következő listát). 
 
 ### <a name="licenses"></a>Licencek 
-A Power BI-felhasználók ingyenes licenccel vagy Pro-licenccel rendelkeznek. Bizonyos szolgáltatások a Pro-licenccel rendelkező felhasználók számára vannak fenntartva.
+A Power BI-felhasználók ingyenes licenccel vagy Pro-licenccel rendelkeznek. A *felhasználók* ingyenes licenccel rendelkeznek.
 
-- **Ingyenes licenc** – általában egy vállalaton belüli *fogyasztók* kapják. Azok is ilyen licenccel rendelkeznek, akik magánszemélyként regisztrálnak a Power BI szolgáltatásra, és a [Power BI szolgáltatást önálló módban](../service-self-service-signup-for-power-bi.md) szeretnék kipróbálni.  
-- **Pro-licenc** – jellemzően a tartalomtervezők, elemzők és fejlesztők számára érhető el egy szervezetben.   
-- **Ingyenes licenc + prémium szintű kapacitás** – lehetővé teszi, hogy az ingyenes felhasználók (*fogyasztók*) megtekintsék és használják azokat a tartalmakat, amelyeket a Pro-felhasználók a prémium szintű kapacitás használatával hoztak létre és osztottak meg. Ily módon az ingyenes felhasználók a **Velem megosztva** funkció használatával együttműködhetnek a Pro-felhasználókkal a munkaterületen belül.
+- **Ingyenes licenc** – általában egy vállalaton belüli *fogyasztók* kapják (lásd az alábbi első képet). Azok is ilyen licenccel rendelkeznek, akik magánszemélyként regisztrálnak a Power BI szolgáltatásra, és a [Power BI szolgáltatást önálló módban](../service-self-service-signup-for-power-bi.md) szeretnék kipróbálni (lásd a második képet alább). 
 
-Ha a vállalat prémium szintű kapacitásra rendelkezik előfizetéssel, azzal számos értékes lehetőséget nyújthat az ingyenes felhasználók számára is. Mindaddig, amíg a Pro-felhasználók prémium szintű kapacitáshoz rendelt munkaterületeket használnak a tartalom megosztására, az ingyenes felhasználók gond nélkül együttműködhetnek Pro-licenccel rendelkező munkatársaikkal.  **Ezáltal az ingyenes felhasználók is *Power BI-fogyasztókká* válhatnak, így megkaphatják és megoszthatják az üzleti döntések meghozatalához szükséges tartalmakat.** 
+    ![az ingyenes felhasználót megjelenítő képernyőkép](media/end-user-features/power-bi-free-organization.png)
+
+    Ha a vállalat prémium szintű kapacitással rendelkezik, azzal számos értékes lehetőséget nyújthat az ingyenes felhasználók számára is. Mindaddig, amíg a Pro-felhasználók prémium szintű kapacitáshoz rendelt munkaterületeket használnak a tartalom megosztására, az ingyenes felhasználók gond nélkül együttműködhetnek Pro-licenccel rendelkező munkatársaikkal.  **Ezáltal az ingyenes felhasználók is *Power BI-fogyasztókká* válhatnak, így megkaphatják és megoszthatják az üzleti döntések meghozatalához szükséges tartalmakat.** 
+ 
+    ![az ingyenes felhasználót megjelenítő képernyőkép](media/end-user-features/power-bi-free-user.png)
+
+
+   
 
 ## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>A Power BI funkcióinak listája *fogyasztók* és ingyenes felhasználók számára
-A következő diagram azt mutatja be, hogy milyen tevékenységeket végezhet egy *fogyasztó* egy Prémium szintű előfizetéssel rendelkező szervezetben.    
+A következő diagram azt mutatja be, hogy milyen tevékenységeket végezhet egy *fogyasztó* egy Prémium szintű kapacitásban lévő tartalommal és a megosztott kapacitásban lévő tartalommal.    
 
-Az első oszlop egy ingyenes felhasználót jelöl, aki a **Saját munkaterületen** használ különböző tartalmakat. Ez a felhasználó nem tud együttműködni a munkaterületeket használó munkatársaival. A munkatársak nem tudnak tartalmakat megosztani közvetlenül ezzel a felhasználóval, és ez a felhasználó nem tudja a **Saját munkaterületéről** a tartalmakat másokkal megosztani. 
+Az első oszlop egy ingyenes felhasználót jelöl, aki a **Saját munkaterületen** használ különböző tartalmakat. Ez a felhasználó nem tud együttműködni a Power BI szolgáltatást használó munkatársaival. A munkatársak nem tudnak tartalmakat megosztani közvetlenül ezzel a felhasználóval, és ez a felhasználó nem tudja a **Saját munkaterületéről** a tartalmakat másokkal megosztani. 
 
 A második oszlop egy *fogyasztót* jelöl.  A fogyasztó:
 
 - ingyenes felhasználói licenccel rendelkezik
 - egy olyan szervezet tagja, amely egy prémium szintű kapacitásra rendelkezik előfizetéssel
-- tartalmakat (alkalmazásokat, irányítópultokat, jelentéseket) kap a Pro-felhasználóktól a prémium szintű kapacitáshoz rendelt alkalmazás-munkaterületek használatával.
+- tartalmakat (alkalmazásokat, irányítópultokat, jelentéseket) kap a Pro-felhasználóktól a dedikált kapacitáshoz rendelt alkalmazás-munkaterületek használatával.
 - ezeken az alkalmazás-munkaterületeken a **Megtekintő** szerepkört rendelték hozzá. 
 
 ### <a name="legend"></a>Jelmagyarázat
@@ -72,7 +79,7 @@ A második oszlop egy *fogyasztót* jelöl.  A fogyasztó:
 
 ### <a name="feature-list"></a>Funkciólista
 
-|Funkciók   | 1\. forgatókönyv: Ingyenes licenccel rendelkező Power BI-felhasználó, aki nem rendelkezik hozzáféréssel a prémium szintű kapacitásban tárolt tartalmakhoz.    | 2\. forgatókönyv: Ingyenes licenccel rendelkező Power BI-felhasználó, aki **Megtekintői** engedélyekkel rendelkezik a prémium szintű kapacitásban tárolt tartalmakra vonatkozóan. Ez a személy egy *Power BI-fogyasztó*. |
+|Funkciók   | 1\. forgatókönyv: Ingyenes licenccel rendelkező Power BI-felhasználó, aki nem rendelkezik hozzáféréssel a dedikált kapacitásban tárolt tartalmakhoz.    | 2\. forgatókönyv: Ingyenes licenccel rendelkező Power BI-felhasználó, aki **Megtekintői** engedélyekkel rendelkezik a dedikált kapacitásban tárolt tartalmakra vonatkozóan. Ez a személy egy *Power BI-fogyasztó*. |
 |---|---|---|
 |**Alkalmazások** 
 |Automatikusan települ | ![narancssárga x](media/end-user-features/orange-x.png) | ![zöld pont](media/end-user-license/power-bi-green-dot.png)*| 

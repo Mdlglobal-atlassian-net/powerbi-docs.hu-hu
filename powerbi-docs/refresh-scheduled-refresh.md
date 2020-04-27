@@ -1,20 +1,20 @@
 ---
 title: Ütemezett frissítés beállítása
 description: Ez a cikk az átjáró kiválasztásának és az ütemezett frissítés beállításának lépéseit tartalmazza.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: maggies
+ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: cc0527d093118fdb585800d0038f824223098119
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958402"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675699"
 ---
 # <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
@@ -38,7 +38,7 @@ Ha nem érhető el átjáró, akkor az **Átjárókapcsolat** le van tiltva. A s
 
 ![Az átjáró nincs konfigurálva](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Ha rendelkezik beállított személyes átjáróval, és az online állapotú, akkor kiválasztható. Ha nem áll rendelkezésre, akkor offline állapotúként jelenik meg.
+Ha rendelkezik konfigurált személyes átjáróval, és az online állapotú, akkor kiválasztható. Ha nem áll rendelkezésre, akkor offline állapotúként jelenik meg.
 
 ![Átjárókapcsolat](media/refresh-scheduled-refresh/gateway-connection.png)
 
@@ -82,7 +82,11 @@ A beállítások megadásához a **Tartsa adatait naprakészen** csúszkát a **
 > [!NOTE]
 > Két havi inaktivitás után az adatkészlet ütemezett frissítése szünetel. Az adatkészlet akkor számít inaktívnak, ha egyetlen felhasználó sem látogatott meg az adatkészleten alapuló egyetlen irányítópultot és jelentést sem. Ekkor az adatkészlet tulajdonosa egy e-mailt kap az ütemezett frissítés szüneteltetéséről. Ekkor az adatkészlet ütemezett frissítése **letiltott** állapotúként jelenik meg. Az ütemezett frissítés folytatásához egyszerűen látogasson el bármelyik, az adatkészleten alapuló irányítópultra vagy jelentéshez.
 
-## <a name="whats-supported"></a>Mi támogatott?
+## <a name="whats-supported"></a>Mik támogatottak?
+
+
+> [!NOTE]
+> Az ütemezett frissítés négy egymást követő hiba után is automatikusan le lesz tiltva.
 
 Bizonyos adatkészletek ütemezett frissítése eltérő átjárók esetében támogatott. Az alábbi referencia alapján megértheti, milyen lehetőségek vannak.
 

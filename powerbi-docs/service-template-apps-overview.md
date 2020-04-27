@@ -6,24 +6,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 04/16/2020
 ms.author: painbar
-ms.openlocfilehash: c9a42949ca517860c8b3f0e6faa07d49bd8054e8
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 42fa16228deea88f606e348d1a87f9d465c8c2ea
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376684"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066325"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mik azok a Power BI-sablonalkalmazások?
 
 A Power BI új *sablonalkalmazásai* lehetővé teszik a Power BI-partnerek részére, hogy kevés kódolással vagy anélkül hozzanak létre Power BI-alkalmazásokat, és helyezzék azokat üzembe a Power BI bármely ügyfele számára.  Ez a cikk a Power BI sablonalkalmazási programjáról nyújt áttekintést.
 
-A sablonalkalmazások a jelenlegi szolgáltatás-tartalomcsomagokat helyettesítik. Power BI-partnerként létrehozhat használatra kész tartalmakat az ügyfeleinek, és közzéteheti azokat saját maga.  
+Power BI-partnerként létrehozhat használatra kész tartalmakat az ügyfeleinek, és közzéteheti azokat saját maga.  
 
 Létrehozhat sablonalkalmazásokat, amelyeket az ügyfelei a fiókjukhoz kapcsolhatnak és példányosíthatnak. Tartományszakértőkként könnyen fogyaszthatóvá tehetik az adatokat az üzleti felhasználók számára.  
 
-Beküldheti a sablonalkalmazásokat a Cloud Partner Portalra. Az alkalmazások ezután nyilvánosan elérhetővé válnak a [Power BI-alkalmazások piacterén](https://app.powerbi.com/getdata/services) és a [Microsoft AppSource-on](https://appsource.microsoft.com/?product=power-bi). Íme egy magas szintű áttekintés a nyilvános sablonalkalmazás létrehozási folyamatáról.
+Beküldheti a sablonalkalmazásokat a Partnerközpontba. Az alkalmazások ezután nyilvánosan elérhetővé válnak a [Power BI-alkalmazások piacterén](https://app.powerbi.com/getdata/services) és a [Microsoft AppSource-on](https://appsource.microsoft.com/?product=power-bi). Íme egy magas szintű áttekintés a nyilvános sablonalkalmazás létrehozási folyamatáról.
 
 ## <a name="power-bi-apps-marketplace"></a>Power BI-alkalmazások piactere
 
@@ -38,7 +38,7 @@ A Power BI-sablonalkalmazások lehetővé teszik, hogy a Power BI Pro vagy a Pow
 A sablonalkalmazások létrehozásának és beküldésének általános folyamata több lépésből áll. Egyes szakaszokhoz egyszerre több műveletet is el kell végezni.
 
 
-| Szakasz | Power BI Desktop |  |Power BI szolgáltatásban  |  |Cloud Partner Portal  |
+| Szakasz | Power BI Desktop |  |Power BI szolgáltatásban  |  |Partnerközpont  |
 |---|--------|--|---------|---------|---------|
 | **Egy** | Hozzon létre egy adatmodellt és egy jelentést egy .pbix-fájlban |  | Hozzon létre egy munkaterületet. Importálja a .pbix-fájlt. Hozzon létre egy kiegészítő irányítópultot  |  | Regisztráljon partnerként |
 | **Kettő** |  |  | Hozzon létre vizsgálati csomagot, és futtasson belső érvényesítést        |  | |
@@ -49,7 +49,7 @@ A sablonalkalmazások létrehozásának és beküldésének általános folyamat
 
 A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI felügyeleti portálján a sablonalkalmazás beállításait. 
 
-Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő közzétételéhez meg kell felelnie a [felhőbeli piactér kiadójává váláshoz](https://docs.microsoft.com/azure/marketplace/become-publisher) szükséges feltételeknek.
+Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő közzétételéhez meg kell felelnie a [Partnerközpont kiadójává váláshoz](https://docs.microsoft.com/azure/marketplace/become-publisher) szükséges feltételeknek.
  
 ## <a name="high-level-steps"></a>Magas szintű lépések
 
@@ -67,7 +67,7 @@ Az alábbiakban a magas szintű lépésekről olvashat.
 
 6. Léptesse elő a tesztalkalmazást üzem előttivé, hogy elküldhesse az alkalmazást ellenőrzésre az AppSource-ban, és hogy tesztelhesse a saját bérlőjén kívül. 
 
-7. Küldje el a tartalmat a Cloud Partner Platformra a közzétételhez. 
+7. Küldje be a tartalmat a [Partnerközpontba](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) közzétételre. 
 
 8. Tegye élővé az ajánlatot az AppSource-ban, és helyezze üzemi környezetbe az alkalmazást a Power BI-ban.
 
@@ -75,11 +75,11 @@ Az alábbiakban a magas szintű lépésekről olvashat.
 
 ## <a name="requirements"></a>Követelmények
 
-A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings). 
+A sablonalkalmazás létrehozásához engedély szükséges. Részletekért tekintse meg a Power BI [felügyeleti portálján a sablonalkalmazás beállításait](service-admin-portal.md#template-apps-settings).
 
-Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő közzétételéhez meg kell felelnie a [felhőbeli piactér kiadójává váláshoz](https://docs.microsoft.com/azure/marketplace/become-publisher) szükséges feltételeknek.
+Egy sablonalkalmazás Power BI szolgáltatásban és AppSource-ban történő közzétételéhez meg kell felelnie a [Partnerközpont kiadójává váláshoz](https://docs.microsoft.com/azure/marketplace/become-publisher) szükséges feltételeknek.
  > [!NOTE] 
- > Sablonalkalmazások beküldését a [Cloud Partner Portalon](https://cloudpartner.azure.com) lehet kezelni. A bejelentkezéshez használja ugyanazt a Microsoft Fejlesztői Központhoz tartozó fiókot. Az AppSource-ajánlatokhoz csak egy Microsoft-fiókkal kell rendelkeznie. A fiókok ne legyenek egyes szolgáltatásokhoz vagy ajánlatokhoz kötve.
+ > Sablonalkalmazások beküldését a [Partnerközpontban](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) lehet kezelni. A bejelentkezéshez használja ugyanazt a Microsoft Fejlesztői Központhoz tartozó fiókot. Az AppSource-ajánlatokhoz csak egy Microsoft-fiókkal kell rendelkeznie. A fiókok ne legyenek egyes szolgáltatásokhoz vagy ajánlatokhoz kötve.
 
 ## <a name="tips"></a>Tippek 
 

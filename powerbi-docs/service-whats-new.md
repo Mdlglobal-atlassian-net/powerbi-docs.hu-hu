@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 014e3963c0297adb4b77a71f1267f7f132944094
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488844"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439848"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -29,11 +29,41 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+### <a name="april-2020"></a>2020. április
+* A Power BI szolgáltatásban található munkaterületek „új megjelenésének” nyilvános előzetes verziója.
+* A [Power BI-alkalmazások](service-create-distribute-apps.md) egyéni navigációjának tervezési lehetősége általánosan elérhető.
+
+## <a name="previous-months-2020"></a>Korábbi hónapok (2020)
+### <a name="march-2020"></a>2020. március
+* Jelentések exportálása PDF-, PPTX- és PNG-fájlokba a Power BI REST API-k használatával.
+* Új és átalakított globális keresési lehetőség a Power BI szolgáltatásban.
+* Teljesítménybeli fejlesztések a [Multi-Geo prémium szintű kapacitásokhoz](service-admin-premium-multi-geo.md).
+* Az [olvasási/írási XMLA-végpontok](service-premium-connect-tools.md) nyilvános előzetes verziója a Power BI Prémiumban.
+
+### <a name="february-2020"></a>2020. február
+* Lehetőség az irányítópultok, a jelentések és az alkalmazások kiemelésére a Power BI kezdőlapján.
+* Új [Power BI-lap](service-embed-report-microsoft-teams.md) a jelentések Microsoft Teamsbe való beágyazásához.
+* A [növekményes frissítés](service-premium-incremental-refresh.md) általános elérhetősége Power BI Pro-felhasználók támogatásával.
+* E-mail-előfizetések támogatása külső e-mail-címekhez.
+* A Power BI Premiumhoz készült [Bring Your Own Key (BYOK)](service-encryption-byok.md) általános elérhetősége.
+
+### <a name="january-2020"></a>2020. január
+* Új és továbbfejlesztett [használati metrikák](service-usage-metrics.md) a Power BI-munkaterületek felhasználói felületén.
+
+## <a name="2019"></a>2019
+### <a name="december-2019"></a>2019. december
+* Új műveletnapló API, amely lehetővé teszi, hogy Power BI szolgáltatás-rendszergazdái nyomon kövessék a felhasználói és rendszergazdai tevékenységeket a bérlőn belül.
+
+### <a name="november-2019"></a>2019. november
+* [Nagyméretű modellek nyilvános előzetes verziója a Power BI Premiumban] (service-premium-large-models.md].
+* A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban nyilvános elérhetőségben.
+
 ### <a name="october-2019"></a>2019. október
 * Új Power Automate-művelet a Power BI-adathalmazok frissítéséhez.
 * [Partnerlista](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) jelentésekhez és irányítópultokhoz a Power BI szolgáltatásban.
+* Az [Automatizált gépi tanulás] általános elérhetősége (service-machine-learning-automated
+* A Power BI adatéletút nézetének nyilvános előzetes verziója.
 
-## <a name="previous-months-2019"></a>Korábbi hónapok (2019)
 ### <a name="september-2019"></a>2019. szeptember
 * A [sablonalkalmazások](service-template-apps-overview.md) kapcsolódási konfigurációjának frissítései.
 

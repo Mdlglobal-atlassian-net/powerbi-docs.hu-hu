@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: c091295d50bac576af411d967b9902d6804f82be
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576844"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637852"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Mátrixvizualizációk létrehozása a Power BI-ban
 
@@ -57,7 +57,8 @@ A mátrix bővítési állapotát a rendszer a jelentéssel együtt menti. A má
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-
+> [!NOTE]
+> Ha az Analysis Services többdimenziós modelljén alapuló jelentést készít, a kibontás/összecsukás esetén figyelembe kell vennie néhány speciális szempontot is, ha a modell az alapértelmezett tag funkciót használja. További információt a [Többdimenziós modellek használata a Power BI-ban](../desktop-default-member-multidimensional-models.md) című témakörben talál.
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Részletes elemzés használata a Mátrix vizualizációval
 Mátrixvizualizációval számos érdekes, korábban nem elérhető részletes elemzési tevékenység hajtható végre. Például a részletes elemzés sorok, oszlopok vagy külön szakaszok és cellák használatával. Vessünk egy pillantást ezek működésére.

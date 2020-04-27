@@ -6,23 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881395"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637824"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>A Power BI szolgáltatás új külseje
 
-A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely megkönnyíti a jelentések megtekintését és kezelését. Az új arculat egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
+A Power BI szolgáltatás (app.powerbi.com) új arculattal rendelkezik, amely megkönnyíti a jelentések megtekintését és kezelését. Az új arculat egyszerűbb, és a többi Microsoft-termékhez hasonlít. A Power BI szolgáltatás minden területén a jelentések tartalmát helyeztük a középpontba. Ehhez egy világosabb színtémát választottunk, és frissítettük az ikonokat. 
+
+További információt szeretne a **Power BI Desktop** új megjelenéséről? Tekintse meg a [Frissített menüszalag használata a Power BI Desktopban](desktop-ribbon.md) című cikket.
+
+Íme az új külső áttekintése. Részletekért tekintse meg a számozott szakaszokat:
 
 ![A változások áttekintése az új arculatban](media/service-new-look/power-bi-new-look-changes.png)
 
-Konkrét műveletet keres? Itt megtalálhatja: [Az „új arculat”: Hol vannak a műveletek?](service-new-look-where-actions.md)
+Konkrét műveletet keres? Itt megtalálhatja: [Az „új arculat”: Hol vannak a műveletek?](service-new-look-where-actions.md) lehetőséget.
 
 ## <a name="quick-tour-of-the-changes"></a>A módosítások gyors bemutatása
 
@@ -87,4 +91,6 @@ A szerzői műveletek a Desktophoz hasonlók maradtak. Az új nézet módosítá
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Power BI felhasználók számára](consumer/end-user-consumer.md)
+- [A frissített menüszalag használata a Power BI Desktopban](desktop-ribbon.md)
+- [A munkaterületek új megjelenésének kipróbálása](collaborate-share/service-workspaces-new-look.md)
+- [Power BI felhasználók számára](consumer/end-user-consumer.md)

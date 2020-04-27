@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2020
+ms.date: 04/22/2020
 ms.author: davidi
-ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 95492b8561c37b52e77fbd8b16ce5e1e2ec4e4e1
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427254"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066227"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query. 
@@ -148,7 +148,7 @@ Most már rendelkezik egy dimenziótáblával, amelynek segítségével kapcsol�
 A Lekérdezésszerkesztő erőssége, hogy módosítani lehet vele az adatokat, és át tudja alakítani, illetve meg tudja tisztítani őket, hogy készen álljanak a vizualizációra vagy a modellezésre. Van néhány minta, amelyet nem árt megismerni.
 
 ### <a name="temporary-columns-can-be-deleted-after-computing-a-result"></a>Az ideiglenes oszlopokat törölni lehet az eredmény kiszámítása után
-Gyakran előfordul, hogy a Power BI Desktopban olyan számítást kell létrehoznia, amely több oszlop adatait egyetlen új oszloppá alakítja át. Ez bonyolult lehet. A probléma megoldásának egyik egyszerű módja, hogy lépésekre bontja a műveletet. Első lépésként duplikálja a kezdeti oszlopokat. Ezután hozzon létre ideiglenes oszlopokat a lépések számára. Végül pedig hozzon létre egy oszlopot a végeredmény számára. Ha ezzel megvan, törölheti az ideiglenes oszlopokat, hogy a végső adatkészlet ne legyen zsúfolt. Ezt azért lehet megtenni, mivel a lekérdezés lap sorrendben hajtja végre a lépéseket. 
+Gyakran előfordul, hogy a Power BI Desktopban olyan számítást kell létrehoznia, amely több oszlop adatait egyetlen új oszloppá alakítja át. Ez bonyolult lehet. A probléma megoldásának egyik egyszerű módja, hogy lépésekre bontja a műveletet. Első lépésként duplikálja a kezdeti oszlopokat. Ezután hozza létre az ideiglenes oszlopokat. Végül pedig hozza létre az oszlopot a végeredmény számára. Ha ezzel megvan, törölheti az ideiglenes oszlopokat, hogy a végső adatkészlet ne legyen zsúfolt. Ezt azért lehet megtenni, mivel a lekérdezés lap sorrendben hajtja végre a lépéseket. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Lekérdezések duplikálása vagy hivatkozása, majd az eredeti lekérdezéssel való egyesítése
 Néha érdemes kiszámítani egy adatkészlet összefoglaló statisztikáit. Ennek a legegyszerűbb módja a lekérdezés duplikálása vagy hivatkozása a lekérdezés lapon. Ezután használja a **Csoportosítás** lehetőséget az összefoglaló statisztikák kiszámításához. Az összefoglaló statisztikák segítenek szabványosítani az eredeti adatokat, hogy jobban össze lehessen őket hasonlítani. Ez különösen hasznos, amikor egyedi értékeket vet össze a teljes adatkészlettel. Ehhez lépjen az eredeti lekérdezésre, és válassza az Egyesítés lehetőséget. Ezután egyesítse az összefoglaló statisztika lekérdezésének adatait, és egyeztesse a megfelelő azonosítókat. Most már készen áll az adatok elemzéshez szükséges szabványosítására.
@@ -161,3 +161,64 @@ A DAX a Power BI Desktop számításokhoz használt képletnyelve. Ez a nyelv BI
 [Data Analysis Expressions-referencia (DAX)](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX forrásanyagközpont](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+
+## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI szolgáltatás *és* Power BI Desktop
+
+### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Olvassa el és/vagy nézze meg, hogyan tervezhet lenyűgöző megjelenésű jelentéseket (és irányítópultokat) a Power BI-ban
+Miguel Myers adatelemző és grafikus tervező, és a Power BI-közösség tagja.
+
+![Power BI-jelentés](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
+
+* [A blog elolvasása](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+* [A webes szeminárium megtekintése](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+
+### <a name="consider-your-audience"></a>Mindig gondoljon a közönségére
+Mely kulcsfontosságú mérőszámok segítik őket leginkább a döntéshozatalban? Mire fogják felhasználni a jelentést? Milyen tanult vagy kulturális előfeltevések befolyásolhatják a tervezés során hozott döntéseket? Milyen információkra van szüksége a közönségének a sikerhez?
+
+Hol fog megjelenni a jelentés? Ha egy nagyobb képátmérőjű monitoron jeleníti meg, akkor több tartalmat is elhelyezhet rajta. Ha azonban az olvasók a táblagépükön tekintik meg, az olvashatóság érdekében használjon kevesebb vizualizációt.
+
+### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Mondja el a történetet egyetlen képernyő használatával
+Minden jelentésoldalnak azonnal értelmezhető tartalmat kell kínálnia. El tudja kerülni a görgetősávok használatát az oldalakon? Nem túl kusza vagy zsúfolt a jelentés?  A legfontosabb, könnyen olvasható és értelmezhető információk kivételével távolítson el minden további adatot.
+
+### <a name="make-the-most-important-information-biggest"></a>A legfontosabb információt jelenítse meg a legnagyobbként
+Ha a jelentésoldalon található szövegek és a vizualizációk azonos méretűek, az olvasóknak nehezére esik majd a legfontosabb információra összpontosítani. A kártyavizualizációk segítségével például hatásosan tudja megjeleníteni a fontos számokat:  
+![Kártyavizualizáció](media/service-dashboards-design-tips/pbi_card.png)
+
+### <a name="but-be-sure-to-provide-context"></a>De ügyeljen arra, hogy a kontextust is megadja  
+
+A vizualizációk szövegmezők, eszköztippek és hasonló funkciók használatával informatívabbá tehetők.
+
+### <a name="put-the-most-important-information-in-the-upper-corner"></a>A legfontosabb információt helyezze a felső sarokba
+A legtöbb ember fentről lefelé kezd olvasni, így célszerű a képernyő tetején elhelyezni a legfontosabb részletet, és a közönség olvasási irányának megfelelően növelni a részletsűrűséget (balról jobbra, jobbról balra).
+
+### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Használja az adatoknak leginkább megfelelő vizualizációt, a formázással pedig igyekezzen elősegíteni a könnyű olvasást
+Pusztán a változatosság kedvéért ne változtasson a vizualizáción.  A vizualizáció célja egy adott kép könnyen „olvasható” és értelmezhető ábrázolása.  Bizonyos adatok és vizualizációk esetében egy egyszerű grafikus vizualizáció is elegendő. Más esetekben azonban összetettebb vizualizációkra lehet szükség, ezért a csempék és címkék használatával, illetve további testreszabással igyekezzen segíteni az olvasót.  
+
+* Legyen óvatos a valóságot eltorzító, például a 3D-s vagy a nem nullánál kezdődő diagramok használatával. Ne feledje, hogy az emberi agy számára nagyobb nehézséget jelent a körkörös alakok értelmezése. A tortadiagramok, fánkdiagramok, mérőműszerek és egyéb kör alakú diagramok tetszetősek lehetnek, de talán másféle vizualizáció is használható?    
+* A diagramokon belül használja következetesen a tengelyeken található diagramméreteket, a diagramméret-elrendezést és a diagramértékekhez használt színeket.    
+* Ügyeljen arra, hogy ízlésesen kódolja a mennyiségi adatokat. A számok megjelenítésénél három vagy négy számjegynél ne használjon többet. A tizedesvesszőtől egy vagy két hellyel balra található számjegyeket jelenítse meg, és léptékezze a számokat ezres vagy milliós nagyságrendre, tehát 3,4 millió 3 400 000 helyett.    
+* Igyekezzen kerülni a kevert pontossági és időszintek használatát. Győződjön meg róla, hogy az időkeretek jól értelmezhetők.  Ne helyezzen egy, a múlt hónapot és az év egy más hónapját szemléltető szűrt diagramot egymás mellé.    
+* Lehetőleg ne keverje a kis és nagy értékeket sem ugyanazon a skálán, például egy vonal- vagy oszlopdiagramon.  Vegyük például azt az esetet, amikor az egyik érték milliós, a másik pedig ezres nagyságrendben van.  A skála nagysága miatt ebben az esetben nehéz lenne látni az ezres nagyságrendű értékek különbségeit.  Ha kevernie kell az értékek nagyságrendjeit, válasszon olyan vizualizációt, például egy kombinált diagramot, amely lehetővé teszi egy második tengely használatát.    
+* Feleslegesen ne tűzdelje tele adatcímkékkel a diagramokat. Az oszlopdiagramokon szereplő értékek, ***ha kellően nagyok***, általában a konkrét számok megjelenítése nélkül is könnyen értelmezhetők.   
+* Ügyeljen a [diagramok rendezési](consumer/end-user-change-sort.md) módjára. A legmagasabb vagy legalacsonyabb számok kiemeléséhez rendezze az adatokat a mértékek szerint. Ha azt szeretné, hogy a felhasználók könnyedén megtaláljanak egy adott kategóriát a többi között, rendezze az adatokat a tengelyek szerint.  
+* Az ideális tortadiagramok kevesebb mint nyolc kategóriát tartalmaznak. Mivel a tortadiagramban nem lehet két értéket egymás mellett megjeleníteni, ezért jóval nehezebb az értékek összehasonlítása, mint egy oszlopdiagramon. A tortadiagramok alkalmasabbak a rész-egész viszonyok szemléltetésére, mint az egyes részek összehasonlítására. A mérőműszer-diagramokkal rendkívül jól lehet szemléltetni egy aktuális állapotot az adott cél tekintetében.    
+
+A vizualizációval kapcsolatos további segítségért olvassa el a következő részt: [Vizualizációtípusok a Power BI-ban](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+
+### <a name="learn-more-about-best-practice-dashboard-design"></a>További információk az ajánlott irányítópult-tervezési eljárásokról
+Itt van néhány kedvenc könyveink közül:
+
+* Cole Nussbaumer Knafic: *Storytelling with Data*
+* Nathan Yau: *Data points*
+* Alberto Cairo: *The truthful Art*
+* Stephen Few *Now You See It* című könyve  
+* Edward Tufte *Envisioning Information* című könyve  
+* Andrew Abela: *Advanced Presentations Design*   
+
+## <a name="next-steps"></a>Következő lépések
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
+* [Power BI-jelentések](consumer/end-user-reports.md)
+
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
+
