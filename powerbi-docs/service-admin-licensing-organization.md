@@ -1,158 +1,106 @@
 ---
 title: Szervezeti Power BI-licencelés
-description: A különböző Power BI-licenctípusok (az ingyenes, a Power BI Pro és a Power BI Premium) ismertetése.
+description: A Power BI-ban elérhető különböző licenctípusok áttekintése, valamint információ arról, hogy hogyan vásárolhatják meg és hogyan kezelhetik a rendszergazdák a licenceket a szervezetük számára.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 7a2cc9a1deb87e94c0887b1ae00174d6791cf712
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a41e9453158c38a208fe7f4ac937b4e86a515f4b
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700027"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436322"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Szervezeti Power BI-licencelés
 
-[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
+Az, hogy mit tehetnek a felhasználók a Power BI szolgáltatásban attól függ, hogy milyen típusú felhasználónkénti licencekkel rendelkeznek, és hogy a használt tartalom egy Power BI Premium-kapacitáshoz hozzárendelt munkaterületen található-e. A Power BI szolgáltatás összes felhasználójának licenccel kell rendelkeznie.
 
-A cikk a felhasználónkénti licencekre összpontosít a rendszergazda szemszögéből.
+A felhasználók kétféleképpen szerezhetnek licencet. Az önkiszolgáló bejelentkezési képességek és munkahelyi vagy iskolai fiókjuk használatával a felhasználók saját ingyenes vagy Pro-licencet szerezhetnek be. A másik lehetőség, hogy a rendszergazdák beszereznek egy Power BI-előfizetést, és licenceket rendelnek a felhasználókhoz.
 
-## <a name="manage-power-bi-pro-licenses"></a>Power BI Pro-licencek kezelése
+A cikk a felhasználónkénti licencek és a szolgáltatások megvásárlásával foglalkozik a rendszergazda szemszögéből. Az [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md) című cikkben további információt talál arról, hogyan szerezhetik be a felhasználók a saját licencüket.
 
-Rendszergazdaként vásárolhat és kioszthat Power BI Pro-licenceket, és regisztrálhatja is a cégét a Power BI Pro próbaverziójára. A Power BI Pro próbaverziójára egyéni felhasználók is regisztrálhatnak.
+## <a name="who-can-purchase-and-assign-licenses"></a>Ki vásárolhat és rendelhet hozzá licenceket?
 
-### <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro-licencek vásárlása
+Ahhoz, hogy a szervezethez tartozó licenceket megvásárolhassa és másokhoz hozzárendelhesse, rendszergazdai szerepkörrel kell rendelkeznie. A rendszergazdai szerepköröket az Azure Active Directory felügyeleti központjában vagy a Microsoft 365 felügyeleti központjában lehet hozzárendelni. A következő táblázat azt mutatja be, hogy a vásárlással és a licenceléssel kapcsolatos feladatok elvégzéséhez milyen szerepkörre van szükség. A szerepkörök Azure Active Directoryben történő használatáról további információért lásd: [Rendszergazdai szerepkörök megtekintése és hozzárendelése az Azure Active Directoryben](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Ha többet szeretne megtudni a Microsoft 365 rendszergazdai szerepköreiről, tekintse meg a [Rendszergazdai szerepkörök bemutatása](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) című cikket, ahol ajánlott eljárásokat is talál.
 
-Rendszergazdaként a Power BI Pro-licenceket a Microsoft 365-ön keresztül vagy egy hivatalos Microsoft-partnertől vásárolhatja meg. A licenceket a megvásárlásuk után ki kell osztania az egyes felhasználóknak. További információkért lásd [a Power BI Pro-licencek vásárlását és kiosztását ismertető](service-admin-purchasing-power-bi-pro.md) témakört.
+| Ki vásárolhat szolgáltatásokat és licenceket? | Ki kezelheti a felhasználói licenceket? |
+| --------------- | --------------- |
+| Számlázási adminisztrátor | Licencek rendszergazdája |
+| Globális rendszergazda | Felhasználói rendszergazda |
+|  | Globális rendszergazda |
+
+Ezek a szerepkörök felügyelik a szervezetet. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [A Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
+
+## <a name="get-power-bi-for-your-organization"></a>Power BI beszerzése szervezeteknek
+
+A globális rendszergazda vagy a számlázási rendszergazda regisztrálhat a Power BI szolgáltatásra, és licenceket vásárolhat a szervezet felhasználói számára. Ha még nem áll készen a vásárlásra, válassza a Power BI Pro próbaverzióját. Ezzel 25 licencet kap, melyeket egy hónapig használhat. A regisztráció lépésenkénti ismertetését itt tekintheti meg: [Power BI-előfizetés beszerzése a szervezet számára](admin/service-admin-org-subscription.md).
+
+## <a name="about-self-service-sign-up"></a>Az önkiszolgáló regisztráció
+
+Az egyes felhasználók is beszerezhetik saját Power BI-licencüket, ha a saját munkahelyi vagy iskolai fiókjukkal jelentkeznek be. Az ingyenes licenccel a felhasználók megismerkedhetnek a Power BI-jal, és azt személyes adatelemzésre és vizualizációkra használhatják a Saját munkaterület használatával, de nem tudnak együttműködést kezdeményezni más felhasználókkal. A tartalom megosztásához Power BI Pro-licenc szükséges. A felhasználók a licencük típusát Pro-licencre frissíthetik, vagy közvetlenül is regisztrálhatnak a Próra, ha a szervezet a kereskedelmi felhőt használja. A közvetlen vásárlás vagy a Pro verzióra való frissítés nem érhető el az oktatási szervezeteknek és azoknak a szervezeteknek, amelyek kormányzati vagy szuverén felhőbeli példányokat használnak.
+
+Ha nem szeretné, hogy az önkiszolgáló regisztráció elérhető legyen a szervezet felhasználói számára, kikapcsolhatja azt [Az önkiszolgáló regisztráció engedélyezése](admin/service-admin-disable-self-service.md) című témakörben leírtak alapján.
+
+Ha tudni szeretné, hogy a szervezeténél mely felhasználók rendelkeznek már licenccel, a [Felhasználói licencek megtekintése és kezelése](admin/service-admin-manage-licenses.md) című cikkben talál erről további információt.
+
+## <a name="license-types-and-capabilities"></a>A licencek típusai és képességei
+
+A felhasználónkénti Power BI-licenceknek két típusa létezik: az ingyenes és a Pro. Az, hogy a felhasználónak melyik licencre van szüksége attól függ, hogy hol van tárolva a tartalom, és hogy hogyan fogják az adott tartalmat felhasználni. A tartalom tárolásának helyét a szervezet [előfizetésének típusa](#subscription-types) határozza meg.
+
+A [Power BI Premium](service-admin-premium-purchase.md) előfizetés-típus lehetővé teszi, hogy a felhasználók ingyenes licenccel használják a prémium szintű kapacitáshoz rendelt munkaterületeken tárolt tartalmakat. A prémium szintű kapacitáson kívül az ingyenes licenccel rendelkező felhasználó a Power BI szolgáltatást csak arra használhatja, hogy adatokhoz csatlakozzon és jelentéseket és irányítópultokat hozzon létre egy személyes munkaterületen. Nem oszthatnak meg tartalmakat másokkal, és nem tehetnek közzé tartalmat az alkalmazás-munkaterületeken.
+
+A standard Power BI-előfizetés megosztott kapacitást használ. Ha a tartalom megosztott kapacitásban van tárolva, a Power BI Pro-licenchez hozzárendelt felhasználók csak Power BI Pro-felhasználókkal tudnak együttműködni. Használhatják a mások által megosztott tartalmat, közzétehetnek tartalmat az alkalmazás-munkaterületeken, megoszthatnak irányítópultokat, és feliratkozhatnak irányítópultokra és jelentésekre.  Ha a munkaterületek prémium szintű kapacitásban vannak, a Pro-felhasználók olyan felhasználók számára is terjeszthetik a tartalmakat, akik nem rendelkeznek Power BI Pro-licenccel.
+
+Az alábbi táblázat összefoglalja az egyes licencelési típusok alapszintű képességeit. Az egyes licenctípusok részletes funkcióit a [Funkciók licenctípusok szerint](service-features-license-type.md) című témakörben találja.
+
+| Licenctípus | Képességek, ha a munkaterület megosztott kapacitásban van | További képességek, ha a munkaterület prémium szintű kapacitásban van |
+| --------- | ----------- | ----------- |
+| Power BI (ingyenes) | Hozzáférés a Saját munkaterületen tárolt tartalomhoz | A velük megosztott tartalom felhasználása |
+| Power BI Pro | A Pro-licenccel rendelkező felhasználók közzétehetnek tartalmat alkalmazás-munkaterületeken, megoszthatnak irányítópultokat, és feliratkozhatnak irányítópultokra és jelentésekre | Tartalom terjesztése ingyenes licenccel rendelkező felhasználók számára |
+
+## <a name="subscription-types"></a>Előfizetés-típusok
+
+A Microsoft minden felhasználóalapú kereskedelmi licencet használó előfizetése Azure Active Directory-identitáson alapul. Ez azt jelenti, hogy olyan identitással kell bejelentkeznie, amelyet az Azure Active Directory támogat kereskedelmi licencekhez. Bármely olyan Microsoft-előfizetéshez hozzáadhat Power BI-előfizetést, amely az Azure Active Directoryt használja identitásszolgáltatásként. Egyes előfizetések, például az Office 365 E5, már rendelkeznek Power BI Pro-licenccel, így nincs szükség arra, hogy külön regisztráljon a Power BI-ra.
+
+A szervezetek számára kétféle Power BI-előfizetés létezik: az önkiszolgáló BI a Power BI Próval és a speciális analitika a Power BI Prémiummal.
+
+A standard önkiszolgáló Power BI Pro-előfizetéssel a rendszergazdák felhasználónkénti licenceket rendelhetnek hozzá. A Power BI Pro-licencek esetében felhasználónkénti havi díjat kell fizetni, amely lehetővé teszi az együttműködést, a közzétételt, a megosztást és az alkalmi elemzést. A tartalmat a Microsoft által teljes mértékben felügyelt megosztott tárolókapacitásba menti a rendszer.
+
+A Power BI Premium-előfizetés dedikált kapacitást foglal le a szervezet számára. A Prémium szint megfelelő a nagyvállalati üzleti elemzéshez, a big data-elemzéshez és a felhőbeli és helyszíni jelentéskészítéshez, és speciális felügyeleti és üzembe helyezési vezérlőket is elérhetővé tesz. A dedikált számítási és tárolási erőforrásokat a szervezet kapacitás-rendszergazdái kezelik. Ezért a dedikált környezetért havi díjat számítunk fel. A prémium szint többi előnyei mellett a prémium kapacitásban tárolt tartalmakat olyan felhasználók is elérhetik, akik nem rendelkeznek Power BI Pro-licenccel, és számukra is terjeszthető a tartalom. A prémium szint használatához legalább egy felhasználónak rendelkeznie kell egy hozzá rendelt Power BI Pro-licenccel, és a tartalom létrehozóinak és fejlesztőinek is Power BI Pro-licenccel kell rendelkezniük.
+
+Az előfizetések két típusa nem zárja ki egymást. Rendelkezhet egyszerre Power BI Prémiummal és Power BI Próval is. Ebben az esetben a prémium szintű kapacitásban tárolt tartalmak megoszthatók az összes felhasználóval, és a megosztott kapacitás is elérhető. A kapacitáskorlátokról az [Adattárolás felügyelete Power BI-munkaterületeken](service-admin-manage-your-data-storage-in-power-bi.md) című témakörben tájékozódhat.
+
+A termék funkcióinak és díjszabásának összehasonlításához tekintse meg a [Power BI díjszabását](https://powerbi.microsoft.com/pricing).
+
+## <a name="guest-user-access"></a>Vendégfelhasználói hozzáférés
+
+Előfordulhat, hogy tartalmat szeretne terjeszteni a szervezeten kívüli felhasználók számára is. Külső felhasználókkal úgy oszthat meg tartalmakat, ha vendégként meghívja őket a tartalom megtekintéséhez. A Vállalatközi Azure Active Directory (Azure AD B2B) lehetővé teszi a külső felhasználókkal való megosztást is. A külső felhasználókkal való megosztáshoz a következő feltételeket kell teljesíteni:
+
+- Engedélyezni kell a tartalom külső felhasználókkal történő megosztását
+
+- A vendégfelhasználónak megfelelő licenccel kell rendelkeznie ahhoz, hogy megtekinthesse a megosztott tartalmat
+
+A vendégfelhasználói hozzáférésről további információt a [Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak](service-admin-azure-ad-b2b.md) című témakörben talál.
+
+## <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro-licencek vásárlása
+
+Rendszergazdaként a Power BI Pro-licenceket a Microsoft 365-ön keresztül vagy egy Microsoft-partnertől vásárolhatja meg. A licenceket a megvásárlásuk után ki kell osztania az egyes felhasználóknak. További információkért lásd [a Power BI Pro-licencek vásárlását és kiosztását ismertető](service-admin-purchasing-power-bi-pro.md) témakört.
 
 ### <a name="power-bi-pro-license-expiration"></a>A Power BI Pro-licenc lejárata
 
-A Power BI Pro-licenc lejárata után egy türelmi időszak biztosított. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
+A Power BI Pro-licenc lejárata után egy türelmi időszak kezdődik. A mennyiségi licenc részeként megvásárolt licencekre a türelmi időszak 90 nap. Közvetlenül vásárolt licencre a türelmi időszak 30 nap.
 
 A Power BI Pro előfizetési életciklusa megegyezik az Office 365-ével. További információ: [Mi történik az adatokkal és a hozzáféréssel, amikor az Office 365 vállalati verzióra szóló előfizetés befejeződik?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
-### <a name="power-bi-pro-trial-for-individuals"></a>A Power BI Pro próbaverziója egyéni felhasználóknak
-
-A cégben dolgozó egyéni felhasználók regisztrálhatnak a Power BI Pro próbaverziójára. További információkért lásd: [Egyéni Power BI-regisztráció](service-self-service-signup-for-power-bi.md).
-
-A Microsoft 365 Felügyeleti központban a szolgáltatáson belüli, egyéni használatra készült Power BI Pro-próbaverziót használó felhasználók nem a Power BI Pro próbaverziós felhasználóiként, hanem ingyenes Power BI-felhasználókként jelennek meg, a Power BI tárhelykezelési lapján azonban a Power BI Pro próbaverziós felhasználóiként vannak feltüntetve.
-
-### <a name="power-bi-pro-trial-for-organizations"></a>A Power BI Pro próbaverziója cégeknek
-
-Ha anélkül szeretné beszerezni és üzembe helyezni a Power BI próbaverziós licenceit több, a cégnél dolgozó felhasználó számára, hogy külön-külön el kellene fogadniuk a próbaverzió feltételeit, regisztrálhatja a céget a Power BI Pro próbaverziójára.
-
-Mielőtt regisztrálna, vegye figyelembe a következőket:
-
-* A regisztrációhoz [**globális rendszergazdai** vagy **számlázási rendszergazdai**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) szerepkörrel kell rendelkeznie a Microsoft 365-ben.
-
-* A céges próbaverziók száma bérlőnként csak egy lehet. Ez azt jelenti, hogy ha valaki már alkalmazta a Power BI Pro próbaverzióját a bérlőn, Ön nem teheti meg ugyanezt. Ha segítségre van szüksége ezzel kapcsolatban, forduljon az [Office 365 számlázási támogatási csapatához](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
-
-1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/adminportal/home#/homepage).
-
-1. A navigációs panelen kattintson a **Számlázás**, majd az **Előfizetések** lehetőségre.
-
-   ![Számlázás és előfizetés](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
-
-1. A jobb oldalon válassza az **Előfizetések felvétele** lehetőséget.
-
-   ![Előfizetések felvétele](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
-
-1. Az **Egyéb csomagok** területen mutasson a Power BI Pro melletti három pontra ( **. . .** ), majd válassza az **Ingyenes próba megkezdése** lehetőséget.
-
-   ![Ingyenes próba megkezdése](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
-
-1. A rendelés visszaigazolási képernyőjén válassza a **Kipróbálom most** lehetőséget.
-
-1. A rendelés nyugtázásánál válassza a **Folytatás** lehetőséget.
-
-Most [kioszthatja a licenceket az Office 365-ben](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-## <a name="manage-power-bi-free-licenses"></a>Ingyenes Power BI-licencek kezelése
-
-A céghez tartozó felhasználók két különböző módon szerezhetnek be ingyenes Power BI-licenceket:
-
-* Power BI-licencet rendelhet hozzájuk a Microsoft 365 Felügyeleti központban.
-
-* Ha egy felhasználó [Power BI-fiókot regisztrál](service-self-service-signup-for-power-bi.md), a rendszer ingyenes licencet rendel hozzá.
-
-### <a name="requesting-and-assigning-free-licenses"></a>Ingyenes licencek igénylése és kiosztása
-
-Ha a licencigénylés és -kiosztás folyamatát központilag szeretné felügyelni, előbb bizonyosodjon meg róla, hogy már rendelkezik a korlátlan (ingyenes) Power BI-licenckészlettel a bérlőben.
-
-Ez a licenckészlet azt követően válik elérhetővé, hogy valaki egyéni felhasználóként már regisztrált a Power BI használatára. A regisztrálás során a rendszer hozzárendeli a licenckészletet a céghez, és a regisztráló felhasználónak kioszt egy licencet.
-
-1. A Microsoft 365 Felügyeleti központban, a **Számlázás** > **Licencek** felületen keresse a **korlátlan** lehetőséget.
-
-    ![Korlátlan ingyenes licenckészlet](media/service-admin-licensing-organization/unlimited-licenses.png)
-
-1. Ha a készlet elérhető, [kioszthatja a licenceket az Office 365-ben](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc). Ha a készlet nem érhető el, két lehetősége van:
-
-    * Kérje meg a cég egy tagját az egyéni regisztrációra, ami kiváltja a korlátlan készlet létrehozását.
-
-    * Továbblép a következő eljárásra, amellyel rögzített számú licencre regisztrálhat.
-
-Ha a korlátlan (ingyenes) Power BI-licenckészlet nem érhető el, és nem szeretne egyéni regisztrációhoz folyamodni, eszerint kell eljárnia.
-
-1. Nyissa meg a [Microsoft 365 Felügyeleti központot](https://portal.office.com/admin/default.aspx).
-
-1. A navigációs panelen kattintson a **Számlázás** > **Előfizetések** lehetőségre.
-
-1. A jobb oldalon válassza az **Előfizetések felvétele +** lehetőséget.
-
-1. Az **Egyéb csomagok** területen mutasson a Power BI (ingyenes) lehetőség melletti három pontra ( **. . .** ), majd válassza a **Vásárlás** lehetőséget.
-
-    ![Vásárlás – Power BI (ingyenes)](media/service-admin-licensing-organization/buy-powerbi-free.png)
-
-1. Adja meg a hozzáadni kívánt licencek számát, és válassza a **Fizetés most** vagy a **Bevásárlókocsiba** lehetőséget.
-
-1. A fizetési folyamat lépéseinél adja meg a szükséges adatokat.
-
-    Ennél az ajánlatnál nincs vásárlás annak ellenére, hogy meg kell adnia a hitelkártyája adatait a számlázáshoz, vagy a számla kiküldését kell választania.
-
-1. Most már [kioszthatja a licenceket az Office 365-ben](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-1. Ha később úgy dönt, hogy további licenceket kíván hozzáadni, visszatérhet az **Előfizetések hozzáadása** lapra, és választhatja a **Licencmennyiség módosítása** a Power BI (ingyenes) termékhez lehetőséget.
-
-    ![Licenc mennyiségének módosítása](media/service-admin-licensing-organization/change-license-quantity.png)
-
-### <a name="enable-or-disable-individual-user-sign-up-in-azure-active-directory"></a>Egyéni felhasználók általi Azure Active Directory-regisztráció engedélyezése és letiltása
-
-Rendszergazdaként engedélyezheti vagy letilthatja az egyéni felhasználók általi regisztrációt az Azure Active Directoryban (AAD). Ez a szakasz azt mutatja be, hogyan felügyelheti a regisztrációkat PowerShell-parancsokkal. Az Azure PowerShellről [az Azure PowerShell áttekintésében](/powershell/azure/overview) talál további információt.
-
-A regisztrációkat az Azure Active Directory **AllowAdHocSubscriptions** beállítása szabályozza. A legtöbb bérlő esetén ez a beállítás *true* (igaz) értékre van állítva, vagyis engedélyezett. Ha a Power BI-t egy partneren keresztül szerezte be, elképzelhető, hogy *false* (hamis) érték van megadva, amely letiltja a regisztrációt. Ha a beállítást *true* értékről *false* értékre módosítja, a cég új felhasználói nem fognak tudni egyénileg regisztrálni. Azoknak a felhasználóknak a Power BI-licence, akik a beállítás módosítása előtt regisztráltak, továbbra is megmarad. Fontos megjegyezni, hogy az (ingyenes) Power BI-licenccel rendelkező felhasználók *false* (hamis) beállítás esetén is regisztrálhatnak egyéni Power BI Pro-próbaverzióra.
-
-1. Jelentkezzen be az Azure Active Directoryba a Microsoft 365-beli hitelesítő adataival. Az alábbi PowerShell-szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
-
-    ```powershell
-     $msolcred = get-credential
-     connect-msolservice -credential $msolcred
-    ```
-
-   ![Azure Active Directory-bejelentkezés](media/service-admin-licensing-organization/azure-ad-sign-in.png)
-
-1. Miután bejelentkezett, a következő parancs futtatásával ellenőrizheti a bérlő aktuális konfigurációját. (Fontos, hogy az alábbi „fl” a kis „l” betűt tartalmazza, nem az 1 számjegyet.)
-
-    ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
-    ```
-1. A következő parancs futtatásával engedélyezheti ($true) vagy tilthatja le ($false) az **AllowAdHocSubscriptions** beállítást.
-
-    ```powershell
-     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
-
-> [!NOTE]
-> Az AllowAdHocSubscriptions jelzővel irányítható a vállalat számos felhasználói képessége, beleértve a felhasználók azon képességét, hogy regisztráljanak az Azure Rights Management szolgáltatásra. A jelölő módosítása az összes képességre hatással van.
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Önkiszolgáló regisztráció a Power BI-ra](service-self-service-signup-for-power-bi.md)  
-
-[Power BI Pro-licencek vásárlása és kiosztása](service-admin-purchasing-power-bi-pro.md)
-
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- [Power BI Pro-licencek vásárlása és kiosztása](service-admin-purchasing-power-bi-pro.md)
+- [A Microsoft 365 Vállalati verzió előfizetéseinek és számlázásának dokumentációja](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide)
+- [Bejelentkezett Power BI-felhasználók keresése](service-admin-access-usage.md)
+- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

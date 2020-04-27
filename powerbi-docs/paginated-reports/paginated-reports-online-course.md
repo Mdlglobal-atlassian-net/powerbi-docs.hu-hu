@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267595"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675639"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Online kurzus: Többoldalas Power BI-jelentések egy nap alatt
 
@@ -83,7 +83,7 @@ A [24 videóból álló sorozat](https://www.youtube.com/playlist?list=PL1N57mwB
 
 Letölthet és beállíthat egy önálló tanulási csomagot, amely a prezentáció tartalmát és nyolc gyakorlati labort tartalmaz:
 
-1. [Ezzel a hivatkozással](https://aka.ms/priad-ilt-student) letöltheti a helyi számítógépre az önálló tanulási csomagot (.zip-fájl).
+1. [Ezzel a hivatkozással](https://aka.ms/priad-student) letöltheti a helyi számítógépre az önálló tanulási csomagot (.zip-fájl).
 1. Nyissa meg a fájl tulajdonságait, és jelölje be a „Tiltás feloldása” jelölőnégyzetet (előfordulhat, hogy a Windows nem megbízhatóként jelöli meg a fájlt).
 1. Bontsa ki a fájl tartalmát a fájlrendszer egyik mappájába. Javasoljuk, hogy egy könnyen megtalálható mappát hozzon létre, esetleg **Képzés** néven. A gyakorlat dokumentumai **&lt;CourseFolderként&gt;** hivatkoznak erre a mappára.
 
@@ -105,6 +105,10 @@ Amikor készen áll az első laborgyakorlat megkezdésére, nyissa meg a **&lt;C
 > Ha egy Power BI Desktop-fájlt szeretne közzétenni egy munkaterületen, be kell jelentkeznie a Power BI-ba. A közzététel eredményeképp létrejött adatkészlet a jelentés adatforrása. Ahhoz, hogy a jelentés adatforrásaként egy adatkészletet használjon, nem szükséges Power BI Pro-licenccel vagy Power BI Premium-előfizetéssel rendelkeznie.
 >
 > Néhány laborgyakorlatban azonban közzé kell tennie egy lapszámozott jelentést egy munkaterületen. Lapszámozott jelentést csak akkor nyithat meg, ha az egy olyan [dedikált kapacitáson](../service-premium-what-is.md#dedicated-capacities) található munkaterületen van mentve, amelyen engedélyezve van a lapszámozott jelentések számítási feladata. Ha nem rendelkezik megfelelő munkaterülettel, egy hivatkozással megtekinthet egy videót arról, hogy hogyan teheti közzé a jelentést.
+
+## <a name="instructor-kit"></a>Oktatói csomag
+
+Az oktatói csomagot (.zip-fájl) [ezzel a hivatkozással](https://aka.ms/priad-instructor) töltheti le a helyi számítógépre.
 
 ## <a name="next-steps"></a>Következő lépések
 

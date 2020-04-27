@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: cc47820e5903426d4f3635c78e0dc108049f897e
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404769"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439342"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
 
@@ -30,6 +30,12 @@ Adatfolyamok CDM-mappákból való létrehozására az alábbi felsorolásban is
 * Ahhoz, hogy a Power BI-hoz adhassa őket, olvasási és végrehajtási jogosultsággal kell rendelkeznie a CDM-mappában lévő minden fájlra és mappára.
 
 A következő bekezdések adatfolyamok CDM-mappából való létrehozását ismertetik.
+
+## <a name="authorizing-users-for-cdm-folders-to-create-a-dataflow"></a>A CDM-mappák felhasználóinak engedélyezése adatfolyam létrehozásához
+
+Ahhoz, hogy adatfolyamot hozhasson létre egy CDM-mappából, a következő engedélyeket kell hozzáadni:
+* A CDM-mappához a Power BI-on keresztül hozzáférő felhasználónak szerepelnie kell a tárfiók **Storage Blob adattulajdonosa** szerepkör alatt.
+* Annak a felhasználónak, aki a CDM-mappához hozzáfér a Power BI-on keresztül, rendelkeznie kell **olvasási hozzáférési** és **végrehajtási hozzáférési** ACL-ekkel mind magában a CDM-mappában, mind pedig az azon belül található összes fájlban és mappában. 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Adatfolyam létrehozása CDM-mappából
 

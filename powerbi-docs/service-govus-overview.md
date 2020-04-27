@@ -1,20 +1,20 @@
 ---
 title: Power BI az USA kormányzati ügyfelei számára – Áttekintés
-description: Az USA kormányzati ügyfelei Power BI Pro-előfizetést adhatnak Office 365-ös kormányzati csomagjukhoz. A szolgáltatásleírásból megtudhatja, hogyan regisztrálhat, valamint tekintheti át a funkciók elérhetőségét.
+description: Az USA kormányzati ügyfelei Power BI Pro-előfizetést adhatnak Microsoft 365-ös kormányzati csomagjukhoz. A szolgáltatásleírásból megtudhatja, hogyan regisztrálhat, valamint tekintheti át a funkciók elérhetőségét.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c01eb3041964a858b1aeeaeaa471f0d839898e
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404800"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436345"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 Ez a cikk az USA olyan kormányzati ügyfeleinek szól, akik a Power BI-t egy Office 365 Kormányzati verzió részeként helyezik üzembe. A kormányzati csomagok olyan szervezetek egyedi igényeihez lettek kialakítva, amelyeknek meg kell felelniük az Egyesült Államok megfelelőségi és biztonsági szabványainak. Az USA kormányzati ügyfeleinek szóló Power BI szolgáltatás eltér a Power BI kereskedelmi verziójától. Ezek funkcióinak eltéréseit az alábbi szakaszokban ismertetjük.
@@ -31,8 +31,7 @@ Ha Ön új ügyfél, igazolnia kell szervezete jogosultságát, mielőtt regiszt
 > Ha már üzembe helyezte a Power BI-t egy kereskedelmi környezetben, amelyet a US Government-felhőbe szeretne áthelyezni, hozzá kell adnia egy új Power BI Pro-előfizetést az Office 365 Kormányzati verzióhoz. Ezután replikálja a kereskedelmi adatokat a Power BI US Governmentben, távolítsa el a kereskedelmi licenc-hozzárendeléseket a felhasználói fiókokból, majd rendeljen ezekhez a fiókokhoz egy Power BI Pro Government-licencet.
 >
 >
-
-### <a name="government-cloud-instances"></a>Kormányzati felhőpéldányok
+## <a name="government-cloud-instances"></a>Kormányzati felhőpéldányok
 Az Office 365 különböző környezeteket nyújt kormányzati ügynökségeknek, amelyekkel különböző megfelelőségi követelményeknek felelhetnek meg. Az egyes környezetek részleteit a csatolt szolgáltatásleírásokban találhatja meg.
 
 * Az [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) szövetségi, állami és helyi kormányzati szintekhez is használható.
@@ -41,24 +40,24 @@ Az Office 365 különböző környezeteket nyújt kormányzati ügynökségeknek
 
 * Az [Office 365 DoD-környezet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) kifejezetten az Egyesült Államok Védelmi Minisztériumának készült. 
 
-### <a name="purchase-a-power-bi-pro-government-subscription"></a>Power BI Pro Government-előfizetés vásárlása
+## <a name="connect-to-power-bi-for-us-government"></a>Csatlakozás a Power BI for US Governmenthez
 
-Az Office 365 üzembe helyezése után hozzáadhat egy Power BI-előfizetést. A Power BI Pro Government szolgáltatás megvásárlásához kövesse az [USA-beli kormányzati szerv regisztrálása](service-govus-signup.md#existing-office-government-cloud-customers) című szakasz részletes lépéseit. Vásároljon minden felhasználó számára licencet, akinek a Power BI-ra van szüksége, majd rendelje hozzá a licenceket a felhasználói fiókokhoz.
+Ön a kereskedelmi felhasználóktól eltérő URL-címmel csatlakozhat a Power BI for US Governmenthez. A Power BI-ba való bejelentkezéshez használja a következő URL-címeket:
+
+| Kereskedelmi verzió  | GCC  | GCC High | DoD |
+| --- | --- | --- | --- |
+| [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) | [https://app.mil.powerbigov.us](https://app.mil.powerbigov.us) |
+
+A fiókja több felhőhöz is kiépíthető. Ilyen esetben, ha Power BI Desktopot használ, a bejelentkezéskor kiválaszthatja, mely felhőhöz csatlakozik.
+
+## <a name="purchase-a-power-bi-pro-government-subscription"></a>Power BI Pro Government-előfizetés vásárlása
+
+Az Office 365 üzembe helyezése után hozzáadhat egy Power BI-előfizetést. A Power BI Pro Government szolgáltatás megvásárlásához kövesse az [USA-beli kormányzati szerv regisztrálása](service-govus-signup.md) című szakasz részletes lépéseit. Vásároljon minden felhasználó számára licencet, akinek a Power BI-ra van szüksége, majd rendelje hozzá a licenceket a felhasználói fiókokhoz.
 
 > [!IMPORTANT]
 > A Power BI US Government nem érhető el ingyenes licenccel. Minden felhasználónak Pro licenccel kell rendelkeznie a kormányzati közösségi felhő igénybe vételéhez. Ha egy felhasználói fiókhoz ingyenes licenc tartozik, csak a kereskedelmi felhőhöz férhet hozzá, ezen túl pedig hitelesítési és hozzáférési problémákba fog ütközni. Ha megvásárolta a Power BI Premiumot, a hozzáférés engedélyezéséhez nem kell Pro-licenceket rendelnie a felhasználókhoz.  A vállalathoz tartozó összes felhasználó hozzáférhet a vele megosztott jelentésekhez, ha az adott jelentés Prémium szintű kapacitásban van közzétéve. Licenctípusok közti különbségek áttekintése: [Power BI-szolgáltatások funkciói licenctípus szerint](service-features-license-type.md).
 >
 >
-
-## <a name="connect-to-power-bi-for-us-government"></a>Csatlakozás a Power BI for US Governmenthez
-
-Ön a kereskedelmi felhasználóktól eltérő URL-címmel csatlakozhat a Power BI for US Governmenthez. A Power BI-ba való bejelentkezéshez használja a következő URL-címeket:
-
-| Kereskedelmi verzió URL-címe | US Government verzió URL-címe | US Government URL-cím GCC High-hoz |
-| --- | --- | --- |
-| `https://app.powerbi.com/` |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
-
-A fiókja több felhőhöz is kiépíthető. Ilyen esetben, ha Power BI Desktopot használ, a bejelentkezéskor kiválaszthatja, mely felhőhöz csatlakozik.
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Kapcsolat a kormányzati és a globális Azure-felhőszolgáltatások között
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/31/2019
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 13928bc39801cdaccf73450da64c4f84048fbce3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: fcbafe3a66052971a725d1354fe5d12e22fabc63
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74791625"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439894"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Egyéni Power BI-regisztráció
 
@@ -79,7 +79,7 @@ A legtöbb esetben az ismertetett folyamat elegendő a Power BI-regisztrációho
 | Tünet / hibaüzenet | Ok és megkerülő megoldás |
 | ----------------------- | -------------------- |
 | <strong>Személyes e-mail-címek (példa: nancy@gmail.com)</strong> A regisztráció során a következőhöz hasonló üzenet jelenik meg: <br /><br /> *Személyes e-mail-címet adott meg: Adja meg a munkahelyi vagy az iskolai e-mail-címét a céges adatainak biztonságos tárolása érdekében.* <br /><br /> vagy <br /><br /> *Ez egy személyes e-mail-címnek tűnik. Adja meg a munkahelyi e-mail-címét, így össze tudjuk kapcsolni Önt a cége többi tagjával. Ne aggódjon. A címét nem osztjuk meg senkivel.* | A Power BI nem támogatja a fogyasztói e-mail-szolgáltatók vagy távközlési szolgáltatók által biztosított e-mail-címeket. <br /><br /> A regisztráció befejezéséhez próbálkozzon újra egy Önhöz hozzárendelt munkahelyi vagy iskolai e-mail-címmel. <br /><br /> Ha továbbra sem tud regisztrálni, és hajlandó egy bonyolultabb telepítési folyamatot elvégezni, [regisztráljon egy új Office 365-próbaverziós előfizetésre, és használja az ahhoz megadott e-mail-címet a regisztrációhoz](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Emellett [meghívhatja Önt vendégként](service-admin-azure-ad-b2b.md) egy meglévő felhasználó. |
-| **Az önkiszolgáló regisztráció le van tiltva**: A regisztráció során ehhez hasonló üzenet jelenik meg: <br /><br /> *Nem tudjuk befejezni a regisztrációt. Az informatikai részleg kikapcsolta a Microsoft Power BI-regisztráció lehetőségét. A regisztráció befejezéséhez forduljon hozzájuk.* <br /><br /> vagy <br /><br /> *Ez egy személyes e-mail-címnek tűnik. Adja meg a munkahelyi e-mail-címét, így össze tudjuk kapcsolni Önt a cége többi tagjával. Ne aggódjon. A címét nem osztjuk meg senkivel.* | A szervezet rendszergazdája letiltotta a Power BI szolgáltatásban való önkiszolgáló regisztrációt. <br /><br /> A regisztráció befejezéséhez kérje a rendszergazdát, hogy [kövesse az utasításokat a regisztráció engedélyezéséhez](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory). <br/><br/> Ez a probléma akkor is felmerülhet, ha egy [partneren keresztül regisztrált az Office 365-be](service-admin-syndication-partner.md). |
+| **Az önkiszolgáló regisztráció le van tiltva**: A regisztráció során ehhez hasonló üzenet jelenik meg: <br /><br /> *Nem tudjuk befejezni a regisztrációt. Az informatikai részleg kikapcsolta a Microsoft Power BI-regisztráció lehetőségét. A regisztráció befejezéséhez forduljon hozzájuk.* <br /><br /> vagy <br /><br /> *Ez egy személyes e-mail-címnek tűnik. Adja meg a munkahelyi e-mail-címét, így össze tudjuk kapcsolni Önt a cége többi tagjával. Ne aggódjon. A címét nem osztjuk meg senkivel.* | A szervezet rendszergazdája letiltotta a Power BI szolgáltatásban való önkiszolgáló regisztrációt. <br /><br /> A regisztráció befejezéséhez kérje a rendszergazdát, hogy [kövesse az utasításokat a regisztráció engedélyezéséhez](admin/service-admin-disable-self-service.md). <br/><br/> Ez a probléma akkor is felmerülhet, ha egy [partneren keresztül regisztrált az Office 365-be](service-admin-syndication-partner.md). |
 | **Az e-mail-cím nem Office 365-azonosító** A regisztráció során ehhez hasonló üzenet jelenik meg: <br /><br /> *Ön nem rendelkezik fiókkal a contoso.com oldalon.  A munkahelyén vagy az iskolában másik azonosítót használ? <br /><br /> Próbáljon meg bejelentkezni azzal, és ha nem jár sikerrel, kérje az informatikai részleg segítségét.* | A szervezet nem az e-mail-címet használja azonosítóként az Office 365-ba és más Microsoft-szolgáltatásokba való bejelentkezéshez.  Előfordulhat például, hogy az e-mail-címe Nancy.Smith@contoso.com, míg az azonosítója nancys@contoso.com. <br /><br /> A regisztráció befejezéséhez használja a szervezettől kapott, az Office 365-be és más Microsoft-szolgáltatásokba való bejelentkezéshez szükséges azonosítóját.  Ha ezt nem tudja, forduljon a rendszergazdához. <br /><br /> Ha továbbra sem tud regisztrálni, és hajlandó egy bonyolultabb telepítési folyamatot elvégezni, [regisztráljon egy új Office 365-próbaverziós előfizetésre, és használja az ahhoz megadott e-mail-címet a regisztrációhoz](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## <a name="next-steps"></a>Következő lépések

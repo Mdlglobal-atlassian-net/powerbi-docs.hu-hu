@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: e2c742abe5db21ef567d07cf88755eb459d8e091
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006618"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637608"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Adatvédelem a Power BI-ban (előzetes verzió)
 
@@ -105,7 +105,7 @@ Az alábbi listában a Power BI bizalmassági címkéinek néhány korlátozása
 * A [HYOK-védelem](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) a Power BI-ban alkalmazott címkék esetében nem támogatott.
 * A címkék Office-alkalmazásokban való megtekintésére és alkalmazására [licencelési követelmények](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels) vonatkoznak.
 * A bizalmassági címkék használata csak a globális (nyilvános) felhőben található bérlők esetében támogatott. A bizalmassági címkék használata a más felhőkben található bérlők esetében nem támogatott.
-* Az adatbizalmassági címkék nem támogatottak a sablonalkalmazásoknál.
+* Az adatbizalmassági címkék nem támogatottak a sablonalkalmazásoknál. A sablonalkalmazás készítője által beállított bizalmassági címkéket a rendszer eltávolítja az alkalmazás kinyerése és telepítése után, és az alkalmazás felhasználója által az összetevőkhöz hozzáadott bizalmassági címkék elvesznek (vissza lesznek állítva a Nincs értékre) az alkalmazás frissítésekor.
 * A Power BI nem támogatja a bizalmassági címkéket a **Nem továbbítható** és az **Ad-Hoc** védelmi típusokhoz.
 
 ## <a name="next-steps"></a>Következő lépések
