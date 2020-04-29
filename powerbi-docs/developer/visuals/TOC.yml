@@ -26,6 +26,8 @@
           href: power-bi-custom-visuals-organization.md
         - name: Útmutató Power BI-vizualizációkhoz
           href: guidelines-powerbi-visuals.md
+        - name: Teljesítménnyel kapcsolatos tippek
+          href: performance-tips.md
         - name: Vizualizációk – gyakori kérdések
           href: power-bi-custom-visuals-faq.md
         - name: Képességek használata
@@ -70,6 +72,8 @@
           href: enable-sync-slicers.md
         - name: Vizualizációk hibakeresése
           href: visuals-how-to-debug.md
+        - name: Mobilfejlesztés
+          href: mobile-development.md
         - name: Power BI-vizualizációk hibáinak elhárítása
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Hivatkozás
@@ -104,6 +108,8 @@
               href: utils-svg.md
             - name: Írási eszközök
               href: utils-type.md
+            - name: Teszteszközök
+              href: utils-test.md
             - name: Elemleírási eszközök
               href: utils-tooltip.md
             - name: Adatnézeti eszközök
