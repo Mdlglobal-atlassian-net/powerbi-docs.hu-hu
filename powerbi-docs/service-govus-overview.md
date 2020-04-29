@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: a9a5f3fd5304e64209b6069741dffcc3fa9b07c8
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81436345"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256162"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI az USA kormányzati ügyfelei számára
 Ez a cikk az USA olyan kormányzati ügyfeleinek szól, akik a Power BI-t egy Office 365 Kormányzati verzió részeként helyezik üzembe. A kormányzati csomagok olyan szervezetek egyedi igényeihez lettek kialakítva, amelyeknek meg kell felelniük az Egyesült Államok megfelelőségi és biztonsági szabványainak. Az USA kormányzati ügyfeleinek szóló Power BI szolgáltatás eltér a Power BI kereskedelmi verziójától. Ezek funkcióinak eltéréseit az alábbi szakaszokban ismertetjük.
@@ -88,7 +88,7 @@ A kormányzati felhő ügyfeleire vonatkozó követelményeknek való megfelelé
 |Jelentés létrehozása|Irányítópultok és jelentések létrehozása és megtekintése|Elérhető|Elérhető|Elérhető|
 |  |Ütemezett adatfrissítés|Elérhető|Elérhető|Elérhető|
 |  |Frissíthető csoportos irányítópultok|Elérhető|Elérhető|Elérhető|
-|  |Oldalakra osztott jelentések|Elérhető|Elérhető|Az ütemterv része|
+|  |Oldalakra osztott jelentések|Elérhető|Az ütemterv része|Az ütemterv része|
 |  |Sablonalkalmazások|Nem érhető el|Nem érhető el|Nem érhető el|
 |Csatlakozás adatokhoz|Adatok és jelentések importálása az Excelből|Elérhető|Elérhető|Elérhető|
 |  |Adatok importálása CSV-fájlból|Elérhető|Elérhető|Elérhető|
