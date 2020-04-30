@@ -2,20 +2,20 @@
 title: COVID-19-nyomonkövetési minta az USA tagállami és helyi szintű közigazgatási szervei részére
 description: Letöltheti a mintajelentést, és módosíthatja azt az USA tagállami és helyi szintű közigazgatási szerveinek COVID-19-járványra vonatkozó adataival.
 author: LukaszPawlowski-MS
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979776"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584921"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-nyomonkövetési minta az USA tagállami és helyi szintű közigazgatási szervei részére
 
@@ -48,7 +48,7 @@ Ha szeretné felvenni az interaktív grafikát a webhelyén, másolja és illess
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width).
+A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](../service-publish-to-web.md#tips-for-iframe-height-and-width).
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>2\. lehetőség A Power BI-mintafájl testreszabása
 
@@ -112,7 +112,7 @@ Ha szeretné a saját webhelyén közzétenni a testreszabott jelentést, érdem
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Beágyazási kód létrehozása webes közzétételhez 
 
-A testreszabott jelentés saját webhelyen való közzétételéhez kövesse a [Saját beágyazási kód létrehozása webes közzétételhez](../service-publish-to-web.md#how-to-use-publish-to-web) című cikk utasításait.
+A testreszabott jelentés saját webhelyen való közzétételéhez kövesse a [Saját beágyazási kód létrehozása webes közzétételhez](../service-publish-to-web.md#create-embed-codes-with-publish-to-web) című cikk utasításait.
 
 A beágyazási kód közzétételét követően a megerősítő párbeszédpanelen elérhető iFrame használatával végezhet beágyazást a webhelyen.
 
