@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 04/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1b23f76425fdf7ceb245b25bcc2b7551dabf0600
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496713"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120243"
 ---
 # <a name="apps-in-power-bi"></a>Alkalmazások a Power BI-ban
 
@@ -29,8 +29,8 @@ Alkalmazásai az **Alkalmazások** tartalomlistába vannak rendezve. Az alkalmaz
 
 ![Alkalmazások a Power BI-ban](./media/end-user-apps/power-bi-apps.png)
 
-> [!NOTE]
-> Az alkalmazás funkciójának használatához Power BI Pro-licencre van szükség. [Licenctípus megállapítása](end-user-license.md)
+
+Az alkalmazások funkció használatához Power BI Pro licenc, vagy az szükséges, hogy az alkalmazás Prémium szintű kapacitásban legyen tárolva. A licencekkel és a Prémium szintű kapacitással kapcsolatban a [Fogyasztói licencek](end-user-license.md) című cikk tartalmaz további információkat.
 
 ## <a name="app-designers-and-app-consumers"></a>Alkalmazások *tervezői* és *fogyasztói*
 Szerepkörétől függően létrehozhat alkalmazásokat (ha *tervező*) saját maga vagy akár kollégái számára. Az is lehet, hogy mások által létrehozott alkalmazásokat kap és tölt le (*fogyasztó*). Ez a cikk az alkalmazások *fogyasztóinak* szól.
@@ -44,8 +44,8 @@ Valahányszor az alkalmazás szerzője frissítést bocsát ki, Ön automatikusa
 ## <a name="get-a-new-app"></a>Új alkalmazás letöltése
 Alkalmazásokat sokféleképpen be lehet szerezni. Ezek közül néhányat felsoroltunk alább.  Az alkalmazások beszerzésével és megismerésével kapcsolatos részletes utasításokért pedig tekintse meg az [Alkalmazás megnyitása és kezelése](end-user-app-view.md) című témakört.
 
-- Az alkalmazást annak tervezője automatikusan telepítheti az Ön Power BI-fiókjába, így amikor Ön megnyitja a Power BI-t, az új alkalmazás megjelenik az **Alkalmazások** tartalomlistában. 
-- Az alkalmazás tervezője elküldheti önnek e-mailben az alkalmazásra mutató közvetlen hivatkozást. A hivatkozás megnyitja az alkalmazást a Power BI-ban.
+- Az alkalmazást annak tervezője automatikusan telepítheti az Ön Power BI-fiókjába, így amikor Ön megnyitja a Power BI szolgáltatást, az új alkalmazás megjelenik az **Alkalmazások** tartalomlistában. 
+- Az alkalmazás tervezője elküldheti önnek e-mailben az alkalmazásra mutató közvetlen hivatkozást. A hivatkozás megnyitja az alkalmazást a Power BI szolgáltatásban.
 - Mobileszközén a Power BI-ban alkalmazást csak közvetlen hivatkozásról telepíthet, az AppSource-ból nem. Ha a szerző automatikusan telepíti az alkalmazást, akkor az megjelenik az Ön alkalmazásainak listájában.
 - Alkalmazásokat kereshet az [AppSource-on](https://appsource.microsoft.com). Az AppSource a vállalatán belüli, és azon kívüli jelentéstervezők által közzétett alkalmazásokat is tartalmazza. Az AppSource-ban találhat akár egy Ön által már használt szolgáltatáshoz (például a Google Analyticshez, a GitHubhoz vagy a Microsoft Dynamicshoz) készült alkalmazást is. Olyan alkalmazásokat is találhat, amelyeket példaként használhat a Power BI megismeréséjez.  
 
