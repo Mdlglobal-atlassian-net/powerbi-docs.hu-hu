@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42455033a0853cc9a962d3167ed8a69a0f42c4e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496908"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120275"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 
@@ -28,6 +28,11 @@ Most, hogy már tisztában van az [alkalmazások alapfogalmaival](end-user-apps.
 Új alkalmazáshoz több módon is hozzájuthat. Egy jelentéskészítő munkatárs automatikusan telepítheti az alkalmazást az Ön Power BI-fiókjába, vagy elküldheti az alkalmazásra mutató közvetlen hivatkozást. Felkeresheti az AppSource-ot is, ahol az Ön számára hozzáférhető, alkalmazástervezők által készített alkalmazásokat kereshet a vállalaton belül, és azon kívül is. 
 
 Mobileszközén a Power BI-ban alkalmazást csak közvetlen hivatkozásról telepíthet, az AppSource-ból nem. Ha a tervező automatikusan telepíti az alkalmazást, akkor az megjelenik az Ön alkalmazásainak listájában.
+
+## <a name="apps-and-licenses"></a>Alkalmazások és licencek
+Az alkalmazásokat nem minden Power BI-felhasználó tekintheti meg és kezelheti. 
+- Ha rendelkezik ingyenes licenccel, megnyithatja azokat az Önnel megosztott alkalmazásokat, amelyek Prémium szintű munkaterületen vannak tárolva.
+- Pro licenc birtokában minden Önnel megosztott alkalmazást megnyithat.
 
 ## <a name="install-an-app-from-a-direct-link"></a>Alkalmazás telepítése közvetlen hivatkozásról
 Új alkalmazás saját telepítésének legegyszerűbb módja az, ha közvetlen hivatkozást szerez e-mailben az alkalmazás tervezőjétől.  
@@ -45,7 +50,10 @@ Ha mobileszközön nyitja meg az e-mailben szereplő hivatkozást, az alkalmazá
 ![Alkalmazás-tartalomlista mobileszközön](./media/end-user-app-view/power-bi-ios.png)
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Alkalmazás beszerzése a Microsoft AppSource-ból
-Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Csak azok az alkalmazások jelennek meg, amelyekhez hozzáférése van (tehát az alkalmazás készítője jogosultságot adott hozzá Önnek vagy mindenkinek).
+Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Csak azok az alkalmazások jelennek meg, amelyekhez hozzáférése van (tehát az alkalmazás készítője jogosultságot adott hozzá Önnek vagy mindenkinek). 
+
+> [!NOTE]
+> Ha ingyenes felhasználói licencet használ, letölthet alkalmazásokat, de csak akkor tekintheti meg azokat, ha Power BI Pro-fiókra frissít, vagy ha az alkalmazás Prémium szintű kapacitásban van tárolva. További információ: [Fogyasztói licencek](end-user-license.md).
 
 1. Válassza az **Alkalmazások**  > **Alkalmazások beszerzése** lehetőséget. 
    
@@ -79,7 +87,12 @@ Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on 
 
 5. A Power BI szolgáltatás az alkalmazás telepítése után egy üzenetet fog megjeleníteni arról, hogy a telepítés sikeres volt. Az alkalmazás megnyitásához válassza az **Ugrás az appra** lehetőséget. Attól függően, hogy a tervező hogyan hozta létre az alkalmazást, megjelenik vagy az alkalmazás irányítópultja, vagy az alkalmazás jelentése.
 
+
+
     ![Az alkalmazás sikeresen telepítve ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > Ha ingyenes felhasználói licencet használ, letölthet alkalmazásokat, de csak akkor tekintheti meg azokat, ha Power BI Pro-fiókra frissít. 
 
     Az alkalmazást közvetlenül az alkalmazások listájáról is megnyithatja az **Alkalmazások** lehetőség kiválasztásával, majd az **Értékesítés & Marketing** elem kiválasztásával.
 
@@ -123,8 +136,6 @@ Az alkalmazások készítői időnként az alkalmazás újabb verzióit adhatjá
     > Egy új verzió telepítése a jelentéseken és irányítópultokon végzett összes módosítást felülírja. Ha meg szeretné tartani a módosított jelentéseket és irányítópultokat, telepítés előtt más néven vagy más helyre mentheti azokat. 
 
     4. A frissített verzió telepítése után válassza az **Alkalmazás frissítése** lehetőséget a frissítési folyamat befejezéséhez. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Következő lépések

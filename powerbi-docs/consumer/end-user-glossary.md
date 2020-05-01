@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 101cdbc7ad7ea5d07edf182765d305ad2f1fa8c7
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267227"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120114"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -22,9 +22,9 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 ## <a name="a"></a>A
 
-**fiók** A Power BI-fiókoknak több típusa is van, amelyeket *licenceknek* is neveznek.  A fiókok a következők lehetnek: felhasználónkénti vagy szervezeti. A felhasználónkénti fiókok elérhetők *ingyenes* vagy *Pro* változatban is.  A Power BI *ingyenes* felhasználója vagy önálló Power BI Desktopot használ, vagy egy Premium szervezeti fiókon keresztül éri el a Power BI szolgáltatást. A Power BI felhasználónkénti *Pro*-fiók egy havi részletekben fizetendő előfizetés, amely együttműködést és tartalommegosztást tesz lehetővé a többi *Pro*-felhasználóval. 
+**fiók** A Power BI-fiókoknak több típusa is van, amelyeket *licenceknek* vagy *előfizetéseknek* is neveznek.  A fiókok a következők lehetnek: felhasználónkénti vagy szervezeti. A felhasználónkénti fiókok elérhetők *ingyenes* vagy *Pro* változatban is.  A Power BI *ingyenes* felhasználója vagy az önálló Power BI Desktopot, vagy az önálló Power BI szolgáltatás használja, vagy egy Premium szervezeti előfizetéssel rendelkező szervezeten keresztül éri el a Power BI szolgáltatást. A Power BI felhasználónkénti *Pro*-fiók egy havi részletekben fizetendő előfizetés, amely együttműködést és tartalommegosztást tesz lehetővé a többi *Pro*-felhasználóval. 
 
-A *Premium*(más néven *Premium-kapacitás*) szervezeti fiók számos további szolgáltatást nyújt a felhasználónkénti licencekhez képest. Az *ingyenes* felhasználónkénti fiókok tulajdonosai például egy olyan szervezeten belül, amely *Premium* licenccel rendelkezik, sokkal több feladatot tudnak elvégezni a Power BI segítségével, mint a *Premium* nélküli *ingyenes* felhasználók. A *Premium* szervezeti fiókkal rendelkező *ingyenes* felhasználók például együttműködhetnek a kollégáikkal, és megtekinthetik a Power BI Premium-kapacitáson üzemeltetett tartalmakat.  
+A *Premium* (más néven *Premium-kapacitás*) szervezeti előfizetés számos további szolgáltatást nyújt a felhasználónkénti licencekhez képest. Az *ingyenes* felhasználónkénti fiókok tulajdonosai például egy olyan szervezeten belül, amely *Premium* előfizetéssel rendelkezik, sokkal több feladatot tudnak elvégezni a Power BI segítségével, mint a *Premium* nélküli *ingyenes* felhasználók. A *Premium* szervezeti fiókkal rendelkező *ingyenes* felhasználók például együttműködhetnek a kollégáikkal, és megtekinthetik a Power BI Premium-kapacitáson üzemeltetett tartalmakat. 
 
 **admin portal (felügyeleti portál)** A felület, amelyen a Power BI-rendszergazda a céges Power BI felhasználóit, funkcióit és beállításait kezeli. (Megjegyzés: Az Office 365, az Azure és a PowerApps a felügyeleti központot használja.)
 

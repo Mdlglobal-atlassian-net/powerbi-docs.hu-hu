@@ -5,15 +5,15 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/24/2020
+ms.date: 04/22/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: b3f23b85d048a4ca4232152e5d2252c522a036ac
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79039937"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120234"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>A Power BI szolgáltatás felhasználók számára
 
@@ -45,7 +45,7 @@ Felhasználóként nem fog hozzáférni a Power BI összes szolgáltatásához �
 
 Kétségtelenül találkozni fog a „Power BI Desktop” vagy „Desktop” kifejezéssel. Ezek az irányítópultokat és jelentéseket létrehozó, illetve megosztó *tervezők* által használt különálló eszközre utalnak.  Fontos megjegyezni, hogy más Power BI-eszközök is vannak, felhasználóként azonban csak a Power BI szolgáltatással fog dolgozni. 
 
-Mivel *megosztott* tartalommal dolgozik, szüksége lesz egy standard **ingyenes** licencre egy olyan szervezetben, amely **Premium**-kapacitást használ. [Milyen licenccel rendelkezem?](end-user-license.md)
+Mivel *megosztott* tartalommal dolgozik, csupán egy **ingyenes** licencre van szüksége, mivel egy olyan szervezetben dolgozik, amely **Premium**-kapacitást használ. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>A tartalom biztonságos kezelése 
