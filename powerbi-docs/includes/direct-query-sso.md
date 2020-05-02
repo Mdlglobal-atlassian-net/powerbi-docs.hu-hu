@@ -5,14 +5,14 @@ services: powerbi
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/31/2019
+ms.date: 04/28/2020
 ms.author: davidi
-ms.openlocfilehash: eec30d11c1bd99271416ab1a3a2dbb581687e315
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: d56988986cfd994bb21c9bc25d024903719472cf
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698312"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255854"
 ---
 ## <a name="single-sign-on"></a>Egyszeri bejelentkezés
 
@@ -22,9 +22,7 @@ Az egyszeri bejelentkezés engedélyezéséhez nyissa meg az adathalmaz beállí
 
 ![Az Azure SQL DQ konfigurálása párbeszédpanel](media/direct-query-sso/sso-dialog.png)
 
-Ha az egyszeri bejelentkezési beállítás engedélyezve van, és a felhasználók használják az adatforrásra épülő jelentéseket, a Power BI elküldi a hitelesített Azure AD-beli hitelesítő adataikat a lekérdezésekben az Azure SQL Database-adatbázisnak vagy -adattárháznak. Ez lehetővé teszi a Power BI számára, hogy figyelembe vegye az adatforrás szintjén konfigurált biztonsági beállításokat.
+Ha az egyszeri bejelentkezési beállítás engedélyezve van, és a felhasználók használják az adatforrásra épülő jelentéseket, a Power BI elküldi a hitelesített Azure AD-beli hitelesítő adataikat a lekérdezésekben az Azure SQL Database-adatbázisnak vagy -adattárháznak. Ez a beállítás lehetővé teszi a Power BI számára, hogy figyelembe vegye az adatforrás szintjén konfigurált biztonsági beállításokat.
 
 Az egyszeri bejelentkezési beállítás az adatforrást használó összes adathalmazra érvényes lesz. Az importálási forgatókönyvekhez használt hitelesítési módszerre nincs hatással.
 
-> [!Note]
-> Az Azure Multi-Factor Authentication (MFA) nem támogatott. Azokat a felhasználókat, akik egyszeri bejelentkezést kívánnak használni az Azure SQL DirectQueryvel, ki kell vonni az MFA hatálya alól.
