@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
-ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
+ms.date: 04/29/2020
+ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766285"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584996"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -173,6 +173,11 @@ Nem, jelentésmegjelenítő vezérlőelem jelenleg nem érhető el.
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Kereshetek lapszámozott jelentéseket a Power BI szolgáltatás új kezdőlapján?
 
 Igen, már kereshet lapszámozott jelentésekre a kezdőlapról.  Ezeket az új kezdőlap egyéb területein is láthatja.
+
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+A többoldalas jelentésekben használt DateTime mezőkkel végzett munka során figyelembe kell venni a következőt.
+
+- A DateTime-paraméterekre jelenleg globalizációs korlátozások érvényesek. A Power BI szolgáltatásban minden DateTime-paraméter az USA-beli formátumban (HH/NN/ÉÉÉÉ) van betöltve, függetlenül attól, hogy hogyan tervezi meg a Power BI Jelentéskészítőben.
 
 ## <a name="next-steps"></a>Következő lépések
 
