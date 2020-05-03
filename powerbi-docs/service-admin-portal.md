@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e44a50a6e44006c0b23b0d57917f16260fdbe2f8
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114450"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585433"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
@@ -203,30 +203,28 @@ Az alábbi képen azon üzenet látható, amely akkor jelenik meg, ha külső fe
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
-A munkahelyi felhasználók a weben tehetnek közzé jelentéseket. [További információ](service-publish-to-web.md). Ezáltal a jelentés és az abban található adatok mindenki számára elérhetővé válnak a weben.
+A Power BI-bérlő rendszergazdái a **Webes közzététel** beállítással szabályozhatják, hogy mely felhasználók hozhatnak létre beágyazási kódokat a jelentések webes közzétételéhez. Ez a funkció a jelentést és annak adatait is bárki számára elérhetővé teszi a weben. További tudnivalók a [webes közzétételről](service-publish-to-web.md).
 
 > [!NOTE]
-> A Power BI rendszergazdájának engedélyeznie kell az új webes közzétételi beágyazási kódokat. A szervezetek rendelkezhetnek meglévő beágyazási kódokkal, az aktuálisan közzétett jelentéseket a [beágyazási kódok](service-admin-portal.md#embed-codes) oldalán tekintheti át.
+> Új webes közzétételi beágyazási kódok létrehozását csak a Power BI-rendszergazdák engedélyezhetik. A vállalatok rendelkezhetnek meglévő beágyazási kódokkal. Az aktuálisan közzétett jelentések a felügyeleti portál [Beágyazási kódok](service-admin-portal.md#embed-codes) szakaszában tekinthetők meg.
 
-Az alábbi képen látható a **Fájl** menü egy jelentéshez, ha a **Webes közzététel** beállítás engedélyezve van.
+Az alábbi ábrán egy jelentés **További lehetőségek (...)** menüje látható a **Webes közzététel** beállítás engedélyezése esetén.
 
-![Közzététel a weben a fájl menüben](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Webes közzététel a További lehetőségek menüben](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-A **Webes közzététel** beállítás megadja azokat a beállításokat, amelyekhez a felhasználók létrehozhatnak beágyazási kódokat.
+A felügyeleti portálon elérhető **Webes közzététel** beállítással megadható, hogy mely felhasználók hozhatnak létre beágyazási kódokat.
 
 ![Webes közzététel beállítás](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-A felhasználóknak fel kell venniük a kapcsolatot a Power BI-rendszergazdával, hogy engedélyezze számukra beágyazási kód létrehozását, ha **A beágyazási kódok működési módjának kiválasztása** **Csak a meglévő beágyazási kódok engedélyezése**, a **Webes közzététel** pedig az **Engedélyezve** értékre van beállítva.
+A rendszergazdák a **Webes közzététel** **Engedélyezésével**, valamint **A beágyazási kódok működési módjának kiválasztásával** megtehetik, hogy **Csak a meglévő beágyazási kódokat engedélyezik**. Ebben az esetben a felhasználók létrehozhatnak beágyazási kódokat, de ennek engedélyezését a Power BI-rendszergazdától kell kérniük.
 
 ![Webes közzétételi kérés](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 A **Webes közzététel** beállításától függően a felhasználók különféle lehetőségeket láthatnak a felhasználói felületen.
 
 |Funkció |A teljes cég számára engedélyezve |A teljes cég számára letiltva |Speciális biztonsági csoportok   |
 |---------|---------|---------|---------|
-|A **Webes közzététel** parancs egy jelentés **Fájl** menüjében.|Mindenki számára engedélyezve|Nem mindenki számára látható|Csak az arra jogosult felhasználók vagy csoportok láthatják.|
+|Egy jelentés **További lehetőségek (...)** menüjének **Webes közzététel** pontja|Mindenki számára engedélyezve|Nem mindenki számára látható|Csak az arra jogosult felhasználók vagy csoportok láthatják.|
 |A **Beágyazási kódok kezelése** funkció a **Beállítások** közt|Mindenki számára engedélyezve|Mindenki számára engedélyezve|Mindenki számára engedélyezve<br><br>* A **Törlés** parancsot csak az arra jogosult felhasználók vagy csoportok érik el.<br>* A **Kód lekérése** mindenki számára engedélyezve van.|
 |**Beágyazási kódok** a felügyeleti portálon|Az állapot a következő értékek egyikét jeleníti meg:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva|Állapotként a **Letiltva** jelenik meg|Az állapot a következő értékek egyikét jeleníti meg:<br>* Aktív<br>* Nem támogatott<br>* Blokkolva<br><br>Ha egy felhasználónak nincs megfelelő jogosultsága a bérlői beállítások alapján, akkor a **Megsértve** állapot jelenik meg.|
 |Meglévő közzétett jelentések|Minden engedélyezve|Minden letiltva|A jelentések továbbra is megjelennek mindenki számára.|

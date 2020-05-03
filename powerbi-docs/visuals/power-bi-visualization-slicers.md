@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006793"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585069"
 ---
 # <a name="slicers-in-power-bi"></a>Szeletelők a Power BI-ban
 
@@ -131,6 +131,11 @@ Az aktuális jelentésben a **Körzeti havi értékesítés** oldal egy **Körze
     >[!NOTE]
     >Ha egy szeletelőt egy adott oldalra szinkronizál, de nem teszi azt láthatóvá az adott oldalon, akkor a más oldalakon elvégzett szeletelőkijelölések továbbra is szűrik az adatokat az oldalon.
  
+## <a name="filtering-slicers"></a>Szeletelők szűrése
+A szeletelőkre alkalmazott vizualizációszintű szűrőkkel rövidebbé teheti a szeletelőben megjelenő értékek listáját. Kiszűrheti például az üres értékeket egy listaszeletelőből, vagy kiszűrhet bizonyos dátumokat egy tartomány-szeletelőből. Ez csupán *a szeletelőben megjelenő értékekre* van hatással, nem pedig *azokra a szűrőkre, amelyeket a szeletelő alkalmaz más vizualizációkon* a kijelöléskor. Tegyük fel például, hogy egy tartomány-szeletelőre alkalmaz szűrőt, hogy az csak bizonyos dátumokat mutasson. A szeletelőben a kijelölés csak ennek a tartománynak az első és az utolsó dátumát mutatja meg, de a többi vizualizációban továbbra is látható a többi dátum. A szeletelőben kiválasztott tartomány módosításakor a többi vizualizáció is frissülni fog. A szeletelő törlésekor ismét megjelenik az összes dátum.
+
+A vizualizációszintű szűrőkről a [Szűrőtípusok](../power-bi-report-filter-types.md) című cikkből tájékozódhat bővebben.
+
 ## <a name="format-slicers"></a>Szeletelők formázása
 A szeletelő típusától függően különböző formázási beállítások érhetők el. A **Vízszintes** tájolás, a **Rugalmas** elrendezés és az **Elem** színezés használatával a szokásos listaelemek helyett gombokat vagy csempéket hozhat létre, és a szeletelő elemeket a különböző képernyőméretekhez és elrendezésekhez igazodóvá teheti.  
 

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729713"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584766"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -35,6 +35,8 @@ A Power BI Desktopban az oszlopok adattípusát a Lekérdezésszerkesztőben, il
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 A Lekérdezésszerkesztő Adattípus legördülő menüje tartalmaz két olyan adattípust, amelyek az Adat- és a Jelentésnézetben jelenleg nem érhetők el: Ez a **Dátum/idő/időzóna** és az **Időtartam**. Ha egy ilyen adattípusú oszlopot tölt be a modellbe, majd az Adat- vagy Jelentésnézetben tekinti meg, a Dátum/idő/időzóna típusú oszlop Dátum/idő típusúvá, az Időtartam típusú oszlop Tizedes tört típusúvá lesz konvertálva.
+
+A **Bináris** adattípus a Lekérdezésszerkesztőn kívül jelenleg nem támogatott. A Lekérdezésszerkesztőben bináris fájlok betöltésekor használhatja, ha más adattípusra konvertálja, mielőtt betöltené a Power BI-modellbe. Az Adatnézet és a Jelentésnézet menüjében a visszamenőleges kompatibilitás miatt szerepel, de ha bináris oszlopokat próbál a Power BI-modellbe betölteni, hibák keletkezhetnek.  
 
 ### <a name="number-types"></a>Számtípusok
 A Power BI Desktop három számtípust támogat:
@@ -72,6 +74,16 @@ A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben.
 ### <a name="blanksnulls-type"></a>Üres/null érték típus
 **Üres** – DAX-adattípus, amely az SQL nullértékeit jelöli és helyettesíti. Üres értékeket a [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) függvénnyel hozhat létre, a meglévőket pedig az [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logikai függvénnyel ellenőrizheti.
 
+### <a name="binary-data-type"></a>Bináris adattípus
+
+A bináris adattípus használatával bármely más adattípus bináris formátumban ábrázolható. A Lekérdezésszerkesztőben bináris fájlok betöltésekor használhatja, ha más adattípusra konvertálja, mielőtt betöltené a Power BI-modellbe. A Power BI-adatmodellben a bináris oszlopok nem támogatottak. Az Adatnézet és a Jelentésnézet menüjében a visszamenőleges kompatibilitás miatt szerepelnek, de ha bináris oszlopokat próbál a Power BI-modellbe betölteni, hibák keletkezhetnek.
+
+
+> [!NOTE]
+>  Ha egy lekérdezés lépéseinek kimenetében bináris oszlop szerepel, az adatok átjárón keresztüli frissítésére tett kísérlet hibát okozhat. A lekérdezések utolsó lépéseként érdemes minden bináris oszlopot explicit módon eltávolítani.    
+> 
+>
+
 ### <a name="table-data-type"></a>Tábla adattípus
 A DAX a tábla adattípust sok függvényben használja, például összesítésekben és időintelligencia-számításokban. Egyes függvényekben táblára mutató hivatkozást kell megadni, más függvények pedig táblákat adnak vissza, amelyek más függvényeknek átadhatók. Egyes táblát váró függvényeknek átadhatók függvényt visszaadó kifejezések, míg más függvényeknek csak alaptáblák adhatók át. Az egyes függvények követelményeivel kapcsolatos információkért lásd a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/library/ee634396.aspx).
 
@@ -95,10 +107,10 @@ A végrehajtott konverzió típusát az operátor határozza meg, amely előszö
 
 **Összeadás (+)**
 
-| Operátor (+) | EGÉSZ SZÁM | PÉNZNEM | VALÓS SZÁM | Dátum/idő |
+| Operátor (+) | EGÉSZ SZÁM | CURRENCY | VALÓS SZÁM | Dátum/idő |
 | --- | --- | --- | --- | --- |
-| EGÉSZ SZÁM |EGÉSZ SZÁM |PÉNZNEM |VALÓS SZÁM |Dátum/idő |
-| PÉNZNEM |PÉNZNEM |PÉNZNEM |VALÓS SZÁM |Dátum/idő |
+| EGÉSZ SZÁM |EGÉSZ SZÁM |CURRENCY |VALÓS SZÁM |Dátum/idő |
+| CURRENCY |CURRENCY |PÉNZNEM |VALÓS SZÁM |Dátum/idő |
 | VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |Dátum/idő |
 | Dátum/idő |Dátum/idő |Dátum/idő |Dátum/idő |Dátum/idő |
 
@@ -108,10 +120,10 @@ Például ha egy Valós számot egy Pénznem adattal együtt alkalmaz egy össze
 
 A következő táblázatban a sorok a kisebbítendőt (bal oldal), az oszlopok a kivonandót (felül) jelzik.
 
-| Operátor (-) | EGÉSZ SZÁM | PÉNZNEM | VALÓS SZÁM | Dátum/idő |
+| Operátor (-) | EGÉSZ SZÁM | CURRENCY | VALÓS SZÁM | Dátum/idő |
 | --- | --- | --- | --- | --- |
-| EGÉSZ SZÁM |EGÉSZ SZÁM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
-| PÉNZNEM |PÉNZNEM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
+| EGÉSZ SZÁM |EGÉSZ SZÁM |CURRENCY |VALÓS SZÁM |VALÓS SZÁM |
+| CURRENCY |CURRENCY |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
 | VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |
 | Dátum/idő |Dátum/idő |Dátum/idő |Dátum/idő |Dátum/idő |
 
@@ -124,11 +136,11 @@ Például ha egy Dátumot bármely más adattípussal együtt használ egy kivon
 
 **Szorzás (*)**
 
-| Operátor (\*) | EGÉSZ SZÁM | PÉNZNEM | VALÓS SZÁM | Dátum/idő |
+| Operátor (\*) | EGÉSZ SZÁM | CURRENCY | VALÓS SZÁM | Dátum/idő |
 | --- | --- | --- | --- | --- |
-| EGÉSZ SZÁM |EGÉSZ SZÁM |PÉNZNEM |VALÓS SZÁM |EGÉSZ SZÁM |
-| PÉNZNEM |PÉNZNEM |VALÓS SZÁM |PÉNZNEM |PÉNZNEM |
-| VALÓS SZÁM |VALÓS SZÁM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
+| EGÉSZ SZÁM |EGÉSZ SZÁM |CURRENCY |VALÓS SZÁM |EGÉSZ SZÁM |
+| CURRENCY |PÉNZNEM |VALÓS SZÁM |CURRENCY |PÉNZNEM |
+| VALÓS SZÁM |VALÓS SZÁM |CURRENCY |VALÓS SZÁM |VALÓS SZÁM |
 
 Például ha egy Egész számot egy Valós számmal ötvöz egy szorzási műveletben, a rendszer mindkét számot Valós számmá alakítja, és az értéket szintén VALÓS SZÁMKÉNT adja vissza.
 
@@ -136,10 +148,10 @@ Például ha egy Egész számot egy Valós számmal ötvöz egy szorzási művel
 
 A következő táblázatban a sorok az osztandót, az oszlopok az osztót jelzik.
 
-| Operátor (/) (sor/oszlop) | EGÉSZ SZÁM | PÉNZNEM | VALÓS SZÁM | Dátum/idő |
+| Operátor (/) (sor/oszlop) | EGÉSZ SZÁM | CURRENCY | VALÓS SZÁM | Dátum/idő |
 | --- | --- | --- | --- | --- |
-| EGÉSZ SZÁM |VALÓS SZÁM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
-| PÉNZNEM |PÉNZNEM |VALÓS SZÁM |PÉNZNEM |VALÓS SZÁM |
+| EGÉSZ SZÁM |VALÓS SZÁM |CURRENCY |VALÓS SZÁM |VALÓS SZÁM |
+| CURRENCY |PÉNZNEM |VALÓS SZÁM |CURRENCY |VALÓS SZÁM |
 | VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |
 | Dátum/idő |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |
 
@@ -158,10 +170,10 @@ Az =IF("12"=12;"A kifejezés igaz";"A kifejezés hamis") kifejezés „A kifejez
 
 A numerikus és a Dátum/idő típus esetén a konverzió implicit módon történik a következő táblázatban foglaltaknak megfelelően:
 
-| Összehasonlító operátor | EGÉSZ SZÁM | PÉNZNEM | VALÓS SZÁM | Dátum/idő |
+| Összehasonlító operátor | EGÉSZ SZÁM | CURRENCY | VALÓS SZÁM | Dátum/idő |
 | --- | --- | --- | --- | --- |
-| EGÉSZ SZÁM |EGÉSZ SZÁM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
-| PÉNZNEM |PÉNZNEM |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
+| EGÉSZ SZÁM |EGÉSZ SZÁM |CURRENCY |VALÓS SZÁM |VALÓS SZÁM |
+| CURRENCY |CURRENCY |PÉNZNEM |VALÓS SZÁM |VALÓS SZÁM |
 | VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |
 | Dátum/idő |VALÓS SZÁM |VALÓS SZÁM |VALÓS SZÁM |Dátum/idő |
 
@@ -172,16 +184,16 @@ Az üres értékek viselkedését a különféle műveletekben, például össze
 
 | Kifejezés | DAX | Excel |
 | --- | --- | --- |
-| ÜRES + ÜRES |ÜRES |0 (nulla) |
+| ÜRES + ÜRES |BLANK |0 (nulla) |
 | ÜRES + 5 |5 |5 |
-| ÜRES * 5 |ÜRES |0 (nulla) |
+| ÜRES * 5 |BLANK |0 (nulla) |
 | 5/ÜRES |Végtelen |Hiba |
 | 0/ÜRES |NaN |Hiba |
-| ÜRES/ÜRES |ÜRES |Hiba |
+| ÜRES/ÜRES |BLANK |Hiba |
 | HAMIS VAGY ÜRES |HAMIS |HAMIS |
 | HAMIS ÉS ÜRES |HAMIS |HAMIS |
 | IGAZ VAGY ÜRES |IGAZ |IGAZ |
 | IGAZ ÉS ÜRES |HAMIS |IGAZ |
 | ÜRES VAGY ÜRES |ÜRES |Hiba |
-| ÜRES ÉS ÜRES |ÜRES |Hiba |
+| ÜRES ÉS ÜRES |BLANK |Hiba |
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 301d6397e4a3ae4498234bae3ad8a49aa7552722
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80464630"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584665"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Adathalmazok kibővített metaadatainak használata (előzetes verzió)
 
@@ -46,6 +46,7 @@ Az előzetes funkció engedélyezése után a Power BI kísérletet tesz a korá
 
 Az előzetes verzióban az alábbi korlátozások érvényesek az előzetes funkció engedélyezése esetén.
 
+### <a name="unsupported-features-and-connectors"></a>Nem támogatott funkciók és összekötők
 Nem frissített meglévő PBIX- vagy PBIT-fájl megnyitásakor a frissítés sikertelen lesz, ha az adathalmaz az alábbi funkciók vagy összekötők bármelyikét tartalmazza. A sikertelenség nem jár a felhasználó által tapasztalható közvetlen következménnyel, és a Power BI Desktop továbbra is a korábbi metaadat-formátumot fogja használni.
 
 * Python-szkriptek
@@ -67,6 +68,8 @@ Nem frissített meglévő PBIX- vagy PBIT-fájl megnyitásakor a frissítés sik
 
 Ezeken kívül a **bővített adathalmaz-metaadatok** használatára frissített PBIX- és PBIT-fájlok *nem* használhatják a fenti funkciókat és összekötőket az aktuális verzióban.
 
+### <a name="lineage-view"></a>Adatéletút nézet
+Az új metaadat-formátumot használó adathalmazok jelenleg nem jelenítik meg az adatfolyamokra mutató hivatkozásokat a Power BI szolgáltatás Adatéletút nézetében.
 
 ## <a name="next-steps"></a>Következő lépések
 

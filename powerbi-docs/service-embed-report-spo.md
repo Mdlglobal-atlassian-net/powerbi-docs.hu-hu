@@ -1,23 +1,23 @@
 ---
-title: Beágyazás jelentéskijelzővel a SharePoint Online-ban
+title: Jelentéskijelző beágyazása a SharePoint Online-ban
 description: A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
-author: KesemSharabi
-ms.author: kesharab
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/18/2019
-ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 04/27/2020
+ms.openlocfilehash: 5b726137fae0087701833b2d713cf7b5a329f899
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221712"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585198"
 ---
-# <a name="embed-with-report-web-part-in-sharepoint-online"></a>Beágyazás jelentéskijelzővel a SharePoint Online-ban
+# <a name="embed-a-report-web-part-in-sharepoint-online"></a>Jelentéskijelző beágyazása a SharePoint Online-ban
 
 A Power BI új beágyazás jelentéskijelzővel a SharePoint Online-ban funkciójának használatával interaktív Power BI-jelentéseit könnyedén SharePoint Online-oldalakba illesztheti.
 
@@ -38,9 +38,9 @@ A jelentés SharePoint Online-ba való beágyazásához be kell szereznie a jele
 
 1. Tekintse meg a jelentést a Power BI-ban.
 
-2. Válassza a **Fájl** legördülő menüt, majd a **Beágyazás a SharePoint Online-ban** menüpontot.
+2. Válassza a **További lehetőségek (...)** legördülő menü **Beágyazás** > **SharePoint Online** pontját.
 
-    ![Fájl menü](media/service-embed-report-spo/powerbi-file-menu.png)
+    ![További lehetőségek menü, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
 3. A párbeszédpanelről másolja ki a jelentés URL-címét.
 

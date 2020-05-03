@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 218a05c41c3befed8f8600f6a584560f5be92a1f
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 4ce9946672514d3d3f181c573789b256888a4372
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709585"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584838"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Adatkategóriák meghatározása a Power BI Desktopban
 A Power BI Desktopban megadhatja egy oszlop *adatkategóriáját*, így a Power BI Desktop tudni fogja, hogyan kezelje az értékeit egy vizualizációban.
@@ -33,7 +33,7 @@ A Power BI Desktopnak a világtérképet kellene megjelenítenie az országok ki
 **Adatkategória megadása**
 
 1. **Jelentés** vagy **Adat** nézetben a **Mezők** listából válassza ki azt a listát, amelyet más kategorizáció szerint szeretne rendezni.
-2. A menüszalagon **Modellezés** lapjának **Tulajdonságok** területén válassza az **Adatkategória** melletti legördítő nyilat.  Ez a lista az oszlophoz választható adatkategóriákat sorolja fel. Előfordulhat, hogy néhány kiválasztás le van tiltva, ha nem működnek az oszlop aktuális adattípusával.  Például ha egy oszlop bináris adattípusú, a Power BI Desktop nem engedi a földrajzi adatkategóriák kiválasztását. 
+2. A menüszalagon **Modellezés** lapjának **Tulajdonságok** területén válassza az **Adatkategória** melletti legördítő nyilat.  Ez a lista az oszlophoz választható adatkategóriákat sorolja fel. Előfordulhat, hogy néhány kiválasztás le van tiltva, ha nem működnek az oszlop aktuális adattípusával.  Például ha egy oszlop dátum vagy idő adattípusú, a Power BI Desktop nem engedi a földrajzi adatkategóriák kiválasztását. 
 3. Válassza ki a kívánt kategóriát.
 
    ![](media/desktop-data-categorization/desktop-data-categorization.png)

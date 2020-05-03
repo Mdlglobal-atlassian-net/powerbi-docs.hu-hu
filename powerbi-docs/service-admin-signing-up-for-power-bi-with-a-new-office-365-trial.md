@@ -1,38 +1,62 @@
 ---
-title: Regisztráció a Power BI-ra új Office 365 próbaverzióval
-description: Regisztráció a Power BI-ra új Office 365 próbaverzióval
+title: Regisztráció a Power BI-ra új Microsoft 365 próbaverzióval
+description: Regisztráció a Power BI-ra új Microsoft 365 próbaverzióval
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
-ms.author: kfollis
+ms.date: 04/24/2020
+ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: aab3c01abc970261164c5cc225d89db09ce63d12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 667c20c0e904ca9a91aed3c0566f722e54336a9f
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698440"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256325"
 ---
-# <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Regisztráció a Power BI-ra új Office 365 próbaverzióval
+# <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Regisztráció a Power BI-ra új Microsoft 365 próbaverzióval
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Ez a cikk a Power BI-regisztráció egy másik módját ismerteti azok számára, akik már rendelkeznek munkahelyi vagy iskolai e-mail-fiókkal. 
 
-Ez a cikk a Power BI-ra való regisztráció egy alternatív módját ismerteti az Office 365 próbaverziója használatával. Ha problémába ütközik, amikor munkahelyi e-mail-címével próbál regisztrálni a Power BI-ra, először győződjön meg arról, hogy a [Power BI-jal használható e-mail-címmel próbálkozik](service-self-service-signup-for-power-bi.md#supported-email-addresses). Ha nem jár sikerrel, próbáljon meg először regisztrálni az Office 365 próbaverziójára, majd ezután regisztrálni a Power BI-ra. A Power BI-t az Office 365 próbaverziójának lejárta után is használhatja.
+Ha problémába ütközik, amikor e-mail-címével próbál regisztrálni a Power BI-ra, először győződjön meg arról, hogy a [Power BI-jal használható e-mail-címmel próbálkozik](service-self-service-signup-for-power-bi.md#supported-email-addresses). Ha ez nem vezet eredményre, regisztráljon a Microsoft 365 próbaverziójára és hozzon létre munkahelyi fiókot. Ez után regisztráljon a Power BI szolgáltatásra ezzel az új munkahelyi fiókkal. A Power BI-t a Microsoft 365 próbaverziójának lejárta után is használhatja.
 
-1. Regisztráció Office 365 próbaverzióra [az Office 365 webhelyen](https://go.microsoft.com/fwlink/p/?LinkID=403802).
+> [!NOTE]
+> Az Office 365 a közelmúltban a Microsoft 365 márkanevet kapta. Amíg nem frissítjük az összes cikkünket, előfordulhat, hogy Office 365 néven találja meg.
 
-1. A regisztrációs folyamat befejezése után kap egy új bejelentkezési nevet, amely így néz ki: you@yourcompany.onmicrosoft.com. Ez lesz a bejelentkezési neve a Power BI-ban.
+1. Regisztráljon a Microsoft 365 próbaverziójára [a Microsoft 365 webhelyén](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
 
-1. Regisztráljon a Power BI-ra [ezen hivatkozás használatával](https://app.powerbi.com/signupredirect?pbi_source=web). Ha a rendszer kéri, jelentkezzen be azzal a bejelentkezési névvel és jelszóval, amelyet az előző lépésben az Office 365-höz megadott.
+    ![kezdőlap](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
 
-1. Ennyi az egész! Ha elkészült, a rendszer átirányítja a Power BI-ra. Ha problémát észlel az új fiókkal való bejelentkezéskor, próbálja újra privát böngésző-munkamenetben.
+    ![Az új fiók regisztrálása lehetőség kiválasztása](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
+
+    ![munkahelyi vagy iskolai fiók létrehozása](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-email.png)
+
+    ![Az új fiók regisztrálása lehetőség kiválasztása](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-no-email.png)
+
+    ![kapcsolattartási adatok megadása](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-welcome-you.png)
+
+    
+
+1. Hozza létre új munkahelyi bejelentkezési nevét, amely a you@yourcompany.onmicrosoft.com mintához hasonló. Ez lesz a bejelentkezési neve a Power BI-ban.
+
+    ![munkahelyi cím létrehozása](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-address.png)
+
+    ![SMS-ben küldött kód kérése](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-robot.png)    
+
+1. Előfordulhat, hogy az új bérlő létrehozásáig várnia kell. 
+
+Ennyi az egész!  Máris van egy e-mail-címe, amelyet felhasználhat a Power BI-regisztrációhoz. A következő lépés az [Egyéni regisztráció a Power BI szolgáltatásra](service-self-service-signup-for-power-bi.md)
+
+
+
+
 
 ## <a name="important-considerations"></a>Fontos szempontok
+Ha problémát észlel az új fiókkal való bejelentkezéskor, próbálja újra privát böngésző-munkamenetben.    
 
-Ha ezt a bejelentkezési módszert használja, új céges bérlőt hoz létre, amelynek a rendszergazdája lesz. További információ: [Mit jelent a Power BI-felügyelet?](service-admin-administering-power-bi-in-your-organization.md). Hozzáadhat új felhasználókat a bérlőhöz a megosztás érdekében az [Office 365 adminisztrátori dokumentációban](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) ismertetett módon.
+Ha ezt a bejelentkezési módszert használja, új céges bérlőt hoz létre, amelynek a rendszergazdája lesz. További információ: [Mit jelent a Power BI-felügyelet?](service-admin-administering-power-bi-in-your-organization.md). Hozzáadhat új felhasználókat a bérlőhöz a megosztás érdekében a [Microsoft 365 adminisztrátori dokumentációban](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) ismertetett módon.
 
 ## <a name="next-steps"></a>Következő lépések
 

@@ -1,6 +1,6 @@
 ---
 title: Az Azure SQL Data Warehouse használata DirectQueryvel
-description: Az Azure SQL Data Warehouse használata DirectQueryvel
+description: Az Azure SQL Data Warehouse DirectQueryvel
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -8,16 +8,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 932c13b84184ad237879e33e943d85020640dd4c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 472eacea2a84d1f4a71d6869406e17f2ffd03e6b
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698313"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255879"
 ---
-# <a name="azure-sql-data-warehouse-with-directquery"></a>Az Azure SQL Data Warehouse használata DirectQueryvel
+# <a name="azure-sql-data-warehouse-with-directquery"></a>Az Azure SQL Data Warehouse DirectQueryvel
 
 Ha DirectQueryvel csatlakozik az Azure SQL Data Warehouse-hoz, dinamikus jelentéseket hozhat létre az Azure SQL Data Warehouse-ban tárolt adatokat és metrikákat használva. DirectQuery használata esetén a rendszer valós idejű lekérdezéseket küld az Azure SQL Data Warehouse-ba az adatok feltárásakor. A valós idejű lekérdezések és az SQL Data Warehouse mérete lehetővé teszi, hogy percek alatt létrehozzon dinamikus jelentéseket akár több terabájtnyi adatból is. Ezenkívül a **Megnyitás Power BI-ban** gomb lehetővé teszi, hogy a felhasználók közvetlenül is csatlakoztathassák a Power BI-t az SQL Data Warehouse-hoz anélkül, hogy külön be kellene írniuk az ehhez szükséges információt.
 
@@ -61,7 +61,7 @@ Az SQL Data Warehouse a Power BI Adatok lekérése oldaláról is elérhető.
 
     ![Adatbázisok](media/service-azure-sql-data-warehouse-with-direct-connect/databases.png)
 
-3. Válassza az **SQL Data Warehouse** \> **Kapcsolódás** lehetőséget.
+3. Válassza az **SQL Data Warehouse** \> **Csatlakozás** lehetőséget.
 
     ![Azure SQL Data Warehouse közvetlen kapcsolattal](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 

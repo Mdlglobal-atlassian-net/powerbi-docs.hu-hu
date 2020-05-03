@@ -1,21 +1,22 @@
 ---
 title: Power BI-webináriumok
 description: Power BI-webináriumok
-author: v-tatero
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2019
+ms.date: 04/23/2020
 ms.author: kfollis
-ms.openlocfilehash: 08e1303d0f1a5ee9e0e3e4e778e3f81e0a183df5
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: cfdb4f380cd8ad9655593798f591a4c915988c43
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267549"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120091"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
+[//]: # "Tatevik Tatero szállító, aki Chauncy Freelsszel is dolgozik, és segít ennek a webinárium-listának a fenntartásában"
 
 Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket később felvételről, igény szerint.
 
@@ -164,10 +165,6 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Stephen Cracknell és Stuart Macanliss, US Medical IT
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Alkalmazott intelligencia az értékesítésben és a szolgáltatásokban**
-<br>Készítette Ed Bobrin, Avanade
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
 **Gyártók: Az iparága digitális átalakuláson megy keresztül – hogyan őrizheti meg vezető pozícióját, és hogyan maximalizálhatja a jövedelmezőséget az analitikai lehetőségek kiaknázásával**
 <br>Készítette Jon Thompson (Blue Margin) és Jim Pastor (Elgin Fastener Group)
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
@@ -210,14 +207,14 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>Készítette Ted Pattison
 <br>[Megtekintés](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### <a name="advanced-topics"></a>Speciális témakörök ###
+### <a name="advanced-topics"></a>Speciális témakörök
 
 **Fejlett elemzés Excellel és a Power BI használatával**
 <br>írta: Nagasaikiran Kambhampati és Miguel Martinez
 <br>[Regisztráljon a megtekintéshez](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Az előadás követéséhez töltse le a fejlett elemzés indulókészletet (Advanced Analytics Starter Kit)](https://aka.ms/pbiaawebinar)
 
-**[Power BI bevezetési keretrendszer webinárium-sorozat](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+**Power BI bevezetési keretrendszer webinárium-sorozat**
 <br>írta: Manu Kanwarpal és Paul Henwood
 <br>[Regisztráció és megtekintés – 1. rész – Bevezetés: Adatvezérelt kulturális környezet bevezetése](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 <br>[Regisztráció és megtekintés – 1. rész – Irányítás: A Power BI-használat irányítása](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
@@ -225,36 +222,13 @@ Előadások megtekintése felvételről, tetszés szerinti időpontban
 <br>[Regisztráció és megtekintés – 4. rész – Biztonság: Adatvédelem a Power BI segítségével](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Regisztráció és megtekintés – 5. rész – Kibocsátás: A Power BI sikeres kibocsátása](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**Az Office 365 webinárium-sorozata pénzügyi szakembereknek**
-<br>Készítette: Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky és Miguel Martinez
-<br>Az Office 365 általános használatához kapcsolódó tippeket, trükköket és ajánlott eljárásokat ismerhet meg.
-<br>[Regisztráció és megtekintés](https://aka.ms/Office365FinanceProsPBI)
-
 **A teljes híváslánc ereje legyen Önnel – A Power BI legfejlettebb funkcióinak bemutatása Star Wars adatokkal**
 <br>írta: Gil Raviv
 <br>[Megtekintés](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-**Útmutató: Sikeres adatirányítási stratégia bevezetése cége biztonságosabbá tételéhez**
-<br>Készítette Ajay Anandan
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
-
-**A modern üzleti intelligencia bevezetésének felgyorsítása a Power BI Premium segítségével**
-<br>Készítette Sirui Sun és Miguel Martinez
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**A Power BI jelentéskészítő kiszolgáló izgalmas újdonságai**
-<br>Készítette Riccardo Muti, Chris Finlan és Chinmay Joshi
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
-
-**Hogyan működteti a Microsoft a Power BI-t?**
-<br>Készítette Kirkland Barrett
-<br>[Regisztráció és megtekintés](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
-
 ## <a name="see-also"></a>További információ
 
 - [Power BI-tanulmányok](whitepapers.md)
-
-- [A Microsoft Data Insights Summit 2017-es rendezvényének felvételről megtekinthető előadásai](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
 - [Mi az a Power BI?](fundamentals/power-bi-overview.md)
 

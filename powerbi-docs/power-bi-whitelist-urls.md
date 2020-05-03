@@ -9,14 +9,15 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: 6844d09c04759f0cdb780b3c1805698f1b1b519f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 1426cb2926641ca93bcbff3e55ea151f829f290a
+ms.sourcegitcommit: 1059c6222458f189fb5301dcb689dad2b2c00bc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401922"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82191614"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Engedélyezési listára helyezendő Power BI URI-címek
+[//]: # "suparnap és miwehnia a lista fenntartásáért felelős kapcsolattartók"
 
 A Power BI SaaS (szolgáltatott szoftver) alkalmazás néven is ismert **online Power BI szolgáltatáshoz** internetkapcsolatra van szükség. Az online Power BI szolgáltatást használó ügyfeleknek el kell érniük az alábbi végpontokat.
 
@@ -52,6 +53,7 @@ A Power BI használatához tudnia kell csatlakozni az alábbi táblázatban és 
 | 5 | **Kötelező:** Szolgáltatási telemetria | dc.services.visualstudio.com | TCP 443 |
 | 6 | **Nem kötelező:** Tájékoztató üzenetek | dynmsg.modpim.com | TCP 443 |
 | 7 | **Nem kötelező:** NPS-felmérések | nps.onyx.azure.net | TCP 443 |
+| 8 | **Nem kötelező:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Felügyelet

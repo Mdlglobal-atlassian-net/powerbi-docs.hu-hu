@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 986c09e404e0190a3efee8480d413d49cbd49186
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869380"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584822"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Billentyűparancsok a Power BI Desktopban
 
@@ -56,6 +56,7 @@ Az akadálymentesség javítására való folyamatos törekvésünk jegyében a 
 | Többszörös kijelölés | **Ctrl+Enter** vagy **Ctrl+szóköz** |
 | Kattintás jobb gombbal | <ul><li>Windows-billentyűzet: **Windows helyi menü billentyű+F10**. A Windows helyi menü billentyű a bal oldali Alt billentyű és a Balra nyílbillentyű között van</li><li>Más billentyűzeten: **Shift+F10**</li></ul> |
 | Kijelölés törlése | **Ctrl+Shift+C** |
+| Elemleírás megjelenítése vagy elrejtése | **Ctrl+H** |
 
 ## <a name="table-and-matrix-navigation"></a>Navigálás táblázatban és mátrixban
 | A művelet menete          | Billentyűparancs                |

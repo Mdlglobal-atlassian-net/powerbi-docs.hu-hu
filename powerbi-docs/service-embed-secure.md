@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4be8a1ce88d50461ca51bb65278b823046459e30
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488821"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585020"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
@@ -22,11 +22,13 @@ A Power BI jelentések új **Beágyazás** beállításával egyszerűen és biz
 
 A **Beágyazás** lehetőség az [URL-szűrőket](service-url-filters.md) és az URL-beállításokat is támogatja. Kevés kódot használó, csupán alapszintű HTML- és JavaScript-szakértelmet kívánó megközelítéssel integrálhat portálokkal.
 
-## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI-jelentések **beágyazása** portálokba
+## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI-jelentések beágyazása portálokba
 
-1. Az új **beágyazás** lehetőség a Power BI szolgáltatás jelentéseinek **Fájl** menüjében érhető el.
+1. Nyisson meg egy jelentést a Power BI szolgáltatásban.
 
-    ![Biztonságos beágyazás lehetőség – legördülő elem](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. Válassza a **További lehetőségek (...)** menü **Beágyazás** >  **Webhely vagy portál** pontját.
+
+    ![A Webhely vagy portál menüpont](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Válassza a **Beágyazás** lehetőséget, amellyel megnyit egy párbeszédpanelt, ahol egy, a jelentés biztonságos beágyazásához használható hivatkozás és iFrame található.
 

@@ -1,5 +1,5 @@
 ---
-title: Jelentések beágyazása a Microsoft Teams Power BI lapjával
+title: Jelentések beágyazása a Microsoft Teamsbe
 description: A Microsoft Teams Power BI lapjával egyszerűen ágyazhat be interaktív jelentéseket csatornákba és csevegésekbe.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,33 +9,37 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/12/2020
-ms.openlocfilehash: fe8b5ed0e3cdf0003986ffe6eab18e97e83f3dec
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.date: 04/27/2020
+ms.openlocfilehash: b3fd881a552e3594cbf2172d7b88bbbf9a13f1b9
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381212"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585176"
 ---
-# <a name="embed-report-with-the-power-bi-tab-for-microsoft-teams"></a>Jelentés beágyazása a Microsoft Teams Power BI lapjával
+# <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Jelentések beágyazása a Microsoft Teamsbe a Power BI lappal
 
-A Microsoft Teams frissített Power BI lapjával egyszerűen ágyazhat be interaktív jelentéseket Microsoft Teams-csatornákba és -csevegésekbe.
-
-A Microsoft Teams Power BI lapjának használatával segíthet munkatársainak a csapat által használt adatok megkeresésében és az adatok megvitatásában a csapat csatornáin.
+A Microsoft Teams frissített Power BI lapjával egyszerűen ágyazhat be interaktív jelentéseket Microsoft Teams-csatornákba és -csevegésekbe. A Microsoft Teams Power BI lapjának használatával segíthet munkatársainak a csapat által használt adatok megkeresésében és az adatok megvitatásában a csapat csatornáin.  Amikor jelentésekre, irányítópultokra és alkalmazásokra mutató hivatkozást illeszt be a Microsoft Teams üzenetmezőjébe, a hivatkozás előnézete az azokkal kapcsolatos információkat is megjelenít. A felhasználók így jobban átláthatják, hogy a hivatkozás melyik elemre mutat.
 
 ## <a name="requirements"></a>Követelmények
 
 A **Microsoft Teams Power BI lapjának** működéséhez a következők szükségesek:
 
-- Power BI Pro-licenc, vagy az, hogy a jelentést Power BI-licenccel rendelkező [Power BI Premium-kapacitás (EM vagy P SKU)](service-premium-what-is.md) tartalmazza.
-- A Microsoft Teams Power BI lapja.
+- A felhasználóknak Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek Power BI-licenccel rendelkező [Power BI Premium-kapacitásban (EM vagy P SKU)](service-premium-what-is.md) kell lennie.
+- A Microsoft Teamsben meg kell lennie a Power BI lapnak.
 - A jelentés használatához a felhasználóknak be kell jelentkezniük a Power BI szolgáltatásba, hogy aktiválják a Power BI-licencüket.
 - A felhasználóknak rendelkezniük kell a jelentés megtekintéséhez szükséges engedéllyel.
 
-## <a name="embed-your-report"></a>A jelentés beágyazása
-Jelentés az alábbi lépésekkel ágyazható be Microsoft Teams-csatornába vagy csevegésbe.
+A **hivatkozások előnézetének** működéséhez ezeken felül a következők szükségesek:
+- A felhasználóknak eleget kell tenniük a Microsoft Teams Power BI lapjának használatára vonatkozó követelményeknek.
+- A felhasználóknak be kell jelentkezniük a Power BI-robotszolgáltatásba. 
 
-1. Nyissa meg a kívánt csatornát vagy csevegést a Microsoft Teamsben, és válassza a **+** ikont.
+
+## <a name="embed-your-report"></a>A jelentés beágyazása
+
+Jelentés az alábbi lépésekkel ágyazható be Microsoft Teams-csatornába vagy -csevegésbe.
+
+1. Nyisson meg egy csatornát vagy csevegést a Microsoft Teamsben, és válassza a **+** ikont.
 
     ![Lap felvétele csatornára vagy csevegésbe](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
@@ -43,7 +47,7 @@ Jelentés az alábbi lépésekkel ágyazható be Microsoft Teams-csatornába vag
 
     ![A Microsoft Teams-lapok listája a Power BI lappal](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
-3. A felkínált lehetőségekkel válasszon ki egy jelentést a Munkaterületről, a Velem megosztva területről vagy egy Power BI-alkalmazásból
+3. A felkínált lehetőségekkel válasszon ki egy jelentést egy munkaterületről, a Velem megosztva területről vagy egy Power BI-alkalmazásból.
 
     ![A Microsoft Teams Power BI lapjának beállításai](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
@@ -51,27 +55,60 @@ Jelentés az alábbi lépésekkel ágyazható be Microsoft Teams-csatornába vag
 
 5. Kattintson a **Mentés** gombra.
 
-## <a name="supported-reports"></a>Támogatott jelentések
+## <a name="supported-reports-for-embedding-the-power-bi-tab"></a>A Power BI lap általi beágyazáshoz támogatott jelentések
+A Power BI lapon az alábbi jelentéstípusok ágyazhatók be:
 
-A lap az alábbi jelentések beágyazását teszi lehetővé:
+- Interaktív és többoldalas jelentések.
+- Jelentések a Saját munkaterületen, az új munkaterületi felületeken és klasszikus munkaterületeken.
+- Jelentések Power BI-alkalmazásokban.
 
-- Interaktív és többoldalas jelentések
-- Jelentések a Saját munkaterületen, az új munkaterületi felületen és klasszikus munkaterületeken
-- Jelentések Power BI-alkalmazásokban
+## <a name="get-a-link-preview"></a>Hivatkozás előnézetének beolvasása
+
+A Power BI szolgáltatásbeli tartalom hivatkozáshoz tartozó előnézetét az alábbi lépésekkel alakíthatja ki.
+
+1. Másoljon ki egy jelentésre, irányítópultra vagy alkalmazásra mutató hivatkozást a Power BI szolgáltatásban. A hivatkozást kimásolhatja például a böngésző címsorából.
+
+2. Illessze be a hivatkozást a Microsoft Teams üzenetmezőjébe. Amikor a rendszer kéri, jelentkezzen be a hivatkozás-előnézeti szolgáltatásba. Lehetséges, hogy a hivatkozás előnézetének betöltésére néhány másodpercig várnia kell.
+
+    ![Jelentkezzen be a Power BI-robotszolgáltatásba](media/service-embed-report-microsoft-teams/service-teams-link-preview-sign-in-needed.png)
+
+3. A sikeres bejelentkezés után megjelenik a hivatkozás egyszerű előnézete.
+
+    ![Egyszerű hivatkozás-előnézet](media/service-embed-report-microsoft-teams/service-teams-link-preview-basic.png)
+
+4. Válassza a kibontás ikont a bővített előnézet-kártya megjelenítéséhez.
+
+    ![Kibontás ikon](media/service-embed-report-microsoft-teams/service-teams-link-preview-expand-icon.png)
+
+5. A hivatkozás bővített előnézeti kártyáján a hivatkozás és a lényeges műveletek gombjai láthatók
+
+    ![Bővített hivatkozás-előnézeti kártya](media/service-embed-report-microsoft-teams/service-teams-link-preview-nice-card.png)
+
+6. Küldje el az üzenetet.
+
 
 
 ## <a name="grant-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
 
-Egy jelentés beágyazása a Microsoft Teamsbe még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést – [a megtekintést a Power BI-ban kell engedélyeznie](service-share-dashboards.md). Az egyszerűség kedvéért használhat Office 365-csoportot a csapat számára. 
+Egy jelentés beágyazása a Microsoft Teamsbe, vagy egy elemre mutató hivatkozás elküldése még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést – [a megtekintést a Power BI-ban kell engedélyeznie](service-share-dashboards.md). Az egyszerűség kedvéért használhat Office 365-csoportot a csapat számára. 
 
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-Azt, hogy a csapat hozzáférjen a beágyazott jelentésekhez úgy is biztosíthatja, hogy egyetlen munkaterületre helyezi azokat a Power BI-ban, majd a csapat Office 365-csoportjának hozzáférést ad a munkaterülethez.
+Azt, hogy a csapat hozzáférjen a jelentésekhez úgy is biztosíthatja, hogy egyetlen munkaterületre helyezi a jelentéseket a Power BI-ban, majd a csapat Office 365-csoportjának hozzáférést ad a munkaterülethez.
+
+## <a name="link-previews"></a>Hivatkozások előnézete 
+
+A hivatkozások előnézete a következő Power BI-beli elemekhez érhető el:
+- Jelentések
+- Irányítópultok
+- Alkalmazások
+
+A felhasználóknak be kell jelentkezniük a hivatkozás-előnézeti szolgáltatásba. Kijelentkezni az üzenetmező alján található Power BI-ikont, majd a kijelentkezés lehetőséget választva tudnak.
 
 ## <a name="start-a-conversation"></a>Beszélgetés indítása
 
-Amikor Power BI-jelentéslapot vesz fel a Teamsbe, a Teams automatikusan létrehoz egy beszélgetést a jelentés mellé. 
+Amikor Power BI-jelentéslapot vesz fel a Teamsbe, a Teams automatikusan létrehoz egy beszélgetést a jelentéshez. 
 
 - Válassza a jobb felső sarokban található **Beszélgetés mutatása** ikont.
 
@@ -88,8 +125,10 @@ Amikor Power BI-jelentéslapot vesz fel a Teamsbe, a Teams automatikusan létreh
 - Power BI-licenccel vagy a jelentésre vonatkozó engedéllyel nem rendelkező felhasználók „A tartalom nem érhető el” üzenetet kapják.
 - Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - A Microsoft Teams Power BI lapja nem támogatja az [URL-szűrőket](service-url-filters.md).
-- Országos felhőkben a Power BI lap nem érhető el. Elérhető lehet egy régebbi verzió, amely nem támogatja az új felületű munkaterületeket vagy a Power BI-alkalmazásokban lévő jelentéseket. 
+- Az új Power BI lap országos felhőkben nem érhető el. Régebbi verziók elérhetők lehetnek, de azok nem támogatják az új munkaterületi felületeket és a Power BI-alkalmazásokban lévő jelentéseket. 
 - A lap mentése után a lap neve már nem módosítható a lap beállításaiban. A módosításhoz használja az átnevezés lehetőséget.
+- A hivatkozás-előnézeti szolgáltatáshoz nem támogatott az egyszeri bejelentkezés.
+- A hivatkozások előnézete értekezleteken és privát csatornákon nem működik.
 
 ## <a name="next-steps"></a>Következő lépések
 - [Irányítópult megosztása munkatársakkal és másokkal](service-share-dashboards.md)  

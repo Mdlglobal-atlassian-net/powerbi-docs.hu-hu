@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 04/24/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2290963db54f150eed8176c2820c59f8f138666
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a118cd0874410e538ca8329e0b8c0ed1bdb430b7
+ms.sourcegitcommit: 834cad24901f7fd966c4010e36a7904bc120e57f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223293"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82149596"
 ---
 # <a name="connect-to-an-oracle-database"></a>Kapcsolódás Oracle-adatbázishoz
 Ha egy Oracle-adatbázist a Power BI Desktophoz szeretne csatlakoztatni, előbb telepítenie kell a megfelelő Oracle ügyfélszoftvert a Power BI Desktopot futtató számítógépre. Az Oracle ügyfélszoftver szükséges verziója attól függ, hogy a Power BI Desktop melyik verzióját telepítette: 32 bites vagy 64 bites.
@@ -22,6 +22,10 @@ Ha egy Oracle-adatbázist a Power BI Desktophoz szeretne csatlakoztatni, előbb 
 Támogatott Oracle-verziók: 
 - Oracle 9-es és újabb verziók
 - 8\.1.7-es vagy újabb Oracle-ügyfélszoftver
+
+> [!NOTE]
+> Ha a Power BI jelentéskészítő kiszolgálóhoz konfigurál Oracle-adatbázist, vegye figyelembe az [Oracle-kapcsolattípus](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) című cikkben foglaltakat. 
+
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>A telepített Power BI Desktop-verzió meghatározása
 A telepített Power BI Desktop verziójának meghatározásához válassza a **Fájl** > **Súgó** > **Névjegy** elemet, majd tekintse meg a **Verzió** sort. A következő képen a Power BI Desktop 64 bites verziója van telepítve:
@@ -65,3 +69,5 @@ Ha a Power BI Desktopot a Microsoft Store-ból töltötte le, előfordulhat, hog
 * Ha a Microsoft Store-ban elérhető verziót szeretné használni: a helyi számítógépén másolja az oraons.dll fájlt a _12.X.X\client_X_ helyről a _12.X.X\client_X\bin_ helyre, ahol _X_ verzió- és könyvtárszámokat jelent.
 
 Ha az Oracle-adatbázishoz való csatlakozáskor a Power BI Gatewayben az *Objektumhivatkozás nincs beállítva* hibaüzenet látható, a problémát az [Adatforrás kezelése – Oracle](service-gateway-onprem-manage-oracle.md) című cikkben található útmutatót követve háríthatja el.
+
+A Power BI jelentéskészítő kiszolgáló használatához az [Oracle-kapcsolattípus](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) című cikk nyújt útmutatást.
