@@ -327,6 +327,10 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Paraméterek létrehozása
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Segédjelentések
+              href: ../paginated-reports/subreports.md
+            - name: Segédjelentések hibaelhárítása
+              href: ../paginated-reports/subreports-troubleshoot.md
             - name: Jelentésparaméter átadása URL-címben
               href: ../paginated-reports/report-builder-url-pass-parameters.md
             - name: Többoldalas jelentés közzététele
