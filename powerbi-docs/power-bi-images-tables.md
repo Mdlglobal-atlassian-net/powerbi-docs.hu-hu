@@ -11,10 +11,10 @@ ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874491"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Képek megjelenítése jelentésbeli táblázatban, mátrixban vagy szeletelőben
@@ -35,17 +35,17 @@ A jelentéseket feldobhatják a hozzájuk adott képek. Bizonyos célokra megfel
 
     ![Képeket tartalmazó szeletelő](media/power-bi-images-tables/power-bi-url-images-slicer.png)
 
-## <a name="considerations"></a>Megfontolandó szempontok
+## <a name="considerations"></a>Szempontok
 
 - A kép fájlformátumának a következők egyikének kell lennie: .bmp, .jpg, .jpeg, .gif, .png, vagy .svg
 - Az URL-címnek névtelenül elérhetőnek kell lennie, tehát nem lehet bejelentkezést igénylő webhelyen, például a SharePointon sem. Ha a képek mégis a SharePointon vagy a OneDrive-on vannak, beszerezheti a közvetlenül rájuk mutató beágyazási kódot. 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Az oldal elrendezése és formázása](/learn/modules/visuals-in-power-bi/12-formatting)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

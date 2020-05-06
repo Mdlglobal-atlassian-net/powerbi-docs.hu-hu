@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637690"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Kapacitások monitorozása a felügyeleti portálon
@@ -65,9 +65,9 @@ Minden számítási feladathoz további metrikák is tartoznak. A megjelenő met
 | Átlagos várakozási idő (perc) | Az ütemezett időpont és az adatfolyam frissítésének kezdete közötti átlagos késés, percekben kifejezve. |
 | Maximális várakozási idő (perc) | Az adatfolyamhoz tartozó leghosszabb várakozási idő, percekben kifejezve.  |
 
-#### <a name="datasets"></a>Adathalmazok
+#### <a name="datasets"></a>Adatkészletek
 
-##### <a name="refresh"></a>Frissítés
+##### <a name="refresh"></a>Előnézet
 
 | **Metrika** | **Leírás** |
 | --- | --- |
@@ -118,7 +118,7 @@ Minden számítási feladathoz további metrikák is tartoznak. A megjelenő met
 > [!NOTE]
 > Az **AI** számítási feladathoz még nem érhetők el részletes metrikák.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Most, hogy megismerkedett a Power BI Premium kapacitásainak monitorozásával, tudjon meg többet a kapacitás optimalizálásáról is.
 

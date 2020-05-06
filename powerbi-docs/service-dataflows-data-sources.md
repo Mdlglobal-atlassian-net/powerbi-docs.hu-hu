@@ -10,10 +10,10 @@ ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872666"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Adatforrásokhoz való csatlakozás Power BI-adatfolyamokkal
@@ -50,8 +50,8 @@ Az adatfolyamok adatforrásai az alábbi kategóriákba vannak sorolva. Ezek az 
 
 * Minden kategória
 * Fájl
-* Adatbázis
-* Power BI
+* Database
+* a Power BI segítségével
 * Azure
 * Online szolgáltatások
 * Egyéb
@@ -60,10 +60,10 @@ Az **Összes kategória** kategória az összes adatforrást tartalmazza, minden
 
 A **Fájl** kategória az alábbi, adatfolyamokhoz elérhető adatkapcsolatokat tartalmazza:
 
-* Hozzáférés
+* Access
 * Excel
 * JSON
-* Szöveg/CSV
+* Szöveges/CSV
 * XML
 
 Az **Adatbázis** kategória az alábbi, adatfolyamokhoz elérhető adatkapcsolatokat tartalmazza:
@@ -181,10 +181,10 @@ Ez a cikk azokat az adatforrásokat ismertette, amelyekhez adatfolyamokkal csatl
 * [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 * [Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)](service-dataflows-azure-data-lake-integration.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

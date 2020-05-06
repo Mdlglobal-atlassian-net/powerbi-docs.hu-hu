@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871188"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Az SQL Server Analysis Services élő adatai a Power BI-ban
@@ -32,7 +32,7 @@ A Power BI szolgáltatásban kétféleképpen csatlakozhat egy SQL Server Analys
 
    ![Kapcsolódás az Adatok lekérése gombhoz](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
-2. Válassza az **Adatbázisok és egyéb** lehetőséget.
+2. Válassza az **Adatbázisok és továbbiak** lehetőséget.
 
    ![Kapcsolódás az adatok lekéréséhez, 1.](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
@@ -56,10 +56,10 @@ Ha vizualizációkat rögzít egy jelentésből az irányítópultra, a rögzít
 
 * A modellséma nem tölthető be hiba – Ez a hiba akkor jelentkezik, ha a SSAS-hez csatlakozó felhasználónak nincs hozzáférési jogosultsága az SSAS-adatbázishoz, -adatkockához vagy -modellhez.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
-* [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)  
+* [Helyszíni adatátjáró](service-gateway-onprem.md)  
 * [Az Analysis Services adatforrásainak kezelése](service-gateway-enterprise-manage-ssas.md)  
 * [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
