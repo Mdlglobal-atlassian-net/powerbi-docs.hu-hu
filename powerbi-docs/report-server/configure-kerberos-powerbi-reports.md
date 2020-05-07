@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maggies
 ms.openlocfilehash: 6e341f80e3631228c28590ccf0a7711e0b624f2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874224"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>A Kerberos konfigurálása Power BI-jelentések használatára
@@ -60,7 +60,7 @@ A korlátozott Kerberos-hitelesítés engedélyezéséhez konfigurálni kell a j
 
 A rsreportserver.config fájlban keresse meg az **Authentication/AuthenticationTypes** szakaszt.
 
-Fontos, hogy az RSWindowsNegotiate kifejezésnek az első helyen kell szerepelnie a fájlban a hitelesítési típusok között. Ennek az alábbihoz hasonlóan kell kinéznie:
+Fontos, hogy az RSWindowsNegotiate kifejezésnek az első helyen kell szerepelnie a fájlban a hitelesítési típusok között. A képernyőnek az alábbihoz hasonlóan kell kinéznie.
 
 ```xml
 <AuthenticationTypes>
@@ -187,19 +187,19 @@ Első lépésként nyissa meg a jelentéskészítő kiszolgáló szolgáltatásf
 A korlátozott delegálást protokollátvitellel konfiguráljuk. A korlátozott delegáláshoz explicit módon kell megadnia azokat a szolgáltatásokat, amelyekhez delegálni szeretne. Adjuk hozzá az Analysis Services szolgáltatás és az SQL Browser egyszerű szolgáltatásneveit is ahhoz a listához, amely számára a Power BI jelentéskésíztő kiszolgálója delegálhat.
 
 1. Kattintson jobb gombbal a jelentéskészítő kiszolgáló szolgáltatásfiókjára, majd válassza a **Tulajdonságok** lehetőséget.
-2. Kattintson a **Delegálás** lapra.
+2. Válassza a **Delegálás** lapot.
 3. Válassza **A számítógépen csak a megadott szolgáltatások delegálhatók** lehetőséget.
 4. Válassza a **Bármely hitelesítési protokoll** lehetőséget.
 5. **A fiók az alábbi szolgáltatásokhoz használhat delegált hitelesítő adatokat:** : területen kattintson a **Hozzáadás** lehetőségre.
-6. Az új párbeszédpanelen válassza a **Felhasználók és számítógépek** lehetőséget.
+6. Az új párbeszédpanelben válassza a **Felhasználók vagy számítógépek** elemet.
 7. Adja meg az Analysis Service szolgáltatásfiókját, majd kattintson az **OK** gombra.
-8. Válassza ki a létrehozott egyszerű szolgáltatásnevet. Ez az alábbi kifejezéssel kezdődik: `MSOLAPSvc.3`. Ha a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevét is hozzáadta, mindkettő ki lesz jelölve. Előfordulhat, hogy Ön csak az egyiket látja.
-9. Kattintson az **OK** gombra.  Az egyszerű szolgáltatásnévnek ekkor meg kell jelennie a listában.
+8. Válassza ki a létrehozott egyszerű szolgáltatásnevet. Ez az alábbi kifejezéssel kezdődik: `MSOLAPSvc.3`. Ha a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevét is hozzáadta, mindkettő ki lesz jelölve. Lehet, hogy csak az egyiket látja.
+9. Kattintson az **OK** gombra.  Ekkor az SPN-nek meg kell jelennie a listában.
 10. Másik lehetőségként válassza a **Kibontva** lehetőséget a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevének megjelenítéséhez.
 11. Kattintson ismét a **Hozzáadás** gombra. Most hozzáadjuk az SQL Browser egyszerű szolgáltatásnevét.
-12. Az új párbeszédpanelen válassza a **Felhasználók és számítógépek** lehetőséget.
+12. Az új párbeszédpanelben válassza a **Felhasználók vagy számítógépek** elemet.
 13. Adja meg annak a számítógépnek a nevét, amelyen az SQL Browser szolgáltatás található, majd kattintson az **OK** gombra.
-14. Válassza ki a létrehozott egyszerű szolgáltatásnevet. Ez az alábbi kifejezéssel kezdődik: `MSOLAPDisco.3`. Ha a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevét is hozzáadta, mindkettő ki lesz jelölve. Előfordulhat, hogy Ön csak az egyiket látja.
+14. Válassza ki a létrehozott egyszerű szolgáltatásnevet. Ez az alábbi kifejezéssel kezdődik: `MSOLAPDisco.3`. Ha a teljes tartománynév és a NetBIOS egyszerű szolgáltatásnevét is hozzáadta, mindkettő ki lesz jelölve. Lehet, hogy csak az egyiket látja.
 15. Kattintson az **OK** gombra. A párbeszédpanelnek az alábbi képhez kell hasonlítania, ha bejelölte a **Kibontva** négyzetet.
     
     ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
@@ -213,9 +213,9 @@ A fenti konfigurációk elvégzése után a jelentésnek megfelelően meg kell j
 
 Ez a konfiguráció a legtöbb esetben működik, a Kerberosszal azonban a környezettől függően szükség lehet további konfigurációkra. Ha a jelentés továbbra sem töltődik be, vegye fel a kapcsolatot a tartományi rendszergazdával vagy az ügyfélszolgálattal.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

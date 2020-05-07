@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
 ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377375"
 ---
 # <a name="configure-report-interaction-settings"></a>Jelentések kezelési beállításainak konfigurálása
@@ -76,6 +76,6 @@ A jelentés frissítési beállításainak módosításához nyissa meg a kezel�
 A kezelési módokat a rendszergazdák távolról is konfigurálhatják egy MDM-eszköz és egy alkalmazáskonfigurációs fájl használatával. Ezen a módon egységesíthető a jelentések kezelőfelülete a teljes vállalat, vagy a meghatározott felhasználói csoportok számára. Erről a [Kezelési mód konfigurálása mobileszköz-felügyelettel](./mobile-app-configuration.md) szakaszban olvashat.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A jelentésekkel végezhető műveletek](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
 * [Kezelési mód konfigurálása mobileszköz-felügyelettel](./mobile-app-configuration.md)

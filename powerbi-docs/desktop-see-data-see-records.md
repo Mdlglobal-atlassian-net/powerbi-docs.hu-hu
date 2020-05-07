@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 66fe4a9eb109565108cd150369b2260a9d3e1d06
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877762"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>A Power BI Desktop Adatok megjelenítése és Rekordok megjelenítése funkciójának használata
@@ -32,7 +32,7 @@ Az **Adatok megtekintése** segítségével a kiválasztott vizualizációban ha
 >  - Tölcsér
 >  - Térkép
 >  - Tortadiagram
->  - Fatérkép
+>  - Treemap
 
 ## <a name="use-see-data-in-power-bi-desktop"></a>Az Adatok megtekintése funkció használata Power BI Desktopban
 
@@ -86,7 +86,7 @@ A jelentéshez való visszatéréshez a vászon bal felső sarkában válassza a
 > - A **Rekordok megjelenítése** nem használható, ha a vizualizáció kiszámított mértéket használ.
 > - A **Rekordok megjelenítése** nem használható, ha egy élő többdimenziós (multidimensional, MD) modellt használ.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A **Power BI Desktopban** sokféle jelentésformázási és adatkezelési szolgáltatás érhető el. A következő forrásanyagok ezekből ismertetnek néhányat:
 
 * [Csoportosítás és dobozolás használata a Power BI Desktopban](desktop-grouping-and-binning.md)

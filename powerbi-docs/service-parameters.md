@@ -10,10 +10,10 @@ ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 656de2cbf318211bf2fe19f15a3867ab183f3173
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871958"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Paraméterbeállítások módosítása a Power BI szolgáltatásban
@@ -38,5 +38,5 @@ Jelentéskészítőként Ön definiálja a paramétereket a Desktopban. Amikor a
     Tekintse át a paraméter-beállításokat, és szükség esetén végezzen módosításokat. A kiszürkített mezők nem szerkeszthetők. 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Ha ad hoc módon szeretne egyszerű paramétereket hozzáadni, [módosíthatja az URL-címet](service-url-filters.md).

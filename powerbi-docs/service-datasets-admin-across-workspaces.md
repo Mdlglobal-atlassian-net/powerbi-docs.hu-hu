@@ -10,10 +10,10 @@ ms.date: 05/31/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: d1ad29bebc148d9f30e8d22240dd149787251a0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872584"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces-preview"></a>Adathalmazok több munkaterületen való használatának szabályozása (előzetes verzió)
@@ -36,7 +36,7 @@ Bérlői rendszergazdaként megadhat egy URL-címet a **Támogatás** beállít�
 
 ![További információk az adathalmazok minősítéséről](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 270d5542bd7856059387e565e4b5ffa90432794c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73867135"
 ---
 # <a name="import-and-display-kpis-in-power-bi"></a>KPI-k importálása és megjelenítése a Power BI-ban
@@ -25,7 +25,7 @@ A KPI-k importálásához és megjelenítéséhez kövesse az alábbi lépéseke
 
 1. Importálja az Excel-munkafüzetet a Power BI-ba a **File -> Importálás -> Excel-munkafüzet tartalma** lehetőséggel. Így [a munkafüzetek importálásának módját is elsajátíthatja](desktop-import-excel-workbooks.md). 
 
-1. A Power BI-ba történt importálás után a KPI megjelenik a ![jelzőlámpa](media/desktop-import-and-display-kpis/traffic.png) ikonnal jelölt **Mezők** panelen. Ahhoz, hogy a KPI-t felhasználhassa a jelentésben, ki kell bontania annak tartalmát, hogy megjelenjen az **Érték**, **Cél** és **Állapot** mező.
+1. A Power BI-ba történt importálás után a KPI megjelenik a **jelzőlámpa** ikonnal jelölt ![Mezők](media/desktop-import-and-display-kpis/traffic.png) panelen. Ahhoz, hogy a KPI-t felhasználhassa a jelentésben, ki kell bontania annak tartalmát, hogy megjelenjen az **Érték**, **Cél** és **Állapot** mező.
 
     ![](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
 

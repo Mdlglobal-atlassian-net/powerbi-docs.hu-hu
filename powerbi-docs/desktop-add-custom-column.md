@@ -10,10 +10,10 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878880"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Egyéni oszlop hozzáadása a Power BI Desktopban
@@ -38,7 +38,7 @@ Egy egyéni oszlop létrehozásának első lépései a következők:
 
 2. A menüszalag **Oszlop hozzáadása** lapján válassza az **Egyéni oszlop** lehetőséget.
 
-   ![Az Egyéni oszlop lehetőség kiválasztása](media/desktop-add-custom-column/add-custom-column_02.png)
+   ![Egyéni oszlop kiválasztása](media/desktop-add-custom-column/add-custom-column_02.png)
 
    Megnyílik az **Egyéni oszlop hozzáadása** ablak.
 
@@ -90,7 +90,7 @@ A lekérdezés létrehozása után a **Speciális szerkesztő** használatával 
    ![A Speciális szerkesztő oldal](media/desktop-add-custom-column/add-custom-column_07.png)
 
    
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - Egyéni oszlopot más módokon is létrehozhat, például a Lekérdezésszerkesztőben megadott példák alapján. További információ: [Oszlop hozzáadása példából a Power BI Desktopban](desktop-add-column-from-example.md).
 

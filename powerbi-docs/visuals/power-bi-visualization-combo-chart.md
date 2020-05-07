@@ -11,10 +11,10 @@ ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79436088"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Kombinált diagramok létrehozása és használata a Power BI-ban
@@ -43,7 +43,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 
 
@@ -83,13 +83,13 @@ Nézze meg, hogyan hoz létre Will egy kombinált diagramot az Értékesítési 
 Ebben a feladatban a bruttó árrést és az értékesítéseket fogjuk összehasonlítani.
 
 1. Hozzon létre egy új vonaldiagramot, amely a **Gross Margin last year %** (%-os bruttó árrés a tavalyi évben) értéket jeleníti meg pénzügyi hónap a **FiscalMonth** szerinti bontásban. Válassza a három pontot, hogy **Hónap** és **Növekvő** sorrend szerint végezzen rendezést.  
-A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következett, amelyet júliusban egy esés, augusztusban pedig egy újabb csúcs követett. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
+A bruttó árrés januárban 35% volt, 45%-kal áprilisban volt a legmagasabb, visszaesett júliusban, majd ismét a csúcson volt augusztusban. Az idei év értékesítéseire vonatkozóan is hasonló mintát fogunk látni, mint tavaly?
 
    ![kombinált diagram értékesítések példa](media/power-bi-visualization-combo-chart/combo1-new.png)
-2. Adja hozzá a vonaldiagramhoz az **Idei értékesítés > Érték** és a **Múlt évi értékesítés** mezőt. A  **Gross Margin Last Year %** (%-os bruttó árrés a tavalyi évben) skálája sokkal kisebb, mint a **Sales** (Értékesítések) skálája, így nehéz összehasonlítani őket.      
+2. Adja hozzá a **This Year Sales > Érték** és a **Last Year Sales** elemeket a vonaldiagramhoz. A  **Gross Margin Last Year %** (%-os bruttó árrés a tavalyi évben) skálája sokkal kisebb, mint a **Sales** (Értékesítések) skálája, így nehéz összehasonlítani őket.      
 
    ![kombinált diagram alacsony értékek](media/power-bi-visualization-combo-chart/flatline-new.png)
-3. Annak érdekében, hogy a vizualizáció könnyebben olvasható és értelmezhető legyen, alakítsa át a vonaldiagramot egy vonal- és halmozott oszlopdiagrammá.
+3. Hogy a vonaldiagram jobban átlátható és könnyebben értelmezhető legyen, konvertálja vonal- és halmozott oszlopdiagrammá.
 
    ![példa kombinált diagrammá konvertálásra](media/power-bi-visualization-combo-chart/converttocombo-new.png)
 
@@ -124,8 +124,8 @@ Ezután az alábbiakat lehet érdemes elvégezni:
 
 Egy oszlop vagy egy sor kijelölése egy kombinált diagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción és viszont. Az alapértelmezett viselkedés módosításához használja a [Vizualizációs interakciók](../service-reports-visual-interactions.md) vezérlőt.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Perecdiagramok a Power BI-ban](power-bi-visualization-doughnut-charts.md)
 
-[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Vizualizációk típusai a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

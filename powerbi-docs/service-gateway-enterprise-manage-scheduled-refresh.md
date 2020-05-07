@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 13d8cd9838cdcb035e7dd30a1180ac77957441ea
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207413"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Adatforrások kezelése – Importálás/ütemezett frissítés
@@ -22,7 +22,7 @@ ms.locfileid: "79207413"
 
 Miután [telepítette a helyszíni adatátjárót](/data-integration/gateway/service-gateway-install), [fel kell vennie az átjáróval használható adatforrásokat](service-gateway-data-sources.md#add-a-data-source). Ez a cikk bemutatja, hogyan lehet használni az ütemezett frissítéshez használt átjárókat és az adatforrásokat a DirectQuery vagy az élő kapcsolatok helyett.
 
-## <a name="add-a-data-source"></a>Adatforrások felvétele
+## <a name="add-a-data-source"></a>Adatforrás hozzáadása
 
 Az [Adatforrás hozzáadása](service-gateway-data-sources.md#add-a-data-source) című témakörben további információt talál adatforrások hozzáadásáról. Válassza ki az adatforrás típusát.
 
@@ -69,9 +69,9 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 
 Az OAuth nem támogatott hitelesítési séma a helyszíni adatátjáróval. Nem vehet fel olyan adatforrásokat, amelyekhez OAuth szükséges. Ha az adatkészlet egy adatforrásához OAuth szükséges, nem fogja tudni ütemezett frissítéshez használni az átjárót.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).

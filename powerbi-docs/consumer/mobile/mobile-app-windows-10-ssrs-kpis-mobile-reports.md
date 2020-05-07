@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
 ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435375"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Helyszíni jelentések és KPI-k megtekintése a Power BI Windows-alkalmazásban
@@ -19,7 +19,7 @@ A Windows 10-hez készült Power BI alkalmazás valós idejű, érintéssel vez�
 
 ![Reporting Services-mobiljelentések](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
-## <a name="first-things-first"></a>Először a lényeg
+## <a name="first-things-first"></a>Kezdjük az elején
 Az SQL Server 2016 Enterprise kiadás mobiljelentés-közzétevőjének segítségével [saját Reporting Services-mobiljelentéseket hozhat létre](https://msdn.microsoft.com/library/mt652547.aspx), és közzéteheti őket a [Reporting Services webes portálon](https://msdn.microsoft.com/library/mt637133.aspx). KPI-ket hozhat létre közvetlenül a webes portálon. Mappákba rendezheti őket, és megjelölheti kedvenceit, hogy könnyedén megtalálhassa azokat. 
 
 Ezt követően megtekintheti a mappákba rendezett vagy kedvencekként összegyűjtött KPI-ket, mobiljelentéseket és Power BI-jelentéseket a Windows 10-hez készült Power BI alkalmazásban. 
@@ -28,13 +28,13 @@ Ezt követően megtekintheti a mappákba rendezett vagy kedvencekként összegy�
 > Az eszközön a Windows 10 operációs rendszernek kell futnia. Az alkalmazás optimális működéséhez 1 GB RAM és 8 GB belső tárhely szükséges.
 
 >[!NOTE]
->A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További tudnivalók](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="explore-samples-without-a-sql-server-2016-reporting-services-server"></a>Minták böngészése SQL Server 2016 Reporting Services-kiszolgáló nélkül
 Akkor is böngészhet a Reporting Services-mobiljelentések funkciói között, ha nem fér hozzá a Reporting Services webes portálhoz.
 
 1. Nyissa meg a Power BI alkalmazást Windows 10-es eszközén.
-2. Koppintson a globális navigációs gombra. ![Globális navigációs gomb](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) a bal felső sarokban.
+2. Koppintson a globális navigáció gombra ![Globális navigációs gomb](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) gombra a bal felső sarokban.
 3. Koppintson a **Beállítások** ikonra ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), kattintson a jobb gombbal vagy koppintson és tartsa nyomva a **Csatlakozás kiszolgálóhoz** elemet, majd koppintson a **Minták megtekintése** elemre.
    
    ![SSRS-minták megtekintése](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
@@ -46,8 +46,8 @@ Böngéssze át a mintákat a KPI-kkel és mobiljelentésekkel való interakció
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Kapcsolódás a Reporting Services jelentéskészítő kiszolgálóhoz
 1. Az új navigációs panel alján koppintson a **Beállítások** lehetőségre ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
-2. Koppintson a **Csatlakozás kiszolgálóhoz** lehetőségre.
-3. Töltse ki a kiszolgáló címét, és adja meg felhasználónevét és jelszavát. A kiszolgáló címét az alábbi formátumban kell megadni:
+2. Koppintson a **Csatlakozás kiszolgálóhoz** elemre.
+3. Írja be a kiszolgáló címét, valamint a felhasználónevét és jelszavát. A kiszolgáló címét az alábbi formátumban kell megadni:
    
      `https://<servername>/reports` VAGY `https://<servername>/reports`
    
@@ -72,14 +72,14 @@ A Reporting Services-KPI-k, a mobiljelentések és a Power BI-jelentések (előz
 
 ![Jelentések mappái](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
-* Koppintson egy KPI-re annak Fókusz módban való megtekintéséhez.
+* Koppintson a KPI-re a fókuszált módban való megjelenítéséhez.
   
     ![KPI megtekintése Fókusz módban](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-kpis.png)
 * Koppintson egy mobiljelentésre annak a Power BI alkalmazásban történő megnyitásához és kezeléséhez.
   
     ![Reporting Services-mobiljelentés](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
-## <a name="view-your-favorite-kpis-and-reports"></a>A kedvenc KPI-jeinek és jelentéseinek megtekintése
+## <a name="view-your-favorite-kpis-and-reports"></a>Kedvenc KPI-k és jelentések megtekintése
 Megjelölhet KPI-ket, mobilejelentéseket és Power BI-jelentéseket kedvencként a Reporting Services webes portálon, majd megtekintheti azokat egyetlen, kényelmesen elérhető mappában Windows 10-es eszközén, a kedvenc Power BI-irányítópultjaival és -jelentéseivel együtt.
 
 * Koppintson a **Kedvencek** elemre.
@@ -90,7 +90,7 @@ Megjelölhet KPI-ket, mobilejelentéseket és Power BI-jelentéseket kedvenckén
   
 További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
-## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
+## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kapcsolatának eltávolítása
 Egyszerre csak egy jelentéskészítő kiszolgálóhoz kapcsolódhat a Power BI mobilalkalmazásából. Ha másik kiszolgálóhoz szeretne kapcsolódni, meg kell szakítania a kapcsolatot a jelenlegivel.
 
 1. Az új navigációs panel alján koppintson a **Beállítások** lehetőségre ![Beállítások ikon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
@@ -105,8 +105,8 @@ A Power BI-mobilalkalmazásban nincs lehetősége Reporting Services-KPI-k és -
 * [Saját Reporting Services-mobiljelentések létrehozása](https://msdn.microsoft.com/library/mt652547.aspx) és a Reporting Services webes portálon történő közzététele.
 * [KPI-k létrehozása egy Reporting Services webes portálon](https://msdn.microsoft.com/library/mt683632.aspx)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A Windows 10-hez készült Power BI mobilalkalmazás használatának első lépései](mobile-windows-10-phone-app-get-started.md)  
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

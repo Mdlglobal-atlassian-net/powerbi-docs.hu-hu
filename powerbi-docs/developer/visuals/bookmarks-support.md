@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5bf1c79aa411788fdb3275b938e7eaad7d6014a1
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: aed8317c36cdd118b03bff2db93788f493ac9ad2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79380525"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Könyvjelzők támogatásának hozzáadása Power BI-vizualizációkhoz
@@ -29,7 +29,7 @@ Ha a vizualizáció más vizualizációkkal áll kölcsönhatásban, más vizual
 
 1. Telepítse (vagy frissítse) a szükséges segédprogramot ([powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/)) a 3.0.0 vagy újabb verzióra. Ez további, állapotkijelöléssel vagy szűréssel kezelhető osztályokat tartalmaz. Szűrővizualizációkhoz és az `InteractivityService` modult használó vizualizációkhoz szükséges.
 
-2. Frissítse a vizualizáció API-ját az 1.11.0 verzióra, hogy használhassa a `registerOnSelectCallback`-et a `SelectionManager` egy példányában. Olyan nem szűrő vizualizációkhoz szükséges, amelyek az `InteractivityService` helyett a `SelectionManager`-t használják.
+2. Frissítse a vizualizáció API-ját az 1.11.0 verzióra, hogy használhassa a `registerOnSelectCallback`-et a `SelectionManager` egy példányában. Olyan nem szűrő vizualizációkhoz szükséges, amelyek az `SelectionManager` helyett a `InteractivityService`-t használják.
 
 ### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Power BI-vizualizációk kölcsönhatása a Power BI-jal a jelentések könyvjelzőkiben
 
@@ -80,7 +80,7 @@ visualDataPoints.push({
 });
 ```
 
-Most már adott a `visualDataPoints` adatpontokként, valamint a `callback` függvénynek átadott `ids` tömb.
+Most már adott a `visualDataPoints` adatpontokként, valamint a `ids` függvénynek átadott `callback` tömb.
 
 Ezen a ponton a vizualizációnak össze kell hasonlítania az `ISelectionId[]` tömböt a `visualDataPoints` tömbben lévő kijelölésekkel, és kijelöltként kell megjelölnie a megfelelő adatpontokat.
 

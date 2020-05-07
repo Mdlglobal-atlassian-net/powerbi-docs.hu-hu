@@ -10,10 +10,10 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74178229"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tanács a Power BI szolgáltatással kapcsolatos segítségkéréshez
@@ -29,7 +29,7 @@ A Power BI-jal kapcsolatban választ váró szakértők gyakran használnak kere
 A Power BI csapata folyamatosan frissíti és fejleszti a Power BI dokumentációját és oktatóanyagait. Kitűnő anyagokat találhat itt, köztük webináriumok felvételeit, cikkeket, interaktív oktatóanyagokat és a legújabb funkciókról szóló blogbejegyzésekre mutató hivatkozásokat.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 A legfrissebb hírek elolvasása a Power BI-blogon
-A Power BI csapata minden új funkciót ismertet a rendszeres [Power BI blogbejegyzésekben](https://powerbi.microsoft.com/blog/). Értesüljön minden újdonságról a Power BI Desktoptól a Power BI-mobilalkalmazásokig. Keresse fel rendszeresen a blogot, ahol a hírekről értesülhet: Szánjon minden héten néhány percet a blog átfutására. Sohasem tudhatja, hogy mikor veszi hasznát a hónapokkal korábban olvasott információnak.
+A Power BI csapata minden új funkciót ismertet a rendszeres [Power BI blogbejegyzésekben](https://powerbi.microsoft.com/blog/). Értesüljön minden újdonságról a Power BI Desktoptól a Power BI-mobilalkalmazásokig. Keresse fel rendszeresen a blogot, ahol a hírekről értesülhet. Szánjon minden héten néhány percet a blog átfutására. Sohasem tudhatja, hogy mikor veszi hasznát a hónapokkal korábban olvasott információnak.
 
 ## <a name="4-try-twitter"></a>4 A Twitter
 Számos Power BI-ügyfél és -szakértő van jelen a Twitteren. Tegye fel kérdését tweetben. Tegye hozzá a #powerbi és #powerbihelp hashtageket, hogy a hozzáértők felfigyeljenek a tweetre.
@@ -67,7 +67,7 @@ Ha semmi más nem segít, akkor a végső tanács, hogy figyelje meg a rendszert
 
 Tegyük fel például, hogy arra kíváncsi, meg tud-e osztani egy irányítópultot egy biztonsági csoporttal. A kérdés megválaszolásához nyissa meg a megosztási párbeszédablakot, és próbáljon hozzáadni egy biztonsági csoportot. Bármi is az eredmény, ez után a próba után választ kap a kérdésére.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Mi az a Power BI?](fundamentals/power-bi-overview.md)
-* Kérdezze meg a [Power BI közösségét](https://community.powerbi.com/)
-* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
+* Kérdezze a [Power BI-közösséget!](https://community.powerbi.com/)
+* Továbbra is problémába ütközik? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).

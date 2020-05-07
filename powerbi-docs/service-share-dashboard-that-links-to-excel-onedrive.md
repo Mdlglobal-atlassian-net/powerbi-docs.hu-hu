@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871459"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>OneDrive-on található Excel-fájlra hivatkozó Power BI-irányítópult megosztása
@@ -30,7 +30,7 @@ A OneDrive Vállalati verzióban tárolt Excel-munkafüzetre hivatkozó irányí
 1. Adja meg kollégái e-mail-címét.
 2. Az Excel-munkafüzet a Power BI szolgáltatásban történő megtekintésének az engedélyezéséhez kattintson a **Munkafüzet engedélyeinek beállítása** lehetőségre.
 3. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
-4. Kattintson a **Megosztás** lehetőségre.
+4. Válassza a **Megosztás** lehetőséget.
 
 >[!NOTE]
 >Kollégái nem fognak tudni további csempéket kitűzni a munkafüzetből, illetve nem fogják tudni módosítani az Excel-munkafüzetet a Power BI-ból.
@@ -46,15 +46,15 @@ Amikor [közzétesz egy tartalomcsomagot](service-organizational-content-pack-cr
     ![Excel-munkafüzet egy tartalomcsomagban](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Kattintson a **Munkafüzet engedélyeinek beállítása** lehetőségre.
 4. A OneDrive-on [módosítsa az engedélyeket](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) igény szerint.
-5. Kattintson a **Közzététel** lehetőségre.
+5. Válassza a **Közzététel lehetőséget**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Irányítópult megosztása Power BI-munkaterületről
 Power BI-munkaterületről ugyanúgy oszthat meg irányítópultot, mint egy saját munkaterületről, azzal a különbséggel, hogy míg az egyik esetben a fájlok egy Office 365 munkaterület-webhelyen találhatók, a másik esetben a saját OneDrive Vállalati verzió webhelyén. Ha munkaterületen kívüli személyekkel is meg szeretné osztani az irányítópultot, akkor módosítsa az Excel-munkafüzethez tartozó engedélyeket még a megosztás előtt.
 
 ![Megosztás OneDrive-ról](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Csempe rögzítése Power BI-irányítópultra Excelből](service-dashboard-pin-tile-from-excel.md)
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

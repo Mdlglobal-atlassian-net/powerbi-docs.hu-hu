@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
 ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859484"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Tartalom kezelése a webes portálon 
@@ -20,10 +20,10 @@ A Power BI jelentéskészítő kiszolgáló webportálja egy helyszíni platform
 
 ![A jelentéskészítő kiszolgáló webportálja](media/getting-around/report-server-web-portal.png)
 
-A webportál bármelyik korszerű böngészőben megnyitható. A jelentéseket és a főbb teljesítménymutatókat a webportál mappákba rendezi, amelyeket megjelölhet kedvencként. A mappákban Excel-munkafüzeteket is tárolhat. A webportálról elindíthatja a jelentéskészítéshez szükséges eszközöket:
+A webportál bármelyik korszerű böngészőben megnyitható. A jelentéseket és a főbb teljesítménymutatókat a webportál mappákba rendezi, amelyeket megjelölhet kedvencként. Excel-munkafüzeteket is tárolhat itt. A webportálról elindíthatja a jelentéskészítéshez szükséges eszközöket:
 
-* Power BI Desktoppal létrehozott **Power BI-jelentések**: Megtekintheti őket a webportálon és a Power BI-mobilalkalmazásokban.
-* A Jelentéskészítővel létrehozott **lapszámozott jelentések**: Korszerű megjelenésű, rögzített elrendezésű, nyomtatásra optimalizált dokumentumok.
+* **Power BI-jelentések** a Power BI Desktop alkalmazással: megtekinthetők a webportálon és Power BI-mobilalkalmazásokban.
+* **Többoldalas jelentések** a Jelentéskészítővel: korszerű megjelenésű, rögzített elrendezésű, nyomtatásra optimalizált dokumentumok.
 * **Főbb teljesítménymutatók**, amelyek közvetlenül a webportálon készülnek.
 
 A webportálon tallózhat a jelentéskészítő kiszolgáló mappáiban, és adott jelentéseket is megkereshet. Megtekintheti a jelentéseket, az általános jelentéstulajdonságaikat és a jelentéselőzmények közt tárolt korábbi példányaikat. Ha engedélyei lehetővé teszik, feliratkozhat jelentésekre, és kérheti az e-mailben vagy a fájlrendszer egy megosztott mappájába való elküldésüket.
@@ -45,7 +45,7 @@ A webportál alkalmazás böngészőben fut. Attól függ, hogy milyen lapok, hi
    
    * KPI-k
    * Mobiljelentések
-   * Többoldalas jelentések
+   * Oldalakra osztott jelentések
    * Power BI Desktop-jelentések
    * Excel-munkafüzetek
    * Adatkészletek
@@ -61,12 +61,12 @@ A Power BI jelentéskészítő kiszolgálón Önnek teljes körű jogosultsága 
 2. Válasszon egy tulajdonságot vagy más beállítást.
    
     ![Tulajdonság kiválasztása](media/getting-around/report-server-web-portal-manage-properties.png)
-3. Kattintson az **Alkalmazás** lehetőségre.
+3. Kattintson az **Alkalmaz** gombra.
 
 További információ [a feliratkozásoknak a webportálon történő kezeléséről](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

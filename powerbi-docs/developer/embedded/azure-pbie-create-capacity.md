@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.reviewer: zakharb
 ms.date: 02/05/2019
 ms.openlocfilehash: 57204602900e76e7bd5034e96f6385e5e944c04e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114796"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded-kapacitás létrehozása az Azure Portalon
@@ -45,11 +45,11 @@ Ennek a rövid útmutatónak az elvégzéséhez a következőkre lesz szüksége
 
     ![Új kapacitás létrehozásához kitöltendő mezők](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
-    |Beállítás |Leírás |
+    |Beállítás |Description (Leírás) |
     |---------|---------|
     |**Erőforrás neve**|A kapacitást azonosító név. Az erőforrás neve a Power BI felügyeleti portálon, valamint az Azure Portalon jelenik meg.|
     |**Előfizetés**|Az előfizetés, amelyben létre szeretné hozni a kapacitást.|
-    |**Erőforráscsoport**|Az új kapacitást tartalmazó erőforráscsoport. Választhat meglévő erőforráscsoportot, vagy létrehozhat egy újat. További információt [Az Azure Resource Manager áttekintésében](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) találhat.|
+    |**Erőforráscsoport**|Az új kapacitást tartalmazó erőforráscsoport. Választhat meglévő erőforráscsoportot, vagy létrehozhat egy újat. További információk: [Azure Resource Manager overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) (Az Azure Resource Manager áttekintése).|
     |**Power BI kapacitásadminisztrátor**|A Power BI kapacitás-rendszergazdái megtekinthetik a kapacitást a Power BI felügyeleti portálján, és hozzárendelési engedélyt adhatnak a felhasználóknak. A kapacitásadminisztrátor alapértelmezés szerint az Ön fiókja. A kapacitásadminisztrátornak a Power BI-bérlőn belül kell lennie.|
     |**Hely**|A Power BI bérlői szolgáltatási helye. Az alapértelmezett hely az otthoni régiója, de a [Multi-Geo-beállításokkal](embedded-multi-geo.md) módosíthatja a helyet.
     |**Tarifacsomag**|Válassza ki az igényeinek megfelelő SKU-t (virtuális magok és memóriaméret szerint)  További információt a [Power BI Embedded díjszabásában](https://azure.microsoft.com/pricing/details/power-bi-embedded/) találhat|
@@ -58,7 +58,7 @@ A **Minden szolgáltatás** > **Power BI Embedded** területre lépve megtekinth
 
 ![Azure Portal-irányítópult Power BI Embedded-kapacitással](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az új Power BI Embedded-kapacitás használatához lépjen a Power BI felügyeleti portáljára, és rendeljen hozzá munkaterületeket. További információ: [Kapacitáskezelés a Power BI Premium és a Power BI Embedded szolgáltatással](https://powerbi.microsoft.com/documentation/powerbi-admin-premium-manage/).
 
@@ -66,4 +66,4 @@ Ha nem szeretné használni ezt a kapacitást, szüneteltetheti a számlázás l
 
 Power BI-tartalmak beágyazásához tekintse meg a [Power BI-irányítópultok, -jelentések és -csempék beágyazása](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/) című témakört.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

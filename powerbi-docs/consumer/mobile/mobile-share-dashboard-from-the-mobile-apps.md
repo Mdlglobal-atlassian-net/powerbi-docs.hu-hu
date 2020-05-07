@@ -1,5 +1,5 @@
 ---
-title: Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
+title: Irányítópult vagy jelentés megosztása a Power BI-mobilalkalmazásokból
 description: Hívjon meg másokat irányítópultjainak vagy jelentéseinek megtekintésére a Power BI-mobilalkalmazások hivatkozásainak megosztásával. Itt megismerkedhet az erre vonatkozó részletekkel.
 author: paulinbar
 ms.reviewer: ''
@@ -9,21 +9,21 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435789"
 ---
-# <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI mobilalkalmazásokból
-A következőkre vonatkozik:
+# <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI-mobilalkalmazásokból
+Hatóköre:
 
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |Windows 10 rendszerű eszközök |
 
 >[!NOTE]
->A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További tudnivalók](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 [Power BI Pro-licenccel](../../service-features-license-type.md) megoszthatja a Power BI mobilalkalmazások hivatkozásait, hogy meghívjon másokat irányítópultjainak vagy jelentéseinek megtekintésére. A hivatkozásokat bárkivel megoszthatja vállalatán belül vagy azon kívül, akár rendelkezik az illető vállalati e-mail-fiókkal, akár nem. Ha a tartalom nem [Prémium kapacitást](../../service-premium-what-is.md) használ, akkor nekik is Power BI Pro-licenccel kell rendelkezniük.
 
@@ -99,8 +99,8 @@ A megosztást csak a tulajdonos törölheti.
    
    További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Csempe, jelentés vagy vizualizáció pillanatképének megosztása vagy jegyzetekkel való ellátása a mobilalkalmazásokban](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Irányítópult vagy jelentés megosztása a Power BI-ban](../../service-share-dashboards.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

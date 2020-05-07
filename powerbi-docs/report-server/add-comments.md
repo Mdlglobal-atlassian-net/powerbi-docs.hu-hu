@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
 ms.openlocfilehash: dd469bdbfa530a1a4728494d3c06e571600dfb5f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874324"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Megjegyzések hozzáadása jelentéshez jelentéskészítő kiszolgálón – Power BI jelentéskészítő kiszolgáló
@@ -44,8 +44,8 @@ Az engedélyeitől függően a következők vonatkozhatnak Önre:
 * Láthatja az összes megjegyzést, és saját megjegyzéseket tehet közzé, szerkeszthet és törölhet.
 * Láthatja az összes megjegyzést; saját megjegyzéseket tehet közzé, szerkeszthet és törölhet; és törölheti mások megjegyzéseit.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

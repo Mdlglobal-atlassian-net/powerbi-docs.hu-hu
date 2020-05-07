@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: db86fee2303759d30b2ff64dc59b56314f220474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73867366"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Beágyazott hierarchiák feliratainak használata a Power BI Desktopban
@@ -32,7 +32,7 @@ Az alábbi képen egy éves értékesítési adatokat tartalmazó sávdiagram l�
 > [!NOTE]
 > A jobb gombbal való kattintás helyett a vizualizáció bal felső sarkában látható *Kibontás* gombot is használhatja.
 
-  ![Kibontás gomb](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
+  ![Kibontás gombra](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
 
 
 A **Kibontás a következő szintre** lehetőség kiválasztása után a vizualizáció kibontja a dátumhierarchiát az *Év* szinttől kezdve a *Negyedév* szintig, ahogy az az alábbi képen látható.

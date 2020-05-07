@@ -10,10 +10,10 @@ ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872863"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Irányítópultok optimalizálása mobiltelefonokra – Power BI 
@@ -55,8 +55,8 @@ Irányítópultok mobileszközökön való megtekintéséről szeretne többet m
    
     A Power BI automatikusan menti a telefonos elrendezést.
 
-## <a name="next-steps"></a>Következő lépések
-* [A Power BI-hoz készült telefonos alkalmazásokra optimalizált jelentések létrehozása](desktop-create-phone-report.md)
+## <a name="next-steps"></a>További lépések
+* [A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása](desktop-create-phone-report.md)
 * [Tetszőleges méretre optimalizált, rugalmas vizualizációk létrehozása](visuals/desktop-create-responsive-visuals.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

@@ -1,5 +1,5 @@
 ---
-title: Csatlakozás egy OData-csatornához a Power BI Desktopban
+title: Kapcsolódás OData-csatornához a Power BI Desktopban
 description: Könnyedén csatlakozhat OData-csatornákhoz, és használhatja azokat a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 3f825c3c7247cba41d574dccde2fc5eda49e70a2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876438"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Csatlakozás OData-csatornákhoz a Power BI Desktopban
@@ -38,15 +38,15 @@ A **Betöltés** gombra kattintva a Power BI Desktop importálja a kiválasztott
 
 ![](media/desktop-connect-odata/connect-to-odata_4.png)
 
-A folyamat befejeződésekor a Power BI Desktop elérhetővé teszi a kiválasztott táblázatokat és más adatelemeket a Power BI Desktop *Jelentések* nézetének jobb oldalán található **Mezők** panelen.
+A folyamat befejeződésekor a Power BI Desktop elérhetővé teszi a kiválasztott táblázatokat és más adatelemeket a Power BI Desktop **Jelentések** nézetének jobb oldalán található *Mezők* panelen.
 
 ![](media/desktop-connect-odata/connect-to-odata_5.png)
 
-Készen is van.
+Ennyi az egész!
 
 Azonnal fel is használhatja az OData-csatorna importált adatait a Power BI Desktopban vizualizációk és jelentések készítéséhez, valamint kombinálhatja őket más csatlakoztatott és importált adatokkal, amelyek például egyéb Excel-munkafüzetekből, adatbázisokból vagy más adatforrásokból származnak.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

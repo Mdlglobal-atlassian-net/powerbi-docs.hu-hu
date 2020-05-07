@@ -1,5 +1,5 @@
 ---
-title: Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
+title: Adatok megtekintése offline módban a Power BI-mobilalkalmazásokban
 description: 'Megtudhatja, milyen előnyökkel jár, ha a mobilböngésző helyett a mobilalkalmazásban tekinti meg a Power BI-t: akkor is hozzáférhet az adataihoz, ha épp nem csatlakozik hálózathoz.'
 author: paulinbar
 ms.reviewer: ''
@@ -9,21 +9,21 @@ ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
 ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435444"
 ---
-# <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése kapcsolat nélküli üzemmódban a Power BI-mobilalkalmazásokban
-A következőkre vonatkozik:
+# <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése offline módban a Power BI-mobilalkalmazásokban
+Hatóköre:
 
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |Windows 10 rendszerű eszközök |
 
 >[!NOTE]
->A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További tudnivalók](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Ha a mobilböngésző helyett a mobilalkalmazásban tekinti meg a Power BI-t, kihasználhatja annak előnyeit, hogy akkor is hozzáférhet az adataihoz, amikor éppen nem csatlakozik hálózathoz. 
 
@@ -61,7 +61,7 @@ Amikor kapcsolat nélküli üzemmódban használja a Power BI-t a mobileszközé
 * A Power BI mobilalkalmazásaiban nem jelennek meg a Power BI jelentéskészítő kiszolgálón mentett Power BI Desktop-fájlok (.pbix-fájlok). 
 * A lapszámozott jelentések (RDL) nem érhetők el kapcsolat nélkül.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A visszajelzése segít eldönteni, hogy milyen fejlesztésekre koncentráljunk a jövőben, ezért kérjük, ne mulasszon el szavazni más szolgáltatásokra, amelyeket szívesen látna a Power BI-mobilalkalmazásokban. 
 
 * [Power BI-alkalmazások mobileszközökre](mobile-apps-for-mobile-devices.md)

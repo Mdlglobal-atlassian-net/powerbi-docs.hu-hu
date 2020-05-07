@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: e45d3e109d072984d6c01b2cbdfdd9b53e936a3b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377213"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Jelentések exportálása a Power BI-ból PDF-be
@@ -49,7 +49,7 @@ A Power BI szolgáltatásban jelöljön ki egy jelentést a vásznon való megje
 Ennyi az egész! Letöltheti a fájlt, és megnyithatja bármely PDF-megtekintő alkalmazással, mint például a Microsoft Edge-ben rendelkezésre állóval.
 
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
 * Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. A PDF-fájlban ezek a vizualizációk üresek, és egy hibaüzenetet jelenítenek meg. 
@@ -68,5 +68,5 @@ Az **Exportálás PDF-be** funkció használatakor figyelembe kell vennie néhá
 * PDF-fájlba való exportáláskor az egyéni betűkészletekkel rendelkező témákat használó jelentések egyéni betűkészlete az alapértelmezett betűkészletre lesz cserélve.
 * Habár törekszünk rá, hogy egységes felületet kínáljunk, nem garantálhatjuk, hogy a Power BI szolgáltatásból származó PDF mindig ugyanolyan lesz, mint egy helyi Power BI Desktop-fájlból exportált PDF.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Jelentés nyomtatása](end-user-print.md)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 26e68f64f9cce2251e98c6a831200b6fbc5d2dd8
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114484"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához
@@ -227,16 +227,16 @@ Ebben a kódrészletben feltételezzük, hogy a leküldhető adathalmaz már az 
     }
 ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Power BI Embedded migrálási eszköz](migrate-tool.md)  
-[Beágyazás a Power BI-jal](embedding.md)  
-[Power BI Embedded munkaterület-csoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)  
+[Beágyazás a Power BI szolgáltatással](embedding.md)  
+[Power BI Embedded-munkaterületcsoport tartalmainak migrálása a Power BI-ba](migrate-from-powerbi-embedded.md)  
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embed-sample-for-your-organization.md)  
-[Power BI Premium – pontosan mi is ez?](../../service-premium-what-is.md)  
+[Mit jelent a Power BI Premium?](../../service-premium-what-is.md)  
 [JavaScript API Git-adattár](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git-adattár](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

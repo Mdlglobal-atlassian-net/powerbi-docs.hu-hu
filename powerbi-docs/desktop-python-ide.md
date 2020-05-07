@@ -10,10 +10,10 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: dbdd4076c9944cf0335ed1f6b6aa43a2a3887189
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73865965"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Külső Python IDE használata a Power BI-jal
@@ -38,11 +38,11 @@ A funkció használatához telepítenie kell egy **Python IDE** környezetet a h
     
     ![](media/desktop-python-ide/python-ide-2.png)
 
-Ha több Python IDE van telepítve, a **Beállítások** párbeszédpanel *Észlelt Python IDE-k* legördülő menüjéből kiválasztva megadhatja, hogy melyik induljon el.
+Ha több Python IDE van telepítve, a *Beállítások* párbeszédpanel **Észlelt Python IDE-k** legördülő menüjéből kiválasztva megadhatja, hogy melyik induljon el.
 
 Alapértelmezés szerint a **Power BI Desktop** a **Visual Studio Code-ot** indítja el külső Python IDE-ként, ha az telepítve van a helyi számítógépen. Ha a **Visual Studio Code** nincs telepítve, a **Visual Studio** azonban igen, akkor az lesz elindítva. Ha ezek közül egyik Python IDE sincs telepítve, a **.PY** fájlokhoz társított alkalmazás lesz elindítva.
 
-Ha nincs **.PY** fájltársítás, lehetőség van egy egyéni IDE környezetre mutató elérési út megadására a **Beállítások** párbeszédpanel *Tallózás az előnyben részesített Python IDE kiválasztásához* szakaszában. Egy eltérő Python IDE környezetet is elindíthat, ha a **Python IDE indítása** nyílikon melletti **Beállítások** fogaskerék ikonra kattint a **Power BI Desktopban**.
+Ha nincs **.PY** fájltársítás, lehetőség van egy egyéni IDE környezetre mutató elérési út megadására a *Beállítások* párbeszédpanel **Tallózás az előnyben részesített Python IDE kiválasztásához** szakaszában. Egy eltérő Python IDE környezetet is elindíthat, ha a **Python IDE indítása** nyílikon melletti **Beállítások** fogaskerék ikonra kattint a **Power BI Desktopban**.
 
 ## <a name="launch-a-python-ide-from-power-bi-desktop"></a>Python IDE indítása a Power BI Desktopból
 A Python IDE a **Power BI Desktopból** történő indításához hajtsa végre az alábbi lépéseket:
@@ -80,7 +80,7 @@ Ha a Python IDE indítása közvetlenül a Power BI Desktopból történik, az n
 
 * A szkript Python IDE környezetből **Power BI Desktopba** való automatikus exportálása nem támogatott.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Tekintse meg az alábbi, a Python programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 
 * [Python-szkriptek futtatása a Power BI Desktopban](desktop-python-scripts.md)

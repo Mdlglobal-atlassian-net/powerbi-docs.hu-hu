@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
 ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79487809"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Útmutató a bérlő rendszergazdai beállításokhoz
@@ -137,11 +137,11 @@ Ha nem tervezi használni a fejlesztői API-kat a tartalmak beágyazásához, ja
 
 ![Megjelennek a fejlesztői beállítások.](media/admin-tenant-settings/developer-settings.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
 - [Mit jelent a Power BI-felügyelet?](../service-admin-administering-power-bi-in-your-organization.md)
 - [A Power BI felügyelete a felügyeleti portálon](../service-admin-portal.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)

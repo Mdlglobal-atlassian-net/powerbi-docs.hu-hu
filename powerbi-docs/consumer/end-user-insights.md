@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 891a9b1a5afee26bdb2d6b363ccd2cee5f2461cb
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377284"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Adatelemzési eredmények megtekintése irányítópult-csempéken a Power BI-jal
@@ -60,10 +60,10 @@ Egy elemzés megnyitása után folytathatja a felderítést.
      
 A jelentéshez a bal felső sarokban látható **Kilépés a fókusz módból** lehetőséget választva léphet vissza.
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 - Az **Elemzések megtekintése** az irányítópult nem minden csempetípusával használható. Például Power BI-vizualizációkhoz nem érhető el.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 További tudnivalók a [Gyors elemzések típusaival kapcsolatban](end-user-insight-types.md)
 

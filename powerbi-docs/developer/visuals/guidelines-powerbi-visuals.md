@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
 ms.openlocfilehash: 1602743230f1a369fe3da48fa37a313b9d9bbea4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435881"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Útmutató Power BI-vizualizációkhoz
@@ -162,6 +162,6 @@ Az egyszerűbb használat érdekében a licenckulccsal vagy tokenekkel kapcsolat
 
 A Power BI-vizualizációkkal kapcsolatban a [Gyakori kérdések a Power BI-vizualizációkon belüli további vásárlásokról](power-bi-custom-visuals-faq.md#visuals-with-additional-purchases) weblapon talál további információt.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Megtudhatja, hogyan teheti közzé Power BI-vizualizációit a [Microsoft AppSource-on](office-store.md), amelyeket aztán mások is megtalálhatnak és használhatnak.

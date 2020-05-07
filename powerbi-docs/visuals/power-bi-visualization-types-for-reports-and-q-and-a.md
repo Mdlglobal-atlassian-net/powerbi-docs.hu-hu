@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381422"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
@@ -194,7 +194,7 @@ További információt a [Power BI pontdiagramjait](power-bi-visualization-scatt
 További információt a [Power BI nagy sűrűségű pontdiagramjait](desktop-high-density-scatter-charts.md) ismertető cikkben talál.
 
 ### <a name="slicers"></a>Szeletelők
-![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![szeletelő](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
 További információt a [Power BI szeletelőit](power-bi-visualization-slicers.md) ismertető cikkben talál.
 
@@ -203,7 +203,7 @@ További információt a [Power BI szeletelőit](power-bi-visualization-slicers.
 
 További információkért lásd: [Képwidget hozzáadása egy irányítópulthoz](../service-dashboard-add-widget.md).
 
-### <a name="tables"></a>Táblák
+### <a name="tables"></a>Táblázatok
 ![táblavizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
@@ -228,12 +228,12 @@ További információt a [Power BI fatérképeit](power-bi-visualization-treemap
 További információt a [Power BI vízesésdiagramjait](power-bi-visualization-waterfall-charts.md) ismertető cikkben talál.
 
 ## <a name="tell-qa-which-visualization-to-use"></a>A Q&A által használt vizualizáció megadása
-Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Például:
+Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Példa:
 
 „***értékesítés államonként fatérképen***”
 
 ![A Q&A kérdésmezője a megadott vizualizációtípussal](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Vizualizációk Power BI-jelentésekben](power-bi-report-visualizations.md)    
 [A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

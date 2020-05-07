@@ -10,10 +10,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 097c3e5be411c05a99df75bca5ec3e7abe0b19e0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878646"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Csatlakozás az Adobe Analyticshez a Power BI Desktopban 
@@ -39,7 +39,7 @@ A kiválasztott táblát **betöltheti**, amellyel az egész tábla bekerül a *
 ![Adatok betöltése vagy szerkesztése a Kezelőben](media/desktop-connect-adobe-analytics/connect-adobe-analytics_05.png)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
