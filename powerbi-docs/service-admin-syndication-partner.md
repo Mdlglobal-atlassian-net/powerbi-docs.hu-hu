@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958356"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Nem sikerült hozzáadni a Power BI-t az Office 365 típusú partneri előfizetéshez
@@ -52,13 +52,13 @@ Regisztrálhat a Power BI ingyenes próbaverziójára. Ha nem vásárolja meg a 
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Alkalmi előfizetések engedélyezése
 
-Az egyéni regisztrációk (más néven alkalmi előfizetések), alapértelmezés szerint le vannak tiltva. Ilyen esetben regisztrálási kísérletnél az alábbi üzenet jelenik meg: *Az informatikai részleg kikapcsolta a Microsoft Power BI-regisztráció lehetőségét*.
+Az egyéni regisztrációk (más néven alkalmi előfizetések), alapértelmezés szerint le vannak tiltva. Ebben az esetben a következő üzenet jelenik meg a regisztrációkor: *Az informatikai részleg kikapcsolta a Microsoft Power BI-regisztráció lehetőségét*.
 
 ![Sajnálkozó kép](media/service-admin-syndication-partner/sorry.png)
 
 Az alkalmi előfizetések engedélyezéséhez megkérheti a partnert, hogy kapcsolja be azt. Ha Ön a bérlő rendszergazdája, és ismeri az Azure Active Directory PowerShell-parancsok használatát, saját maga is engedélyezheti az alkalmi előfizetéseket. [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2/)
 
-1. Jelentkezzen be az Azure Active Directoryba az Office 365-ös hitelesítő adataival. Az alábbi szkript első sora bekéri a hitelesítő adatokat. A második sor csatlakozik az Azure Active Directoryhoz.
+1. Jelentkezzen be az Azure Active Directoryba az Office 365-ös hitelesítő adataival. Az alábbi szkript első sora bekéri a hitelesítő adatokat. A második sor kapcsolódik az Azure Active Directoryhoz.
 
     ```powershell
     $msolcred = get-credential
@@ -79,8 +79,8 @@ Az alkalmi előfizetések engedélyezéséhez megkérheti a partnert, hogy kapcs
     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Szervezeti Power BI-licencelés](service-admin-licensing-organization.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

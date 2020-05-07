@@ -11,10 +11,10 @@ ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
 ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74697267"
 ---
 # <a name="premium-capacity-scenarios"></a>Prémium szintű kapacitások forgatókönyvei
@@ -145,13 +145,13 @@ Egyes esetekben a Power BI-rendszergazdák megkérhetik az adathalmazok tulajdon
 
 A cikket Peter Myers, a [Bitwise Solutions](https://www.bitwisesolutions.com.au/) Data Platform MVP-je és független BI-szakértője szerezte.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 > [!div class="nextstepaction"]
 > [Prémium szintű kapacitások monitorozása az alkalmazással](service-admin-premium-monitor-capacity.md)    
 > [!div class="nextstepaction"]
 > [Kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md)   
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 
 ||||||

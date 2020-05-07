@@ -11,14 +11,14 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d620c1def289cea39a90092876ce275eea8ee699
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853081"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Teljes jelentésoldal rögzítése Power BI-irányítópultra élő csempeként
-Új [irányítópult-csempe](consumer/end-user-tiles.md) hozzáadásának egy másik módja egy teljes jelentésoldal rögzítése. Így egyszerűen rögzíthető egyszerre több vizualizáció.  Ezen felül teljes oldal rögzítésekor a csempék *élők* lesznek, és közvetlenül az irányítópulton kezelhetők. A vizualizációk jelentésszerkesztőben végrehajtott módosítása, például egy szűrő hozzáadása vagy a diagramon használt mezők megváltoztatása is megjelenik az irányítópulton lévő csempén.  
+Új [irányítópult-csempe](consumer/end-user-tiles.md) hozzáadásának egy másik módja egy teljes jelentésoldal rögzítése. Így egyszerűen rögzíthet egyszerre több vizualizációt.  Ezen felül teljes oldal rögzítésekor a csempék *élők* lesznek, és közvetlenül az irányítópulton kezelhetők. A vizualizációk jelentésszerkesztőben végrehajtott módosítása, például egy szűrő hozzáadása vagy a diagramon használt mezők megváltoztatása is megjelenik az irányítópulton lévő csempén.  
 
 Jelentések csempéinek rögzítése az irányítópultokon csak a Power BI szolgáltatásban (app.powerbi.com) lehetséges.
 
@@ -37,7 +37,7 @@ Nézze meg, hogyan rögzít Amanda élő jelentésoldalt egy irányítópulton, 
 2. Vizualizáció kijelölése nélkül válassza a menüsáv **Élő oldal rögzítése** elemét.
    
    ![Élő oldal rögzítése ikon](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. A csempét egy meglévő vagy egy új irányítópultra is rögzítheti. Figyelje meg a kiemelt szöveget: *Az élő oldal rögzítése lehetővé teszi, hogy a jelentés módosításai megjelenjenek az irányítópult csempéjén az oldal frissítésekor.*
+3. Tűzze ki a csempét egy meglévő vagy egy új irányítópultra. Figyelje meg a kiemelt szöveget: *Ha élő oldalt rögzít, akkor a jelentés módosításai az irányítópulton is megjelennek az oldal frissítésekor.*
    
    * Meglévő irányítópult: válassza ki az irányítópult nevét a legördülő listából. Az Önnel megosztott irányítópultok nem jelennek meg a legördülő listában.
    * Új irányítópult: írja be az új irányítópult nevét.
@@ -51,8 +51,8 @@ Nézze meg, hogyan rögzít Amanda élő jelentésoldalt egy irányítópulton, 
    
     ![irányítópultok élő csempével](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Irányítópultok a Power BI-ban](consumer/end-user-dashboards.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

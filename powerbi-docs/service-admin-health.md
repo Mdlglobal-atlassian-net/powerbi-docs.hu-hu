@@ -1,5 +1,5 @@
 ---
-title: A Power BI szolgáltatás állapotának követése az Office 365-ben
+title: A Power BI szolgáltatás állapotának nyomon követése az Office 365-ben
 description: 'Útmutató: hogyan tekintheti meg a szolgáltatás állapotának jelenlegi és előzményadatait a Microsoft 365 Felügyeleti központban.'
 author: kfollis
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 9d0ed841da3f398b8e0a8dc0a35ed040ccf3cab6
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74700004"
 ---
-# <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának követése az Office 365-ben
+# <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának nyomon követése az Office 365-ben
 
 A Microsoft 365 Felügyeleti központ fontos eszközöket biztosít Power BI-rendszergazdáknak. Az eszközök a szolgáltatás állapotával kapcsolatos aktuális és korábbi információkat nyújtanak. A szolgáltatás állapotával kapcsolatos adatok eléréséhez a következő szerepkörök egyikével kell rendelkeznie:
 

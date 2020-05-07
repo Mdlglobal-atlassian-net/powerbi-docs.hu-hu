@@ -1,6 +1,6 @@
 ---
 title: Adatforrások kezelése – SQL
-description: Helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelése.
+description: A helyszíni adatátjáró és az átjáróhoz tartozó adatforrások kezelésének módja.
 author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: c0dc3b9eeb7932ca0cb6784fd6a46857821d1b12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698118"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Adatforrások kezelése – SQL Server
@@ -22,7 +22,7 @@ ms.locfileid: "74698118"
 
 Miután [telepítette a helyszíni adatátjárót](/data-integration/gateway/service-gateway-install), az átjáróval használható [adatforrásokat](service-gateway-data-sources.md#add-a-data-source) vehet fel. Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az SQL Server-adatforrásokat akár ütemezett frissítéshez, akár a DirectQueryhez.
 
-## <a name="add-a-data-source"></a>Adatforrások felvétele
+## <a name="add-a-data-source"></a>Adatforrás hozzáadása
 
 Az [Adatforrás hozzáadása](service-gateway-data-sources.md#add-a-data-source) című témakörben további információt talál adatforrások hozzáadásáról. Az **Adatforrás típusa** területen válassza az **SQL Server** lehetőséget.
 
@@ -33,7 +33,7 @@ Az [Adatforrás hozzáadása](service-gateway-data-sources.md#add-a-data-source)
 
 Ez után adja meg az adatforrás adatait, például a **Kiszolgálót** és az **Adatbázist**. 
 
-A **Hitelesítési módszer** területen választhatja a **Windows** vagy az **Egyszerű** lehetőséget. Az **Egyszerű** lehetőséget akkor válassza, ha Windows-hitelesítés helyett SQL-hitelesítés használatát tervezi. Ezután írja be az adatforráshoz használandó hitelesítő adatokat.
+A **Hitelesítési módszer** területen választhatja a **Windows** vagy az **Egyszerű** lehetőséget. Az **Egyszerű** lehetőséget akkor válassza, ha Windows-hitelesítés helyett SQL-hitelesítés használatát tervezi. Ez után írja be az adatforráshoz használandó hitelesítő adatokat.
 
 > [!NOTE]
 > Az adatforráson minden lekérdezés ezekkel a hitelesítő adatokkal fog futni, hacsak nincs hozzá konfigurálva és engedélyezve a Kerberos használata egyszeri bejelentkezéshez (SSO). Egyszeri bejelentkezés (SSO) használata esetén az importált adatkészletek a tárolt hitelesítő adatokat használják, a DirectQuery-adatkészletek viszont az aktuális Power BI-felhasználó nevében, SSO használatával futtatják a lekérdezéseket. A [Titkosított hitelesítő adatok tárolása a felhőben](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) című témakörben további információt talál a hitelesítő adatok tárolásáról. Elolvashatja [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-kerberos.md) című cikket is.
@@ -73,12 +73,12 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 
 ![A felhasználók megjelenítése](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Csatlakozás helyszíni adatokhoz az SQL Serverrel](service-gateway-sql-tutorial.md)
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 * [A Kerberos használata a Power BI-ból a helyszíni adatforrásokba történő egyszeri bejelentkezéshez (SSO)](service-gateway-sso-kerberos.md)
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
+Több kérdése van? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 
