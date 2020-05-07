@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 12/19/2017
 ms.openlocfilehash: e114c208093c9f3401c43e9ea44502e65d6d84fd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79493204"
 ---
 # <a name="custom-layouts"></a>Egyéni elrendezések
@@ -62,7 +62,7 @@ enum DisplayOption {
 ```
 
 - `pageSize`: Az oldalmérettel szabályozhatja a vászonterület (azaz a jelentés fehér területének) méretét.
-- `displayOptions`: Lehetséges értékek: FitToWidth (Szélességhez igazítás), FitToPage (Laphoz igazítás) vagy ActualSize (Tényleges méret). Azt szabályozza, hogy a rendszer hogyan méretezze a vásznat, hogy az illeszkedjen az IFrame elembe.
+- `displayOptions`: A lehetséges értékek a következők: FitToWidth (Szélességhez igazítás), FitToPage (Laphoz igazítás) vagy ActualSize (Tényleges méret). Azt szabályozza, hogy a rendszer hogyan méretezze a vásznat, hogy az illeszkedjen az IFrame elembe.
 - `pagesLayout`: Az egyes vizualizációk elrendezését szabályozza. További információért lásd a PagesLayout objektumot.
 
 ## <a name="pages-layout"></a>Lapok elrendezése
@@ -109,7 +109,7 @@ enum VisualContainerDisplayMode {
 ```
 
 - `x,y,z`: A vizualizáció új pozícióját határozza meg.
-- `width`, magasság: A vizualizáció új méretét határozza meg.
+- `width`, height: A vizualizáció új méretét határozza meg.
 - `displayState`: Azt határozza meg, hogy a vizualizáció látható-e.
 
 ## <a name="update-layout"></a>Elrendezés frissítése
@@ -170,7 +170,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-## <a name="see-also"></a>További információ
+## <a name="see-also"></a>Lásd még
 
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embed-sample-for-customers.md)   
 [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

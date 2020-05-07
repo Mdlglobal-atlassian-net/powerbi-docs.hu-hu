@@ -11,10 +11,10 @@ ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.openlocfilehash: f04621fdfe7e6055d84fa4d2672c874837ff5ea4
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495274"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>A Power BI Embedded az Azure-ban ismertetése
@@ -51,7 +51,7 @@ A REST API-nak köszönhetően a Power BI Embeddedben bármilyen nyelven fejlesz
 * [Power BI-ötletek](https://ideas.powerbi.com): Funkciók kérése és szavazás ezekről
 * [Reddit](https://www.reddit.com/r/PowerBI/): A Power BI megvitatása
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A kapacitáscsomópontokról további információt a [díjszabást ismertető lapon](https://azure.microsoft.com/pricing/details/power-bi-embedded/) találhat.
 

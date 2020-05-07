@@ -11,10 +11,10 @@ ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621634"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Adatriasztások a Power BI szolgáltatásban
@@ -32,7 +32,7 @@ Mindenki csak a saját riasztásait látja, még az irányítópult megosztása 
 
 ## <a name="set-data-alerts-in-the-power-bi-service"></a>Adatriasztások beállítása a Power BI szolgáltatásban
 
-Tekintse meg, ahogy Amanda riasztásokat ad hozzá egyes csempékhez az irányítópultján. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
+Tekintse meg, ahogy Amanda riasztásokat ad hozzá egyes csempékhez az irányítópultján. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
@@ -115,7 +115,7 @@ A riasztásokat többféle módon is kezelheti:
 
 1. Erről a felületről be- és kikapcsolhatja a riasztásokat, megnyithatja a **Riasztások kezelése** ablakot a riasztás módosításához, vagy akár törölheti is a riasztást.
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 
 * A riasztásokat a dátum/idő mértékekkel rendelkező kártyacsempék nem támogatják.
 * A riasztások kizárólag numerikus adattípusokkal működnek.
@@ -123,7 +123,7 @@ A riasztásokat többféle módon is kezelheti:
 * A riasztások a streamelési adatkészleteken csak akkor működnek, ha felépít egy KPI-/kártya-/mérőműszer-jelentési vizualizációt, majd rögzíti az irányítópulton.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Adatriasztást tartalmazó Power Automate létrehozása](service-flow-integration.md).
 
@@ -131,4 +131,4 @@ A riasztásokat többféle módon is kezelheti:
 
 * [Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

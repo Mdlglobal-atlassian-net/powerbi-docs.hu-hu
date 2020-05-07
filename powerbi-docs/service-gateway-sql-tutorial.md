@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958436"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Adatok frissítése helyszíni SQL Server-adatbázisból
@@ -75,7 +75,7 @@ Az alábbi eljárást követve hozhat létre alapszintű Power BI-jelentést az 
 
 5. Húzza az **EndDate** elemet a **Jelentési szint szűrői** részre, majd az **Alapszintű szűrés** területen csak az **(Üres)** jelölőnégyzet jelölje be.
 
-    ![Jelentésszintű szűrők](./media/service-gateway-sql-tutorial/report-level-filters.png)
+    ![Jelentési szint szűrői](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     A diagram most a következő képhez hasonlóan néz ki.
 
@@ -114,14 +114,14 @@ A Power BI Desktopban közvetlenül csatlakozott a helyszíni SQL Server-adatbá
 
 5. Az **Átjárók** kezelésére szolgáló oldal **Adatforrás-beállítások** lapján adja meg és ellenőrizze az alábbi információkat, majd válassza a **Hozzáadás** elemet.
 
-    | Beállítás | Érték |
+    | Beállítás | Value |
     | --- | --- |
     | Adatforrás neve | AdventureWorksProducts |
     | Adatforrás típusa | SQL Server |
     | Kiszolgáló | Az SQL Server-példány neve, például SQLServer01 (egyeznie kell a Power BI Desktopban megadott névvel). |
-    | Adatbázis | Az SQL Server-adatbázis neve, például AdventureWorksDW (egyeznie kell a Power BI Desktopban megadott névvel). |
+    | Database | Az SQL Server-adatbázis neve, például AdventureWorksDW (egyeznie kell a Power BI Desktopban megadott névvel). |
     | Hitelesítési módszer | Windows vagy Alapszintű (általában Windows). |
-    | Felhasználónév | Az SQL Serverhez való csatlakozáshoz használt felhasználói fiók. |
+    | Username | Az SQL Serverhez való csatlakozáshoz használt felhasználói fiók. |
     | Jelszó | Az SQL Serverhez való csatlakozáshoz használt fiók jelszava. |
 
     ![Adatforrás beállításai](./media/service-gateway-sql-tutorial/data-source-settings.png)
@@ -197,11 +197,11 @@ Időnként érdemes ellenőrizni a korábbi frissítési ciklusok eredményét a
     > [!NOTE]
     > A OneDrive lapnak csak olyan adathalmazok esetén van jelentősége, amelyek a OneDrive-on vagy a SharePoint Online-ban található Power BI Desktop-fájlokhoz, Excel-munkafüzetekhez vagy CSV-fájlokhoz csatlakoznak. Ezzel kapcsolatban az [Adatfrissítés a Power BI-ban](refresh-data.md) című témakör szolgál bővebb információval.
 
-## <a name="clean-up-resources"></a>Erőforrások felszabadítása
+## <a name="clean-up-resources"></a>Az erőforrások felszabadítása
 
 Ha a továbbiakban nem kívánja használni a mintaadatokat, törölje az adatbázist az SQL Server Management Studióban (SSMS). Ha nem szeretné használni az SQL Server-adatforrást, távolítsa el az adatforrást az adatátjáróból. Vegye fontolóra az adatátjáró eltávolítását is, ha csak a jelen oktatóanyag elvégzése céljából telepítette. Az AdventureWorksProducts adathalmazt, illetve a Power BI által az AdventureWorksProducts.pbix fájl feltöltésekor létrehozott AdventureWorksProducts jelentést is törölnie kell.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ebben az oktatóanyagban megtudta, hogyan importálhat adatokat helyszíni SQL Server-adatbázisból Power BI-adathalmazba, és hogyan frissítheti az adathalmazt ütemezetten vagy igény szerint az őt használó jelentések és irányítópultok naprakészen tartásához a Power BI-ban. A továbbiakban alaposabban megismerkedhet az adatátjárók és adatforrások Power BI-ban történő kezelésével. Érdemes lehet áttekinteni az „Adatfrissítés a Power BI-ban” című elméleti cikket.
 

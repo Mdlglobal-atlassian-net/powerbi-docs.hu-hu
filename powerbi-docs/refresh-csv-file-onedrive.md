@@ -11,14 +11,14 @@ ms.date: 09/12/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: d18d3a5b5d85a121f67c5b3109a150a21ab72d1a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699705"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>CSV-fájlból létrehozott adatkészlet frissítése a OneDrive vagy a SharePoint Online szolgáltatásban
-## <a name="what-are-the-advantages"></a>Mik az előnyei?
+## <a name="what-are-the-advantages"></a>Mik az előnyök?
 Amikor .csv-fájlhoz kapcsolódik a OneDrive-on vagy a SharePoint Online-ban, a Power BI-ban létrejön egy adatkészlet. Ezután a .csv-fájlban lévő adatokat a Power BI importálja az adatkészletbe. Majd a Power BI automatikusan kapcsolódik a fájlhoz, és frissít minden változást a Power BI adatkészletében. Ha szerkeszti a .csv-fájlt a OneDrive vagy a SharePoint Online szolgáltatásban, a mentés után a módosítások általában körülbelül egy órán belül megjelennek a Power BI-ban. A Power BI-ban az adatkészleten alapuló vizualizációk szintén automatikusan frissülnek.
 
 Ha a fájljai egy megosztott mappában találhatók a OneDrive Vállalati verzióban vagy a SharePoint Online-ban, más felhasználók is dolgozhatnak ugyanazon a fájlon. Mentés után a változtatások automatikusan frissülnek a Power BI-ban, általában egy órán belül.
@@ -29,7 +29,7 @@ Számos cég futtat olyan folyamatokat, amelyek automatikusan lekérdezik az ada
 A vesszővel tagolt értékfájlok egyszerű szöveges fájlok, ezért a külső adatforrásokhoz és jelentésekhez való kapcsolódás nem támogatott. Vesszővel tagolt fájlból létrehozott adatkészlet frissítését nem lehet ütemezni. Azonban, ha a fájl a OneDrive-on vagy a SharePoint Online-ban van, a Power BI automatikusan, óránként szinkronizálja a fájl változásait az adatkészlettel.
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vagy OneDrive Vállalati verzió. Mi közöttük a különbség?
-Ha rendelkezik személyes OneDrive-val és OneDrive Vállalati verzióval is, fontos, hogy azokat a fájlokat, amelyekhez kapcsolódni szeretne a Power BI-ban, a OneDrive Vállalati verziójában tartsa. Ennek oka a következő: Ön minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
+Ha rendelkezik személyes OneDrive-val és OneDrive Vállalati verzióval is, fontos, hogy azokat a fájlokat, amelyekhez kapcsolódni szeretne a Power BI-ban, a OneDrive Vállalati verziójában tartsa. Ennek az az oka, hogy minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
 
 A OneDrive Vállalati verziójához való csatlakozás a Power BI szolgáltatásban általában zökkenőmentes, mert a Power BI-ba való bejelentkezéshez használt fiók gyakran megegyezik a OneDrive vállalati verziójához használttal. A személyes OneDrive-hoz viszont valószínűleg egy másik [Microsoft-fiókot](https://account.microsoft.com) használ.
 
@@ -42,9 +42,9 @@ Ha olyan módosítást hajt végre a OneDrive-on lévő fájlon, amely nem szink
 ## <a name="when-things-go-wrong"></a>Hiba esetén
 Ha megváltoztak a .csv-fájlban lévő adatok a OneDrive-ban, de ezek a változások a Power BI-ban nem tükröződnek, annak legvalószínűbb oka, hogy a Power BI nem tud kapcsolódni a OneDrive-hoz. Próbáljon kapcsolódni a fájlhoz és újra importálni. Ha a rendszer arra kéri, hogy jelentkezzen be, ügyeljen arra, hogy bejelölje a **Bejelentkezve szeretnék maradni** lehetőséget.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Eszközök frissítési problémák elhárításához](service-gateway-onprem-tshoot.md)
 [Frissítésekkel kapcsolatos hibaelhárítási forgatókönyvek](refresh-troubleshooting-refresh-scenarios.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/04/2019
 ms.openlocfilehash: cac59a4689eecd75c53ca1c62d7b097438b2ae53
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114520"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Azure AD hozzáférési jogkivonat beszerzése a Power BI-alkalmazáshoz
@@ -202,8 +202,8 @@ Hibaüzenet: „Az 'AuthenticationContext' nem tartalmaz 'AcquireToken' definíc
 
    Ha ezt a hibát tapasztalja, próbálkozzon a [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) letöltésével.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Most, hogy rendelkezik a hozzáférési tokennel, meghívhatja a Power BI REST API-t tartalmak beágyazásához. További információ: [Power BI-tartalom beágyazása](embed-sample-for-customers.md#embed-content-within-your-application).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

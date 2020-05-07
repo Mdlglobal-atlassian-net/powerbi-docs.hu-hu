@@ -9,10 +9,10 @@ ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: b951e96a5d81603dc91e4fc47a2b412d4140f85d
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80752050"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Csatlakozás a Kórházi sürgősségi döntéstámogatási irányítópulthoz
@@ -58,7 +58,7 @@ A Kórházi vészhelyzet-kezelési Power Platform-megoldás telepítése közben
 
    ![Sablonalkalmazás üdvözlőképernyője](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-splash-screen.png)
 
-   Ekkor az alkalmazás megnyílik, és mintaadatokat jelenít meg.
+   Ekkor az alkalmazás megnyílik és mintaadatokat jelenít meg.
 
 1. Kattintson a **Csatlakozás saját adatokhoz** hivatkozásra az oldal tetején látható szalagcímen.
 
@@ -70,7 +70,7 @@ A Kórházi vészhelyzet-kezelési Power Platform-megoldás telepítése közben
 
    ![Kórházi sürgősségi döntéstámogatási irányítópult alkalmazás URL-cím párbeszédpanelje](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
-1. A következő párbeszédpanelen állítsa a hitelesítési módszert az **OAuth2** lehetőségre. Az adatvédelmi szint beállításával kapcsolatban semmit nem kell tennie.
+1. A következő párbeszédpanelen állítsa a hitelesítési módszert az **OAuth2** lehetőségre. Az adatvédelmi szint beállításával nem kell foglalkoznia.
 
    Válassza a **Bejelentkezés** lehetőséget.
 
@@ -96,7 +96,7 @@ Miután lezajlott az adatfrissítés, [állítson be frissítési ütemezést](.
 
 ## <a name="customize-and-share"></a>Testreszabás és megosztás
 
-További információk: [Az alkalmazás testreszabása és megosztása](../service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
+További információkért lásd: [Az alkalmazás testreszabása és megosztása](../service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
 
 ## <a name="next-steps"></a>Következő lépések
 * [A Kórházi vészhelyzet-kezelési jelentés ismertetése](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)

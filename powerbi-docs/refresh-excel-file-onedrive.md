@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 21b7b93b4e522a8e6a49d22b54c9ddd83cb5e042
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699621"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>A OneDrive-on vagy a SharePoint Online-on található Excel-munkafüzetből létrehozott adatkészlet frissítése
@@ -32,22 +32,22 @@ Az adatkészletet a Power BI szolgáltatásban frissítheti. Az adatkészlet man
 
 A Power BI-ban az **Azonnali frissítés** és a **Frissítés ütemezése** támogatott a helyi meghajtóról importált Power BI Desktop fájlokból létrehozott adatkészletek esetében, ahol az Adatok lekérése/Lekérdezésszerkesztő használatával történik a csatlakozás a következő adatforrásokhoz, illetve az adatbetöltés azokról:  
 
-### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 
 * A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes online adatforrás.
-* A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes helyszíni adatforrás a Hadoop-fájl (HDFS) és a Microsoft Exchange kivételével.
+* A Power BI Desktop Get Data és Query Editor ablakaiban megjelenő összes helyszíni adatforrás, kivéve a Hadoop-fájlokat (HDFS) és a Microsoft Exchange-t.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
-> Egy telepített és futó átjáró szükséges ahhoz, hogy a Power BI csatlakozhasson a helyszíni adatforrásokhoz és frissíthesse az adatkészletet.
+> Ahhoz, hogy a Power BI helyszíni adatforrásokhoz kapcsolódhasson és frissíthesse az adatkészletet telepítve kell lennie és futnia kell egy átjárónak.
 >
 >
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vagy OneDrive Vállalati verzió. Mi közöttük a különbség?
 
-Ha rendelkezik személyes OneDrive-val és OneDrive Vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat ajánlott a OneDrive Vállalati verziójában tartani. Ennek oka a következő: Ön minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
+Ha rendelkezik személyes OneDrive-val és OneDrive Vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat ajánlott a OneDrive Vállalati verziójában tartani. Ennek az az oka, hogy minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
 
 A OneDrive Vállalati verziójához való csatlakozás a Power BI szolgáltatásban általában zökkenőmentes, mert a Power BI-ba való bejelentkezéshez használt fiók gyakran megegyezik a OneDrive vállalati verziójához használttal. A személyes OneDrive-hoz viszont valószínűleg egy másik [Microsoft-fiókot](https://account.microsoft.com) használ.
 
@@ -92,7 +92,7 @@ Ekkor ne felejtse el bejelölni a **Betöltés a megadott helyre** párbeszédpa
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>Mi történik, ha a Power Pivotban használom a Külső adatok beolvasása lehetőséget?
 
-Ezt is megteheti. Ha bármikor a Power Pivotot használja helyszíni vagy online adatforráshoz való kapcsolódásra és az adatok lekérdezésére, az adatok automatikusan betöltődnek az adatmodellbe.
+Nem gond. Ha bármikor a Power Pivotot használja helyszíni vagy online adatforráshoz való kapcsolódásra és az adatok lekérdezésére, az adatok automatikusan betöltődnek az adatmodellbe.
 
 ## <a name="how-do-i-schedule-refresh"></a>Hogyan ütemezhetek frissítést?
 
@@ -102,7 +102,7 @@ Az ütemezett frissítés beállításáról további részleteket az [ütemezet
 
 ## <a name="when-things-go-wrong"></a>Hiba esetén
 
-Általában azért történnek hibák, mert a Power BI nem tud bejelentkezni az adatforrásokba, vagy ha az adatkészlet helyszíni adatforráshoz csatlakozik, mert az átjáró offline állapotban van. Győződjön meg arról, hogy a Power BI be tud jelentkezni az adatforrásokba. Ha megváltozik az adatforrásba való bejelentkezésre használt jelszó, vagy a Power BI-t kijelentkezteti egy adatforrás, próbáljon újra bejelentkezni az adatforrásokba az Adatforrás azonosító adatai használatával.
+Általában azért történnek hibák, mert a Power BI nem tud bejelentkezni az adatforrásokba, vagy ha az adatkészlet helyszíni adatforráshoz csatlakozik, mert az átjáró offline állapotban van. Győződjön meg arról, hogy a Power BI be tud jelentkezni az adatforrásokba. Ha az adatforrásokba való bejelentkezéshez használt jelszó megváltozik, vagy ha a Power BI kijelentkezik az adatforrásból, próbáljon meg ismét bejelentkezni az adatforrásokba az Adatforrás azonosító adatai részben.
 
 Hagyja bejelölve az **Értesítést kérek e-mailben, ha sikertelen a frissítés** jelelölőnégyzetet. Azonnal tudnia kell, ha egy ütemezett frissítés meghiúsul.
 
@@ -117,5 +117,5 @@ Néha az adatok frissítése nem a várt módon történik. Ezt általában egy 
 - [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)
 - [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

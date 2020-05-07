@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
 ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550765"
 ---
 # <a name="power-bi-visual-project-structure"></a>A Power BI-vizualizáció projekt szerkezete
@@ -102,7 +102,7 @@ Ha egy metaadat-bejegyzéseket ismertető megjegyzésekkel ellátott `pbiviz.jso
 
 Konfigurációs fájl a [TypeScripthez](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-A fájlnak tartalmaznia annak a **\*.ts** fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `pbiviz.json` fájlban, a `visualClassName` tulajdonság által megadott helyen.
+A fájlnak tartalmaznia annak a **\*.ts** fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `visualClassName` fájlban, a `pbiviz.json` tulajdonság által megadott helyen.
 
 ### <a name="tslintjson"></a>tslint.json
 
@@ -170,7 +170,7 @@ A `pbiviz.json` fájl következő kódrészletében szereplő megjegyzések a me
 }
 ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * A vizualizációk, felhasználók és a Power BI közötti interakciók megismeréséhez tekintse meg [A Power BI-vizualizáció működési elve](./power-bi-visuals-concept.md) című cikket.
 

@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006787"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Relatívdátum-szeletelő és -szűrő használata a Power BI-ban
@@ -42,9 +42,9 @@ A *relatív dátumszeletelő* első beállításainál a következő lehetőség
 
 ![Képernyőkép a Relatív konfigurálási beállításokról, amelyen az első beállítás van kiemelve.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
-* Utolsó
+* Last
 
-* Tovább
+* Következő
 
 * Ez a
 
@@ -94,7 +94,7 @@ A **Relatív dátum szerinti szűrés** kiválasztása után itt is három beál
 
 ![Képernyőkép a Jelentési szint szűrőiről, amelyen a nyilak az „Elemek megjelenítése, amikor az érték:” beállításra mutatnak.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 A **relatív dátumtartomány-szeletelők** és -szűrők használatára jelenleg a következő korlátozások és szempontok vonatkoznak.
 
@@ -104,6 +104,6 @@ A **relatív dátumtartomány-szeletelők** és -szűrők használatára jelenle
 
 * A helyi időzónában rögzített adatok a **Lekérdezésszerkesztővel** alakíthatók át UTC-idővé.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A következőkben megismerheti [a csoportosítás és dobozolás használatát a Power BI Desktopban](../desktop-grouping-and-binning.md).

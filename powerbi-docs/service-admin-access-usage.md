@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 32ca01d06f4fc8c3f90f73bf8137349eed0220a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698831"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Bejelentkezett Power BI-felhasználók keresése
@@ -29,7 +29,7 @@ A saját bejelentkezéseit bármely felhasználó (nem rendszergazda is) megteki
 
 * A bérlőnek prémium szintű Microsoft Azure Active Directory-licenccel kell rendelkeznie.
 
-* A következő szerepkörök egyikével kell rendelkeznie: Globális rendszergazda, biztonsági rendszergazda, biztonsági olvasó.
+* A felhasználónak a következő szerepkörök egyikével kell rendelkeznie: globális rendszergazda, biztonsági rendszergazda, biztonsági olvasó.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Bejelentkezések megtekintése az Azure-portállal
 
@@ -63,8 +63,8 @@ A **Bejelentkezések** jelentés felső részén válassza a **Letöltés** lehe
 
 A bejelentkezéshez kapcsolódó adatok legfeljebb 30 napig érhetők el. Bővebb információt az [Azure Active Directory-jelentések adatmegőrzési szabályzatában](/azure/active-directory/reports-monitoring/reference-reports-data-retention) találhat.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Naplózás használata a cégnél](service-admin-auditing.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

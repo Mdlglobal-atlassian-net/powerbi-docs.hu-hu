@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979822"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-vizualizációk létrehozása és használata a Power BI-ban
@@ -86,7 +86,7 @@ Az alábbi táblázat az R-vizualizációk használhatóságát részletezi lice
 A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:
 
 * Az R-vizualizációk támogatása a [támogatott R-csomagok ismertetésében](../service-r-packages-support.md) megadott csomagokra korlátozódik. Egyéni csomagok jelenleg nem támogatottak.
-* Adatméret-korlátok – Az R-vizualizációk által a megjelenítéshez felhasznált adatok mennyisége legfeljebb 150000 sor lehet. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen. A megadott adatok ezenkívül legfeljebb 250 MB-ot tehetnek ki.
+* Adatmennyiség korlátozásai – az R-vizualizációk által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen. A megadott adatok ezenkívül legfeljebb 250 MB-ot tehetnek ki.
 * Felbontás – minden R-vizualizáció 72 DPI felbontású.
 * Eszközábrázolás – Csak az alapértelmezett eszközre való ábrázolás támogatott. 
 * Számítási idő korlátozása – Ha egy R-vizualizáció kiszámítása tovább tart 60 másodpercnél, akkor a parancsfájl futása időtúllépés miatt megszakad, és hiba keletkezik.
@@ -116,7 +116,7 @@ Az R-csomagok R-függvények, adatok és lefordított kód jól definiált form�
 
 A **Power BI Desktop** bármilyen R-csomagot használni tud, korlátozás nélkül. A **Power BI Desktopban** használni kívánt R-csomagokat saját maga is telepítheti (például az [RStudio IDE](https://www.rstudio.com/) használatával).
 
-A **Power BI szolgáltatásban** az R-vizualizációk támogatása [ennek a cikknek](../service-r-packages-support.md) a **támogatott csomagokról szóló** bekezdésében megtalálható csomagokon múlik. Ha nem találja meg az Önt érdeklő csomagot a támogatott csomagok listájában, akkor kérheti a csomag támogatását. A támogatás kérésének menetéről az [R-csomagok a Power BI szolgáltatásban](../service-r-packages-support.md) című cikk nyújt tájékoztatást.
+A **Power BI szolgáltatásban** az R-vizualizációk támogatása **ennek a cikknek** a [támogatott csomagokról szóló](../service-r-packages-support.md) bekezdésében megtalálható csomagokon múlik. Ha nem találja meg az Önt érdeklő csomagot a támogatott csomagok listájában, akkor kérheti a csomag támogatását. A támogatás kérésének menetéről az [R-csomagok a Power BI szolgáltatásban](../service-r-packages-support.md) című cikk nyújt tájékoztatást.
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R-csomagokra vonatkozó követelmények és korlátozások
 Az R-csomagokra néhány követelmény és korlátozás is vonatkozik:

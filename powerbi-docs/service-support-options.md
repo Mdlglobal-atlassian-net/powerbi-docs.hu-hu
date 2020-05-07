@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: kfollis
 ms.openlocfilehash: 690f69f584b4b185929ad465cf4ddd75e26c1011
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74696533"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>A Power BI Pro és a Power BI Premium támogatási lehetőségei
@@ -23,9 +23,9 @@ Ez a cikk a Power BI Pro és a Power BI Premium-ügyfelek támogatási lehetős�
 | --- | --- | --- | --- | --- | --- |
 | **Közösségi támogatás**: Webes fórum, ahol a felhasználók más felhasználóktól kaphatnak támogatást, útmutatást és ajánlott eljárásokat. A válaszokat a Power BI-szakértők és Microsoft-alkalmazottak globális közössége szolgáltatja. | X |   |   | Nincs, a felhasználóelérés a legjobb lehetőségen alapul. | [Power BI-közösség](https://community.powerbi.com) |
 | **Power BI Pro végfelhasználói támogatás**: Alapszintű technikai támogatás a Power BI-ban tartalmat létrehozó és használó felhasználók számára. | X |   |   | Egy munkanap. | [Power BI támogatási oldal](https://support.powerbi.com)  |
-| **Power BI Premium rendszergazdai támogatás**: Támogatás Power BI Premium-kapacitásokat üzembe helyező és működtető rendszergazdák számára. | X |   |   | Egy munkanap vagy egy óra, az eset súlyosságától függően.\* | [Power BI támogatási oldal](https://support.powerbi.com)<br>VAGY<br>[Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal)<br>VAGY<br> Telefon |
-| **Power BI rendszergazdai támogatás**: Céges Power BI-példányok rendszergazdáinak technikai és számlázási támogatása.  A lehetőség használatához Azure Active Directory céges rendszergazdának, Office 365 globális rendszergazdának, Office 365 szolgáltatás-rendszergazdának vagy Power BI-szolgáltatás-rendszergazdának kell lennie. | X | X |   | Egy munkanap vagy egy óra, az eset súlyosságától függően.\* | [Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal)<br>VAGY<br> Telefon |
-| **Microsoft Premier támogatás**: Nagyvállalati szintű támogatás fiókkezeléssel, választható helyszíni támogatással és olyan proaktív szolgáltatásokkal, mint a képzés és az adatmodellek teljesítményoptimalizációja. | X | X | X | Eltérő, az ajánlatoktól és az esetek súlyosságától függ.\* | Műszaki partnerkezelő <br>VAGY<br> [Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal) |
+| **Power BI Premium rendszergazdai támogatás**: Támogatás Power BI Premium-kapacitásokat üzembe helyező és működtető rendszergazdák számára. | X |   |   | Egy munkanap vagy egy óra, az eset súlyosságától függően.\* | [Power BI támogatási oldal](https://support.powerbi.com)<br>OR<br>[Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal)<br>OR<br> Telefon |
+| **Power BI rendszergazdai támogatás**: Céges Power BI-példányok rendszergazdáinak technikai és számlázási támogatása.  A lehetőség használatához Azure Active Directory céges rendszergazdának, Office 365 globális rendszergazdának, Office 365 szolgáltatás-rendszergazdának vagy Power BI-szolgáltatás-rendszergazdának kell lennie. | X | X |   | Egy munkanap vagy egy óra, az eset súlyosságától függően.\* | [Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal)<br>OR<br> Telefon |
+| **Microsoft Premier támogatás**: Nagyvállalati szintű támogatás fiókkezeléssel, választható helyszíni támogatással és olyan proaktív szolgáltatásokkal, mint a képzés és az adatmodellek teljesítményoptimalizációja. | X | X | X | Eltérő, az ajánlatoktól és az esetek súlyosságától függ.\* | Műszaki partnerkezelő <br>OR<br> [Microsoft 365 Felügyeleti központ](https://portal.office.com/adminportal) |
 | | | | | | |
 
 \* Az egyórás SLA csak az _A súlyosságú eseteknél_ érhető el, amelyek során azonnali, közvetlen üzleti kár keletkezhet a meglévő termelési jelentésekben a munkahelyi leállás következtében.

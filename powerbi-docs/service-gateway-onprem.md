@@ -10,10 +10,10 @@ ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74697543"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mi az a helyszíni adatátjáró?
@@ -46,8 +46,8 @@ Kétféle átjárótípus van, mindkettő más-más helyzethez:
 1. Helyszíni adatforrás frissítése [az átjáró használatával](service-gateway-sql-tutorial.md).
 1. Az átjáró [hibaelhárítása](service-gateway-onprem-tshoot.md) hibák esetén.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [A helyszíni adatátjáró telepítése](/data-integration/gateway/service-gateway-install)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

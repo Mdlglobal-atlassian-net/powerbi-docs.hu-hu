@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565678"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Csatlakozás a Project Web Apphoz a Power BI használatával
@@ -21,13 +21,13 @@ A Microsoft Project Web App a projektportfólió-kezeléshez (PPM) és a mindenn
 
 Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsource.microsoft.com/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp).
 
-## <a name="how-to-connect"></a>Csatlakozás
+## <a name="how-to-connect"></a>A kapcsolódás menete
 
 1. A navigációs panelen válassza az **Alkalmazások** elemet, majd a jobb felső sarokban az **Alkalmazások letöltése** lehetőséget.
 
     ![Alkalmazások letöltése](media/service-connect-to-project-online/GetApps.png)
 
-2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
+2. A **Szolgáltatások** mezőben válassza a **Beolvasás** elemet.
    
    ![AppSource](media/service-connect-to-project-online/AppSource.png)
 3. Az AppSource-on válassza az **Alkalmazások** lapfület, és keresse meg/válassza ki a **Microsoft Project Web App** lehetőséget.
@@ -40,7 +40,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
    ![Microsoft Project Web App](media/service-connect-to-project-online/getstarted.png)
 6. **Az új alkalmazás használatának első lépései** résznél válassza az **Adatok csatlakoztatása** lehetőséget.
    
-   ![Csatlakozás adatokhoz](media/service-connect-to-project-online/mproject.png)
+   ![Kapcsolódás adatokhoz](media/service-connect-to-project-online/mproject.png)
 7. A **Project Web App URL** szövegdobozba írja be a csatlakoztatni kívánt Project Web App (PWA) URL-címét.  Vegye figyelembe, hogy ez az adat egyedi tartomány esetén eltérhet a példától. A **PWA Site Language** szövegmezőbe írja be a PWA-webhely nyelvének megfelelő számot. Angol nyelvhez az 1-es, franciához a 2-es, némethez a 3-as, brazil portugálhoz a 4-es, portugálhoz az 5-ös, spanyolhoz pedig a 6-os számot írja be. 
    
    ![Csatlakozás a Microsoft Project Online-hoz](media/service-connect-to-project-online/params.png)
@@ -61,7 +61,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
    
     ![Projekt állapota](media/service-connect-to-project-online/report2.png)
 
-**Mi a következő lépés?**
+**Hogyan tovább?**
 
 * Noha az adatkészlet napi frissítésre van ütemezve, módosíthatja a frissítési ütemezést, vagy igény szerint frissíthet az **Azonnali frissítés** gombbal.
 
@@ -69,7 +69,7 @@ Csatlakozzon a Power BI [Project Web App sablonalkalmazásához](https://appsour
 
 Töltse le a [GitHub PBIT-fájlt](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) a tartalom további testreszabásához és frissítéséhez.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Első lépések a Power BI-ban](service-get-started.md)
 
 [Adatok lekérése a Power BI-ban](service-get-data.md)

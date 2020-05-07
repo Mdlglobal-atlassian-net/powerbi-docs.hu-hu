@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80464708"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Prémium szintű Power BI-kapacitás újraindítása
@@ -56,8 +56,8 @@ A problémák elkerülésének legjobb módszere hatékony adatmodellezésre tan
 
 Emellett javasoljuk a [kapacitások rendszeres figyelését](service-admin-premium-monitor-capacity.md) a mögöttes problémákra utaló trendek felismerése érdekébe. Tervezzük a figyelő alkalmazás és sok más eszköz rendszeres frissítését, hogy Ön még hatékonyabban figyelhesse és kezelhesse kapacitásait.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Mi a Power BI Premium?](service-premium-what-is.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

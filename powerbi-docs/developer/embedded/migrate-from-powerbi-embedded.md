@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404053"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI-munkaterületcsoport tartalmainak migrálása a Power BI Embeddedbe
@@ -32,9 +32,9 @@ A jelenlegi Power BI-munkaterületcsoport már csak korlátozott ideig lesz elé
 Mielőtt megkezdené az új Power BI Embedded szolgáltatásba való migrálást, gyorsan áttekintheti a részletes útmutatót, amely segítségével beállíthatja az új Power BI Embedded-környezetet a [beágyazáshoz szükséges telepítési eszközzel](https://aka.ms/embedsetup).
 
 Válassza ki az Ön számára megfelelő megoldást:
-* **Beágyazás az ügyfelek számára** – ha olyan megoldásra van szüksége, melyben [az adatok tulajdonosa az alkalmazás (app owns data)](https://aka.ms/embedsetup/AppOwnsData). Amennyiben az [ügyfelei számára végez beágyazást](embedding.md#embedding-for-your-customers), irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. 
+* **Beágyazás az ügyfelek számára** – ha olyan megoldásra van szüksége, melyben [az adatok tulajdonosa az alkalmazás (app owns data)](https://aka.ms/embedsetup/AppOwnsData). A [Beágyazás az ügyfelek számára](embedding.md#embedding-for-your-customers) használatával irányítópultokat és jelentéseket ágyazhat be olyan felhasználók számára, akik nem rendelkeznek Power BI-fiókkal. 
 
-* **Beágyazás a cég számára** – ha olyan megoldásra van szüksége, melyben [az adatok tulajdonosa a felhasználó (user owns data)](https://aka.ms/embedsetup/UserOwnsData). Amennyiben [a cég számára végzi a beágyazást](embedding.md#embedding-for-your-organization), kibővítheti a Power BI szolgáltatást.
+* **Beágyazás a cég számára** – ha olyan megoldásra van szüksége, melyben [az adatok tulajdonosa a felhasználó (user owns data)](https://aka.ms/embedsetup/UserOwnsData). A [Beágyazás a cég számra](embedding.md#embedding-for-your-organization) használatával kiterjesztheti a Power BI szolgáltatást.
 
 ## <a name="prepare-for-the-migration"></a>Előkészületek a migráláshoz
 
@@ -77,7 +77,7 @@ A következő fiókoknak létezniük kell a bérlőn.
 
 Az alkalmazásokat regisztrálni kell az Azure AD-ben, és bizonyos engedélyeket kell biztosítani a számukra.
 
-### <a name="register-an-application"></a>Egy alkalmazás regisztrálása
+### <a name="register-an-application"></a>Alkalmazás regisztrálása
 
 A REST API-hívások indításához az alkalmazásokat regisztrálni kell az Azure AD-ben. Ehhez be kell jelentkeznie az Azure Portalra, és további konfigurációs beállításokat kell tennie a Power BI alkalmazásregisztrációs oldalán megadottak mellett. További információt az [Azure AD alkalmazás regisztrálása Power BI-tartalmak beágyazásához](register-app.md) eljárást ismertető cikkben talál.
 
@@ -194,17 +194,17 @@ Takarítson az Azure-ban.
 * Távolítsa el a telepített megoldás összes már nem használt munkaterületét a Power BI-munkaterületcsoport Azure-szolgáltatásában.
 * Törölje az Azure-ból az összes munkaterület-csoportot.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Beágyazás a Power BI szolgáltatással](embedding.md)  
 [Migrálási eszköz a Power BI-munkaterületcsoporthoz](migrate-tool.md)  
 [Kódrészletek a tartalmak Power BI-munaterületcsoportból való migrálásához](migrate-code-snippets.md)  
 [Power BI-irányítópultok, -jelentések és -csempék beágyazása](embed-sample-for-your-organization.md)  
-[Power BI Premium – pontosan mi is ez?](../../service-premium-what-is.md)  
+[Mit jelent a Power BI Premium?](../../service-premium-what-is.md)  
 [JavaScript API Git-adattár](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git-adattár](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript beágyazási minta](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Munkaterület-csoportok elemzési kapacitásának tervezésével kapcsolatos tanulmány](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

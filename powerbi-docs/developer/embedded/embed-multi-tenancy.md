@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
 ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79494952"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Több-bérlős konfiguráció kezelése Power BI Embedded-analitikával
@@ -104,7 +104,7 @@ A Power BI Embedded támogatja a több földrajzi helyen történő üzembe hely
 
 ### <a name="cost"></a>Cost
 
-A [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden *fő* felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, [Power BI Pro-licenccel](../../service-admin-licensing-organization.md) kell rendelkeznie.
+A [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden [fő](../../service-admin-licensing-organization.md) felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, *Power BI Pro-licenccel* kell rendelkeznie.
 
 A kapacitás várható terhelését ajánlott élő környezet és használat szimulálásával, és a kapacitáson futtatott terheléstesztekkel tesztelni és mérni. A terhelés és a teljesítmény az Azure-kapacitás vagy a [prémium szintű kapacitás metrika-alkalmazásában](../../service-admin-premium-monitor-capacity.md) elérhető különböző metrikákkal mérhető.
 
@@ -252,7 +252,7 @@ A jelentéseket szerkesztő vagy létrehozó végfelhasználók az éles, több-
 * Az egy kapacitásban egyidejűleg futtatható frissítések számáról az [erőforrás-kezelést és optimalizálást](../../service-premium-what-is.md#capacity-nodes) ismertető cikk nyújt tájékoztatást.
 * Egy kapacitás méretezésének átlagos időtartama 1-2 perc. Ezalatt a kapacitás nem érhető el. A [kimaradás elkerülése](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script) érdekében ajánlott horizontális felméretezést alkalmazni.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Beágyazott analitika a Power BI-jal](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)

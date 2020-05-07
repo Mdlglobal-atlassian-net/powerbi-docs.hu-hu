@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: ea6d4186d2f02665201f2161f50e06ad8f0f45a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699406"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Az adatforrás kezelése – Analysis Services
@@ -27,7 +27,7 @@ Az Analysis Services-zel való élő kapcsolat beállításáról [ebből a vide
 > [!NOTE]
 > Analysis Services-adatforrás használata esetén a az átjárót olyan számítógépre kell telepítenie, amely az Analysis Services-kiszolgálóval közös erdőbe/tartományba van beléptetve.
 
-## <a name="add-a-data-source"></a>Adatforrások felvétele
+## <a name="add-a-data-source"></a>Adatforrás hozzáadása
 
 Az [Adatforrás hozzáadása](service-gateway-data-sources.md#add-a-data-source) című témakörben további információt talál adatforrások hozzáadásáról. Az **Adatforrás típusa** beállításnál válassza az **Analysis Services** lehetőséget, ha többdimenziós vagy táblázatos kiszolgálóhoz csatlakozik.
 
@@ -154,7 +154,7 @@ Az átjáró konfigurálása az Active Directory-kereséshez:
 
 Leképezési szabály létrehozásához írja be az **Eredeti név** és az **Új név** értékét, majd válassza a **Hozzáadás** lehetőséget.
 
-| Mező | Leírás |
+| Mező | Description (Leírás) |
 | --- | --- |
 | Csere (eredeti név) |A Power BI-ba való bejelentkezéshez használt e-mail-cím. |
 | A következővel (új név) |Az érték, amelyre lecseréli. A csere eredménye lesz az Analysis Services-kapcsolat EffectiveUserName tulajdonságának értéke. |
@@ -265,23 +265,23 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 
 ![A felhasználók megjelenítése](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
 
-### <a name="limitations-of-analysis-services-live-connections"></a>Az élő Analysis Services-kapcsolatokra vonatkozó korlátozások
+### <a name="limitations-of-analysis-services-live-connections"></a>Az Analysis Services élő kapcsolatainak korlátozásai
 
-Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használhatja.
+Élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használhat.
 
 | **Kiszolgáló verziója** | **Kötelező termékváltozat** |
 | --- | --- |
 | 2012 SP1 CU4 vagy újabb |Business Intelligence és Enterprise termékváltozat |
 | 2014 |Business Intelligence és Enterprise termékváltozat |
-| 2016 |Minimum Standard termékváltozat |
+| 2016 |Standard vagy magasabb szintű termékváltozat |
 
 * A cellaszintű formázás és a fordítási funkciók nem támogatottak.
 * A műveletek és az elnevezett készletek nem jelennek meg a Power BI-ban. Azonban továbbra is lehetséges a műveleteket vagy elnevezett készleteket is tartalmazó többdimenziós kockákhoz kapcsolódni, és vizualizációkat és jelentéseket létrehozni.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md)
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 

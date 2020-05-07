@@ -9,17 +9,17 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 95e661e81e7753d0a28806cca5d652f8e92666a8
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114106"
 ---
 # <a name="the-visual-filters-api-in-power-bi-visuals"></a>A Vizualizációs szűrők API Power BI-vizualizációkban
 
 A Vizualizációs szűrők API az adatok szűrését teszi lehetővé Power BI-vizualizációkban. A más kijelölésekkel szembeni fő különbség az, hogy más vizualizációk a kiemelés támogatása ellenére is tetszőlegesen szűrhetők.
 
-A vizualizáció szűrésének engedélyezéséhez annak tartalmaznia kell egy `filter` objektumot a *capabilities.json* kód `general` szakaszában.
+A vizualizáció szűrésének engedélyezéséhez annak tartalmaznia kell egy `filter` objektumot a `general`capabilities.json*kód* szakaszában.
 
 ```json
 "objects": {

@@ -10,10 +10,10 @@ ms.date: 04/23/2019
 ms.author: kfollis
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 3a6f1f692d615da14be9092290fd7c8c9e6bf168
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698647"
 ---
 # <a name="use-an-alternate-email-address"></a>Másodlagos e-mail-cím használata
@@ -69,4 +69,4 @@ A Power BI a következő sorrendben választja ki a használandó e-mail-címet:
 
 1. Ha a fenti feltételek egyike sem teljesül, akkor a Power BI az UPN-címet fogja használni.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

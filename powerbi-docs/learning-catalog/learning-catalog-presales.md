@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: 04a6589b4adb769caf2a7901d112db7c054a5764
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268397"
 ---
 # <a name="partner-pre-sales-learning-catalog"></a>Partneri értékesítési képzési katalógus
@@ -20,7 +20,7 @@ Az Ön feladata, hogy bemutassa a fő funkciókat az ügyfeleknek? 
 A következő katalógus úgy van összeállítva, hogy az alapvető tudásanyagtól a specifikus területek ismereteiig, az alapoktól a legfelsőbb szintekig tartalmazzon képzési anyagokat. Jelezni fogjuk, ha a tartalom több formában is létezik, hogy az igényeinek leginkább megfelelő képzési formát választhassa.
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
-| Tartalom  | Leírás | Formátum  | Hossz   |
+| Tartalom  | Description (Leírás) | Formátum  | Hossz   |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------|
 | [A Microsoft Power Platform alapjai](https://docs.microsoft.com/learn/paths/power-plat-fundamentals/)   | Megismerheti a Power Platform üzleti értékét és a termék képességeit. Létrehozhat egy egyszerű PowerApp-alkalmazást, a CDS segítségével csatlakozhat az adatokhoz, Power BI-irányítópultot készíthet, és automatizálhat egy folyamatot a Microsoft Power Automate használatával.   | Ingyenes, egyéni ütemben végezhető online képzési terv | 2 óra 42 perc   |
 | [A Microsoft Power BI YouTube-csatornája](https://www.youtube.com/user/mspowerbi/videos)                                                 | A Microsoft Power BI termékcsapatának tartalmait bemutató YouTube-csatorna  | Videók |             |

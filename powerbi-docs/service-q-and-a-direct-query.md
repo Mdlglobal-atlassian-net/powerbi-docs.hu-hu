@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74265496"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>A Q&A engedélyezése élő kapcsolatokhoz a Power BI-ban
@@ -50,7 +50,7 @@ Miután beállította az adatátjárót, kapcsolódjon az adatokhoz a Power BI-b
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Milyen adatok gyorsítótárazása történik, és hogyan valósul meg az adatvédelem?
 Amikor engedélyezi a Q&A-t a helyszíni adataihoz, az adatok egy részét a szolgáltatás gyorsítótárazza. Ez a gyorsítótárazás biztosítja, hogy a Q&A ésszerű teljesítménnyel működjön. A 24 karakternél hosszabb értékeket a Power BI kizárja a gyorsítótárazásból. Az adatkészlet néhány órán belül törlődik, miután letiltotta a Q&A-t a **Q&A bekapcsolása ehhez az adatkészlethez** jelölőnégyzet törésével, vagy miután törli az adatkészletet.
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 A funkcióra bizonyos korlátozások érvényesek:
 
 * Eredetileg a funkció csak az SQL Server 2016 Analysis Services táblázatos adatforrásaihoz áll rendelkezésre. A funkció táblázatos adatokkal való munkavégzésre van optimalizálva. A Q&A használata többdimenziós adatforrások esetén még nem támogatott. A helyszíni adatátjáró által támogatott további adatforrások bevezetése a későbbiekben fog történni.
@@ -58,12 +58,12 @@ A funkcióra bizonyos korlátozások érvényesek:
 * Az objektumszintű biztonság (OLS) nem támogatott. A Q&A figyelmen kívül hagyja az objektumszintű biztonságot, és megjeleníti a táblázatok és oszlopok neveit azon felhasználóknak, akik nem férnek hozzájuk. Célszerű engedélyezni a sorszintű biztonságot, így meggyőződhet arról, hogy az adatértékeket is megfelelő biztonságban tartja. 
 * Az élő kapcsolatok csak a helyszíni adatátjárónál támogatottak. Ezért ez a funkció nem használható a személyes átjáróval.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
-- [On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)  
-- [Az adatforrás kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [Helyszíni adatátjáró](service-gateway-onprem.md)  
+- [Adatforrások kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
 - [A Power BI Q&A áttekintése](consumer/end-user-q-and-a.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

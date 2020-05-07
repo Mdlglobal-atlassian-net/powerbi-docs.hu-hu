@@ -10,10 +10,10 @@ ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79496263"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Tartalom kiemelt szerepeltetése munkatársak Power BI-kezdőlapján
@@ -56,9 +56,9 @@ Az irányítópultok és jelentések hasonló eljárással szerepeltethetők.
 
 Ettől kezdve mindenki, aki hozzáfér ehhez az alkalmazáshoz, megtalálja azt a **Kezdőlap** **Kiemeltek** szakaszában is.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Irányítópultok és jelentések közös használata és megosztása](../service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Kiemelt tartalom kezelése a Felügyeleti portálon](../service-admin-portal.md#manage-featured-content)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621525"
 ---
 # <a name="power-bi-report-builder"></a>Power BI Jelentéskészítő
@@ -58,7 +58,7 @@ A következő lapszámozott jelentés sor- és oszlopcsoportokat, értékgörbé
   
 -   **Előfizetések beállítása.** A jelentés a Power BI szolgáltatásban való közzététele után úgy konfigurálhatja a jelentést, hogy az egy adott időben fusson, és e-mailes előfizetésként elküldhető legyen.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
 - Tekintse meg a Power BI fő programmenedzsere, Chris Finlan által vezetett, a [Power BI lapszámozott jelentéseiről szóló videósorozatot](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) YouTube-on

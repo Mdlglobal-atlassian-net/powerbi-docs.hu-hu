@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114658"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-támogatás a Power BI Embedded számára
@@ -71,7 +71,7 @@ Annak érdekében, hogy a rendszer támogassa a Multi-Geoval rendelkező kapacit
 
 3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Az Azure Resource Manager API összes művelete, többek között a *Létrehozás* és a *Törlés* is támogatja a Multi-Geo funkciót.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 * Mielőtt kezdeményezné az adatátvitelt, győződjön meg arról, hogy a régiók közötti összes forgalom megfelel minden vállalati és kormányzati megfelelőségi követelménynek.
 
@@ -81,7 +81,7 @@ Annak érdekében, hogy a rendszer támogassa a Multi-Geoval rendelkező kapacit
 
 * A Multi-Geo általában nem eredményez jobb teljesítményt. A jelentések és irányítópultok betöltéséhez továbbra is szükségesek a saját régióból lekért metaadatok.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 További információ a Power BI Embedded-kapacitásokról és a Multi-Geo beállításairól minden kapacitásnál az alábbi hivatkozásokon érhető el.
 
@@ -91,4 +91,4 @@ További információ a Power BI Embedded-kapacitásokról és a Multi-Geo beál
 
 * [Multi-Geo a Power BI Premium kapacitásaiban](../../service-admin-premium-multi-geo.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

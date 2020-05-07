@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: f47083c55bfaa3bc72340202ba82ada2df80fbae
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74834609"
 ---
 # <a name="view-a-paginated-report-in-the-power-bi-service"></a>Lapszámozott jelentés megtekintése a Power BI szolgáltatásban
@@ -52,6 +52,6 @@ A lapszámozott jelentéseket számos formátumba exportálhatja:
     ![Exportálási formátum kiválasztása](media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Lapszámozott jelentések a Power BI szolgáltatásban](end-user-paginated-report.md)

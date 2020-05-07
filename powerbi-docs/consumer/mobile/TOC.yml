@@ -11,17 +11,17 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: A kezdőlap bemutatása
           href: mobile-apps-home-page.md
-    - name: Rövid útmutatók
+    - name: Gyors útmutatók
       expanded: true
       items:
         - name: Irányítópultok és jelentések felfedezése
           href: mobile-apps-quickstart-view-dashboard-report.md
-    - name: Oktatóanyagok
+    - name: oktatóanyagokat
       expanded: true
       items:
         - name: Kérdések feltevése az iOS-es mobilalkalmazásban
           href: tutorial-mobile-apps-ios-qna.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Adatok a való világból a mobilalkalmazásokkal
@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Power BI vegyes valósághoz alkalmazás (előzetes verzió)
           href: mobile-mixed-reality-app.md
-    - name: Útmutató
+    - name: 'Útmutató:'
       items:
         - name: Minden mobilalkalmazás
           items:
@@ -40,11 +40,11 @@
               href: mobile-reports-in-the-mobile-apps.md
             - name: Csempék használata a mobilalkalmazásokban
               href: mobile-tiles-in-the-mobile-apps.md
-            - name: Irányítópult megosztása a Power BI mobilalkalmazásokból
+            - name: Irányítópult megosztása Power BI-mobilalkalmazásokból
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Kedvencek a mobilalkalmazásokban
               href: mobile-apps-favorites.md
-            - name: Adatriasztások beállítása a Power BI mobilalkalmazásokban
+            - name: Adatriasztások beállítása a Power BI-mobilalkalmazásokban
               href: mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Értesítések fogadása a Power BI-mobilalkalmazásokban
               href: mobile-apps-notification-center.md
@@ -52,7 +52,7 @@
               href: mobile-apps-deep-link-specific-location.md
             - name: Jelentés hely szerinti szűrése a Power BI-mobilalkalmazásokban
               href: mobile-apps-geographic-filtering.md
-            - name: Csatlakozás a Reporting Serviceshez OAuth használatával
+            - name: Kapcsolódás Reporting Serviceshez OAuth használatával
               href: mobile-oauth-ssrs.md
         - name: iOS és Android
           items:
@@ -98,7 +98,7 @@
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: A „frissíteni kell az Android System Webview alkalmazást” hiba elhárítása
               href: mobile-android-error-update-android-system-webview.md
-        - name: Windows 10-es eszközökhöz készült Power BI alkalmazás
+        - name: Power BI-alkalmazás Windows 10-es eszközökön
           items:
             - name: Ismerkedés a Windows 10-alkalmazással
               href: mobile-windows-10-phone-app-get-started.md

@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: 6262b7ba0f3d01db6f9f5ff24f411de6ec4f35cb
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268604"
 ---
 # <a name="developer-learning-catalog"></a>Fejlesztői képzési katalógus
@@ -23,7 +23,7 @@ A következő katalógus úgy van összeállítva, hogy az alapvető tudásanyag
 | Tartalom | Leírás | Formátum  | Hossz      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
 | [A Microsoft Power BI YouTube-csatornája](https://www.youtube.com/user/mspowerbi/videos)  | A Microsoft Power BI termékcsapatának tartalmait bemutató YouTube-csatorna   | Videók  |             |
-| [Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection-OnDemand.html) | Ha regisztrál erre a webináriumra, tájékozódhat az üzletiintelligencia-adatok védelmének biztosításáról, amely az exportálás utánra is kiterjed. Bizalmassági besorolásokat és valós idejű kockázatelemzést engedélyezhet a hozzáférési engedélyek meghatározásához. | Webinárium | 18 perc 49 másodperc |
+| [Hogyan változtatja meg a Microsoft az üzletiintelligencia-adatok védelmét](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection-OnDemand.html) | Ha regisztrál erre a webináriumra, megtudhatja, hogyan biztosíthatja az üzletiintelligencia-adatok védelmét, még akár exportálás után is. Bizalmassági besorolásokat és valós idejű kockázatelemzést engedélyezhet a hozzáférési engedélyek meghatározásához. | Webinárium | 18 perc 49 másodperc |
 ## <a name="embedded"></a>Embedded<a name="embedded"></a>
 | Tartalom | Leírás | Formátum  | Hossz      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|

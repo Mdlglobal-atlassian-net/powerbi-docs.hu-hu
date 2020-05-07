@@ -10,10 +10,10 @@ ms.date: 06/04/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 63d49a439d10acc5d7cda10b76b04a26fcdb085a
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698808"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Power BI Desktop-fájlból létrehozott adatkészlet frissítése helyi meghajtón
@@ -22,22 +22,22 @@ ms.locfileid: "74698808"
 
 A Power BI-ban az Azonnali frissítés és a Frissítés ütemezése támogatott a helyi meghajtóról importált Power BI Desktop fájlokból létrehozott adatkészletek esetében, ahol az Adatok lekérése/Lekérdezésszerkesztő használatával történik a csatlakozás a következő adatforrásokhoz, illetve az adatbetöltés azokról:
 
-### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 
 - A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes online adatforrás.
-- A Power BI Desktop Adatok lekérése és Lekérdezésszerkesztő területein látható összes helyszíni adatforrás a Hadoop-fájl (HDFS) és a Microsoft Exchange kivételével.
+- A Power BI Desktop Get Data és Query Editor ablakaiban megjelenő összes helyszíni adatforrás, kivéve a Hadoop-fájlokat (HDFS) és a Microsoft Exchange-t.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
-> Egy telepített és futó átjáró szükséges ahhoz, hogy a Power BI csatlakozhasson a helyszíni adatforrásokhoz és frissíthesse az adatkészletet.
+> Ahhoz, hogy a Power BI helyszíni adatforrásokhoz kapcsolódhasson és frissíthesse az adatkészletet telepítve kell lennie és futnia kell egy átjárónak.
 >
 >
 
 A Power BI Desktopban végezhet egyszeri, manuális frissítést, ha a Kezdőlap szalagon a **Frissítés** lehetőséget választja. Amikor itt a **Frissítés** elemet választja, a *fájl* modelljében lévő adatok az eredeti adatforrásból származó frissített adatokkal frissülnek. Ez a frissítéstípus, amely teljes mértékben magából a Power BI Desktop alkalmazásból történik, különbözik a Power BI manuális vagy ütemezett frissítésétől, és fontos megérteni ezt a különbséget.
 
-![Frissítés](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![Előnézet](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
 Amikor a Power BI Desktop-fájlt a helyi meghajtóról importálja, a modellel kapcsolatos adatokat és más információkat a Power BI szolgáltatás egy adatkészletébe tölti. A Power BI szolgáltatásban (nem a Power BI Desktopban) azért érdemes frissíteni az adatkészletben lévő adatokat, mert ezen alapulnak a Power BI szolgáltatásban lévő jelentések. Mivel az adatforrások külső adatforrások, manuálisan frissítheti az adatkészletet az **Azonnali frissítéssel**, vagy beállíthat egy frissítési ütemtervet a **Frissítés ütemezésével**.
 
@@ -67,5 +67,5 @@ Néha az adatok frissítése nem a várt módon történik. Ezt általában egy 
 - [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)
 - [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

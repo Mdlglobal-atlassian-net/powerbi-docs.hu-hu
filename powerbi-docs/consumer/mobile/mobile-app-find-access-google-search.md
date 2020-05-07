@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 ms.openlocfilehash: 177f029073320c8db68b532fdb282b745c69a408
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802640"
 ---
 # <a name="find-and-access-your-content-with-google-search"></a>Tartalom keresése és elérése a Google Search szolgáltatással
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![Android rendszerű telefon](./media/mobile-app-find-access-google-search/android-logo-40-px.png) | ![Android rendszerű táblagép](./media/mobile-app-find-access-google-search/android-logo-40-px.png) |
 |:--- |:--- |
-| Android rendszerű telefonok |Android rendszerű táblagépek |
+| Android rendszerű telefonok |Android-táblagépek |
 
 A Google Search szolgáltatással megkereshet egy jelentést vagy irányítópultot, és pontosan ott nyithatja meg a Power BI-mobilalkalmazást. Nem kell az alkalmazásban navigálnia.
 
@@ -35,7 +35,7 @@ A Google-keresőmezőben a ***search for &lt;keresendő elem&gt; in power bi***.
 
 ![Google Search keresési eredményei androidos Power BI-mobilalkalmazásban](media/mobile-app-find-access-google-search/mobile-google-search.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Androidos alkalmazások parancsikonjainak használata az Power BI Android-alkalmazásban](mobile-app-quick-access-shortcuts.md)
 * [iOS eszközkeresés-integráció (Spotlight) a Power BI Mobile iOS-alkalmazással](mobile-apps-ios-search-integration.md)
 * [Kedvencek a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md)

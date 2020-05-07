@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: painbar
 ms.openlocfilehash: ce7b3c3bc667023ef36650d8c551caaceab04c02
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802801"
 ---
 # <a name="protect-power-bi-app-with-face-id-touch-id-passcode-or-biometric-data"></a>A Power BI alkalmazás védelme a Face ID, a Touch ID, hitelesítő kód vagy biometriai adatok használatával 
@@ -20,11 +20,11 @@ A Power BI-ban kezelt adatok sok esetben bizalmasak, így védelemre van szüks�
 
 Az iOS és az Android rendszerhez készült Power BI alkalmazásban további azonosítási beállítások konfigurálásával védheti meg az adatait. Így az alkalmazás minden alkalommal megköveteli az azonosítást, amikor elindul vagy előtérbe kerül. iOS rendszeren ez Face ID, Touch ID vagy hitelesítő kód megadását jelenti. Android rendszeren ez biometriai adatok (ujjlenyomat-azonosító) megadását jelenti.
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![iPadek](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![Android rendszerű telefon](././media/mobile-native-secure-access/android-logo-40-px.png) | ![Android rendszerű táblagép](././media/mobile-native-secure-access/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-|iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
+|iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |
 
 ## <a name="turn-on-face-id-touch-id-or-passcode-on-ios"></a>A Face ID, a Touch ID vagy a hitelesítő kód bekapcsolása iOS rendszeren
 
@@ -61,5 +61,5 @@ Egyes szervezetek olyan biztonsági szabályzatokkal és megfelelőségi követe
 
 Ennek támogatására az Power BI mobilalkalmazással a rendszergazdák leküldhetik az alkalmazáskonfigurációs beállításokat a Microsoft Intune-ból és egyéb mobileszköz-kezelési (MDM-) megoldásból, így vezérelhetik a mobilalkalmazás biztonságos elérését. A rendszergazdák az alkalmazásvédelmi szabályzattal kapcsolhatják be ezt a beállítást az összes felhasználónak vagy csak egyes csoportoknak. Erről a [Power BI mobilalkalmazás távoli konfigurálása MDM használatával](mobile-app-configuration.md#data-protection-settings-ios-and-android) című cikk ír részletesebben.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Power BI mobilalkalmazás távoli konfigurálása MDM használatával](mobile-app-configuration.md)

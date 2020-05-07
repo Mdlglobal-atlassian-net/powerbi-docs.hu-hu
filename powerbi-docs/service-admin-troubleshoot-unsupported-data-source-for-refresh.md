@@ -1,5 +1,5 @@
 ---
-title: Hibaelhárítás – frissítéshez nem támogatott adatforrás
+title: Nem támogatott adatforrás frissítési hibáinak elhárítása
 description: Nem támogatott adatforrás frissítési hibáinak elhárítása
 author: maggiesMSFT
 ms.reviewer: kayu
@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74791999"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Nem támogatott adatforrás frissítési hibáinak elhárítása
@@ -37,12 +37,12 @@ Ha nem biztos abban, hogy milyen adatforrást használt, akkor a következő lé
    ![Adatforrás-szolgáltató](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Vesse össze a szolgáltatót a [Power BI-adatforrások](power-bi-data-sources.md) című cikkben található támogatott adatforrások listájával.
 
-## <a name="next-steps"></a>Következő lépések
-[Adatfrissítés](refresh-data.md)  
-[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
-[On-premises data gateway (Helyszíni adatátjáró)](service-gateway-onprem.md)  
+## <a name="next-steps"></a>További lépések
+[Adatok frissítése](refresh-data.md)  
+[A Power BI személyes átjáró](service-gateway-personal-mode.md)  
+[Helyszíni adatátjáró](service-gateway-onprem.md)  
 [A Helyszíni adatátjáróval kapcsolatos hibák elhárítása](service-gateway-onprem-tshoot.md)  
 [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

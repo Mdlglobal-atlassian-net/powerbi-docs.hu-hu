@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75000135"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Kerberos használata az SAP BW-n történő egyszeri bejelentkezéshez (SSO) a gx64krb5-tel
@@ -75,9 +75,9 @@ Akkor térjen erre a szakaszra, ha még nem konfigurálta az SAP BW-kiszolgáló
 
 1. Jelentkezzen be a kiszolgálóra az SAP Logon programban, és állítsa be az alábbi profilparamétereket az RZ10 tranzakció használatával:
 
-    1. Állítsa az **snc/identity/as** profilparamétert a *p:&lt;a létrehozott SAP BW-szolgáltatásfelhasználóra&gt;*. Például: *p:BWServiceUser\@MYDOMAIN.COM*. Figyelje meg, hogy a *p:* áll a szolgáltatás egyszerű felhasználóneve előtt, és nem a *p:CN=*, amely akkor áll az egyszerű felhasználónév előtt, ha a CommonCryptoLib függvénytárat használja SNC-könyvtárként.
+    1. Állítsa az **snc/identity/as** profilparamétert a *p:&lt;a létrehozott SAP BW-szolgáltatásfelhasználóra&gt;* . Például: *p:BWServiceUser\@MYDOMAIN.COM*. Figyelje meg, hogy a *p:* áll a szolgáltatás egyszerű felhasználóneve előtt, és nem a *p:CN=* , amely akkor áll az egyszerű felhasználónév előtt, ha a CommonCryptoLib függvénytárat használja SNC-könyvtárként.
 
-    1. Állítsa az **snc/gssapi\_lib** profilparamétert *&lt;a gx64krb5.dll elérési útjára a BW-kiszolgálón&gt;*. A kódtárat egy olyan helyre helyezze, amelyhez az SAP BW-alkalmazáskiszolgáló hozzá tud férni.
+    1. Állítsa az **snc/gssapi\_lib** profilparamétert *&lt;a gx64krb5.dll elérési útjára a BW-kiszolgálón&gt;* . A kódtárat egy olyan helyre helyezze, amelyhez az SAP BW-alkalmazáskiszolgáló hozzá tud férni.
 
     1. Módosítsa az alábbi profilparaméterek értékeit az igényeinek megfelelően. Az utolsó öt lehetőség lehetővé teszi, hogy az ügyfelek SNC konfigurálása nélkül csatlakozzanak az SAP BW-kiszolgálóhoz az SAP Logon használatával.
 
@@ -174,7 +174,7 @@ Ha a következő problémák közül bármelyiket tapasztalja, kövesse az aláb
 
 * Az alapul szolgáló hitelesítő adatokkal (például SQL Server) kapcsolatban olyan hibák jelentkeznek, amelyek megakadályozzák a kiszolgáló indítását. Ellenőrizze, hogy adott-e hozzáférést a szolgáltatásfelhasználónak az SAP BW-adatbázishoz.
 
-* A következő hibaüzenet jelenik meg: *(GSS-API) A megadott cél ismeretlen vagy nem érhető el*. Ez a hiba általában azt jelenti, hogy rossz SNC-nevet adott meg. Ügyeljen arra, hogy az ügyfélalkalmazásban csak a *p:* előtagot használja, ne a *p:CN=*-t a szolgáltatásfelhasználó egyszerű felhasználóneve előtt.
+* A következő hibaüzenet jelenik meg: *(GSS-API) A megadott cél ismeretlen vagy nem érhető el*. Ez a hiba általában azt jelenti, hogy rossz SNC-nevet adott meg. Ügyeljen arra, hogy az ügyfélalkalmazásban csak a *p:* előtagot használja, ne a *p:CN=* -t a szolgáltatásfelhasználó egyszerű felhasználóneve előtt.
 
 * A következő hibaüzenet jelenik meg: *(GSS-API) Érvénytelen fájlnevet adott meg*. Győződjön meg róla, hogy a *p:* szerepel a kiszolgáló SNC-azonosítójának profilparaméterébe.
 

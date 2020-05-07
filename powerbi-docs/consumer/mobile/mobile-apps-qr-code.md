@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
 ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802072"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI QR-kód beolvasása mobileszközzel
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPadek](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android rendszerű telefon](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android rendszerű táblagép](././media/mobile-apps-qr-code/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-|iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
+|iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |
 
 A Power BI-ban lévő QR-kódok a való világból bármit közvetlenül összekapcsolhatnak a kapcsolódó BI-információkkal, és ehhez nincs szükség navigálásra vagy keresésre.
 
@@ -73,10 +73,10 @@ Ha kollégája nem osztotta meg Önnel az irányítópultot vagy jelentést, kö
 1. Az Android-eszközön telepített bármely olvasó használatával a kamerát egy adott Power BI QR-kódra irányítva azonnal elérheti a vonatkozó csempét vagy jelentést. 
 2. Ha a Power BI alkalmazás nincs telepítve, a rendszer átirányítja a [Google Play áruházba, ahonnan letöltheti azt](https://go.microsoft.com/fwlink/?LinkID=544867). 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Power BI-információk elérése a való világból](mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
 * [QR-kód létrehozása a Power BI szolgáltatásban lévő csempékhez](../../service-create-qr-code-for-tile.md)
 * [QR-kód létrehozása a Power BI szolgáltatásban lévő jelentésekhez](../../service-create-qr-code-for-report.md)
 * [QR-kódot a Power BI vegyes valósághoz alkalmazással is beolvashat](mobile-mixed-reality-app.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

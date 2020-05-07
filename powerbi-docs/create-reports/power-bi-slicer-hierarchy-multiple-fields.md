@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: c41fa1e0c8510f64f9c6e53c83fe9ee8a2e75e67
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006893"
 ---
 # <a name="add-multiple-fields-to-a-slicer-preview"></a>Több mező hozzáadása egy szeletelőhöz (előzetes verzió)
@@ -40,7 +40,7 @@ A szeletelőt beállíthatja egyszeres kijelölési módra. A halványan kijelö
  
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Egyszeres kijelölésre beállított hierarchiaszeletelő a Power BI-ban":::
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Szeletelők a Power BI-ban](../visuals/power-bi-visualization-slicers.md)
-- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
