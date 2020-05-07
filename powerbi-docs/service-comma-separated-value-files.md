@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855525"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Adatok lekérdezése vesszővel tagolt (.CSV) fájlokból
@@ -27,13 +27,13 @@ Ha már rendelkezik .CSV-fájllal, itt az ideje, hogy adatkészletként csatlako
 >Számos cég naponta friss adatokat tartalmazó .CSV-fájlokat bocsát ki. Annak érdekében, hogy a Power BI-beli adatkészlet a frissített fájllal is szinkronizálva legyen, gondoskodjon róla, hogy a fájl ugyanazon a néven legyen mentve a OneDrive-on.
 
 ## <a name="where-your-file-is-saved-makes-a-difference"></a>Nem mindegy, hogy hol menti a fájlokat
-**Helyi meghajtó** – Ha a .CSV-fájlt a saját számítógépén vagy a cég egy másik helyszíni gépén mentette, a Power BI-ból *importálhatja* a fájlt a Power BI-ba. Mivel a fájl ténylegesen a helyi meghajtón marad, a teljes fájl valójában nem kerül a Power BI-ba. Ehelyett az történik, hogy a Power BI-ban új adatkészlet jön létre, és ebbe töltődnek a .CSV-fájlból származó adatok.
+**Helyi meghajtó** – Ha a .CSV-fájlt a saját számítógépén vagy a cég egy másik helyszíni gépén mentette, a Power BI-ból *importálhatja* a fájlt a Power BI-ba. A fájl igazából a helyi meghajtón marad, tehát a teljes fájl nem lesz importálva a Power BI-ba. Ehelyett az történik, hogy a Power BI-ban új adatkészlet jön létre, és ebbe töltődnek a .CSV-fájlból származó adatok.
 
 **OneDrive – Vállalati verzió** – A leghatékonyabb megoldás a .CSV-fájl, az adatbázis, a jelentések és az irányítópultok szinkronban tartásához, ha rendelkezik OneDrive Vállalati verzióval, és oda a Power BI-hoz használt fiókkal jelentkezik be. Mivel a Power BI és a OneDrive egyaránt a felhőben található, a Power BI nagyjából óránként *kapcsolódik* a OneDrive-on található fájlhoz. Ha a rendszer bármilyen változást érzékel, az adatbázis, a jelentések és az irányítópultok automatikusan frissülnek a Power BI-ban.
 
 **OneDrive – személyes** – Ha a saját OneDrive-fiókjába menti a fájlokat, számos olyan előnyre tehet szert, mint a OneDrive Vállalati verziójának használatakor. A legnagyobb különbség az, hogy amikor a fájlt először csatlakoztatja (Get Data > Files > OneDrive – Personal) akkor a Microsoft-fiókjával kell a OneDrive-ba jelentkeznie, és ez általában nem ugyanaz, mint amit a Power BI-ba való belépéshez használ. Ha a Microsoft-fiókkal jelentkezik be a OneDrive-ba, mindenképpen válassza a Maradjak bejelentkezve lehetőséget. Így a Power BI képes lesz nagyjából óránként kapcsolódni a fájlhoz, és ellenőrizni, hogy szinkronban van-e a Power BI-ban lévő adatkészlettel.
 
-**SharePoint – csoportwebhelyek** – A Power BI Desktop-fájlok SharePoint – csoportwebhelyekre való mentése sokban hasonlít a OneDrive Vállalati verziójába való mentéshez. A legnagyobb különbség a fájlhoz a Power BI-ból való csatlakozás módja. Ehhez megadhat egy URL-címet, vagy csatlakozhat a gyökérmappához.
+**SharePoint – csoportwebhelyek** – A Power BI Desktop-fájlok SharePoint – csoportwebhelyekre való mentése sokban hasonlít a OneDrive Vállalati verziójába való mentéshez. A legnagyobb különbség a fájlhoz a Power BI-ból való csatlakozás módja. Megadhat egy URL-címet vagy csatlakozhat a gyökérmappához.
 
 ## <a name="import-or-connect-to-a-csv-file"></a>.CSV-fájl importálása vagy csatlakoztatása
 >[!IMPORTANT]
@@ -49,7 +49,7 @@ Ha már rendelkezik .CSV-fájllal, itt az ideje, hogy adatkészletként csatlako
    
    ![](media/service-comma-separated-value-files/csv_find_your_file.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 **Adatok elemzése** – Ha a fájl adatai már bekerültek a Power BI rendszerébe, ideje megvizsgálni őket. A jobb gombbal kattintson az új adatkészletre, majd kattintson az **Explore** (Vizsgálat) elemre.
 
 **Ütemezett frissítés** – Ha a fájlt helyi meghajtón mentette, az ütemezett frissítés beállításával biztosíthatja, hogy a Power BI-ban tárolt adatkészlet és a jelentések naprakészek maradjanak. További tudnivalókért lásd: [Adatfrissítés a Power BI-ban](refresh-data.md). Ha a fájlt a OneDrive-on mentette, a Power BI nagyjából óránként automatikusan szinkronizál vele.

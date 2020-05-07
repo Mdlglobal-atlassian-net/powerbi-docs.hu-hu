@@ -10,10 +10,10 @@ ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871750"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Jelentés létrehozása a Power BI szolgáltatásban adatkészlet importálásával
@@ -35,7 +35,7 @@ Ha ezzel a módszerrel hoz létre egy jelentést, akkor annak kiindulópontja eg
 3. Válassza a **Fájlok** lehetőséget, majd navigáljon arra a helyre, ahova a Kiskereskedelmi elemzési mintát mentette.
    
     ![a Fájlok lehetőség kiválasztása](media/service-report-create-new/power-bi-select-files.png)
-4. Ehhez a gyakorlathoz válassza az **Importálás** lehetőséget.
+4. Ehhez a feladathoz válassza az **Importálás** lehetőséget.
    
    ![az Importálás kiválasztása](media/service-report-create-new/power-bi-import.png)
 5. Ha megtörtént az adatkészlet importálása, válassza az **Adatkészlet megtekintése** lehetőséget.
@@ -55,7 +55,7 @@ Most hogy már importáltuk az adatkészletünket, kezdjük el megválaszolni a 
 1. A Mezők ablaktáblán válassza a **Sales** > **This Year Sales** > **Érték** elemet.
    
     ![sávdiagram a jelentésszerkesztőben](media/service-report-create-new/power-bi-report-step1.png)
-2. Konvertálja a vizualizációt mérőműszerré. Ehhez válassza a **Vizualizációk** ablaktáblán a Mérőműszer ![Mérőműszer ikon](media/service-report-create-new/powerbi-gauge-icon.png) sablont.
+2. Konvertálja a vizualizációt mérőműszerré. Ehhez válassza a ![Vizualizációk](media/service-report-create-new/powerbi-gauge-icon.png) ablaktáblán a Mérőműszer **Mérőműszer ikon** sablont.
    
     ![Mérőműszer vizualizáció a jelentésszerkesztőben](media/service-report-create-new/power-bi-report-step2.png)
 3. Húzza a **Sales** > **This Year Sales** > **Cél** elemet a **Célérték** gyűjtőbe. Úgy látszik, nagyon közel vagyunk a célkitűzésünk eléréséhez.
@@ -72,7 +72,7 @@ Meg kell válaszolnunk a marketingigazgató újabb kérdéseit. Szeretné tudni,
 2. Szüntesse meg a mérőműszer kijelölt állapotát. A Mezők ablaktáblán válassza a **Sales** > **This Year Sales** > **Érték**, majd a **Sales** > **Last Year Sales** elemeket.
    
     ![jelentésszerkesztő egy Mérőműszerrel és egy sávdiagrammal](media/service-report-create-new/power-bi-report-step4.png)
-3. Konvertálja a vizualizációt területdiagrammá. Ehhez válassza a **Vizualizációk** ablaktáblán a Területdiagram ![diagramikon](media/service-report-create-new/power-bi-areachart-icon.png) sablont.
+3. Konvertálja a vizualizációt területdiagrammá. Ehhez válassza a ![Vizualizációk](media/service-report-create-new/power-bi-areachart-icon.png) ablaktáblán a Területdiagram **diagramikon** sablont.
 4. Adja hozzá a **Time** > **Period** elemet a **Tengely** gyűjtőhöz.
    
     ![jelentésszerkesztő aktív Területdiagrammal](media/service-report-create-new/power-bi-report-step5.png)
@@ -89,8 +89,8 @@ Meg kell válaszolnunk a marketingigazgató újabb kérdéseit. Szeretné tudni,
 
 Az adatokat tovább vizsgálhatja, és vizualizációkat is adhat hozzá. Ha különösen érdekes információt talál, azt [rögzítheti egy irányítópultra](service-dashboard-pin-tile-from-report.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * Tudnivalók arról, hogyan történik a [vizualizációk rögzítése egy irányítópulton](service-dashboard-pin-tile-from-report.md)   
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

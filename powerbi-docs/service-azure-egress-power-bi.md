@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 17175e1accb5013b960c5e1a71ae036b3dda72f3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73855573"
 ---
 # <a name="power-bi-and-azure-egress"></a>A Power BI és az Azure kimenő forgalma
@@ -28,7 +28,7 @@ A Power BI-bérlő helyének meghatározásához lásd a [Power BI-bérlő hely�
 
 Power BI Premium Multi-Geo-ügyfelek esetén, ha a Power BI-bérlő nem az Azure-alapú adatforrásoknak megfelelő optimális helyszínen található, akkor a kívánt Azure-régióban üzembe helyezheti a Power BI Premium Multi-Geót, és ettől kezdve élvezheti az azonos Azure-régióban található Power BI-bérlő és Azure-beli adatforrások előnyeit.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ha további információt szeretne kapni a Power BI Premiumról és a Multi-Geóról, tekintse meg a következő segédleteket:
 

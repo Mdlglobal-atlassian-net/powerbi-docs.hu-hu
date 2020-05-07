@@ -7,7 +7,7 @@
       items:
         - name: A munka megosztásának módjai
           href: ../service-how-to-collaborate-distribute-dashboards-reports.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: A munka szervezése

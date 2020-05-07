@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 9dbbf38b69d71811de4dd599951529234068b178
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637933"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>A Power BI Premium kapacitásainak konfigurálása és kezelése
@@ -126,14 +126,14 @@ A kapacitás-rendszergazdák, a Power BI-rendszergazdák és az Office 365 glob�
 
     ![Munkaterületek hozzárendelése](media/service-admin-premium-manage/assign-workspaces.png)
 
-   | Kiválasztás | Leírás |
+   | Kijelölés | Description (Leírás) |
    | --- | --- |
    | **Munkaterületek felhasználók szerint** | Ha felhasználó vagy csoport alapján rendel hozzá munkaterületet, a megadott felhasználók tulajdonában lévő minden munkaterület a prémium szintű kapacitáshoz lesz rendelve, beleértve a felhasználó saját munkaterületét. Az érintett felhasználók automatikusan munkaterület-hozzárendelési engedélyt is kapnak,<br>amely a más kapacitásokhoz rendelt munkaterületekre is érvényes. |
    | **Adott munkaterületek** | Adja meg egy munkaterület nevét a kiválasztott kapacitáshoz történő hozzárendeléshez. |
    | **A teljes cég munkaterületei** | Ha a prémium szintű kapacitáshoz a teljes szervezet munkaterületeit hozzárendeli, azzal a szervezet valamennyi munkaterületét és saját munkaterületét ehhez a prémium szintű kapacitáshoz rendeli. Emellett minden jelenlegi és jövőbeli felhasználó engedélyt kap az egyéni munkaterületek ehhez a kapacitáshoz való újbóli hozzárendelésére. |
    | | |
 
-1. Kattintson az **Alkalmaz** elemre.
+1. Kattintson az **Alkalmaz** gombra.
 
 ### <a name="assign-from-workspace-settings"></a>Hozzárendelés a munkaterület beállításaiból
 
@@ -153,20 +153,20 @@ A munkaterületeket az adott munkaterület beállításaiban is hozzárendelheti
 
 A mentés után a munkaterület és annak minden tartalma a prémium szintű kapacitásba kerül. A felhasználók számára ez semmilyen szolgáltatáskimaradással nem jár.
 
-## <a name="power-bi-report-server-product-key"></a>Power BI jelentéskészítő kiszolgáló termékkulcsa
+## <a name="power-bi-report-server-product-key"></a>A Power BI jelentéskészítő kiszolgáló termékkulcsa
 
 A Power BI jelentéskészítő kiszolgáló termékkulcsát a Power BI felügyeleti portáljának **Kapacitásbeállítások** lapján találja. Ezt csak a globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdai szerepéhez rendelt felhasználók érhetik el, ha vásároltak egy Power BI Premium SKU-t.
 
 ![A Power BI jelentéskészítő kiszolgáló kulcsa a kapacitásbeállításokban](media/service-admin-premium-manage/pbirs-product-key.png)
 
-A **Power BI jelentéskészítő kiszolgáló kulcsának** kiválasztásakor megjelenik a termékkulcsot tartalmazó párbeszédpanel. Ezt másolhatja és használhatja a telepítéshez.
+Ha rákattint a **Power BI jelentéskészítő kiszolgáló termékkulcsa** elemre, a termékkulcs megjelenik egy párbeszédpanelben. Innen lemásolhatja és felhasználhatja a telepítéshez.
 
-![Power BI jelentéskészítő kiszolgáló termékkulcsa](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
+![A Power BI jelentéskészítő kiszolgáló termékkulcsa](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 
 További információt [a Power BI jelentéskészítő kiszolgáló telepítését](report-server/install-report-server.md) ismertető témakörben találhat.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Prémium szintű kapacitások kezelése](service-premium-capacity-manage.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

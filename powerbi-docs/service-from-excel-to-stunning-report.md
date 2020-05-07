@@ -10,10 +10,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
 ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872522"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-munkafüzettől egy lenyűgöző jelentésig a Power BI szolgáltatásban
@@ -123,21 +123,21 @@ Tegyük fel, hogy meg szeretné osztani az irányítópultját a főnökével. A
 
 1. A jelentés megosztásához válassza a **Megosztás** lehetőséget az irányítópult tetején.
 
-   ![Megosztás ikon](media/service-from-excel-to-stunning-report/power-bi-share.png)
+   ![Megosztás ikonja](media/service-from-excel-to-stunning-report/power-bi-share.png)
 
    A Power BI ekkor megjeleníti az **Irányítópult megosztása** oldalt. 
 
 2. Adja meg a címzettek e-mail-címeit az **E-mail címek-megadása**mezőben, majd adjon hozzá egy üzenetet a lenti mezőben. 
 
-3. Jelölje be az **Irányítópult megosztásának engedélyezése a címzetteknek** lehetőséget, hogy a címzettek megoszthassák másokkal az irányítópultját. Válassza a **Megosztás** gombot.
+3. Jelölje be az **Irányítópult megosztásának engedélyezése a címzetteknek** lehetőséget, hogy a címzettek megoszthassák másokkal az irányítópultját. Válassza a **Megosztás** lehetőséget.
 
    ![Irányítópult megosztása ablak](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Első lépések a Power BI szolgáltatással](service-get-started.md)
-* [Első lépések a Power BI Desktopban](desktop-getting-started.md)
+* [Első lépések a Power BI Desktoppal](desktop-getting-started.md)
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 
