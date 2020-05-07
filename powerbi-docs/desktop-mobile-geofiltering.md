@@ -9,10 +9,10 @@ ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
 ms.openlocfilehash: b30310f78dca919474baf6d5870294bfc05dcacf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760996"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Földrajzi szűrők beállítása mobilalkalmazásokhoz a Power BI Desktopban
@@ -58,7 +58,7 @@ Tegyük fel például, hogy az értékesítési vezető elutazik, hogy az ügyfe
 
 További információ a [jelentés tartózkodási hely szerinti szűréséről a Power BI mobilalkalmazásokban](consumer/mobile/mobile-apps-geographic-filtering.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Adatok kategorizálása a Power BI Desktopban](desktop-data-categorization.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

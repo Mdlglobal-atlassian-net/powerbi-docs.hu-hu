@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75623061"
 ---
 # <a name="disable-power-query-background-refresh"></a>A Power Query háttérbeli frissítésének letiltása
@@ -24,7 +24,7 @@ Alapértelmezés szerint amikor a Power Query adatokat importál, eközben minde
 
 Ha azonban a Power BI Desktop-fájl nagy mennyiségű lekérdezést tartalmaz, az előnézeti adatok lekérése és tárolása meghosszabbíthatja a frissítés befejezéséhez szükséges időt.
 
-## <a name="recommendation"></a>Javaslat
+## <a name="recommendation"></a>Ajánlás
 
 Felgyorsíthatja a frissítést, ha úgy állítja be a Power BI Desktop-fájlt, hogy _a háttérben_ frissítse az előnézeti gyorsítótárat. Ezt úgy engedélyezheti a Power BI Desktopban, hogy a _Fájl > Lehetőségek és beállítások > Beállítások_ lehetőséget, majd az _Adatok betöltése_ lapot választja. Ezután bekapcsolhatja a **Adatelőnézet háttérbeli letöltésének engedélyezése** lehetőséget. Fontos megjegyezni, hogy ezt a beállítást csak az aktuális fájlra vonatkozóan lehet beállítani.
 
@@ -38,9 +38,9 @@ Az előnézeti gyorsítótár bármikor frissíthető. Az **Előnézet frissít�
 
 ![A Power Query-szerkesztő az előnézeti adatok frissítésére szolgáló parancsai](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
 - [Power Query-dokumentáció](/power-query/)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

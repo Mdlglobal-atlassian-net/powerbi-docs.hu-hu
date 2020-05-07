@@ -11,10 +11,10 @@ ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74415249"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Gyorsmérők használata általános számításokhoz
@@ -119,7 +119,7 @@ A gyorsmérőket bármikor eltávolíthatja a modellből, ha nem nyerik el a tet
 
 ![Gyorsmérők törlése vagy átnevezése](media/desktop-quick-measures/quick-measures_11.png)
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 Figyelembe kell venni néhány korlátozást és szempontot.
 
 - A **Mezők** panelhez hozzáadott gyorsmérőket a jelentés bármely vizualizációjával használhatja.
@@ -134,5 +134,5 @@ Figyelembe kell venni néhány korlátozást és szempontot.
 Használhatja saját egyéni dátumoszlopait az időintelligenciát használó gyorsmérőkhöz. Ha egy külső táblázatos modellt használ, ellenőriznie kell, hogy a modell létrehozásakor az adott tábla elsődleges dátum oszlopa dátumtáblázatként lett-e megjelölve, amint az a [Jelölés megadása dátumtáblázatként az időintelligencia használatához](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular) című cikkben szerepel. Ha egy saját dátumtáblázatot importál, győződjön meg arról, hogy az dátumtáblázatként van megjelölve, ahogy az a [Dátumtáblák beállítása és használata a Power BI Desktopban](desktop-date-tables.md) című cikkben szerepel.
 
 ### <a name="additional-information-and-examples"></a>További információ és példák
-Van olyan ötlete egy gyorsmérőre, amely még nem valósult meg? Remek! Látogasson el [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) oldalra, és küldje be azokat a gyorsmérőkre vonatkozó ötleteit a DAX-képletekkel együtt, amelyeket viszont szeretne látni a Power BI Desktopban. Ezután megvizsgáljuk, hogy azok bekerülhetnek-e a gyorsmérők egy jövőbeli kiadásába.
+Van olyan ötlete egy gyorsmérőre, amely még nem valósult meg? Kitűnő! Látogasson el [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) oldalra, és küldje be azokat a gyorsmérőkre vonatkozó ötleteit a DAX-képletekkel együtt, amelyeket viszont szeretne látni a Power BI Desktopban. Ezután megvizsgáljuk, hogy azok bekerülhetnek-e a gyorsmérők egy jövőbeli kiadásába.
 

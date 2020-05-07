@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762278"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Bevezetés a Power BI Q&A-vizualizációk használatába
@@ -45,7 +45,7 @@ A Q&A vizualizáció négy alapvető elemből áll;
 
 1. Fájl megnyitása jelentés nézetben ![A jelentés nézet ikonjának képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 
 Ha hibát tapasztal a Q&A-vizualizáció létrehozása során, ellenőrizze a [korlátozások](../natural-language/q-and-a-limitations.md) szakaszban, hogy az adatforrás-konfiguráció támogatva van-e.
@@ -61,7 +61,7 @@ Ebben a gyakorlatban egy javasolt kérdést választunk ki a Q&A vizualizáció 
 
     ![Q&A-vizualizáció a jelentés vásznon](media/power-bi-visualization-q-and-a/power-bi-qna.png)
 
-3. A vizualizáció létrehozásához válasszon a javasolt kérdések közül, vagy kezdjen beírni egy kérdést a kérdésmezőbe. Ebben a példában kiválasztottuk a **top geo states by sum of revenue** (vezető földrajzi államok jövedelemösszeg alapján) kérdést. A Power BI megpróbálja kiválasztani a felhasználható vizualizációtípust. Ebben az esetben ez egy térkép.
+3. A vizualizáció létrehozásához válasszon a javasolt kérdések közül, vagy kezdjen beírni egy kérdést a kérdésmezőbe. Ebben a példában kiválasztottuk a **top geo states by sum of revenue** (vezető földrajzi államok jövedelemösszeg alapján) kérdést. A Power BI megkísérli a lehető legjobb vizualizációtípus kiválasztani. Ebben az esetben ez egy térkép.
 
     ![Q&A-vizualizáció térkép](media/power-bi-visualization-q-and-a/power-bi-map.png)
 
@@ -79,7 +79,7 @@ Ha nem biztos a kérdéstípusban vagy a szóhasználatban, bontsa ki az **Össz
 
 1. Írjon be egy kérdést a Q&A-mezőbe. A Power BI pirossal húzza alá a fel nem ismert szavakat. A Power BI lehetőség szerint segít a fel nem ismert szavak meghatározásában.  Az alábbi első példában bármelyik javaslatot kiválaszthatja.  
 
-    ![Kérdés beírása a Q&A-kérdésmezőbe](media/power-bi-visualization-q-and-a/power-bi-red-suggest.png)
+    ![Kérdés beírása a Q&A kérdésmezőbe](media/power-bi-visualization-q-and-a/power-bi-red-suggest.png)
 
 2. Ahogy előrehalad a kérdés beírásával, a Power BI értesíti, ha nem érti a kérdést, és megpróbál segíteni. Az alábbi példában a Power BI felteszi a „Did you mean...” (Arra gondolt hogy...) kérdést, és javaslatot tesz egy másik szó használatára az adatkészletből. 
 
@@ -87,7 +87,7 @@ Ha nem biztos a kérdéstípusban vagy a szóhasználatban, bontsa ki az **Össz
 
 5. A Power BI segítségével feltehettünk egy csak felismerhető kifejezésekből álló kérdést. A Power BI vonaldiagram formájában jeleníti meg az eredményeket. 
 
-    ![Q&A-vizualizáció eredmények](media/power-bi-visualization-q-and-a/power-bi-type.png)
+    ![A Q&A vizualizációs eredményei](media/power-bi-visualization-q-and-a/power-bi-type.png)
 
 
 6. Módosítsuk a vizualizációt oszlopdiagramra. 
@@ -143,12 +143,12 @@ Az Eszközök ablaktábla használatával megtaníthatja a Q&A-vizualizációnak
 
 ![A Q&A Eszközök ablaktábla](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 A Q&A-vizualizáció integrálva van az Office és a Bing szolgáltatásokkal az adatkészlet mezőiben lévő fel nem ismert, általános használatú szavak azonosításának megkísérléséhez.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
-A természetes nyelvet többféleképpen is integrálhatja. További információért tekintse át a következő cikkeket:
+A természetes nyelvet többféleképpen is integrálhatja. További információkat az következő cikkekben talál:
 
 * [Q&A Eszközök](../natural-language/q-and-a-tooling-intro.md)
 * [Q&A – ajánlott eljárások](../natural-language/q-and-a-best-practices.md)

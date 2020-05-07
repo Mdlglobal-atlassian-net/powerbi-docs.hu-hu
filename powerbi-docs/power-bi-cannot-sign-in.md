@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
 ms.openlocfilehash: b65cf23e37773861d41b037b0f45c430224f1930
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74882876"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Bejelentkezési hibák elhárítása a Power BI szolgáltatásban
@@ -47,6 +47,6 @@ Alternatívaként [Microsoft Premier támogatást](https://support.microsoft.com
 
 Ha nem tud bejegyzést létrehozni a Power BI-közösség fórumán, az azért lehet, mert itt is be kell jelentkeznie. További részletekért lásd: [Közösségi támogatás](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [A Power BI Pro és a Power BI Premium támogatási lehetőségei](service-support-options.md)

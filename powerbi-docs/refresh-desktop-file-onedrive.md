@@ -11,10 +11,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038548"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>A OneDrive vagy a SharePoint Online szolgáltatásban tárolt adatkészletek frissítése
@@ -39,7 +39,7 @@ A Power BI-ban a **Frissítés** és a **Frissítés ütemezése** támogatott a
 > [!NOTE]
 > Támogatott az élő kapcsolattal rendelkező adatkészletek OneDrive-frissítése. Az élő kapcsolatú adatkészlet módosítása egy már közzétett jelentésben azonban nem támogatott a OneDrive-frissítési forgatókönyvben.
 
-### <a name="power-bi-gateway---personal"></a>Személyes Power BI-átjáró
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 * A Power BI Desktop **Adatok lekérése** és **Lekérdezésszerkesztő** területein látható összes online adatforrás.
 * A Power BI Desktop **Adatok lekérése** és **Lekérdezésszerkesztő** területein látható összes helyszíni adatforrás a Hadoop-fájl (HDFS) és a Microsoft Exchange kivételével.
 
@@ -47,12 +47,12 @@ A Power BI-ban a **Frissítés** és a **Frissítés ütemezése** támogatott a
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
 
 > [!NOTE]
-> Egy telepített és futó átjáró szükséges ahhoz, hogy a Power BI csatlakozhasson a helyszíni adatforrásokhoz és frissíthesse az adatkészletet.
+> Ahhoz, hogy a Power BI helyszíni adatforrásokhoz kapcsolódhasson és frissíthesse az adatkészletet telepítve kell lennie és futnia kell egy átjárónak.
 > 
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vagy OneDrive Vállalati verzió. Mi közöttük a különbség?
-Ha rendelkezik személyes OneDrive-val és OneDrive vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat érdemes a OneDrive vállalati verziójában tartani. Ennek oka a következő: Ön minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
+Ha rendelkezik személyes OneDrive-val és OneDrive vállalati verzióval is, a Power BI-ba importálni kívánt fájlokat érdemes a OneDrive vállalati verziójában tartani. Ennek az az oka, hogy minden bizonnyal két külön fiókot használ a két szolgáltatáshoz.
 
 A Power BI-ban egyszerűen csatlakozhat a OneDrive vállalati verziójához, mert a Power BI-fiók gyakran megegyezik a OneDrive vállalati verzióhoz használt fiókkal. Személyes OneDrive esetén valószínűleg másik [Microsoft-fiókkal](https://account.microsoft.com) jelentkezik be.
 
@@ -81,5 +81,5 @@ Néha az adatok frissítése nem a várt módon történik. Adatfrissítési pro
 
 [A személyes Power BI Gateway hibáinak elhárítása](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
+Több kérdése van? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

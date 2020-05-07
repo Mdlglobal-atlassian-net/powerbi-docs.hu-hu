@@ -11,10 +11,10 @@ ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 24d706108bab274ef6aae8733f1fc11d212f13eb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73852636"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Csempe rögzítése Power BI-irányítópultra jelentésből
@@ -61,7 +61,7 @@ További információ: [Teljes jelentésoldal rögzítése](service-dashboard-pi
 ## <a name="next-steps"></a>Következő lépések
 - [Irányítópultok a Power BI szolgáltatás felhasználói számára](consumer/end-user-dashboards.md)
 - [Irányítópult-csempék a Power BI-ban](consumer/end-user-tiles.md)
-- [Jelentések a Power BI-ban](consumer/end-user-reports.md)
+- [Power BI-jelentések](consumer/end-user-reports.md)
 - [Adatfrissítés a Power BI-ban](refresh-data.md)
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 

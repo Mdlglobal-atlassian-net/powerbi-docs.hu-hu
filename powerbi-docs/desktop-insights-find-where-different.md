@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761111"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Elemzések alkalmazása a Power BI Desktopban az eloszlásbeli eltérések helyeinek feltárásához (előzetes verzió)
@@ -98,7 +98,7 @@ A megjelenített vizualizációk így érthetően megjelenítik az összesített
 
 Az additív mértékeknél, mint a fenti *értékesítési* példa, oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók a relatív értékek a kettős tengelynek és a megfelelő méretezésnek köszönhetően. Az oszlopok az alkalmazott szűrővel kapott értéket jelenítik meg, a vonal pedig az összesített értéket (az oszloptengely a bal oldalon, a vonaltengely pedig a jobb oldalon található). A vonal *lépcsőzetes* stílusban jelenik meg, egy szürkével kitöltött szaggatott vonalként. Az előző példához visszatérve, ha az oszloptengely maximális értéke 4, a vonaltengelyé pedig 20, akkor könnyen összehasonlíthatók az Egyesült Államok és Kanada relatív értékei a szűrt és az összesített értékek esetén is. 
 
-Hasonlóképp, a nem additív mértékeknél – mint a fenti *árréses* példa – oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók az abszolút értékek az egyszerű tengelynek köszönhetően. Ez esetben is a szürke vonal mutatja az összesített értéket. Akár tényleges, akár relatív számokat hasonlít össze, az eloszlások eltérésének mértékét nem egyszerűen az értékek eltérésének kiszámításával állapíthatja meg. Például:
+Hasonlóképp, a nem additív mértékeknél – mint a fenti *árréses* példa – oszlop- és vonaldiagramot használtunk, így könnyen összehasonlíthatók az abszolút értékek az egyszerű tengelynek köszönhetően. Ez esetben is a szürke vonal mutatja az összesített értéket. Akár tényleges, akár relatív számokat hasonlít össze, az eloszlások eltérésének mértékét nem egyszerűen az értékek eltérésének kiszámításával állapíthatja meg. Példa:
 
 * Számít a népesség mértéke, mivel az eltérés statisztikailag kevésbé jelentős és kevésbé érdekes, ha a teljes népesség egy kis szeletére vonatkozik. Az értékesítések eloszlása országonként jelentősen eltérő lehet egyes termékek esetében, azonban ez nem érdekes, ha több ezer termékről van szó, és az aktuálisan vizsgált termék csak egy töredékét teszi ki az összesített értékesítésnek.
 
@@ -139,7 +139,7 @@ Továbbá az elemzések esetében jelenleg nem támogatottak a következő model
 * Helyszíni Reporting Services
 * Beágyazás
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Ha többet szeretne megtudni a **Power BI Desktopról**, illetve a szoftver használatának kezdeti lépéseiről, tekintse meg a következő cikkeket.
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

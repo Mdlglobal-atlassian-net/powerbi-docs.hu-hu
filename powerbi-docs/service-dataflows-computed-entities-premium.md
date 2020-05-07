@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a655c55520d76bfaeb51318d09244ea663ccc192
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872659"
 ---
 # <a name="using-computed-entities-on-power-bi-premium"></a>Számított entitások használata a Power BI Premiumban
@@ -90,10 +90,10 @@ Ez a cikk a Power BI szolgáltatásban elérhető számított entitásokat és a
 * [CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)](service-dataflows-add-cdm-folder.md)
 * [Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz (előzetes verzió)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

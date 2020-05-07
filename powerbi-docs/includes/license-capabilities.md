@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 12/03/2019
 ms.author: kfollis
 ms.openlocfilehash: e046ad861f65a0a1b7d0a704fded822038438d85
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958596"
 ---
 A Power BI szolgáltatás a felhasználók a felhasználónkénti licencek típusa és az alapján meghatározott képességekkel rendelkeznek, hogy a használt tartalom egy Power BI Premium-kapacitáshoz hozzárendelt munkaterületen található-e.
@@ -17,4 +17,4 @@ A Power BI szolgáltatás a felhasználók a felhasználónkénti licencek típu
 
 * **Power BI Premium-kapacitás** - *Power BI Premium-licencelés*. A Power BI Premium dedikált kapacitást biztosít, amellyel egyenletesebb teljesítmény érhető el, és amely nagyobb adatméreteket támogat a Power BI-ban. Egyéni felhasználók esetén a Power BI Premium azt is lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthassák a tartalmakat anélkül, hogy a tartalmakat megtekintő felhasználók Pro-licenccel rendelkeznének. További információ: [A Power BI Premium bemutatása](../service-premium-what-is.md)
 
-A licenctípusok összehasonlításáról további információt a [Power BI díjszabása](https://powerbi.microsoft.com/pricing/) témakör _Power BI-funkciók összehasonlítása_ szakaszában talál.
+A licenctípusok összehasonlításáról további információt a _Power BI díjszabása_ témakör [Power BI-funkciók összehasonlítása](https://powerbi.microsoft.com/pricing/) szakaszában talál.

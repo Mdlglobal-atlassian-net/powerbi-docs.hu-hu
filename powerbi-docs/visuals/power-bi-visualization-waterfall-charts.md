@@ -11,10 +11,10 @@ ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74907662"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vízesésdiagramok a Power BI-ban
@@ -46,7 +46,7 @@ A vízesésdiagram remek választás a következőkhöz:
 
 * Ha szeretné megjeleníteni, hogy mennyi pénzt keresett és költött az egyes hónapok során, valamint a fiók folyóegyenlegét.
 
-## <a name="prerequisite"></a>Előfeltétel
+## <a name="prerequisite"></a>Előfeltételek
 
 Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
@@ -56,7 +56,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 
 ## <a name="create-a-waterfall-chart"></a>Vízesésdiagram létrehozása
@@ -115,8 +115,8 @@ Derítse ki részletesebben, hogy mi járul hozzá legnagyobb mértékben az egy
 
     ![vízesésdiagram](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Vizualizációk Power BI-jelentésen belüli működésének módosítása](../service-reports-visual-interactions.md)
 
-* [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Vizualizációk típusai a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

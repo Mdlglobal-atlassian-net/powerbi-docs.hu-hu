@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73799904"
 ---
 A **DAX** és az Excel képletei között az egyik lényeges különbség, hogy a DAX lehetővé teszi *teljes táblák* átadását a kifejezések között, és nem korlátozza azt egyetlen értékre. Ez azzal a jelentős előnnyel jár, hogy a DAX így lehetővé teszi a kifejezésekben a táblák szűrését, és ezt követően szűrt értékhalmazzal lehet műveleteket végezni.

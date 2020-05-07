@@ -10,10 +10,10 @@ ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75758623"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vizualizáció alapjául szolgáló adatok megjelenítése
@@ -64,15 +64,15 @@ A vizualizációk egy-egy adatrekordja is a középpontba állítható, és rés
 
 4. Válassza a **Vissza a jelentéshez** lehetőséget az asztali jelentésvászonhoz való visszatéréshez. 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 
 - Ha a szalag **Rekordok megjelenítése** gombja le van tiltva és ki van szürkítve, az azt jelenti, hogy a kiválasztott vizualizáció nem támogatja a Rekordok megjelenítése funkciót.
 - A Rekordok megjelenítése nézetben az adatok nem módosíthatók és nem menthetők vissza a jelentésbe.
 - A Rekordok megjelenítése nem használható, ha a vizualizáció számított mértéket használ.
 - A Rekordok megjelenítése nem használható, ha élő többdimenziós (multidimensional, MD) modellt használ.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Adatok exportálása Power BI-vizualizációkból](power-bi-visualization-export-data.md)    
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

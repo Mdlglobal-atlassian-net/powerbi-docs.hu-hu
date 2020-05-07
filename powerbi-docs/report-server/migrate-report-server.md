@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/17/2019
 ms.openlocfilehash: bc3b196313266be64e7a63a66f33ef4020574d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73858879"
 ---
 # <a name="migrate-a-report-server-installation"></a>Telepített jelentéskészítő kiszolgáló migrálása
@@ -93,10 +93,10 @@ Az egyik Power BI jelentéskészítő kiszolgálóról a másikra történő mig
 * Konfigurálja a jelentéskészítő kiszolgálót a Jelentéskészítő kiszolgáló – konfigurációkezelő segítségével, és csatlakozzon a klónozott adatbázishoz.
 * Szükség szerint törölje a Power BI jelentéskészítő kiszolgáló régi telepítése után megmaradó fölösleges elemeket.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 [Az rs.exe segédprogramra és a webszolgáltatásra épülő szkriptek](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

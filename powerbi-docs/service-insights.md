@@ -12,10 +12,10 @@ ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872228"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Adatelemzések automatikus generálása a Power BI-jal
@@ -91,9 +91,9 @@ Teljes adatkészletek összefüggéseinek feltárása helyett egyetlen irányít
 3. Felkeltette valamelyik elemzés az érdeklődését? Az adott elemzéskártyát kiválasztva az adatok mélyebb szintjére is leáshat. A kiválasztott elemzés a bal oldalon fog megjelenni, az új, kizárólag az adott elemzés adatain alapuló új elemzéskártyák pedig a jobb oldalon.    
 4. Az adatok mélyebb szintjeinek feltárását tovább folytatva az érdekes elemzéseket a jobb felső sarokban látható **Vizualizáció rögzítése** lehetőséget választva tűzheti ki az irányítópultra.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 - Ha Ön az adatkészlet tulajdonosa, [optimalizálhatja azt gyors elemzések készítéséhez](service-insights-optimize.md).
 - További tudnivalók a [Gyors elemzések típusaival kapcsolatban](service-insight-types.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

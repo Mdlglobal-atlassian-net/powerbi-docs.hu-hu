@@ -10,13 +10,13 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75885234"
 ---
-# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Gyors útmutató: Csatlakozás adatokhoz a Power BI Desktopban
+# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Gyorsútmutató: Csatlakozás adatokhoz a Power BI Desktopban
 
 Ebben az útmutatóban a Power BI Desktop használatával csatlakozhat adatokhoz, ami az adatmodellek és jelentések létrehozásának első lépése.
 
@@ -38,7 +38,7 @@ Telepítés után indítsa el a Power BI Desktopot a helyi számítógépén. Eg
 
 ![A Power BI Desktop üres vászonnal](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 
-## <a name="connect-to-data"></a>Csatlakozás adatokhoz
+## <a name="connect-to-data"></a>Kapcsolódás adatokhoz
 
 A Power BI Desktoppal számos különböző adattípushoz csatlakozhat. A források közé tartoznak az olyan egyszerű adatforrások is, mint egy Microsoft Excel-fájl. Csatlakozhat olyan online szolgáltatásokhoz is, amelyek sokféle adattípust tartalmaznak, például a Salesforce-hoz, a Microsoft Dynamicshez, az Azure Blob Storage-hoz és sok más forráshoz.
 
@@ -66,12 +66,12 @@ Ha kiválasztotta az összes importálni kívánt táblát, válassza a **Betöl
 
 A táblák betöltése után a **Mezők** táblán jelennek meg az adatok. A táblákat úgy bonthatja ki, ha a név melletti nyílra kattint. Az alábbi képen a *financials* tábla van kibontva, amelynek így az összes mezője láthatóvá válik.
 
-![Adatok beolvasása](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
+![Adatok lekérése](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
 
 Ezzel készen is van! Csatlakozott az adatokhoz a Power BI Desktoppal, betöltötte az adatokat, és most már láthatja a táblákban elérhető mezőket is.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az adatokhoz való csatlakozás után sokféle feladatot végezhet el a Power BI Desktoppal. Létrehozhat vizualizációkat és jelentéseket. Az első lépésekhez tekintse meg az alábbi forrást:
 
-* [Első lépések a Power BI Desktopban](desktop-getting-started.md)
+* [Első lépések a Power BI Desktoppal](desktop-getting-started.md)

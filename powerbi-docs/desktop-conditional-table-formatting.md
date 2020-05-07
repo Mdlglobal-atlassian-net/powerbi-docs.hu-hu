@@ -1,5 +1,5 @@
 ---
-title: Feltételes táblázatformázás a Power BI Desktopban
+title: Feltételes táblaformázás a Power BI Desktopban
 description: Egyéni formázás alkalmazása táblázatokra
 author: davidiseminger
 ms.reviewer: ''
@@ -10,10 +10,10 @@ ms.date: 12/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c79a8ddd68fa64b0a16663500a3f02e9a991835b
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75730326"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Feltételes formázás használata táblázatokban 
@@ -149,7 +149,7 @@ Az alábbi példában három szabály alapján vannak ikonok hozzáadva:
 
 ![Ikonok párbeszédpanel](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
 
-Válassza az **OK** lehetőséget. A példatáblázat a következőképpen néz ki a **Megfizethetőség** oszlopra szabályok alapján alkalmazott ikonokkal:
+Kattintson az **OK** gombra. A példatáblázat a következőképpen néz ki a **Megfizethetőség** oszlopra szabályok alapján alkalmazott ikonokkal:
 
 ![Példatáblázat ikonokkal](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
@@ -173,7 +173,7 @@ A feltételes táblázatformázás használatakor érdemes figyelembe venni néh
 - Nem alkalmazhat színátmenetes formázást automatikus maximális/minimális értékekkel vagy százalékos szabályokat alkalmazó szabályalapú formázással, ha az adatokban *NaN* értékek szerepelnek. A NaN jelentése „nem szám” (angolul „Not a number”), amit leggyakrabban a nullával osztás hibája okoz. Ezeket a hibákat a [DIVIDE() DAX-függvény](https://docs.microsoft.com/dax/divide-function-dax) használatával kerülheti el.
 - A feltételes formázáshoz szükség van egy aggregálásra vagy egy mértékre, amelyet az értékre kell alkalmazni. Ezért jelenik meg az Első vagy az Utolsó kifejezés az **Érték szerinti színezés** lehetőséget használó példában. Ha egy Analysis Service-beli többdimenziós adatkockán hozza létre a jelentést, akkor nem fog tudni attribútumot használni a feltételes formázáshoz, kivéve, ha az adatkocka tulajdonosa létrehozott egy olyan mértéket, amely megadja az értéket.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A színformázással kapcsolatos további információ: [Tippek és trükkök a színformázáshoz a Power BI-ban](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

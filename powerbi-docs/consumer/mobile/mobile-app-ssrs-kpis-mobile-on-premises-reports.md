@@ -9,21 +9,21 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
 ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75220065"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Helyszíni jelentéskészítő kiszolgálói jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 
 A Power BI Mobile-alkalmazások élő, érintésvezérelt mobilhozzáférést biztosítanak helyszíni üzleti adataihoz a Power BI jelentéskészítő kiszolgáló és az SQL Server 2016 Reporting Services (SSRS) használatával.
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |
 
 
 ![A jelentéskészítő kiszolgáló kezdőlapja a mobilalkalmazásokban](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
@@ -68,7 +68,7 @@ A helyszíni Power BI-jelentéseket, a Reporting Services mobiljelentéseit és 
    
      `https://<servername>/reports`
    
-     VAGY
+     OR
    
      `https://<servername>/reports`
    
@@ -88,7 +88,7 @@ Ha az iOS-es vagy az androidos mobilalkalmazásban tekinti meg a Power BI-t, el�
 
     ![Bejelentkezés a jelentéskészítő kiszolgálóba](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
 
-2.  A **Csatlakozás kiszolgálóhoz** oldalon már ki vannak töltve a jelentéskészítő kiszolgáló adatai. Koppintson a **Csatlakozás** lehetőségre.
+2.  A **Csatlakozás kiszolgálóhoz** oldalon a jelentéskészítő kiszolgáló adatai már ki vannak töltve. Koppintson a **Csatlakozás** lehetőségre.
 
     ![A jelentéskészítő kiszolgáló adatai kitöltve](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
 
@@ -112,7 +112,7 @@ A Power BI-jelentések, a Reporting Services mobiljelentései és a KPI-k ugyana
     ![Mobilra optimalizált Power BI-jelentés](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Koppintson a KPI-re a fókuszált módban való megjelenítéséhez.
   
-    ![KPI fókuszált módban](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
+    ![KPI megtekintése Fókusz módban](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Kedvenc KPI-k és jelentések megtekintése
 KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a kedvenc Power BI-irányítópultjaival együtt ezeket is megtekintheti egy Önnek megfelelő mappában a mobileszközén.
@@ -125,12 +125,12 @@ KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a
   
    ![Power BI-jelentések és -irányítópultok a Kedvencek lapon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
-## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kiszolgálóval való kapcsolat eltávolítása
+## <a name="remove-a-connection-to-a-report-server"></a>Jelentéskészítő kapcsolatának eltávolítása
 1. Nyissa meg a Fiókok panelt, majd koppintson a **Beállítások** lehetőségre.
 2. Koppintson annak a kiszolgálónak a nevére, amelyhez nem szeretne kapcsolódni.
 3. Koppintson a **Kiszolgáló eltávolítása** elemre.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

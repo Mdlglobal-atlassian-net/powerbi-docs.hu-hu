@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73799903"
 ---
 A DAX számos függvényt biztosít az adatok alakításához, formálásához vagy más típusú elemzéséhez. Ezek a függvények az alábbi kategóriákba sorolhatók:
@@ -52,7 +52,7 @@ Ezek a függvények megszámolják a különböző elemeket, például a külön
 ## <a name="logical-functions"></a>Logikai függvények
 A DAX többek között az alábbi **logikai függvényeket** tartalmazza:
 
-* AND
+* ÉS
 * OR
 * NOT
 * IF

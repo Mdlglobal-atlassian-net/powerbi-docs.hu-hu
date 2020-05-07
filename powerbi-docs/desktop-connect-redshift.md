@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c303bbd3fe229ea48dbad3da9d003851f7441956
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761634"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Csatlakozás Amazon Redshift-adatbázishoz a Power BI Desktopban
@@ -41,7 +41,7 @@ Ha kiválasztott valamit a **Kezelő** ablakban, **betöltheti** vagy **szerkesz
 * Ha úgy dönt, hogy **betölti** az adatokat, a rendszer rákérdez, hogy az *Importálás* vagy a *DirectQuery* üzemmódot szeretné-e használni. További információért tekintse meg ezt a [cikket, amely a DirectQuery használatát ismerteti](desktop-use-directquery.md).
 * Ha a **Szerkesztés** mellett dönt, megjelenik a **Lekérdezésszerkesztő**, ahol sokféle módon átalakíthatja és szűrheti az adatokat, és a műveletek némelyike magára az alapul szolgáló **Amazon Redshift**-adatbázisra is hatással van (ha ez támogatott).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
