@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/24/2020
 ms.openlocfilehash: f4d47347c98d19afdfbf07615842bfb4649dc1b9
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379260"
 ---
 # <a name="power-bi-visuals-interactivity-utils"></a>Interaktivitási eszközök Power BI-vizualizációkhoz
@@ -203,7 +203,7 @@ A `SelectableDataPoint` már tartalmazza az alább ismertetett tulajdonságokat.
     }
     ```
 
-6. A kijelöléskezelő `showContextMenu` metódusának meghívásához adjon hozzá egy hasonló kezelőt a `contextmenu` eseményhez.
+6. A kijelöléskezelő `contextmenu` metódusának meghívásához adjon hozzá egy hasonló kezelőt a `showContextMenu` eseményhez.
 
     ```typescript
     protected bindContextMenu() {
@@ -285,7 +285,7 @@ A `SelectableDataPoint` már tartalmazza az alább ismertetett tulajdonságokat.
         // ...
       }
       ```
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Tudnivalók a kijelölések kezeléséről könyvjelzőváltáskor](bookmarks-support.md#visuals-with-selection)
 

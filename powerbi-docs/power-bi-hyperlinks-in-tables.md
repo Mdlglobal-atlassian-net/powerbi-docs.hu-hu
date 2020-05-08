@@ -11,10 +11,10 @@ ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 021aeafab4deb5afb39cd3986b3fb68b62b483f0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381261"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Hivatkozások (URL-címek) felvétele táblázatba vagy mátrixba
@@ -130,7 +130,7 @@ A Power BI táblázataihoz és mátrixaihoz úgy is hozzáadhatja a hivatkozáso
    
    ![Táblázat létrehozása a Power BI-ban az URL-cím mezővel](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 
 Az URL-címeknek a következőkkel kell kezdődniük:
 - http
@@ -141,14 +141,14 @@ Az URL-címeknek a következőkkel kell kezdődniük:
 - news
 - telnet
 
-KÉRDÉS: Használhatok hivatkozásként egyéni URL-t a táblázatokban és a mátrixokban?    
-VÁLASZ: Nem. Csak hivatkozás ikont lehet használni. Ha a hivatkozáshoz egyéni szöveget szeretne használni, és túl kevés URL van a listán, érdemes lehet szövegmezőt használni inkább.
+K: Használhatok hivatkozásként egyéni URL-t a táblázatokban és a mátrixokban?    
+V: Nem. Csak hivatkozás ikont lehet használni. Ha a hivatkozáshoz egyéni szöveget szeretne használni, és túl kevés URL van a listán, érdemes lehet szövegmezőt használni inkább.
 
 
-## <a name="next-steps"></a>Következő lépések
-[Vizualizációk a Power BI-jelentésekben](visuals/power-bi-report-visualizations.md)
+## <a name="next-steps"></a>További lépések
+[Vizualizációk a Power BI jelentéseiben](visuals/power-bi-report-visualizations.md)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
 ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379867"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Területi beállítások megadása a Power BI-ban a Power BI-vizualizációkhoz
@@ -45,7 +45,7 @@ this.locale = options.host.locale;
 
 Támogatott területi beállítások:
 
-Területi beállítás sztringje | Nyelv
+Területi beállítás sztringje | Language
 --------------|----------------------
 ar-SA | العربية (arab)
 bg-BG | български (bolgár)
@@ -215,6 +215,6 @@ let legend: string = this.localization.getDisplayName("Role_Legend");
 
 Az en-US esetében a „Legend”, a ru-RU esetében pedig az „Обозначения” érték fog megjelenni.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Tanulja meg, hogyan hozhat létre honosított formázásokat a formázási eszközökkel](utils-formatting.md)

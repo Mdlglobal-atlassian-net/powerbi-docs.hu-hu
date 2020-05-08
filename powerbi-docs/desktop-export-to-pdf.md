@@ -10,10 +10,10 @@ ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 6e468ac429c26f3b1880501914816ac60f8b7858
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378731"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Jelentések exportálása PDF-be a Power BI Desktopból
@@ -40,7 +40,7 @@ Mivel a háttérképek nem lesznek a PDF-be exportálva, külön figyelmet kell 
 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A **Power BI Desktop** sokféle érdekes vizuális elemet és funkciót tartalmaz. További információt az alábbi forrásanyagokban talál:
 
 * [Vizuális elemek használata Power BI-jelentések továbbfejlesztéséhez](desktop-visual-elements-for-reports.md)

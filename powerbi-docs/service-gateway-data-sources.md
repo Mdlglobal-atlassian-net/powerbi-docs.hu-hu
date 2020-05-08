@@ -11,10 +11,10 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207459"
 ---
 # <a name="manage-data-sources"></a>Adatforrások kezelése
@@ -25,7 +25,7 @@ A Power BI sokféle [helyszíni adatforrást](power-bi-data-sources.md) támogat
 
 Az adatforrás-kezelési műveletek többsége API-k használatával is végrehajtható. További információ: [REST API-k (Átjárók)](/rest/api/power-bi/gateways).
 
-## <a name="add-a-data-source"></a>Adatforrások felvétele
+## <a name="add-a-data-source"></a>Adatforrás hozzáadása
 
 1. Válassza a Power BI szolgáltatás jobb felső sarkában lévő fogaskerék ikont ![Beállítások fogaskerék ikonja](media/service-gateway-data-sources/icon-gear.png) > **Átjárók kezelése**.
 
@@ -132,13 +132,13 @@ Amikor hozzáad egy adatforrást az átjáróhoz, meg kell adnia az adatforrás 
 
 Tudnivalók a helyszíni adatátjáró által támogatott adatforrásokról: [Power BI-adatforrások](power-bi-data-sources.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
-* [Az adatforrás kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)
+* [Adatforrások kezelése – Analysis Services](service-gateway-enterprise-manage-ssas.md)
 * [Az adatforrás kezelése – SAP HANA](service-gateway-enterprise-manage-sap.md)
 * [Adatforrások kezelése – SQL Server](service-gateway-enterprise-manage-sql.md)
 * [Adatforrások kezelése – Oracle](service-gateway-onprem-manage-oracle.md)
 * [Adatforrások kezelése – Importálás/ütemezett frissítés](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Útmutató adatátjáró üzembe helyezéséhez](service-gateway-deployment-guidance.md)
 
-További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).

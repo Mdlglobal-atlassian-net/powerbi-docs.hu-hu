@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
 ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79380417"
 ---
 # <a name="add-drill-down-support"></a>Lehatolási támogatás hozzáadása
@@ -150,7 +150,7 @@ export class Visual implements IVisual {
 }
 ```
 
-`button` létrehozásához frissítse a vizualizáció `update` metódusát:
+`update` létrehozásához frissítse a vizualizáció `button` metódusát:
 
 ```typescript
 export class Visual implements IVisual {
@@ -315,7 +315,7 @@ Az utolsó lépésben látnia kell a kijelölésekkel és a helyi menüvel rende
 
 Mintaadatok előkészítése a vizualizáció mátrixos adatnézet-leképezéssel való teszteléséhez:
 
-|   Row1   |   2\. sor   |   3\. sor   |   1\. oszlop   |   2\. oszlop   |   3\. oszlop   |   Értékek   |
+|   1\. sor   |   2\. sor   |   3\. sor   |   1\. oszlop   |   2\. oszlop   |   3\. oszlop   |   Értékek   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
@@ -616,6 +616,6 @@ Az utolsó lépésben látnia kell a helyi menüvel rendelkező vizualizációt:
 
 ![A vizualizáció részletezési támogatással](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 További információ: [A Power BI-vizualizációkban végzett adatnézet-leképezések ismertetése](dataview-mappings.md).

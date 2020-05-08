@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
 ms.openlocfilehash: 43fcc0873006cfd42c97a287c7bff66f5995bfef
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79380949"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Az Elemzés panel Power BI-vizualizációkban
@@ -25,7 +25,7 @@ Ez a cikk azt ismerteti, hogy hogyan jeleníthetik meg és kezelhetik tulajdons�
 
 ## <a name="manage-the-analytics-pane"></a>Az Elemzés panel kezelése
 
-Az **Elemzés** panel kezelése a tulajdonságok [**Formátum** panelen](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options) végzett kezeléséhez hasonlóan, a vizualizáció *capabilities.json* fájljában definiált objektummal végezhető.
+Az [Elemzés**panel kezelése a tulajdonságok**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options)Formátum **panelen** végzett kezeléséhez hasonlóan, a vizualizáció *capabilities.json* fájljában definiált objektummal végezhető.
 
 Az **Elemzés** panel esetében az eltérések a következők:
 

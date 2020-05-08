@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378593"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Nagy sűrűségű sorok mintavétele a Power BI-ban
@@ -91,7 +91,7 @@ Az új, nagy sűrűségű mintavételi algoritmus a Power BI fontos fejlesztése
 * Az új algoritmus nem támogatja az **Adatot nem tartalmazó elemek megjelenítése** beállítást.
 * Az új algoritmus nem támogatott, ha élő kapcsolattal csatlakozik egy SQL Server Analysis Servicesben (2016-os vagy régebbi verzióban) üzemeltetett modellhez. A **Power BI-ban** és az Azure Analysis Servicesben üzemeltetett modellek azonban támogatják.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A pontdiagramokban használt nagy sűrűségű mintavételről a következő cikkben talál további információt.
 
 * [Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban](desktop-high-density-scatter-charts.md)

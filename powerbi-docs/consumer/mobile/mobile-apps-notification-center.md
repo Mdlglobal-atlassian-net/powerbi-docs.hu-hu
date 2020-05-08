@@ -9,21 +9,21 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 23291659a12bb08becf0d9a4f57a41a93eadbc5e
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435582"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Értesítések fogadása a Power BI-mobilalkalmazásokban
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-apps-notification-center/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-notification-center/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-notification-center/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-notification-center/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-notification-center/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |Windows 10-eszközök |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |Windows 10 rendszerű eszközök |
 
 >[!NOTE]
->A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+>A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További tudnivalók](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Az Értesítések szolgáltatás a Power BI használatával kapcsolatos információt közvetlenül Önnek küldi a Power BI szolgáltatásban vagy a mobileszközén. Az Értesítések megnyitásakor megjelennek a [beállított értesítések](mobile-set-data-alerts-in-the-mobile-apps.md) alapján az egymást követő üzenetek a hírcsatornában, az Önnel megosztott új irányítópultok, a csoport munkaterületének változásai, a Power BI-eseményekre és -értekezletekre vonatkozó információk és egyebek.
 
@@ -71,9 +71,9 @@ Megváltoztathatja a Power BI értesítési módját.
 
     ![Értesítések kiválasztása](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Adatokkal kapcsolatos értesítések a Power BI szolgáltatásban](../../service-set-data-alerts.md)
-* [Adatértesítések beállítása az iPhone-alkalmazásban (iOS rendszerhez készült Power BI)](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Adatértesítések beállítása a Windows 10-hez készült Power BI mobilalkalmazásban](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Adatriasztások beállítása az iPhone-alkalmazásban (a Power BI for iOS-ben)](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Adatriasztások beállítása a Windows 10-hez készült Power BI mobilalkalmazásban](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [A Power BI-alkalmazások legújabb verziójának letöltése](https://powerbi.microsoft.com/mobile/) mobileszközökhöz
 

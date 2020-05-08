@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
 ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79376753"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>A munka megosztásának módjai a Power BI-ban
@@ -64,7 +64,7 @@ Az alkalmazások a Power BI szolgáltatásban ([https://app.powerbi.com](https:/
 
 Miután a munkatársai telepítik az alkalmazást, megtekinthetik azt a böngészőjükben vagy egy mobileszközön.
 
-Ahhoz, hogy a felhasználók megtekinthessék az alkalmazást, vagy Power BI Pro licenccel kell rendelkezniük nekik is, vagy pedig Power BI Premium-kapacitásban kell elhelyeznie az alkalmazást. Részletek: [Mi a Power BI Premium?](service-premium-what-is.md).
+Ahhoz, hogy a felhasználók megtekinthessék az alkalmazást, vagy Power BI Pro licenccel kell rendelkezniük nekik is, vagy pedig Power BI Premium-kapacitásban kell elhelyeznie az alkalmazást. További részletekért olvassa el [A Power BI Premium bemutatása](service-premium-what-is.md) cikket.
 
 Alkalmazásokat munkahelyen kívüli személyeknek is közzétehet. Az ilyen személyek megtekinthetik az alkalmazás tartalmát, műveleteket végezhetnek vele, de megosztani nem tudják azt másokkal. Létrehozhat *sablonalkalmazásokat*, amelyeket bármelyik Power BI-ügyfélnek üzembe helyezhet.
 
@@ -106,7 +106,7 @@ Power BI-jelentések és többoldalas Power BI-jelentések Microsoft Teamsbe ág
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Nyomtatás vagy mentés PDF-ként vagy más statikus fájlként
 
-A Power BI szolgáltatásban nyomtathat vagy menthet PDF-fájlként (illetve más formátumú statikus fájlként) egy teljes irányítópultot, egy irányítópult-csempét, egy jelentéslapot vagy egy vizualizációt. A jelentéseket csak laponként tudja nyomtatni – nem nyomtathatja a teljes jelentést egyszerre. Többet is megtudhat a [nyomtatásról és a statikus fájlba mentésről](consumer/end-user-print.md).
+A Power BI szolgáltatásban nyomtathat vagy menthet PDF-fájlként (illetve más formátumú statikus fájlként) egy teljes irányítópultot, egy irányítópult-csempét, egy jelentéslapot vagy egy vizualizációt. A jelentésekből alkalmanként csak egy oldal nyomatható ki, a teljes jelentést nem lehet egyszerre kinyomtatni. Többet is megtudhat a [nyomtatásról és a statikus fájlba mentésről](consumer/end-user-print.md).
 
 ## <a name="embed-reports-in-secure-portals-or-public-web-sites"></a>Jelentések beágyazása biztonságos portálokon vagy nyilvános webhelyeken
 
@@ -132,7 +132,7 @@ A **Közzététel a weben** lehetőséggel megoszthatja a Power BI-jelentéseit 
 A *sablonalkalmazások* nyilvános, gyakran a Microsoft AppSource-on keresztüli megosztáshoz lettek kialakítva. Ha létrehozott egy alkalmazást kevés kódolással vagy anélkül, azt üzembe helyezheti bármely Power BI-ügyfél részére. Az ügyfelek saját adataikhoz csatlakozhatnak, és saját fiókot példányosíthatnak. További információ a [Power BI sablonalkalmazásairól](service-template-apps-overview.md).
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Irányítópultok megosztása munkatársakkal és másokkal](service-share-dashboards.md)
 * [Alkalmazás létrehozása és közzététele a Power BI-ban](service-create-distribute-apps.md)
@@ -140,4 +140,4 @@ A *sablonalkalmazások* nyilvános, gyakran a Microsoft AppSource-on keresztüli
 
 Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

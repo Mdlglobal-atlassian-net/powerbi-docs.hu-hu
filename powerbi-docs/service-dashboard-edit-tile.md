@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207597"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Irányítópult-csempék szerkesztése és eltávolítása
@@ -117,7 +117,7 @@ Alapértelmezés szerint egy csempe kiválasztásával megnyílik az jelentés, 
 
     ![Funkció párbeszédpanel](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
-3. Kattintson az **Alkalmaz** elemre.
+3. Kattintson az **Alkalmaz** gombra.
 
 4. Az új cím megjelenik a csempén.  Amikor pedig kiválasztja a csempét, a Power BI megnyitja az Emberi erőforrások irányítópultot. 
 
@@ -130,7 +130,7 @@ Alapértelmezés szerint egy csempe kiválasztásával megnyílik az jelentés, 
 2. Döntse el, hogy egy meglévő vagy egy új irányítópulton rögzíti-e a csempe másolatát. 
    
    ![Rögzítés az irányítópulton párbeszédablak](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
-3. Válassza a **Rögzítés** lehetőséget.
+3. Kattintson a **Rögzítés** elemre.
 
 <a name="delete"></a>
 
@@ -140,12 +140,12 @@ Alapértelmezés szerint egy csempe kiválasztásával megnyílik az jelentés, 
 2. A csempe törlésével nem törli az alapul szolgáló vizualizációt. Nyissa meg az alapul szolgáló jelentést az „Amount” csempe kiválasztásával. Nyissa meg a jelentés utolsó oldalát, és látni fogja, hogy az eredeti vizualizáció nem lett törölve a jelentésből. 
 
 - - -
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Irányítópult-csempék a Power BI-ban](consumer/end-user-tiles.md)
 
-[A Power BI-irányítópultok](consumer/end-user-dashboards.md)
+[Irányítópultok a Power BI-ban](consumer/end-user-dashboards.md)
 
 [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
