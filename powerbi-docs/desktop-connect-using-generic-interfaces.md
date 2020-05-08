@@ -10,15 +10,15 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: eaf2e7fed056653f2ee44e25b493e6b5e170a8dd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761456"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Kapcsolódás az adatokhoz a Power BI Desktop általános interfészeinek használatával 
 
-Számos különböző adatforráshoz csatlakozhat a **Power BI Desktopban** beépített adatösszekötők használatával, kezdve az **Access-adatbázisoktól** a **Zendesk-erőforrásokig**, ahogy ez az **Adatok lekérése** ablakban is látható. Továbbá a **Power BI Desktop** beépített általános illesztőinek használatával (pl.: **ODBC** vagy **REST API-k**) számos *egyéb* adatforráshoz is csatlakozhat, amelyek tovább bővítik kapcsolati lehetőségeit.
+Számos különböző adatforráshoz csatlakozhat a **Power BI Desktopban** beépített adatösszekötők használatával, kezdve az **Access-adatbázisoktól** a **Zendesk-erőforrásokig**, ahogy ez az **Adatok lekérése** ablakban is látható. Továbbá a *Power BI Desktop* beépített általános illesztőinek használatával (pl.: **ODBC** vagy **REST API-k**) számos **egyéb** adatforráshoz is csatlakozhat, amelyek tovább bővítik kapcsolati lehetőségeit.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
@@ -106,7 +106,7 @@ Az alábbi lista néhány példát ismertet azon adatforrások közül, amelyekh
 | R-szkript |SPSS-fájlok |[CRAN-útmutatás az R-szkriptekhez](https://cran.r-project.org/doc/manuals/R-data.html) |
 | R-szkript |Statisztikai R-fájlok |[CRAN-útmutatás az R-szkriptekhez](https://cran.r-project.org/doc/manuals/R-data.html) |
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A **Power BI Desktop** használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

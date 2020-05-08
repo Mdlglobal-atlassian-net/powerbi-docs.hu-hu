@@ -10,10 +10,10 @@ ms.date: 12/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: aa05ffa7ba07ea1daf162f8ebb2baa3d18f64b29
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75256356"
 ---
 # <a name="migrate-your-subscription-to-the-new-go-local-german-regions"></a>Előfizetés migrálása az új „Go local” német régiókba
@@ -24,6 +24,6 @@ Ha a szervezete részt vesz ebben, a migrálás várhatóan 2020-ban kezdődik m
 
 Az előfizetés migrálása után csökkenteni fogjuk a díjakat, hogy azok megfeleljenek a nyilvános felhő díjszabásának. A közvetlen ügyfelek új előfizetést fognak látni egy új, éves megújítási dátummal. Ennek a módszernek a részeként a következő szolgáltatások lesznek áttelepítve:
 
-* Power BI
+* a Power BI segítségével
 
 Ezt a cikket folyamatosan frissíteni fogjuk az elkövetkező hónapokban, és részletes információkkal bővítjük az előfeltételekkel, a lépésenkénti eljárásokkal és az áttelepítés szervezeten belüli hatásával kapcsolatban.

@@ -10,10 +10,10 @@ ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76710028"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Kapcsolatok létrehozása és kezelése a Power BI Desktopban
@@ -197,7 +197,7 @@ A Power BI Desktop normál esetben automatikusan meg tudja határozni a legmegfe
 
 A **VállalatiProjektPrioritás** táblázat az összes vállalati projektet és azok prioritását tartalmazza. A **ProjektKöltségvetés** táblázat pedig azon projektek listája, amelyekhez jóvá lett hagyva a költségvetés.
 
-**VállalatiProjektPrioritás**
+**VállalatiProjektPrioritás** 
 
 | **ProjektNév** | **Prioritás** |
 | --- | --- |

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: f689ba79f9cce7d6ee815e0712491e7d00647fe8
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82584766"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841664"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -79,10 +79,11 @@ A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben.
 A bináris adattípus használatával bármely más adattípus bináris formátumban ábrázolható. A Lekérdezésszerkesztőben bináris fájlok betöltésekor használhatja, ha más adattípusra konvertálja, mielőtt betöltené a Power BI-modellbe. A Power BI-adatmodellben a bináris oszlopok nem támogatottak. Az Adatnézet és a Jelentésnézet menüjében a visszamenőleges kompatibilitás miatt szerepelnek, de ha bináris oszlopokat próbál a Power BI-modellbe betölteni, hibák keletkezhetnek.
 
 
+
+
 > [!NOTE]
 >  Ha egy lekérdezés lépéseinek kimenetében bináris oszlop szerepel, az adatok átjárón keresztüli frissítésére tett kísérlet hibát okozhat. A lekérdezések utolsó lépéseként érdemes minden bináris oszlopot explicit módon eltávolítani.    
 > 
->
 
 ### <a name="table-data-type"></a>Tábla adattípus
 A DAX a tábla adattípust sok függvényben használja, például összesítésekben és időintelligencia-számításokban. Egyes függvényekben táblára mutató hivatkozást kell megadni, más függvények pedig táblákat adnak vissza, amelyek más függvényeknek átadhatók. Egyes táblát váró függvényeknek átadhatók függvényt visszaadó kifejezések, míg más függvényeknek csak alaptáblák adhatók át. Az egyes függvények követelményeivel kapcsolatos információkért lásd a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/library/ee634396.aspx).

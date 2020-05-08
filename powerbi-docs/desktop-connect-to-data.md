@@ -1,6 +1,6 @@
 ---
-title: Csatlakozás adatokhoz a Power BI Desktopban
-description: Csatlakozás adatokhoz a Power BI Desktopban
+title: Kapcsolódás adatokhoz a Power BI Desktopban
+description: Kapcsolódás adatokhoz a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -11,10 +11,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76539189"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Kapcsolódás adatforrásokhoz a Power BI Desktop alkalmazásban
@@ -49,7 +49,7 @@ A táblázat betöltéséhez és a Power Query-szerkesztő megnyitásához vála
 
 ![A Power Query-szerkesztő a lekérdezési beállításokkal](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
-A pontszámok inkább szövegek, mint számok, nekünk pedig számokra van szükségünk. Semmi gond. Kattintson a jobb gombbal az oszlop fejlécére, és válassza a **Típus módosítása** >  **Egész szám** lehetőséget a módosításhoz. Ha egynél több oszlopot szeretne kijelölni, először jelöljön ki egy oszlopot, majd a Shift billentyűt lenyomva tartva jelölje ki a szomszédos oszlopokat, és kattintson a jobb gombbal az összes kijelölt oszlop módosításához. Nem egymás melletti oszlopokat a Ctrl billentyű segítségével jelölhet ki.
+A pontszámok inkább szövegek, mint számok, nekünk pedig számokra van szükségünk. Nem gond. Kattintson a jobb gombbal az oszlop fejlécére, és válassza a **Típus módosítása** >  **Egész szám** lehetőséget a módosításhoz. Ha egynél több oszlopot szeretne kijelölni, először jelöljön ki egy oszlopot, majd a Shift billentyűt lenyomva tartva jelölje ki a szomszédos oszlopokat, és kattintson a jobb gombbal az összes kijelölt oszlop módosításához. Nem egymás melletti oszlopokat a Ctrl billentyű segítségével jelölhet ki.
 
 ![Adattípus egész számmá változtatása](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
@@ -67,7 +67,7 @@ Ha betöltődött az adatmodell, a Power BI Desktop **Jelentés** nézetében me
 
 Ez a modell persze egyszerű, egyetlen adatkapcsolata van. A legtöbb Power BI Desktop-jelentés különböző, az igényei szerint alakított adatforrásokhoz csatlakozik, olyan kapcsolatokkal, amelyek részletes adatmodellt hoznak létre.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
@@ -76,7 +76,7 @@ A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza.
 * [Adatok formázása és összevonása a Power BI Desktopban](desktop-shape-and-combine-data.md)
 * [Gyakori lekérdezési feladatok végrehajtása a Power BI Desktopban](desktop-common-query-tasks.md)   
 
-Szeretne visszajelzést küldeni? Remek! Használja a Power BI Desktop **Ötlet beküldése** menüelemét vagy keresse fel a [Közösségi visszajelzés](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback) oldalt. Kíváncsian várjuk a véleményét!
+Szeretne visszajelzést küldeni? Kitűnő! Használja a Power BI Desktop **Ötlet beküldése** menüelemét vagy keresse fel a [Közösségi visszajelzés](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback) oldalt. Kíváncsian várjuk a véleményét!
 
 ![Ötlet beküldése](media/desktop-connect-to-data/sendfeedback.png)
 

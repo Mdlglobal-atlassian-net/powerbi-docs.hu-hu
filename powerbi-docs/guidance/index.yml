@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: eecccb15eb48e922fd6b29e703a2bc4f298caa6e
-  ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
+  ms.openlocfilehash: 2aba7eb9ff9fbd6941c84a9f3db10758724cdb0c
+  ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 04/16/2020
-  ms.locfileid: "81525353"
+  ms.lasthandoff: 05/05/2020
+  ms.locfileid: "82841579"
 landingContent:
 - title: A Power BI útmutatója
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
     - text: Optimalizálási útmutató a Power BI-hoz
       url: power-bi-optimization.md
     - text: Tanulmányok áttekintése
-      url: ../whitepapers.md
+      url: whitepapers.md
 - title: Adatok átalakítása
   linkLists:
   - linkListType: concept
@@ -37,7 +37,7 @@ landingContent:
       url: power-query-folding.md
     - text: A Power Query háttérbeli frissítésének letiltása
       url: power-query-background-refresh.md
-    - text: Power Query-lekérdezésekre való hivatkozás
+    - text: Power Query lekérdezésekre való hivatkozás
       url: power-query-referenced-queries.md
     - text: Ajánlott eljárások adatfolyamokhoz
       url: ../service-dataflows-best-practices.md

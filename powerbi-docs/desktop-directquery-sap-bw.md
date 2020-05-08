@@ -10,10 +10,10 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761180"
 ---
 # <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Közvetlen csatlakozás az SAP Business Warehouse-hoz a DirectQueryvel a Power BI-ban
@@ -41,14 +41,14 @@ A DirectQuery SAP BW-vel való használatakor a Power BI-ban a legfőbb további
 ## <a name="additional-visualization-restrictions"></a>További vizualizációs korlátozások
 A DirectQuery SAP BW-vel való használatakor a Power BI-ban a legfőbb további vizualizációs korlátozások a következők:
 
-* **Nincs oszlopösszesítés:** Nem módosítható a vizualizációs oszlopok összesítése, a beállítás mindig *Nincs összegzés*
+* **Nincs oszlopösszesítés:** Nem módosítható a vizualizációs oszlopok összesítése, a beállítás mindig *Nincs összegzés*.
 * **A mértékek szűrése le van tiltva:** Az SAP BW nyújtotta támogatásnak megfelelően a mértékek szűrése le van tiltva.
 * **Többszörös kiválasztás és belefoglalás/kihagyás:** A vizualizációkban több adatpont kiválasztása nem lehetséges, ha a pontok egynél több oszlop értékeit jelölik. Például egy országok szerinti eladásokat megjelenítő oszlopdiagram esetében, ha a kategória a jelmagyarázat része, nem lehet kiválasztani az (Amerikai Egyesült Államok, kerékpárok) vagy (Franciaország, ruhák) pontokat. Ugyanígy azt sem lehet beállítani, hogy az (Amerikai Egyesült Államok, kerékpárok) pont a kijelölése esetén ne jelenjen meg a vizualizációban. Mindkét korlátozás az SAP BW nyújtotta támogatást tükrözi.
 
 ## <a name="support-for-sap-bw-features"></a>SAP BW-funkciók támogatása
 A következő táblázat felsorolja az SAP BW összes olyan funkcióját, amelyek nem teljesen támogatottak, vagy másképp viselkednek a Power BI használatakor.   
 
-| Funkció | Leírás |
+| Funkció | Description (Leírás) |
 | --- | --- |
 | Helyi számítások |A BEx Query-lekérdezésekben megadott helyi számítások más számokat mutatnak a BEx Analyzer és hasonló eszközökkel való megjelenítéskor. Azonban a nyilvános MDX felületen az SAP által visszaadott számok ezt nem tükrözik. <br/> <br/> **Ennélfogva a Power BI-vizualizációkban látható számok nem feltétlenül egyeznek meg az SAP-eszközök vonatkozó vizualizációiban láthatókkal.**<br/> <br/>  Például egy olyan BEx-lekérdezésből származó adatkocka-lekérdezéshez való kapcsolódáskor, amelynél az összesítési beállítás Összevonás (pl.: futó összeg), a Power BI az alapszámokat adja vissza, a beállítás figyelembevétele nélkül.  Ezután az adatelemző nyilván alkalmazhat egy futóösszeg-számítást helyileg a Power BI-ban, de ha ezt nem teszi meg, oda kell figyelnie arra, hogy miként értelmezi a számokat. |
 | Összesítések |Bizonyos esetekben (főleg több pénznem használata esetén) az SAP nyilvános felülete által visszaadott összesített számok nem egyeznek az SAP-eszközök által mutatott számokkal. <br/> <br/> **Ennélfogva a Power BI-vizualizációkban látható számok nem feltétlenül egyeznek meg az SAP-eszközök vonatkozó vizualizációiban láthatókkal.** <br/> <br/> Például a BEx Analyzerben különböző pénznemek összegénél egy „*” jelenik meg, az SAP nyilvános felülete viszont visszaad egy összeget, és nem tájékoztat arról, hogy az ilyen összegnek nincs valós jelentése. Ezáltal a Power BI is megjeleníti a számot (ezzel összeadva a például dollárban, euróban és ausztrál dollárban értendő összegeket). |
@@ -74,7 +74,7 @@ A következő táblázat felsorolja az SAP BW összes olyan funkcióját, amelye
 | Jellemző struktúrák | Az alapul szolgáló SAP BW forrás minden Jellemző struktúrája a Power BI-ban megjelenített mértékek „robbanásához” vezet. Ha például a Sales (értékesítések) és a Costs (költségek) mérték van jelen, valamint egy olyan jellemző struktúra, amely a Budget (előirányzat) és az Actual (tényleges) elemeket tartalmazza, akkor négy mérték lesz közzétéve: Sales.Budget, Sales.Actual, Costs.Budget és Costs.Actual. |
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forrásanyagokat:
 
 * [A DirectQuery használata a Power BI-ban](desktop-directquery-about.md)

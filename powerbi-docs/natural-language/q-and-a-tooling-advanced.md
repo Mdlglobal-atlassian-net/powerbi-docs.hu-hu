@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 9499dd99d89619d096d86ac676c54ebb214c3a55
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958517"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841848"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>A Q&A nyelvi sémájának szerkesztése, és kifejezések hozzáadása a Power BI Desktopban 
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. Még hatékonyabb, amikor az adatai választ is adnak. Amikor kérdést tesz fel a Power BI Q&A szolgáltatásának, a rendszer igyekszik a legpontosabban megválaszolni azt. Da ha még jobb Q&A-interakciókat szeretne elérni, javíthat a válaszokon. Az egyik módszer a nyelvi séma szerkesztése. 

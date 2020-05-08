@@ -10,10 +10,10 @@ ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5fda121af151e787c444b928c320b7f33fe1405c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75757876"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Alapszintű területdiagram létrehozása és használata
@@ -41,7 +41,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 
 ## <a name="create-a-basic-area-chart"></a>Alapszintű területdiagram létrehozása
@@ -63,7 +63,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
    d.  A diagram havi bontásban való megjelenítéséhez kattintson a három pontra (...) a vizualizáció jobb felső sarkában, és válassza a **Rendezés hónapok szerint** lehetőséget. Ha módosítani szeretné a rendezési elvet, kattintson ismét a három pontra, majd válassza a **Növekvő sorrend** vagy a **Csökkenő sorrend** lehetőséget.
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
+A Szűrők panel használatáról a [Szűrő hozzáadása jelentéshez](../power-bi-report-add-filter.md) című cikk nyújt tájékoztatást.
 
 A diagram egy meghatározott területét a terület felső szegélyének kiválasztásával jelölheti ki.  Más típusú vizualizációktól eltérően az alapszintű területdiagram kiválasztásakor nem történik keresztszűrés ugyanannak a jelentésoldalnak a többi vizualizációjával (ha vannak ilyenek). A területdiagramokat magukat azonban a jelentésoldalon lévő többi vizualizáció képes keresztszűrni. 
 
@@ -76,10 +76,10 @@ A diagram egy meghatározott területét a terület felső szegélyének kivála
 További információt a [Vizualizációk interakciói a jelentésekben](../service-reports-visual-interactions.md) című témakörben talál
 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás   
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás   
 * [Jelentés nevének akadálymentesítése a fogyatékkal élők számára](../desktop-accessibility.md)
 * Az alapszintű területdiagramok az értékek összehasonlításához nem jól használhatóak, mivel a rétegzett területek kitakarják egymást. A Power BI átlátszósággal jelzi a területek fedését. Ez azonban csak két vagy három külön terület esetén működik. Ha háromnál több mérték trendjeit szeretné összehasonlítani, próbáljon inkább vonaldiagramokat alkalmazni. Ha háromnál több mérték mennyiségét szeretné összehasonlítani, próbáljon inkább faszerkezetes térképet alkalmazni.
 
 ## <a name="next-step"></a>Következő lépés
-[Power BI-jelentések](power-bi-visualization-card.md)  
+[Jelentések a Power BI-ban](power-bi-visualization-card.md)  
 

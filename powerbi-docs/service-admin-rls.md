@@ -10,12 +10,12 @@ ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 831c6f1d2cecfa51b64c8ff77f14ead9f644bcc7
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: 70f10620932708dd178b635f966a55f8139cde65
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81439986"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841158"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sorszintű biztonság (RLS) a Power BI-ban
 
@@ -51,7 +51,7 @@ Csak a Power BI Desktopon belül hozhat létre és módosíthat szerepköröket.
 
 ### <a name="add-members"></a>Tagok hozzáadása
 
-A felvenni kívánt felhasználót, biztonsági csoportot vagy terjesztési listát az e-mail-cím vagy a név megadásával adhatja hozzá a szerepkörhöz. Power BI-ban létrehozott Csoportokat nem vehet fel. [Szervezeten kívüli](whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners) tagokat is felvehet.
+A felvenni kívánt felhasználót, biztonsági csoportot vagy terjesztési listát az e-mail-cím vagy a név megadásával adhatja hozzá a szerepkörhöz. Power BI-ban létrehozott Csoportokat nem vehet fel. [Szervezeten kívüli](guidance/whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners) tagokat is felvehet.
 
 ![Tag felvétele](media/service-admin-rls/rls-add-member.png)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
 ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75219879"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Külső vállalat által Önnel megosztott Power BI-tartalom megtekintése
@@ -20,11 +20,11 @@ ms.locfileid: "75219879"
 A Power BI integrálható az Azure Active Directory vállalatközi felhasználásra szánt verziójával (Azure AD B2B), ami lehetővé teszi, hogy a Power BI-tartalmakat a vállalatán kívüli vendégfelhasználókkal is biztonságosan meg tudja osztani. A külső vendégfelhasználók a Power BI-mobilalkalmazás használatával férhetnek hozzá a velük megosztott Power BI-tartalomhoz. 
 
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |
 
 ## <a name="accessing-shared-content"></a>Hozzáférés megosztott tartalomhoz
 
