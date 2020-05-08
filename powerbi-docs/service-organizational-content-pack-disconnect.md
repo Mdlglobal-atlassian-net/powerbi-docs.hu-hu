@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881298"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Power BI szervezeti tartalomcsomaggal létesített kapcsolat eltávolítása
@@ -32,9 +32,9 @@ A tartalomcsomagok eltávolításához el kell távolítania azok adatkészleté
 
 Az adatkészlet eltávolítása minden hozzárendelt jelentést és irányítópultot is eltávolít. A tartalomcsomaggal létesített kapcsolat eltávolítása azonban nem törli a tartalomcsomagot a szervezeti AppSource-ból.  Az AppSource-ból később újra hozzáadhatja a tartalomcsomagot a munkaterülethez. Csak akkor [törölhet az AppSource-ból tartalomcsomagokat](service-organizational-content-pack-manage-update-delete.md), ha azokat Ön hozta létre.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Szervezeti tartalomcsomagok: bevezetés](service-organizational-content-pack-introduction.md) 
-* [Alkalmazások létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
+* [Alkalmazás létrehozása és terjesztése a Power BI-ban](service-create-distribute-apps.md) 
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)  
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

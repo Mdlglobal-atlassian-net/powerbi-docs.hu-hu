@@ -1,5 +1,5 @@
 ---
-title: Csatlakozás CSV-fájlokhoz a Power BI Desktopban
+title: Kapcsolódás CSV-fájlhoz a Power BI Desktopban
 description: Könnyedén csatlakozhat CSV-fájlokhoz, és használhatja a bennük tárolt adatokat a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c5d817af65529506a0ee515be5e287a629d6ad54
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878550"
 ---
-# <a name="connect-to-csv-files-in-power-bi-desktop"></a>Csatlakozás CSV-fájlokhoz a Power BI Desktopban
+# <a name="connect-to-csv-files-in-power-bi-desktop"></a>Kapcsolódás CSV-fájlhoz a Power BI Desktopban
 A Power BI Desktopban a vesszővel tagolt adatfájlhoz (*CSV*) való csatlakozás hasonlít az Excel-munkafüzethez való csatlakozáshoz. Mindkettő egyszerű, és ez a cikk lépésről lépésre bemutatja, hogyan csatlakozhat bármely CSV-fájlhoz, amelyhez hozzáfér.
 
 Először a Power BI Desktop **Kezdőlap** szalagján válassza a **Lekérdezés > CSV** lehetőséget.
@@ -48,7 +48,7 @@ Most már felhasználhatja a Power BI Desktopba bevitt adatokat vizualizációk 
 > CSV-fájl importálásakor a Power BI Desktop a Power Query-szerkesztőben az egyik lépésként létrehoz egy *columns=x* kifejezést (ahol az *x* a CSV-fájlban található oszlopok száma a kezdeti importáláskor). Ha később további oszlopokat ad hozzá, és az adatforrás frissítése be van állítva, a rendszer az oszlopok kezdeti *x* számát nem frissíti a további oszlopokkal. 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
