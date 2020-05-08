@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 63c18ae6452b36a72ab72eb6fdf0ce14a73011e9
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114126"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigáció Power BI-felhasználók számára: globális keresés
@@ -55,10 +55,10 @@ A rendezés a munkaterületeken is elérhető. Ebben a példában a tartalom **F
 Nem minden oszlop rendezhető. Vigye az egeret az oszlopok fejlécére, hogy lássa, melyeknél érhető el a rendezés.
 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 * Az adathalmazok esetén a **Rendezés szempontja** nem használható tulajdonos alapján.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Vizualizációk rendezése jelentésekben](end-user-change-sort.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

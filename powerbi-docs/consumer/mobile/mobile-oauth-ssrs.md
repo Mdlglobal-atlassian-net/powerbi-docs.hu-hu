@@ -9,10 +9,10 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114958"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>OAuth használata a Power BI jelentéskészítő kiszolgáló és az SSRS csatlakoztatásához
@@ -94,7 +94,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
 
    ![ADFS Alkalmazáscsoport-varázsló 01](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
 
-3. Válassza a **Tovább** lehetőséget.
+3. Válassza a **Tovább** gombot.
 
 4. Adjon **nevet** a hozzáadni kívánt alkalmazásnak. 
 
@@ -112,7 +112,7 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS Alkalmazáscsoport-varázsló 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
-7. Válassza a **Tovább** lehetőséget.
+7. Válassza a **Tovább** gombot.
 
 8. Adja meg a jelentéskészítő kiszolgáló URL-címét. Ez a külső URL-cím, amely eléri a webalkalmazás-proxyt. Ennek az alábbi formátumban kell lennie.
 
@@ -122,19 +122,19 @@ Az alkalmazáscsoportot az alábbi lépéseket követve hozhatja létre.
    *https://< jelentéskészítő kiszolgáló URL-címe>/*
 
    ![ADFS Alkalmazáscsoport-varázsló 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
-9. Válassza a **Tovább** lehetőséget.
+9. Válassza a **Tovább** gombot.
 
 10. Válassza a vállalata igényeinek megfelelő **hozzáférés-vezérlési szabályzatot**.
 
     ![ADFS Alkalmazáscsoport-varázsló 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
-11. Válassza a **Tovább** lehetőséget.
+11. Válassza a **Tovább** gombot.
 
-12. Kattintson a **Tovább** gombra.
+12. Válassza a **Tovább** gombot.
 
-13. Válassza a **Tovább** lehetőséget.
+13. Válassza a **Tovább** gombot.
 
-14. Kattintson a **Bezárás** gombra.
+14. Válassza a **Bezárás** gombot.
 
 Ha elkészült, az alkalmazáscsoport tulajdonságainak az alábbihoz hasonlóan kell megjelenniük.
 
@@ -185,7 +185,7 @@ A korlátozott delegálás konfigurálásához a következőket kell tennie.
 
     ![WAP-korlátozott 04](media/mobile-oauth-ssrs/wap-contrained-delegation4.png)
 
-11. Válassza az **OK** lehetőséget.
+11. Kattintson az **OK** gombra.
 
 ### <a name="add-wap-application"></a>WAP-alkalmazás hozzáadása
 
@@ -232,7 +232,7 @@ Amikor a **Csatlakozás** lehetőséget választja, a rendszer átirányítja az
 
 Miután a **Bejelentkezés** lehetőséget választja, megjelennek a Reporting Services-kiszolgáló elemei.
 
-## <a name="multi-factor-authentication"></a>Többtényezős hitelesítés
+## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
 
 A többtényezős hitelesítés engedélyezésével még biztonságosabbá teheti a környezetet. További információk: [Az AD FS 2016 és az Azure MFA konfigurálása](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
@@ -246,7 +246,7 @@ Beállíthatja a [Fiddlert](https://www.telerik.com/fiddler) proxynak a mobilesz
 
 Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat, hogy probléma van a WAP-alkalmazás vagy az ADFS-kiszolgáló tanúsítványával. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Egyszerű szolgáltatásnév (SPN) regisztrálása egy jelentéskészítő kiszolgálóhoz](https://msdn.microsoft.com/library/cc281382.aspx)  
 [Reporting Services konfigurációs fájl módosítása](https://msdn.microsoft.com/library/bb630448.aspx)  
@@ -255,4 +255,4 @@ Ha a bejelentkezés sikeresen működik a Fiddler használatakor, előfordulhat,
 [Webalkalmazás-proxy a Windows Server 2016-ban](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Alkalmazások közzététele AD FS előhitelesítéssel](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Az AD FS 2016 és az Azure MFA konfigurálása](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

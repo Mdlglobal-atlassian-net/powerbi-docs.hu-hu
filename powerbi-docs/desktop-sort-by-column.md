@@ -1,5 +1,5 @@
 ---
-title: Oszlop szerinti rendezés a Power BI Desktopban
+title: Rendezés oszlop szerint a Power BI Desktopban
 description: A Power BI-ban módosíthatja egy vizualizáció kinézetét, ha különböző adatmezők szerint rendezi.
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 01/30/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 0cbba86bd77debda9ab2162b8f9b190e1846b99c
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464709"
 ---
-# <a name="sort-by-column-in-power-bi-desktop"></a>Oszlop szerinti rendezés a Power BI Desktopban
+# <a name="sort-by-column-in-power-bi-desktop"></a>Rendezés oszlop szerint a Power BI Desktopban
 A Power BI Desktopban és a Power BI szolgáltatásban módosíthatja egy vizualizáció kinézetét, ha különböző adatmezők szerint rendezi. A vizualizáció rendezésének módosításával kiemelheti a közvetíteni kívánt információt, és biztosíthatja, hogy a vizualizáció tükrözze ezt a trendet (vagy hangsúlyt).
 
 Akár numerikus adatokat használ (például értékesítési adatokat), akár szöveges adatokat (például államneveket), rendezheti a vizualizációkat és az adatok megjelenését. A Power BI nagyon rugalmas rendezhetőséget és egyszerűen használható menüket biztosít. Egy vizualizáció rendezéséhez válassza annak **További műveletek** (...) menüjét, a **Rendezési szempont** lehetőséget, majd jelölje ki a mezőt, amely alapján rendezni szeretne.
@@ -106,7 +106,7 @@ When we go back to the menu and select **SalesQuantity** again, the visual defau
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
 --->
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 

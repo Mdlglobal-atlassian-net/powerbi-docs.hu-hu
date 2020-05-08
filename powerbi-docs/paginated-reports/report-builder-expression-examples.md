@@ -9,10 +9,10 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921148"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Példák kifejezésekre a Power BI Jelentéskészítőben
@@ -37,7 +37,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
 ## <a name="functions"></a>Függvények  
  Sok jelentésbeli kifejezés tartalmaz függvényeket. Ezekkel a függvényekkel adatokat formázhat, logikát valósíthat meg és a jelentés metaadataihoz is hozzáférhet. Írhat kifejezéseket, amelyek a Microsoft Visual Basic futtatókörnyezeti kódtárából és az `xref:System.Convert` és `xref:System.Math` névtérből származó függvényeket használnak. Az egyéni kódban elhelyezheti függvények hivatkozásait. A Microsoft .NET-keretrendszerből is használhat olyan osztályokat, mint az `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Visual Basic-függvények  
+##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Visual Basic-függvények  
  Visual Basic-függvényekkel kezelheti az adatokat, amelyek megjelennek a szövegdobozokban, vagy paraméterekhez, tulajdonságokhoz vagy a jelentés más területeihez lesznek használva. Ez a szakasz néhány ilyen függvény bemutatására kínál példákat. További információt [A Visual Basic futtatókörnyezeti kódtár tagjai](https://go.microsoft.com/fwlink/?LinkId=198941) című cikkben talál az MSDN webhelyén.  
   
  A .NET-keretrendszer számos egyéni formátumbeállítást kínál például adott dátumformátumokhoz. További információt a [Típusok formázása](/dotnet/standard/base-types/formatting-types) című cikkben találhat.  
@@ -56,7 +56,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Dátumfüggvények  
+###  <a name="date-functions"></a><a name="DateFunctions"></a> Dátumfüggvények  
   
 -   A **Today** függvény az aktuális dátumot adja meg. Ez a kifejezés felhasználható egy szövegdobozban a jelentés keltének megjelenítésére, vagy egy paraméterben az adatok aktuális dátum szerinti szűrésére.  
   
@@ -161,7 +161,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
 |Egy évvel ezelőtt|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |Két évvel ezelőtt|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> Sztringfüggvények  
+###  <a name="string-functions"></a><a name="StringFunctions"></a> Sztringfüggvények  
   
 -   Több mezőt kombinálhat összefűző operátorok és Visual Basic-konstansok használatával. Az alábbi kifejezés két mezőt ad vissza egy szövegdoboz két külön sorában:  
   
@@ -227,7 +227,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Konverziós függvények  
+###  <a name="conversion-functions"></a><a name="ConversionFunctions"></a> Konverziós függvények  
  Visual Basic-függvények használatával egy mezőt egy adattípusról egy másikra konvertálhat át. A konverziós függvények használatával egy mező alapértelmezett adattípusa átkonvertálható a számításokhoz vagy szöveg kombinálásához szükséges típusra.  
   
 -   Az alábbi kifejezés a konstans 500 értéket konvertálja át tizedestört típusúra, hogy egy szűrőkifejezésben összehasonlítható legyen a Value mező Transact-SQL pénznem adattípusával.  
@@ -242,7 +242,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Döntési függvények  
+###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Döntési függvények  
   
 -   Az **Iif** függvény két érték egyikét adja vissza attól függően, hogy a kifejezés igaz vagy sem. Az alábbi kifejezés az **Iif** függvény használatával a **True** logikai értéket adja vissza, ha a `LineTotal` érték 100-nál nagyobb. Ellenkező esetben a **False** értéket adja vissza:  
   
@@ -297,10 +297,10 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
   
     ```  
   
-##  <a name="ReportFunctions"></a> Jelentésfüggvények  
+##  <a name="report-functions"></a><a name="ReportFunctions"></a> Jelentésfüggvények  
  Egy kifejezésben további jelentésfunkciókra is hivatkozhat, amelyek a jelentésbeli adatokat manipulálják. Ez a szakasz két ilyen függvényre mutat be példát. 
   
-###  <a name="Sum"></a> Sum  
+###  <a name="sum"></a><a name="Sum"></a> Sum  
   
 -   A **Sum** függvénnyel egy csoport vagy adatterület értékei összegezhetők. Ez a függvény jól használható egy csoport fejlécében vagy láblécében. Az alábbi kifejezés az Order csoport vagy adatterület adatainak összegét jeleníti meg:  
   
@@ -314,7 +314,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =Sum(IIF(Fields!State.Value = "Finished", 1, 0))  
     ```  
   
-###  <a name="RowNumber"></a> RowNumber  
+###  <a name="rownumber"></a><a name="RowNumber"></a> RowNumber  
   
 -   A **RowNumber** függvény egy adatterületen lévő szövegdobozban használva a sorok számát jeleníti meg annak a szövegdoboznak az összes példányához, amelyben a kifejezés megjelenik. Ez a függvény felhasználható egy táblázat sorainak számozására. Olyan összetettebb feladatok is megoldhatók vele, mint oldaltörések beszúrása a sorok száma alapján. További információt ennek a témakörnek az [Oldaltörések](#PageBreaks) című szakaszában talál.  
   
@@ -324,10 +324,10 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> A jelentésadatok megjelenése  
+##  <a name="appearance-of-report-data"></a><a name="AppearanceofReportData"></a> A jelentésadatok megjelenése  
  Kifejezésekkel befolyásolható az adatok jelentésbeli megjelenése. Megjelenítheti például az értékeket egy szövegdobozon belül két mezőben, megjeleníthet a jelentésről szóló információkat, vagy befolyásolhatja, hogyan legyenek beszúrva az oldaltörések a jelentésbe.  
   
-###  <a name="PageHeadersandFooters"></a> Oldalfejlécek és -láblécek  
+###  <a name="page-headers-and-footers"></a><a name="PageHeadersandFooters"></a> Oldalfejlécek és -láblécek  
  Jelentés tervezésekor érdemes lehet a jelentés nevét és az oldal számát feltüntetni a jelentés láblécében. Erre használhatja a következő kifejezéseket:  
   
 -   Az alábbi kifejezés a jelentés nevét és futtatásának időpontját adja meg. Elhelyezhető egy szövegdobozban a jelentés láblécében vagy a jelentés törzsében. Az idő a .NET-keretrendszer rövid dátumhoz való formátumsztringjével van formázva:  
@@ -367,7 +367,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
 > [!NOTE]  
 >  Oldalfejlécben vagy -láblécben kifejezésenként csak egy jelentéselemre hivatkozhat. Az oldalfejlécekben és -láblécekben lévő kifejezésekben hivatkozhat a szövegdoboz nevére is, de nem magára a szövegdobozban lévő adatkifejezésre.  
   
-###  <a name="PageBreaks"></a> Oldaltörések  
+###  <a name="page-breaks"></a><a name="PageBreaks"></a> Oldaltörések  
  Egyes jelentésekben érdemes lehet adott számú sor után oldaltörést elhelyezni a csoportok vagy jelentéselemek utániak helyett vagy azok mellett. Ehhez hozzon létre egy csoportot, amely a kívánt csoportokat vagy részletes rekordokat tartalmazza, adjon hozzá oldaltörést a csoporthoz, majd adjon hozzá csoportkifejezést, amely adott számú sort csoportosít.  
   
 -   Az alábbi kifejezés egy csoportkifejezésben elhelyezve minden 25 sorból álló szakaszhoz sorszámot rendel. Ha a csoporthoz oldaltörés van megadva, a kifejezés 25 soronkénti oldaltörést eredményez.  
@@ -382,10 +382,10 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-##  <a name="Properties"></a> Tulajdonságok  
+##  <a name="properties"></a><a name="Properties"></a> Tulajdonságok  
  Kifejezések nem csak adatok szövegdobozokban való megjelenítéséhez használhatók. Az is módosítható velük, ahogyan a tulajdonságok érvényesülnek a jelentéselemeken. Megváltoztathatók egy jelentéselem stílusinformációi, és megváltoztatható a láthatósága is.  
   
-###  <a name="Formatting"></a> Formázás  
+###  <a name="formatting"></a><a name="Formatting"></a> Formázás  
   
 -   Az alábbi kifejezés egy szövegdoboz Szín tulajdonságában használva a `Profit` változó értékétől függően módosítja a szöveg színét:  
   
@@ -415,7 +415,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
 ### <a name="chart-colors"></a>Diagramszínek  
  Alakzatdiagram színeinek megadásához egyéni kóddal szabályozhatja, hogy a színek milyen sorrendben legyenek leképezve az adatpontok értékeire. Így egyszerűbb egységes színeket megadni az ugyanazokra a kategóriacsoportokra épülő diagramokhoz. 
   
-###  <a name="Visibility"></a> Láthatóság  
+###  <a name="visibility"></a><a name="Visibility"></a> Láthatóság  
  Egy jelentés elemei megjeleníthetők és elrejthetők a jelentéselem láthatósági tulajdonságaival. Egy adatterületen, például táblázatban kezdetben egy kifejezés értéke alapján elrejtheti a részletezősorokat.  
   
 -   Az alábbi kifejezés egy csoport részletezősorainak kezdeti láthatóságához használva minden olyan értékesítés részletezősorát megmutatja, amely meghaladja a `PctQuota` mező értékének 90%-át:  
@@ -436,7 +436,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =IIF(Fields!Column_1.IsMissing, true, false)  
     ```  
   
-###  <a name="Hyperlinks"></a> URL-címek  
+###  <a name="urls"></a><a name="Hyperlinks"></a> URL-címek  
  URL-címeket szabhat testre a jelentésbeli adatok használatával, és feltételesen szabályozhatja URL-címek műveletként való felvételét egy szövegdobozba.  
   
 -   Az alábbi kifejezés szövegdobozbeli műveletként használva testreszabott URL-címet generál, amely az adathalmaz `EmployeeID` mezőjét adja meg az URL-paraméterként.  
@@ -451,10 +451,10 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Jelentésadatok  
+##  <a name="report-data"></a><a name="ReportData"></a> Jelentésadatok  
  A kifejezések a jelentésben használt adatok manipulálására is használhatók. Hivatkozhat paraméterekre és más jelentésbeli információkra. Akár a jelentés adatainak lekérésre használt lekérdezést is módosíthatja.  
   
-###  <a name="Parameters"></a> Paraméterek  
+###  <a name="parameters"></a><a name="Parameters"></a> Paraméterek  
  Kifejezéseket egy paraméterben is használhat, hogy megváltoztassa a paraméter alapértelmezett értékét. Használhat egy paramétert például arra, hogy az adatokat egy meghatározott felhasználóra szűrje a jelentés futtatásához használt felhasználói azonosító alapján.  
   
 -   Az alábbi kifejezés egy paraméter alapértelmezett értékeként használva begyűjti a jelentést futtató személy felhasználói azonosítóját:  
@@ -475,7 +475,7 @@ Az egyszerű és összetett kifejezésekről, a kifejezések felhasználási leh
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Egyéni kód  
+##  <a name="custom-code"></a><a name="CustomCode"></a> Egyéni kód  
  Egyéni kód jelentésekbe ágyazva is használható. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Csoportváltozók használata egyéni összesítéshez  

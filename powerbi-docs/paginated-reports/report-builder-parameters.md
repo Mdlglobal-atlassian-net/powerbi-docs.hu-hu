@@ -1,6 +1,6 @@
 ---
 title: Jelentésparaméterek a Power BI Jelentéskészítőben
-description: Ez a témakör sok más mellett a Power BI Jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti.
+description: Ez a témakör sok más mellett a Power BI Report Builder jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -10,17 +10,17 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
 ms.openlocfilehash: 823f2ea621d16eb911284cadeced2fb676fa5c75
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78923057"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Jelentésparaméterek a Power BI Jelentéskészítőben
 
-Ez a témakör sok más mellett a Power BI Jelentéskészítő jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti. Jelentésparaméterekkel szabályozhatja a jelentés adatait, összekötheti a kapcsolódó jelentéseket, és megváltoztathatja a jelentések bemutatásának módját. A Jelentéskészítőben létrehozott lapszámozott jelentésekben jelentésparamétereket használhat.
+Ez a témakör sok más mellett a Power BI Report Builder jelentésparamétereinek gyakori használati módjait és a beállítható tulajdonságokat ismerteti. Jelentésparaméterekkel szabályozhatja a jelentés adatait, összekötheti a kapcsolódó jelentéseket, és megváltoztathatja a jelentések bemutatásának módját. A Jelentéskészítőben létrehozott lapszámozott jelentésekben jelentésparamétereket használhat.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> A paraméterek gyakori felhasználási módjai
+## <a name="common-uses-for-parameters"></a><a name="bkmk_Common_Uses_for_Parameters"></a> A paraméterek gyakori felhasználási módjai
 
  Az alábbiakban a paraméterek használatának néhány leggyakoribb módját ismertetjük.  
   
@@ -36,7 +36,7 @@ Ez a témakör sok más mellett a Power BI Jelentéskészítő jelentésparamét
   
 - A felhasználók képletekbe foglalt paraméterekkel szabályozhatják egy jelentés adatait és megjelenését.  
   
-## <a name="UserInterface"></a> Jelentés megtekintése paraméterekkel
+## <a name="viewing-a-report-with-parameters"></a><a name="UserInterface"></a> Jelentés megtekintése paraméterekkel
 
 Paraméterekkel rendelkező jelentés megtekintésekor a jelentésmegjelenítő eszközsávján minden paraméter megjelenik, így értékük interaktív módon állítható be. Az alábbi ábrán egy jelentés paraméterterülete látható a @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota és @SalesDate paraméterekkel.  
 
@@ -54,7 +54,7 @@ Paraméterekkel rendelkező jelentés megtekintésekor a jelentésmegjelenítő 
   
 6. **Jelentés megtekintése** – A paraméterértékek bevitele után kattintson a **Jelentés megtekintése** gombra a jelentés futtatásához. Ha minden paraméter rendelkezik alapértelmezett értékkel, a jelentés automatikusan lefut az első megtekintésekor.  
   
-## <a name="bkmk_Create_Parameters"></a> Paraméterek létrehozása
+## <a name="creating-parameters"></a><a name="bkmk_Create_Parameters"></a> Paraméterek létrehozása
 
 Jelentésparamétereket több módon is létrehozhat.
   
@@ -97,14 +97,14 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
   
 - A jelentés paraméterérték előzetes kiválasztása nélkül futtatható, mert a paraméterhez létre lett hozva egy alapértelmezett érték.  
   
-## <a name="bkmk_Report_Parameters"></a> Jelentésparaméter tulajdonságai
+## <a name="report-parameter-properties"></a><a name="bkmk_Report_Parameters"></a> Jelentésparaméter tulajdonságai
 
  A jelentésparaméter tulajdonságait a Jelentés tulajdonságai párbeszédpanelen módosíthatja. Az alábbi táblázat az egyes paraméterekhez beállítható tulajdonságokat foglalja össze:  
   
-|Tulajdonság|Leírás|  
+|Tulajdonság|Description (Leírás)|  
 |--------------|-----------------|  
-|Név|Begépelheti a paraméter kis- és nagybetűket megkülönböztető nevét. A névnek betűvel kell kezdődnie, és betűkből, számokból és aláhúzásjelekből (_) állhat. A név nem tartalmazhat szóközt. Automatikusan generált paraméterek esetén a név az adathalmaz-lekérdezésbeli paraméterével egyezik. A manuálisan létrehozott paraméterek alapértelmezett neve a JelentesParameter1 mintához hasonló.|  
-|Rákérdezés|A jelentésmegjelenítő eszköztáron a paraméter mellett megjelenő szöveg.|  
+|Name (Név)|Begépelheti a paraméter kis- és nagybetűket megkülönböztető nevét. A névnek betűvel kell kezdődnie, és betűkből, számokból és aláhúzásjelekből (_) állhat. A név nem tartalmazhat szóközt. Automatikusan generált paraméterek esetén a név az adathalmaz-lekérdezésbeli paraméterével egyezik. A manuálisan létrehozott paraméterek alapértelmezett neve a JelentesParameter1 mintához hasonló.|  
+|Kérés|A jelentésmegjelenítő eszköztáron a paraméter mellett megjelenő szöveg.|  
 |Adattípus|A jelentésparaméterek adattípusának az alábbiak egyikének kell lennie:<br /><br /> **Logikai**. A felhasználó választógombbal adhat meg Igaz vagy Hamis értéket.<br /><br /> **Dátum/idő**. A felhasználó egy Naptár vezérlőelemből választhat ki egy dátumot.<br /><br /> **Egész**. A felhasználó egy szövegmezőbe gépelheti be az értéket.<br /><br /> **Lebegőpontos**. A felhasználó egy szövegmezőbe gépelheti be az értéket.<br /><br /> **Szöveg**. A felhasználó egy szövegmezőbe gépelheti be az értéket.<br /><br /> Ha egy paraméterhez meg vannak adva a használható értékek, akkor a felhasználó legördülő listából választ értékeket, még **Dátum/idő** típusú adatok esetén is.|  
 |Üres érték engedélyezése|Ezt a lehetőséget akkor válassza, ha a paraméter értéke üres sztring, vagy kitöltetlen is lehet.<br /><br /> Ha megadja egy paraméter elérhető értékeit, és azt szeretné, hogy a kitöltetlen érték is használható legyen, akkor azt is bele kell foglalnia a megadott értékek egyikeként. Ennek a beállításnak a választása nem teszi automatikusan elérhetővé a kitöltetlen értéket.|  
 |Null érték engedélyezés|Válassza ezt a lehetőséget, ha a paraméter értéke NULL is lehet.<br /><br /> Ha megadja egy paraméter elérhető értékeit, és azt szeretné, hogy a null érték is használható legyen, akkor azt is bele kell foglalnia a megadott értékek egyikeként. Ennek a beállításnak a választása nem teszi automatikusan elérhetővé a null értéket.|  
@@ -116,7 +116,7 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
 |Alapértelmezett értékek|Alapértelmezett értékeket lekérdezésből vagy statikus listából is beállíthat.<br /><br /> Ha minden paraméternek van alapértelmezett értéke, a jelentés automatikusan lefut az első megtekintésekor.|  
 |Speciális|Beállíthatja a **UsedInQuery** jelentésdefiníciós attribútumot, amelynek értéke azt jelzi, hogy ez a paraméter érinti-e közvetlenül vagy közvetve a jelentésbeli adatokat.<br /><br /> **Frissítés időpontjának automatikus meghatározása**<br /> Ezt a beállítást akkor válassza, ha azt szeretné, hogy ennek az értéknek a beállítását a jelentés feldolgozója határozza meg. Az érték **Igaz** lesz, ha a jelentésfeldolgozó erre a paraméterre közvetlenül vagy közvetetten hivatkozó adathalmaz-lekérdezést észlel, vagy ha a jelentéshez segédjelentések tartoznak.<br /><br /> **Mindig frissít**<br /> Válassza ezt a beállítást, ha a jelentésparaméter közvetlenül vagy közvetve használva van egy adathalmaz-lekérdezésben vagy paraméteres kifejezésben. Ez a beállítás a **UsedInQuery** értékét Igazra állítja.<br /><br /> **Soha nem frissít**<br /> Válassza ezt a beállítást, ha a jelentésparaméter nincs közvetlenül vagy közvetve adathalmaz-lekérdezésben vagy paraméteres kifejezésben használva. Ez a beállítás a **UsedInQuery** értékét Hamisra állítja.<br /><br /> **Figyelmeztetés**: A **Soha nem frissít** beállítást körültekintően használja. A jelentéskészítő kiszolgálón a **UsedInQuery** a jelentésadatok és a megjelenítésre alkalmas jelentések gyorsítótárazási beállításainak, valamint a jelentés-pillanatképek paraméterbeállításainak szabályozásához van felhasználva. A **Soha nem frissít** helytelen beállítása nem megfelelő jelentésadatok vagy jelentések gyorsítótárazásához vezethet, vagy azt okozhatja, hogy a jelentés-pillanatképek következetlen adatokat tartalmaznak. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Adathalmaz-lekérdezés  
+##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Adathalmaz-lekérdezés  
  Az adathalmaz-lekérdezésbeli adatok szűrésére korlátozó záradékot használhat, amely az eredményhalmazba belefoglalandó, vagy abból kizárandó értékek megadásával korlátozza a visszaadott adatokat.  
   
  Paraméteres lekérdezést az adatforrás lekérdezéstervezőjének segítségével készíthet.  
@@ -125,7 +125,7 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
   
 -   Többdimenziós adatforráson, például Microsoft SQL Server Analysis Servicesen alapuló lekérdezésekhez megadhatja, hogy létre legyen-e hozva paraméter egy lekérdezéstervezőben megadott szűrő alapján. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Közzétett jelentés paramétereinek kezelése  
+##  <a name="parameter-management-for-a-published-report"></a><a name="bkmk_Manage_Parameters"></a> Közzétett jelentés paramétereinek kezelése  
  Jelentés tervezésekor a jelentésparaméterek a jelentésdefinícióba lesznek mentve. Jelentés közzétételekor a jelentésparaméterek a jelentésdefiníciótól külön vannak mentve és kezelve.  
   
  Közzétett jelentés esetén a következőket használhatja:  
@@ -140,12 +140,12 @@ Manuálisan hozhat létre paramétert a Jelentésadatok panelről. A jelentéspa
   
  A paraméterek feldolgozásának módját a jelentés végrehajtási beállításai is befolyásolhatják. Pillanatképként futó jelentések csak akkor használhatnak lekérdezésből származó paramétereket, ha a lekérdezés alapértelmezett értékeket is tartalmaz a paraméterekhez.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Feliratkozás paraméterei  
+##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Feliratkozás paraméterei  
  Igény szerinti vagy pillanatkép-jelentéshez feliratkozást definiálhat, és megadhat a feliratkozás feldolgozása során használandó paramétereket.  
   
 -   **Igény szerinti jelentés.**  Igény szerinti jelentés esetén a jelentéshez felsorolt összes paraméterhez megadhat a közzétett értéktől különböző paraméterértéket. Tegyük fel például, hogy egy telefonos ügyfélszolgálati jelentés az *Időszak* paraméter használatával adja vissza az aktuális nap, hét vagy hónap ügyfélszolgálati kéréseit. Ha a jelentés paraméternek alapértelmezett értékeként **ma** van beállítva, a feliratkozás más paraméterérték (például **hét** vagy **hónap**) használatával állíthat elő a heti vagy havi adatokat tartalmazó jelentést.  
   
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)  
 - [Hierarchikus paraméterek használata lapszámozott jelentésekben](../guidance/paginated-report-cascading-parameter.md)

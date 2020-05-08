@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 4f135a411d69835e925cf97b418bda6ae80adc1a
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113181"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Támogatott nyelvek a Power BI-mobilalkalmazásokban
@@ -57,8 +57,8 @@ A Power BI mobilalkalmazások jelenleg az alábbi nyelveket támogatják:
 * A Power BI a mobileszköz területi beállításának megfelelő nyelvet használja. Nincs lehetőség ettől eltérő nyelv beállítására.
 * Az értesítések csak angolul jelennek meg. Ha például valaki megoszt Önnel egy irányítópultot, akkor az értesítések angolul fognak megjelenni. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A Power BI által támogatott nyelvek és országok/régiók](../../supported-languages-countries-regions.md)
-* Kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
-* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
+* Kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
+* Továbbra is problémába ütközik? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 

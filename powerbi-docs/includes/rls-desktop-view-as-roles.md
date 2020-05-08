@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8dc488a47ac2b5b4e7980b7404b2722b1120b6ab
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464404"
 ---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Szerepkörök érvényesítése a Power BI Desktopban
@@ -29,7 +29,7 @@ A szerepkör létrehozása után tesztelheti a szerepkör hatásait a Power BI D
 
    A Power BI Desktopban a **Más felhasználók** alatt csak akkor fognak megjelenni különböző eredmények, ha DAX-kifejezéseken alapuló dinamikus biztonsági megoldást alkalmaz. 
 
-5. Válassza az **OK** lehetőséget. 
+5. Kattintson az **OK** gombra. 
 
    A jelentés csak a felhasználó számára elérhető adatokat fogja megjeleníteni.
 

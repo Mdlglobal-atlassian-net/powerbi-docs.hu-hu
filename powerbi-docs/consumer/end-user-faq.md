@@ -10,18 +10,18 @@ ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79039986"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-* Ha bármilyen egyéb kérdése van, [kérdezze a Power BI-közösséget](https://community.powerbi.com/).
-* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
+* Ha bármilyen egyéb kérdése van, [kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+* Továbbra is problémába ütközik? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-the-microsoft-power-bi-service"></a>Mi a Microsoft Power BI szolgáltatás?
 
@@ -29,7 +29,7 @@ A Power BI egy felhőalapú üzleti analitikai szolgáltatás, amely bárki szá
 
 ## <a name="what-is-the-microsoft-power-bi-service-for-consumers"></a>Mi az *ügyfeleknek* készült Microsoft Power BI szolgáltatás?
 
-A munkakörétől függ, hogy milyen módon használja a Power BI-t. Végfelhasználóként vagy *felhasználóként* Ön kap tartalmat (irányítópultokat, jelentéseket vagy alkalmazásokat) a munkatársaitól. A Power BI online vagy mobil változatát használja, amelyet Power BI szolgáltatásnak hívunk, és így tekinti át vagy használja a tartalmat üzleti döntésekhez.  Tudjon meg többet a [az ügyfeleknek készült Power BI szolgáltatásról](index.yml).
+A munkahelyi szerepkörétől függ, hogyan fogja használni a Power BI-t. Végfelhasználóként vagy *felhasználóként* Ön kap tartalmat (irányítópultokat, jelentéseket vagy alkalmazásokat) a munkatársaitól. A Power BI online vagy mobil változatát használja, amelyet Power BI szolgáltatásnak hívunk, és így tekinti át vagy használja a tartalmat üzleti döntésekhez.  Tudjon meg többet a [az ügyfeleknek készült Power BI szolgáltatásról](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Mi a különbség a Power BI Pro és a Power BI Premium között?
@@ -109,9 +109,9 @@ Sok más Microsoft-szolgáltatáshoz és -szoftverhez hasonlóan a Power BI is e
 
 * A legutóbbi művelet vagy az utolsó néhány művelet **visszavonásához** használja a CTRL+Z billentyűkombinációt.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Ki számít a Power BI felhasználójának?](end-user-consumer.md)
 * [Hogyan használja a fogyasztó a Power BI-t?](end-user-reading-view.md)
-* További kérdései vannak? [Kérdezze a Power BI-közösséget](https://community.powerbi.com/)
-* Továbbra sem találja a megoldást? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/)
+* Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
+* Továbbra is problémába ütközik? Keresse fel a [Power BI támogatási oldalát](https://powerbi.microsoft.com/support/)

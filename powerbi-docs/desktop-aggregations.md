@@ -10,10 +10,10 @@ ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77427656"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Aggregációk használata a Power BI Desktopban
@@ -49,8 +49,8 @@ Az **Aggregációk kezelése** párbeszédpanel **Összegzés** legördülő lis
 - Darabszám
 - GroupBy
 - Max
-- Min.
-- Összeg
+- Min
+- Sum
 - Tábla sorainak száma
 
 ![Az Aggregációk kezelése párbeszédablak](media/desktop-aggregations/aggregations_07.jpg)
@@ -114,13 +114,13 @@ Az alábbi, egyetlen adatforrásból származó modellben a táblázatok a Direc
 
 Ehelyett inkább hozzunk létre egy **Sales Agg** (Aggr. értékesítések) nevű aggregációs táblát. A **Sales Agg** táblában a sorok száma megegyezik a **SalesAmount** (Értékesítési összeg) **CustomerKey** (ÜgyfélAzonosító), **DateKey** (DátumAzonosító) és **ProductSubcategoryKey** (TermékAlkategóriaAzonosító) attribútumok szerint csoportosított összegével. A **Sales Agg** táblázat magasabb részletességgel rendelkezik, mint a **Sales**, ezért több milliárd helyett csak több millió sort tartalmaz, és ennek lényegesen könnyebb a kezelése.
 
-Ha a magas üzleti értékkel rendelkező lekérdezéseknél az alábbi dimenziós táblák használata a leggyakoribb, akkor *egy-a-sokhoz* vagy *sok-az-egyhez* kapcsolattal szűrhetik a **Sales Agg** táblát.
+Ha a magas üzleti értékkel rendelkező lekérdezéseknél az alábbi dimenziós táblák használata a leggyakoribb, akkor **egy-a-sokhoz** vagy *sok-az-egyhez* kapcsolattal szűrhetik a *Sales Agg* táblát.
 
-- Földrajzi hely
+- Földrajzi
 - Ügyfél
 - Dátum
 - Termékalkategória
-- Termékkategória
+- Product Category (Termék kategóriája)
 
 Az alábbi képen ez a modell látható.
 
@@ -295,7 +295,7 @@ A következő JSON-részlet egy olyan esemény kimenetére mutat példát, amely
 
 Azok az aggregációk, amelyek kombinálják a DirectQuery, az Importált, és/vagy a Kettős tárolási módot, más adatokat adhatnak vissza, ha a memóriában tárolt gyorsítótár nincs szinkronban a forrásadatokkal. Például a lekérdezések végrehajtása nem kísérli meg elfedni az adatokkal kapcsolatos problémákat azzal, hogy a DirectQuery-eredményeket a gyorsítótárazott értékekkel való egyezés alapján szűri. Léteznek bevált módszerek az ilyen problémáknak a forrásnál való kezelésére, ha szükséges. A teljesítményoptimalizáló funkciókat csak abban az esetben érdemes használni, ha nincsenek negatív hatással az üzleti követelmények teljesítésére. Önnek kell ismernie a saját adatfolyamait, és azok alapján kell terveznie. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 További tudnivalók az összetett modellekről:
 

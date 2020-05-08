@@ -10,10 +10,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 2c09f21565cdf9987aad2027a148823fb32e2e55
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76538978"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Weblap adatainak lekérdezése mintákkal
@@ -59,7 +59,7 @@ Ha elégedett a weboldalról kinyert adatokkal, válassza az **OK** lehetősége
 
 Ez után már létrehozhat vizualizációkat, vagy másként is felhasználhatja a weboldal adatait Power BI Desktop-jelentései elkészítéséhez.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 

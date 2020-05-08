@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: 42b9057ccfaa918593e1be8a182c7b0ee57f9760
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78920987"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Paraméterek létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
@@ -60,14 +60,14 @@ Az alábbi ábrán a Tervező nézet látható a Power BI Jelentéskészítőben
   
     -   A paraméter elrejtéséhez és a jelentés közzététele után a jelentéskészítő kiszolgálón a módosítás elleni védelméhez válassza a **Belső** lehetőséget. A jelentésparaméter ekkor csak a jelentésdefinícióban lesz megtekinthető. Ehhez a lehetőséghez be kell állítania egy alapértelmezett értéket, vagy engedélyeznie kell a paraméter számára a null érték elfogadását.  
   
-9. Válassza az **OK** lehetőséget. 
+9. Kattintson az **OK** gombra. 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 
 - Ha adatforrásként egy Power BI-adathalmazt vagy egy Analysis Services-modellt használ, akkor a DAX korlátozásai miatt egy adott kérelemben legfeljebb 1 000 paramétert adhat át. 
 
  
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ha látni szeretné, hogyan jelennek meg a paraméterek a Power BI szolgáltatásban, olvassa el a [Paraméterek megtekintése lapszámozott jelentésekhez](../consumer/paginated-reports-view-parameters.md) szakaszt.
 

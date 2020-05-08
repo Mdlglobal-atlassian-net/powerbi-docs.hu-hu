@@ -11,10 +11,10 @@ ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609697"
 ---
 # <a name="power-automate-and-power-bi"></a>A Power Automate és a Power BI
@@ -23,7 +23,7 @@ A [Power Automate](https://docs.microsoft.com/power-automate/getting-started) eg
 
 [A Power Automate használatbavétele](https://docs.microsoft.com/power-automate/getting-started)
 
-Megnézheti, hogy miként hoz létre Sirui egy olyan Power Automate-folyamatot, amely részletes e-mailt küld a munkatársaknak, amikor valami riasztást vált ki a Power BI-ban. Ezután a videó alatt látható részletes utasításokat követve próbálkozzon meg a feladat elvégzésével.
+Megnézheti, hogy miként hoz létre Sirui egy olyan Power Automate-folyamatot, amely részletes e-mailt küld a munkatársaknak, amikor valami riasztást vált ki a Power BI-ban. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -86,11 +86,11 @@ Ebben a feladatban egy előzmények nélküli egyszerű folyamatot hozunk létre
    ![A Power Automate felső menüsora](media/service-flow-integration/power-bi-my-flows.png)
 3. A keresőmezőt használva keressen rá a Power BI-triggerekre, majd válassza a **Power BI – adatriasztás esetén** lehetőséget.
 
-### <a name="build-your-flow"></a>A folyamat létrehozása
+### <a name="build-your-flow"></a>Saját folyamat létrehozása
 1. A legördülő listából válassza ki a riasztás nevét.  A riasztások létrehozásával kapcsolatban tekintse meg a [Power BI-beli adatriasztásokról](service-set-data-alerts.md) szóló cikket.
    
     ![a riasztás nevének kiválasztása](media/service-flow-integration/power-bi-totalstores2.png)
-2. Kattintson az **Új lépés** > **Művelet hozzáadása** lehetőségre.
+2. Válassza az **Új lépés** > **Művelet hozzáadása** lehetőséget.
    
    ![új lépés felvétele](media/service-flow-integration/power-bi-new-step.png)
 3. Keressen rá az **Outlook** kifejezésre, majd kattintson a **Create event** (Esemény létrehozása) lehetőséget tartalmazó találatra.
@@ -106,10 +106,10 @@ Ebben a feladatban egy előzmények nélküli egyszerű folyamatot hozunk létre
    
     ![A Power Automate aktivál egy outlookos értesítést](media/service-flow-integration/power-bi-flow-notice.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Első lépések a Power Automate-ben](https://docs.microsoft.com/power-automate/getting-started/)
 * [Adatriasztások beállítása a Power BI szolgáltatásban](service-set-data-alerts.md)
 * [Adatriasztások beállítása az iPhone-on](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* [Adatriasztások beállítása a Windows 10-hez készült Power BI mobilalkalmazásban](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

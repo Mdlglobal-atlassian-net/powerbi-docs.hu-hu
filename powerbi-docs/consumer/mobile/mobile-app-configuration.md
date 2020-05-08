@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802026"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>A Power BI alkalmazás távoli konfigurálása mobileszköz-kezelési (MDM-) eszközzel
@@ -28,7 +28,7 @@ A Power BI Mobile alkalmazás a következő konfigurációs forgatókönyveket t
 
 Az iOS és Android rendszerhez készült Power BI alkalmazással a rendszergazdák távolról küldhetik le a Jelentéskészítő kiszolgáló konfigurációs beállításait a regisztrált eszközökre.
 
-| Kulcs | Típus | Leírás |
+| Kulcs | Típus | Description (Leírás) |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe.<br><br>Http/https-sel kell kezdődnie.|
 | com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező]<br><br>A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév.<br><br>Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.|
@@ -39,7 +39,7 @@ Az iOS és Android rendszerhez készült Power BI alkalmazással a rendszergazd�
 
 Az iOS-hez és Androidhoz készült Power BI mobilalkalmazással a rendszergazdák testreszabhatják a biztonsági és adatvédelmi beállítások alapértelmezett konfigurációját. iOS rendszeren megkövetelheti a felhasználóktól, hogy Face ID-t, Touch ID-t vagy hitelesítő kódot használjanak a Power BI mobilalkalmazáshoz. Android rendszeren megkövetelheti a felhasználóktól, hogy biometrikus hitelesítést használjanak (ujjlenyomat-azonosító).
 
-| Kulcs | Típus | Leírás |
+| Kulcs | Típus | Description (Leírás) |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Logikai érték | Az alapértelmezett érték False (Hamis). <br><br>Az alkalmazás használatához megkövetelhető biometrikus adatok, például a TouchID vagy a FaceID (iOS) illetve ujjlenyomat-azonosító (Android) használata. Ez esetben ezekre is szükség van a hitelesítésen felül.<br><br>Alkalmazásvédelmi szabályzatok használata esetén a Microsoft azt javasolja, hogy tiltsa le ezt a beállítást, így elkerülhetők a kettős hozzáférési kérelmek. |
 
@@ -53,7 +53,7 @@ Az iOS-hez és Androidhoz készült Power BI alkalmazással a rendszergazdák ko
 >[!NOTE]
 >Jelenleg nem támogatott minden interakció az összes eszközön. A [Jelentések interakciós beállításainak konfigurálása](mobile-app-interaction-settings.md) részben talál egy olyan diagramot, amely felsorolja a jelenleg rendelkezésre álló eszközöket.
 
-| Kulcs | Típus | Értékek | Leírás |
+| Kulcs | Típus | Értékek | Description (Leírás) |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Sztring |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Annak konfigurálása, hogy a vizualizáción való koppintás egyben adatpont-kiválasztás is legyen-e. |
 | com.microsoft.powerbi.mobile.EnableMultiSelect | Logikai érték |  <nobr>True</nobr><br><nobr>False</nobr> | Konfigurálhatja, hogy egy adatpontra koppintás lecseréli-e az aktuális kijelölést, vagy az az aktuális kijelöléshez legyen hozzáadva. |
@@ -71,8 +71,8 @@ Alkalmazáskonfigurációs szabályzatot az alábbi lépésekben hozhat létre. 
 
 Az Intune portál alkalmazáskonfigurációs szabályzataival a rendszergazdák könnyen üzembe helyezhetik ezeket a beállításokat a Power BI alkalmazásban. Azonban minden MDM-szolgáltató támogatott. Ha nem Intune-t használ, a beállítások üzembe helyezéséhez tekintse meg a használt MDM-megoldás dokumentációját.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * A Power BI mobilalkalmazás az [App Store-ból](https://apps.apple.com/app/microsoft-power-bi/id929738808) és a [Google Play áruházból](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) szerezhető be
-* Kövessen minket [@MSPowerBI a Twitteren](https://twitter.com/MSPowerBI)
-* Csatlakozzon a beszélgetéshez a [Power BI-közösségben](https://community.powerbi.com/)
+* Kövessen minket a [@MSPowerBITwitteren](https://twitter.com/MSPowerBI).
+* Vegyen részt [a Power BI-közösség](https://community.powerbi.com/) beszélgetéseiben

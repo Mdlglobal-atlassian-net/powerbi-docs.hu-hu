@@ -10,10 +10,10 @@ ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77426610"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
@@ -71,7 +71,7 @@ Tegyük fel, hogy egy munkaterületről egy alkalmazást terjesztett egy csoport
 
 1. A munkaterület listaoldalán válassza az **Alkalmazás frissítése** lehetőséget. 
 
-    ![Alkalmazás frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
+    ![App frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
 
 1. Az **Engedélyek** lapon válassza az **X** jelet a személy vagy csoport eltávolításához. 
 
@@ -105,7 +105,7 @@ Ha az adathalmazt egy annak munkaterületén kívüli jelentés használja, akko
 
 Az Összeállítási engedélyt el is távolíthatja. Ilyen esetben azok, akiknek az engedélyét visszavonta, továbbra is látni fogják a jelentést, de már nem szerkeszthetik azt, és nem exportálhatják a mögöttes adatokat. A csak olvasási engedéllyel rendelkező felhasználók továbbra is exportálhatják az összegzett adatokat. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

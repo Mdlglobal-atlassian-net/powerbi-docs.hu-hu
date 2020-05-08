@@ -10,10 +10,10 @@ ms.date: 03/04/2020
 ms.author: mihart
 LocalizationGroup: Consumer
 ms.openlocfilehash: 0a306b3a5d23f8ed146d3a71c7b851fd809edae3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114008"
 ---
 # <a name="add-spotlights-to-power-bi-reports"></a>Reflektorfények hozzáadása Power BI-jelentésekhez
@@ -36,7 +36,7 @@ A reflektorfénnyel felhívhatja például a figyelmet egy adott vizualizációr
 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Irányítópult-csempe vagy jelentésvizualizáció megjelenítése fókusz módban](end-user-focus.md)
 

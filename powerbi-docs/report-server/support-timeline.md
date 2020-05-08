@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.openlocfilehash: 3546254c8bff56ac4caefbdd0b5f8df901256a59
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77527568"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló támogatási ütemterve
@@ -41,10 +41,10 @@ Ezzel a támogatási házirenddel az újítások gyorsan eljutnak az ügyfelekhe
 
 A Power BI jelentéskészítő kiszolgáló, illetve a Power BI jelentéskészítő kiszolgálóra optimalizált Power BI Desktop letöltéséhez nyissa meg az [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) (Helyi jelentéskészítés Power BI jelentéskészítő kiszolgálóval) webhelyet.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [A Power BI jelentéskészítő kiszolgáló újdonságai](whats-new.md)  
 [A Power BI Jelentéskészítő kiszolgáló bemutatása](get-started.md)
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

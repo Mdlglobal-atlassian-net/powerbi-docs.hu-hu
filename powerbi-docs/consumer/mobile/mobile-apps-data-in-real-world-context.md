@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e7d3d19bdef1b19d397ac7db13cdec2317f8ab42
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114595"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>A való világból származó Power BI-adatok mobilalkalmazásokkal
@@ -49,7 +49,7 @@ Kategorizálja a földrajzi adatokat a jelentésekben a Power BI Desktoppal. Ezu
 
 További információ a [hely szerinti szűrésről](mobile-apps-geographic-filtering.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [QR-kód létrehozása csempéhez a Power BI-ban](../../service-create-qr-code-for-tile.md)
 * [QR-kód létrehozása jelentéshez a Power BI-ban](../../service-create-qr-code-for-report.md)
 
