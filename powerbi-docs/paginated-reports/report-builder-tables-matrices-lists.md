@@ -9,10 +9,10 @@ ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 02ac131325dab59590cb88c524ace68a1226fc69
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921493"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Táblázatok, mátrixok és listák a Power BI Jelentéskészítőben
@@ -28,7 +28,7 @@ ms.locfileid: "78921493"
 
 ![Jelentéskészítő – táblázat, mátrix és lista](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
   
-##  <a name="Table"></a> Táblázatok  
+##  <a name="tables"></a><a name="Table"></a> Táblázatok  
  Táblázat használatával részletes adatokat jeleníthet meg, sorcsoportokba rendezheti az adatokat, vagy a kettőt egyszerre is megteheti. A Táblázat sablon három oszlopot tartalmaz táblázatfejléccel és egy részletező sorral az adatok számára. Az alábbi ábrán a tervezési felületen kijelölt kiindulási táblázatsablon látható:  
 
 ![Jelentéskészítő táblázatsablon a tervezési felületen, kijelölve](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
@@ -37,7 +37,7 @@ ms.locfileid: "78921493"
   
  Kezdetben elrejtheti a részletes vagy csoportosított adatokat, és részletező váltókapcsolók felvételével lehetővé teheti, hogy a felhasználó interaktív módon dönthessen a megjelenítendő adatok mennyiségéről.  
   
-##  <a name="Matrix"></a> Mátrixok  
+##  <a name="matrixes"></a><a name="Matrix"></a> Mátrixok  
  Mátrix használatával összesített adatösszegeket jeleníthet meg sorokban és oszlopokban csoportosítva, a kimutatásokhoz vagy kereszttáblákhoz hasonlóan. A csoportok sorainak és oszlopainak számát az egyes sor- és oszlopcsoportokban lévő egyedi értékek száma határozza meg. Az alábbi ábrán a tervezési felületen kijelölt kiindulási mátrixsablon látható:  
 
 ![Az eszközkészletből felvett új mátrix a Jelentéskészítőben, kijelölve](media/report-builder-tables-matrices-lists/report-builder-new-matrix.png)
@@ -48,24 +48,24 @@ ms.locfileid: "78921493"
   
  Részletezési váltókapcsolókat is belefoglalhat, amelyek kezdetben elrejtik a részletes adatokat, majd a felhasználó a kapcsolókra kattintva igény szerint több vagy kevesebb részletet jeleníthet meg.  
   
-##  <a name="List"></a> Listák  
+##  <a name="lists"></a><a name="List"></a> Listák  
  Lista használatával kötetlen formátumú elrendezést hozhat létre. Nem kell a rácsos elrendezéshez igazodnia, a listán belül bárhol helyezhet el mezőket. Lista használatával űrlapot tervezhet sok adathalmaz-mező megjelenítésére, vagy használhatja a listát tárolóként, amely egymás mellett több adatterületen jeleníti meg a csoportosított adatokat. Egy listához definiálhat például egy csoportot, hozzáadhat egy táblázatot, egy diagramot és képet, és minden csoportértékhez táblázatban és grafikusan is megjelenítheti az értékeket, például egy alkalmazotti vagy páciens-rekord esetén.  
 
 ![Az eszközkészletből felvett új lista a Jelentéskészítőben, kijelölve](media/report-builder-tables-matrices-lists/report-builder-new-list.png)
   
-##  <a name="PreparingData"></a> Az adatok előkészítése  
+##  <a name="preparing-data"></a><a name="PreparingData"></a> Az adatok előkészítése  
  A táblázat, a mátrix és a lista adatterületek egy adathalmaz adatait jelenítik meg. Az adatokat előkészítheti az azokat az adathalmazból beolvasó lekérdezésben, vagy a táblázatban, mátrixban vagy listában beállított tulajdonságokkal.  
   
  A Transact-SQL és a jelentés adathalmazaiból adatokat beolvasó hasonló lekérdezőnyelvek szűrők alkalmazásával úgy készíthetik elő az adatokat, hogy azok csak az eredeti adatok egy részhalmazát tartalmazzák, a NULL vagy üres értékeket konstansokra cserélve olvashatóbbá teszik a jelentést, és rendezik és csoportosítják az adatokat.  
   
  Ha úgy dönt, hogy az adatokat egy jelentés tábla, mátrix vagy lista adatterületén készíti elő, akkor az adatterületre vagy az adatterület celláira állíthat be tulajdonságokat. Az adatok az adatterületre beállított tulajdonságokkal szűrhetők vagy rendezhetők. Az adatok rendezéséhez például megadhatja az oszlopot, amely alapján rendezni kíván, valamint a rendezés irányát is. Ha egy mezőhöz szeretne más értéket megjeleníteni, akkor a mezőt megjelenítő cellaszöveg értékeit állíthatja be. Ha például üres vagy NULL értékű mezőkhöz a Nincs kitöltve szöveget szeretné megjeleníteni, egy képlettel állíthatja be ezt az értéket.  
   
-##  <a name="BuildingConfiguringTableMatrixList"></a> Táblázat, mátrix vagy lista készítése és konfigurálása  
+##  <a name="building-and-configuring-a-table-matrix-or-list"></a><a name="BuildingConfiguringTableMatrixList"></a> Táblázat, mátrix vagy lista készítése és konfigurálása  
  Amikor táblázatokat vagy mátrixokat ad jelentéséhez, használhatja a Táblázat és Mátrix varázslót, vagy elkészítheti őket manuálisan a Jelentéskészítő által kínált sablonokból. Listák a listasablonból készíthetők.  
   
  A varázsló végigvezeti Önt a lépéseken, hogy gyorsan elkészíthessen és konfigurálhasson egy táblázatot vagy mátrixot. A varázsló befejezése vagy a rácsos adatterületek elkészítése után tovább konfigurálhatja és finomíthatja azokat. Az adatterületek jobb kattintással elérhető helyi menüi megkönnyítik az olyan gyakran használt beállítások megadását, mint az oldaltörések, a fejlécek és láblécek ismétlése és láthatósága, a megjelenítési beállítások, a szűrők és a rendezés. A rácsos adatterület azonban sok más tulajdonságot is kínál, amelyek csak a Jelentéskészítő Tulajdonságok paneljén állíthatók be. Ha például üzenetet szeretne megjeleníteni, amikor egy táblázat, mátrix vagy lista adathalmaza üres, ezt az üzenetet a rácsos adatterület NoRowsMessage tulajdonságában adhatja meg a Tulajdonságok panelen.  
   
-##  <a name="ChangingBetweenTablixTemplates"></a> Váltás rácsos adatterület-sablonok között  
+##  <a name="changing-between-tablix-templates"></a><a name="ChangingBetweenTablixTemplates"></a> Váltás rácsos adatterület-sablonok között  
  Nem csak az eredetileg választott rácsos adatterületet használhatja. Új csoportok, összegek és címkék hozzáadása során előfordulhat, hogy módosítani szeretné a rácsos adatterület kivitelét. Kiindulhat például egy táblázatból, amelynek aztán törli a részletező sorát, és oszlopcsoportokat ad hozzá.  
   
  Egy táblázat, mátrix vagy lista a rácsos adatterület bármely funkciójának hozzáadásával továbbfejleszthető. A rácsos adatterületek funkciói közé tartozik, hogy részletes adatokat vagy csoportosított adatok összegzéseit jelenítik meg sorokban és oszlopokban. Létrehozhat beágyazott csoportokat, független szomszédos csoportokat vagy rekurzív csoportokat is. A csoportosított adatokat szűrheti és rendezheti, a csoportokat pedig egyszerűen kombinálhatja a csoport definíciójába foglalt csoportkifejezésekkel.  

@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79112498"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Adatvédelmi metrikákról készült jelentés (előzetes verzió)
@@ -52,7 +52,7 @@ Az adatvédelmi metrikákról készülő jelentés javított verziói szabályos
 * Ha úgy dönt, hogy olyan felhasználóval oszt meg az adatvédelmi metrikákról készült jelentésből származó információkat, aki nem Power BI-rendszergazda, szem előtt kell tartania, hogy ez a jelentés bizalmas információkat tartalmaz a vállalatról.
 * Az adatvédelmi metrikákról készülő jelentés speciális jelentés, amely nem jelenik meg a Velem megosztva, a Legutóbbiak és a Kedvencek listában sem.
 * Az adatvédelmi metrikákról szóló jelentés nem érhető el [külső felhasználók számára (Azure Active Directory B2B-vendégfelhasználók)](../service-admin-azure-ad-b2b.md).
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Adatvédelem a Power BI-ban (előzetes verzió)](./service-security-data-protection-overview.md)
 * [A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban (előzetes verzió)](./service-security-using-microsoft-cloud-app-security-controls.md)
 * [A Power BI-szolgáltatásgazda szerepkör ismertetése](../service-admin-role.md)

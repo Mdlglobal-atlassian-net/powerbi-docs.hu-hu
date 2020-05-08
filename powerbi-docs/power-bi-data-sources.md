@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
 ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79041677"
 ---
 # <a name="power-bi-data-sources"></a>Adatforrások a Power BI-hoz
@@ -134,7 +134,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Twilio | Igen | Igen | Nem | Nem | Nem |
 | tyGraph | Igen | Igen | Nem | Nem | Nem |
 | Vertica | Igen | Igen | Igen | Igen | Igen |
-| Web | Igen | Igen | Nem | Igen | Igen <sup>6</sup> |
+| Webes | Igen | Igen | Nem | Igen | Igen <sup>6</sup> |
 | Webtrends | Igen | Igen | Nem | Nem | Nem |
 | Workforce Dimensions | Igen | Igen | Nem | Igen | Nem |
 | XML | Igen | Igen | Nem | Igen | Nem <sup>4</sup> |
@@ -172,7 +172,7 @@ Az egyszeri bejelentkezési beállítás az adatforrást használó összes adat
 > [!Note]
 > Az Azure Multi-Factor Authentication (MFA) nem támogatott. Azokat a felhasználókat, akik egyszeri bejelentkezést kívánnak használni a DirectQueryvel, ki kell vonni az MFA hatálya alól.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Csatlakozás adatokhoz a Power BI Desktopban](desktop-quickstart-connect-to-data.md)  
 [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)  

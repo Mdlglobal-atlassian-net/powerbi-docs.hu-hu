@@ -10,10 +10,10 @@ ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273340"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Python-szkriptek futtatása a Power BI Desktopban
@@ -50,7 +50,7 @@ A Python-szkriptelés a következő módon engedélyezhető:
 
    A fenti ábrán a Python helyi telepítési útvonala *C:\Python*. Gondoskodjon arról, hogy az elérési út megegyezzen annak a helyi Python-telepítésnek a helyével, amelyet a Power BI Desktoppal használni kíván.
 
-1. Válassza az **OK** lehetőséget.
+1. Kattintson az **OK** gombra.
 
 Miután megadta a Python telepítési helyét, készen áll a Python-szkriptek futtatására a Power BI Desktopban.
 
@@ -96,11 +96,11 @@ A Python-szkript a következő módon futtatható a Power BI Desktopban:
 
    ![A Python-szkript kijelölése az Adatok lekérése ablakban](media/desktop-python-scripts/python-scripts-1.png)
 
-1. Kattintson a **Csatlakozás** gombra. A rendszer a legfrissebb telepített helyi Python-verziót választja Python-motorként. A szkriptet másolja be a megjelenő **Python-szkript** párbeszédpanelre. Itt a korábban már látott egyszerű Python-szkriptet írtuk be.
+1. Válassza a **Connect** (Kapcsolódás) elemet. A rendszer a legfrissebb telepített helyi Python-verziót választja Python-motorként. A szkriptet másolja be a megjelenő **Python-szkript** párbeszédpanelre. Itt a korábban már látott egyszerű Python-szkriptet írtuk be.
 
    ![Minta Python-szkript](media/desktop-python-scripts/python-scripts-6.png)
 
-1. Válassza az **OK** lehetőséget. Ha a szkript sikeresen lefut, megjelenik a **Kezelő** párbeszédpanel, ahol betöltheti és használhatja az adatokat. A példában jelölje be a **df** jelölőnégyzetet a képen látható módon, majd válassza a **Betöltés** lehetőséget.
+1. Kattintson az **OK** gombra. Ha a szkript sikeresen lefut, megjelenik a **Kezelő** párbeszédpanel, ahol betöltheti és használhatja az adatokat. A példában jelölje be a **df** jelölőnégyzetet a képen látható módon, majd válassza a **Betöltés** lehetőséget.
 
    ![A betölthető és használható adatokat megjelenítő Kezelő](media/desktop-python-scripts/python-scripts-5.png) 
 
@@ -118,11 +118,11 @@ A kapcsolódó problémák elkerülése érdekében javasoljuk, hogy használja 
 
 Lehetséges megoldásként elindíthatja Power BI Desktopot az egyéni Python-környezet parancssorából is.
 
-### <a name="refresh"></a>Frissítés
+### <a name="refresh"></a>Előnézet
 
 A Python-szkripteket frissítheti a Power BI Desktopban. A frissítéshez nyissa meg a **Kezdőlap** menüszalagot, és válassza a **Frissítés** lehetőséget. Egy Python-szkript frissítésekor a Power BI Desktop újra lefuttatja ezt a Python-szkriptet.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Tekintse meg az alábbi, a Python programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 

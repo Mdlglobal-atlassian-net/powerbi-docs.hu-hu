@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 81581b861f731ac287cc18f4ab1fdf77ab7a4e7c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040113"
 ---
 # <a name="your-content-is-up-to-date"></a>A tartalma naprakész
@@ -95,7 +95,7 @@ Ha naprakész szeretne maradni, feliratkozhat egy jelentésre vagy irányítópu
 ## <a name="set-data-alerts"></a>Adatriasztások beállítása
 Szeretne értesítést kapni, ha az adatok egy Ön által megadott korláton túlmenően módosulnak? [Hozzon létre egy adatriasztást](end-user-alerts.md).  Adatriasztásokkal könnyen naprakész maradhat. Ezek segítségével megbízhatja a Power BI-t, hogy küldjön Önnek egy e-mailt, ha egy jelentés értéke meghalad egy adott küszöböt.  Ilyen lehet például, ha a készlet 25 egység alá csökken, vagy az értékesítések meghaladják a kitűzött célt.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Adatriasztás létrehozása](end-user-alerts.md)    
 [Feliratkozás irányítópultokra és jelentésekre](end-user-subscribe.md)    
 [Kapcsolódó tartalom megtekintése](end-user-related.md)    

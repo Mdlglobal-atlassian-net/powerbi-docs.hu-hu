@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 16d58090a9a7c6e64fbf2ace23fdf342d1768a30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881088"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Excel-adatok megfelelő működésének biztosítása a Q&A és a Power BI használatánál
@@ -42,12 +42,12 @@ Néhány tanács a Q&A legjobb kihasználásához a munkafüzetben.
 
 * Az adathalmazt megnyithatja a Power BI Desktopban és új oszlopokat hozhat létre, számított mértékeket hozhat létre, mezők összefűzésével egyedi értékeket alakíthat ki, osztályozhatja az adattípusokat (például dátum, sztring, földrajzi hely, kép, URL stb. alapján), és számos más lehetőség áll még rendelkezésére.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Q&A felhasználók számára](consumer/end-user-q-and-a.md)  
 - [A Q&A használata irányítópultokon és jelentésekben](power-bi-tutorial-q-and-a.md)
 - [Helyszíni adatkészletek előkészítése Q&A-hez](service-q-and-a-direct-query.md)   
 - [Adatbeolvasás (a Power BI-ban)](service-get-data.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

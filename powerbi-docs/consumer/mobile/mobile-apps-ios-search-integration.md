@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 7d61a57a928df95bd2210bf58cc44e37d14c393d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114479"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>iOS eszközkeresés-integráció (Spotlight) a Power BI Mobile iOS-alkalmazással (előzetes verzió)
@@ -30,7 +30,7 @@ Elemek keresése eszközkereséssel:
  
    Az eredmények a következő típusú Power BI-elemeket tartalmazhatják:
 
-    * Irányítópultok
+    * Dashboards
     * Jelentések
     * Alkalmazások
     * Munkaterületek
@@ -47,7 +47,7 @@ A Sirivel használható eszközkeresés a Power BI alkalmazásban végzett gyako
 >Az eszközkeresés és a Siri-javaslatok letiltásához lépjen az **Eszközbeállítások** > **Power BI-beállítások** > **Siri és keresés** területre, és tiltsa le a **Siri és javaslatok** beállítást.
 >
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 További információ a Power BI mobilalkalmazásról: 
 
 * Az [iPhone-ra készült Power BI mobilalkalmazás](https://go.microsoft.com/fwlink/?LinkId=522062) letöltése
