@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205918"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI vegyes valósághoz alkalmazás (előzetes verzió)
 A Power BI vegyes valósághoz (előzetes verziójú) alkalmazásban megtekintheti az irányítópultjait és jelentéseit a virtuális világban, vagy elhelyezheti őket igény szerint a környezetében. 
 
-[A vegyes valósághoz készült Power BI letöltése](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) a Windows Áruházból: A Windows Áruházban ez „Power BI Mobile” néven szerepel. A virtuális valóságban műveleteket végezhet az irányítópultjaival és a jelentéseivel, majd kiválaszthatja, melyeket szeretné elhelyezni. 
+[A Power BI vegyes valósághoz alkalmazás letöltése](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) a Windows Store-ból: A Windows Store-ban ezt „Power BI Mobile”-nak hívják. A virtuális valóságban műveleteket végezhet az irányítópultjaival és a jelentéseivel, majd kiválaszthatja, melyeket szeretné elhelyezni. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>Két nézet: klasszikus Windows és holografikus Windows
 
@@ -87,7 +87,7 @@ Az iPhone-os és Androidos [Power BI mobilalkalmazáshoz hasonlóan](mobile-apps
 
 - Holografikus nézetben nézzen a QR-kódra. A Power BI megnyitja a kódhoz társított jelentést.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 A holografikus nézet használatakor figyelembe kell venni néhány korlátozást és szempontot.
 
@@ -96,7 +96,7 @@ A holografikus nézet használatakor figyelembe kell venni néhány korlátozás
 - Az irányítópultok és a jelentések 45 másodpercenként, az adatok változásával frissülnek.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [A való világból származó Power BI-adatok mobilalkalmazásokkal](mobile-apps-data-in-real-world-context.md)
 

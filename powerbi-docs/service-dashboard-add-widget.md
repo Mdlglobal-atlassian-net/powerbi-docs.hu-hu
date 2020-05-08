@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
-ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76282040"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Képek, videók és egyéb elemek hozzáadása az irányítópulthoz
@@ -62,7 +62,7 @@ Ha vállalati emblémát vagy más képet szeretne felvenni az irányítópultra
 
       Amikor a munkatársai a csempére vagy a címre kattintanak, a rendszer erre az URL-címre irányítja őket.
 
-   d. Kattintson az **Alkalmaz** elemre. 
+   d. Kattintson az **Alkalmaz** gombra. 
 
       ![képcsempe hozzáadása ablak](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
 
@@ -84,7 +84,7 @@ Ha az irányítópult címsorát kívánja megadni, írja be a címsort a szöve
 
    c. Igény szerint egyéni hivatkozást is beállíthat a címhez. Az egyéni hivatkozások lehetnek külső helyek, vagy a munkaterületen található irányítópultok vagy jelentések. Ugyanakkor mivel ebben a példában magában a szövegdobozban adtuk meg a hivatkozásokat, üresen kell hagyni az **Egyéni hivatkozás beállítása** jelölőnégyzetet.
 
-   d. Kattintson az **Alkalmaz** elemre. 
+   d. Kattintson az **Alkalmaz** gombra. 
 
      ![Szövegmezőcsempe hozzáadása ablak](media/service-dashboard-add-widget/power-bi-add-textbox.png)
    
@@ -104,7 +104,7 @@ Ha YouTube- vagy Vimeo-videócsempét ad hozzá az irányítópulthoz, a lejáts
 
    c. Adjon meg egy hivatkozást a **Címhez** és az **Alcímhez**, hogy a munkatársai a beágyazott videó után a teljes lejátszási listát megtekinthessék a YouTube-on. Ehhez a **Működés** területen válassza az **Egyéni hivatkozás beállítása** lehetőséget, majd adja meg a lejátszási lista **URL-címét**.
 
-   d. Kattintson az **Alkalmaz** elemre.  
+   d. Kattintson az **Alkalmaz** gombra.  
 
    ![Videócsempe hozzáadása ablak](media/service-dashboard-add-widget/power-bi-add-video-new.png)
 
@@ -124,16 +124,16 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 2. Válassza a **Streamelési adathalmaz hozzáadása** lehetőséget.
 3. Hozzon létre **Új streamelési adathalmazt** a Power BI API vagy a PubNub használatával.
 4. Töltse ki az **Adathalmaz neve**, az **Előfizetési kulcs** és a **Csatorna neve** mezőket. Ha a kapcsolat biztonságos, akkor engedélykulccsal is rendelkezik. A kipróbálásához használhatja a PubNubtól származó mintaértékeket.
-5. Válassza a **Tovább** lehetőséget.
+5. Válassza a **Tovább** gombot.
     Láthatja az adathalmazban elérhető mezőket, azok adattípusát és JSON-formátumát.
-6. Kattintson a **Csatlakozás** gombra.
+6. Válassza a **Connect** (Kapcsolódás) elemet.
     Létrehozott egy streamelési adathalmazt.
 7. Térjen vissza az irányítópultra, és válassza ismét a **Csempe hozzáadása** > **Saját streamelési adatok** > **Tovább** lehetőséget.
 8. Válassza ki az érzékelőadatok létrehozott adathalmazát > **Tovább**.
 9. Válassza ki a kívánt vizualizációtípust. Az ilyen adatokhoz többnyire a vonaldiagramok illenek.
 10. Válassza a **Tengely**, **Jelmagyarázat** és **Értékek** lehetőségeket.
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
-12. Válassza a **Tovább** lehetőséget.
+12. Válassza a **Tovább** gombot.
 13. Ha szeretné, megadhat **Címet** és **Alcímet** is.
 14. Rögzítse az irányítópulton.
 
@@ -146,11 +146,11 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
 4. Töltse ki az **Adathalmaz neve**, az **Előfizetési kulcs** és a **Csatorna neve** mezőket. Ha a kapcsolat biztonságos, akkor engedélykulccsal is rendelkezik. A kipróbálásához használhatja a PubNubtól származó mintaértékeket.
 
-5. Válassza a **Tovább** lehetőséget.
+5. Válassza a **Tovább** gombot.
 
    Láthatja az adathalmazban elérhető mezőket, azok adattípusát és JSON-formátumát.
 
-6. Kattintson a **Csatlakozás** gombra.
+6. Válassza a **Connect** (Kapcsolódás) elemet.
 
    Létrehozott egy streamelési adathalmazt.
 
@@ -164,7 +164,7 @@ A PubNub használatával adatfolyamokat, például Twitter-hírcsatornákat vagy
 
 11. Határozza meg a megjeleníteni kívánt időtartamot másodpercben, percben vagy órában.
 
-12. Válassza a **Tovább** lehetőséget.
+12. Válassza a **Tovább** gombot.
 
 13. Megadhat hozzá **Címet** és **Alcímet**.
 
@@ -181,7 +181,7 @@ A jelentés vagy irányítópult címeként bármilyen HTML-tartalmat beilleszth
 
    b. Adja meg a beágyazási kódot. Ebben a példában egy Twitter-hírcsatornát másolunk és illesztünk be.
 
-   c. Kattintson az **Alkalmaz** elemre.
+   c. Kattintson az **Alkalmaz** gombra.
 
    ![Webes tartalom csempe felvétele ablak](media/service-dashboard-add-widget/power-bi-add-web-content.png)
    
@@ -236,12 +236,12 @@ Egy meglévő csempe módosítása:
    
     ![Részletek szerkesztése](media/service-dashboard-add-widget/pbi-edit.png)
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 * Könnyebben helyezheti át a csempét az irányítópulton, ha címet és választható alcímet ad hozzá.
 * Ha egy webhelyről tartalmat ágyazna be, de a webhely nem kínál fel másolható és beilleszthető beágyazási kódot, keresse fel az embed.ly oldalt a beágyazási kód létrehozásához.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Irányítópultcsempék Power BI-tervezők számára – bevezetés](service-dashboard-tiles.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

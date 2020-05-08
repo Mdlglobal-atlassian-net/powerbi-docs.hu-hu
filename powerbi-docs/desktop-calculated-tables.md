@@ -10,10 +10,10 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837345"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Számított táblák létrehozása a Power BI Desktopban
@@ -55,7 +55,7 @@ Létrejön egy **Western Region Employees** nevű táblázat, amely ugyanúgy je
 
 ## <a name="functions-for-calculated-tables"></a>Számított táblázatok függvényei
 
-A számított táblázatok bármely, táblázatot visszaadó DAX-kifejezéssel meghatározhatók, beleértve a másik táblázatokra mutató egyszerű hivatkozásokat. Például:
+A számított táblázatok bármely, táblázatot visszaadó DAX-kifejezéssel meghatározhatók, beleértve a másik táblázatokra mutató egyszerű hivatkozásokat. Példa:
 
 ```dax
 New Western Region Employees = 'Western Region Employees'
@@ -64,7 +64,7 @@ New Western Region Employees = 'Western Region Employees'
 Itt csak röviden bemutattuk a számított táblázatokat. Számos elemzési probléma megoldásához használhatja a számított táblázatokat a DAX-szal. Íme néhány, táblázatokhoz gyakran használt DAX-függvény:
 
 * DISTINCT
-* ÉRTÉKEK
+* VALUES
 * CROSSJOIN
 * UNION
 * NATURALINNERJOIN

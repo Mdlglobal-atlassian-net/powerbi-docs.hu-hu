@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495803"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnosztikai naplózás a Power BI Embedded szolgáltatáshoz az Azure-ban
@@ -127,10 +127,10 @@ A Motor kategória választása esetén az erőforrás az alábbi eseményeket n
 | ObjectType | 802012 | ObjectType |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Az esemény befejezésének ideje. |
 | Időtartam | 0 | Az esemény időtartama (ezredmásodpercben). |
-| SessionType | Felhasználó | Munkamenet típusa (milyen entitás indította a műveletet). |
+| SessionType | User | Munkamenet típusa (milyen entitás indította a műveletet). |
 | ProgressTotal | 0 | Teljes előrehaladás. |
 | IntegerData | 0 | Egész típusú adatok. |
-| Súlyosság | 0 | Egy kivétel súlyossági szintje. |
+| Severity | 0 | Egy kivétel súlyossági szintje. |
 | Siker | 1 | 1 = sikeres. 0 = sikertelen (például engedélyek ellenőrzésekor az 1 azt jelenti, hogy a művelet sikeres volt, a 0 pedig azt, hogy sikertelen). |
 | Hiba | 0 | Az adott esemény hibaszáma. |
 | ConnectionID | 3 | Egyedi kapcsolatazonosító. |
@@ -201,7 +201,7 @@ Több száz lekérdezést használhat. Az alábbiakban bemutatunk néhányat az 
 
     ![Kapacitásnév-lekérdezés eredményei](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-capacity-name-query.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 További információ az Azure-erőforrások diagnosztikai naplózásáról.
 

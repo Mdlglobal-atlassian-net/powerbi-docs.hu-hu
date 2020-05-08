@@ -12,10 +12,10 @@ ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040147"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Rövid útmutató – Navigáció a Power BI szolgáltatásban
@@ -70,7 +70,7 @@ Kezdjük az alapvető tartalmak (irányítópultok, jelentések, alkalmazások) 
 
 Ezeket meg is nézheti, ha a navigációs panelen kiválasztja a **Munkaterületek** lehetőséget. 
 
-![Saját munkaterületek ](./media/end-user-experience/power-bi-workspaces.png)
+![Saját munkaterület ](./media/end-user-experience/power-bi-workspaces.png)
 
 Az összes tartalom, amellyel Ön rendelkezik vagy amelyet Ön hozott létre a **Saját munkaterületen** található. Tekintsen rá úgy mint a saját, személyes munkaterületére, ahol nyugodtan kísérletezhet tartalmaival. Sok Power BI-*fogyasztó* esetén azonban a **Saját munkaterület** üres marad, mert a feladata nem jár új tartalom létrehozásával.  A *fogyasztók*, ahogy a neve is mutatja, „fogyasztják” a mások által létrehozott tartalmat, és ezeket az adatokat üzleti döntésekhez használják fel. Ha tartalmakat hoz létre, akkor inkább a [*jelentéskészítők* számára készült Power BI-cikkeket](../index.yml) érdemes elolvasnia.
 
@@ -156,7 +156,7 @@ A Kezdőlapon találhatók a keresési és a rendezési eszközök, a navigáci�
 
 További információkat a [Power BI kezdőlapja](end-user-home.md) fejezetben találhat.
 
-## <a name="clean-up-resources"></a>Erőforrások felszabadítása
+## <a name="clean-up-resources"></a>Az erőforrások felszabadítása
 Miután végzett ezzel a gyors útmutatóval, eltávolíthatja a mintaként szolgáló irányítópultot, a jelentést és az adatkészletet.
 
 1. Nyissa meg a Power BI szolgáltatást (app.powerbi.com), és jelentkezzen be.    
@@ -168,7 +168,7 @@ Miután végzett ezzel a gyors útmutatóval, eltávolíthatja a mintaként szol
 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 > [!div class="nextstepaction"]
 > [Olvasó nézet a Power BI szolgáltatásban](end-user-reading-view.md)

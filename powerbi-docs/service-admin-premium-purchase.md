@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488614"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>A Power BI Premium megvásárlása
@@ -169,7 +169,7 @@ A következő lépésekkel vásárolhat A SKU-kat az Azure Portalon:
 
 A kapacitás megvásárlása után ismerje meg, hogyan [felügyelheti a kapacitásokat](service-admin-premium-manage.md#manage-capacity), és hogyan [rendelhet hozzá munkaterületeket](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) a kapacitáshoz.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [A Power BI Premium kapacitásainak konfigurálása és kezelése](service-admin-premium-manage.md)\
 [A Power BI díjszabási oldala](https://powerbi.microsoft.com/pricing/)\
@@ -177,4 +177,4 @@ A kapacitás megvásárlása után ismerje meg, hogyan [felügyelheti a kapacit�
 [Power BI Premium – gyakori kérdések](service-premium-faq.md)\
 [A Power BI Enterprise üzembehelyezési előkészületeit bemutató tanulmány ](https://aka.ms/pbienterprisedeploy)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
