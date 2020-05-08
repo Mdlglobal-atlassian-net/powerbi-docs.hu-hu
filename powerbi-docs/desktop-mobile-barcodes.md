@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 LocalizationGroup: Model your data
 ms.openlocfilehash: e2b1c90c6a4ee237af0d800dd7d1c6e1dc8dc3ba
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760905"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Vonalkódok címkézése a mobilalkalmazásban való használatra a Power BI Desktopban
@@ -43,9 +43,9 @@ A Power BI a következő vonalkódokat ismeri fel, ha felcímkézi őket a Power
 * Interleaved2of5Code 
 * ITF14Code 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Vonalkód beolvasása az iPhone-ján lévő Power BI alkalmazásból](consumer/mobile/mobile-apps-scan-barcode-iphone.md)
 * [Problémák az iPhone-on történő vonalkód-leolvasás során](consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Adatok kategorizálása a Power BI Desktopban](desktop-data-categorization.md)  
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

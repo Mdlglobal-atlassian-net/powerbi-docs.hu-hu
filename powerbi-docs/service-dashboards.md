@@ -10,10 +10,10 @@ ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160788"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
@@ -44,7 +44,7 @@ Az irányítópult létrehozása *létrehozói* művelet, ezért csak akkor vég
 > Irányítópult létrehozásához [Power BI Pro-licencre](service-free-vs-pro.md) van szüksége a munkaterületen. A Saját munkaterületen Power BI Pro-licenc nélkül is hozhat létre irányítópultokat.
 
 
-## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
+## <a name="dashboards-versus-reports"></a>Az irányítópultok és a jelentések különbségei
 A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel mind a kettő egy vizualizációkkal teli vászon. Azonban jelentősen el is térnek bizonyos dolgokban, ahogyan a következő táblázatban látható.
 
 | **Képesség** | **Irányítópultok** | **Jelentések** |
@@ -52,7 +52,7 @@ A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel 
 | Oldalak |Egy oldal |Egy vagy több oldal |
 | Adatforrások |Egy vagy több jelentés és egy vagy több adatkészlet irányítópultonként |Egyetlen adatkészlet jelentésenként |
 | Elérhető a Power BI Desktopban |Nem | Igen. Létrehozhatnak és megtekinthetnek jelentéseket a Power BI Desktopban |
-| Feliratkozás |Igen. Feliratkozhat irányítópultra |Igen. Feliratkozhat jelentésoldalra |
+| Előfizetés |Igen. Feliratkozhat irányítópultra |Igen. Feliratkozhat jelentésoldalra |
 | Szűrés |Nem. Nem lehet szűrni és szeletelni |Igen. Számos szűrési, kiemelési és szeletelési móddal rendelkezik |
 | Kiemelt |Igen. Kiválaszthat és beállíthat egy *kiemelt* irányítópultot |Nem |
 | Kedvenc | Igen. Több irányítópultot *kedvencként* jelölhet meg | Igen. Több jelentést *kedvencként* jelölhet meg
@@ -61,7 +61,7 @@ A [jelentések](service-reports.md) hasonlítanak az irányítópultokra, mivel 
 | Láthatja az alapul szolgáló adatkészlet-táblázatokat és -mezőket |Nem. Exportálhatja az adatokat, de magán az irányítópulton nem fogja látni a táblázatokat és a mezőket |Igen |
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Minta-irányítópultjaink](sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.
 * Információ az [irányítópult csempéiről](service-dashboard-tiles.md).
 * Szeretne nyomon követni egy adott irányítópult-csempét, és e-mailes értesítést kapni, ha elér egy bizonyos küszöbértéket? [Hozzon létre egy riasztást egy csempén](service-set-data-alerts.md).

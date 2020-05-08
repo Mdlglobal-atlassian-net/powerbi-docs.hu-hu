@@ -1,5 +1,5 @@
 ---
-title: Adatok közvetlen bevitele a Power BI Desktopba
+title: Adatok közvetlen bevitele a Power BI Desktopban
 description: Adatok közvetlen és egyszerű felvétele a Power BI Desktopba
 author: davidiseminger
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 3c6cd3feb15001cd170d48e306ee1f8a5ba8b2dc
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160948"
 ---
-# <a name="enter-data-directly-into-power-bi-desktop"></a>Adatok közvetlen bevitele a Power BI Desktopba
+# <a name="enter-data-directly-into-power-bi-desktop"></a>Adatok közvetlen bevitele a Power BI Desktopban
 
 A Power BI Desktoppal lehetőség van adatok közvetlen bevitelére, amelyeket azután jelentések és vizualizációk készítéséhez használhat fel. Például kimásolhatja egy munkafüzet vagy egy weblap egyes részeit, majd beillesztheti ezeket a Power BI Desktopba.
 
@@ -39,7 +39,7 @@ Ezzel készen is van! Ennyire egyszerű az adatbevitel a Power BI Desktopba.
 
 Most már használhatja az adatokat a Power BI Desktopban. Ezeket felhasználhatja vizualizációk és jelentések készítéséhez, vagy más olyan adatokkal való kommunikációhoz, amelyekhez később csatlakozni szeretne vagy amelyeket importálna, mint például Excel táblázatok, adatbázisok vagy más egyéb adatforrás.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 

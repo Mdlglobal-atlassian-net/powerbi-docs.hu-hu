@@ -10,10 +10,10 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f3c1f047e3be7520005458294381877d1198ee21
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878633"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Kifejezésalapú címek a Power BI Desktopban
@@ -62,7 +62,7 @@ Ha jobb gombbal a **Title text** (Cím szövege) elemre kattint, megjelenik egy 
 
 Ebben az ablakban kiválaszthatja a cím számára létrehozott mezőt.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 A vizualizációk kifejezésalapú címeinek aktuális implementációjára vonatkozik néhány korlátozás:
 
@@ -70,7 +70,7 @@ A vizualizációk kifejezésalapú címeinek aktuális implementációjára vona
 * A címhez létrehozott mezőnek szöveges adattípusúnak kell lennie. A számokat vagy dátumot és időt (vagy más adattípust) visszaadó mértékek jelenleg nincsenek támogatva.
 * A kifejezésalapú címek nem vihetők át, amikor egy vizualizációt rögzít az irányítópulton.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ez a cikk a vizualizációk címeit dinamikus, a jelentés felhasználónak tevékenysége alapján változó mezőkké alakító DAX-kifejezések létrehozását ismertette. A következő cikkeket is hasznosnak találhatja.
 

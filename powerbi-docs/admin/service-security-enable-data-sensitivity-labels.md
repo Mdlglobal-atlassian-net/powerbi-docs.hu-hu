@@ -10,10 +10,10 @@ ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76537232"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Bizalmassági adatcímkézés engedélyezése a Power BI-ban (előzetes verzió)
@@ -66,11 +66,11 @@ A Power BI a Microsoft Information Protection bizalmassági címkéit használja
 * Azoknak a felhasználónak, akiknek címkéket kell alkalmazniuk a Power BI adategységeire, Power BI Pro-licenccel kell rendelkezniük.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ez a cikk azt ismertette, hogyan engedélyezheti a bizalmasság adatcímkéket a Power BI-ban. A következő cikkek további részleteket tartalmaznak a Power BI-ban alkalmazható adatvédelemről. 
 
 * [A Power BI adatvédelmi lehetőségeinek áttekintése](service-security-data-protection-overview.md)
-* [Bizalmasság címkék alkalmazása a Power BI-ban](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Bizalmassági címkék alkalmazása a Power BI-ban](../designer/service-security-apply-data-sensitivity-labels.md)
 * [A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Adatvédelmi metrikák jelentése](service-security-data-protection-metrics-report.md)

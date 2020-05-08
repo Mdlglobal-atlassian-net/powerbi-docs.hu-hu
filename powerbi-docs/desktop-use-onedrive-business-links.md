@@ -1,6 +1,6 @@
 ---
-title: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
-description: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
+title: A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
+description: A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 706703985242284725fb4fc2d42bf46e54c605c7
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76709703"
 ---
-# <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
+# <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
 Sokan tárolnak olyan Excel-munkafüzeteket a OneDrive Vállalati verziójában, amelyeket kiválóan tudnának a Power BI Desktopban használni. A Power BI Desktopban használhat a OneDrive Vállalati verziójában tárolt Excel-fájlokra mutató online hivatkozásokat jelentések és vizualizációk létrehozásához. Ehhez használhat OneDrive Vállalati verzió-csoportfiókot, vagy a saját OneDrive Vállalati verzió-fiókját.
 
 Egy OneDrive Vállalati verzióra mutató online hivatkozás beállításához szükség van néhány konkrét lépésre. Az alábbi szakaszok ismertetik ezeket a lépéseket, amelyek segítségével megoszthatja a fájlhivatkozást különböző csoportokkal, gépekkel és munkatársakkal.

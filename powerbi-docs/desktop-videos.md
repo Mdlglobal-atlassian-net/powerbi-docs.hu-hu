@@ -1,6 +1,6 @@
 ---
-title: Power BI Desktop videók
-description: Power BI Desktop videók
+title: Power BI Desktop-videók
+description: Power BI Desktop-videók
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 8dbd72b310d6e62619a61d34001afc1f7bc44189
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75730996"
 ---
-# <a name="power-bi-desktop-videos"></a>Power BI Desktop videók
+# <a name="power-bi-desktop-videos"></a>Power BI Desktop-videók
 
 A Power BI Desktop [YouTube-csatornával](https://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p) is rendelkezik!
 
@@ -34,7 +34,7 @@ Adatok importálása, formázása és átalakítása a Power Query-szerkesztőbe
 
 A Power BI YouTube-csatornáján az összes videót megtekintheti az alábbi hivatkozásokkal:
 
-- [Első lépések a Power BI Desktopban](https://www.youtube.com/watch?v=Qgam9M8I0xA)
+- [Első lépések a Power BI Desktoppal](https://www.youtube.com/watch?v=Qgam9M8I0xA)
 - [Jelentés létrehozása a Power BI Desktopban](https://www.youtube.com/watch?v=IMAsitQ2cAc)
 - [A Power Query-szerkesztő használata](https://www.youtube.com/watch?v=ByIUx-HmQbw)
 - [Táblák közti kapcsolatok létrehozása](https://www.youtube.com/watch?v=fVW4MCr0APA)

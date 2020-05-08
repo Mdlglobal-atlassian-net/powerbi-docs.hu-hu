@@ -10,10 +10,10 @@ ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
-ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76268892"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Jelentések másolása más munkaterületekről (előzetes verzió)
@@ -104,7 +104,7 @@ Dönthet úgy, hogy többé nem kívánja munkaterületén tartani a jelentést 
     > A megosztott adathalmaz törlése erről a munkaterületről nem törli az adathalmazt. Csak az arra való hivatkozás lesz törölve.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

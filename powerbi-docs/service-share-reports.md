@@ -11,10 +11,10 @@ ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76894829"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Power BI-jelentés szűrése és megosztása
@@ -55,7 +55,7 @@ Mentse a jelentést.
 
 ## <a name="share-the-filtered-report"></a>A szűrt jelentés megosztása
 
-1. Válassza a **Megosztás** gombot.
+1. Válassza a **Megosztás** lehetőséget.
 
    ![Megosztás választása](media/service-share-reports/power-bi-share.png)
 
@@ -78,9 +78,9 @@ Mentse a jelentést.
 7. Ha ezt a hivatkozást megosztja, a címzettek a szűrt jelentést fogják látni. 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A munka megosztásának módjai a Power BI-ban](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Irányítópult megosztása](service-share-dashboards.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 * Visszajelzés küldene? Mondja el javaslatait a [Power BI-közösség webhelyén](https://community.powerbi.com/).
 

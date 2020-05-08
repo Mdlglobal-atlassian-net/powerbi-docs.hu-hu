@@ -10,10 +10,10 @@ ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762577"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Adatfolyamok használata helyszíni adatforrásokkal
@@ -80,10 +80,10 @@ Ennek a cikknek az elolvasásával helyszíni adatforrás adatfolyamokhoz való 
 * [Számított entitások használata a Power BI Premiumban](service-dataflows-computed-entities-premium.md)
 * [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

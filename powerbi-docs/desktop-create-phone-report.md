@@ -10,10 +10,10 @@ ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761479"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Power BI-jelentések optimalizálása mobilalkalmazásokhoz
@@ -105,9 +105,9 @@ Ha csak egyes oldalak vannak optimalizálva, álló tájolásban egy üzenet jel
 
 A jelentések olvasói a telefont vagy a táblagépet oldalra fordítva fekvő tájolásban tekinthetik meg az oldalt. További információk az [álló tájolásra optimalizált Power BI-jelentések használatáról](consumer/mobile/mobile-apps-view-phone-report.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Power BI-irányítópult telefonos nézetének létrehozása](service-create-dashboard-mobile-phone-view.md).
 * [Telefonra optimalizált Power BI-jelentések megtekintése](consumer/mobile/mobile-apps-view-phone-report.md).
 * [Bármely méretre optimalizált rugalmas vizualizációk létrehozása](visuals/desktop-create-responsive-visuals.md).
-* További kérdései vannak? [Kérdés feltevése a Power BI közösségének](https://community.powerbi.com/).
+* Több kérdése van? [Kérdés feltevése a Power BI közösségének](https://community.powerbi.com/).
 

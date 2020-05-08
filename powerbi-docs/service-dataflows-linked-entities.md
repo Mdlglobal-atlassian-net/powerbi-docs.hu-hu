@@ -10,10 +10,10 @@ ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762186"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Entitások csatolása adatfolyamok között a Power BI-ban
@@ -73,7 +73,7 @@ Hasznos tudnivaló, hogy a teljes frissítési folyamat egyszerre lesz végleges
 
 Adatfolyamokon alapuló adatokat is tartalmazó Power BI-jelentésekben a felhasználók csak akkor láthatják a csatolt entitásokat, ha hozzáféréssel rendelkeznek a forrásadatfolyamhoz.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 A csatolt entitásokkal végzett munka során tekintetbe kell venni néhány korlátozást:
 
@@ -94,10 +94,10 @@ Az alábbi cikkek hasznosak lehetnek adatfolyamok létrehozása, vagy a velük v
 * [Adatfolyamok használata helyszíni adatforrásokkal](service-dataflows-on-premises-gateways.md)
 * [Fejlesztői erőforrások Power BI-adatfolyamokhoz](service-dataflows-developer-resources.md)
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

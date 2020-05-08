@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f76d3e61c3817d3e5ab4480c935abe4dc7346e54
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761519"
 ---
 # <a name="connect-to-webpages-from-power-bi-desktop"></a>Csatlakozás weblapokhoz a Power BI Desktopról
@@ -45,7 +45,7 @@ A Power BI Desktopból áthúzhatja a mezőket a Jelentés vászonra, és bármi
 
 Ha részletesebben és működés közben szeretné látni a weblapokhoz való csatlakozást, tekintse meg a [Power BI Desktop Első lépések útmutatóját](desktop-getting-started.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Adatforrások a Power BI Desktopban](desktop-data-sources.md)
