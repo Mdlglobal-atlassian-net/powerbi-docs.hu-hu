@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/03/2020
 ms.author: davidi
 ms.openlocfilehash: 41a0d100817f23d3a395f05cefbe60a0214bfb59
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78260853"
 ---
 # <a name="power-bi-videos"></a>Power BI-videók
@@ -42,10 +42,10 @@ A lejátszási lista alábbi néhány videója segít a kezdeti lépésekben.
 ## <a name="more-videos"></a>További videók
 Tekintse meg a további videókhoz készült források és tartalmak gyűjteményét.
 
-* [Power BI vezetett képzés](https://powerbi.microsoft.com/guided-learning/) – a Power BI fokozatos bemutatása könnyen emészthető részletekben
+* [Interaktív Power BI-oktatás](https://powerbi.microsoft.com/guided-learning/) – a Power BI megismerésére szánt sorozat, könnyen feldolgozható fejezetekre bontva
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Mi az a Power BI?](fundamentals/power-bi-overview.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

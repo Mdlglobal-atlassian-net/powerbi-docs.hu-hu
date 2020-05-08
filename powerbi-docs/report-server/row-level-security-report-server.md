@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
 ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859181"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban
@@ -116,9 +116,9 @@ Nem. Egy-egy adatsort biztosíthat, de a felhasználók mindig látják a részl
 Igen, ha már rendelkezik meglévő szerepkörökkel és hozzárendelt tagokkal a Power BI jelentéskészítő kiszolgálóban, további szerepköröket is létrehozhat, és a jelentést újra közzéteheti, és ez nem lesz hatással a jelenlegi hozzárendelésekre. 
  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md) 
 [Rendszergazdai kézikönyv](admin-handbook-overview.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

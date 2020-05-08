@@ -9,10 +9,10 @@ ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73854884"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Csatlakozás a Power BI-munkaterülethez tartozó OneDrive-ban tárolt fájlokhoz
@@ -31,7 +31,7 @@ A fájlokat két lépésben adhatja hozzá a munkaterülethez:
 > 
 
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-workspace"></a>1 Fájlok feltöltése a munkaterülethez tartozó OneDrive Vállalati verzióba
-1. A Power BI szolgáltatásban kattintson a Munkaterületek melletti nyílra > kattintson a három pontra ( **…** ) a munkaterület neve mellett. 
+1. A Power BI szolgáltatásban válassza a Munkaterületek elem melletti nyilat, majd a munkaterület neve melletti három pontot ( **...** ). 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Válassza a **Fájlok** elemet a munkaterülethez tartozó OneDrive Vállalati verzió Office 365-ben való megnyitásához.
@@ -75,10 +75,10 @@ Miután a fájlok bekerültek a munkaterülethez tartozó OneDrive Vállalati ve
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Alkalmazások és munkaterületek létrehozása a Power BI-ban](service-create-distribute-apps.md)
 * [Adatok importálása Excel-munkafüzetekből](service-get-data-from-files.md)
 * [Csatlakozás teljes Excel-munkafüzetekhez](service-excel-workbook-files.md)
-* További kérdései vannak? [Kérdezze a Power BI-közösséget!](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 * Visszajelzést szeretne küldeni? Keresse fel a [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi) fórumot.
 

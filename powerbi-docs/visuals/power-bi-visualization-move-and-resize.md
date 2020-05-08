@@ -10,10 +10,10 @@ ms.date: 10/31/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: cda52bd8814c409bdc8d8d7e14a30744fc91b9ad
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73880796"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report"></a>Vizualizációk áthelyezése és átméretezése egy jelentésben
@@ -36,9 +36,9 @@ A Power BI Desktopban nyisson meg egy jelentést, amelyben legalább egy vizuali
 * Vigye az egeret a vizualizáció fölé, és kattintson a Fókusz mód ikonra.
   ![Fókusz mód ikon](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Vizualizáció átméretezése egy irányítópulton](../service-dashboard-edit-tile.md)  
 
 [Fókusz mód](../consumer/end-user-focus.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
