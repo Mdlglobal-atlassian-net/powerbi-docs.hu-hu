@@ -1,5 +1,5 @@
 ---
-title: Vizualizációk jelentésen belüli működésének módosítása
+title: Vizuális elemek jelentésen belüli működésének módosítása
 description: Dokumentáció a vizualizációk a Microsoft Power BI szolgáltatás jelentéseiben és a Power BI Desktop-jelentésekben előforduló interakcióiról.
 author: mihart
 ms.reviewer: ''
@@ -11,10 +11,10 @@ ms.date: 02/04/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 1d723f3dd67eb5e096622c882b5f538a77666d9e
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77036699"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Vizualizációk Power BI-jelentésen belüli működésének módosítása
@@ -88,10 +88,10 @@ Hogy a kiválasztott vizualizációnak a következőket kell-e tennie:
 
 3. Ha a megfigyelt viselkedés nem az, amit Ön szeretne, módosíthatja az interakciókat [a fent leírtak szerint](#change-the-interaction-behavior).
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 Ha különböző táblákból származó mezőkkel rendelkező mátrixot hoz létre, majd a hierarchiában több elem kiválasztásával megpróbál több elemet keresztkiemeléssel megjelölni, akkor a többi vizualizáción hiba jelentkezik. 
 
 ![Videó arról a hibáról, amely a hierarchia több szintjén történő szűrésnél jelentkezik](media/service-reports-visual-interactions/cross-highlight.gif)
     
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Szűrés és kiemelés Power BI-jelentésekben](power-bi-reports-filters-and-highlighting.md)

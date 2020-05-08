@@ -10,10 +10,10 @@ ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76709774"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>A Teljesítményelemző használata a jelentéselemek teljesítményének vizsgálatához
@@ -82,7 +82,7 @@ A Teljesítményelemző által a jelentésekről létrehozott adatokat az **Expo
 ![A teljesítményelemző naplófájljának mentése](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Ha többet szeretne megtudni a **Power BI Desktopról**, illetve a szoftver használatának kezdeti lépéseiről, tekintse meg a következő cikkeket.
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

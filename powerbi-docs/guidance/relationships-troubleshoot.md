@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
 ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78263645"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Kapcsolatok hibaelhárítási útmutatója
@@ -52,10 +52,10 @@ Ebben az esetben kövesse a következő általános hibaelhárítási ellenőrz�
 |A sorszintű biztonság nincs megfelelően kényszerítve|– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_<br />– Kényszerítve van a sorszintű biztonság, azonban nincs engedélyezve a kétirányú kapcsolat propagálása – lásd: [Sorszintű biztonság (RLS) a Power BI Desktoppal](../desktop-rls.md)|
 |||
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
 - [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
-- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

@@ -10,10 +10,10 @@ ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33d0b7850b5e396d8f03e80cbcb32768fb26bf6d
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439802"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Jelentésközi részletezés a Power BI-ban
@@ -31,7 +31,7 @@ A részletezési művelet megnyitja a *céljelentés* *céloldalát*.
 Ez a cikk azt mutatja be, hogy miképpen állíthatja be és használhatja a jelentésrészletezést a Power BI-jelentésekhez.
 
 > [!NOTE]
-> A jelentésközi részletezést nem használhatja a **Saját munkaterületen** belüli [Velem megosztott jelentésekhez](service-share-dashboards.md#share-a-dashboard-or-report). A jelentésközi részletezés használatához azon a munkaterületen kell hozzáférnie a jelentésekhez, ahonnan megosztásra kerültek.
+> A jelentésközi részletezést nem használhatja a [Saját munkaterületen](service-share-dashboards.md#share-a-dashboard-or-report) belüli **Velem megosztott jelentésekhez**. A jelentésközi részletezés használatához azon a munkaterületen kell hozzáférnie a jelentésekhez, ahonnan megosztásra kerültek.
 
 ## <a name="enable-cross-report-drillthrough"></a>Jelentésközi részletezés engedélyezése
 
@@ -44,7 +44,7 @@ A modellek érvényesítését követően engedélyezze a forrásjelentésnek a 
 1. A Power BI Desktopban lépjen a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** területre. 
 1. A **Beállítások** ablak bal oldalán, az **Aktuális fájl** szakasz alján, válassza a **Jelentésbeállítások** lehetőséget. 
 1. A jobb alsó sarokban, a **Jelentésközi részletezés** alatt, válassza **A jelentés vizualizációi használhatnak más jelentésekből származó részletezési célokat** lehetőséget. 
-1. Válassza az **OK** lehetőséget. 
+1. Kattintson az **OK** gombra. 
    
    ![Jelentésközi részletezés engedélyezése a Power BI Desktopban](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
@@ -100,7 +100,7 @@ Jelentésközi részletezéshez a Power BI átadja a szűrési környezetet a c�
 
 Ha a jelentésközi részletezési művelet után vissza szeretne térni a forrásjelentéshez, használja a böngésző **Vissza** gombját. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 

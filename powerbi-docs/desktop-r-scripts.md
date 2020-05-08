@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 358a61c13418bd29a9e83ed7029e8b90f9a5988e
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76161533"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>R-szkriptek futtatása a Power BI Desktopban
@@ -61,11 +61,11 @@ Megadhatja, hogy a rendszer melyik R-telepítést használja a szkript futtatás
 
 ![R-szkript beállításai, Beállítások párbeszédpanel, Power BI Desktop](media/desktop-r-scripts/r-scripts-4.png)
 
-### <a name="refresh"></a>Frissítés
+### <a name="refresh"></a>Előnézet
 
 Az R-szkripteket frissítheti a Power BI Desktopban. Az R-szkriptek frissítésekor a Power BI Desktop újra lefuttatja az R-szkriptet a Power BI Desktop környezetében.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Tekintse meg az alábbi, az R programozási nyelv Power BI-ban történő használatára vonatkozó további információkat.
 

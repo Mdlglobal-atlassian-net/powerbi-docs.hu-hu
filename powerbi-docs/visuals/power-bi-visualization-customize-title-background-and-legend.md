@@ -11,10 +11,10 @@ ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78893432"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>A vizualizáció címeinek, háttereinek és jelmagyarázatainak testreszabása
@@ -112,7 +112,7 @@ Az összes módosítás visszavonásához válassza a **Visszaállítás alapér
 
 1. Adjon címet a jelmagyarázathoz a **Cím** lehetőség **Bekapcsolásával**.
 
-1. A **Jelmagyarázat neve** mezőbe írja be a *Vezető* nevet.
+1. A *Jelmagyarázat neve* mezőbe írja be a **Vezető** nevet.
 
 1. Módosítsa a **színt** feketére.
 
@@ -155,15 +155,15 @@ Az alábbi lista a vizualizációkat és az azokhoz elérhető testreszabási le
 | Pont | igen | igen | igen |
 | Alakzat | igen | igen | igen |
 | Szeletelő | igen | igen | n.a. |
-| Táblázat | igen | igen | n.a. |
+| Tábla | igen | igen | n.a. |
 | Szövegmező | nem | igen | n.a. |
-| Fatérkép | igen | igen | igen |
+| Treemap | igen | igen | igen |
 | Vízesés | igen | igen | igen |
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [X és Y tengely tulajdonságainak testreszabása](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

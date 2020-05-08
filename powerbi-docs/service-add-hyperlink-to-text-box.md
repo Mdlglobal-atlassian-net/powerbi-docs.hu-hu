@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873797"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hivatkozás hozzáadása szövegmezőhöz egy jelentésben
@@ -59,8 +59,8 @@ A Power BI-táblázatokban és -mátrixokban használható hivatkozáskoról a [
 
    A Power BI Desktop eltávolítja a hivatkozást, de a szöveget meghagyja.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Szövegdobozok és alakzatok Power BI-jelentésekben](power-bi-reports-add-text-and-shapes.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

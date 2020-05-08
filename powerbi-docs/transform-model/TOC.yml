@@ -9,14 +9,14 @@
           href: ../desktop-query-overview.md
         - name: Önkiszolgáló adatelőkészítés adatfolyamokkal
           href: ../service-dataflows-overview.md
-    - name: Oktatóanyagok
+    - name: oktatóanyagokat
       expanded: true
       items:
         - name: Saját mértékek létrehozása
           href: ../desktop-tutorial-create-measures.md
         - name: Számított oszlopok létrehozása
           href: ../desktop-tutorial-create-calculated-columns.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Modellkapcsolatok bemutatása
@@ -55,7 +55,7 @@
               href: ../desktop-combine-binaries.md
             - name: Az AI-elemzések használata (előzetes verzió)
               href: ../desktop-ai-insights.md
-        - name: Adatok modellezése
+        - name: Adatmodellezés
           items:
             - name: Gyorsmérők létrehozása általános számításokhoz
               href: ../desktop-quick-measures.md
@@ -113,7 +113,7 @@
               href: ../service-cognitive-services.md
             - name: Automatizált Machine Learning a Power BI-ban
               href: ../service-machine-learning-automated.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: A képletszerkesztő parancsikonjai
           href: ../desktop-formula-editor.md

@@ -1,5 +1,5 @@
 ---
-title: Csatlakozás Google BigQuery-adatbázishoz a Power BI Desktopban
+title: Csatlakozás a Google BigQuery-adatbázishoz a Power BI Desktopban
 description: Könnyedén csatlakozhat a Google BigQueryhez, és használhatja a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b88be05c1e3890dd8ac63503d9279f51b1d9eec9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876506"
 ---
-# <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Csatlakozás Google BigQuery-adatbázishoz a Power BI Desktopban
+# <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Csatlakozás a Google BigQuery-adatbázishoz a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy Google **BigQuery**-adatbázishoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását.
 
 ## <a name="connect-to-google-bigquery"></a>Csatlakozás a Google BigQueryhez
@@ -36,7 +36,7 @@ Ha sikeresen csatlakozott, megjelenik a **Kezelő** ablaka, és megjeleníti a k
 
 ![Adatok a Google BigQueryből](media/desktop-connect-bigquery/connect_bigquery_03.png)
 
-## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
+## <a name="considerations-and-limitations"></a>Szempontok és korlátozások
 A Google **BigQuery**-összekötő használatára vonatkozik néhány korlátozás és egyéb szempont:
 
 * A Google BigQuery-összekötő a Power BI Desktopban és a Power BI szolgáltatásban is elérhető. A Power BI szolgáltatásban az összekötőt a Power BI- és a Google BigQuery-felhő közötti kapcsolaton keresztül érheti el.
@@ -47,7 +47,7 @@ A Power BI a Google BigQuery **Billing Project** szolgáltatásával is együttm
 
     ```Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)

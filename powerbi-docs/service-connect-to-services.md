@@ -9,10 +9,10 @@ ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76975033"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Kapcsolódás a Power BI segítségével a használt szolgáltatásokhoz
@@ -29,7 +29,7 @@ Az alkalmazás telepítése után az irányítópultot és a jelentéseket a Pow
 
 ![Google Analytics alkalmazás a Power BI mobilalkalmazásban](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
-## <a name="get-started"></a>Első lépések
+## <a name="get-started"></a>Az első lépések
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="edit-the-dashboard-and-reports"></a>Az irányítópult és a jelentések szerkesztése
@@ -38,13 +38,13 @@ Az importálás befejezésekor az új alkalmazás megjelenik az Alkalmazások la
 1. A navigációs panelen válassza az **Alkalmazások** lapot > válassza ki az alkalmazást.
    
      ![Alkalmazások lap](media/service-connect-to-services/power-bi-service-apps-open-app.png)
-2. A Q&A mezőben kérdéseket tehet fel, egy csempére kattintva pedig megnyithatja az alapul szolgáló jelentést. 
+2. Tegyen fel kérdést a Q&A mezőben, vagy válasszon ki egy csempét az alapjául szolgáló jelentés megnyitásához. 
    
     ![Google Analytics irányítópult](media/service-connect-to-services/googleanalytics2.png)
    
     Módosítsa az irányítópultot és a jelentést úgy, hogy megfeleljen a szervezet igényeinek. Ezután [ossza meg alkalmazásait a munkatársaival](service-create-distribute-apps.md)
 
-## <a name="whats-included"></a>Tartalom
+## <a name="whats-included"></a>Mi tartozik hozzá
 A szolgáltatáshoz való csatlakozást követően látni fog egy irányítópulttal, jelentésekkel és adatkészlettel rendelkező újonnan létrehozott alkalmazást és munkaterületet. A szolgáltatásból származó adatok egy adott forgatókönyvre vonatkoznak, és nem feltétlenül tartalmazzák a szolgáltatással kapcsolatos összes információt. Az adatok naponta egyszer automatikusan frissülnek. Az adatkészlet kiválasztásával Ön határozhatja meg az ütemezést.
 
 A [Power BI Desktopban számos szolgáltatáshoz kapcsolódhat](desktop-data-sources.md), például a Google Analyticshez, és létrehozhatja saját, személyre szabott irányítópultjait és jelentéseit.  
@@ -67,8 +67,8 @@ Használ olyan szolgáltatást, amelyből szeretné, ha Power BI-alkalmazás ké
 
 Ha érdekli, hogyan hozhat létre sablonalkalmazásokat, hogy saját maga terjeszthesse azokat, akkor olvassa el a [Sablonalkalmazás létrehozása a Power BI-ban](service-template-apps-create.md) cikket. A Power BI-partnerek kevés kódolással vagy anélkül hozhatnak létre Power BI-alkalmazásokat, és helyezhetik üzembe azokat bármely Power BI-ügyfél részére. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Alkalmazások terjesztése munkatársaknak](service-create-distribute-apps.md)
 * [Új munkaterületek létrehozása a Power BI-ban](service-create-the-new-workspaces.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 
