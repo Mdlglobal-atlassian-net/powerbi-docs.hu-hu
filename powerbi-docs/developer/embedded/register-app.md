@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
 ms.openlocfilehash: e47cb22ba4c30c8090e2e9552e1994a5c545b47b
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404030"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD-alkalmazás regisztrálása a Power BI-ban való használathoz
@@ -164,7 +164,7 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
      }
      ```
 
-    A *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* **resourceId** nem univerzális, hanem a bérlőtől függ. Ez az érték az Azure Active Directory- (AAD) bérlőben található „Power BI szolgáltatás” alkalmazás objectId azonosítója.
+    A **c78a3685-1ce7-52cd-95f7-dc5aea8ec98e** *resourceId* nem univerzális, hanem a bérlőtől függ. Ez az érték az Azure Active Directory- (AAD) bérlőben található „Power BI szolgáltatás” alkalmazás objectId azonosítója.
 
     A felhasználó ezt az értéket gyorsan beszerezheti az Azure Portalon:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
@@ -194,8 +194,8 @@ Vagy a beágyazáshoz használt *fő* fiókkal, vagy egy globális rendszergazda
    }
    ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Most, hogy regisztrálta alkalmazását az Azure AD-ben, hitelesítenie kell a felhasználókat az alkalmazásban. Erről részletesebben a [felhasználók hitelesítését és a Power BI-alkalmazáshoz való Azure AD-hozzáférési token beszerzését](get-azuread-access-token.md) ismertető témakörben olvashat.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

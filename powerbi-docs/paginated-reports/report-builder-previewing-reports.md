@@ -9,10 +9,10 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: afbc31e3ece8bc72ad52bb2fe7c3d871b2f68e1b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78922942"
 ---
 # <a name="previewing-reports-in-power-bi-report-builder"></a>Jelentések előnézete a Power BI Jelentéskészítőben
@@ -70,7 +70,7 @@ A jelentések előnézeti megtekintése gyakran a jelentés frissítési és men
 ## <a name="external-report-items"></a>Külső jelentéselemek  
  A jelentés olyan elemeket is tartalmazhat, mint külső képek, amelyek a jelentéstől külön vannak tárolva. Mivel ezek külön tárolt elemek, áthelyezhetők máshová, vagy törölhetők. Ilyen esetben előfordulhat, hogy nem tekinthető meg a jelentés előnézete. Frissítheti a jelentést úgy, hogy az jelezze az elem új helyét; ha az elemet törölték, lecserélheti egy meglévőre; vagy el is távolíthatja az elemre való hivatkozást a jelentésből.  
   
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
   

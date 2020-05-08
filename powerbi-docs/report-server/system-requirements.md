@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 20b41762f7b38bd4ed26add97abb4eec1da0c000
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77558562"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló telepítésének hardver- és szoftverkövetelményei
@@ -23,10 +23,10 @@ Ez a cikk a Power BI jelentéskészítő kiszolgáló telepítésének és futta
 
 | Összetevő | Követelmény |
 | --- | --- |
-| .NET Framework |4.7<br><br>A .NET-keretrendszert manuálisan telepítheti a [Microsoft .NET Framework 4.7 (Webes telepítő) Windows rendszerhez](https://support.microsoft.com/en-us/kb/3186500) helyről.<br/><br/> A .NET-keretrendszer 4.7-es verziójáról a [.NET-keretrendszer fejlesztők számára készült üzembe helyezési útmutatója](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers) nyújt további információkat, javaslatokat és útmutatást.<br/><br/>Windows 8.1 és Windows 2012 R2 rendszeren a .NET-keretrendszer 4.7 telepítéséhez a [KB2919355](https://support.microsoft.com/kb/2919355) frissítés szükséges. |
+| .NET-keretrendszer |4.7<br><br>A .NET-keretrendszert manuálisan telepítheti a [Microsoft .NET Framework 4.7 (Webes telepítő) Windows rendszerhez](https://support.microsoft.com/en-us/kb/3186500) helyről.<br/><br/> A .NET-keretrendszer 4.7-es verziójáról a [.NET-keretrendszer fejlesztők számára készült üzembe helyezési útmutatója](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers) nyújt további információkat, javaslatokat és útmutatást.<br/><br/>Windows 8.1 és Windows 2012 R2 rendszeren a .NET-keretrendszer 4.7 telepítéséhez a [KB2919355](https://support.microsoft.com/kb/2919355) frissítés szükséges. |
 | Merevlemez |A Power BI jelentéskészítő kiszolgáló működéséhez legalább 1 GB szabad lemezterület szükséges.<br><br>További lemezterület szükséges a jelentéskészítő kiszolgáló adatbázisát üzemeltető adatbázis-kiszolgálón. |
-| Memória |**Minimális:** 1 GB<br/><br/> **Ajánlott:** Legalább 4 GB |
-| Processzor sebessége |**Minimum:** 64 bites processzor: 1,4 GHz<br/><br/> **Ajánlott:** 2,0 GHz vagy gyorsabb |
+| Memória |**Minimum:** 1 GB<br/><br/> **Ajánlott:** legalább 4 GB |
+| Processzor sebessége |**Minimum:** x64 processzor: 1,4 GHz<br/><br/> **Ajánlott:** 2,0 GHz vagy gyorsabb |
 | Processzor típusa |64 bites processzor: AMD Opteron, AMD Athlon 64, Intel Xeon Intel EM64T-támogatással, Intel Pentium IV EM64T-támogatással |
 | Operációs rendszer |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
@@ -47,7 +47,7 @@ A jelentéskészítő kiszolgáló adatbázisának üzemeltetése SQL Serveren t
 
 Ha a jelentéskészítő kiszolgáló adatbázisát egy távoli számítógépen szeretné létrehozni, akkor úgy kell konfigurálnia a kapcsolatot, hogy az egy tartományi felhasználói fiókot vagy pedig egy hálózati hozzáféréssel rendelkező szolgáltatási fiókot használjon. Ha úgy dönt, hogy egy távoli SQL Server-példányt használ, fontolja meg alaposan, hogy a jelentéskészítő kiszolgáló mely hitelesítő adatokkal kapcsolódjon az SQL Server-példányhoz. További információkért tekintse meg a [Jelentéskészítő kiszolgáló adatbázis-kapcsolatának konfigurációja](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager) című cikket.
 
-## <a name="considerations"></a>Megfontolandó szempontok
+## <a name="considerations"></a>Szempontok
 
 A Power BI jelentéskészítő kiszolgáló az alapvető beállításokat a működéséhez szükséges alapértelmezett értékekkel telepíti. Ehhez a következő követelményeknek kell teljesülniük:
 
@@ -64,15 +64,15 @@ A Power BI jelentéskészítő kiszolgáló az alapvető beállításokat a műk
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-jelentések és az Analysis Services élő kapcsolatai
 
-Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használhatja. A megfelelő működéshez megfelelő verziójú és kiadású Analysis Services-kiszolgáló szükséges.
+Élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használhat. A megfelelő működéshez megfelelő verziójú és kiadású Analysis Services-kiszolgáló szükséges.
 
 | **Kiszolgáló verziója** | **Kötelező termékváltozat** |
 | --- | --- |
 | 2012 SP1 CU4 vagy újabb |Business Intelligence és Enterprise termékváltozat |
-| 2014 |Business Intelligence és Enterprise termékváltozatok |
+| 2014 |Business Intelligence és Enterprise termékváltozat |
 | 2016 vagy újabb |Standard vagy magasabb szintű termékváltozat |
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)  
 [Rendszergazdai áttekintés](admin-handbook-overview.md)  
@@ -80,4 +80,4 @@ Az élő kapcsolatokat táblázatos vagy többdimenziós példányokhoz használ
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

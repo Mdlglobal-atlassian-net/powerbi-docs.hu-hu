@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 5f4067e77631f22951844c0d4d64b06e5e2e30cc
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079577"
 ---
 # <a name="power-bi-rest-api-limitations"></a>A Power BI REST API korlátozásai  
@@ -30,7 +30,7 @@ ms.locfileid: "79079577"
 * Legfeljebb 5 000 000 tárolt sor táblánként, adatmegőrzési szabályzat nélküli adathalmazban  
 * 4000 karakter/érték sztringoszlopokhoz, POST-sorműveletekben
   
-## <a name="see-also"></a>További információ
+## <a name="see-also"></a>Lásd még
 
 * [Azure AD szolgáltatási korlátozások](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 * [A Power BI REST API áttekintése](https://docs.microsoft.com/rest/api/power-bi/)

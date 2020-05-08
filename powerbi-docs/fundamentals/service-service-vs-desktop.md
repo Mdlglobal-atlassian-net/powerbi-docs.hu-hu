@@ -11,10 +11,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79126259"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>A Power BI Desktop és a Power BI szolgáltatás összehasonlítása
@@ -56,7 +56,7 @@ Miután létrehozta a jelentéseket, mentheti őket egy *munkaterületre* a **Po
 
 Az adatfolyamok segítenek a vállalatoknak egységesíteni a különféle forrásokból származó adatokat, valamint előkészíteni azokat modellezésre. Az elemzők könnyen, jól ismert és önkiszolgáló eszközökkel hozhatnak létre adatfolyamokat. Az elemzők az adatfolyamok használatával big data típusú adatokat tölthetnek be, alakíthatnak át, integrálhatnak és egészíthetnek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhatnak. További információ az [adatfolyamokkal végzett önkiszolgáló adat-előkészítésről](../service-dataflows-overview.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Mi az a Power BI Desktop?](../desktop-what-is-desktop.md)
 
@@ -64,5 +64,5 @@ Az adatfolyamok segítenek a vállalatoknak egységesíteni a különféle forr�
 
 [Alapfogalmak jelentéstervezőknek](../service-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

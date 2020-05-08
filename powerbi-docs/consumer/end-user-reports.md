@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114246"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
@@ -51,9 +51,9 @@ Ez nem azt jelenti, hogy a módosításait nem mentheti. Megteheti, a módosít�
 
 ![A Visszaállítás alapértelmezettre ikon képernyőképe.](./media/end-user-reports/power-bi-reset.png)
 
-## <a name="dashboards-versus-reports"></a>Irányítópultok és jelentések
+## <a name="dashboards-versus-reports"></a>Az irányítópultok és a jelentések különbségei
 
-Az [irányítópultokat](end-user-dashboards.md) gyakran összekeverik a jelentésekkel, mivel mindegyik egy vizualizációkkal teli vászon. Azonban van köztük néhány alapvető különbség.  
+Az [irányítópultokat](end-user-dashboards.md) gyakran összekeverik a jelentésekkel, mivel mindegyik egy vizualizációkkal teli vászon. Vannak azonban lényeges különbségek a két elem között.  
 
 | **Képesség** | **Irányítópultok** | **Jelentések** |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ Lehet *felhasználó* is, aki másoktól kap jelentéseket. Ez esetben azt kell 
 > [!TIP]
 > Ha nem találta meg itt, amit keres, a bal oldali tartalomjegyzékben böngészhet a *jelentésekhez* kapcsolódó cikkek között.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Jelentés megnyitása és megtekintése](end-user-report-open.md)    
 [Irányítópultok a Power BI szolgáltatásban](end-user-dashboards.md)

@@ -10,10 +10,10 @@ ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439825"
 ---
 # <a name="use-buttons-in-power-bi"></a>Gombok használata a Power BI-ban
@@ -89,7 +89,7 @@ Gyorsan készíthet egyéni navigációs panelt. Így elkerülheti, hogy könyvj
 
 Emellett feltételesen formázhatja us az elemleírást, ahogyan a többi gombtípus esetében is.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A gombokhoz hasonló vagy azokkal együtt használható funkciókkal kapcsolatos részletesebb információkat az alábbi cikkekben talál:
 
 * [Részletezés használata Power BI-jelentésekben](desktop-drillthrough.md)

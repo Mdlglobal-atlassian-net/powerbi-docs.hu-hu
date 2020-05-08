@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079669"
 ---
 # <a name="dataset-properties"></a>Adatkészlet tulajdonságai
@@ -24,50 +24,50 @@ Az adatkészletek API-jának jelenlegi v1 verziójában az adatkészlet létreho
 
 ## <a name="dataset"></a>Adathalmaz
 
-Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
+Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
-azonosító     |  Guid       | Az adatkészlet egész rendszerre kiterjedő, egyedi azonosítója.        | Igaz        | Hamis        
-name     | Sztring        | Az adatkészlet felhasználó által meghatározott neve.        | Hamis        | Igaz        
+id     |  Guid       | Az adatkészlet egész rendszerre kiterjedő, egyedi azonosítója.        | Igaz        | Hamis        
+név     | Sztring        | Az adatkészlet felhasználó által meghatározott neve.        | Hamis        | Igaz        
 táblák     | Table[]        | Táblagyűjtemény.        |  Hamis       | Hamis        
 kapcsolatok     | Relationship[]        | Táblák közti kapcsolatok gyűjteménye.        | Hamis        |  Hamis  
 defaultMode     | Sztring        | A „Push” és „Streaming” értékekkel meghatározza, hogy az adatkészlet továbbítása leküldéssel, streameléssel vagy mindkettővel történjen-e.         | Hamis        |  Hamis
 
-## <a name="table"></a>Táblázat
+## <a name="table"></a>Tábla
 
-Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
+Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
-name     | Sztring        |  A tábla felhasználó által meghatározott neve. A tábla azonosítójaként is szolgál.       | Hamis        |  Igaz       
+név     | Sztring        |  A tábla felhasználó által meghatározott neve. A tábla azonosítójaként is szolgál.       | Hamis        |  Igaz       
 oszlopok     |  column[]       |  Oszlopgyűjtemény.       | Hamis        |  Igaz       
 mértékek     | measure[]        |  Mértékgyűjtemény.       | Hamis        |  Hamis       
 isHidden     | Logikai érték        | Ha az értéke igaz, a tábla rejtett lesz az ügyféleszközök elől.        | Hamis        | Hamis        
 
 ## <a name="column"></a>Oszlop
 
-Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
+Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
-name     |  Sztring        | Az oszlop felhasználó által meghatározott neve.        |  Hamis       | Igaz       
+név     |  Sztring        | Az oszlop felhasználó által meghatározott neve.        |  Hamis       | Igaz       
 dataType     |  Sztring       |  Támogatott [EDM-adattípusok](https://msdn.microsoft.com/library/ee382832.aspx) és korlátozások. Lásd: [Adattípus-korlátozások](#data-type-restrictions).      |  Hamis       | Igaz        
 formatString     | Sztring        | Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).      | Hamis        | Hamis        
 sortByColumn    | Sztring        |   Ugyanazon tábla oszlopának a sztringneve, amelyet a jelenlegi oszlop elrendezésére használ.     | Hamis        | Hamis       
 dataCategory     | Sztring        |  Az ebben az oszlopban lévő adatokat leíró adatkategóriához használható sztringérték. Néhány gyakori érték például: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Hamis       | Hamis        
-isHidden    |  Logikai érték       |  Tulajdonság, amely azt jelzi, hogy az oszlop rejtett-e a nézetben. Az alapértelmezett értéke a hamis.       | Hamis        | Hamis        
+isHidden    |  Logikai érték       |  Tulajdonság, amely azt jelzi, hogy az oszlop rejtett-e a nézetben. Az alapértelmezett érték a false.       | Hamis        | Hamis        
 summarizeBy     | Sztring        |  Alapértelmezett aggregációs módszer az oszlophoz. Értékek többek között: default, none, sum, min, max, count, average, distinctCount     |  Hamis       | Hamis
 
 ## <a name="measure"></a>Mérték
 
-Név  |Típus  |Leírás  |Csak olvasható  |Kötelező
+Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
-name     | Sztring        |  A mérték felhasználó által meghatározott neve.       |  Hamis       | Igaz        
+név     | Sztring        |  A mérték felhasználó által meghatározott neve.       |  Hamis       | Igaz        
 kifejezés     | Sztring        | Egy érvényes DAX-kifejezés.        | Hamis        |  Igaz       
 formatString     | Sztring        |  Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).       | Hamis        | Hamis        
 isHidden     | Sztring        |  Ha az értéke igaz, a tábla rejtett lesz az ügyféleszközök elől.       |  Hamis       | Hamis       
 
 ## <a name="relationship"></a>Kapcsolat
 
-Név  |Típus  |Leírás  |Csak olvasható  |Kötelező 
+Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező 
 ---------|---------|---------|---------|---------
-name     | Sztring        | A kapcsolat felhasználó által meghatározott neve. A kapcsolat azonosítójaként is szolgál.        | Hamis       | Igaz        
-crossFilteringBehavior     | Sztring        |    A kapcsolat szűrőiránya: OneDirection (egyirányú) (alapértelmezett), BothDirections (kétirányú), Automatic (automatikus)       | Hamis        | Hamis        
+név     | Sztring        | A kapcsolat felhasználó által meghatározott neve. A kapcsolat azonosítójaként is szolgál.        | Hamis       | Igaz        
+crossFilteringBehavior     | Sztring        |    A kapcsolat szűrési iránya: OneDirection (alapértelmezett), BothDirections, Automatic       | Hamis        | Hamis        
 fromTable     | Sztring        | A külső kulcs tábla neve.        | Hamis        | Igaz         
 fromColumn    | Sztring        | A külső kulcs oszlop neve.        | Hamis        | Igaz         
 toTable    | Sztring        | Az elsődleges kulcs tábla neve.        | Hamis        | Igaz         

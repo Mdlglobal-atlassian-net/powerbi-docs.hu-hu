@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 01/31/2020
 ms.author: davidi
 ms.openlocfilehash: b67025de5e2a70876a31fd42e22c9572403288fa
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464405"
 ---
 ## <a name="limitations"></a>Korlátozások
@@ -17,7 +17,7 @@ Itt találhatók a sorszintű biztonság felhőmodellekben érvényes aktuális 
 
 * Ha korábban szerepköröket és szabályokat adott meg a Power BI szolgáltatásban, újból létre kell hoznia őket a Power BI Desktopban.
 
-* Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyeznie az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. [További információ](../desktop-import-excel-workbooks.md).
+* Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyeznie az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. [További tudnivalók](../desktop-import-excel-workbooks.md).
 
 * Csak az importálási és a DirectQuery-kapcsolatok támogatottak. Az Analysis Services élő kapcsolatait a helyszíni modellen lehet kezelni.
 

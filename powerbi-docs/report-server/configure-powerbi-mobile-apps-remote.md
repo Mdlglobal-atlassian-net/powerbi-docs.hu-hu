@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
 ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
-ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73925906"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Power BI mobilalkalmazás jelentéskészítő kiszolgálóhoz való hozzáférésének távoli konfigurálása
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/configure-powerbi-mobile-apps-remote/ios-logo-40-px.png) | ![Android rendszerű telefon](./media/configure-powerbi-mobile-apps-remote/android-logo-40-px.png) |
 |:--- |:--- |
@@ -38,7 +38,7 @@ Rendszergazdaként az alábbi lépéseket kell elvégeznie a Microsoft Intune-ba
 
 A párokat az alábbi táblázatban láthatja.
 
-|Kulcs  |Típus  |Leírás  |
+|Kulcs  |Típus  |Description (Leírás)  |
 |---------|---------|---------|
 | com.microsoft.powerbi.mobile.ServerURL | Sztring | Jelentéskészítő kiszolgáló URL-címe <br> Http/https-sel kell kezdődnie |
 | com.microsoft.powerbi.mobile.ServerUsername | Sztring | [nem kötelező] <br> A kiszolgálóhoz való csatlakozáshoz használandó felhasználónév. <br> Ha még nem létezik ilyen, az alkalmazás kérni fogja a felhasználót, hogy adja meg a kapcsolathoz a felhasználónevet.| 
@@ -67,11 +67,11 @@ Az alábbiakban bemutatunk egy példát arra, hogyan állítható be a konfigur�
 
 Most már megnézhetik és használhatják a Jelentéskészítő kiszolgálón tárolt KPI-ket és Power BI-jelentéseket.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [A Power BI Mobile távoli elérésének engedélyezése Azure AD-alkalmazásproxyval](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 - [Rendszergazdai áttekintés](admin-handbook-overview.md)  
 - [A Power BI jelentéskészítő kiszolgáló telepítése](install-report-server.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

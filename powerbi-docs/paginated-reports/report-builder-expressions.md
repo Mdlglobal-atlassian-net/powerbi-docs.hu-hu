@@ -9,10 +9,10 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921125"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Kifejezések a Power BI Jelentéskészítőben
@@ -30,7 +30,7 @@ ms.locfileid: "78921125"
   
  Kifejezés manuális beviteléhez jelöljön ki egy elemet a tervezőfelületen, majd helyi menük és párbeszédpanelek segítségével állítsa be az elem tulajdonságait. Ha egy legördülő listában az ***(fx)*** gombot vagy az `<Expression>` értéket látja, ebből tudhatja, hogy a tulajdonságként kifejezést is beállíthat. 
   
-##  <a name="Types"></a> Egyszerű és összetett kifejezések  
+##  <a name="understanding-simple-and-complex-expressions"></a><a name="Types"></a> Egyszerű és összetett kifejezések  
  A kifejezések egyenlőségjellel (=) kezdődnek, és Visual Basicben vannak írva. A kifejezések konstansok, operátorok, valamint beépített értékekre (mezőkre, gyűjteményekre és függvényekre) és külső vagy egyéni kódra mutató hivatkozások kombinációját tartalmazhatják.  
   
  Sok jelentéselem-tulajdonság értéke megadható kifejezések használatával. A leggyakoribb ilyen tulajdonságok a szövegdobozok értékei és a helyőrző szövegek. Ha egy szövegdoboz csak egy kifejezést tartalmaz, ez a kifejezés általában a szövegdoboz-tulajdonság értéke. Ha egy szövegdoboz több kifejezést is tartalmaz, akkor ezek mindegyike a szövegdobozbeli helyőrző szöveg értéke.  
@@ -50,23 +50,23 @@ ms.locfileid: "78921125"
 ![Jelentéskészítőbeli kifejezés mintaformátuma](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
 
 
-## <a name="DisplayText"></a> Előtagszimbólumok egyszerű kifejezésekben  
+## <a name="understanding-prefix-symbols-in-simple-expressions"></a><a name="DisplayText"></a> Előtagszimbólumok egyszerű kifejezésekben  
 
 Az egyszerű kifejezések szimbólumokkal jelölik, hogy a hivatkozás mezőre, paraméterre, beépített gyűjteményre vagy a ReportItems gyűjteményre vonatkozik-e. Az alábbi táblázat a megjelenített szövegre és a kifejezésre mutat példákat:  
   
-|Item|Megjelenített példaszöveg|Példakifejezés szövege|  
+|Elem|Megjelenített példaszöveg|Példakifejezés szövege|  
 |----------|--------------------------|-----------------------------|  
 |Adathalmaz-mezők|`[Sales]`<br /><br /> `[SUM(Sales)]`<br /><br /> `[FIRST(Store)]`|`=Fields!Sales.Value`<br /><br /> `=Sum(Fields!Sales.Value)`<br /><br /> `=First(Fields!Store.Value)`|  
 |Jelentésparaméterek|`[@Param]`<br /><br /> `[@Param.Label]`|`=Parameters!Param.Value`<br /><br /> `=Parameters!Param.Label`|  
 |Beépített mezők|`[&ReportName]`|`=Globals!ReportName.Value`|  
 |Megjelenítendő literál karakterek|`\[Sales\]`|`[Sales]`|  
   
-##  <a name="References"></a> Összetett kifejezések írása  
+##  <a name="writing-complex-expressions"></a><a name="References"></a> Összetett kifejezések írása  
  A kifejezések függvényekre, operátorokra, konstansokra, mezőkre, paraméterekre, beépített gyűjteményekből származó elemekre, valamint beágyazott egyéni kódra vagy egyéni szerelvényekre mutató hivatkozásokat tartalmazhatnak.  
   
  Az alábbi táblázat a kifejezésbe foglalható hivatkozási fajtákat sorolja fel:  
   
-|Hivatkozások|Leírás|Példa|  
+|Hivatkozások|Description (Leírás)|Példa|  
 |----------------|-----------------|-------------|  
 |Állandók|Olyan konstansokat ír le, amelyeket interaktív módon elérhet konstans értéket kívánó tulajdonságokhoz, például a betűszínekhez.|`="Blue"`|  
 |Operátorok|A kifejezésekben a hivatkozások kombinálására használható operátorokat írja le. Az **&** operátor például sztringek összefűzésére szolgál.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
@@ -74,8 +74,8 @@ Az egyszerű kifejezések szimbólumokkal jelölik, hogy a hivatkozás mezőre, 
 |Beépített jelentés- és összesítő függvények|Az olyan, kifejezésből elérhető beépített függvényeket ír le, amilyen a `Sum` vagy a `Previous`.|`=Previous(Sum(Fields!Sales.Value))`|  
 |Egyéni kódra és egyéni szerelvényre mutató hivatkozások kifejezésekben a Jelentéskészítőben |Leírja, hogyan érhetők el a beépített `xref:System.Math` és `xref:System.Convert` CLR-osztály, más CLR-osztályok, Visual Basic futtatókörnyezeti kódtárfüggvények, vagy külső szerelvényből származó metódusok.<br /><br /> Leírja, hogyan érhető el olyan egyéni kód, amely a jelentésbe van beágyazva, vagy amely egyéni szerelvényként van lefordítva és telepítve a jelentés-ügyfélnél és a jelentéskészítő kiszolgálón.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
-##  <a name="Valid"></a> Kifejezések ellenőrzése  
- Amikor egy adott jelentéselem-tulajdonsághoz hoz létre kifejezést, az abba foglalható hivatkozások függnek a jelentéselem-tulajdonság által elfogadható értékektől és a tulajdonság kiértékelésének hatókörétől. Például:  
+##  <a name="validating-expressions"></a><a name="Valid"></a> Kifejezések ellenőrzése  
+ Amikor egy adott jelentéselem-tulajdonsághoz hoz létre kifejezést, az abba foglalható hivatkozások függnek a jelentéselem-tulajdonság által elfogadható értékektől és a tulajdonság kiértékelésének hatókörétől. Példa:  
   
 -   A [Sum] kifejezés alapértelmezés szerint a kifejezés kiértékeléskor a hatókörben lévő adatok összegét számítja ki. Táblázatcella esetén a hatókör a sorcsoport- és oszlopcsoport-tagságoktól függ. 
   
@@ -83,6 +83,6 @@ Az egyszerű kifejezések szimbólumokkal jelölik, hogy a hivatkozás mezőre, 
   
 -   A kifejezések szintaxisát a tervezés során ellenőrzi a rendszer. A kifejezések hatókörének ellenőrzése a jelentés közzétételekor történik. A tényleges adatoktól függő ellenőrzések esetén a hibák csak futásidőben észlelhetők. Az ilyen kifejezések olykor az #Error hibaüzenetet eredményezik a megjelenített jelentésben. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)

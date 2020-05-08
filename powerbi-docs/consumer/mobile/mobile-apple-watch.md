@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e2014f359d4085ab0dcb85135f7436c9e403eaab
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114516"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Adatok feltárása az Apple Watchra készült Power BI mobilalkalmazásban
@@ -82,10 +82,10 @@ Tekintve, hogy az Apple Watch óraszámlapján csak kevés hely áll rendelkezé
 > 
 > 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Visszajelzésével segíthet eldönteni, hogy a jövőben mely funkciókat implementáljuk, ezért kérjük, szavazzon, hogy milyen funkciókat szeretne viszontlátni a Power BI-mobilalkalmazásokban. 
 
 * Az [iPhone-ra készült Power BI mobilalkalmazás](https://go.microsoft.com/fwlink/?LinkId=522062) letöltése
-* Kövessen minket a [@MSPowerBITwitteren](https://twitter.com/MSPowerBI)
+* Kövessen minket a [@MSPowerBITwitteren](https://twitter.com/MSPowerBI).
 * Vegyen részt [a Power BI-közösség](https://community.powerbi.com/) beszélgetéseiben
 

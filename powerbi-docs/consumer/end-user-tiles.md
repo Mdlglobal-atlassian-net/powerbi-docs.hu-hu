@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0481a09aaeac4f6c76c49d3a816ac880cdb9d60b
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114051"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Irányítópult-csempék a Power BI-ban
@@ -76,7 +76,7 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 > 
 > 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 * Ha a vizualizáció létrehozásához használt jelentés nem lett mentve, akkor nem történik semmi a csempére kattintáskor.
 * Ha a csempe Excel Online-munkafüzetből lett létrehozva, és a felhasználónak ahhoz nincs legalább Olvasási jogosultsága, a csempe kiválasztásakor nem fog megnyílni az Excel Online-munkafüzet.
 * Olyan csempe esetén, melyet a **Csempe létrehozása** funkcióval közvetlenül az irányítópulton hozott létre a felhasználó, és beállított hozzá egy egyedi hiperhivatkozást, a csempe címére, alcímére vagy magára a csempére kattintáskor a rendszer megnyitja az adott URL-címet.  Más esetben a közvetlenül az irányítópulton kép, webkód vagy szövegdoboz részére létrehozott csempe kiválasztása nem indít el semmilyen műveletet.
@@ -84,7 +84,7 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 * Ha nincs hozzáférése ahhoz a hálózathoz, ahol az SSRS található, SSRS-ből létrehozott csempe kiválasztásakor a rendszer megjelenít majd egy oldalt, amely azt jelzi, hogy a kiszolgáló nem található (HTTP 404). Ahhoz, hogy meg tudja tekinteni a jelentést, az Ön eszközének hálózati hozzáféréssel kell rendelkeznie a jelentés-kiszolgálóhoz.
 * A csempe létrehozásához használt vizualizációs elem változásakor a csempe nem változik.  Ha például a *tervező* kitűz egy sávdiagramot egy jelentésből, majd a sávdiagramot oszlopdiagramra cseréli, az irányítópulton megjelenő csempén továbbra is egy sávdiagram lesz látható. Az adatok frissülni fognak, de a diagram típusa nem.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Adatfrissítés](../refresh-data.md)
 
 [Power BI – Alapfogalmak](end-user-basic-concepts.md)

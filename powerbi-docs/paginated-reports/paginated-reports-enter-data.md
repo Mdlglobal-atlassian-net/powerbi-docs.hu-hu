@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: maggies
 ms.openlocfilehash: 5ef019c1c8d488735509ac3c2767fbc9d395786a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78922091"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben – Power BI
@@ -25,7 +25,7 @@ Ebben a cikkben megismerkedhet az SQL Server 2016 jelentéskészítője új verz
 - A lapszámozott jelentés a Power BI szolgáltatásban való mentéséhez [Power BI Pro-fiókra](../service-self-service-signup-for-power-bi.md), valamint egy [Power BI Premium kapacitásbeli](../service-premium-what-is.md) munkaterület írási hozzáférésére lesz szüksége.
 - A lapszámozott jelentés egy jelentéskészítő kiszolgálón való mentéséhez az [RsReportServer.config fájl](#upload-the-paginated-report-to-a-report-server) szerkesztésére vonatkozó engedélyre van szüksége.
 
-## <a name="get-started"></a>Első lépések
+## <a name="get-started"></a>Az első lépések
 
 Miután letöltötte és telepítette a jelentéskészítőt, kövesse a beágyazott adatforrások és adatkészletek a jelentéshez való hozzáadásának lépéseit. Az alábbi eljárásban az **Adatforrások** területen egy új lehetőséget láthat: **Adatbevitel**.  Ezt az adatforrást jelentésenként csak egyszer kell beállítania. Ezt követően több, különálló adatkészletekből álló táblázatot készíthet a megadott adatokkal, amelyek mind ugyanazt az adatforrást használják.
 
@@ -95,7 +95,7 @@ A szerkesztés után az alábbihoz hasonlóan kell kinéznie a konfigurációs f
 
 Kész is van! Mostantól ezt az új funkciót használó jelentéseket is közzétehet a jelentéskészítő kiszolgálón.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
 - [Mi a Power BI jelentéskészítő kiszolgáló?](../report-server/get-started.md)

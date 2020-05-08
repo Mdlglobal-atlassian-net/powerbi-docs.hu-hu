@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114389"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
@@ -52,7 +52,7 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Példáu
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Egy adatkészlet kapcsolódó tartalmainak megtekintése
-A **Kapcsolódó tartalom** adattábla megnyitásához legalább *megtekintési engedéllyel* kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../sample-procurement.md) fogjuk használni.
+A *Kapcsolódó tartalom* adattábla megnyitásához legalább **megtekintési engedéllyel** kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../sample-procurement.md) fogjuk használni.
 
 A navigációs panelen keresse meg a **Munkaterületek** fejlécet, és válasszon ki egy munkaterületet a listából. Ha rendelkezik tartalommal a munkaterületen, az megjelenik a jobb oldali vásznon. 
 
@@ -74,7 +74,7 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például
 * Egy jelentés kapcsolódó tartalmainak megnyitásához [Olvasó nézetben](end-user-reading-view.md) kell lennie.
 * A Kapcsolódó tartalom funkció nem működik streamelt adatkészletek esetében.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A Power BI szolgáltatás használatának első lépései](../service-get-started.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

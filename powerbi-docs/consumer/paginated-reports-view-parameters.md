@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: 50de63aed17d9fab695119d5c94fa4a5d9312702
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74834586"
 ---
 # <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Lapszámozott jelentések paramétereinek megtekintése a Power BI szolgáltatásban
@@ -35,6 +35,6 @@ Paraméterekkel rendelkező jelentés megtekintésekor a jelentésmegjelenítő 
 
 5. **Alapértelmezett értékek** – Ha minden paraméter rendelkezik alapértelmezett értékkel, a jelentés automatikusan lefut az első megtekintésekor. Ennek a jelentésnek egyes értékei nem rendelkeztek alapértelmezett értékkel, ezért a jelentés csak az értékek kiválasztása után tekinthető meg.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Lapszámozott jelentések a Power BI szolgáltatásban](end-user-paginated-report.md)

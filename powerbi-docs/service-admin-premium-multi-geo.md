@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
 ms.openlocfilehash: 4b30e2fbf4ec3607b3ee155749a1ddeeb9f76cad
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80147354"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Multi-Geo-támogatás konfigurálása a Power BI Premiumhoz
@@ -27,7 +27,7 @@ A Multi-Geo a Power BI Premium funkciója, amely segít a nemzetközi ügyfelekn
 - Európa
 - Japán
 - India
-- Ázsia és a Csendes-óceáni térség
+- Kelet-Ázsia
 - Ausztrália
 - Afrika
 
@@ -43,7 +43,7 @@ A Multi-Geo már a Power BI Embeddedben is elérhető. További információ: [M
 
 A kapacitás létrehozása után ebben a régióban marad, és az összes létrehozott munkaterület tartalma ebben a régióban lesz tárolva. Munkaterület egy régióból egy másikba a munkaterület beállításainak képernyőjén lévő legördülő listával migrálható.
 
-![Munkaterület szerkesztése: Rendelkezésre álló kapacitás kiválasztása. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Munkaterület szerkesztése: rendelkezésre álló kapacitás kiválasztása. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 Megjelenik a következő üzenet, amely a módosítás megerősítését kéri.
 
@@ -88,7 +88,7 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 - Törölheti a meglévő kapacitást, ahol a munkaterület elhelyezkedik.  A munkaterület ezáltal vissza lesz helyezve a saját régi megosztott kapacitásába.
 - A munkaterületeket egyenként visszamigrálhatja a saját bérlőbeli Prémium szintű kapacitásba.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 
 - Mielőtt kezdeményezné az adatátvitelt, győződjön meg arról, hogy a régiók közötti összes forgalom megfelel minden vállalati és kormányzati megfelelőségi követelménynek.
 - A távoli régiókban tárolt gyorsítótárazott lekérdezések inaktív állapotban abban a régióban maradnak. Más átvitt adatok azonban oda-vissza mozoghatnak több földrajzi hely között.
@@ -96,9 +96,9 @@ A munkaterületek kétféle módon vonhatók ki a Multi-Geo-kapacitásból:
 
 - Az [adatfolyamok](service-dataflows-overview.md) funkció jelenleg nem támogatott Multi-GEO használatával.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mi a Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo a Power BI Embedded-kapacitásokhoz](developer/embedded/embedded-multi-geo.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

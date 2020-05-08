@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006503"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Átméretezhető rugalmas szeletelő létrehozása a Power BI-ban
@@ -79,7 +79,7 @@ Ugyanezekkel a lépésekkel tehet rugalmassá egy idő- vagy tartományszeletel�
 - A csúszkák érintéses műveletei új kerek fogantyúkkal vannak optimalizálva. 
 - Amikor egy látványelem túl kicsi ahhoz, hogy használható legyen, a helyén megjelenő és a látványelem típusát jelölő ikonná alakul. Ennek használatához egyszerűen koppintson rá duplán a fókusz módban való megnyitásához. Ezzel értékes helyet takaríthat meg a jelentésoldalon funkciók elvesztése nélkül.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Szeletelők a Power BI szolgáltatásban](visuals/power-bi-visualization-slicers.md)
-- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

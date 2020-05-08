@@ -10,10 +10,10 @@ ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78237845"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>A munkaterület kezelése a Power BI-ban és az Office 365-ben
@@ -36,7 +36,7 @@ Az **Office 365-ben** a következőket teheti:
 * A csoport e-mail-címének megtekintése.
 * A csoport törlése.
 
-Ahhoz, hogy egy munkaterület rendszergazdája vagy tagja lehessen, [Power BI Pro-licencre](service-features-license-type.md) van szüksége. Az alkalmazás felhasználóinak szintén Power BI Pro-licenccel kell rendelkezniük, kivéve, ha a munkaterület Power BI Premium-kapacitásban található. Részletek: [Mi a Power BI Premium?](service-premium-what-is.md).
+Ahhoz, hogy egy munkaterület rendszergazdája vagy tagja lehessen, [Power BI Pro-licencre](service-features-license-type.md) van szüksége. Az alkalmazás felhasználóinak szintén Power BI Pro-licenccel kell rendelkezniük, kivéve, ha a munkaterület Power BI Premium-kapacitásban található. További részletekért olvassa el [A Power BI Premium bemutatása](service-premium-what-is.md) cikket.
 
 ## <a name="edit-your-workspace-in-power-bi"></a>A munkaterület szerkesztése a Power BI-ban
 
@@ -71,7 +71,7 @@ Egy munkaterület jellemzőit közvetlenül az Office 365 Outlookban is szerkesz
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Kép felvétele és más munkaterület-tulajdonságok beállítása
 
-Amikor az alkalmazást a munkaterületről terjeszti, az itt hozzáadott kép lesz az alkalmazás képe. Olvassa el az **Új munkaterületek létrehozása** című cikk [Kép hozzáadása az Office 365-munkaterülethez](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) című szakaszát.
+Amikor az alkalmazást a munkaterületről terjeszti, az itt hozzáadott kép lesz az alkalmazás képe. Olvassa el az [Új munkaterületek létrehozása](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) című cikk **Kép hozzáadása az Office 365-munkaterülethez** című szakaszát.
 
 1. A munkaterület Office 365 Outlook nézetében nyissa meg a **Névjegy** lapot, és válassza a **Szerkesztés** lehetőséget.
 
@@ -82,8 +82,8 @@ Amikor az alkalmazást a munkaterületről terjeszti, az itt hozzáadott kép le
 
 1. Kattintson a **Mentés** vagy az **Elvetés** gombra.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Alkalmazás közzététele a Power BI-ban](service-create-distribute-apps.md)
 
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

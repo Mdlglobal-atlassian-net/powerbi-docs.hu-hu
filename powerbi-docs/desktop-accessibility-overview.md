@@ -10,10 +10,10 @@ ms.date: 02/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: a8bf446174cc16d95842022416352f538dca69ec
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609847"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>A Power BI kisegítő lehetőségeinek áttekintése
@@ -48,7 +48,7 @@ Az 508. szakasz (USA) egy olyan szabvány, amely megköveteli a kormányoktól �
 
 Az EN 301 549 az IKT-termékekre és -szolgáltatásokra vonatkozó akadálymentességi harmonizált európai szabvány.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A Power BI akadálymentességéről az alábbi forrásanyagokban talál további információt:
 

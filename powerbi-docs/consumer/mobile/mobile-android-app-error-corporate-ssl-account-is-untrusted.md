@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: a68644c63d3d5eaeb54a71683629af01817d62a7
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114604"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>A „vállalati SSL-tanúsítványa nem megbízható” hiba elhárítása – Power BI
@@ -42,7 +42,7 @@ A **Beállítások** > **Rendszer** > **Dátum és idő** helyen tudja ellenőri
 ## <a name="custom-authentication-server"></a>Egyéni hitelesítési kiszolgáló
 Ha egyéni hitelesítési kiszolgálót használ, előfordulhat, hogy a vállalati hitelesítési kiszolgáló SSL-tanúsítványa nem érvényes. A vállalat informatikusaival együttműködve tesztelje a vállalat hitelesítési kiszolgálójának konfigurációját [ennek a cikknek](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) az útmutatása alapján.
 
-## <a name="next-steps"></a>Következő lépések
-* [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) az Androidos alkalmazás-áruházból.
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/) 
+## <a name="next-steps"></a>További lépések
+* [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) az androidos alkalmazás-áruházból.
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/) 
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.openlocfilehash: 5a3a7b91b0c97a75923876caff205ffb9abfce70
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114382"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Kérdések és válaszok a Power BI Embeddedben
@@ -98,8 +98,8 @@ qna.on("visualRendered", function(event) {
 
 Hozzon létre egy beágyazási tokent egy adatkészletből a Kérdések és válaszok rész megkezdéséhez. További információkért lásd: [Token létrehozása](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A Kérdések és válaszok szolgáltatás beágyazásának kipróbáláshoz tekintse meg a [JavaScript beágyazási mintát](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

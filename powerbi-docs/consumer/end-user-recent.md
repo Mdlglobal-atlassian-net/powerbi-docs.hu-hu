@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: f59d83823ee14648cb8c3d3fe740074d057d3425
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114357"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Legutóbbi** tartalom keresése a Power BI szolgáltatásban
@@ -46,14 +46,14 @@ Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállít�
 * [Irányítópult, jelentés vagy alkalmazás kedvencként való megjelöléséhez](end-user-favorite.md) kattintson a ![csillag ikonra](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Egyes irányítópultok és jelentések újból megoszthatók  ![megosztás ikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Jelentés megnyitása az Excelben](end-user-export.md) ![exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
-* Az ![elemzések ikonnal](./media/end-user-shared-with-me/power-bi-insights.png) megtekintheti a Power BI által az adatokon végzett [elemzéseket](end-user-insights.md).
+* Az [elemzések ikonnal](end-user-insights.md) megtekintheti a Power BI által az adatokon végzett ![elemzéseket](./media/end-user-shared-with-me/power-bi-insights.png).
 * Emellett, hosszú listák esetén [a keresőmező és a szűrési lehetőségek használatával kereshet](end-user-search-sort.md). Ha meg szeretné tudni, hogy egy oszlop rendezhető-e, helyezze fölé a kurzort, és várja meg, hogy megjelenik-e egy nyíl. Ebben a példában a **Legutóbbi hozzáférés** fölé helyezett kurzor megjelenít egy nyilat, a legutóbbi tartalmak így a hozzáférés dátuma szerint rendezhetők. 
 
     ![az összes legutóbbi tartalom rendezése](./media/end-user-recent/power-bi-recent-sort.png)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Power BI szolgáltatás ‒ Alkalmazások](end-user-apps.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

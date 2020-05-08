@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
 ms.openlocfilehash: 03b361c56bd545036a8d706ae01e2bfa2ec30222
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921240"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Tördelési mód többoldalas Power BI-jelentésekben
@@ -85,8 +85,8 @@ ms.locfileid: "78921240"
   
  Ezeknek a jelentések Excelbe exportálásakor használt tulajdonságoknak a működéséről a Jelentéskészítő és a Reporting Services dokumentációjának [Exportálás Microsoft Excelbe](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) című szakasza nyújt további információt.  
   
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](../consumer/paginated-reports-view-power-bi-service.md)
 - [Ne legyenek üres lapok a többoldalas jelentések nyomtatásakor](../guidance/report-paginated-blank-page.md)
-- További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+- Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

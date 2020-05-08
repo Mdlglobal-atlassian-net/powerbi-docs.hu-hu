@@ -7,7 +7,7 @@
       items:
         - name: Mire használhatom a Power BI API-t?
           href: overview-of-power-bi-rest-api.md
-    - name: Oktatóanyagok
+    - name: oktatóanyagokat
       expanded: true
       items:
         - name: Adatok elküldése adatkészletbe
@@ -18,9 +18,9 @@
           href: walkthrough-push-data-create-dataset.md
         - name: Sorok hozzáadása adatkészlettel
           href: walkthrough-push-data-get-datasets.md
-        - name: Sorok hozzáadása egy táblához
+        - name: Sorok hozzáadása táblához
           href: walkthrough-push-data-add-rows.md
-    - name: Fogalmak
+    - name: Alapelvek
       items:
         - name: Automatikus adatmegőrzési szabályzat valós idejű adatokhoz
           href: api-automatic-retention-policy-for-real-time-data.md
@@ -32,11 +32,11 @@
               href: api-dataset-properties.md
             - name: Adatmodell verzióinak kezelése
               href: api-data-model-versioning.md
-    - name: Útmutató
+    - name: 'Útmutató:'
       items:
         - name: Hitelesítő adatok konfigurálása
           href: configure-credentials.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: REST API-k
           href: 'https://docs.microsoft.com/rest/api/power-bi'
@@ -46,9 +46,9 @@
           href: walkthrough-push-data-complete-code.md
     - name: Erőforrások
       items:
-        - name: Fejlesztői központ
+        - name: Fejlesztési központ
           href: 'https://powerbi.microsoft.com/en-us/developers/'
-        - name: 'Power BI C# Git-tárház'
+        - name: 'Power BI C# Git-adattár'
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: .NET SDK letöltése
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'

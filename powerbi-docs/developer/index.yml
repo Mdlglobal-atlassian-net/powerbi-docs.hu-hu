@@ -14,17 +14,17 @@ metadata:
   ms.author: kesharab
   ms.date: 31/03/2020
   ms.openlocfilehash: 8d37f5a4cde341dd8788791fecdbd1c7f20249d0
-  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 04/01/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "80487793"
 highlightedContent:
   items:
-  - title: Beágyazott analitika a Power BI-jal
+  - title: Beágyazott elemzés a Power BI használatával
     itemType: overview
     url: embedded/embedding.md
-  - title: A Power BI Embedded az Azure-ban ismertetése
+  - title: Az Azure-beli Power BI Embedded ismertetése
     itemType: overview
     url: embedded/azure-pbie-what-is-power-bi-embedded.md
   - title: Vizualizációk a Power BI-ban
@@ -39,16 +39,16 @@ conceptualContent:
     links:
     - url: embedded/embedding.md
       itemType: overview
-      text: Beágyazott analitika a Power BI-jal
+      text: Beágyazott elemzés a Power BI használatával
     - url: embedded/azure-pbie-what-is-power-bi-embedded.md
       itemType: overview
-      text: A Power BI Embedded az Azure-ban ismertetése
+      text: Az Azure-beli Power BI Embedded ismertetése
     - url: embedded/embedded-capacity.md
       itemType: concept
       text: Kapacitás és SKU-k
     footerLink:
       url: embedded/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Power BI-vizualizációk
     links:
     - url: visuals/power-bi-custom-visuals.md
@@ -62,7 +62,7 @@ conceptualContent:
       text: Power BI-vizualizációk közzététele a Partnerközpontban
     footerLink:
       url: visuals/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Automatizálás
     links:
     - url: automation/overview-of-power-bi-rest-api.md
@@ -76,12 +76,12 @@ conceptualContent:
       text: Hitelesítő adatok konfigurálása
     footerLink:
       url: automation/index.yml
-      text: Több megjelenítése
+      text: Részletek
 additionalContent:
   sections:
   - title: Kapcsolódó eszközök
   - items:
-    - title: Power BI REST API-k
+    - title: A Power BI REST API-jai
       summary: A Power BI REST API-k szolgáltatásvégpontokat biztosítanak a beágyazáshoz, a felügyelethez és a felhasználói erőforrásokhoz.
       url: https://docs.microsoft.com/rest/api/power-bi/
     - title: Azure Resource Manager REST API-k

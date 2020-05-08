@@ -1,6 +1,6 @@
 ---
-title: Power BI-adatforrások előfeltételei
-description: Power BI-adatforrások előfeltételei
+title: A Power BI adatforrásainak előfeltételei
+description: A Power BI adatforrásainak előfeltételei
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,19 +10,19 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 498636d61f61764cfaef29db32454f55f1328243
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78401219"
 ---
-# <a name="power-bi-data-source-prerequisites"></a>Power BI-adatforrások előfeltételei
+# <a name="power-bi-data-source-prerequisites"></a>A Power BI adatforrásainak előfeltételei
 A Power BI minden adatszolgáltató esetében egy adott szolgáltatóverziót támogat az objektumokon. További információ a Power BI-hoz elérhető adatforrásokkal kapcsolatban: [Adatforrások](desktop-data-sources.md). A következő táblázat ezeket a követelményeket ismerteti.
 
 | Adatforrás | Szolgáltató | A szolgáltató legalacsonyabb verziója | Minimális adatforrás-verzió | Támogatott adatforrás-objektumok | Letöltési hivatkozás |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (a .NET-keretrendszer részeként) |.NET-keretrendszer 3.5 (kizárólag) |SQL Server 2005+ |Táblák/nézetek, skaláris függvények, táblafüggvények |A .NET-keretrendszer 3.5-ös vagy újabb verziójának részeként |
-| Hozzáférés |Microsoft Access adatbázismotor (ACE) |ACE 2010 SP1 |Nincs korlátozás |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
+| Access |Microsoft Access adatbázismotor (ACE) |ACE 2010 SP1 |Nincs korlátozás |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Excel (csak .xls fájlok) (lásd: 1. megjegyzés) |Microsoft Access adatbázismotor (ACE) |ACE 2010 SP1 |Nincs korlátozás |Táblák, táblázatok |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Oracle (lásd: 2. megjegyzés) |ODP.NET |ODAC 11.2, 5. kiadás (11.2.0.3.20) |9.x+ |Táblák/nézetek |[Letöltési hivatkozás](https://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
 | | System.Data.OracleClient (a .NET-keretrendszer részeként) |.NET-keretrendszer 3.5 |9.x+ |Táblák/nézetek |A .NET-keretrendszer 3.5-ös vagy újabb verziójának részeként |

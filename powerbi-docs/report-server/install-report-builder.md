@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.openlocfilehash: a18e0a094c5bc42f7a77a045ac7b552e458e5628
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78919841"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>A Jelentéskészítő telepítése – Power BI jelentéskészítő kiszolgáló
@@ -23,9 +23,9 @@ Segítségre van szüksége a Power BI szolgáltatás Jelentéskészítőjének 
   
 Általában egy rendszergazda telepíti és konfigurálja a Power BI jelentéskészítő kiszolgálót, ad engedélyt a Jelentéskészítő letöltésére a webportálról, valamint kezeli a jelentéskiszolgálóra mentett megosztott adatkészleteket, valamint a jelentések mappáit és engedélyeit. További információ a Power BI jelentéskészítő kiszolgálóról: [Rendszergazdai áttekintés, Power BI jelentéskészítő kiszolgáló](admin-handbook-overview.md).  
   
-## <a name="system-requirements"></a>Rendszerkövetelmények
+## <a name="system-requirements"></a>System requirements (Rendszerkövetelmények)
   
- Tekintse meg a [Jelentéskészítő letöltési oldalának](https://go.microsoft.com/fwlink/?LinkID=734968) **Rendszerkövetelmények** szakaszát a Microsoft letöltőközpontban.
+ Tekintse meg a **Jelentéskészítő letöltési oldalának** [Rendszerkövetelmények](https://go.microsoft.com/fwlink/?LinkID=734968) szakaszát a Microsoft letöltőközpontban.
  
 ## <a name="install-report-builder-from-a-web-portal"></a>A Jelentéskészítő telepítése egy webportálról
   
@@ -46,7 +46,7 @@ A Jelentéskészítőt telepítheti egy Power BI jelentéskészítő kiszolgál�
     ![Új jelentés vagy adatkészlet képernyő](media/quickstart-create-paginated-report/reportserver-paginated-new-report-screen.png)
  
 
-##  <a name="download"></a> A Jelentéskészítő telepítése a letöltőközpontból  
+##  <a name="install-report-builder-from-the-download-center"></a><a name="download"></a> A Jelentéskészítő telepítése a letöltőközpontból  
   
 1.  A [Microsoft letöltőközpont Jelentéskészítő lapján](https://go.microsoft.com/fwlink/?LinkID=734968) válassza a **Letöltés** lehetőséget.  
   
@@ -59,6 +59,6 @@ A Jelentéskészítőt telepítheti egy Power BI jelentéskészítő kiszolgál�
 5.  Kattintson a **Telepítés** gombra a Jelentéskészítő telepítésének befejezéséhez.  
  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Mi a Power BI jelentéskészítő kiszolgáló?](get-started.md)

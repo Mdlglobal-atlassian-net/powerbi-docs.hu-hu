@@ -1,6 +1,6 @@
 ---
-title: 'Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése'
-description: 'Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése'
+title: 'Informatikai kiadások elemzése minta a Power BI-hoz: bemutató'
+description: 'Informatikai kiadások elemzése minta a Power BI-hoz: bemutató'
 author: maggiesMSFT
 ms.reviewer: amac
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 00effa1838327a9463671cf9be2f5764be71deb4
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404686"
 ---
-# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Informatikaköltség-elemzési minta a Power BI-hoz: Bemutató megtekintése
+# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Informatikai kiadások elemzése minta a Power BI-hoz: bemutató
 
 Az Informatikaköltség-elemzési minta tartalomcsomag egy irányítópultot, jelentést és adathalmazt tartalmaz, és egy informatikai osztály költségeinek terv- és tényadatait elemzi. Az összevetés segít megérteni, hogy milyen pontosan tervezte a cég az idei évet, és feltárhatóvá teszi a tervtől jelentősen eltérő területeket. A példában szereplő cég egy éves tervezési cikluson halad végig, és minden negyedévben friss becslést készít (Latest Estimate - LE) a pénzügyi év informatikai költségeiben bekövetkezett változások elemzéséhez.
 
@@ -126,7 +126,7 @@ Válassza a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyissa
 * Módosíthatja az egyes diagramok vizualizációjának típusát.
 * Az érdekesnek ítélt diagramokat rögzítheti az irányítópulton.
 
-## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Kapcsolódás a saját adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

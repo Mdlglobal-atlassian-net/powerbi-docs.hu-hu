@@ -9,10 +9,10 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921171"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Jelentéstervezési tippek a Power BI Jelentéskészítőhöz
@@ -20,7 +20,7 @@ ms.locfileid: "78921171"
   
    
   
-##  <a name="DesigningReports"></a> Jelentések tervezése  
+##  <a name="designing-reports"></a><a name="DesigningReports"></a> Jelentések tervezése  
   
 -   Egy jól megtervezett jelentés információt közvetít és cselekvéshez vezet. Azonosítsa a kérdéseket, amelyeket a jelentés segít megválaszolni. A jelentés tervezése során tartsa szem előtt ezeket a kérdéseket.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "78921171"
   
  A jelentés tervezésekor megfontolandó szempontokról további információkat talál a [Jelentés tervezése a Jelentéskészítőben](report-builder-planning-report.md) című cikkben.  
   
-##  <a name="NamingConventions"></a> Jelentések, adatforrások és adathalmazok elnevezési konvenciói  
+##  <a name="naming-conventions-for-reports-data-sources-and-datasets"></a><a name="NamingConventions"></a> Jelentések, adatforrások és adathalmazok elnevezési konvenciói  
   
 -   Az adatforrásokhoz és adathalmazokhoz használjon az adatok eredetét dokumentáló elnevezési konvenciókat.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "78921171"
   
     2.  **Adathalmazok.** Olyan nevet használjon, amely jelzi, hogy melyik adatforráson alapul.  
   
-##  <a name="Data"></a> Az adatok felhasználása  
+##  <a name="working-with-data"></a><a name="Data"></a> Az adatok felhasználása  
   
 -   Első lépésként érje el, hogy minden adat, amellyel dolgozni szeretne, megjelenjen a Jelentésadatok panelen. Miközben tisztázza a kérdéseket, amelyek megválaszolására a jelentést tervezi, gondolja át, hogyan korlátozhatja a jelentés adathalmazainak adatait csupán a szükségesekre.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "78921171"
   
 -   A követelményektől függően a jelentésbeli adatok forrásainak nevét és helyét, az adathalmazt lekérdező parancsok szövegét és a paraméterértékeket is megjelenítheti a jelentésben. Sok új felhasználó először arra kérdez rá, hogy honnan származnak az adatok. A jelentés zsúfoltságának csökkentése érdekében feltételesen elrejtheti az ilyen típusú információk szövegdobozait, így a felhasználók dönthetik el, hogy látni szeretnék-e azokat. Ezt az információt próbálja a jelentés utolsó oldalán elhelyezni. A szövegdoboz láthatóságát egy olyan paraméter alapján állítsa be, amelyet a felhasználó módosíthat.  
   
-##  <a name="DesignSurface"></a> A jelentéstervező felület használata  
+##  <a name="interacting-with-the-report-design-surface"></a><a name="DesignSurface"></a> A jelentéstervező felület használata  
  A jelentéstervező felület nem alakhű. Amikor jelentéselemeket helyez el a tervezőfelületen, azok egymáshoz viszonyított helyzete határozza meg, hogy hogyan jelennek meg a kész jelentésoldalon. Az üres hely megmarad.  
   
 -   Az elemeket az igazítási vonalak és elrendezési gombok segítségével rendezheti el a jelentéstervező felületén. Egymáshoz igazíthatja például a kijelölt elemek tetejét vagy szélét, kiterjeszthet egy elemet, hogy ugyanakkora legyen, mint egy másik elem, vagy beállíthatja az elemek közötti közöket.  
@@ -77,7 +77,7 @@ ms.locfileid: "78921171"
   
 -   Ha mezőket szeretne áthúzni a Jelentésadatok panelről a Csoportosítás panelre, akkor ne húzza át a mezőt a tervezőfelületen lévő más jelentéselemeken, mert ezzel kijelöli ezt a másik elemet, és megszünteti a rácsos adatterület kijelölését. Húzza a mezőt lefelé a Jelentésadatok panelről, majd húzza át a Csoportosítás panelre.  
   
-###  <a name="Selecting"></a> Elemek kijelölése  
+###  <a name="selecting-items"></a><a name="Selecting"></a> Elemek kijelölése  
  A jelentéstervező felületen a kívánt elem egyszerűbb kijelöléséhez használhatja az ESC billentyűt, a jobb kattintásra megjelenő helyi menüt, a Tulajdonságok panelt és a Csoportosítás panelt.  
   
 -   -   Az ESC lenyomásával válhat a tervezőfelület egyazon részén elhelyezkedő, egymást fedő jelentéselemek között.  
@@ -89,31 +89,31 @@ ms.locfileid: "78921171"
     -   Egy rácsos adatterületen úgy dolgozhat sorcsoportokkal vagy oszlopcsoportokkal, hogy kijelöli a csoportot a Csoportosítás panelen.  
 
   
-##  <a name="ReportItems"></a> Adott típusú jelentéselemek használata  
+##  <a name="working-with-specific-types-of-report-items"></a><a name="ReportItems"></a> Adott típusú jelentéselemek használata  
   
-###  <a name="Parameters"></a> Paraméterek használata  
+###  <a name="working-with-parameters"></a><a name="Parameters"></a> Paraméterek használata  
   
 -   A jelentésparaméterek elsődleges rendeltetéses az adatok szűrése az adatforrásnál, hogy csak az legyen visszaadva, ami a jelentés céljaihoz szükséges.  
   
 -   Jelentésparaméterek használatakor meg kell találnia a középutat a kezelhetőség, és felhasználó támogatása között, hogy megkaphassa a kívánt eredményeket. Beállíthat például olyan alapértelmezett értéket egy paraméterhez, amelyről tudja, hogy sokan használják.  
   
-###  <a name="Text"></a> Szöveg használata  
+###  <a name="working-with-text"></a><a name="Text"></a> Szöveg használata  
   
 -   Ha többsoros szöveget illeszt be egy szövegdobozba, az egyetlen folyamatos szövegként lesz hozzáadva. Minden folyamatos szöveg csak egy egységként formázható. A sorok független formázásához szúrjon be a megfelelő helyre sortörést az Enter billentyűvel. Ez után már külön alkalmazhat formázást és stílusokat a szövegdobozban lévő szöveg soraira.  
   
 -   Formátumtulajdonságokat és műveleteket állíthat be egy szövegdobozra, vagy a szövegdobozban lévő helyőrző szövegre. Ha csak egy sornyi szöveg van, akkor a tulajdonságokat hatékonyabb a szövegdobozra megadni, mint a szövegre.  
   
-###  <a name="Expressions"></a> Kifejezések használata  
+###  <a name="working-with-expressions"></a><a name="Expressions"></a> Kifejezések használata  
   
 -   Ismerje meg az egyszerű és összetett kifejezésformákat. Egyszerű kifejezést közvetlenül begépelhet szövegdobozokba, tulajdonságokba a Tulajdonságok panelen, vagy a párbeszédpanelek kifejezéseket elfogadó helyeire.
   
 -   Kifejezés létrehozásakor egyszerűbb egymástól egyes részeit külön létrehozni, és ellenőrizni azok értékét. Végül az összes részből összeállíthatja a végleges kifejezést. Hasznos technika szövegdobozt felvenni egy mátrixcellába, megjeleníteni a kifejezés összes részét, és feltételes láthatóságot beállítani a szövegdobozra. A rejtett szövegdoboz szegélyének stílusát és színét úgy szabályozhatja, hogy a szövegdobozt először egy téglalapba helyezi, majd a téglalap szegélystílusát és -színét a mátrixéval egyezőre állítja be.  
   
-###  <a name="Indicators"></a> Jelzők használata  
+###  <a name="working-with-indicators"></a><a name="Indicators"></a> Jelzők használata  
   
 -   A jelzők alapértelmezés szerint legalább három állapotot jelezhetnek. Miután hozzáad egy jelölőt egy jelentéshez, állapotok hozzáadásával vagy eltávolításával konfigurálhatja azt. Hogy a felhasználók jobban megfigyelhessék, olyan jelzőt válasszon, amelynek a színe és az alakja is változik.  
   
-##  <a name="Rendering"></a> A jelentésoldalon lévő jelentéselemek megjelenítésének szabályozása  
+##  <a name="controlling-the-rendering-of-report-items-on-the-report-page"></a><a name="Rendering"></a> A jelentésoldalon lévő jelentéselemek megjelenítésének szabályozása  
   
 -   A jelentéstervező felületen a jelentéselemek mérete úgy nő, hogy elférjen rajtuk a társított adathalmaz, kifejezés, segédjelentés vagy szöveg tartalma.  
   
@@ -145,6 +145,6 @@ ms.locfileid: "78921171"
 
  Ez a viselkedés, a jelentéselemek szélesség és magasság tulajdonsága, a jelentés törzsének mérete, az oldalmagasság és oldalszélesség beállítása, a szülőjelentés margóbeállításai és az oldaltörések megjelenítőre jellemző támogatása együttesen határozza meg, hogy mely jelentéselemek férnek el együtt egy megjelenített oldalon.
  
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)  

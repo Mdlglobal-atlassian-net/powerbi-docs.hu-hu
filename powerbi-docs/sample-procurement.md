@@ -1,6 +1,6 @@
 ---
-title: 'Beszerzéselemzési minta: Bemutató megtekintése'
-description: 'Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése'
+title: 'Beszerzéselemzési minta: bemutató'
+description: 'Beszerzéselemzési minta a Power BI-hoz: bemutató'
 author: maggiesMSFT
 ms.reviewer: amac
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404668"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: Bemutató megtekintése
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Beszerzéselemzési minta a Power BI-hoz: bemutató
 
 A Beszerzéselemzési minta tartalomcsomag egy irányítópultot, jelentést és adathalmazt tartalmaz, amely egy gyártó cég beszállítói költségeit elemzi kategória és hely szerint. A mintában az alábbi területek ismerhetők meg:
 
@@ -138,7 +138,7 @@ Válassza ki a **Jelentés szerkesztése** elemet a bal felső sarokban, és nyi
 * Módosíthatja a diagram vizualizációtípusát, például fatérképről gyűrűdiagramra.
 * Rögzítheti a diagramokat az irányítópulton.
 
-## <a name="next-steps-connect-to-your-data"></a>További lépések: Csatlakozás az adatokhoz
+## <a name="next-steps-connect-to-your-data"></a>Következő lépések: Kapcsolódás a saját adatokhoz
 Ezzel a környezettel biztonságosan kísérletezhet, mert dönthet úgy, hogy nem menti a módosításokat. De ha mégis mentené őket, bármikor lekérheti a minta egy új másolatát az **Adatok lekérése** lehetőség választásával.
 
 Reméljük, hogy ez a bemutató segített megérteni a mintaadatok Power BI irányítópultok, Q&A és jelentések segítségével történő elemzését. Most Önön a sor – kapcsolódjon a saját adataihoz. A Power BI használatával számos különböző adatforráshoz kapcsolódhat. További információ: [Első lépések a Power BI szolgáltatásban](service-get-started.md).

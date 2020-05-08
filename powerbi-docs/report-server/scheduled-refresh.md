@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/09/2020
 ms.author: maggies
 ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837615"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>A Power BI-jelentések ütemezett frissítése a Power BI jelentéskészítő kiszolgálón
@@ -41,7 +41,7 @@ A Power BI jelentéskészítő kiszolgáló működtet egy eseményvárakozási 
 ### <a name="analysis-services"></a>Analysis Services
 A Power BI-jelentések megjelenítéséhez, illetve az ütemezett frissítés elvégzéshez be kell tölteni a Power BI-jelentés adatmodelljét az Analysis Servicesbe. A Power BI jelentéskészítő kiszolgálóval együtt fut az Analysis Services egy példánya.
 
-## <a name="considerations-and-limitations"></a>Szempontok és korlátozások
+## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 ### <a name="when-scheduled-refresh-cant-be-used"></a>Mikor nem lehet ütemezett frissítést használni?
 Nem minden Power BI-jelentéshez lehet létrehozni ütemezett frissítési tervet. A következő lista tartalmazza azokat a Power BI-jelentéseket, amelyekhez nem lehet ütemezett frissítés tervet létrehozni.
 
@@ -57,14 +57,14 @@ A fenti listán felül vannak olyan speciális helyzetek, amelyekben az *import�
 ### <a name="memory-limits"></a>Memóriakorlátozások
 A jelentéskészítő kiszolgáló szokásos feladatai hasonlítanak a webalkalmazásokéihoz. Az importált adatokat tartalmazó vagy DirectQueryre épülő jelentések betöltéséhez, illetve az ütemezett frissítések végrehajtásához szükség van egy, a jelentéskészítő kiszolgáló mellett futó Analysis Services-példányra. Ez a vártnál nagyobb memóriaigényt támaszthat a kiszolgálóval szemben. Tehát ennek megfelelően kell megtervezni a kiszolgáló üzembe helyezését, vagyis ügyelni kell arra, hogy az Analysis Services is fogyaszthat memóriát a jelentéskészítő kiszolgáló mellett.
 
-Az Analysis Services-példányok monitorozásáról az [Analysis Services-példány monitorozása](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance) című cikk nyújt tájékoztatást.
+Az Analysis Services-példányok figyeléséről az [Analysis Services-példány figyelése](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance) című cikk nyújt tájékoztatást.
 
 Az Analysis Servicesen belüli memóriabeállításokról a [Memóriatulajdonságok](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties) című cikkben olvashat.
 
 ### <a name="data-model-size-limit"></a>Az adatmodell méretkorlátja
 Ütemezett frissítés során a belső Analysis Services-motorba betöltött adatmodell maximális mérete 2 000 MB (2GB). A maximális méret nem konfigurálható. Ha az adatmodell mérete 2 GB-nál nagyobb, akkor a következő frissítési hibaüzenet jelenik meg: „Az eredmény hossza meghaladja a céloldali large típus hosszkorlátját (2GB).” Ebben az esetben javasolt a modellt egy Analysis Services-példányban üzemeltetni, és a modellel való élő kapcsolatot használni a jelentésben.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Egy Power BI-jelentés [ütemezett frissítésének](configure-scheduled-refresh.md) konfigurálása.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

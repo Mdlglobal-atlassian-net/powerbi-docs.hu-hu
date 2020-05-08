@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d92d7a3095ff2f252a09834becf90d5efc1811a0
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113059"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI-értesítések megtekintése
@@ -44,9 +44,9 @@ Nézze meg, hogy tekinti át és kezeli Amanda az értesítéseket, és hogyan v
    ![Értesítési központ](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Egy értesítés elvetéséhez válassza az × ikont.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Adatokkal kapcsolatos értesítések a Power BI szolgáltatásban](end-user-alerts.md)
-* [Adatértesítések beállítása az iPhone-alkalmazásban (iOS rendszerhez készült Power BI)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Adatriasztások beállítása a Windows 10-hez készült Power BI-mobilalkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* [Adatriasztások beállítása az iPhone-alkalmazásban (a Power BI for iOS-ben)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Adatriasztások beállítása a Windows 10-hez készült Power BI mobilalkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 
