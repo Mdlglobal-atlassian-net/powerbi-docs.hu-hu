@@ -13,9 +13,9 @@
           href: ../power-bi-service-overview.md
         - name: A Power BI Desktop és a szolgáltatás összehasonlítása
           href: ../service-service-vs-desktop.md
-    - name: Fogalmak
+    - name: Alapelvek
       items:
-        - name: Újdonságok a Power BI Desktop legújabb frissítésében
+        - name: A legújabb Power BI Desktop-frissítés újdonságai
           href: ../desktop-latest-update.md
         - name: A Power BI szolgáltatás újdonságai
           href: ../service-whats-new.md
@@ -23,7 +23,7 @@
           href: ../service-basic-concepts.md
         - name: 10 tanács segítségkéréshez
           href: ../service-tips-for-finding-help.md
-        - name: Licencelés
+        - name: Licencek
           items:
             - name: Regisztráció a Power BI-ra
               href: ../service-self-service-signup-for-power-bi.md
@@ -35,7 +35,7 @@
           href: ../desktop-get-the-desktop.md
         - name: Első lépések a Power BI Desktopban
           href: ../desktop-getting-started.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: Támogatott nyelvek és országok/régiók
           href: ../supported-languages-countries-regions.md
@@ -47,7 +47,7 @@
           href: ../videos.md
         - name: Webináriumok
           href: ../webinars.md
-        - name: Power BI Desktop videók
+        - name: Power BI Desktop-videók
           href: ../desktop-videos.md
         - name: A Power BI Desktop frissítési archívuma
           href: ../desktop-latest-update-archive.md

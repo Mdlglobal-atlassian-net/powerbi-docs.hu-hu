@@ -9,12 +9,12 @@
           href: get-started.md
         - name: A Power BI jelentéskészítő kiszolgáló és szolgáltatás összehasonlítása
           href: compare-report-server-service.md
-    - name: Oktatóanyagok
+    - name: oktatóanyagokat
       expanded: true
       items:
         - name: A Power BI jelentéskészítő kiszolgáló áttekintése virtuális gépen
           href: tutorial-explore-report-server-web-portal.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Újdonságok
@@ -23,7 +23,7 @@
           href: admin-handbook-overview.md
         - name: Változási napló
           href: changelog.md
-        - name: Támogatási ütemterv
+        - name: Támogatási idővonal
           href: support-timeline.md
         - name: Always Encrypted-támogatás
           href: always-encrypted-support.md
@@ -55,7 +55,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Jelentések beágyazása
               href: quickstart-embed.md
-    - name: Útmutató
+    - name: 'Útmutató:'
       items:
         - name: A Power BI Desktop telepítése
           href: install-powerbi-desktop.md
@@ -105,7 +105,7 @@
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-munkafüzetek üzemeltetése
               href: excel-oos.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: REST API
           href: rest-api.md

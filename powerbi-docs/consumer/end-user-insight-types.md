@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4870fac504f36600c13af49c5798d896eeb59261
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113166"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>A Power BI által támogatott elemzések típusai
@@ -88,8 +88,8 @@ Időrendben elérhető adatok esetén észleli, hogy vannak-e olyan dátumok vag
 
 ![Kiugró értékek egy időbeli adatsorban példa](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 [Power BI-elemzések](end-user-insights.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

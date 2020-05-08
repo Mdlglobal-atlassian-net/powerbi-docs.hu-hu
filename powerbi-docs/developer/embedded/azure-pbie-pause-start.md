@@ -10,10 +10,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
 ms.openlocfilehash: 07c9c12366b100936e03fe07358ee180e026dfc5
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114750"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded-kapacitás szüneteltetése és elindítása az Azure Portalon
@@ -71,10 +71,10 @@ A kapacitás elindításával folytathatja a használatot. Ezzel a számlázási
 
 Ha tartalmak vannak a kapacitáshoz rendelve, azok újra elérhetővé válnak az indítás után.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ha felfelé vagy lefelé szeretné skálázni a kapacitást, tekintse meg a [Power BI Embedded-kapacitás skálázása](azure-pbie-scale-capacity.md) című cikket.
 
 Power BI-tartalmak beágyazásához tekintse meg a [Power BI-irányítópultok, -jelentések és -csempék beágyazása](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/) című témakört.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

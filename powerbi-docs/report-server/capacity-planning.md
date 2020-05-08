@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
 ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80647652"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló kapacitástervezési útmutatója
@@ -62,7 +62,7 @@ Minden tesztet úgy írtak meg, hogy alkalmas legyen teljes körű műveletek v�
 > A Microsoft nem támogatja hivatalosan az eszközt, de a termék csapata hozzájárul a projekthez, és válaszol a más közreműködők által felvetett problémákra.
 
 ### <a name="workloads"></a>Számítási feladatok
-A teszteléshez két számítási profil használható: Power BI-jelentés (nagy erőforrásigényű) és lapszámozott jelentés (nagy erőforrásigényű). Az alábbi táblázat a jelentéskészítő kiszolgálón végrehajtott kérések eloszlását ismerteti.
+A tesztben 2 számításifeladat-profil szerepel: Power BI-jelentés (nagy erőforrásigényű) és Többoldalas jelentés (nagy erőforrásigényű). Az alábbi táblázat a jelentéskészítő kiszolgálón végrehajtott kérések eloszlását ismerteti.
 
 | Tevékenység | Power BI-jelentés (nagy erőforrásigényű), előfordulás gyakorisága | Többoldalas jelentés (nagy erőforrásigényű), előfordulás gyakorisága |
 | --- | --- | --- |
@@ -91,7 +91,7 @@ A Microsoftnál több csoport használja éles környezetben a Power BI jelenté
 | **Power BI-jelentés (nagy erőforrásigényű)** |1000 felhasználó |3000 felhasználó |
 | **Többoldalas jelentés (nagy erőforrásigényű)** |2000 felhasználó |3200 felhasználó |
 
-## <a name="summary"></a>Összefoglalás
+## <a name="summary"></a>Összegzés
 A futtatott terheléstesztekben a CPU volt a leginkább kihasznált erőforrás a Power BI jelentéskészítő kiszolgálót üzemeltető gép csúcsterhelésekor. Ezért az erőforrások közül először a magok számát érdemes növelni. Alternatív megoldásként fontolóra vehető a szolgáltatás kiterjesztése további, Power BI jelentéskészítő kiszolgálót üzemeltető kiszolgálók topológiába való felvételével.
 
 A jelen dokumentumban ismertetett eredmények adott adatkészletet használó adott jelentések adott módon ismételt végrehajtásából származnak. Hasznos hivatkozási pontként szolgálnak, de vegye figyelembe, hogy a használat függ a jelentésektől, a lekérdezésektől, a használati mintáktól és a Power BI jelentéskészítő kiszolgáló üzemelő példányától is.
@@ -126,4 +126,4 @@ Ha futtatni szeretné a Reporting Services LoadTest eszközt a saját vagy egy M
 4. Hozzon létre egy Power BI jelentéskészítő kiszolgálói környezetet az Azure-ban a https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure lap utasításait követve.
 5. Miután végzett a környezet üzembe helyezésével, kövesse a https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution weblapon található utasításokat a tesztek futtatásához.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

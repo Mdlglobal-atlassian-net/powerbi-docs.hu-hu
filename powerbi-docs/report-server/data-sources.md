@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: maggies
 ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979845"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón
@@ -60,7 +60,7 @@ Más adatforrások is működhetnek annak ellenére, hogy a támogatott listán 
 | Oracle Database |Igen |Igen |Igen |
 | PostgreSQL-adatbázis |Igen |Igen |Nem |
 | Power BI szolgáltatásban |Nem |Nem |Nem |
-| R szkript |Igen |Nem |Nem |
+| R-szkript |Igen |Nem |Nem |
 | Salesforce-objektumok |Igen |Nem |Nem |
 | Salesforce-jelentések |Igen |Nem |Nem |
 | SAP Business Warehouse-kiszolgáló |Igen |Igen |Igen |
@@ -120,7 +120,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | --- | --- | --- | --- | --- |
 | SQL Server-adatbázis |Nem |Nem |Igen |Igen |
 | SQL Server Analysis Services |Nem |Nem |Igen |Igen |
-| Web |Igen |Nem |Igen |Igen |
+| Webes |Igen |Nem |Igen |Igen |
 | Azure SQL Database |Nem |Nem |Igen |Nem |
 | Azure SQL Data Warehouse |Nem |Nem |Igen |Nem |
 | Active Directory |Nem |Nem |Igen |Igen |
@@ -140,7 +140,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 | Microsoft Exchange |Nem |Nem |Nem |Nem |
 | Microsoft Exchange Online |Nem |Nem |Nem |Nem |
 | MySQL-adatbázis |Nem |Nem |Igen |Igen |
-| OData-adatcsatorna |Igen |Igen |Igen |Igen |
+| OData-csatorna |Igen |Igen |Igen |Igen |
 | ODBC |Igen |Nem |Igen |Igen |
 | OLE DB |Igen |Nem |Igen |Igen |
 | Oracle Database |Nem |Nem |Igen |Igen |
@@ -209,7 +209,7 @@ A Power BI jelentéskészítő kiszolgáló nem támogatja az OAuth-alapú hites
 
 **Az SAP HANA csak akkor támogatja a DirectQueryt integrált Windows-hitelesítéssel, ha relációs adatbázisként van használva a közzétett Power BI Desktop-fájlban (.pbix).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Most, hogy csatlakozott az adatforráshoz, az abból származó adatokat használva [hozzon létre egy Power BI-jelentést](quickstart-create-powerbi-report.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

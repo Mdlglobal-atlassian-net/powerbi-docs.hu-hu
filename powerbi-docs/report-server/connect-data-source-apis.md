@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/21/2020
 ms.author: maggies
 ms.openlocfilehash: 9ca5d47a938210c10903c916c54713b89923e287
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80751543"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Módosíthatja az adatforrások kapcsolati sztringjeit a Power BI-jelentésekben a PowerShell – Power BI jelentéskészítő kiszolgáló API-jaival
@@ -66,8 +66,8 @@ A PowerShell API-jaival módosíthatja az adatforrások kapcsolati sztringjeit a
     Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
     ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Oldalakra osztott jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón](connect-data-sources.md) 
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

@@ -1,19 +1,19 @@
 ---
 title: Tippek sablonalkalmazások készítéséhez a Power BI-ban
 description: Tippek lekérdezések, adatmodellek, jelentések és irányítópultok létrehozásához, hogy jó sablonalkalmazásokat készíthessen
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
-ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 266e44b5e5ecff2f86bcd3d43ce91368cc57b9e1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066282"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781294"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tippek sablonalkalmazások készítéséhez a Power BI-ban
 
@@ -142,22 +142,8 @@ A sablonalkalmazás AppSource-beli közzététele után fontolja meg egy letölt
 * Power BI – Power BI-felhasználók számára megtekinthető.
 
 A felhasználónak az alkalmazás Power BI-beli letöltési hivatkozására való átirányításához vizsgálja meg az alábbi példa kódrészletet: [GitHub-adattár](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+
 [![Alkalmazás letöltési hivatkozása](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-
-
-## <a name="known-limitations"></a>Ismert korlátozások
-
-| Funkció | Ismert korlátozás |
-|---------|---------|
-|Tartalom:  Adathalmazok   | Pontosan egy adatkészletnek kell jelen lennie. Csak a Power BI Desktopban (.pbix-fájlok) készült adatkészletek használata engedélyezett. <br>Nem támogatott: Más sablonalkalmazásokból származó adatkészletek, munkaterületeken átnyúló adatkészletek, lapszámozott jelentések (.rdl-fájlok), Excel-munkafüzetek, továbbfejlesztett adatkészlet-metaadatok |
-|Tartalom: Irányítópultok | A valós idejű csempék nem engedélyezettek (más szóval nem támogatott a leküldéses vagy a folyamatos átvitelű adatkészlet) |
-|Tartalom: Adatfolyamok | Nem támogatott: Adatfolyamok |
-|Fájlok tartalmai | Csak a PBIX-fájlok engedélyezettek. <br>Nem támogatott: .rdl-fájlok (lapszámozott jelentések), Excel-munkafüzetek   |
-| Adatforrások | A felhőbeli ütemezett adatfrissítéshez támogatott adatforrások engedélyezettek. <br>Nem támogatott: <li> DirectQuery</li><li>Élő kapcsolatok (nem Azure AS)</li> <li>Helyszíni adatforrások (a személyes és a vállalati átjárók nem támogatottak)</li> <li>Valós idejű (a leküldéses adatkészlet nem támogatott)</li> <li>Összetett modellek</li></ul> |
-| Adatkészlet: munkaterületeken átnyúló | Munkaterületeken átnyúló adatkészletek használata nem engedélyezett  |
-| Lekérdezési paraméterek | Nem támogatott: „Any” típusú paraméterek vagy „Binary” típusú blokkfrissítési művelet az adatkészlethez |
-| Power BI-vizualizációk | Csak a nyilvánosan elérhető Power BI-vizualizációk támogatottak. A [céges Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals-organization.md) nem támogatottak |
 
 ## <a name="next-steps"></a>Következő lépések
 

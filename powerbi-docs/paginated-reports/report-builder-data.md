@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
 ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921447"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Jelentésadatok a Power BI Jelentéskészítőben
@@ -23,7 +23,7 @@ A jelentésadatok számos szervezeti adatforrásból származhatnak. Ha jelenté
 Megtudhatja, hogyan [hozhat létre beágyazott adatforrást lapszámozott jelentésekhez a Power BI jelentéskészítőjében](paginated-reports-embedded-data-source.md).
 
 
-##  <a name="BkMk_ReportDataTerms"></a> Feltételek  
+##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> Feltételek  
   
 - **Adatkapcsolat.** Más néven *adatforrás*. Az adatkapcsolat egy nevet és a kapcsolat típusától függő kapcsolati tulajdonságot tartalmazza. Kialakításából fakadóan az adatkapcsolat nem tartalmaz hitelesítő adatokat. Az adatkapcsolat nem szabja meg, hogy milyen adatokat kérjen le a külső adatforrásból. Ehhez egy lekérdezést kell megadni az adatkészlet létrehozásakor.  
   
@@ -33,7 +33,7 @@ Megtudhatja, hogyan [hozhat létre beágyazott adatforrást lapszámozott jelent
   
 - **Hitelesítő adatok.** A hitelesítő adatok olyan információk, amelyeket meg kell adni a külső adatok eléréséhez.  
   
-##  <a name="BkMk_ReportDataTips"></a> Tippek a jelentés adatainak megadásához
+##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Tippek a jelentés adatainak megadásához
 
  A jelentésadatokra vonatkozó stratégiát a következő útmutatás segítségével alakítsa ki.  
   
@@ -57,7 +57,7 @@ Megtudhatja, hogyan [hozhat létre beágyazott adatforrást lapszámozott jelent
   
 - Az adatforrásokat és adatkészleteket a jelentésen belül hozzák létre, majd teszik közzé a Power BI szolgáltatásban. A közzététel után a hitelesítő adatok közvetlenül a Power BI szolgáltatásban vagy a vállalati átjáróban konfigurálhatók. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)  
 - [Adatlekérési útmutató lapszámozott jelentésekhez](../guidance/report-paginated-data-retrieval.md)

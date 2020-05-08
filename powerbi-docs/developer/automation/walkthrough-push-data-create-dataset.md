@@ -1,5 +1,5 @@
 ---
-title: Adathalmaz létrehozása
+title: Adatkészlet létrehozása
 description: Útmutató – Adatok elküldése adatkészletbe – Adatkészlet létrehozása a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
@@ -9,14 +9,14 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
 ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80403636"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>3\. lépés: Adatkészlet létrehozása a Power BI-ban
-Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az Adatok elküldése az adatkészletbe **2. lépésében** ([Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md)) egy tokent kapott, amellyel hitelesítheti magát az **Azure AD**-ben. Ebben a lépésben a token használatával meghívja a [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) műveletet.
 
@@ -38,7 +38,7 @@ A következőképpen hozhat létre adatkészletet a Power BI-ban.
 
 1. A [2. lépés – Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése](walkthrough-push-data-get-token.md) részben létrehozott Konzolalkalmazás-projektben adja hozzá a **using System.Net;** és a **using System.IO** parancsot a Program.cs-hez.
 2. Adja hozzá a Program.cs-hez az alábbi kódot.
-3. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. A konzolablakban látnia kell az **Adatkészlet létrehozva** üzenetet. Az új adatkészlet megtekintéséhez bejelentkezhet a Power BI-ba is.
+3. Futtassa a Konzolalkalmazást, és jelentkezzen a Power BI-fiókjába. A konzolablakban látnia kell az **Adatkészlet létrehozva** üzenetet. Az új adatkészlet megtekintéséhez bejelentkezhet a Power BI-ba is.
 
 **Minta: Adatok küldése adatkészletekbe**
 
@@ -226,7 +226,7 @@ namespace walkthrough_push_data
 
 [Következő lépés >](walkthrough-push-data-get-datasets.md)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)  
 * [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)  
 * [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
@@ -235,5 +235,5 @@ namespace walkthrough_push_data
 * [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 * [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

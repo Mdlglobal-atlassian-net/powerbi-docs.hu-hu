@@ -9,10 +9,10 @@ ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: f637bb10ed7ec27dcb3da07fc04cae39328ffebe
-ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80752257"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Csatlakozás a válsághelyzettel kapcsolatos kommunikációról szóló jelentéshez
@@ -59,7 +59,7 @@ A Kríziskommunikáció-minta telepítésekor figyelje a [SharePoint-lista „CI
 
 1. A kezdőképernyőn válassza a **Böngészés** lehetőséget.
 
-   ![Sablonalkalmazás kezdőképernyője](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
+   ![Sablonalkalmazás üdvözlőképernyője](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-splash-screen.png)
 
    Ekkor az alkalmazás megnyílik és mintaadatokat jelenít meg.
 

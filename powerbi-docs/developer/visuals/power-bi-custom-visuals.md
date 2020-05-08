@@ -1,6 +1,6 @@
 ---
 title: Vizualizációk a Power BI-ban
-description: Egyéni vizualizációk a Power BI-ban
+description: Egyéni vizuális elemek a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -11,10 +11,10 @@ ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550884"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
@@ -72,7 +72,7 @@ Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az A
 > [!WARNING]
 > A Power BI-vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Fontolja meg, hogy megbízik-e a szerzőben és a Power BI-vizualizációban, mielőtt importálná azt a jelentésébe.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * Ha Ön fejlesztő, elsőként tekintse meg a [Power BI-vizualizációk fejlesztésének](custom-visual-develop-tutorial.md) útmutatóját.
 
@@ -80,4 +80,4 @@ Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az A
 
 * A [Power BI-vizualizációk útmutatójának](guidelines-powerbi-visuals.md) feltárása.
 
-További kérdései vannak? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](https://community.powerbi.com/) találhat.
+Több kérdése van? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](https://community.powerbi.com/) találhat.

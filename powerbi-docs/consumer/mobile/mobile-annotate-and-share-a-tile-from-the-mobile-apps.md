@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205504"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Csempék, jelentések és vizualizációk jegyzetekkel való ellátása és megosztása a Power BI mobilalkalmazásokban
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
+| iPhone-ok |iPadek |Android rendszerű telefonok |Android-táblagépek |
 
 Az iOS- és Android-eszközökre készült Power BI mobilalkalmazásokkal jegyzetekkel láthatja el és megoszthatja a csempék, jelentések és vizualizációk pillanatképét. A címzettek pontosan azt látják majd, amit Ön látott a levél küldésekor, továbbá egy hivatkozást is. A csempékről készült pillanatképeket bárkinek elküldheti, nem csak a saját levelezőtartományába tartozó kollégáinak. A megosztás előtt elláthatja jegyzetekkel is: vonalakkal, szöveggel és bélyegekkel.
 
@@ -71,7 +71,7 @@ A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy h
    A levélben egy kép, valamint az adott csempére, jelentésre vagy vizualizációra mutató hivatkozás található. 
 4. Koppintson a **Küldés** gombra.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Irányítópult megosztása a Power BI mobilalkalmazásokból](mobile-share-dashboard-from-the-mobile-apps.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 
