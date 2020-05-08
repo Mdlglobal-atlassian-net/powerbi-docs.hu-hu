@@ -1,19 +1,19 @@
 ---
 title: Power BI-sablonalkalmazás frissítése, törlése és kivonása
 description: Sablonalkalmazás frissítése, törlése és kinyerése.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 09/23/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b17ed5458a6245ab5796edcf15f6dee5f885358
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 26587969263dc403dbc86c1ba4290f75f1ad1c41
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77497201"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781386"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Sablonalkalmazás frissítése, törlése és kinyerése
 

@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
 ms.openlocfilehash: 139c9cb31ecbb6853228c0d362b61d5a74debac5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874971"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867783"
 ---
 # <a name="intro-to-power-bi-qa"></a>Bevezetés a Power BI Q&A használatába
 
-Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven végez keresést az adatokban. A Power BI Q&A funkciójával a saját szavaival, természetes nyelven vizsgálhatja meg az adatokat. A Q&A interaktív, sőt, szórakoztató. Gyakran előfordul, hogy egy kérdés továbbiakhoz vezet, mivel a vizualizációk érdekes útvonalakat fednek fel, amelyeken elindulhat. A kérdés megfogalmazása csak az első lépés. Az adatokat feltérképezve pontosíthatja vagy kibővítheti a kérdést, új információkat tárhat fel, összpontosíthat a részletekre, vagy áttekintheti a szélesebb összefüggéseket. A felület a memóriabeli tárolásnak köszönhetően interaktív és gyors. 
+Ha válaszokat keres az adatokban, néha az a leggyorsabb megoldás, ha természetes nyelven végez keresést az adatokban. A Power BI Q&A funkciójával a saját szavaival, természetes nyelven vizsgálhatja meg az adatokat. A Q&A interaktív, sőt, szórakoztató. Gyakran előfordul, hogy egy kérdés további kérdéseket vet fel, mivel a vizualizációk érdekes utakat fednek fel a folytatáshoz. A kérdés megfogalmazása csak az első lépés. Az adatokat feltérképezve pontosíthatja vagy kibővítheti a kérdést, új információkat tárhat fel, összpontosíthat a részletekre, vagy áttekintheti a szélesebb összefüggéseket. A felület a memóriabeli tárolásnak köszönhetően interaktív és gyors. 
 
 A Power BI Q&A ingyenes, és minden felhasználó számára elérhető. A Power BI Desktopban a jelentéstervezők az adatok vizsgálatára és vizualizációk létrehozására használhatják a Q&A-t. A Power BI szolgáltatásban mindenki használhatja a Q&A-t adatai vizsgálatára. Ha van engedélye egy irányítópult vagy jelentés szerkesztésére, akkor a Q&A-eredményeket rögzítheti is.
 
@@ -67,7 +67,7 @@ A kérdés beírása közben a Q&A megpróbálja azonnal értelmezni és ábráz
 - Vonaldiagram
 - Sávdiagram
 - Mátrix
-- Táblázat
+- Tábla
 - Kártya
 - Terület
 - Tortadiagram
@@ -99,7 +99,7 @@ A Q&A alapértelmezés szerint az irányítópultok tetején érhető el. A Q&A 
 
 ## <a name="next-steps"></a>Következő lépések
 
-A természetes nyelvet többféleképpen is integrálhatja a jelentésekbe. További információért lásd a következő cikkeket:
+A természetes nyelvet többféleképpen is integrálhatja a jelentésekbe. További információval a következő cikkek szolgálnak:
 
 * [Q&A – vizualizáció](../visuals/power-bi-visualization-q-and-a.md)
 * [Q&A – ajánlott eljárások](q-and-a-best-practices.md)

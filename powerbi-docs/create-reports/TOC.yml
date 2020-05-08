@@ -62,7 +62,7 @@
             - name: Természetes nyelv és Q&A
               items:
                 - name: Q&A – bevezetés
-                  href: ../natural-language/q-and-a-tooling-intro.md
+                  href: ../natural-language/q-and-a-intro.md
                 - name: Q&A-eszközhasználat – bevezetés
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Speciális Q&A-eszközhasználat
@@ -99,6 +99,14 @@
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: Gyakori kérdések a többoldalas jelentésekről
               href: ../paginated-reports/paginated-reports-faq.md
+        - name: Üzembe helyezési folyamatok
+          items:
+            - name: Bevezetés az üzembe helyezési folyamatokba
+              href: deployment-pipelines-overview.md
+            - name: Az üzembe helyezési folyamatok megismerése
+              href: deployment-pipelines-process.md
+            - name: Ajánlott eljárások
+              href: deployment-pipelines-best-practices.md
     - name: Útmutatók
       items:
         - name: Power BI-jelentések
@@ -121,22 +129,20 @@
               href: ../desktop-buttons.md
             - name: Részletezési gombok létrehozása
               href: ../desktop-drill-through-buttons.md
+            - name: A részletezési funkció használata
+              href: ../desktop-drillthrough.md
+            - name: Több jelentésre kiterjedő részletezés funkció használata
+              href: ../desktop-cross-report-drill-through.md
             - name: Könyvjelzők létrehozása az eredmények mentéséhez és megosztásához
               href: ../desktop-bookmarks.md
             - name: Jelentéskészítési témák használata
               href: ../desktop-report-themes.md
             - name: Szűrők használata jelentésekben
               href: ../power-bi-report-filter.md
-            - name: A részletezési funkció használata
-              href: ../desktop-drillthrough.md
-            - name: Több jelentésre kiterjedő részletezés funkció használata
-              href: ../desktop-cross-report-drill-through.md
+            - name: Szűrő hozzáadása jelentéshez
+              href: ../power-bi-report-add-filter.md
             - name: Csoportosítás és tárolás alkalmazása
               href: ../desktop-grouping-and-binning.md
-            - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
-              href: ../desktop-r-visuals.md
-            - name: R-alapú Power BI-vizualizációk a letöltése
-              href: ../desktop-r-powered-custom-visuals.md
             - name: Rácsvonalak és rácsvonalhoz igazítás használata
               href: ../desktop-gridlines-snap-to-grid.md
             - name: Oldal megjelenítési beállításai jelentésekben
@@ -153,6 +159,8 @@
               href: ../desktop-slicer-numeric-range.md
             - name: Relatív dátumszeletelők és -szűrők
               href: ../visuals/desktop-slicer-filter-date-range.md
+            - name: Relatívidő-szeletelők és szűrők
+              href: slicer-filter-relative-time.md
             - name: Átméretezhető szeletelő létrehozása
               href: ../power-bi-slicer-filter-responsive.md
             - name: Több mező hozzáadása egy szeletelőhöz
@@ -189,8 +197,6 @@
               href: ../desktop-templates.md
             - name: Jelentés létrehozása adatkészletből
               href: ../service-report-create-new.md
-            - name: Szűrő hozzáadása jelentéshez
-              href: ../power-bi-report-add-filter.md
             - name: Jelentés mentése
               href: ../service-report-save.md
             - name: Jelentés használata Szerkesztő nézetben
@@ -201,6 +207,8 @@
               href: ../service-aggregates.md
             - name: QR-kód létrehozása jelentéshez
               href: ../service-create-qr-code-for-report.md
+            - name: Vizualizációk testre szabásának engedélyezése fogyasztók számára (előzetes verzió)
+              href: power-bi-personalize-visuals.md
             - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
               href: ../service-export-to-pbix.md
             - name: Adatkészletek és jelentések közzététele
@@ -267,6 +275,10 @@
               href: ../visuals/power-bi-visualization-powerapp.md
             - name: R vizualizációk
               href: ../visuals/service-r-visuals.md
+            - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
+              href: ../desktop-r-visuals.md
+            - name: R-alapú Power BI-vizualizációk a letöltése
+              href: ../desktop-r-powered-custom-visuals.md
             - name: Tárcsadiagramok
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Szalagdiagramok
@@ -371,6 +383,12 @@
               href: ../service-data-classification.md
             - name: Irányítópult-témák
               href: ../service-dashboard-themes.md
+        - name: Üzembe helyezési folyamatok
+          items:
+            - name: Első lépések
+              href: deployment-pipelines-get-started.md
+            - name: Hibaelhárítás
+              href: deployment-pipelines-troubleshooting.md
         - name: Egyéb feladatok
           items:
             - name: Tartalom átnevezése
