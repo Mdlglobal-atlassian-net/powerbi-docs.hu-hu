@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 46072ca4c21857476dea6308a891f261109a2388
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878053"
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Adatelemek többszörös kiválasztása a Power BI Desktop használatával
@@ -28,7 +28,7 @@ A többszörös kijelöléssel azonban most már több adatpont is kijelölhető
 
 Ez a funkció meglehetősen egyszerűnek tűnhet, valójában azonban ennek köszönhetően válik lehetővé számos lehetőség a jelentések létrehozásánál, megosztásánál és használatánál. 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 

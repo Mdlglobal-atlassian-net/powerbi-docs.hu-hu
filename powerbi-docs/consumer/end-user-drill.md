@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77496413"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Részletezés mód vizualizációkban a Power BI-ban
@@ -22,7 +22,7 @@ ms.locfileid: "77496413"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Ez a cikk bemutatja, hogy hogyan lehet lehatolni a vizualizációkba a Microsoft Power BI szolgáltatásban. Az adatpontok részletezésével és felhatolásával mélyreható betekintést nyerhet az adatokba. 
+Ez a cikk bemutatja, hogyan lehet részletezni a vizualizációk mélyebb szintjeit a Microsoft Power BI szolgáltatásban. Az adatpontok részletezésével és felhatolásával mélyreható betekintést nyerhet az adatokba. 
 
 ## <a name="drill-requires-a-hierarchy"></a>A részletezéshez hierarchiára van szükség
 
@@ -149,7 +149,7 @@ Figyelje meg, hogy a végösszegek azonosak a **Település**, az **Irányítós
 - Az Önnel megosztott jelentések megtekintéséhez Power BI Pro- vagy prémium szintű licenc szükséges. [Milyen licenccel rendelkezem?](end-user-license.md)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Vizualizációk a Power BI-jelentésekben](../visuals/power-bi-report-visualizations.md)
 
@@ -157,4 +157,4 @@ Figyelje meg, hogy a végösszegek azonosak a **Település**, az **Irányítós
 
 [Power BI – Alapfogalmak](end-user-basic-concepts.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

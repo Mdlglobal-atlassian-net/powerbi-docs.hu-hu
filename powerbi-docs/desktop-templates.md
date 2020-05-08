@@ -10,10 +10,10 @@ ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 25ed90dba0c164a44d691f8247023f2ff7e0a67f
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76913536"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Jelentésminták létrehozása a Power BI Desktophoz
@@ -68,7 +68,7 @@ A paraméterek és az adatok megadása után létrejön egy jelentés, amely az 
 
 Ennyi az egész. A Power BI Desktopban egyszerűen hozhat létre és használhat jelentéssablonokat, így könnyedén megismételheti egy jelentés jól sikerült elrendezését és más jellemzőit, és másokkal is megoszthatja azokat.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 További információ a **lekérdezési paraméterről**:
 * [Lekérdezési paraméterek használata a Power BI Desktopban](https://docs.microsoft.com/power-query/power-query-query-parameters)
 

@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609947"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841917"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Ajánlott eljárások a Q&A optimalizálásához a Power BI-ban
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. És még hatékonyabb, ha a maguk az adatok válaszolnak, ahogy azt a Power BI Q&A szolgáltatásában teszik.
@@ -194,6 +194,8 @@ Az az egyetlen kivétel azon szabály alól, hogy „normalizálni jobb”, amik
 Ez a lépés kifejezetten a Q&A szolgáltatásra vonatkozik (és általánosságban nem szükséges a Power BI-jelentésekhez). A felhasználók gyakran többféleképpen utalnak ugyanarra a dologra. Ilyen például az összes értékesítés, a nettó értékesítés és a teljes nettó értékesítés. Ezeket a szinonimákat hozzáadhatja a Power BI-modell tábláihoz és oszlopaihoz. 
 
 Ez a lépés lényeges lehet. Még ha egyszerű táblaneveket és oszlopneveket is használ, a Q&A szolgáltatásban kérdéseket feltevő felhasználók a számukra logikus szavakat fogják használni. Nem az oszlopok előre megadott listájából választanak. Minél több hasznos szinonimát ad hozzá, annál jobb a felhasználók élménye a jelentés használatakor. Szinonimák hozzáadásához a Power BI Desktopban nyissa meg a Modell nézetet, válassza a Modellezés fület, majd válasszon ki egy mezőt vagy egy táblát. A Tulajdonságok panelen megjelenik a **Szinonimák** mező, amelyben szinonimákat adhat hozzá.
+
+
 
 ![Szinonimák a Q&A Tulajdonságok paneljén](media/qna-modelling-pane-synonyms.png)
 

@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: cf08f984e98b1497b04d1e19bd870ebcdda010b3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877232"
 ---
 # <a name="developer-resources-for-power-bi-dataflows"></a>Fejlesztői erőforrások Power BI-adatfolyamokhoz
@@ -26,7 +26,7 @@ Számos módon használhatók adatfolyamok kód nélkül, entitások létrehozá
 Az alábbi fejlesztői erőforrások állnak rendelkezésre a Power BI-adatfolyamokkal való munkavégzéshez:
 
 
-| Adatfolyam-erőforrás | Leírás |
+| Adatfolyam-erőforrás | Description (Leírás) |
 | --- | --- |
 | [A Power BI-adatfolyam REST API-jai – referencia](https://go.microsoft.com/fwlink/?linkid=2047629)    | Egy teljes referencia-útmutató az adatfolyam REST API-jához.|
 
@@ -46,7 +46,7 @@ CDM-fejlesztői forrásokkal és oktatóanyagokkal kapcsolatos információt az 
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 
-A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információt a következő cikkekben talál:
+A Power Queryvel és az ütemezett frissítésekkel kapcsolatos további információkért olvassa el ezeket a cikkeket:
 * [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
 * [Ütemezett frissítés beállítása](refresh-scheduled-refresh.md)
 

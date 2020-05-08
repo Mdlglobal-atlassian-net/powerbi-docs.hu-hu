@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 31ce44059ec2abd5a2615267311ba651993342ba
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207988"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841894"
 ---
 # <a name="power-bi-security"></a>A Power BI és a biztonság
 
-A Power BI biztonságáról részletes leírásért [olvassa el a Power BI-jal és a biztonsággal kapcsolatos tanulmányt](whitepaper-powerbi-security.md).
+A Power BI biztonságáról részletes leírásért [olvassa el a Power BI-jal és a biztonsággal kapcsolatos tanulmányt](guidance/whitepaper-powerbi-security.md).
 
 A Power BI szolgáltatás az **Azure**-ra épül, amely a Microsoft felhőalapú számítástechnikai infrastruktúrája és platformja. A Power BI szolgáltatás architektúrája két fürtön alapul – a webes előtérrendszer (**WFE-** ) fürtön és a **háttérbeli** fürtön. A WFE-fürt kezeli a kezdeti kapcsolódást és a Power BI szolgáltatás hitelesítését, a hitelesítés után a háttérbeli fürt kezeli az összes további felhasználói interakciót. A Power BI az Azure Active Directory (AAD) használatával tárolja és kezeli a felhasználói identitásokat, valamint kezeli az adatoknak és metaadatoknak az Azure BLOB és az Azure SQL Database használatával történő tárolását.
 

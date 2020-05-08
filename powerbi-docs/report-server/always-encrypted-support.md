@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: maggies
 ms.openlocfilehash: f8d711bba8dc7570f2d470554fd1d971639bbb7b
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76710206"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Az Always Encrypted szolgáltatás a Power BI Jelentéskészítő kiszolgálón
@@ -27,7 +27,7 @@ A Power BI Jelentéskészítő kiszolgáló jelenleg nem korlátozza a jelentés
 
 ### <a name="key-storage-strategies"></a>Kulcstárolási stratégiák
 
-|Tárhely  |Támogatott  |
+|Storage  |Támogatott  |
 |---------|---------|
 |Windows-tanúsítványtároló | Igen |
 |Azure Key Vault | Nem |
@@ -88,9 +88,9 @@ A determinisztikus Always Encrypted oszlopokon jelenleg csak olyan összesítés
 
 Az Always Encrypted szolgáltatást engedélyezni kell az SQL Server-adatforrás kapcsolati sztringjében. További információk az [Always Encrypted alkalmazás-lekérdezésekben](https://docs.microsoft.com/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries) való engedélyezéséről.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) az SQL Serverben és az Azure SQL Database-ben
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

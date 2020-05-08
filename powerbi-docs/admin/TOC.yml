@@ -5,13 +5,13 @@
     - name: Áttekintés
       expanded: true
       items:
-        - name: Mit jelent a Power BI-felügyelet?
+        - name: Mi a Power BI-felügyelet?
           href: ../service-admin-administering-power-bi-in-your-organization.md
         - name: Hol található a bérlőm?
           href: ../service-admin-where-is-my-tenant-located.md
-        - name: Mi az a Power BI Premium?
+        - name: Mi a Power BI Premium?
           href: ../service-premium-what-is.md
-    - name: Fogalmak
+    - name: Alapelvek
       expanded: true
       items:
         - name: Felügyeleti szerepkör a Microsoft 365-ben
@@ -44,7 +44,7 @@
               href: ../service-premium-capacity-scenarios.md
             - name: Power BI Premium – gyakori kérdések
               href: ../service-premium-faq.md
-    - name: Útmutató
+    - name: 'Útmutató:'
       items:
         - name: Licencelés és regisztráció
           items:
@@ -114,7 +114,7 @@
               href: ../service-admin-premium-restart.md
             - name: Adatkészlet-kapcsolat az XMLA-végponttal (előzetes verzió)
               href: ../service-premium-connect-tools.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: 'PowerShell, REST API-k és .NET SDK'
           href: ../service-admin-reference.md
@@ -147,5 +147,3 @@
           href: ../service-admin-alternate-email-address-for-power-bi.md
         - name: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
           href: ../service-admin-how-to-use-the-same-account-as-azure.md
-        - name: Dedikált Office 365 – ismert problémák
-          href: ../service-admin-office-365-dedicated-known-issues.md

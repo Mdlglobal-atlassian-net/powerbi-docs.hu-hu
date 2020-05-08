@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874465"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Vizualizáció létrehozása a Power BI Q&A használatával
@@ -48,7 +48,7 @@ Hogyan tudnánk létrehozni ezt a vonaldiagramot a Q&A-vel?
    
    ![A Q&A kitöltött területdiagramja](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-filled-chart.png)
 
-4. A diagram irányítópultra való kitűzéséhez válassza a gombostű ikont ![Gombostű ikon](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) a jobb felső sarokban.
+4. A diagram irányítópultra való kitűzéséhez válassza a gombostű ikont ![gombostű ikonra](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) a jobb felső sarokban.
 
 ## <a name="create-a-visual-in-the-report-editor"></a>Vizualizáció létrehozása a jelentésszerkesztőben
 
@@ -67,11 +67,11 @@ Hogyan tudnánk létrehozni ezt a vonaldiagramot a Q&A-vel?
 
     Láthatja, hogy azonos vizualizációk jöttek létre. A létrehozás így nem volt túl bonyolult. De a létrehozás a Q&A-vel egyszerűbb volt!
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 - [A Q&A használata irányítópultokon és jelentésekben](power-bi-tutorial-q-and-a.md)  
 - [Q&A felhasználók számára](consumer/end-user-q-and-a.md)
 - [Megfelelő adatműködés biztosítása a Q&A és a Power BI használatánál](service-prepare-data-for-q-and-a.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

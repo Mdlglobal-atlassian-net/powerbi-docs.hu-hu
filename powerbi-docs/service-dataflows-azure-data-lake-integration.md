@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877322"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
@@ -70,7 +70,7 @@ A Power BI-on kívüli személyek és szolgáltatások a hitelesítés más form
 ) című cikk ismerteti teljes részletességgel.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ez a cikk a Power BI-adatfolyamok, a CDM-mappák, és az Azure Data Lake Storage Gen2 integrációját tekintette át. További információt a következő cikkekben találhat:
 
@@ -91,7 +91,7 @@ Az Azure Storage szolgáltatással kapcsolatban az alábbi cikkeket érdemes elo
 * [Azure Storage – biztonsági útmutató](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Első lépések az Azure Data Servicesből származó github-mintákkal](https://aka.ms/cdmadstutorial)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfájl definiálása](https://go.microsoft.com/fwlink/?linkid=2045521)
