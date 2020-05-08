@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: davidi
 ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439963"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>A Power BI-jelentések ütemezett frissítésének konfigurálása
@@ -78,15 +78,15 @@ Az ütemezett frissítési tervek állapota a webportálon tekinthető meg.
    | Adatok frissítése |A modellben lévő adatok frissítése. |
    | Hitelesítő adatok eltávolítása a modellből |Az adatforráshoz való kapcsolódáshoz használt hitelesítő adatok eltávolítása a modellből. |
    | Modell mentése a katalógusba |Az adatok frissítésének végeztével a frissített modell visszamentése a jelentéskészítési kiszolgáló katalógus-adatbázisába. |
-   | Befejezve: Adatfrissítés |A frissítés befejeződött. |
+   | Befejezve: adatfrissítés |A frissítés befejeződött. |
    | Hiba: |Hiba történt a frissítés során, és a hibaüzenet látható. |
 
 Az aktuális állapot megtekintéséhez frissíteni kell a weblapot. Az állapot nem fog automatikusan változni.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Az ütemezések létrehozásával és módosításával kapcsolatban lásd: [Ütemezések létrehozása, módosítása és törlése](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Az ütemezett frissítések hibaelhárításával kapcsolatos információkért lásd: [Power BI jelentéskészítési kiszolgálók ütemezett frissítésének hibaelhárítása](scheduled-refresh-troubleshoot.md).
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 03/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4e9bd94a044d88c4f0a767738d07b97ddc989f7e
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82065616"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Kiemelt irányítópultok a Power BI szolgáltatásban
@@ -59,7 +59,7 @@ Ha úgy dönt, hogy egyáltalán nincs szüksége kiemelt irányítópultra, az 
 
     ![Irányítópult-kiemelés megszüntetésének kijelölése](./media/end-user-featured/power-bi-unfeature.png)
    
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 - [Irányítópult megjelölése kedvencként](end-user-favorite.md)    
-- További kérdései vannak? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
+- Több kérdése van? Kérdezze meg [a Power BI közösségét](https://community.powerbi.com/).
 

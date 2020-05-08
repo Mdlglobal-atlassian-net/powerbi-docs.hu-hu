@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
 ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488432"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mire használhatják a fejlesztők a Power BI API-t?
@@ -31,11 +31,11 @@ A Power BI REST API-val kezelési feladatokat is végezhet olyan Power BI-objekt
 | Hitelesítés a Power BI-ban. | [Hitelesítés a Power BI-ban ](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
-> A Power BI API-k továbbra is csoportokként hivatkoznak a munkaterületekre. Minden csoportokra való hivatkozás munkaterületek használatát jelöli.
+> A Power BI API-k továbbra is csoportokként hivatkoznak a munkaterületekre. Bármely csoportokra való utalás munkaterületek használatát jelöli.
 
 ## <a name="api-developer-tools"></a>API-fejlesztői eszközök
 
-| Eszköz(ök) | Leírás |  |  |
+| Eszköz(ök) | Description (Leírás) |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
 | [Demókörnyezeti eszközök](https://microsoft.github.io/PowerBI-JavaScript/demo) | A Power BI JavaScript API-jainak használatát bemutató minták használata. Ez az eszköz lehetőséget ad a Power BI Embedded különböző mintáinak gyors kipróbálására. |  |  |
 | [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | További információ a Power BI JavaScript API-jairól. |  |  |
@@ -60,4 +60,4 @@ A Power BI API lehetővé teszi az [adatok leküldését az adatkészletekbe](wa
 * [A Power BI REST API-jainak leírása](rest-api-reference.md)
 * [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: kfollis
 ms.openlocfilehash: 85b26b68c4943e0bc100be7a298730cec34cfc78
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637754"
 ---
 # <a name="service-interruption-notifications"></a>Szolgáltatáskimaradásokkal kapcsolatos értesítések
@@ -51,8 +51,8 @@ Az értesítéseket a Power BI bérlői rendszergazdája engedélyezheti a felü
 > [!NOTE]
 > A Power BI a következő fiókból küldi ki az értesítéseket: no-reply-powerbi@microsoft.com. Ügyeljen rá, hogy ez a fiók felkerüljön az engedélyezési listára, mivel így elkerülheti, hogy az értesítések a levélszemét mappába kerüljenek.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 [A Power BI Pro és a Power BI Premium támogatási lehetőségei](service-support-options.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -9,13 +9,13 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
 ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488269"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítési hozzáférési jogkivonat beszerzése
+# <a name="step-2-get-an-authentication-access-token"></a>2\. lépés: Hitelesítéshez szükséges hozzáférési jogkivonat beszerzése
 
 Ez a cikk az [Adatok elküldése Power BI-adatkészletbe](walkthrough-push-data.md) című sorozat második lépése.
 
@@ -23,7 +23,7 @@ Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](../embe
 
 ## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
 
-A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](../embedded/register-app.md). 
+A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](../embedded/register-app.md) sorozat [előző lépését](walkthrough-push-data.md). 
 
 Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
@@ -39,7 +39,7 @@ Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
 3. Adja hozzá a lépések után található mintakódot a Program.cs fájlhoz.
 
-4. Cserélje le a „{ClientID}” kifejezést az [előző cikkben](../embedded/register-app.md) az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**.
+4. Cserélje le a „{ClientID}” kifejezést az **előző cikkben** az alkalmazás regisztrálásakor kapott [ügyfél-azonosítóra](../embedded/register-app.md).
 
 5. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. 
 
@@ -180,10 +180,10 @@ namespace walkthrough_push_data
 
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * A sorozat következő cikke [az adathalmazok Power BI-ban való létrehozását ismerteti](walkthrough-push-data-create-dataset.md)
 * [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 * [Power BI REST API-k](https://docs.microsoft.com/rest/api/power-bi/)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

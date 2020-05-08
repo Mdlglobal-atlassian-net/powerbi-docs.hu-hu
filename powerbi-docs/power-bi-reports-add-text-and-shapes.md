@@ -11,10 +11,10 @@ ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273202"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Szövegdobozok és alakzatok hozzáadása Power BI-jelentésekhez
@@ -33,7 +33,7 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
    ![Szövegdoboz kiválasztása](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
 3. Gépelje be a szövegdobozba a szöveget, amelynek betűtípusát, színét és igazítását is beállíthatja. 
    
-   ![Szöveg bevitele](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
+   ![Szöveg megadása](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
 4. A szövegdoboz elhelyezéséhez jelölje ki a tetején a szürke területet, és húzza a helyére. A szövegdoboz átméretezéséhez jelölje ki és húzza a körvonalának valamelyik fogópontját. 
    
    ![Szövegdoboz elhelyezése](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
@@ -44,7 +44,7 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
 
 6. A szövegdoboz bezárásához jelöljön ki egy üres helyet a jelentés vásznán. 
 
-7. Válassza a gombostű ikont,  ![Gombostű ikon](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) a szövegdoboz irányítópultra rögzítéséhez. 
+7. Válassza a gombostű ikont,  ![gombostű ikonra](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) a szövegdoboz irányítópultra rögzítéséhez. 
 
 ## <a name="add-a-shape-to-a-report"></a>Alakzat hozzáadása a jelentéshez
 1. Vigye az egérkurzort a jelentés vásznán bárhová, és válassza a **Shapes** (Alakzatok) elemet.
@@ -62,11 +62,11 @@ Figyelje meg, hogyan használja Will a Power BI Desktopot, hogy [statikus képek
    > 
    > 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 
 * [Hivatkozás hozzáadása egy szövegdobozhoz](service-add-hyperlink-to-text-box.md)
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](service-basic-concepts.md)
 * [Tippek a Power BI-jelentésekben lévő alakzatokkal, képekkel és ikonokkal való elemzés javításához](guidance/report-tips-shapes-images-icons.md)
-* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

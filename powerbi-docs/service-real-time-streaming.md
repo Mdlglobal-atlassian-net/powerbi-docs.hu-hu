@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381077"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Valós idejű streamelés a Power BI-ban
@@ -43,7 +43,7 @@ Két szempontot érdemes figyelembe venni a leküldéses adatkészletek rögzít
 * Ha rögzített egy vizualizációt az irányítópulton, akkor a **Q&A** segítségével természetes nyelvezetet használva tehet fel kérdéseket a leküldéses adatkészlettel kapcsolatban. Ha feltett egy kérdést a **Q&A** területen, akkor rögzítheti az eredménye vizualizációját az irányítópulton, és ez az irányítópult *szintén* valós időben fog frissülni.
 
 ### <a name="streaming-dataset"></a>Streamelési adatkészlet
-A **streamelési adatkészletek** adatai szintén leküldéssel kerülnek az Power BI szolgáltatásba, van azonban egy fontos különbség: A Power BI csak egy átmeneti gyorsítótárban tárolja az adatokat, és az gyorsan kiürül. Az átmeneti gyorsítótár csak olyan vizualizációkhoz használható, amelyek rövid időre visszamenőleg jelenítik meg az előzményeket, mint amilyen például egy egyórás időtartományú vonaldiagram.
+A **streamelési adatkészletek** adatai szintén leküldéssel kerülnek az Power BI szolgáltatásba, van azonban egy fontos különbség: a Power BI csak egy átmeneti gyorsítótárban tárolja az adatokat, és az gyorsan kiürül. Az átmeneti gyorsítótár csak olyan vizualizációkhoz használható, amelyek rövid időre visszamenőleg jelenítik meg az előzményeket, mint amilyen például egy egyórás időtartományú vonaldiagram.
 
 A  **adatkészlet** esetében *nincs* a háttérben működő adatbázis, így *nem* készíthetők vizualizációk a jelentésekhez a streamből beérkező adatokból. Tehát nem lesznek használhatók egyebek között olyan jelentési funkciók sem, mint a szűrés vagy a Power BI-vizualizációk.
 
@@ -98,7 +98,7 @@ A Power BI szolgáltatásban létrehozhat adatkészleteket az **API** módszer k
 
 ![](media/service-real-time-streaming/real-time-streaming_0c.png)
 
-Ha az **Előzményadatok elemzése** le van tiltva (alapértelmezés szerint le van tiltva), akkor **streamelési adatkészlet** jön létre, ahogyan azt már korábban ismertettük ebben a cikkben. Ha *engedélyezve* van az **Előzményadatok elemzése**, akkor a létrehozott adatkészlet egyszerre lesz **streamelési** adatkészlet és **leküldéses** adatkészlet. Ez megegyezik azzal az esettel, amikor a Power BI REST API-k használatával hoz létre egy adatkészletet úgy, hogy a *defaultMode* jelző *pushStreaming* értékre van állítva, ahogyan azt már korábban ismertettük ebben a cikkben.
+Ha az **Előzményadatok elemzése** le van tiltva (alapértelmezés szerint le van tiltva), akkor **streamelési adatkészlet** jön létre, ahogyan azt már korábban ismertettük ebben a cikkben. Ha **engedélyezve** van az *Előzményadatok elemzése*, akkor a létrehozott adatkészlet egyszerre lesz **streamelési** adatkészlet és **leküldéses** adatkészlet. Ez megegyezik azzal az esettel, amikor a Power BI REST API-k használatával hoz létre egy adatkészletet úgy, hogy a *defaultMode* jelző *pushStreaming* értékre van állítva, ahogyan azt már korábban ismertettük ebben a cikkben.
 
 > [!NOTE]
 > A Power BI szolgáltatás felhasználói felületén létrehozott streamelési adatkészletek esetében, ahogyan korábban is jeleztük, nincs szükség Azure AD-hitelesítésre. Az ilyen adatkészletekben az adatkészlet tulajdonosa kap egy URL-t, amely tartalmazza a sorkulcsot, amely Azure AD OAuth tulajdonosi jogkivonat nélkül hitelesíti az adatkészletbe történő adatleküldés kérelmezőjét. Ugyanakkor az Azure AD-n (AAD-n) alapuló módszer továbbra is működik az adatoknak az adatkészletbe történő leküldésekor.
@@ -206,11 +206,11 @@ Itt elolvashatja a Power BI-ban történő valós idejű streameléssel kapcsola
 #### <a name="can-i-use-filters-on-push-dataset-how-about-streaming-dataset"></a>Lehet szűrni a leküldéses adatkészleteket? És a streamelési adatkészleteket?
 Sajnos a streamelési adatkészletek nem teszik lehetővé a szűrést. A leküldéses adatkészletekből létre tud hozni jelentéseket, szűrheti ezeket a jelentéseket, majd rögzítheti a szűrt vizualizációkat az irányítópulton. Ha viszont már rögzített egy vizualizációt az irányítópulton, akkor nem lehet módosítani a szűrőjét.
 
-Az élő jelentés külön rögzíthető az irányítópulton, ebben az esetben módosíthatók a szűrők is. Az élő jelentések csempéi azonban nem frissülnek valós időben az adatok leküldésekor. Ehhez manuálisan kell frissíteni a vizualizációt a **...** menü *Az irányítópult csempéinek frissítése* parancsával.
+Az élő jelentés külön rögzíthető az irányítópulton, ebben az esetben módosíthatók a szűrők is. Az élő jelentések csempéi azonban nem frissülnek valós időben az adatok leküldésekor. Ehhez manuálisan kell frissíteni a vizualizációt a *...* menü **Az irányítópult csempéinek frissítése** parancsával.
 
 Amikor olyan leküldéses adatkészleteken alkalmaz szűrőket, amelyekben ezredmásodperces pontosságú *DateTime* mezők találhatók, akkor az *egyezik* operátor nem használható. Ugyanakkor a nagyobb, mint (>) és a kisebb, mint (<) operátor megfelelően működik.
 
-#### <a name="how-do-i-see-the-latest-value-on-a-push-dataset-how-about-streaming-dataset"></a>Hogyan tudom megnézni a legutóbbi értékeket egy leküldéses adatkészletben? És a streamelési adatkészletekben?
+#### <a name="how-do-i-see-the-latest-value-on-a-push-dataset-how-about-streaming-dataset"></a>Hogyan tudom megnézni a legutóbbi értékeket egy leküldéses adatkészletben? És a streamelési adatkészleteket?
 A streamelési adatkészletek a legutóbbi értékek megjelenítésére lettek kialakítva. A **Kártya** típusú streamelési vizualizációval könnyen megnézheti a legutóbbi numerikus értékeket. A kártyákon azonban sajnos nem használhatók *DateTime* és *Text* típusú adatok.
 Leküldéses adatkészletekből létrehozhat vizualizációkat az elmúlt N idő szűrővel, feltéve, hogy a sémában egy időbélyeg is található.
 
@@ -220,7 +220,7 @@ Erre jelenleg sajnos nincs lehetőség.
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Hogyan lehet modellezést végezni a valós idejű adatkészleteken, tekintettel az előző kérdésre adott válaszra?
 Streamelési adatkészleteken nem lehetséges a modellezés, mert az adatok nincsenek maradandóan tárolva. A leküldéses adatkészletek esetében használhatja az adatkészletek/táblázatok frissítésére szolgáló REST API-kat mértékek és kapcsolatok hozzáadására. 
 
-#### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Hogyan tudom az összes értéket törölni egy leküldéses adatkészletből? És a streamelési adatkészletekből?
+#### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Hogyan tudom az összes értéket törölni egy leküldéses adatkészletből? És a streamelési adatkészleteket?
 A leküldéses adatkészletek esetében használhatja a sorok törlése REST API-hívást. Jelenleg nem lehet adatokat törölni a streamelési adatkészletekből, bár az adatok egy óra elteltével maguktól törlődnek.
 
 #### <a name="i-set-up-an-azure-stream-analytics-output-to-power-bi-but-i-dont-see-it-appearing-in-power-bi--whats-wrong"></a>Beállítottam egy Azure Stream Analytics-kimenetet a Power BI felé, de nem látom, hogy megjelent volna a Power BI-ban. Mi okozza a hibát?
@@ -240,7 +240,7 @@ Az automatikus oldalfrissítés a jelentésoldal szintjén működik, és lehet�
 Az automatikus oldalfrissítésről az [automatikus oldalfrissítés](desktop-automatic-page-refresh.md) című cikkben olvashat bővebben.
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A következő hivatkozások hasznos információkkal szolgálnak a Power BI-ban történő valós idejű streamelésről:
 
 * [A Power BI REST API áttekintése, a valós idejű adatokra is kitérve](https://docs.microsoft.com/rest/api/power-bi/)

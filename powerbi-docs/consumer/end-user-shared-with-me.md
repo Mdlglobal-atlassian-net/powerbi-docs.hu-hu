@@ -10,10 +10,10 @@ ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80302502"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>A velem megosztott irányítópultok és jelentések megjelenítése
@@ -24,9 +24,9 @@ ms.locfileid: "80302502"
 
 Ha egy munkatárs tartalmakat oszt meg Önnel a **Megosztás** gomb használatával, azok a **Velem megosztva** tárolóban jelennek meg. Az irányítópult vagy a jelentés csak a **Velem megosztva** tárolóból érhető el, az **Alkalmazások** tárolóból nem.
 
-![Megosztás ikon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
+![Megosztás ikonja](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Nézze meg, ahogy Amanda elmagyarázza a **Velem megosztva** tartalomlistát, és bemutatja, hogyan lehet a listában navigálni és szűrőket használni. Ezután kövesse a videó alatt található részletes útmutatást, hogy Ön is kipróbálja. Az Önnel megosztott irányítópultok megtekintéséhez Power BI Pro-licencre van szükség. Részletek: [Mi a Power BI Premium?](../service-premium-what-is.md).
+Nézze meg, ahogy Amanda elmagyarázza a **Velem megosztva** tartalomlistát, és bemutatja, hogyan lehet a listában navigálni és szűrőket használni. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is. Az Önnel megosztott irányítópultok megtekintéséhez Power BI Pro-licencre van szükség. További részletekért olvassa el [A Power BI Premium bemutatása](../service-premium-what-is.md) cikket.
     
 
 > [!NOTE]
@@ -47,7 +47,7 @@ Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállít�
 * Irányítópult vagy jelentés eltávolítása  ![kuka ikon](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Egyes irányítópultok és jelentések újból megoszthatók  ![megosztás ikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Jelentés megnyitása az Excelben](end-user-export.md) ![exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
-* Az ![elemzések ikonnal](./media/end-user-shared-with-me/power-bi-insights.png) megtekintheti a Power BI által az adatokon végzett [elemzéseket](end-user-insights.md).
+* Az [elemzések ikonnal](end-user-insights.md) megtekintheti a Power BI által az adatokon végzett ![elemzéseket](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
   > Az EGRC-besorolásokról további információért válassza a **Besorolás** gombot, majd [tekintse meg az Irányítópult adatainak besorolása cikket](../service-data-classification.md).

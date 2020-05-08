@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 96f1fd217a59ee95aed05b790800024dc9f72be9
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378143"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
@@ -126,7 +126,7 @@ Power BI-vizualizációkban a műveletek és a további frissítések az alábbi
 
     Az eseményszolgáltatással kapcsolatos további tudnivalókért lásd: [Renderelési események a Power BI-vizualizációkban](event-service.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Szeretne saját képi megjelenítéseket létrehozni, és hozzáadni azokat a Microsoft AppSource-hoz? Olvassa el a következő cikkeket:
 

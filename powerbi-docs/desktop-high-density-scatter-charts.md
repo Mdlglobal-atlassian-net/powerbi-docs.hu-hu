@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273363"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban
@@ -84,7 +84,7 @@ A nagy sűrűségű mintavételezési algoritmus a Power BI fontos fejlesztése,
 
 * A **nagy sűrűségű mintavételezési** algoritmus kizárólag élő kapcsolatokkal használható a Power BI szolgáltatásra épülő modellekhez, importált modellekhez, vagy a DirectQueryhez.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 A nagy sűrűségű mintavételről a következő cikkben talál további információt:
 

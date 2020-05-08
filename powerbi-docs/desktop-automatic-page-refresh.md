@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 95ccee8e2c711c272d6114339161cbf1d1c883a9
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488522"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841687"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatikus lapfrissítés Power BI Desktopban (előzetes verzió)
 
@@ -212,7 +212,7 @@ További információért tekintse át a következő cikkeket:
 
 * [DirectQuery használata a Power BI-ban](desktop-directquery-about.md)
 * [A Teljesítményelemző használata a jelentéselem teljesítményének vizsgálatához](desktop-performance-analyzer.md)
-* [Power BI Premium-kapacitások üzembe helyezése és kezelése](whitepaper-powerbi-premium-deployment.md)
+* [Power BI Premium-kapacitások üzembe helyezése és kezelése](guidance/whitepaper-powerbi-premium-deployment.md)
 * [Adatforrások a Power BI Desktopban](desktop-data-sources.md)
 * [Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
 * [Kapcsolódás az Excelhez a Power BI Desktopban](desktop-connect-excel.md)   

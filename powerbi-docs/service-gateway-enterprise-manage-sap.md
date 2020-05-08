@@ -10,10 +10,10 @@ ms.date: 07/16/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c944b52deb72e556506d88f4358af2c816b46fc
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698164"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Az adatforrás kezelése – SAP HANA
@@ -22,7 +22,7 @@ ms.locfileid: "74698164"
 
 Miután [telepítette a helyszíni adatátjárót](/data-integration/gateway/service-gateway-install), [fel kell vennie az átjáróval használható adatforrásokat](service-gateway-data-sources.md#add-a-data-source). Ez a cikk bemutatja, hogyan lehet használni az átjárókat és az SAP HANA-adatforrásokat akár ütemezett frissítéshez, akár a DirectQueryhez.
 
-## <a name="add-a-data-source"></a>Adatforrások felvétele
+## <a name="add-a-data-source"></a>Adatforrás hozzáadása
 
 Az [Adatforrás hozzáadása](service-gateway-data-sources.md#add-a-data-source) című témakörben további információt talál adatforrások hozzáadásáról. Az **Adatforrás típusa** területen válassza az **SAP HANA** lehetőséget.
 
@@ -68,10 +68,10 @@ Ha szerepel az átjárón belül konfigurált adatforrás **Felhasználók** lap
 
 ![A felhasználók megjelenítése](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [A helyszíni adatátjáró hibaelhárítása](/data-integration/gateway/service-gateway-tshoot)
 * [Átjárók hibaelhárítása – Power BI](service-gateway-onprem-tshoot.md) 
 
-További kérdései vannak? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
+Több kérdése van? Forduljon a [Power BI közösségéhez](https://community.powerbi.com/).
 

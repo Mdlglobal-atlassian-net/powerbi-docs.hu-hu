@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80113692"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vizualizációk interaktívvá tétele Power BI-vizualizációkban végzett kijelölésekkel
@@ -81,7 +81,7 @@ Ez az objektum a megfelelő metódusokkal hoz létre a különböző típusú ad
 
 Vizsgáljuk meg, hogyan jelennek meg a kijelölések a mintaadathalmaz kategorikus adatnézet-leképezésén:
 
-| Gyártó | Típus | Érték |
+| Manufacturer | Típus | Value |
 | - | - | - |
 | Chrysler | Családi autó | 28883 |
 | Chrysler | Furgon | 117131 |
@@ -161,7 +161,7 @@ A vizualizációnak alkalmasnak kell lennie az adatok `Manufacturer` és `Type` 
 
 Ha a felhasználó például a `Chrysler`-t jelöli ki a `Manufacturer` értékeként, a többi vizualizációban az alábbi adatoknak kell megjelenniük:
 
-| Gyártó | Típus | Érték |
+| Manufacturer | Típus | Value |
 | - | - | - |
 | **Chrysler** | Családi autó | 28883 |
 | **Chrysler** | Furgon | 117131 |
@@ -170,7 +170,7 @@ Ha a felhasználó például a `Chrysler`-t jelöli ki a `Manufacturer` értéke
 
 Ha a felhasználó az `Import Car`-t választja a `Type` értékeként (adatsorozatok szerint jelöl ki adatokat), a többi vizualizáción az alábbi adatoknak kell megjelenniük:
 
-| Gyártó | Típus | Érték |
+| Manufacturer | Típus | Value |
 | - | - | - |
 | Chrysler | **Importált autó** | 0 |
 | Ford | **Importált autó** | 0 |
@@ -372,7 +372,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Tudnivalók kijelölések használatáról vizualizáció tulajdonságainak adatpontokhoz kötésére](objects-properties.md#objects-selector)
 
