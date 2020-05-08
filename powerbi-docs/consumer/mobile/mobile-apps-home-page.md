@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
 ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205665"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>A mobilalkalmazás kezdőlapjának rövid bemutatása
 A bemutató során megismerkedhet a Power BI mobilalkalmazás kezdőlapjával és azokkal a navigációs segédeszközökkel, amelyekkel gyorsan elérheti, amire szüksége van.
 
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) |
 |:--- |:--- |:--- |
@@ -84,7 +84,7 @@ A fejlécen a következő navigációs elemek találhatók:
 
     ![keresési oldal](./media/mobile-apps-home-page/powerbi-mobile-app-search-page.png)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Ebben a bemutatóban a Power BI mobilalkalmazás kezdőlapját ismerhette meg. A Power BI mobilalkalmazás használatáról további információk állnak rendelkezésére. 
 * [Irányítópultok és jelentések felfedezése](../../mobile-apps-quickstart-view-dashboard-report.md)
 * [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](../../mobile-reports-in-the-mobile-apps.md)

@@ -10,17 +10,17 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 82a03731ffea49f7e41fc8582155fe09734d475b
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760842"
 ---
 # <a name="use-python-in-query-editor"></a>A Python használata a Lekérdezésszerkesztőben
 A Power BI Desktop **Lekérdezésszerkesztőjében** használhatja a statisztikusok, adatszakértők és adatelemzők által széles körben használt **Python** programozási nyelvet. A Python integrációja a **Lekérdezésszerkesztőbe** lehetővé teszi adattisztítás elvégzését a Python használatával, és összetett adatátalakítási és elemzési műveletek adatkészleteken történő elvégzését, beleértve többek között a hiányos adatok kiegészítését, az előrejelzéseket és a fürtözést. A **Python** egy sokoldalú nyelv, amely a **Lekérdezésszerkesztőben** is használható adatmodellek előkészítéséhez és jelentések létrehozásához.
 
 ## <a name="installing-python"></a>A Python telepítése
-Ahhoz, hogy a **Pythont** a Power BI Desktop **Lekérdezésszerkesztőjében** használhassa, telepítenie kell a **Python** nyelvet a helyi számítógépre. A **Pythont** számos helyről ingyenesen letöltheti és telepítheti, például a [Python hivatalos letöltőoldaláról](https://www.python.org/) vagy az [Anaconda](https://anaconda.org/anaconda/python/) oldaláról.
+Ahhoz, hogy a **Pythont** a Power BI Desktop **Lekérdezésszerkesztőjében** használhassa, telepítenie kell a **Python** nyelvet a helyi számítógépre. A **Pythont** számos helyről ingyen letöltheti és telepítheti, például a [Python hivatalos letöltési oldaláról](https://www.python.org/) vagy az [Anacondáról](https://anaconda.org/anaconda/python/).
 
 ## <a name="using-python-in-query-editor"></a>A Python használata a Lekérdezésszerkesztőben
 A **Python** **Lekérdezésszerkesztőben** való használatának bemutatásához a tőzsdei adatkészletből használunk egy példát, amely egy .CSV-fájlon alapul. Ezt [innen töltheti le](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). A példa lépései a következők:
@@ -63,7 +63,7 @@ A **Python** **Lekérdezésszerkesztőben** való használatának bemutatásáho
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
-   Ekkor egy új, *completedValues* nevű oszlop jelenik meg a **Mezők** panelen. Figyelje meg, hogy van néhány hiányzó adatelem, például a 15. és 18. sorban. A következő szakaszban megtekintheti, hogyan kezeli ezt a Python.
+   Ekkor egy új, **completedValues** nevű oszlop jelenik meg a *Mezők* panelen. Figyelje meg, hogy van néhány hiányzó adatelem, például a 15. és 18. sorban. A következő szakaszban megtekintheti, hogyan kezeli ezt a Python.
    
 
 Mindössze öt sornyi Python-szkript használatát követően a **Lekérdezésszerkesztő** egy prediktív modellel kitöltötte a hiányzó értékeket.
@@ -76,7 +76,7 @@ Most létrehozhatunk egy vizualizációt, amelyből látható, hogy a Python-szk
 Miután a vizualizáció elkészült, bármely egyéb vizualizációval együtt amelyet a **Power BI Desktop** használatával szeretne létrehozni, mentheti a **Power BI Desktop-fájlt** (.pbix-fájlként), és utána a Power BI szolgáltatásban használhatja az adatmodellt, beleértve a részét képező Python-szkripteket.
 
 > [!NOTE]
-> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – [innen](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix) letöltheti az ebben a példában használt, teljes **Power BI Desktop-fájlt**.
+> Szeretne egy teljes .pbix-fájlt látni úgy, hogy ezek a lépések már be vannak fejezve? Szerencséje van – **innen** letöltheti az ebben a példában használt, teljes [Power BI Desktop-fájlt](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
 
 Miután feltöltötte a .pbix-fájlt a Power BI szolgáltatásba, néhány további lépés szükséges az adatfrissítés engedélyezéséhez (a szolgáltatásban) és annak engedélyezéséhez, hogy a vizualizációk frissíthetők legyenek a szolgáltatásban (az adatoknak hozzáféréssel kell rendelkezniük a Pythonhoz, hogy a vizualizációk frissülhessenek). A további lépések a következők:
 
@@ -90,7 +90,7 @@ A **Lekérdezésszerkesztőben** létrehozott Python-szkripteket tartalmazó lek
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
-  Az **Adatforrás-beállítások** párbeszédpanelen válassza ki az adatforrásokat, majd kattintson az **Engedélyek szerkesztése** elemre, és győződjön meg arról, hogy az **Adatvédelem szintje** *Nyilvános* beállítású.
+  Az **Adatforrás-beállítások** párbeszédpanelen válassza ki az adatforrásokat, majd kattintson az **Engedélyek szerkesztése** elemre, és győződjön meg arról, hogy az **Adatvédelem szintje***Nyilvános* beállítású.
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * A Python-vizualizációk vagy adatkészletek ütemezett frissítésének engedélyezéséhez engedélyeznie kell az **Ütemezett frissítést**, és rendelkeznie kell a munkafüzetet és a Python-környezetet tároló számítógépre telepített **Privát átjáróval**. Az ezekről szóló információkért tekintse meg a cikk korábbi szakaszait. A vonatkozó részekben található hivatkozásokkal további információhoz juthat.

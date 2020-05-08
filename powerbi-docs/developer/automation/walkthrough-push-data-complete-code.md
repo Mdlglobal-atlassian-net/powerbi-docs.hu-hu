@@ -9,15 +9,15 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488292"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Adatok leküldése egy adatkészletbe – Teljes kódlista
 
-Ez a cikk az [adatok az adatkészletekbe való küldését](walkthrough-push-data.md) ismertető részletes útmutató része.
+Ez a cikk az [adatok adatkészletbe történő leküldését](walkthrough-push-data.md) ismertető részletes útmutató része.
 
 Az **Adatok leküldése adatkészletekbe** bemutató 2–5. lépésének végrehajtását követően a teljes forráskódnak a következőképp kell kinéznie.
 
@@ -222,15 +222,15 @@ Az **Adatok leküldése adatkészletekbe** bemutató 2–5. lépésének végreh
       }
 ```
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md)
 * [Alkalmazás regisztrálása az Azure AD-ben](../embedded/register-app.md)  
 * [Hitelesítési hozzáférési token beszerzése](walkthrough-push-data-get-token.md)  
 * [Adatkészlet létrehozása a Power BI-ban](walkthrough-push-data-create-dataset.md)  
-* [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblázathoz](walkthrough-push-data-get-datasets.md)  
+* [Adatkészlet lekérése, és sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-get-datasets.md)  
 * [Sorok hozzáadása egy Power BI-táblához](walkthrough-push-data-add-rows.md)  
 * [A Power BI REST API-jainak leírása](https://docs.microsoft.com/rest/api/power-bi/)  
 * [A Power BI REST API áttekintése](overview-of-power-bi-rest-api.md)  
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

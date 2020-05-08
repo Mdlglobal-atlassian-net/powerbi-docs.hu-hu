@@ -10,10 +10,10 @@ ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 5e415fb46f845312253f37d8549a4eecb5b10ae7
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439779"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Részletezés beállítása Power BI-jelentésekben
@@ -83,7 +83,7 @@ Mérték (vagy összegzett numerikus oszlop) hozzáadása esetén a mezőt a viz
 
 Ezek a tudnivalók vonatkoztak a részletezés jelentésekben való használatára. Ezzel a módszerrel hatékonyan jelenítheti meg a részletezési szűrőhöz kiválasztott entitásinformációk kibővített nézetét.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 

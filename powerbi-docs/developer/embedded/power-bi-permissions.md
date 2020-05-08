@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
 ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79491364"
 ---
 # <a name="power-bi-permissions"></a>Power BI-engedélyek
@@ -21,7 +21,7 @@ ms.locfileid: "79491364"
 
 A Power BI-engedélyek lehetővé teszik az alkalmazások számára, hogy bizonyos műveleteket végezzenek a felhasználók nevében. Minden engedélyt jóvá kell hagynia egy felhasználónak, hogy érvényesek legyenek.
 
-| Megjelenítendő név | Leírás | Hatókör értéke |
+| Megjelenített név | Description (Leírás) | Hatókör értéke |
 | --- | --- | --- |
 | Az összes adatkészlet megtekintése |Az alkalmazás megtekintheti a bejelentkezett felhasználó összes adatkészletét, illetve azokat az adatkészleteket, amelyekhez a felhasználónak hozzáférése van. |Dataset.Read.All |
 | Az összes adatkészlet olvasása és írása |Az alkalmazás megtekintheti a bejelentkezett felhasználó összes adatkészletét, illetve azokat az adatkészleteket, amelyekhez a felhasználónak hozzáférése van, továbbá írhat ezekbe az adatkészletekbe. |Dataset.ReadWrite.All |
@@ -53,4 +53,4 @@ Bár behívhatja az API-t felhasználónévvel és jelszóval való hitelesíté
 * **Engedélyezési token** – Az API-hívások másik felhasználó nevében való hitelesítésére szolgál. Adott alkalmazásra lesz érvényes. A tokenek adott élettartammal rendelkeznek, és amikor lejárnak, frissítést igényelnek.
 * **Token frissítése** – Amikor a jogkivonatok lejárnak, frissítési folyamat használható hozzájuk.
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

@@ -9,10 +9,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 7d1e355f2c28679f5c2101d250a9fc2d5c99a2bd
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205642"
 ---
 # <a name="what-are-bookmarks"></a>Mik azok a könyvjelzők?
@@ -154,7 +154,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 
 
 
-## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 A **könyvjelzők** aktuális kiadásának használatára vonatkozik néhány korlátozás és egyéb szempont.
 
 * A legtöbb Power BI-vizualizáció zökkenőmentesen működik a könyvjelzőkkel. Ha hibát tapasztal egy könyvjelző és egy Power BI-vizualizáció használatakor, lépjen kapcsolatba a Power BI-vizualizáció létrehozójával, és kérje meg, hogy szolgáltasson támogatást a könyvjelzőkhöz.

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205527"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Irányítópultok és jelentések megtekintése a Power BI-mobilalkalmazásokban
-A következőkre vonatkozik:
+Hatóköre:
 
 | ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android rendszerű telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android rendszerű táblagép](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
@@ -152,9 +152,9 @@ Ha Ön az irányítópult tulajdonosa, *a Power BI szolgáltatásban* létrehozh
 
 További információkat is olvashat [az irányítópultok telefonos nézetének létrehozásáról](../../service-create-dashboard-mobile-phone-view.md).
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) a Google Play áruházból  
 * [Első lépések a Power BI-hoz készült Android-alkalmazásban](mobile-android-app-get-started.md)  
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 

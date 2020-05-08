@@ -11,10 +11,10 @@ ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637881"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
@@ -41,7 +41,7 @@ Az irányítópultokra többféleképpen lehet felvenni (kitűzni) csempét. Cse
 * [Jelentésből](service-dashboard-pin-tile-from-report.md)
 * [Másik irányítópultról](service-pin-tile-to-another-dashboard.md)
 * [OneDrive vállalati verzión található Excel-munkafüzetből](service-dashboard-pin-tile-from-excel.md)
-* [Quick Insights (Gyors elemzések)](service-insights.md)
+* [gyors elemzésekből](service-insights.md)
 * [Helyszíni többoldalas jelentés a Power BI jelentéskészítő kiszolgálóban vagy az SQL Server Reporting Servicesben](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 A képek, szövegdobozok, videók, streamelési adatok és webtartalmak különálló csempéit közvetlenül az irányítópulton hozhatja létre a [Csempe hozzáadása](service-dashboard-add-widget.md) vezérlő használatával.
@@ -83,7 +83,7 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 > 
 > 
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 
 * Ha a vizualizáció létrehozásához használt jelentés nem lett mentve, akkor a csempe kiválasztásakor nem történik semmi.
 * Ha a csempe Excel Online-munkafüzetből lett létrehozva, a munkafüzethez legalább olvasási engedélyre lesz szüksége. Ellenkező esetben a csempe kiválasztásakor nem nyílik meg a munkafüzet az Excel Online-ban.
@@ -92,7 +92,7 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 * Tegyük fel, hogy helyszíni többoldalas jelentésből a Power BI jelentéskészítő kiszolgálóban vagy az SQL Server Reporting Servicesben létrehozott csempét választ ki. Ha nincs hozzáférése ahhoz a hálózathoz, ahol a jelentéskészítő kiszolgáló található, akkor a többoldalas jelentésből létrehozott csempe kiválasztásakor a rendszer megjelenít egy oldalt, amely azt jelzi, hogy a kiszolgáló nem található (HTTP 404). Ahhoz, hogy meg tudja tekinteni a jelentést, az Ön eszközének hálózati hozzáféréssel kell rendelkeznie a jelentéskészítő kiszolgálóhoz.
 * A csempe létrehozásához használt vizualizáció változásakor a csempe nem változik. Például ha kitűz egy sávdiagramot egy jelentésből, majd a sávdiagramot oszlopdiagramra cseréli, az irányítópulton megjelenő csempén továbbra is sávdiagram lesz látható. Az adatok frissülnek, de a vizualizáció típusa nem.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 - [Kártyák (nagy méretű numerikus csempék) létrehozása az irányítópulthoz](power-bi-visualization-card.md)
 - [Irányítópultok bemutatása Power BI-tervezők számára](service-dashboards.md)  
 - [Adatfrissítés a Power BI-ban](refresh-data.md)
@@ -100,5 +100,5 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 - [Power BI-csempe Office-dokumentumba integrálása](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Reporting Services-elem rögzítése Power BI-irányítópulton](https://msdn.microsoft.com/library/mt604784.aspx)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).
 

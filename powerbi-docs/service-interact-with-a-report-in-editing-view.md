@@ -10,10 +10,10 @@ ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 791df63db1ef87bd5d61d80f97e225ae63feae2c
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79201513"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-the-power-bi-service"></a>Jelentés használata Szerkesztő nézetben a Power BI szolgáltatásban
@@ -37,12 +37,12 @@ Tekintse meg a témakörök listáját a Tartalomjegyzék **Jelentések** főcí
 * A részletezés beállítása.
 * Jelentésoldal duplikálása.
 
-## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
 A mások által létrehozott jelentések szerkesztéséhez, illetve a saját jelentések másokkal való megosztásához Power BI Pro licencre van szükség.  Ha nem rendelkezik Pro-licenccel, továbbra is létrehozhat jelentéseket, azonban nem [oszthatja meg őket](service-share-reports.md).
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 Vissza a [Power BI szolgáltatás Olvasó és Szerkesztési nézetéhez](consumer/end-user-reading-view.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/23/2020
 ms.openlocfilehash: bd7758be32d18fd3be06a7847edc7795c2b5f9e1
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114773"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Hitelesítő adatok programozott konfigurálása a Power BI-hoz
@@ -135,7 +135,7 @@ Az alábbi lépések végrehajtásával programozott módon konfigurálhat hitel
 
 ## <a name="credential-types"></a>Hitelesítő adatok típusai
 
-Ha egy **vállalati helyszíni átjárón[ a [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/) használatával az ](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource)Adatforrás létrehozása[ vagy az ](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource)Adatforrás frissítése** utasítást hívja, a hitelesítő adatokat az átjáró nyilvános kulcsával kell titkosítani.
+Ha egy [vállalati helyszíni átjárón](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) a [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) használatával az **Adatforrás létrehozása** vagy az [Adatforrás frissítése](https://docs.microsoft.com/rest/api/power-bi/) utasítást hívja, a hitelesítő adatokat az átjáró nyilvános kulcsával kell titkosítani.
 
 >[!NOTE]
 >A .NET SDK v3 az alább felsorolt .NET SDK v2-példákat is futtathatja.

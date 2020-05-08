@@ -62,7 +62,7 @@
             - name: Természetes nyelv és Q&A
               items:
                 - name: Q&A – bevezetés
-                  href: ../natural-language/q-and-a-intro.md
+                  href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Q&A-eszközhasználat – bevezetés
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Speciális Q&A-eszközhasználat

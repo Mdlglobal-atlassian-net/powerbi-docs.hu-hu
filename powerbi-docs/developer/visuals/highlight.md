@@ -9,19 +9,19 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114152"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Adatpontok kiemelése Power BI-vizualizációkban
 
-Egy elem kijelölésekor a `dataView` objektum `values` tömbje alapértelmezés szerint csak a kijelölt értékekre lesz szűrve. Emiatt az oldal többi vizualizációja csak a kijelölt adatokat jeleníti meg.
+Egy elem kijelölésekor a `values` objektum `dataView` tömbje alapértelmezés szerint csak a kijelölt értékekre lesz szűrve. Emiatt az oldal többi vizualizációja csak a kijelölt adatokat jeleníti meg.
 
 ![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
 
-Ha `capabilities.json` fájl `supportsHighlight` tulajdonságát `true` értékre állítja, a teljes szűretlen `values` tömböt kapja eredményül egy `highlights` tömbbel együtt. A `highlights` tömb az értékek tömbjével megegyező hosszúságú lesz, a nem kijelölt értékek pedig `null` lesznek beállítva. A tulajdonság engedélyezésével a vizualizáció felelősségévé válik a megfelelő adatok kiemelése – `values` a tömb `highlights` a tömbbel való összehasonlításával.
+Ha `supportsHighlight` fájl `capabilities.json` tulajdonságát `true` értékre állítja, a teljes szűretlen `values` tömböt kapja eredményül egy `highlights` tömbbel együtt. A `highlights` tömb az értékek tömbjével megegyező hosszúságú lesz, a nem kijelölt értékek pedig `null` lesznek beállítva. A tulajdonság engedélyezésével a vizualizáció felelősségévé válik a megfelelő adatok kiemelése – `values` a tömb `highlights` a tömbbel való összehasonlításával.
 
 ![A `dataview` támogatja a kiemelést](media/highlight/highlight-dataview-supports.png)
 
@@ -32,7 +32,7 @@ A példában megfigyelheti, hogy 1 sáv ki van jelölve. Ez az egyetlen érték 
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Az adatpontok kiemelése kategorikus adatnézet-leképezéssel
 
-A kategorikus adatnézet-leképezést tartalmazó vizualizációk `capabilities.json` fájljában szerepel a `"supportsHighlight": true` paraméter. Például:
+A kategorikus adatnézet-leképezést tartalmazó vizualizációk `capabilities.json` fájljában szerepel a `"supportsHighlight": true` paraméter. Példa:
 
 ```json
 {
@@ -275,7 +275,7 @@ Az eredményben elvileg a vizualizáció következő nézetének kell szerepelni
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Az adatpontok kiemelése mátrix adatnézet-leképezéssel
 
-A mátrix adatnézet-leképezést tartalmazó vizualizációk `capabilities.json` fájljában szerepel a `"supportsHighlight": true` paraméter. Például:
+A mátrix adatnézet-leképezést tartalmazó vizualizációk `capabilities.json` fájljában szerepel a `"supportsHighlight": true` paraméter. Példa:
 
 ```json
 {
@@ -323,7 +323,7 @@ A mátrix adatnézet-leképezést tartalmazó vizualizációk `capabilities.json
 
 A mátrix adatnézet-leképezés hierarchiájának létrehozására szolgáló mintaadatok:
 
-|   1\. sor   |   2\. sor   |   3\. sor   |   1\. oszlop   |   2\. oszlop   |   3\. oszlop   |   Értékek   |
+|   1\. sor   |   2\. sor   |   3\. sor   |   1\. oszlop   |   2\. oszlop   |   3\. oszlop   |   Értékek   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
@@ -645,7 +645,7 @@ A visszaadott eredmény a vizualizáció, gombokkal és a `highlighted value/def
 
 ![Vizualizáció mátrix adatnézet-leképezéssel és kiemeléssel](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [További információ a mátrix adatnézet-leképezésről](dataview-mappings.md#matrix-data-mapping)
 

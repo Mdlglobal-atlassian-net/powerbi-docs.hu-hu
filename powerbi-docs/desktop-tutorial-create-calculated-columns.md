@@ -10,10 +10,10 @@ ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: cdd4f4f5058b57cbf59a3a0b35286243bd8c8f37
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75731719"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban
@@ -129,7 +129,7 @@ Szerencsére a **Stores** (Üzletek) táblának van egy **Status** (Állapot) ne
 
 A számított oszlopok tovább gazdagíthatják az adatokat, és megkönnyíthetik azok elemzését. Bemutattuk, hogyan történik a számított oszlopok létrehozása a **Mezők** panelen és a szerkesztőlécen, hogyan használhatók a javaslati listák és az eszköztippek a képletek összeállításához, hogyan kell megfelelő argumentumokkal meghívni például a RELATED és az IF DAX-függvényeket, és hogyan lehet felhasználni a számított oszlopokat a jelentésvizualizációkban.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ha szeretné a DAX-képleteket részletesebben megismerni, és összetettebb képletekkel szeretne létrehozni számított oszlopokat, olvassa el a cikket, amely [a DAX alapszintű használatát ismerteti a Power BI Desktopban](desktop-quickstart-learn-dax-basics.md). Ez a cikk a DAX alapvető fogalmaira, a szintaxisra, a függvényekre és a környezet alaposabb megértésére összpontosít.
 

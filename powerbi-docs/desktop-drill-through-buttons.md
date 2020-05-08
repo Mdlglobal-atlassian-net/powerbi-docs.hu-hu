@@ -10,10 +10,10 @@ ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: d3cb3c8093446d4417a59c5f64ab6b85a765e3c8
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79206447"
 ---
 # <a name="create-a-drill-through-button-in-power-bi-preview"></a>Részletezési gomb létrehozása a Power BI-ban (előzetes verzió)
@@ -90,7 +90,7 @@ A gomb ugyanúgy működik, mint a normál részletezés, így Ön további mez�
 
 A részletezési gomb kiválasztásakor a Store és a Termék szűrői is a céloldalhoz kerülnek:
 
-![Szűrők ezen az oldalon](media/desktop-drill-through-buttons/power-bi-button-filters-passed-through.png)
+![Az ezen az oldalon megtalálható szűrők](media/desktop-drill-through-buttons/power-bi-button-filters-passed-through.png)
 
 ### <a name="ambiguous-filter-context"></a>Kétértelmű szűrőkörnyezet
 
@@ -107,7 +107,7 @@ Ebben a példában a gomb le van tiltva, mert két vizualizáció egyaránt tart
 - A gomb letiltott állapotának formázása a jelentés témájának színosztályaihoz van kötve. További információ a [színosztályokról](desktop-report-themes.md#setting-structural-colors).
 - A részletezési művelet az összes beépített vizualizációval használható, és *néhány*, az AppSource-ból importált vizualizációval is működik. Azonban nem biztos, hogy az AppSource-ból importált *összes* vizualizációval használható.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A gombokhoz hasonló vagy azokkal együtt használható funkciókkal kapcsolatos részletesebb információkat az alábbi cikkekben talál:
 
 * [Gombok létrehozása](desktop-buttons.md)
