@@ -10,10 +10,10 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 516d3a682b669400a015aaec101c7e79c14dbb44
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76889351"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
@@ -109,7 +109,7 @@ Az alábbiakban felsorolt szempontokat is érdemes figyelembe venni:
     ![Hiba adatfolyam használatára tett kísérlet esetén](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 Ez a cikk munkaterület-tárolók adatfolyamokhoz való konfigurálásához nyújtott útmutatást. További információt a következő cikkekben találhat:
 
@@ -131,7 +131,7 @@ Az Azure Storage szolgáltatással kapcsolatban az alábbi cikkeket érdemes elo
 * [Azure Storage – biztonsági útmutató](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Első lépések az Azure Data Servicesből származó github-mintákkal](https://aka.ms/cdmadstutorial)
 
-A Common Data Modellel kapcsolatos további információt a témát áttekintő cikkben talál:
+A Common Data Modellel kapcsolatos további információkért olvassa el a áttekintését tartalmazó cikket:
 
 * [Common Data Model – áttekintés](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mappák](https://go.microsoft.com/fwlink/?linkid=2045304)

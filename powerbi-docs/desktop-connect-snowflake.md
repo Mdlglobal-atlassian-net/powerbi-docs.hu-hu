@@ -10,17 +10,17 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: e7534fd0da2039a2dafaf3ca80ee6957fa8d8754
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464301"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Kapcsolódás Snowflake Computing-adattárházhoz a Power BI Desktopban
 A Power BI Desktopban csatlakozhat egy **Snowflake** Computing-adattárházhoz, és úgy használhatja az alapul szolgáló adatokat, mint a Power BI Desktop bármely más adatforrását. 
 
 > [!NOTE]
-> Ezenkívül a **Snowflake ODBC-illesztőt** is telepítenie *kell* a **Snowflake**-összekötőt használó gépekre a **Power BI Desktop**-telepítésnek megfelelő architektúrával (32 vagy 64 bites). Kövesse az alábbi hivatkozást, és [töltse le a megfelelő Snowflake ODBC-illesztőt](https://go.microsoft.com/fwlink/?LinkID=823762).
+> Ezenkívül a *Snowflake ODBC-illesztőt* is telepítenie **kell** a **Snowflake**-összekötőt használó gépekre a **Power BI Desktop**-telepítésnek megfelelő architektúrával (32 vagy 64 bites). Kövesse az alábbi hivatkozást, és [töltse le a megfelelő Snowflake ODBC-illesztőt](https://go.microsoft.com/fwlink/?LinkID=823762).
 > 
 > 
 
@@ -53,7 +53,7 @@ Ha sikeresen csatlakozott, megjelenik a **Kezelő** ablaka, és megjeleníti a k
 
 A kiválasztott táblát **betöltheti**, amellyel az egész tábla bekerül a **Power BI Desktopba**, vagy **szerkesztheti** is a lekérdezést. Ekkor megnyílik a **Lekérdezésszerkesztő**, amellyel szűrheti vagy finomíthatja a használni kívánt adatokat, majd a finomított adatkészletet betöltheti a **Power BI Desktopba**.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 A Power BI Desktop használatával számos adatforráshoz csatlakozhat. Az adatforrásokkal kapcsolatos információkért lásd az alábbi forrásanyagokat:
 
 * [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
