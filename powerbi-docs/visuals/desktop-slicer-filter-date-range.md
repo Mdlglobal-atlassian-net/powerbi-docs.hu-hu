@@ -1,30 +1,32 @@
 ---
 title: Relatívdátum-szeletelő vagy -szűrő használata a Power BI-ban
 description: Útmutató a relatív dátumtartományok szeletelővel vagy szűrővel végzett korlátozásához a Power BI-ban.
-author: mihart
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/06/2020
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f63a56ea350d089b82eb7a18470e1bcc439d1151
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006787"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866518"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Relatívdátum-szeletelő és -szűrő használata a Power BI-ban
+# <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Relatívdátum-szeletelő és -szűrő létrehozása a Power BI-ban
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 A **relatív dátumszeletelővel** vagy **relatív dátumszűrővel** időalapú szűrőket alkalmazhat az adatmodellek bármely dátumoszlopára. A **relatív dátumszeletelővel** például a megjelenítést az utóbbi 30 napban (vagy hónapban, naptári hónapban stb.) történt értékesítési eseményekre korlátozhatja. Az adatok frissítésekor a relatív időszak automatikusan alkalmazza a vonatkozó relatív dátumkorlátokat.
 
 ![Képernyőkép egy jelentésről, ahol a nyíl a relatív dátumszeletelőre mutat.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## <a name="use-the-relative-date-range-slicer"></a>A relatív dátumtartomány-szeletelő használata
+A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.
+
+## <a name="create-the-relative-date-range-slicer"></a>A relatív dátumtartomány-szeletelő létrehozása
 
 A relatív dátumszeletelőt bármely más szeletelőhöz hasonlóan használhatja. Hozzon létre egy **szeletelő** vizualizációt a jelentéshez, majd válasszon ki egy dátumértéket a **Mező** értékeként. A következő képen az *OrderDate* mező van kiválasztva.
 
@@ -42,9 +44,9 @@ A *relatív dátumszeletelő* első beállításainál a következő lehetőség
 
 ![Képernyőkép a Relatív konfigurálási beállításokról, amelyen az első beállítás van kiemelve.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
-* Last
+* Utolsó
 
-* Következő
+* Tovább
 
 * Ez a
 
@@ -80,7 +82,7 @@ Ha kiválasztja a **Hónapok** lehetőséget a listából, és megadja a *2* ér
 
 Összehasonlításképp, ha a *Hónapok (naptár)* elemet választotta volna, a vizualizációk a május 1-től június 30-ig tartó időszakra (az utolsó két teljes naptári hónapra) lennének korlátozva.
 
-## <a name="using-the-relative-date-range-filter"></a>A relatív dátumtartomány-szűrő használata
+## <a name="create-the-relative-date-range-filter"></a>A relatív dátumtartomány-szűrő létrehozása
 
 Relatív dátumtartomány-szűrőt is létrehozhat az egyes jelentésoldalakhoz vagy a teljes jelentéshez. Ehhez húzzon egy dátummezőt a **Lapszintű szűrők** vagy a **Jelentési szint szűrői** területre a **Mező** panelen:
 
@@ -94,7 +96,7 @@ A **Relatív dátum szerinti szűrés** kiválasztása után itt is három beál
 
 ![Képernyőkép a Jelentési szint szűrőiről, amelyen a nyilak az „Elemek megjelenítése, amikor az érték:” beállításra mutatnak.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
-## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
 A **relatív dátumtartomány-szeletelők** és -szűrők használatára jelenleg a következő korlátozások és szempontok vonatkoznak.
 
@@ -104,6 +106,7 @@ A **relatív dátumtartomány-szeletelők** és -szűrők használatára jelenle
 
 * A helyi időzónában rögzített adatok a **Lekérdezésszerkesztővel** alakíthatók át UTC-idővé.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
-A következőkben megismerheti [a csoportosítás és dobozolás használatát a Power BI Desktopban](../desktop-grouping-and-binning.md).
+- [Relatívdátum-szeletelő és -szűrő használata a Power BI-ban](desktop-slicer-filter-date-range.md)
+- [Szeletelők a Power BI-ban](power-bi-visualization-slicers.md)

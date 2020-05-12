@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 04/16/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5247b2c990c8c0cfd29da0e8a30cdc8691000106
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79207252"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866817"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -139,7 +139,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * HDInsight interaktív lekérdezés
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
-* Azure Time Series Insights (bétaverzió)
+
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
 
@@ -191,6 +191,9 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Quick Base
 * TeamDesk (bétaverzió)
 * Munkahelyi elemzés (bétaverzió)
+* Projectplace a Power BI-hoz (bétaverzió)
+* WebTrends Analytics (bétaverzió)
+* Zoho Creator (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
 
@@ -213,6 +216,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (bétaverzió)
+* Cognite Data Fusion (bétaverzió)
 * FHIR
 * Information Grid (bétaverzió)
 * Jamf Pro (bétaverzió)
@@ -220,13 +224,15 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Paxata
 * QubolePresto (bétaverzió)
 * Roamler (bétaverzió)
-* Siteimprove (bétaverzió)
+* Siteimprove
 * SurveyMonkey (bétaverzió)
-* Tenforce (Smart)List (bétaverzió)
 * TIBCO (R) adatvirtualizálás (bétaverzió)
 * Vena (bétaverzió)
 * Workforce Dimensions (bétaverzió)
 * Zucchetti HR Infinity (bétaverzió)
+* Tenforce (Smart)List
+* Shortcuts Business Insights (bétaverzió)
+* Vessel Insight (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.

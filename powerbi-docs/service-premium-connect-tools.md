@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fe349e9eb29f85315e568d5851ce8206186cb61b
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 776ef09de58c2bb3b47a6d55ae5e8cf2be0cf228
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302602"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613670"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Adatkészlet-kapcsolat az XMLA-végponttal (előzetes verzió)
 
@@ -229,9 +229,22 @@ A Power BI Desktopban készült és Premium-munkaterületen közzétett adathalm
 
 Az adatforrásokhoz való csatlakozás és az adatlekérdezés során a Power BI Desktop Power Query M-kifejezéseket használ beágyazott adatforrás-deklarációkként. Bár a Power BI Premium-munkaterületeken ez támogatott, a Power Query M beágyazott adatforrás-deklarációját az Azure Analysis Services és az SQL Server Analysis Services nem támogatja. Az olyan Analysis Services adatmodellezési eszközök, mint a Visual Studio ehelyett *strukturált* és/vagy *szolgáltatói* adatforrás-deklarációkat használnak. Az XMLA-végponttal a Power BI Premium a strukturált és szolgáltatói adatforrásokat is támogatja, de nem Power BI Desktop-modellekben beágyazott Power Query M adatforrás-deklarációk részeként. További tudnivalók: [Szolgáltatók ismertetése](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
-### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop Élő kapcsolati módban
+### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop élő kapcsolati módban
 
-A Power BI Desktop képes úgy csatlakozni Power BI Premium-adathalmazhoz, mintha az az Azure Analysis Servicesben vagy az SQL Server Analysis Servicesben üzembe helyezett modelladatbázis volna. Ebben az esetben a Power BI Desktop az XMLA-végpontot használja. A Power BI Desktop-felhasználók számára mégis inkább a kimondottan Power BI-adathalmazokhoz létrehozott Élő kapcsolat funkció használata ajánlott. Az Élő kapcsolat használata jobb felderítési felületet biztosít, amely megjeleníti az adathalmazok ellenőrzési szintjét, és a felhasználóknak nem kell nyilvántartaniuk a munkaterületi URL-címeket, elég ha beírhatják az adathalmaz nevét. További tudnivalók: [Kapcsolódás a Power BI szolgáltatásban lévő adathalmazokhoz a Power BI Desktopból](desktop-report-lifecycle-datasets.md).
+A Power BI Desktop csatlakozhat egy Power BI Premium-adatkészlethez élő kapcsolattal. Élő kapcsolat használata esetén nem kell helyileg replikálni az adatokat, így a felhasználók könnyebben használhatják a szemantikai modelleket. A felhasználók kétféleképpen csatlakozhatnak:
+
+**Power BI-adatkészletek** kiválasztásával, majd egy jelentést létrehozó adatkészlet kiválasztásával. Ez az adatkészletekhez való élő kapcsolódás **ajánlott** módja. Ez a módszer hatékonyabb feltárási élményt nyújt, és megjeleníti az adatkészletek ajánlási szintjét. A felhasználóknak nem kell megkeresniük és nyomon követniük a munkaterületi URL-címeket. Egy adatkészlet megkereséséhez egyszerűen beírhatják az adatkészlet nevét, vagy görgetéssel megkereshetik.
+
+![Élő kapcsolat az adatkészlethez](media/service-premium-connect-tools/dataset-live-connect.png)
+
+A másik lehetőség a csatlakozásra az **Adatok lekérése** > **Analysis Services** használata, egy Power BI Premium-munkaterület megadása URL-ként, a **Élő csatlakozás** lehetőség kiválasztása, majd egy adatkészlet kijelölése a Navigátorban. Ebben az esetben a Power BI Desktop az XMLA-végponttal hoz létre élő kapcsolatot az adatkészlethez, mintha az egy Analysis Services-adatmodell lenne. 
+
+![Élő kapcsolat egy Analysis Services-adatkészlethez](media/service-premium-connect-tools/as-live-connect.png)
+
+Az Analysis Services-adatmodellekhez élő kapcsolattal rendelkező jelentésekkel bíró szervezeteknek csak a kiszolgálónév URL-címét kell módosítaniuk az **Adatátalakítás** > **Adatforrás-beállítások** területen a Power BI Premium-adatkészletekbe való migráláshoz.
+
+> [!NOTE]
+> Az XMLA olvasási-írási nyilvános előzetes verziójában, ha a Power BI Desktoppal csatlakozik egy Power BI Premium-adatkészlethez az **Adatok lekérése** > **Analysis Services** használatával, majd az **Élő csatlakozás** opcióval, nem tehet közzé jelentést a Power BI szolgáltatásban.
 
 ## <a name="audit-logs"></a>Auditnaplók
 

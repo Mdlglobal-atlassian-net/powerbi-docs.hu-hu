@@ -7,17 +7,19 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 356d738795f8bf99ba1e2f8dfc705b23f52a6d5e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762439"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865253"
 ---
 # <a name="create-and-use-funnel-charts"></a>Tölcsérdiagramok létrehozása és használata
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -26,6 +28,9 @@ A tölcsérdiagramok segítségével vizualizálhatja az egymást követő össz
 A tölcsér minden egyes szakasza a teljes mennyiséghez viszonyított százalékos arányt mutatja. Így az esetek többségében a tölcsérdiagram alakja valóban egy tölcsérhez hasonlít – az első szakasz a legszélesebb, majd a rákövetkező szakaszok egyre szűkülnek.  Persze a körte alakú tölcsérek is hasznosak – segítenek azonosítani a problémákat.  Általában véve azonban az első, a „bemeneti” szakasz a legszélesebb.
 
 ![minta kék tölcsér](media/power-bi-visualization-funnel-charts/funnelplain.png)
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.    
 
 ## <a name="when-to-use-a-funnel-chart"></a>Mikor érdemes tölcsérdiagramokat használni?
 A tölcsérdiagram remek választás a következő esetekben:
@@ -49,7 +54,7 @@ A tölcsérdiagramok:
    > A videóban Will egy tölcsérdiagramot hoz létre az Értékesítési és marketing minta használatával. Ezután a videó alatt látható lépeseket követve próbálkozzon meg a feladattal saját maga is a Lehetőségelemzési minta PBIX-fájl használatával
    > 
    > 
-## <a name="prerequisite"></a>Előfeltételek
+## <a name="prerequisite"></a>Előfeltétel
 
 Ez az oktatóanyag a [Lehetőségelemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
 ) használja.
@@ -60,7 +65,7 @@ Ez az oktatóanyag a [Lehetőségelemzési minta PBIX-fájlt](https://download.m
 
 1. Nyissa meg a **Lehetőségelemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 
 ## <a name="create-a-basic-funnel-chart"></a>Alapszintű tölcsérdiagram létrehozása
@@ -92,7 +97,7 @@ Most hozzon létre egy saját tölcsérdiagramot az egyes értékesítési fázi
 6. [Mentse a jelentést](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-A Szűrők panel használatáról a [Szűrő hozzáadása jelentéshez](../power-bi-report-add-filter.md) című cikk nyújt tájékoztatást.
+A Szűrök ablaktábla használatával kapcsolatos információkért lásd: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
 
 A tölcsér egyes sávjainak kiemelésével a rendszer keresztszűri a jelentésoldalon lévő többi vizualizációt... és viszont. A feladat következő lépéseként adjon hozzá néhány vizualizációt a tölcsérdiagramot tartalmazó jelentésoldalhoz.
 
@@ -101,8 +106,8 @@ A tölcsér egyes sávjainak kiemelésével a rendszer keresztszűri a jelentés
    ![a vizualizáció-interakciókat bemutató rövid videó](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. A vizualizációk keresztkiemelési és keresztszűrési beállításaival kapcsolatban lásd: [A Power BI vizualizációk interakciója](../service-reports-visual-interactions.md)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 [Mérőműszerek a Power BI-ban](power-bi-visualization-radial-gauge-charts.md)
 
-[Vizualizációk típusai a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: b5865219d84c8fa388f297824550fd715f0c2923
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841917"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866850"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Ajánlott eljárások a Q&A optimalizálásához a Power BI-ban
 Hatékony eszköz a munkához, ha gyakori kifejezéseken és természetes nyelven alapuló kérdéseket tud feltenni az adataival kapcsolatban. És még hatékonyabb, ha a maguk az adatok válaszolnak, ahogy azt a Power BI Q&A szolgáltatásában teszik.
@@ -195,8 +195,10 @@ Ez a lépés kifejezetten a Q&A szolgáltatásra vonatkozik (és általánosság
 
 Ez a lépés lényeges lehet. Még ha egyszerű táblaneveket és oszlopneveket is használ, a Q&A szolgáltatásban kérdéseket feltevő felhasználók a számukra logikus szavakat fogják használni. Nem az oszlopok előre megadott listájából választanak. Minél több hasznos szinonimát ad hozzá, annál jobb a felhasználók élménye a jelentés használatakor. Szinonimák hozzáadásához a Power BI Desktopban nyissa meg a Modell nézetet, válassza a Modellezés fület, majd válasszon ki egy mezőt vagy egy táblát. A Tulajdonságok panelen megjelenik a **Szinonimák** mező, amelyben szinonimákat adhat hozzá.
 
-
-
-![Szinonimák a Q&A Tulajdonságok paneljén](media/qna-modelling-pane-synonyms.png)
+![Szinonimák a Q&A Tulajdonságok paneljén](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Legyen körültekintő, amikor szinonimákat ad hozzá. Ha több oszlophoz vagy táblához is hozzáadja ugyanazt a szinonimát, az kétértelműséghez vezet. A Q&A a környezeti adatok felhasználásával megpróbálja a helyes szinonimát választani kétértelműség esetén, de nem mindig áll rendelkezésre elegendő környezeti adat. Ha például egy felhasználó az ügyfelek számáról érdeklődik, és a modelljében három dologhoz is hozzáadta az „ügyfél” szinonimát, akkor elképzelhető, hogy a felhasználó nem a keresett választ fogja kapni. Ilyen esetben mindenképp ügyeljen arra, hogy egyedi elsődleges szinonimát adjon meg, mivel ez a szinonima jelenik meg, amikor a rendszer megjeleníti a kérdést átfogalmazva. Ez segíthet a felhasználóknak észrevenni a kétértelműséget (például ha az átfogalmazás az „archivált ügyfélrekordokat” említi), mely jelezheti számukra, hogy érdemes lehet másként feltenni a kérdést.
+
+## <a name="next-steps"></a>Következő lépések
+
+[Bevezetés a Power BI Q&A használatába](q-and-a-intro.md)

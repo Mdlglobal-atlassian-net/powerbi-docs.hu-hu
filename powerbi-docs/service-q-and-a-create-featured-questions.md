@@ -10,10 +10,10 @@ ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 1571589844abb8e9acf0bbb78eccf5664db9bf52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881103"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Kiemelt kérdések létrehozása a Power BI Q&A-hez
@@ -31,7 +31,7 @@ Ebben a cikkben a [Kiskereskedelmi értékesítési elemzési mintát](sample-da
 1. Az irányítópulton válassza a Q&A kérdésmezőjét.   Figyelje meg, hogy a Q&A már most is segítséget nyújt az adatkészletben előforduló kifejezések listájának megjelenítésével.
 2. A lista bővítéséhez kattintson a fogaskerék ikonra a Power BI jobb felső sarkában.  
    ![fogaskerék ikon](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
-3. Válassza a **Beállítások** &gt; **Adatkészletek** &gt; **Kiskereskedelmi elemzési minta** &gt; **Kiemelt Q&A-kérdések lehetőséget**.  
+3. Válassza a **Beállítások** &gt; **Adatkészletek** &gt; **Kiskereskedelmi elemzési minta** &gt; **Kiemelt Q&A-kérdések** lehetőséget.  
 4. Kattintson a **Kérdés hozzáadása** hivatkozásra.
    
    ![Beállítások menü](media/service-q-and-a-create-featured-questions/power-bi-settings.png)

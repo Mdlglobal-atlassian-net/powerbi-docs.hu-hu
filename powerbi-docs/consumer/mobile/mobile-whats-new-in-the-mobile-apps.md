@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802095"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841710"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -24,6 +24,14 @@ Az újdonságokra vonatkozó kapcsolódó információk:
 
 >[!NOTE]
 >A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="april-2020"></a>2020. április
+
+### <a name="sharing-from-workspaces-is-now-available"></a>Mostantól elérhető a munkaterületekről való megosztás
+Mostantól a munkaterületekről is megoszthatók jelentések és irányítópultok. A Power BI szolgáltatáshoz hasonlóan megoszthatja a tartalmakat a Saját munkaterületről és az egyéb munkaterületekről, ha a tulajdonos engedélyezi. 
+
+### <a name="dashboards-now-support-full-screen-mode-ios-and-android"></a>Az irányítópultok most már támogatják a teljes képernyős módot (iOS és Android rendszeren)
+Most már megtekintheti az irányítópultokat teljes képernyős módban, így könnyebben áttekintheti a tartalmukat. 
 
 ## <a name="march-2020"></a>2020. március
 
@@ -871,4 +879,4 @@ A Power BI-mobilalkalmazások fejlesztései – Android, iOS (iPhone és iPad) �
 * A térképcsempék fejlettebb megjelenítése fókusz módban a képernyő jobb kihasználásához.
 * Jobb felhasználói élmény az irányítópultok elérésekor szerepköralapú biztonság esetén. 
 * Egy új képességnek köszönhetően fókusz módban is közvetlenül lehet böngészni az irányítópultok csempéi között anélkül, hogy vissza kéne térni az irányítópultra, vagy ki kellene választani a következő csempét.
-* Stabilitással és teljesítménnyel kapcsolatos további fejlesztések. 
+* Stabilitással és teljesítménnyel kapcsolatos további fejlesztések.

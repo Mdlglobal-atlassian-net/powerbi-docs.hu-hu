@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 04/30/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
-ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
+ms.openlocfilehash: 386fefeb18e3b365c95819de1956f6739b547137
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80361791"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613626"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Növekményes frissítés a Power BI-ban
 
@@ -70,7 +70,7 @@ A dátum oszlop szűrőjének használatával dinamikusan tartományokra bontja 
 
 #### <a name="query-folding"></a>Lekérdezésdelegálás
 
-Fontos elküldeni a partíciószűrőket a forrásrendszernek, amikor elküldi a lekérdezéseket a frissítési műveletekhez. A szűrés elküldéséhez az adatforrásnak támogatnia kell a lekérdezésdelegálás használatát. A legtöbb SQL-lekérdezéseket támogató adatforrás támogatja a lekérdezésdelegálást. Azonban bizonyos adatforrások, például az egybesimított fájlok, a blobok, a webes és az OData-csatornák alapvetően nem támogatják a használatát. Ha az adatforrás háttérfolyamata nem támogatja a szűrőt, akkor az nem küldhető tovább. Ilyen esetben az adategyesítési motor a szűrő helyi alkalmazásával kompenzál, amelyhez valószínűleg a teljes adatkészletet le kell kérni az adatforrásból. Ez jelentősen lelassíthatja a növekményes frissítést, és a folyamat kifogyhat az erőforrásokból a Power BI szolgáltatásban vagy a helyszíni adatátjárón (ha azt használja).
+Fontos elküldeni a partíciószűrőket a forrásrendszernek, amikor elküldi a lekérdezéseket a frissítési műveletekhez. A szűrés elküldéséhez az adatforrásnak támogatnia kell a lekérdezésdelegálás használatát. A legtöbb SQL-lekérdezéseket támogató adatforrás támogatja a lekérdezésdelegálást. Bizonyos adatforrások, például az egybesimított fájlok, a blobok és a webes hírfolyamok viszont általában nem támogatják a használatát. Ha az adatforrás háttérfolyamata nem támogatja a szűrőt, akkor az nem küldhető tovább. Ilyen esetben az adategyesítési motor a szűrő helyi alkalmazásával kompenzál, amelyhez valószínűleg a teljes adatkészletet le kell kérni az adatforrásból. Ez jelentősen lelassíthatja a növekményes frissítést, és a folyamat kifogyhat az erőforrásokból a Power BI szolgáltatásban vagy a helyszíni adatátjárón (ha azt használja).
 
 Mivel az egyes adatforrások különböző szinten támogatják a lekérdezésdelegálást, ajánlott ellenőrizni azt, hogy a szűrési logika szerepel-e a forráslekérdezésekben. Az egyszerűbb folyamat érdekében a Power BI Desktop ezt elvégezheti Ön helyett. Ha ez nem sikerül, egy figyelmeztetés jelenik meg a növekményes frissítés párbeszédpanelén a növekményes frissítés szabályzatának definiálásakor. Ez a figyelmeztetés SQL-alapú adatforrások számára lehet hasznos, például az SQL, az Oracle és a Teradata számára. Előfordulhat, hogy más adatforrások nem tudják elvégezni az ellenőrzést a lekérdezések követése nélkül. Ha a Power BI Desktop nem tudja megerősíteni a műveletet, a következő figyelmeztetés jelenik meg. Ha ezt a figyelmeztetést látja és ellenőrizni szeretné, hogy megtörténik a szükséges lekérdezésdelegálás, használhatja a Lekérdezési diagnosztika funkciót, vagy nyomon követheti a forrás-adatbázis által kapott lekérdezéseket.
 

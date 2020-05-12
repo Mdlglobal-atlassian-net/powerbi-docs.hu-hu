@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82585382"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781731"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>A vizualizáció létrehozásához használt adatok exportálása
 
@@ -265,6 +265,8 @@ Ezek a korlátozások és szempontok a Power BI Desktopra és a Power BI szolgá
   1. Válassza a **Külső adatok beolvasása** > **Szövegből** lehetőséget.
   
   1. Nyissa meg a helyi mappát, ahol a fájlt tárolja, és jelölje ki a *.csv*-fájlt.
+
+- *.csv-* fájlba való exportáláskor bizonyos karaktereket egy **'** karakter old fel.
 
 - A Power BI-rendszergazdák letilthatják az adatok exportálását.
 

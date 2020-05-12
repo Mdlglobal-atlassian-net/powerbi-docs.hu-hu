@@ -4,16 +4,16 @@ description: Elsajátíthatja, hogyan telepíthet, szabhat testre és terjeszthe
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/15/2020
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 86fe618508504faebc920c77a1f9605da59040d9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436111"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781682"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Sablonalkalmazások telepítése és terjesztése a vállalatnál
 
@@ -65,7 +65,7 @@ Sablonalkalmazás telepítéséhez, testreszabásához és terjesztéséhez a k�
 
 1. Kattintson a **Csatlakozás** lehetőségre.
     
-    Ekkor egy vagy több egymást követő párbeszédpanel nyílik meg, amelyeken a mintaadatokról a saját adatforrására módosítja az adatforrást. Ehhez általában az adathalmaz paramétereit és az adatforrásbeli hitelesítő adatokat kell újra megadni. Lásd: [Ismert korlátozások](service-template-apps-tips.md#known-limitations).
+    Ekkor egy vagy több egymást követő párbeszédpanel nyílik meg, amelyeken a mintaadatokról a saját adatforrására módosítja az adatforrást. Ehhez általában az adathalmaz paramétereit és az adatforrásbeli hitelesítő adatokat kell újra megadni. Lásd: [Ismert korlátozások](service-template-apps-overview.md#known-limitations).
     
     Az alábbi példában az adatokhoz való kapcsolódás két párbeszédpanelen történik.
 
@@ -95,14 +95,18 @@ Ha végzett a munkaterületi elemeken végrehajtani kívánt módosításokkal, 
 
 A sablonalkalmazások készítői időnként új, fejlettebb verziókat bocsátanak ki az AppSource-on, közvetlen hivatkozáson vagy mindkettőn keresztül.
 
-Ha az alkalmazást eredetileg az AppSource-ról töltötte le, a sablonalkalmazás új verziójának elérhetővé válásakor értesítőszalag jelenik meg a Power BI szolgáltatásban, amely tájékoztatja az új alkalmazásverzió elérhetőségéről.
+Ha eredetileg az AppSource-ról töltötte le az alkalmazást, amikor új verzió válik elérhetővé a sablonalkalmazáshoz, kétféleképpen kap értesítést:
+* Egy frissítési szalag jelenik meg a Power BI szolgáltatásban, amely értesíti Önt az új alkalmazásverzióról.
+  ![Értesítés sablonalkalmazás frissítéséről](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+* Értesítés jelenik meg a Power BI értesítési paneljén.
 
-  ![Értesítés sablonalkalmazás frissítéséről](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+  ![Értesítés sablonalkalmazás frissítéséről](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Ha az alkalmazást eredetileg nem az AppSource-on, hanem közvetlen hivatkozás útján szerezte be, az új verziók megjelenéséről csak úgy értesülhet, ha kapcsolatba lép az alkalmazás készítőjével.
 
-  A frissítés telepítéséhez kattintson az értesítősáv **Beszerzés** elemére, vagy keresse meg ismét az alkalmazást az AppSource-on és válassza a **Letöltés most** lehetőséget. Ha a frissítéshez közvetlen hivatkozást kapott a sablonalkalmazás készítőjétől, egyszerűen kattintson a hivatkozásra.
+  A frissítés telepítéséhez kattintson az értesítősáv vagy az értesítési központ **Beszerzés** elemére, vagy keresse meg ismét az alkalmazást az AppSource-on és válassza a **Letöltés most** lehetőséget. Ha a frissítéshez közvetlen hivatkozást kapott a sablonalkalmazás készítőjétől, egyszerűen kattintson a hivatkozásra.
   
   A rendszer rákérdez, hogy az aktuális verziót kívánja felülírni, vagy új munkaterületre szeretné telepíteni az új verziót. Alapértelmezés szerint a „felülírás” vagy kijelölve.
 

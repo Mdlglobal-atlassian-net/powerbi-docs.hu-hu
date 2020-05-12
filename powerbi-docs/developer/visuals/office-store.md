@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621460"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613557"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
 
@@ -101,9 +101,11 @@ Kövesse az alábbi lépéseket a Power BI-vizualizáció Partnerközpontba val�
 
 ## <a name="tracking-submission-status-and-usage"></a>A beküldési állapot és a használat nyomon követése
 
-Áttekintheti az [érvényesítési szabályzatokat](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Áttekintheti az [érvényesítési szabályzatokat](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.microsoft.com/Application/Summary/) tekintheti meg a beküldés állapotát.
+* A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.microsoft.com/Application/Summary/) tekintheti meg a beküldés állapotát.
+
+* Ha meg szeretné tudni, hogy a Power BI-vizualizáció mikor tud letöltéseket indítani az AppSource-ból, tekintse át a Power BI-vizualizációk [közzétételi idővonalát](power-bi-custom-visuals-certified.md#publication-timeline).
 
 ## <a name="certify-your-visual"></a>A vizualizáció tanúsítása
 

@@ -2,27 +2,35 @@
 title: Vonaldiagramok a Power BI-ban
 description: Vonaldiagramok a Power BI-ban
 author: mihart
-ms.reviewer: amac
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871085"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867024"
 ---
 # <a name="line-charts-in-power-bi"></a>Vonaldiagramok a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 Egy vonaldiagram adatpontok sorozata, amelyet egyenes szakaszokkal összekötött pontok ábrázolnak. Egy vonaldiagram egy vagy több vonalat is tartalmazhat. A vonaldiagramoknak X és Y tengelye van. 
 
 ![egyszerű vonaldiagram](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## <a name="create-a-line-chart"></a>Vonaldiagram létrehozása
 Ezen útmutatás a Értékesítési és marketing mintaalkalmazást használja egy olyan vonaldiagram létrehozásához, mely az ez évi értékesítést jeleníti meg kategória szerint. A lépések követéséhez töltse le a mintaalkalmazást az appsource.com webhelyről.
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.
 
 1. Kezdje a műveletet egy üres jelentésoldalon. Ha a Power BI szolgáltatást használja, mindenképpen a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) nyissa meg a jelentést.
 

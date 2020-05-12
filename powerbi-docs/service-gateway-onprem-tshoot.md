@@ -10,10 +10,10 @@ ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 73e2c923500a2d78072a711bc7662a5923811bba
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699337"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Átjárók hibaelhárítása – Power BI
@@ -240,7 +240,7 @@ Az egyes frissítési hibák elhárításáról a [Frissítési forgatókönyvek
 
 ## <a name="fiddler-trace"></a>Nyomon követés a Fiddlerrel
 
-A [Fiddler](https://www.telerik.com/fiddler) a Telerik által kifejlesztett, HTTP-forgalmat figyelő ingyenes eszköz. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti adatforgalmat. A forgalomlista hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
+A [Fiddler](https://www.telerik.com/fiddler) a Telerik ingyenes eszköze, amely a HTTP-adatforgalom figyelésére használható. Nyomon követheti a Power BI szolgáltatás és az ügyfélszámítógép közötti adatforgalmat. A forgalomlista hibaüzenetek és egyéb, kapcsolódó információk megjelenítésére is képes.
 
 ![A Fiddler-nyomkövetés használata](media/service-gateway-onprem-tshoot/fiddler.png)
 

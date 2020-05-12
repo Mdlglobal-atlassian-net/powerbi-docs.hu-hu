@@ -4,16 +4,16 @@ description: Ez a cikk a Power BI sablonalkalmazási programjáról nyújt átte
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 42fa16228deea88f606e348d1a87f9d465c8c2ea
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.openlocfilehash: 466e7cb842244104b004c4f65f82dafe13dc9725
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066325"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781317"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mik azok a Power BI-sablonalkalmazások?
 
@@ -103,6 +103,7 @@ További javaslatokért lásd: [Tippek sablonalkalmazások készítéséhez a Po
 | Adatkészlet: munkaterületeken átnyúló | Munkaterületeken átnyúló adatkészletek használata nem engedélyezett  |
 | Lekérdezési paraméterek | Nem támogatott: „Any” típusú paraméterek vagy „Binary” típusú blokkfrissítési művelet az adatkészlethez |
 | Power BI-vizualizációk | Csak a nyilvánosan elérhető Power BI-vizualizációk támogatottak. A [céges Power BI-vizualizációk](developer/visuals/power-bi-custom-visuals-organization.md) nem támogatottak |
+| Független felhők | A sablonalkalmazások nem elérhetők független felhőkben |
 
 ## <a name="support"></a>Támogatás
 Ha a fejlesztési fázisban van szüksége támogatásra, használja a következő webhelyet: [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Ezt a webhelyet a Microsoft aktívan figyeli és felügyeli. Az ügyfélincidensek gyorsan eljutnak a megfelelő csapathoz.

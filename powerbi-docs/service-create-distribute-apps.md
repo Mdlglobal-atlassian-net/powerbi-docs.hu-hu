@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2e68b894c7f3e259fd2236d655d562257383433
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006337"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866564"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -63,8 +63,8 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
 
 5. A **Jogosultságok** panelen adhatja meg, hogy ki férhet hozzá az alkalmazáshoz, és mit tehet vele. 
 
-    - [Klasszikus munkaterületeken](service-create-workspaces.md): a vállalatnál mindenki, megadott személyek vagy Azure Active Directory (AAD) biztonsági csoportok.
-    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, AAD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
+    - [Klasszikus munkaterületeken](service-create-workspaces.md): a vállalatnál mindenki, megadott személyek vagy Azure Active Directory (Azure AD) biztonsági csoportok.
+    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, Azure AD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
     - Az Összeállítási engedély megadásával engedélyezheti az alkalmazás felhasználóinak, hogy az alkalmazás mögöttes adathalmazaihoz csatlakozzanak. Így ők látni fogják ezeket az adathalmazokat, amikor megosztott adathalmazokat keresnek. Ebben a cikkben több információt is talál [az alkalmazás adathalmazaihoz való kapcsolódás engedélyezéséről felhasználók számára](#allow-users-to-connect-to-datasets).
     - Az összeállítási engedéllyel rendelkező felhasználóknak arra is lehet engedélye, hogy a jelentéseket az alkalmazásból egy másik munkaterületre másolják. Ebben a cikkben több információt is talál [az alkalmazásbeli jelentések másolásának engedélyezéséről felhasználók számára](#allow-users-to-copy-reports).
     

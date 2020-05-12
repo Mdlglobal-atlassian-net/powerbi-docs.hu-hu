@@ -1,19 +1,19 @@
 ---
 title: A Q&A megtanítása arra, hogy megértse a Power BI Q&A-ben használt kérdéseket és kifejezéseket
 description: Az adatok vizsgálata a Power BI Q&A-vel
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/21/2020
+ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 695ad9143aa7074e079ae8606a9ad0eb6f6c964f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e5b870201943b93bfdaec2881005785c2f3c470b
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874921"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865796"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>A Q&A megtanítása arra, hogy megértse a Power BI Q&A-ben használt kérdéseket és kifejezéseket
 
@@ -26,7 +26,7 @@ A Q&A beállításának **A Q&A tanítása** szakaszában megtaníthatja a Q&A-t
 
 1. A Power BI Desktopban, a **Modellezés** menüszalagon válassza **A Q&A beállítása** > **A Q&A tanítása** lehetőséget.
 
-    ![Pirossal jelölt szinonima tanítása a Q&A-ben](media/qna-tooling-teach-synonym-red.png)
+    ![Pirossal jelölt szinonima tanítása a Q&A-ben](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
 
 2. Írjon be egy olyan mondatot, amelyben szerepel egy kifejezés, amelyet a Q&A nem ismer fel, majd válassza a **Küldés** lehetőséget.
 
@@ -36,7 +36,7 @@ A Q&A beállításának **A Q&A tanítása** szakaszában megtaníthatja a Q&A-t
     
 3. **A Q&A számára nem értelmezhető kifejezések definiálása** szakaszban adjon meg egy definíciót.
 
-    ![Szinonima tanításának előnézete a Q&A-ben](media/qna-tooling-teach-fixpreview.png)
+    ![Szinonima tanításának előnézete a Q&A-ben](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
 
 4. A frissített vizualizáció előnézetének megtekintéséhez válassza a **Mentés** lehetőséget.
 
@@ -61,7 +61,7 @@ A Q&A a Microsoft Office ismeretei alapján automatikusan észleli, ha egy ismer
 
 Az adatokból származó kifejezéssel kell kitöltenie a mezőt.
 
-![Adatkérés szinonima tanításához a Q&A-ben](media/qna-tooling-synonym-prompt.png)
+![Adatkérés szinonima tanításához a Q&A-ben](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Ha nem az adatmodellből származó mezőt, hanem valami mást ad meg, előfordulhat, hogy nemkívánatos eredményt kap.
 
@@ -73,17 +73,26 @@ Néha előfordulhat, hogy olyan kifejezéseket szeretne meghatározni, amelyek a
 
 A mezőben kell megadnia a feltételt.
 
-![Adatkérés szinonima tanításához a Q&A-ben](media/qna-tooling-adjectives.png)
+![Adatkérés szinonima tanításához a Q&A-ben](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Néhány példa a megadható feltételekre:
 
-- Country (Ország), amely a(z) USA
-- Country (Ország), amely nem a(z) USA
-- Weight (Súly) > 2000
-- Weight (Súly) = 2000
-- Weight (Súly) < 2000
+- Country (Ország), amely az USA
+- Country (Ország), amely nem az USA
+- Termékek > 100
+- 100-nál nagyobb termékek
+- Termékek = 100
+- Termékek 100
+- Termékek < 100
+- 100-nál kisebb termékek
 
-Az eszközökben csak egyetlen feltételt adhat meg. Összetettebb feltételek megadásához a DAX-szal hozzon létre egy számított oszlopot, majd az eszközök szakaszában hozzon létre egyetlen feltételt erre a számított oszlopra vonatkozóan. A mértékek használata nem támogatott. Ezek helyett használjon számított oszlopokat.
+Ezekben a példákban a „Termékek” egy oszlopnév vagy egy mérték lehet. 
+
+Egy összesítést is megadhat a Q&A-kifejezésben. Ha a „népszerű termékek” például olyan termékek, amelyekből legalább 100 egység elkelt, népszerűként az „összes eladott egység > 100” kifejezéssel definiálhat termékeket.  
+
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="A „népszerű termékek” meghatározása":::
+
+Az eszközökben csak egyetlen feltételt adhat meg. Összetettebb feltételek megadásához a DAX-szal hozzon létre egy számított oszlopot vagy mértéket, majd az eszközök szakaszában hozzon létre egyetlen feltételt erre az oszlopra vagy mértékre vonatkozóan.
 
 ## <a name="manage-terms"></a>Kifejezések kezelése
 
@@ -93,10 +102,8 @@ A definíciók megadása után visszaléphet az összes elvégzett javítás meg
 
 2. Törölje azokat a kifejezéseket, melyekre már nincs szüksége. A kifejezéseket jelenleg nem lehet szerkeszteni. Egy kifejezés újradefiniálásához törölje a kifejezést, majd definiálja azt.
 
-    ![Kifejezések kezelése a Q&A-ben](media/qna-manage-terms.png)
+    ![Kifejezések kezelése a Q&A-ben](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
 
 ## <a name="next-steps"></a>Következő lépések
 
-A természetes nyelvi motor fejlesztéséhez számos ajánlott eljárás áll rendelkezésre. További információkat a következő cikkekben talál:
-
-* [Q&A – ajánlott eljárások](q-and-a-best-practices.md)
+A természetes nyelvi motor fejlesztéséhez számos ajánlott eljárás áll rendelkezésre. További információ: [Q&A – Ajánlott eljárások](q-and-a-best-practices.md).

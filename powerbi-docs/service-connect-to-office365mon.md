@@ -10,10 +10,10 @@ ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74548598"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Kapcsolódás az Office365Mon tartalomcsomaghoz a Power BI-jal
@@ -31,10 +31,10 @@ Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https:
 2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
    ![](media/service-connect-to-office365mon/pbi_getservices.png) 
-3. Kattintson az **Office365Mon** \> **Get** (Beolvasás) gombra.
+3. Válassza az **Office365Mon** \> **Lekérés** lehetőséget.
    
    ![](media/service-connect-to-office365mon/o365mon.png)
-4. Az Authentication Method (Hitelesítési módszer) beállításnál válassza az **oAuth2** \> beállítást, majd a **Sign In** (Bejelentkezés) elemet.
+4. A Hitelesítési módszernél válassza az **oAuth2** \> **Bejelentkezés** lehetőséget.
    
    Amikor a rendszer kéri, adja meg az Office365Mon rendszergazdai hitelesítő adatait, majd haladjon végig a hitelesítési folyamaton.
    
@@ -45,7 +45,7 @@ Csatlakozzon a Power BI-hoz készült [Office365Mon sablonalkalmazáshoz](https:
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 
-**Hogyan tovább?**
+**Mi a következő lépés?**
 
 * [Kérdéseket tehet fel a Q&A mezőben](consumer/end-user-q-and-a.md) az irányítópult tetején.
 * [Módosíthatja az irányítópult csempéit](service-dashboard-edit-tile.md).

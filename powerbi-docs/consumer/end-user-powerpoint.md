@@ -3,18 +3,19 @@ title: Jelentések exportálása Power BI-ból PowerPointba
 description: Ismerje meg, hogyan exportálhat jelentést a Power BI-ból a PowerPointba.
 author: mihart
 ms.reviewer: ''
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 4a93bbc0d5d8014e11fb59129b22b5493def0ac2
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377165"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841110"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Jelentések exportálása Power BI-ból PowerPointba
 
@@ -22,7 +23,9 @@ ms.locfileid: "79377165"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-A Power BI segítségével közzéteheti jelentését a Microsoft PowerPointban, és könnyedén létrehozhat bemutatót a Power BI-jelentés alapján. A PowerPointba történő exportáláskor a következő történik:
+![ábra a Power BI és a PowerPoint emblémájáról](media/end-user-powerpoint/logos.png)
+
+A Power BI szolgáltatás (app.powerbi.com) segítségével közzéteheti jelentését a Microsoft PowerPointban, és könnyedén létrehozhat bemutatót a Power BI-jelentés alapján. A PowerPointba történő exportáláskor a következő történik:
 
 * A PowerPointban a Power BI-jelentés minden lapjából külön dia lesz.
 * A rendszer a Power BI-jelentés minden oldalát egyetlen nagyfelbontású képként exportálja a PowerPointba.
@@ -30,6 +33,10 @@ A Power BI segítségével közzéteheti jelentését a Microsoft PowerPointban,
 * A PowerPointban létrejön egy hivatkozás, amely a Power BI-jelentésre mutat.
 
 A **Power BI-jelentést** gyorsan exportálhatja a **PowerPointba**. Kövesse az alábbi szakaszban leírt lépéseket.
+
+A Power BI szolgáltatásból adott vizualizációkat is kimásolhat, majd beillesztheti őket a PowerPointba. A vágólapra másoláshoz válassza a **Másolás képként** ikont. Ezután nyissa meg a PowerPointot, és illessze be a vizualizációt.
+
+![Válassza a Másolás képként ikont](media/end-user-powerpoint/power-bi-copy.png)
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI-jelentés exportálása a PowerPointba
 A **Power BI szolgáltatásban** jelöljön ki egy jelentést a vásznon való megjelenítéshez. Egy jelentést a **kezdőlapon**, az **Alkalmazások** között, vagy a navigációs panel bármely más tárolójában is kijelölhet.
@@ -77,12 +84,13 @@ Most már csak Önön múlik, hogy miképpen használja fel a PowerPoint-bemutat
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
 
-* Az R-alapú és a Python-alapú vizualizációk még nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
+
+* A jelentés PowerPointba történő exportálása néhány percet igénybe vehet, várjon türelmesen. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.
 * A minősített Power BI-vizualizációk támogatottak. A minősített egyéni vizualizációkról, beleértve az egyéni vizualizáció minősítési folyamatát, az [Egyéni vizualizáció minősítése](../developer/power-bi-custom-visuals-certified.md) oldalon talál további információt. A nem minősített egyéni vizualizációk nem támogatottak. Ezeket a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
-* Az Esri vizualizációja nem támogatott
+* Az URL-szűrők jelenleg nem érvényesek az exportálás **Aktuális értékek** beállításánál.
+* Az [ESRI ArcGIS vizualizáció](../visuals/power-bi-visualizations-arcgis.md) nem támogatott
 * A 30-nál több jelentésoldalt tartalmazó jelentések jelenleg nem exportálhatók.
 * A görgetősávokkal rendelkező vizualizációk az alapértelmezett állapotukban lesznek exportálva. A PowerPointban látható vizualizáció csak az adatmennyiség felső részét jeleníti meg. A PowerPointban nem görgethet, mivel minden dia egy kép. 
-* A jelentés PowerPointba történő exportálása néhány percet igénybe vehet, várjon türelmesen. Az exportálás időtartamát többek között a jelentés szerkezete és a Power BI szolgáltatás aktuális terhelése befolyásolhatja.
 * Ha az **Exportálás a PowerPointba** menüpont nem érhető el a Power BI szolgáltatásban, valószínűleg a bérlői rendszergazda tiltotta le a funkciót. Részletekért lépjen kapcsolatba a bérlői rendszergazdával.
 * A háttérképek szélét a program a diagram határoló területével együtt levágja. A PowerPointba való exportálás előtt ajánlott eltávolítani a háttérképeket.
 * A PowerPoint lapjai, függetlenül a Power BI-jelentés eredeti oldalméreteitől és dimenzióitól, mindig a szabványos 9:16 méretben jönnek létre.
@@ -93,7 +101,10 @@ Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell venni
 * A Power BI szolgáltatás a PowerPoint-exportálásnál a Power BI nyelvi beállításait alkalmazza. A nyelvi beállításokat megtekintheti vagy módosíthatja a fogaskerék ikon ![Fogaskerék ikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Beállítások** > **Általános** > **Nyelv** lehetőség választásával.
 * Az exportált PowerPoint-fájl címoldalán található **Letöltés ideje** a számítógép időzónáját követi a letöltés idején.
 * PPTX-fájlba való exportáláskor az egyéni betűkészletekkel rendelkező témákat használó jelentések egyéni betűkészlete az alapértelmezett betűkészletre lesz cserélve.
-* Az URL-szűrők jelenleg nem érvényesek az exportálás **Aktuális értékek** beállításánál.
+* Az R és a Python használatával létrehozott vizualizációk jelenleg nem támogatottak. Az ilyen vizualizációkat a rendszer üres képként exportálja a PowerPointba, és hibaüzenetet küld, hogy a vizualizáció nem támogatott.
+
+
 
 ## <a name="next-steps"></a>Következő lépések
+[Vizualizációk másolása statikus képként](../power-bi-visualization-copy-paste.md)    
 [Jelentés nyomtatása](end-user-print.md)

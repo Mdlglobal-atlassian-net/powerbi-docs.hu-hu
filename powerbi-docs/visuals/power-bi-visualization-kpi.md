@@ -3,32 +3,28 @@ title: Fő teljesítménymutató (KPI) vizualizációk
 description: Fő teljesítménymutató (KPI) vizualizációk létrehozása a Power BI-ban
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6EpqaO0
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d21fc3a2e585922e65e1385ed1fc436a6dbcf22
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7f865c53a1a47ad53137f0e7659917689243b914
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76974987"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865172"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Fő teljesítménymutató (KPI) vizualizációk létrehozása
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A fő teljesítménymutató (KPI) olyan vizuális jel, amely egy mérhető cél terén elért előrehaladás mértékét jelzi. A fő teljesítménymutatókról a [Fő teljesítménymutatók (KPI-k) a PowerPivotban](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)) című cikk ír bővebben.
 
-Megtekintheti a videót, amelyben bemutatjuk, hogyan hozhat létre egyetlen mutatószámos vizualizációkat: kijelzőket, kártyákat és KPI-ket.
-   > [!NOTE]
-   > Ez a videó a Power BI Desktop egy régebbi verzióját használja.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>Mikor érdemes KPI-t használni?
 
@@ -55,6 +51,9 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentés nézetben. ![A jelentés nézet ikonjának képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Új oldal hozzáadásához válassza a **+** jelet. ![A sárga lapfül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.    
 
 ## <a name="how-to-create-a-kpi"></a>KPI létrehozása
 
@@ -95,14 +94,14 @@ Ebben a példában létre fog hozni egy KPI-t, amely egy értékesítési cél i
 
 KPI-k a Power BI szolgáltatásban és a mobileszközökön is elérhetők. Ez lehetőséget kínál arra, hogy mindig az üzlet pulzusán tartsa az ujját.
 
-## <a name="considerations-and-troubleshooting"></a>Szempontok és hibaelhárítás
+## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 
 Amennyiben a KPI-je nem hasonlít a fentire, lehetséges, hogy nem a **FiscalMonth** mező szerint rendezte sorba. A KPI-k nem rendezhetők. Elölről kell kezdenie, és a pénzügyi hónapok (**FiscalMonth**) szerinti rendezést még *az előtt* kell elvégeznie, hogy átalakítja a vizualizációt KPI-vé.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 * [Tippek és trükkök térképvizualizációkhoz a Power BI-ban](power-bi-map-tips-and-tricks.md)
 
-* [Vizualizációk típusai a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

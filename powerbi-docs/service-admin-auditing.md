@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2a8372a5c31e41b49746ebbea3ba4801eeac493
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113784"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866656"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Felhasználói tevékenységek nyomon követése a Power BI-ban
 
@@ -243,7 +243,7 @@ Az alábbi műveletek mind az auditnaplókban, mind a tevékenységnaplókban el
 | Power BI-csoporttagok hozzáadása                      | AddGroupMembers (Csoporttagok hozzáadása)                             |                                          |
 | Egy rendszergazda adatfolyam-tárfiókot csatolt egy bérlőhöz | AdminAttachedDataflowStorageAccountToTenant | Jelenleg nem használt                       |
 | Power BI-adatkészlet elemezve                         | AnalyzedByExternalApplication (Külső alkalmazásban elemezve)               |                                          |
-| Power BI-jelentés elemzése                          | AnalyzeInExcel (Elemzés az Excelben)                              |                                          |
+| Power BI-jelentés elemzése                          | AnalyzeInExcel (Elemzés az Excelben)                              | Akkor jön létre, amikor a felhasználók használják a szolgáltatást. A `*.odc` fájl letöltése nem hoz létre naplózási eseményt                                         |
 | Adatfolyam-tárfiók csatolva                 | AttachedDataflowStorageAccount (Adatfolyam-tárfiók csatolva)              |                                          |
 | Power BI-adatkészlet kötése egy átjáróhoz                | BindToGateway (Kötés átjáróhoz)                               |                                          |
 | Adatfolyam-frissítés megszakítva                        | CancelDataflowRefresh (Adatfolyam-frissítés megszakítva)                       |                                          |

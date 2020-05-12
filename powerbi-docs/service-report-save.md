@@ -10,10 +10,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 1dfb75595de939f99bf269d67bf9c29a2f0db249
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871631"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Jelentések mentése a Power BI szolgáltatásban és a Power BI Desktopban
@@ -28,7 +28,7 @@ Miután módosít egy jelentést a Power BI-ban, mentheti, új néven mentheti, 
 1. Ha megkísérli elhagyni a jelentést, és a jelentésben változások vannak, a Power BI megjelenít egy kérdést.
    
    ![Módosítások mentése](media/service-report-save/power-bi-unsaved.png)
-2. A jelentés mentésének egy másik módja, ha a **Fájl** \> **Mentés** vagy **Mentés másként** lehetőséget választja. Ha [Olvasó nézetben](consumer/end-user-reading-view.md) van, csak a Mentés másként lehetőséget látja. 
+2. A jelentés mentésének egy másik módja, ha a **FÁJL** \> **Mentés** vagy **Mentés másként** lehetőséget választja. Ha [Olvasó nézetben](consumer/end-user-reading-view.md) van, csak a Mentés másként lehetőséget látja. 
    
    ![Jelentés mentése](media/service-report-save/power-bi-save-new.png)
 3. Ha ez új jelentés (Mentés), vagy meglévő jelentés új verziója (Mentés másként), adjon meg egy leíró nevet.  **A jelentést az aktív munkaterülethez adja hozzá a rendszer**.

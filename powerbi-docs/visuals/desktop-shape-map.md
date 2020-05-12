@@ -7,22 +7,27 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5717d543d5c70bbbe7c25ed3e55778639d777170
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525660"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866541"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Alakzatleképezés vizualizáció létrehozása a Power BI Desktopban (előzetes verzió)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Hozzon létre egy **Alakzatleképezés** vizualizációt a régiók különböző színek használatával történő összehasonlításához a térképen. A **Leképezés** vizualizációval szemben az **Alakzatleképezés** vizualizáció nem képes az adatpontok pontos földrajzi helyének megjelenítésére a térképen. Ehelyett alkalmazásának fő célja a régiók relatív összehasonlításának megjelenítése egy térképen eltérő színezéssel.
 
 Az **Alakzatleképezés** vizualizációk olyan TopoJSON-leképezéseken alapulnak, amelyek lenyűgöző képességei révén saját maga készítette egyedi térképeket használhat. többek között például földrajzi térképeket, ülésrendeket, alaprajzokat vagy egyéb térképeket. Az **Alakzatleképezés** előzetes verziójában egyéni térképek használata nincs támogatva.
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.
 
 ## <a name="creating-shape-maps"></a>Alakzatleképezések létrehozása
 Az **Alakzatleképezés**-vezérlőt az előzetes verzióhoz mellékelt térképekkel tesztelheti, vagy használhatja saját egyéni térképeit is, ha azok megfelelnek az alábbi, **Egyéni térképek használata** című szakaszban megadott követelményeknek.
@@ -97,7 +102,7 @@ Megadhat egy új oszlopot úgy, hogy egyszerűen begépeli az új oszlop nevét 
 > [!NOTE]
 > Ha országokkal vagy régiókkal dolgozik, használjon hárombetűs rövidítést annak biztosításához, hogy a geokódolás megfelelően működjön a térképalapú vizualizációk esetében. *Ne* használjon kétbetűs rövidítéseket, mert ez esetben lehetséges, hogy egyes országok vagy régiók felismerése nem történik meg megfelelően.
 > 
-> Ha csak a kétbetűs rövidítéseket ismeri, tekintse meg ezt a [külső blogbejegyzést](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp), amely az országok és régiók kétbetűs rövidítéseinek a hárombetűs rövidítéseknek való megfeleltetését ismerteti.
+> Ha csak kétbetűs rövidítésekkel rendelkezik, olvassa el [ezt a külső blogbejegyzést](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp), amely leírja a kétbetűs ország- vagy régiórövidítéseknek a hárombetűs rövidítésekhez való hozzárendelésének a lépéseit.
 > 
 > 
 
@@ -113,9 +118,9 @@ Néhány megfontolandó szempont és követelmény az **Alakzat leképezése** f
 
 Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régiókulcsaival**tesztelhető.
 
-### <a name="australia-states"></a>Ausztrália: államok
+### <a name="australia-states"></a>Ausztrália: Államok
 
-| ID | röv | iso | név | ir.szám |
+| ID | röv | iso | name | ir.szám |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Nyugat-Ausztrália |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,9 +131,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | au-nsw |NSW |AU-NSW |Új-Dél-Wales |NSW |
 | au-act |ACT |AU-ACT |Ausztrál fővárosi terület |ACT |
 
-### <a name="austria-states"></a>Ausztria: tartományok
+### <a name="austria-states"></a>Ausztria: Államok
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Bécs |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -136,11 +141,11 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | at-st |AT-6 |Steiermark |Stájerország |ST |
 | at-sz |AT-5 |Salzburg |Salzburg |SZ |
 | at-oo |AT-4 |Oberösterreich |Felső-Ausztria |OO |
-| at-no |AT-3 |Niederösterreich |Alsó-Ausztria |NEM |
+| at-no |AT-3 |Niederösterreich |Alsó-Ausztria |NO |
 | at-ka |AT-2 |Kärnten |Karintia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brazília: államok
+### <a name="brazil-states"></a>Brazília: Államok
 
 | ID |
 | --- |
@@ -176,9 +181,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | Vitatott 3. zóna |
 | Vitatott 4. zóna |
 
-### <a name="canada-provinces"></a>Kanada: tartományok
+### <a name="canada-provinces"></a>Kanada: Tartományok
 
-| ID | iso | név | ir.szám |
+| ID | iso | name | ir.szám |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Északnyugati területek |NT |
@@ -194,9 +199,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | ca-bc |CA-BC |Brit Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Franciaország: régiók
+### <a name="france-regions"></a>Franciaország: Régiók
 
-| ID | név | név (magyarul) |
+| ID | name | név (magyarul) |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -216,9 +221,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Côte d'Azur |
 |  |  |  |
 
-### <a name="germany-states"></a>Németország: tartományok
+### <a name="germany-states"></a>Németország: Államok
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Türingia |TH |
@@ -234,10 +239,10 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | de-he |DE-HE |Hessen |Hessen |HE |
 | de-hh |DE-HH |Hamburg |Hamburg |HH |
 | de-hb |DE-HB |Bréma |Bréma |HB |
-| de-by |DE-BY |Bayern |Bajorország |ESZERINT |
+| de-by |DE-BY |Bayern |Bajorország |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Württemberg |BW |
 
-### <a name="ireland-counties"></a>Írország: megyék
+### <a name="ireland-counties"></a>Írország: Megyék
 
 | ID |
 | --- |
@@ -268,9 +273,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Olaszország: régiók
+### <a name="italy-regions"></a>Olaszország: Régiók
 
-| ID | iso | név | név (magyarul) | ir.szám |
+| ID | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Valle d'Aosta |VD |
@@ -293,9 +298,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | it-pu |IT-75 |Apulia |Puglia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexikó: államok
+### <a name="mexico-states"></a>Mexikó: Államok
 
-| ID | rövidítés | iso | név | név (magyarul) | ir.szám |
+| ID | rövidítés | iso | name | név (magyarul) | ir.szám |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -330,9 +335,9 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | mx-bcn |B.C. |MX-BCN |Alsó-Kalifornia |Alsó-Kalifornia |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Hollandia: tartományok
+### <a name="netherlands-provinces"></a>Hollandia: Tartományok
 
-| ID | iso | név | név (magyarul) |
+| ID | iso | name | név (magyarul) |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Dél-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,18 +352,18 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Egyesült Királyság: országok
+### <a name="uk-countries"></a>Egyesült Királyság: Országok
 
-| ID | iso | név |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skócia |
 | gb-nir |GB-NIR |Észak-Írország |
 | gb-eng |GB-ENG |Anglia |
 
-### <a name="usa-states"></a>Egyesült Államok: államok
+### <a name="usa-states"></a>USA: Államok
 
-| ID | név | ir.szám |
+| ID | name | ir.szám |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaszka |AK |
@@ -367,18 +372,18 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | us-la |Louisiana |LA |
 | us-ar |Arkansas |AR |
 | us-sc |Dél-Karolina |SC |
-| us-ga |Grúzia |GA |
+| us-ga |Georgia |GA |
 | us-ms |Mississippi |MS |
 | us-al |Alabama |AL |
 | us-nm |Új-Mexikó |NM |
 | us-tx |Texas |TX |
 | us-tn |Tennessee |TN |
 | us-nc |Észak-Karolina |NC |
-| us-ok |Oklahoma |0 E |
+| us-ok |Oklahoma |OK |
 | us-az |Arizona |AZ |
 | us-mo |Missouri |MO |
 | us-va |Virginia |VA |
-| us-ks |Kansas |KS |
+| us-ks |Arkansas |KS |
 | us-ky |Kentucky |KY |
 | us-co |Colorado |CO |
 | us-md |Maryland |MD |
@@ -406,14 +411,14 @@ Az **Alakzat leképezése** funkció a jelen előzetes kiadás alábbi **régió
 | us-id |Idaho |ID |
 | us-wi |Wisconsin |WI |
 | us-wy |Wyoming |WY |
-| us-sd |South Dakota |SD |
+| us-sd |Dél-Dakota |SD |
 | us-nd |Észak-Dakota |ND |
 | us-me |Maine |ME |
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 * [Mátrix vizualizációk a Power BI-ban](desktop-matrix-visual.md)
 
-* [Vizualizációk típusai a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
