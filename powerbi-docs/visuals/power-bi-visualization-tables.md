@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: de0328a35922279082c93a9a2d2a4948f1af7dc5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 084702c9a90dbe98f227aa4343111a0f11c4198e
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77576815"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866968"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Táblák a Power BI-jelentésekben és -irányítópultokon
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -49,6 +52,8 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
 
 1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.
 
 ## <a name="create-a-table"></a>Tábla létrehozása
 

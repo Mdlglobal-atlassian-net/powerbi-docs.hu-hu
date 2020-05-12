@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76710028"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866334"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Kapcsolatok létrehozása és kezelése a Power BI Desktopban
 Amikor több táblát importál, valószínűleg az összes táblából származó adattal fog elemzést végezni. A táblák közötti kapcsolatok szükségesek az eredmények pontos kiszámításához és a jelentésekben a helyes információk megjelenítéséhez. A Power BI Desktop megkönnyíti ezen kapcsolatok létrehozását. Valójában a legtöbb esetben semmit sem kell tennie, az Automatikus észlelés funkció elvégzi Ön helyett. Bizonyos esetekben azonban szükség lehet a kapcsolatok saját kezű létrehozására, vagy egy kapcsolat módosításaira. Mindkét esetben fontos megérteni a Power BI Desktopban lévő kapcsolatokat és azok létrehozásának és szerkesztésének módját.
@@ -271,7 +271,7 @@ Egyirányú keresztszűréssel a projektórákat összegző jelentés létrehoz�
 
  ![Keresztszűrés iránya](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-A szűrőspecifikáció a **VállalatiProjekt** felől a **VállalatiAlkalmazott** felé halad (az alábbi képen látható módon), de nem éri el a **VállalatiAlkalmazott** oszlopot. 
+A szűrőspecifikáció a **VállalatiProjekt** felől a **ProjektÓrák** felé halad (az alábbi képen látható módon), de nem éri el a **VállalatiAlkalmazott** oszlopot. 
 
  ![Keresztszűrési példa](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 

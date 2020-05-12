@@ -4,17 +4,17 @@ description: A Power BI jelentéskészítő kiszolgáló áttekintése segít me
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/22/2019
+ms.date: 04/29/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 26593f4869d6b8d2c1c206a8bedd3c0d214581b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859556"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613590"
 ---
 # <a name="what-is-power-bi-report-server"></a>Mi a Power BI jelentéskészítő kiszolgáló?
 
@@ -23,7 +23,7 @@ A Power BI jelentéskészítő kiszolgáló egy helyszíni jelentéskészítő k
 ![Power BI jelentéskészítő kiszolgáló webes portálja](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló összehasonlítása 
-A Power BI jelentéskészítő kiszolgáló hasonló az SQL Server Reporting Services és a Power BI online szolgáltatáshoz is, de más módon. A Power BI szolgáltatáshoz hasonlóan a Power BI jelentéskészítő kiszolgáló kezeli a Power BI-jelentéseket (.PBIX), Excel-fájlokat és lapszámozott jelentéseket (.RDL) is. A Reporting Serviceshez hasonlóan a Power BI jelentéskészítő kiszolgáló is helyszíni. A Power BI jelentéskészítő kiszolgáló funkciói lefedik a Reporting Servicest: ami a Reporting Servicesben megtehető, az a Power BI jelentéskészítő kiszolgálóval is végrehajtható, a Power BI-jelentések támogatásával együtt. További részleteket az [A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása](compare-report-server-service.md) című szakaszban talál.
+A Power BI jelentéskészítő kiszolgáló hasonló az SQL Server Reporting Services és a Power BI online szolgáltatáshoz is, de más módon. A Power BI szolgáltatáshoz hasonlóan a Power BI jelentéskészítő kiszolgáló kezeli a Power BI-jelentéseket (.pbix), Excel-fájlokat és lapszámozott jelentéseket (.rdl) is. A Reporting Serviceshez hasonlóan a Power BI jelentéskészítő kiszolgáló is helyszíni. A Power BI jelentéskészítő kiszolgáló funkciói lefedik a Reporting Servicest: ami a Reporting Servicesben megtehető, az a Power BI jelentéskészítő kiszolgálóval is végrehajtható, a Power BI-jelentések támogatásával együtt. További részleteket az [A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása](compare-report-server-service.md) című szakaszban talál.
 
 ## <a name="licensing-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló licencelése
 A Power BI jelentéskészítő kiszolgáló kétféle licenccel érhető el: [Power BI Premium](../service-premium-what-is.md) és [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) Frissítési Garanciával. Power BI Premium licenccel hibrid, vegyesen felhőbeli és helyszíni telepítés is végrehajtható.  
@@ -41,7 +41,7 @@ A webes portál tartalmát jogosultságaitól függően kezelheti. Ütemezheti a
 További információ a [Power BI jelentéskészítő kiszolgáló webes portáljáról](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI-jelentések
-Power BI-jelentéseket (.PBIX) a Power BI Desktopnak a jelentéskészítő kiszolgálóhoz optimalizált verziójával készíthet. Ezeket aztán közzéteheti és saját környezetében tekintheti meg a webes portálon.
+Power BI-jelentéseket (.pbix) a Power BI Desktopnak a jelentéskészítő kiszolgálóhoz optimalizált verziójával készíthet. Ezeket aztán közzéteheti és saját környezetében tekintheti meg a webes portálon.
 
 ![Power BI-jelentések a Power BI jelentéskészítő kiszolgálón](media/get-started/powerbi-reports.png)
 
@@ -50,7 +50,7 @@ A Power BI-jelentések az adatmodellek többszempontú nézetei, amelyek az adat
 Tájékozódhat a [Microsoft Power BI Desktop telepítéséről](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Oldalakra osztott jelentések
-A többoldalas jelentések (.RDL) dokumentum-stílusú, vizualizációkat tartalmazó jelentések, amelyekben az összes adat megjelenítéséhez vízszintesen és függőlegesen bővülő táblázatok szükség esetén több oldalra is kiterjednek. Tökéletesek a nyomtatásra optimalizált, rögzített elrendezésű, képpontról képpontra egyező, például PDF- és Word-dokumentumok létrehozásához. 
+A többoldalas jelentések (.rdl) dokumentum-stílusú, vizualizációkat tartalmazó jelentések, amelyekben az összes adat megjelenítéséhez vízszintesen és függőlegesen bővülő táblázatok szükség esetén több oldalra is kiterjednek. Tökéletesek a nyomtatásra optimalizált, rögzített elrendezésű, képpontról képpontra egyező, például PDF- és Word-dokumentumok létrehozásához. 
 
 ![Többoldalas jelentések a Power BI jelentéskészítő kiszolgálón](media/get-started/paginated-reports.png)
 

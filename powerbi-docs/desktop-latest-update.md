@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 04/17/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 402bf2028b7cc30acf0ce752e8f0343a44829cb3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e73c02402e05abf730dbd0fdf742b4a6f0998c03
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378478"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866633"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>A Power BI Desktop újdonságai
 
-## <a name="march-2020-update-2795768562"></a>2020. márciusi frissítés (2.79.5768.562)
+## <a name="april-2020-update-2805803282"></a>2020. áprilisi frissítés (2.80.5803.282)
 
-Szerencsésnek mondhatjuk magunkat, amiért megoszthatjuk Önnel a Power BI Desktop márciusi újításait. 
+Hálásak vagyunk, hogy megoszthatjuk áprilisi Power BI Desktop-frissítésünket Önökkel, a globális közösséggel. 
 
 Szerezze be a Power BI Desktop legújabb verzióját a [Letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=58494). Ha Windows 10 operációs rendszert használ, a Power BI Desktopot a [Microsoft Store-ból](https://aka.ms/pbidesktopstore) is letöltheti. A Power BI Desktop telepítésének módjától föggetlenül a havi verziók azonosak lesznek, bár a verziószámozás eltérhet. A Power BI Desktop letöltésével és telepítésével kapcsolatos további információért lásd: [A Power BI Desktop beszerzése](desktop-get-the-desktop.md). 
 
@@ -41,47 +41,46 @@ Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
 
 
 ### <a name="reporting"></a>Jelentéskészítés
-* Új művelettípusok a gombokhoz [[videó]](https://youtu.be/DMjvJGGB_LQ?t=45)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_action_types) 
-* Többoszlopos rendezés táblákhoz [[videó]](https://youtu.be/DMjvJGGB_LQ?t=414) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Multi-column_sort) 
-* Kettős tengely a vonaldiagramokhoz   [[videó]](https://youtu.be/DMjvJGGB_LQ?t=504)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Dual_axis) 
-* Keresés a szűrőpanelen  [[videó]](https://youtu.be/DMjvJGGB_LQ?t=553)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Filter_pane_search) 
-* A felbontásfa vizualizáció frissítései   [[videó]](https://youtu.be/DMjvJGGB_LQ?t=688)  [[cikk]](visuals/power-bi-visualization-decomposition-tree.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_decomp_tree) 
-* Az új menüszalag mostantól alapértelmezés szerint be van kapcsolva   [[videó]](https://youtu.be/DMjvJGGB_LQ?t=785)  [[cikk]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_ribbon) 
+* Vizualizációk személyre szabása (előzetes verzió) [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=54)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Personalize_visuals) 
+* Az oldalfrissítés módosításészlelése (előzetes verzió) [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=447) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Change_detection) 
+* Relatívidő-szeletelő (előzetes verzió) [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=744)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Relative_time_filter) 
+* Szögletes lasszó típusú kijelölés a vizualizációk között [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1016)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Lasso_select) 
+* Feltételes formázás táblázatok és mátrixok összegeihez és részösszegeihez  [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1075)  [[cikk]](desktop-conditional-table-formatting.md#totals-and-subtotals)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Conditional_formatting) 
+* Általánosan elérhető a Téma testreszabása párbeszédpanel [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1250)  [[cikk]](desktop-report-themes.md#customize-report-themes)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
+* Továbbfejlesztett felderíthetőség a feltételes formázáshoz [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
 
 
 
+### <a name="analytics"></a>Elemzés
+* DirectQuery-támogatás AI-vizualizációkhoz [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1498)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Direct_Query_AI) 
+* A felbontásfa már támogatja az elemleírásokat [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1550)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Decomp_tree_tooltips) 
+* Q&A-frissítések [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1606)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_QA_updates) 
 
-### <a name="modeling"></a>Modellezés
-* Új DAX-függvény: COALESCE [[videó]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[cikk]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
-) 
 
 ### <a name="visuals"></a>Vizualizációk
-* Az ArcGIS Maps frissítései [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1043)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_ArcGIS) 
-* Új Power BI-vizualizációk [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1025)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Waterfall_chart
-)
+* Új vizualizációs ikonok [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1946)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_Visualization_icons) 
+* Új Power BI-vizualizációk [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1833)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Visualizations)
 
 
 ### <a name="template-apps"></a>Sablonalkalmazások
-* Az Azure DevOps Data Maru-irányítópultja [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1116)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Azure_DevOps_dashboard) 
-* TeamsPower az Encamina jóvoltából  [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1135)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_TeamsPower)
+* Power Platform Center of Excellence StartKit [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CoE_StartKit) 
+* Azure Cognitive Search: naplók és metrikák elemzése [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Azure_Cognitive_Search)
+* COVID-19 alkalmazások  [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=1969)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_COVID)
 
 
 ### <a name="data-preparation"></a>Adatok előkészítése
-* Általánosan elérhetők a lekérdezési diagnosztikák [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1144)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Query_diagnostics) 
+* A lekérdezési diagnosztika fejlesztései [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=2011)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Enhancements_to_Query) 
 
 
 ### <a name="data-connectivity"></a>Adatkapcsolatok
-* Hive LLAP-összekötő (előzetes verzió) [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Hive_LLAP_connector) 
-* Cognite-összekötő (előzetes verzió) [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Cognite) 
+* Az Azure Data Lake Storage Gen2 CDM-mappanézete [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=2124)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_CDM_Folder_view) 
 
 
 ### <a name="other-features"></a>Egyéb jellemzők
-* Adathalmazok kibővített metaadatai (előzetes verzió) [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1184)  [[cikk]](desktop-enhanced-dataset-metadata.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Enhanced_dataset_metadata) 
-* A rendszer alapértelmezett hitelesítő adatainak használata a webproxyhoz [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1239)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Using_default_system) 
-* Új, oktató által tartott képzési videó az egynapos rendszergazdai képzésről [[videó]](https://youtu.be/DMjvJGGB_LQ?t=1247)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_administrator) 
+* Új, oktató által vezetett képzés [[videó]](https://youtu.be/q2Hfn_Rhb3E?t=2147)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_New_instructor-led_training) 
 
 
-Az egyes új funkciókkal kapcsolatos részletes információkat a [Power BI Desktop-funkciók összegző blogbejegyzése](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/) tartalmazza.
+Az egyes új funkciókkal kapcsolatos részletes információkat a [Power BI Desktop-funkciók összegző blogbejegyzése](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/) tartalmazza.
 
 Megismerkedhet [a Power BI szolgáltatás újdonságaival](service-whats-new.md), valamint [a Power BI-hoz készült mobilalkalmazások újdonságaival](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -89,12 +88,10 @@ Megismerkedhet [a Power BI szolgáltatás újdonságaival](service-whats-new.md)
 > Megtekintheti a [Power BI Desktophoz elérhető adatforrásokat](desktop-data-sources.md). A lista folyamatosan bővül, ezért érdemes gyakran visszalátogatni.
 
 
-## <a name="power-bi-desktop-monthly-update-video"></a>Videó a Power BI Desktop havi frissítéséről
+### <a name="power-bi-desktop-monthly-update-video"></a>Videó a Power BI Desktop havi frissítéséről
 Az alábbi videó az összes frissítést bemutatja. A videót a blogbejegyzésben is megtekintheti:
 
-> [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
-
-
+> [!VIDEO https://www.youtube.com/embed/q2Hfn_Rhb3E]
 
 ## <a name="more-videos"></a>További videók
 

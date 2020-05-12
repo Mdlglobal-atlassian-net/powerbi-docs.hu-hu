@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 401cc419401756c9576ce6efc25a34b7aa667024
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207735"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781542"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>A Power BI által támogatott nyelvek és országok/régiók
 
@@ -72,7 +72,7 @@ A Power BI szolgáltatás (a böngészőben) a következő 44 nyelven érhető e
 * Vietnami – Tiếng Việt
 
 ### <a name="whats-translated"></a>Lefordított elemek
-A Power BI az Ön saját nyelvére fordítja le a menüket, gombokat, üzeneteket és a felhasználói felület más elemeit. A jelentések olyan elemei, mint az automatikusan generált címek, szűrők és elemleírások le vannak fordítva, de az adatok nem lesznek automatikusan lefordítva. A jelentéseken belül a vizualizációk elrendezése nem módosul akkor sem, ha Ön jobbról balra író nyelvet, például hébert használ.
+A Power BI az Ön saját nyelvére fordítja le a menüket, gombokat, üzeneteket és a felhasználói felület más elemeit. A Power BI például lefordítja az olyan jelentéstartalmakat, mint az automatikusan létrehozott címek, a szűrők és az elemleírások. Az adatokat azonban nem. A jelentéseken belül a vizualizációk elrendezése nem módosul akkor sem, ha Ön jobbról balra író nyelvet, például hébert használ.
 
 Néhány funkció jelenleg csak angol nyelven érhető el:
 
@@ -118,7 +118,7 @@ A Power BI a számítógépén érvényben lévő nyelvi beállítások alapján
 A Power BI Desktopot kétféle módon szerezheti be: Letöltheti önálló telepítőcsomagként, vagy telepítheti a Windows Áruházból.
 
 * Ha a Power BI Desktopot a Windows Áruházból telepíti, akkor az minden nyelvet telepít, és alapértelmezés szerint a Windows alapértelmezett nyelvén jelenik meg.
-* Ha a Power BI Desktopot önálló telepítőként tölti le, Ön választhatja ki az alapértelmezett nyelvet a telepítő futtatásakor, és később megváltoztathatja azt.
+* Ha a Power BI Desktopot önálló telepítőként tölti le, Ön választhatja ki az alapértelmezett nyelvet a telepítő futtatásakor. Ezt később megváltoztathatja.
 * Emellett [kiválaszthatja a használni kívánt területi beállítást, amikor adatokat importál](#choose-the-locale-for-importing-data-into-power-bi-desktop) egy adott jelentéshez.
 
 > [!NOTE]
@@ -126,11 +126,12 @@ A Power BI Desktopot kétféle módon szerezheti be: Letöltheti önálló telep
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>A Power BI Desktop nyelvének kiválasztása 
 1. Telepítse a Power BI Desktopot a [Windows Áruházból](https://aka.ms/pbidesktopstore), vagy [önálló telepítővel](https://aka.ms/pbiSingleInstaller).
-2. A nyelv megadásához keresse meg számítógépén a **Windows-beállításokat**. 
-3. Válassza a **Dátum és idő** lehetőséget.
+2. A nyelv módosításához a Windows menüben válassza a **Beállítások** lehetőséget
+
+3. A **Windows-beállítások** területen válassza az **Idő és nyelv** lehetőséget.
    
      ![Windows-beállítások párbeszédpanel](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
-4. Válassza a **Régió és nyelv** lehetőséget, válasszon nyelvet majd válassza a **Beállítás alapértelmezettként** lehetőséget.
+4. Válassza a **Nyelv** lehetőséget, majd válasszon ki egy nyelvet. Ha szükséges, válassza **Windows megjelenítési nyelv hozzáadása a Microsoft Store-hoz** lehetőséget.
    
      ![Windows nyelvi beállítások párbeszédablak](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
@@ -143,8 +144,30 @@ A következőket kell tennie, ha felül szeretné bírálni az alapértelmezést
 
 A Power BI Desktop nyelvi támogatása az Alkalmazás nyelve legördülő listában megjelenő nyelvekre korlátozódik.
 
+### <a name="verify-power-bi-desktop-default-number-and-date-formatting"></a>A Power BI Desktop alapértelmezett szám- és dátumformátumának ellenőrzése
+
+A Power BI Desktop lekéri a Windows régióbeállításaitól kéri le az alapértelmezett szám- és dátumformázási beállításokat. Szükség esetén megtekintheti és módosíthatja ezeket a beállításokat.
+
+1. A Windows menüben válassza a **Beállítások** elemet
+
+2. A **Windows-beállítások** területen válassza az **Idő és nyelv** lehetőséget.
+   
+     ![Windows-beállítások párbeszédpanel](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+
+3. Válassza a **Régió** > **További dátum-, idő- és területi beállítások** lehetőséget.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-region-settings.png" alt-text="További dátum-, idő- és területi beállítások":::
+
+4. Az **Óra és terület** területen válassza a **Dátum-, idő- és számformátumok módosítása** lehetőséget.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-check-region-settings.png" alt-text="Óra- és területi beállítások":::
+
+5. Győződjön meg arról, hogy **A Windows megjelenítési nyelve szerint** lehetőség van kiválasztva, vagy szükség szerint módosítsa.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="A Windows megjelenítési nyelve szerint":::
+
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Az adatok a Power BI Desktopba való importálásához használni kívánt területi beállítás megadása
-Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. Ez a területi beállítás határozza meg az adatforrásból importált adatok értelmezését, például hogy a "3/4/2017" dátum április 3-a vagy március 4-e. 
+Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy adott jelentéshez a saját Power BI Desktop-verziójáétól eltérő területi beállításokat is megadhat. A területi beállítás befolyásolja, hogy a Power BI hogyan értelmezi az adatforrásból importált adatokat. A „3/4/2017” dátum például április 3. vagy március 4.?
 
 1. A Power BI Desktopban lépjen a **Fájl** > **Lehetőségek és beállítások** > **Beállítások** területre.
 2. A **Aktuális fájl** alatt válassza a **Területi beállítások** lehetőséget.
@@ -158,7 +181,7 @@ Akár letölti, akár a Windows Áruházból telepíti a Power BI Desktopot, egy
 A Power BI Desktop alkalmazás nyelvének beállítása mellett a modell nyelvét is beállíthatja. A modell nyelve elsősorban a következő két dologra van hatással:
 
 - A sztringek összehasonlítására és rendezésére. Mivel például a török nyelvben két i betű található, az adatbázis rendezésétől függően ezen két betű sorrendjei eltérőek lehetnek rendezéskor. 
-- A nyelvre, amelyet a Power BI Desktop rejtett dátumtáblázatok dátummezőkből való létrehozásakor használ. A mezők neve lehet például Month, Monat, Hónap, stb.
+- A nyelvre, amelyet a Power BI Desktop rejtett dátumtáblázatok dátummezőkből való létrehozásakor használ. A mezők neve lehet például Month, Monat, Hónap és így tovább.
 
 > [!NOTE]
 > A Power BI modellje jelenleg a kis- és nagybetűket (vagy kanákat) nem megkülönböztető területi beállításokat használ, tehát az “ABC” és “abc” egyenértékűként lesz kezelve. Ha elsőként “ABC” van betöltve az adatbázisban, akkor az olyan, csak kis-nagybetűkben eltérő sztringek, mint az “Abc” nem lesznek külön értékként betöltve.

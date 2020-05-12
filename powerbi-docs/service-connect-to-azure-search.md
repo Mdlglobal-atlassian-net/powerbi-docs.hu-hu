@@ -10,10 +10,10 @@ ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873111"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Kapcsolódás az Azure Search szolgáltatáshoz a Power BI-jal
@@ -30,7 +30,7 @@ Kapcsolódjon a Power BI-hoz készült [Azure Search-tartalomcsomaghoz](https://
 2. A **Szolgáltatások** mezőben kattintson a **Lekérés** elemre.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
-3. Válassza az **Azure Search** \> **Beolvasás** elemet.
+3. Válassza az **Azure Search** \> **Lekérés** lehetőséget.
    
    ![](media/service-connect-to-azure-search/azuresearch.png)
 4. Adja meg annak a Table Storage-fióknak a nevét, amely az Azure Search-elemzést tárolja.

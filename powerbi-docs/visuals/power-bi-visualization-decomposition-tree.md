@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885275"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865568"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Felbontásfa-vizualizációk létrehozása és megtekintése a Power BI-ban (előzetes verzió)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A felbontásfa-vizualizáció sokdimenziós adatok képi megjelenítését teszi lehetővé a Power BI-ban. Automatikusan összesíti az adatokat, és lehetővé teszi a lefúrást a dimenziók tetszőleges sorrendjében. Ugyanakkor mesterséges intelligenciával (AI-val) rendelkező vizualizáció, tehát meg lehet kérni a következő dimenzió megkeresésére, amelybe egy adott feltétel alapján le kell fúrni. Ez az alkalmi felderítés és az alapvető okok elemzése értékes eszközévé teszi.
@@ -29,6 +32,8 @@ Ez az oktatóanyag két példát használ:
 - Egy ellátási lánc esetét, amely a vállalatnál a megrendelések alapján hiányzó termékek százalékos arányát elemzi.  
 - Egy értékesítési esetet, amely videojátékok értékesítését bontja le számos tényező, például a játék műfaja és kiadója alapján.
 
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennei.    
 
 ## <a name="get-started"></a>Első lépések
 Válassza a felbontásfa ikonját a Vizualizációk panelen.

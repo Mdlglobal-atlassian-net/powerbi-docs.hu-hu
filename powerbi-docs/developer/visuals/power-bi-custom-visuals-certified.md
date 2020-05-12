@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 2dee596648c9921cefab6903167e780bfacb122e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b759d19046ddb375646743a50025689ab9a566c0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113900"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613534"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Power BI-vizualizáció minősíttetése
 
@@ -82,8 +82,6 @@ A Power BI-vizualizáció írásához használja a [powerbi-visuals-tools](https
 
 Le kell fordítania a Power BI-vizualizációt a `pbiviz package` paranccsal. Ha saját buildelési szkriptet használ, adjon meg egy egyéni `npm run package` buildelési parancsot.
 
-
-
 ### <a name="source-code-requirements"></a>Forráskódra vonatkozó követelmények
 
 Győződjön meg arról, hogy követi a [Power BI-vizualizációk kiegészítő minősítési](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) szabályzatainak listáját. Ha a beküldés nem követi ezeket az irányelveket, akkor a Partnerközpont elutasítási e-mailje tartalmazni fogja a hivatkozáson felsorolt szabályzatszámokat.
@@ -150,6 +148,25 @@ A minősített Power BI-vizualizációk egy kijelölt jelvényt kapnak, amely a 
     ![Minősített Power BI-vizualizáció a Power BI felületén](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * Csak minősített Power BI-vizualizációk jeleníthetők meg a *Power BI Certified* szűrési lehetőség kiválasztásával.
+
+## <a name="publication-timeline"></a>Közzététel idővonala
+
+Az AppSource-ban való üzembe helyezés eltarthat egy ideig. A Power BI-vizualizáció a folyamat befejezése után lesz letölthető az AppSource-ról.
+
+### <a name="when-will-users-be-able-to-download-my-visual"></a>Mikor töltheti le a felhasználók a vizualizációmat?
+
+* Egy Power BI-vizualizáció első beküldése után a felhasználók néhány órával azt követően tölthetik le, hogy Ön e-mailt kap az AppSource-tól.
+
+* Ha egy meglévő Power BI-vizualizációt frissített, a felhasználók a beküldést követően egy hónapon belül letölthetik azt.
+
+    >[!NOTE]
+    > Az AppSource *verzió* mezője arra a napra módosul, amikor a Power BI-t jóváhagyta az AppSource, körülbelül egy héttel a vizualizáció beküldése után. A felhasználók letölthetik a frissített vizualizációt, azonban a frissített funkciók nem alkalmazhatók. A vizualizáció új funkciói körülbelül egy hónappal később használhatók a jelentéseken. 
+
+### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>Mikor jelenik meg minősítési jelvény a Power BI-vizualizációmon?
+
+* Ha először küldött be egy Power BI-vizualizációt, a minősítési jelvény az AppSource-tól kapott jóváhagyási e-mailt követő napon jelenik meg.
+
+* Ha egy meglévő Power BI-vizualizációhoz kér minősítést, a jelvény a beküldést követő egy hónapon belül jelenik meg.
 
 ## <a name="next-steps"></a>Következő lépések
 

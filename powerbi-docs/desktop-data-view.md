@@ -6,19 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a82465adb5b0c7fe8be0e6e724c5eda1bfcf7ec0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1fee95bbfb790a1c61d82131579c8fb43980ca05
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79206953"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866725"
 ---
 # <a name="work-with-data-view-in-power-bi-desktop"></a>Az Adatok nézet használata a Power BI Desktopban
 
 Az *Adat nézet* segítségével megvizsgálhatja, felderítheti és megismerheti *Power BI Desktop*-modellben lévő adatokat. Így másképp tekintheti meg a táblákat, oszlopokat és adatokat, mint a *Power Query-szerkesztőben*. Az Adat nézettel a modellbe való betöltésük *után* tekintheti meg az adatokat.
+
+> [!NOTE]
+> Mivel az adatnézet a modellbe való betöltés utáni állapotban mutatja az adatokat, az Adatnézet ikon nem látható, ha minden adatforrás DirectQuery-alapú. 
 
 Az adatok modellezésekor előfordulhat, hogy csak meg szeretné tekinteni egy tábla vagy oszlop aktuális tartalmát anélkül, hogy ehhez egy vizualizációt vagy jelentésvásznat kellene létrehoznia. Akár sorszintű betekintésre is szüksége lehet. Ez a képesség akkor igazán hasznos, amikor mértékeket vagy számított oszlopokat hoz létre, vagy amikor azonosítani szeretné az adatok típusát vagy kategóriáját.
 
@@ -48,3 +51,14 @@ Szűrést alkalmazhat egyes értékekre, vagy az oszlopban található adatokat 
 
 > [!NOTE]
 > Amikor egy, a felhasználói felülettől eltérő kulturális környezetben hoz létre egy Power BI-modellt, a keresőmező kizárólag szövegmezők esetén jelenik meg az Adatnézet felhasználói felületén. Ez történne például egy amerikai angol nyelven létrehozott, spanyol területi beállítással megtekintett modell esetében.
+
+
+## <a name="next-steps"></a>Következő lépések
+
+A Power BI Desktop műveletek és lehetőségek széles tárházát tartalmazza. A program képességeivel kapcsolatos további információkért lásd az alábbi forrásanyagokat:
+
+* [Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
+* [Lekérdezések áttekintése a Power BI Desktopban](desktop-query-overview.md)
+* [Adattípusok a Power BI Desktopban](desktop-data-types.md)
+* [Adatok formázása és kombinálása a Power BI Desktoppal](desktop-shape-and-combine-data.md)
+* [Gyakori lekérdezési feladatok a Power BI Desktopban](desktop-common-query-tasks.md)

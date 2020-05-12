@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80329616"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866794"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Közzététel a Microsoft Excel-ből a Power BI-ba
 A Microsoft Excel 2016-tal és újabb verzióival közvetlenül [Power BI](https://powerbi.microsoft.com)-munkaterületen teheti közzé Excel-munkafüzeteit, ahol könnyen használható jelentéseket és irányítópultokat készíthet a munkafüzet adatai alapján. Az elemzés eredményeit aztán megoszthatja másokkal is a cégén belül.
@@ -42,13 +42,13 @@ Az Excel támogatja a helyi Excel-fájlok közzétételét. Nem kell feltétlen�
 > Helyi fájlokat csak akkor tehet közzé, ha az Excel 2016 (vagy újabb) verzióját használja Office 365-előfizetéssel. Az Excel 2016 önálló telepítései alkalmasak a Power BI-be való közzétételre, de csak akkor, ha a munkafüzet a OneDrive Vállalati verziójába vagy a SharePoint Online-ba van mentve.
 > 
 
-A **Közzététel** lehetőség választásakor megadhatja a közzététel céljául kiválasztott munkaterületet. Ez lehet személyes munkaterület vagy olyan csoport-munkaterület, amelyhez hozzáférése van, ahogyan az alábbi ábrán látható.
+A **Közzététel** lehetőség választásakor megadhatja a közzététel céljául kiválasztott munkaterületet. Ha az Excel-fájl a OneDrive Vállalati verzióban található, csak a *Saját munkaterületen* tehető közzé. Ha az Excel-fájl egy helyi meghajtón található, közzétehető a *Saját munkaterületen* vagy egy megosztott munkaterületen, amelyhez Ön is hozzáfér.
 
-![Közzététel a Power BI szolgáltatásban](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Közzététel a Power BI-ban](media/service-publish-from-excel/pbi_choose_workspace.png)
 
 Két módszer a munkafüzet tartalmának Power BI-ba juttatására.
 
-![Közzététel a Power BI szolgáltatásban](media/service-publish-from-excel/pbi_uploadexport3.png)
+![Közzététel a Power BI-ban](media/service-publish-from-excel/pbi_uploadexport3.png)
 
 A közzététel után a munkafüzet közzétett tartalma a Power BI-ba lesz importálva, a helyi fájltól elkülönítve. Ha frissíteni szeretné a Power BI-beli fájlt, újra közzé kell tennie a friss verziót, de az adatokat úgy is frissítheti, hogy ütemezett frissítést állít be a munkafüzeten vagy az Power BI-beli adathalmazon.
 
@@ -90,7 +90,7 @@ Amikor elkészült, az Excelből közvetlenül átléphet a Power BI-ba.
 
 ![ugrás a Power BI-ba](media/service-publish-from-excel/pbi_gotopbi.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [Excel-adatok a Power BI-ban](service-excel-workbook-files.md)  
-Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

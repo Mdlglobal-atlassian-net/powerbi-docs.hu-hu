@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f7e21f5b9f2ac01fec19a7113cf595464619a0e0
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381284"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841986"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -50,7 +50,7 @@ A Power BI szolgáltatás-rendszergazdai szerepköre nem tartalmaz jogosultságo
 
 ## <a name="administrative-tasks"></a>Felügyeleti feladatok
 
-A rendszergazdák sokféle feladatot látnak el a Power BI-bérlő szervezeten belüli támogatásához. Ezeket a feladatokat az alábbi táblázatban foglaltuk össze.
+A rendszergazdák sokféle feladatot látnak el a Power BI szervezeten belüli támogatásához. Ezeket a feladatokat az alábbi táblázatban foglaltuk össze.
 
 | **Feladatkör** | **Tipikus feladatok** |
 | --- | --- |
@@ -78,7 +78,7 @@ A Power BI-adminisztrációhoz számos eszköz használható, amelyeket az aláb
 
 ## <a name="next-steps"></a>Következő lépések
 
-Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb aspektusait, az egyes szerepköröket, a hozzájuk kapcsolódó feladatokat és a felhasználható eszközöket. Ezek mélyebb megértéséhez az alábbi cikkeket, illetve témaköröket ajánljuk figyelmébe.
+Ebből a cikkből megismerhette a Power BI-rendszergazdai feladatok lényegesebb aspektusait, az egyes szerepköröket, a hozzájuk kapcsolódó feladatokat és a felhasználható eszközöket. További információt a következő cikkekben találhat.
 
 - [A Power BI felügyeleti portál használata](service-admin-portal.md)
 - [Útmutató a bérlői rendszergazdai beállításokhoz](guidance/admin-tenant-settings.md)
