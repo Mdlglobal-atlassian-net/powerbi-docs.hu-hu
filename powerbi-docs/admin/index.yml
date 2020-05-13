@@ -12,56 +12,56 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/17/2020
-  ms.openlocfilehash: 12bd1e2ac706925301ca139bd84cef249c71e18c
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: d64c608be40aa156b3df23d5dd5ad01d50ab00dc
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "79488476"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83130074"
 landingContent:
 - title: Power BI rendszergazdák és nagyvállalatok számára
   linkLists:
   - linkListType: overview
     links:
-    - text: Mi a Power BI-felügyelet?
-      url: ../service-admin-administering-power-bi-in-your-organization.md
-    - text: Mi a Power BI Premium?
-      url: ../service-premium-what-is.md
+    - text: Mit jelent a Power BI-felügyelet?
+      url: service-admin-administering-power-bi-in-your-organization.md
+    - text: Mi az a Power BI Premium?
+      url: service-premium-what-is.md
   - linkListType: concept
     links:
     - text: Felügyeleti szerepkör az Office 365-ben
-      url: ../service-admin-role.md
+      url: service-admin-role.md
 - title: Első lépések
   linkLists:
   - linkListType: concept
     links:
     - text: Szervezeti licencelés
-      url: ../service-admin-licensing-organization.md
+      url: service-admin-licensing-organization.md
     - text: A felügyeleti portál használata
-      url: ../service-admin-portal.md
+      url: service-admin-portal.md
   - linkListType: how-to-guide
     links:
     - text: A Power BI Pro megvásárlása
-      url: ../service-admin-purchasing-power-bi-pro.md
+      url: service-admin-purchasing-power-bi-pro.md
     - text: Regisztráció az Office 365 próbaverziójával
-      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
     - text: Power BI hozzáadása Office 365-partnerrel
-      url: ../service-admin-syndication-partner.md
+      url: service-admin-syndication-partner.md
 - title: A szervezet kezelése
   linkLists:
   - linkListType: concept
     links:
     - text: Prémium szintű kapacitások forgatókönyvei
-      url: ../service-premium-capacity-scenarios.md
+      url: service-premium-capacity-scenarios.md
   - linkListType: how-to-guide
     links:
     - text: Hol található a bérlőm?
-      url: ../service-admin-where-is-my-tenant-located.md
+      url: service-admin-where-is-my-tenant-located.md
     - text: Bejelentkezett felhasználók keresése
-      url: ../service-admin-access-usage.md
+      url: service-admin-access-usage.md
     - text: A Power BI naplózása
-      url: ../service-admin-auditing.md
+      url: service-admin-auditing.md
     - text: Szolgáltatásállapot nyomon követése
-      url: ../service-admin-health.md
+      url: service-admin-health.md
     - text: A Power BI-fiók megszüntetése
-      url: ../service-admin-closing-your-account.md
+      url: service-admin-closing-your-account.md

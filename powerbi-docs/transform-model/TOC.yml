@@ -6,114 +6,114 @@
       expanded: true
       items:
         - name: Lekérdezésszerkesztő áttekintése
-          href: ../desktop-query-overview.md
+          href: desktop-query-overview.md
         - name: Önkiszolgáló adatelőkészítés adatfolyamokkal
-          href: ../service-dataflows-overview.md
-    - name: oktatóanyagokat
+          href: service-dataflows-overview.md
+    - name: Oktatóanyagok
       expanded: true
       items:
         - name: Saját mértékek létrehozása
-          href: ../desktop-tutorial-create-measures.md
+          href: desktop-tutorial-create-measures.md
         - name: Számított oszlopok létrehozása
-          href: ../desktop-tutorial-create-calculated-columns.md
-    - name: Alapelvek
+          href: desktop-tutorial-create-calculated-columns.md
+    - name: Fogalmak
       expanded: true
       items:
         - name: Modellkapcsolatok bemutatása
-          href: ../desktop-relationships-understand.md
+          href: desktop-relationships-understand.md
         - name: A modellezési nézet használata
-          href: ../desktop-modeling-view.md
+          href: desktop-modeling-view.md
         - name: Összesítések kezelése
-          href: ../desktop-aggregations.md
+          href: desktop-aggregations.md
         - name: Az összetett modellek használata
-          href: ../desktop-composite-models.md
+          href: desktop-composite-models.md
         - name: Több a többhöz kapcsolatok alkalmazása
-          href: ../desktop-many-to-many-relationships.md
+          href: desktop-many-to-many-relationships.md
         - name: Tárolási mód kezelése
-          href: ../desktop-storage-mode.md
+          href: desktop-storage-mode.md
         - name: Kétirányú keresztszűrés engedélyezése
-          href: ../desktop-bidirectional-filtering.md
+          href: desktop-bidirectional-filtering.md
         - name: Többdimenziós modellek használata a Power BI-ban
-          href: ../desktop-default-member-multidimensional-models.md
+          href: ../connect-data/desktop-default-member-multidimensional-models.md
     - name: Útmutatók
       items:
         - name: Gyakori lekérdezési feladatok végrehajtása
-          href: ../desktop-common-query-tasks.md
+          href: desktop-common-query-tasks.md
         - name: Kapcsolatok létrehozása és kezelése
-          href: ../desktop-create-and-manage-relationships.md
+          href: desktop-create-and-manage-relationships.md
         - name: Az Elemzés panel használata
-          href: ../desktop-analytics-pane.md
+          href: desktop-analytics-pane.md
         - name: Az adatnézet használata
-          href: ../desktop-data-view.md
+          href: ../connect-data/desktop-data-view.md
         - name: DAX-alapok alkalmazása
-          href: ../desktop-quickstart-learn-dax-basics.md
+          href: desktop-quickstart-learn-dax-basics.md
         - name: A kapcsolat nézet használata
-          href: ../desktop-relationship-view.md
+          href: desktop-relationship-view.md
         - name: Adatok átalakítása
           items:
             - name: Bináris fájlok egyesítése
-              href: ../desktop-combine-binaries.md
+              href: desktop-combine-binaries.md
             - name: Az AI-elemzések használata (előzetes verzió)
-              href: ../desktop-ai-insights.md
-        - name: Adatmodellezés
+              href: desktop-ai-insights.md
+        - name: Adatok modellezése
           items:
             - name: Gyorsmérők létrehozása általános számításokhoz
-              href: ../desktop-quick-measures.md
+              href: desktop-quick-measures.md
             - name: Lehetőségelemzési paraméterek létrehozása és használata változók megjelenítésére
-              href: ../desktop-what-if.md
+              href: desktop-what-if.md
             - name: Adatkategóriák meghatározása a Power BI Desktopban
-              href: ../desktop-data-categorization.md
+              href: desktop-data-categorization.md
             - name: Vonalkód mezőinek címkézése a Power BI mobilalkalmazáshoz
-              href: ../desktop-mobile-barcodes.md
+              href: desktop-mobile-barcodes.md
             - name: Földrajzi szűrők beállítása mobilalkalmazásokhoz a Power BI-ban
-              href: ../desktop-mobile-geofiltering.md
+              href: desktop-mobile-geofiltering.md
             - name: Számított oszlopok létrehozása
-              href: ../desktop-calculated-columns.md
+              href: desktop-calculated-columns.md
             - name: Számított táblák létrehozása
-              href: ../desktop-calculated-tables.md
+              href: desktop-calculated-tables.md
             - name: Mértékek létrehozása adatelemzéshez
-              href: ../desktop-measures.md
+              href: desktop-measures.md
             - name: KPI-k importálása és megjelenítése
-              href: ../desktop-import-and-display-kpis.md
+              href: desktop-import-and-display-kpis.md
             - name: Automatikus dátum/idő alkalmazása
-              href: ../desktop-auto-date-time.md
+              href: desktop-auto-date-time.md
         - name: Önkiszolgáló adatelőkészítés
           items:
             - name: Adatfolyamok létrehozása és használata
-              href: ../service-dataflows-create-use.md
+              href: service-dataflows-create-use.md
             - name: Adatfolyamok előléptetése vagy hitelesítése
               href: service-dataflows-promote-certify.md
             - name: A továbbfejlesztett számítási motor használata adatfolyamokkal
-              href: ../service-dataflows-enhanced-compute-engine.md
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Számított entitások a Power BI Premiummal
-              href: ../service-dataflows-computed-entities-premium.md
+              href: service-dataflows-computed-entities-premium.md
             - name: Csatlakozás adatforrásokhoz adatfolyamokkal
-              href: ../service-dataflows-data-sources.md
+              href: service-dataflows-data-sources.md
             - name: Adatfolyamok használata helyszíni adatforrásokkal
-              href: ../service-dataflows-on-premises-gateways.md
+              href: service-dataflows-on-premises-gateways.md
             - name: Entitások összekötése adatfolyamok között
-              href: ../service-dataflows-linked-entities.md
+              href: service-dataflows-linked-entities.md
             - name: Növekményes frissítések használata adatfolyamokkal
-              href: ../service-dataflows-incremental-refresh.md
+              href: service-dataflows-incremental-refresh.md
             - name: Az adatfolyamokkal kapcsolatos fejlesztői források
-              href: ../service-dataflows-developer-resources.md
+              href: service-dataflows-developer-resources.md
             - name: Csatlakozás adatfolyamokhoz a Power BI Desktopban
-              href: ../desktop-connect-dataflows.md
+              href: desktop-connect-dataflows.md
             - name: Adatfolyamok és az Azure Data Lake integrációja (előzetes verzió)
-              href: ../service-dataflows-azure-data-lake-integration.md
+              href: service-dataflows-azure-data-lake-integration.md
             - name: Azure Data Lake Storage Gen2 csatlakoztatása adatfolyam-tároláshoz
-              href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
+              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
             - name: Munkaterület adatfolyam-beállításainak konfigurálása (előzetes verzió)
-              href: ../service-dataflows-configure-workspace-storage-settings.md
+              href: service-dataflows-configure-workspace-storage-settings.md
             - name: CDM-mappa hozzáadása a Power BI-hoz adatfolyamként (előzetes verzió)
-              href: ../service-dataflows-add-cdm-folder.md
+              href: service-dataflows-add-cdm-folder.md
             - name: A Machine Learning integrálása a Power BI-jal
-              href: ../service-machine-learning-integration.md
+              href: service-machine-learning-integration.md
             - name: A Cognitive Services használata a Power BI-ban
-              href: ../service-cognitive-services.md
+              href: service-cognitive-services.md
             - name: Automatizált Machine Learning a Power BI-ban
-              href: ../service-machine-learning-automated.md
-    - name: Referencia
+              href: service-machine-learning-automated.md
+    - name: Hivatkozás
       items:
         - name: A képletszerkesztő parancsikonjai
-          href: ../desktop-formula-editor.md
+          href: desktop-formula-editor.md

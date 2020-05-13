@@ -9,19 +9,19 @@
           href: overview.md
         - name: Optimalizálási útmutató a Power BI-hoz
           href: power-bi-optimization.md
-    - name: Alapelvek
+    - name: Fogalmak
       expanded: true
       items:
         - name: Adatok átalakítása
           items:
             - name: A lekérdezésdelegálás fontossága
               href: power-query-folding.md
-            - name: Power Query lekérdezésekre való hivatkozás
+            - name: Power Query-lekérdezésekre való hivatkozás
               href: power-query-referenced-queries.md
             - name: A Power Query háttérbeli frissítésének letiltása
               href: power-query-background-refresh.md
             - name: Adatfolyamokhoz ajánlott eljárások
-              href: ../service-dataflows-best-practices.md
+              href: ../transform-model/service-dataflows-best-practices.md
         - name: Adatmodellezés
           items:
             - name: Mi az a csillagséma?

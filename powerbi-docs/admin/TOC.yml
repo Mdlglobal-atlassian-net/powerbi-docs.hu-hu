@@ -5,75 +5,75 @@
     - name: Áttekintés
       expanded: true
       items:
-        - name: Mi a Power BI-felügyelet?
-          href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: Mit jelent a Power BI-felügyelet?
+          href: service-admin-administering-power-bi-in-your-organization.md
         - name: Hol található a bérlőm?
-          href: ../service-admin-where-is-my-tenant-located.md
-        - name: Mi a Power BI Premium?
-          href: ../service-premium-what-is.md
-    - name: Alapelvek
+          href: service-admin-where-is-my-tenant-located.md
+        - name: Mi az a Power BI Premium?
+          href: service-premium-what-is.md
+    - name: Fogalmak
       expanded: true
       items:
         - name: Felügyeleti szerepkör a Microsoft 365-ben
-          href: ../service-admin-role.md
+          href: service-admin-role.md
         - name: Szervezeti licencelés
-          href: ../service-admin-licensing-organization.md
+          href: service-admin-licensing-organization.md
         - name: Power BI az USA kormányzati szervei számára
           items:
             - name: Power BI az USA kormányzati szervei számára
-              href: ../service-govus-overview.md
+              href: service-govus-overview.md
             - name: USA kormányzati szerv regisztrálása
-              href: ../service-govus-signup.md
+              href: service-govus-signup.md
         - name: Power BI a regionális felhőkben
           items:
             - name: Migrate to Go helyi német régiók
               href: service-admin-migrate-data-germany.md
             - name: Gyakori kérdések a Germany Cloud-ügyfelek számára
-              href: ../service-govde-faq.md
+              href: service-govde-faq.md
         - name: Gyakori kérdések (GYIK)
-          href: ../service-admin-faq.md
+          href: service-admin-faq.md
         - name: Magas rendelkezésre állás és feladatátvétel – GYIK
-          href: ../service-admin-failover.md
+          href: service-admin-failover.md
         - name: Power BI Premium
           items:
             - name: Prémium szintű kapacitások kezelése
-              href: ../service-premium-capacity-manage.md
+              href: service-premium-capacity-manage.md
             - name: Prémium szintű kapacitások optimalizálása
-              href: ../service-premium-capacity-optimize.md
+              href: service-premium-capacity-optimize.md
             - name: Prémium szintű kapacitások forgatókönyvei
-              href: ../service-premium-capacity-scenarios.md
+              href: service-premium-capacity-scenarios.md
             - name: Power BI Premium – gyakori kérdések
-              href: ../service-premium-faq.md
-    - name: 'Útmutató:'
+              href: service-premium-faq.md
+    - name: Útmutató
       items:
         - name: Licencelés és regisztráció
           items:
             - name: Power BI beszerzése szervezeteknek
               href: service-admin-org-subscription.md
             - name: A Power BI Pro megvásárlása
-              href: ../service-admin-purchasing-power-bi-pro.md
+              href: service-admin-purchasing-power-bi-pro.md
             - name: Az önkiszolgáló regisztráció letiltása
               href: service-admin-disable-self-service.md
             - name: Felhasználói licencek megtekintése és kezelése
               href: service-admin-manage-licenses.md
             - name: Regisztráció egy Microsoft 365-próbaverzióval
-              href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: Power BI hozzáadása Microsoft 365 partnerrel
-              href: ../service-admin-syndication-partner.md
+              href: service-admin-syndication-partner.md
         - name: A felügyeleti portál használata
-          href: ../service-admin-portal.md
+          href: service-admin-portal.md
         - name: Bejelentkezett felhasználók keresése
-          href: ../service-admin-access-usage.md
+          href: service-admin-access-usage.md
         - name: Felhasználói tevékenységek nyomon követése
-          href: ../service-admin-auditing.md
+          href: service-admin-auditing.md
         - name: Szolgáltatásállapot nyomon követése
-          href: ../service-admin-health.md
+          href: service-admin-health.md
         - name: Fiók bezárása
-          href: ../service-admin-closing-your-account.md
+          href: service-admin-closing-your-account.md
         - name: Az Azure AD B2B használata
-          href: ../service-admin-azure-ad-b2b.md
+          href: service-admin-azure-ad-b2b.md
         - name: A Power BI Desktop bejelentkezésének kezelése – űrlap
-          href: ../desktop-admin-sign-in-form.md
+          href: desktop-admin-sign-in-form.md
         - name: Adatvédelem
           items:
             - name: Az adatvédelem áttekintése
@@ -85,65 +85,65 @@
             - name: Adatvédelmi metrikák jelentése
               href: service-security-data-protection-metrics-report.md
         - name: Sorszintű biztonság
-          href: ../service-admin-rls.md
+          href: service-admin-rls.md
         - name: Adatkészlet és adatfolyam-tanúsítvány beállítása
           href: service-admin-setup-certification.md
         - name: Mobilalkalmazások konfigurálása az Intune-nal
-          href: ../service-admin-mobile-intune.md
+          href: service-admin-mobile-intune.md
         - name: Power BI Premium
           items:
             - name: A Power BI Premium megvásárlása
-              href: ../service-admin-premium-purchase.md
+              href: service-admin-premium-purchase.md
             - name: Kapacitások konfigurálása és kezelése
-              href: ../service-admin-premium-manage.md
+              href: service-admin-premium-manage.md
             - name: Számítási feladatok konfigurálása
-              href: ../service-admin-premium-workloads.md
+              href: service-admin-premium-workloads.md
             - name: Kapacitások monitorozása az alkalmazással
-              href: ../service-admin-premium-monitor-capacity.md
+              href: service-admin-premium-monitor-capacity.md
             - name: A prémium szintű számítási feladatok metrikáinak figyelése
-              href: ../service-premium-metrics-app.md
+              href: service-premium-metrics-app.md
             - name: Kapacitások monitorozása a felügyeleti portálon
-              href: ../service-admin-premium-monitor-portal.md
+              href: service-admin-premium-monitor-portal.md
             - name: Nagyméretű modellek konfigurálása (előzetes verzió)
-              href: ../service-premium-large-models.md
+              href: service-premium-large-models.md
             - name: Multi-Geo konfigurálása
-              href: ../service-admin-premium-multi-geo.md
+              href: service-admin-premium-multi-geo.md
             - name: A saját titkosítási kulcsok használata
-              href: ../service-encryption-byok.md
+              href: service-encryption-byok.md
             - name: Prémium szintű kapacitás újraindítása
-              href: ../service-admin-premium-restart.md
+              href: service-admin-premium-restart.md
             - name: Adatkészlet-kapcsolat az XMLA-végponttal (előzetes verzió)
-              href: ../service-premium-connect-tools.md
-    - name: Referencia
+              href: service-premium-connect-tools.md
+    - name: Hivatkozás
       items:
         - name: 'PowerShell, REST API-k és .NET SDK'
-          href: ../service-admin-reference.md
+          href: service-admin-reference.md
         - name: Power BI-parancsmagok PowerShellhez
           href: 'https://docs.microsoft.com/powershell/power-bi/'
           maintainContext: true
         - name: Szolgáltatási URL-referencia
-          href: ../power-bi-whitelist-urls.md
+          href: power-bi-whitelist-urls.md
     - name: Erőforrások
       items:
         - name: Megközelítések a Power BI irányításához és üzembe helyezéséhez
-          href: ../service-admin-governance.md
+          href: service-admin-governance.md
         - name: A Power BI és a biztonság
-          href: ../service-admin-power-bi-security.md
+          href: service-admin-power-bi-security.md
         - name: Adatvédelmi szintek
-          href: ../desktop-privacy-levels.md
+          href: desktop-privacy-levels.md
     - name: Hibaelhárítás
       items:
         - name: Nem tud bejelentkezni?
-          href: ../power-bi-cannot-sign-in.md
+          href: power-bi-cannot-sign-in.md
         - name: A Power BI támogatási lehetőségei
-          href: ../service-support-options.md
+          href: service-support-options.md
         - name: Szolgáltatáskimaradásokkal kapcsolatos értesítések
-          href: ../service-interruption-notifications.md
+          href: service-interruption-notifications.md
         - name: Elfelejtette a Power BI-hoz használatos jelszavát?
-          href: ../service-admin-forgot-your-password.md
+          href: service-admin-forgot-your-password.md
         - name: További diagnosztikai adatok gyűjtése a Power BI számára
-          href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+          href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
         - name: Másodlagos e-mail-cím a Power BI-hoz
-          href: ../service-admin-alternate-email-address-for-power-bi.md
+          href: service-admin-alternate-email-address-for-power-bi.md
         - name: Ugyanazon bejelentkezési fiók használata a Power BI-hoz és az Azure-hoz
-          href: ../service-admin-how-to-use-the-same-account-as-azure.md
+          href: service-admin-how-to-use-the-same-account-as-azure.md

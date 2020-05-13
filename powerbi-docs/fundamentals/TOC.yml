@@ -6,50 +6,50 @@
       expanded: true
       items:
         - name: A Power BI bemutatása
-          href: ../power-bi-overview.md
+          href: power-bi-overview.md
         - name: Mi az a Power BI Desktop?
-          href: ../desktop-what-is-desktop.md
+          href: desktop-what-is-desktop.md
         - name: Mi az a Power BI szolgáltatás?
-          href: ../power-bi-service-overview.md
+          href: power-bi-service-overview.md
         - name: A Power BI Desktop és a szolgáltatás összehasonlítása
-          href: ../service-service-vs-desktop.md
-    - name: Alapelvek
+          href: service-service-vs-desktop.md
+    - name: Fogalmak
       items:
-        - name: A legújabb Power BI Desktop-frissítés újdonságai
-          href: ../desktop-latest-update.md
+        - name: Újdonságok a Power BI Desktop legújabb frissítésében
+          href: desktop-latest-update.md
         - name: A Power BI szolgáltatás újdonságai
-          href: ../service-whats-new.md
+          href: service-whats-new.md
         - name: A Power BI szolgáltatás ismertetése
-          href: ../service-basic-concepts.md
+          href: service-basic-concepts.md
         - name: 10 tanács segítségkéréshez
-          href: ../service-tips-for-finding-help.md
-        - name: Licencek
+          href: service-tips-for-finding-help.md
+        - name: Licencelés
           items:
             - name: Regisztráció a Power BI-ra
-              href: ../service-self-service-signup-for-power-bi.md
+              href: service-self-service-signup-for-power-bi.md
             - name: Funkciók licenctípusok szerint
-              href: ../service-features-license-type.md
+              href: service-features-license-type.md
     - name: Útmutatók
       items:
         - name: A Power BI Desktop beszerzése
-          href: ../desktop-get-the-desktop.md
+          href: desktop-get-the-desktop.md
         - name: Első lépések a Power BI Desktopban
-          href: ../desktop-getting-started.md
-    - name: Referencia
+          href: desktop-getting-started.md
+    - name: Hivatkozás
       items:
         - name: Támogatott nyelvek és országok/régiók
-          href: ../supported-languages-countries-regions.md
+          href: supported-languages-countries-regions.md
         - name: Támogatott böngészők
-          href: ../power-bi-browsers.md
+          href: power-bi-browsers.md
     - name: Erőforrások
       items:
         - name: Videók
-          href: ../videos.md
+          href: videos.md
         - name: Webináriumok
-          href: ../webinars.md
-        - name: Power BI Desktop-videók
-          href: ../desktop-videos.md
+          href: webinars.md
+        - name: Power BI Desktop videók
+          href: desktop-videos.md
         - name: A Power BI Desktop frissítési archívuma
-          href: ../desktop-latest-update-archive.md
+          href: desktop-latest-update-archive.md
         - name: Power BI Desktop Mosoly küldése – Adatvédelmi nyilatkozat
-          href: ../desktop-send-smile-privacy-statement.md
+          href: desktop-send-smile-privacy-statement.md

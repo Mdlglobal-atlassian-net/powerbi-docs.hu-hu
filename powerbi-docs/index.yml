@@ -13,12 +13,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/31/2020
-  ms.openlocfilehash: 0ad39302737284ecbde50a8810b740d68706c809
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 57fd08720d908ac67e383b91239e44373b1e586f
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "81439390"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83348758"
 highlightedContent:
   items:
   - title: COVID-19-jelentés létrehozása USA-beli adatokkal
@@ -26,24 +26,24 @@ highlightedContent:
     url: create-reports/sample-covid-19-us.md
   - title: Első lépések a Power BI Desktopban
     itemType: get-started
-    url: desktop-getting-started.md
+    url: fundamentals/desktop-getting-started.md
   - title: Regisztráció a Power BI szolgáltatásra
     itemType: how-to-guide
-    url: service-self-service-signup-for-power-bi.md
+    url: fundamentals/service-self-service-signup-for-power-bi.md
   - title: Együttműködési és tartalommegosztási módok
     itemType: concept
-    url: service-how-to-collaborate-distribute-dashboards-reports.md
+    url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
 conceptualContent:
   items:
   - title: 'A Power BI: Első lépések'
     links:
-    - url: power-bi-overview.md
+    - url: fundamentals/power-bi-overview.md
       itemType: overview
       text: A Power BI bemutatása
-    - url: desktop-what-is-desktop.md
+    - url: fundamentals/desktop-what-is-desktop.md
       itemType: overview
       text: Mi az a Power BI Desktop?
-    - url: power-bi-service-overview.md
+    - url: fundamentals/power-bi-service-overview.md
       itemType: overview
       text: Mi az a Power BI szolgáltatás?
     footerLink:
@@ -65,13 +65,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Power BI felügyelete
     links:
-    - url: service-admin-administering-power-bi-in-your-organization.md
+    - url: admin/service-admin-administering-power-bi-in-your-organization.md
       itemType: overview
       text: Mit jelent a Power BI-felügyelet?
-    - url: service-admin-licensing-organization.md
+    - url: admin/service-admin-licensing-organization.md
       itemType: concept
       text: Licencelés a cégnél
-    - url: service-admin-portal.md
+    - url: admin/service-admin-portal.md
       itemType: concept
       text: Felügyeleti portál
     footerLink:
@@ -93,13 +93,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Csatlakozás adatokhoz
     links:
-    - url: desktop-quickstart-connect-to-data.md
+    - url: connect-data/desktop-quickstart-connect-to-data.md
       itemType: tutorial
       text: Csatlakozás adatokhoz
-    - url: service-gateway-onprem.md
+    - url: connect-data/service-gateway-onprem.md
       itemType: concept
       text: Helyszíni adatátjárók
-    - url: refresh-data.md
+    - url: connect-data/refresh-data.md
       itemType: concept
       text: Adatfrissítés
     footerLink:
@@ -107,13 +107,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Adatok átalakítása
     links:
-    - url: desktop-analytics-pane.md
+    - url: transform-model/desktop-analytics-pane.md
       itemType: how-to-guide
       text: Az Elemzés panel használata
-    - url: desktop-common-query-tasks.md
+    - url: transform-model/desktop-common-query-tasks.md
       itemType: concept
       text: Gyakori lekérdezési feladatok
-    - url: desktop-shape-and-combine-data.md
+    - url: connect-data/desktop-shape-and-combine-data.md
       itemType: tutorial
       text: Adatok formázása és egyesítése
     footerLink:
@@ -121,13 +121,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Adatmodellezés
     links:
-    - url: desktop-add-custom-column.md
+    - url: create-reports/desktop-add-custom-column.md
       itemType: how-to-guide
       text: Egyéni oszlop hozzáadása
-    - url: desktop-tutorial-create-calculated-columns.md
+    - url: transform-model/desktop-tutorial-create-calculated-columns.md
       itemType: tutorial
       text: Számított oszlopok létrehozása
-    - url: desktop-create-and-manage-relationships.md
+    - url: transform-model/desktop-create-and-manage-relationships.md
       itemType: how-to-guide
       text: Kapcsolatok létrehozása és kezelése
     footerLink:
@@ -135,13 +135,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Jelentések és irányítópultok létrehozása
     links:
-    - url: desktop-report-themes.md
+    - url: create-reports/desktop-report-themes.md
       itemType: concept
       text: Jelentéstémák
     - url: paginated-reports/paginated-reports-report-builder-power-bi.md
       itemType: concept
       text: Mik azok a többoldalas jelentések?
-    - url: service-dashboard-create.md
+    - url: create-reports/service-dashboard-create.md
       itemType: how-to-guide
       text: Irányítópult létrehozása
     footerLink:
@@ -149,13 +149,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Közös használat és tartalommegosztás
     links:
-    - url: service-share-dashboards.md
+    - url: collaborate-share/service-share-dashboards.md
       itemType: concept
       text: Irányítópultok és jelentések megosztása
-    - url: service-create-the-new-workspaces.md
+    - url: collaborate-share/service-create-the-new-workspaces.md
       itemType: how-to-guide
       text: Új munkaterületek létrehozása
-    - url: service-datasets-across-workspaces.md
+    - url: connect-data/service-datasets-across-workspaces.md
       itemType: concept
       text: Megosztott adatkészletek – bevezetés
     footerLink:
@@ -163,13 +163,13 @@ conceptualContent:
       text: Több megjelenítése
   - title: Integrálás termékek között
     links:
-    - url: service-azure-and-power-bi.md
+    - url: connect-data/service-azure-and-power-bi.md
       itemType: concept
       text: Az Azure és a Power BI
-    - url: service-analyze-in-excel.md
+    - url: collaborate-share/service-analyze-in-excel.md
       itemType: concept
       text: Elemzés az Excelben
-    - url: service-embed-report-spo.md
+    - url: collaborate-share/service-embed-report-spo.md
       itemType: concept
       text: Beágyazás SharePoint Online-ba
     footerLink:
@@ -191,10 +191,10 @@ conceptualContent:
       text: Több megjelenítése
   - title: Nagyvállalati szektor
     links:
-    - url: service-premium-what-is.md
+    - url: admin/service-premium-what-is.md
       itemType: overview
       text: Mi az a Power BI Premium?
-    - url: service-admin-power-bi-security.md
+    - url: admin/service-admin-power-bi-security.md
       itemType: concept
       text: Biztonság
     - url: admin/service-security-data-protection-overview.md

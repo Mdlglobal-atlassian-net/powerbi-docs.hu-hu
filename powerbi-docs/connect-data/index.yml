@@ -12,60 +12,60 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 02/25/2020
-  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: b1f5d2842bb65710cda9e83dc821b7a60117f756
+  ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "78924138"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83273868"
 landingContent:
-- title: Kapcsolódás adatokhoz a Power BI-ban
+- title: Csatlakozás adatokhoz a Power BI-ban
   linkLists:
   - linkListType: concept
     links:
     - text: Adatforrások
-      url: ../desktop-data-sources.md
+      url: desktop-data-sources.md
     - text: Adatnézet a Power BI Desktopban
-      url: ../desktop-data-view.md
+      url: desktop-data-view.md
   - linkListType: tutorial
     links:
     - text: Adatok importálása egy weblapról
-      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+      url: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
 - title: Átjárók
   linkLists:
   - linkListType: concept
     links:
     - text: Helyszíni adatátjárók
-      url: ../service-gateway-onprem.md
+      url: service-gateway-onprem.md
   - linkListType: tutorial
     links:
     - text: Csatlakozás helyszíni SQL Server-adatokhoz
-      url: ../service-gateway-sql-tutorial.md
+      url: service-gateway-sql-tutorial.md
   - linkListType: how-to-guide
     links:
     - text: Privát átjárók használata
-      url: ../service-gateway-personal-mode.md
+      url: service-gateway-personal-mode.md
 - title: Sablonalkalmazások
   linkLists:
   - linkListType: overview
     links:
     - text: Mik a sablonalkalmazások?
-      url: ../service-template-apps-overview.md
+      url: service-template-apps-overview.md
   - linkListType: concept
     links:
     - text: Sablonalkalmazások létrehozása
-      url: ../service-template-apps-create.md
+      url: service-template-apps-create.md
     - text: Sablonalkalmazások terjesztése a szervezetnél
-      url: ../service-template-apps-install-distribute.md
+      url: service-template-apps-install-distribute.md
 - title: Adatok frissítése
   linkLists:
   - linkListType: concept
     links:
     - text: Adatfrissítés
-      url: ../refresh-data.md
+      url: refresh-data.md
     - text: Növekményes frissítés a Power BI Premium szolgáltatásban
-      url: ../service-premium-incremental-refresh.md
+      url: ../admin/service-premium-incremental-refresh.md
   - linkListType: how-to-guide
     links:
     - text: Ütemezett frissítés beállítása
-      url: ../refresh-scheduled-refresh.md
+      url: refresh-scheduled-refresh.md

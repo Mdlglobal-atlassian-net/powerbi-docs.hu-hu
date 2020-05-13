@@ -12,56 +12,56 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/03/2020
-  ms.openlocfilehash: d4099c6ad1a5ed6396d8c4a777e3a0aa13a6d570
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 9b2f5fd70ed00dccb122fb4195284a1f3e0f75c2
+  ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "79112763"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83275179"
 landingContent:
 - title: Együttműködés és megosztás – első lépések
   linkLists:
   - linkListType: overview
     links:
     - text: A munka megosztásának módjai
-      url: ../service-how-to-collaborate-distribute-dashboards-reports.md
+      url: service-how-to-collaborate-distribute-dashboards-reports.md
 - title: Munkatársakkal való együttműködés
   linkLists:
   - linkListType: concept
     links:
     - text: Adathalmazok használata több munkaterületen
-      url: ../service-datasets-across-workspaces.md
+      url: ../connect-data/service-datasets-across-workspaces.md
     - text: Megosztott adathalmazokra vonatkozó összeállítási engedélyek
-      url: ../service-datasets-build-permissions.md
+      url: ../connect-data/service-datasets-build-permissions.md
   - linkListType: how-to-guide
     links:
     - text: Munka szervezése az új munkaterületeken
-      url: ../service-new-workspaces.md
+      url: service-new-workspaces.md
 - title: Hogyan oszthatja meg munkáját
   linkLists:
   - linkListType: concept
     links:
     - text: Alkalmazás közzététele
-      url: ../service-create-distribute-apps.md
+      url: service-create-distribute-apps.md
     - text: A használati metrikák figyelése
-      url: ../service-modern-usage-metrics.md
+      url: service-modern-usage-metrics.md
   - linkListType: how-to-guide
     links:
     - text: Jelentések és irányítópultok megosztása
-      url: ../service-share-dashboards.md
+      url: service-share-dashboards.md
     - text: Jelentés szűrése és megosztása
-      url: ../service-share-reports.md
+      url: service-share-reports.md
     - text: Adatkészlet megosztása
-      url: ../service-datasets-share.md
+      url: ../connect-data/service-datasets-share.md
 - title: Integráció más szolgáltatásokkal
   linkLists:
   - linkListType: concept
     links:
     - text: Az Azure és a Power BI
-      url: ../service-azure-and-power-bi.md
+      url: ../connect-data/service-azure-and-power-bi.md
     - text: Elemzés az Excelben
-      url: ../service-analyze-in-excel.md
+      url: service-analyze-in-excel.md
   - linkListType: how-to-guide
     links:
-    - text: Beágyazás a SharePoint Online-ban
-      url: ../service-embed-report-spo.md
+    - text: Beágyazás SharePoint Online-ba
+      url: service-embed-report-spo.md

@@ -5,7 +5,7 @@
       expanded: true
       items:
         - name: A jelentésszerkesztő bemutatása
-          href: ../service-the-report-editor-take-a-tour.md
+          href: service-the-report-editor-take-a-tour.md
         - name: Mik azok a többoldalas jelentések?
           href: ../paginated-reports/paginated-reports-report-builder-power-bi.md
     - name: Oktatóanyagok
@@ -19,46 +19,46 @@
       expanded: true
       items:
         - name: Power BI-minták beszerzése
-          href: ../sample-datasets.md
+          href: sample-datasets.md
         - name: 'COVID-19-minta, USA'
           href: sample-covid-19-us.md
         - name: Ügyfél-jövedelmezőségi minta
-          href: ../sample-customer-profitability.md
+          href: sample-customer-profitability.md
         - name: Informatikaköltség-elemzési minta
-          href: ../sample-it-spend.md
+          href: sample-it-spend.md
         - name: Emberi erőforrások minta
-          href: ../sample-human-resources.md
+          href: sample-human-resources.md
         - name: Lehetőségelemzési minta
-          href: ../sample-opportunity-analysis.md
+          href: sample-opportunity-analysis.md
         - name: Beszerzéselemzési minta
-          href: ../sample-procurement.md
+          href: sample-procurement.md
         - name: Kiskereskedelmi elemzési minta
-          href: ../sample-retail-analysis.md
+          href: sample-retail-analysis.md
         - name: Kiskereskedelmi elemzési minta vizsgálata
-          href: ../sample-tutorial-connect-to-the-samples.md
+          href: sample-tutorial-connect-to-the-samples.md
         - name: Értékesítési és marketingminta
-          href: ../sample-sales-and-marketing.md
+          href: sample-sales-and-marketing.md
         - name: Szállítói minőségelemzési minta
-          href: ../sample-supplier-quality.md
+          href: sample-supplier-quality.md
         - name: A Pénzügyi minta munkafüzet letöltése
-          href: ../sample-financial-download.md
+          href: sample-financial-download.md
     - name: Fogalmak
       expanded: true
       items:
         - name: Power BI-jelentések
           items:
             - name: A jelentés nézet használata
-              href: ../desktop-report-view.md
+              href: desktop-report-view.md
             - name: Szűrőtípusok a jelentésekben
-              href: ../power-bi-report-filter-types.md
+              href: power-bi-report-filter-types.md
             - name: Szűrők és kiemelések a jelentésekben
-              href: ../power-bi-reports-filters-and-highlighting.md
+              href: power-bi-reports-filters-and-highlighting.md
             - name: Nagy sűrűségű vonalas mintavétel
-              href: ../desktop-high-density-sampling.md
+              href: desktop-high-density-sampling.md
             - name: Q&A-vizualizációk ismertetése
               href: ../visuals/power-bi-visualization-q-and-a.md
             - name: Akadálymentesség
-              href: ../desktop-accessibility-overview.md
+              href: desktop-accessibility-overview.md
             - name: Természetes nyelv és Q&A
               items:
                 - name: Q&A – bevezetés
@@ -112,107 +112,107 @@
         - name: Power BI-jelentések
           items:
             - name: Automatikus oldalfrissítés engedélyezése (előzetes verzió)
-              href: ../desktop-automatic-page-refresh.md
+              href: desktop-automatic-page-refresh.md
             - name: A jelentés elemeinek vizsgálata a teljesítményelemzővel
-              href: ../desktop-performance-analyzer.md
+              href: desktop-performance-analyzer.md
             - name: Vizuális elemek hozzáadása jelentésekhez
-              href: ../desktop-visual-elements-for-reports.md
+              href: desktop-visual-elements-for-reports.md
             - name: Elemleírások hozzáadása a jelentéshez a vizualizációk továbbfejlesztéséhez
-              href: ../desktop-tooltips.md
+              href: desktop-tooltips.md
             - name: Jelentések exportálása PDF-fájlba
-              href: ../desktop-export-to-pdf.md
+              href: desktop-export-to-pdf.md
             - name: Elemzések használata vizualizációk ingadozásának értelmezéséhez (előzetes verzió)
-              href: ../desktop-insights.md
+              href: desktop-insights.md
             - name: Elemzések használata az eloszlások ingadozásainak feltárásához (előzetes verzió)
-              href: ../desktop-insights-find-where-different.md
+              href: desktop-insights-find-where-different.md
             - name: Gombok létrehozása
-              href: ../desktop-buttons.md
+              href: desktop-buttons.md
             - name: Részletezési gombok létrehozása
-              href: ../desktop-drill-through-buttons.md
+              href: desktop-drill-through-buttons.md
             - name: A részletezési funkció használata
-              href: ../desktop-drillthrough.md
+              href: desktop-drillthrough.md
             - name: Több jelentésre kiterjedő részletezés funkció használata
-              href: ../desktop-cross-report-drill-through.md
+              href: desktop-cross-report-drill-through.md
             - name: Könyvjelzők létrehozása az eredmények mentéséhez és megosztásához
-              href: ../desktop-bookmarks.md
+              href: desktop-bookmarks.md
             - name: Jelentéskészítési témák használata
-              href: ../desktop-report-themes.md
+              href: desktop-report-themes.md
             - name: Szűrők használata jelentésekben
-              href: ../power-bi-report-filter.md
+              href: power-bi-report-filter.md
             - name: Szűrő hozzáadása jelentéshez
-              href: ../power-bi-report-add-filter.md
+              href: power-bi-report-add-filter.md
             - name: Csoportosítás és tárolás alkalmazása
-              href: ../desktop-grouping-and-binning.md
+              href: desktop-grouping-and-binning.md
             - name: Rácsvonalak és rácsvonalhoz igazítás használata
-              href: ../desktop-gridlines-snap-to-grid.md
+              href: desktop-gridlines-snap-to-grid.md
             - name: Oldal megjelenítési beállításai jelentésekben
-              href: ../power-bi-report-display-settings.md
+              href: power-bi-report-display-settings.md
             - name: Oszlop hozzáadása mintából
-              href: ../desktop-add-column-from-example.md
+              href: desktop-add-column-from-example.md
             - name: Egyéni oszlop hozzáadása
-              href: ../desktop-add-custom-column.md
+              href: desktop-add-custom-column.md
             - name: Beágyazott hierarchiák feliratai használata
-              href: ../desktop-inline-hierarchy-labels.md
+              href: desktop-inline-hierarchy-labels.md
             - name: Szeletelők
               href: ../visuals/power-bi-visualization-slicers.md
             - name: Numerikustartomány-szeletelő
-              href: ../desktop-slicer-numeric-range.md
+              href: desktop-slicer-numeric-range.md
             - name: Relatív dátumszeletelők és -szűrők
               href: ../visuals/desktop-slicer-filter-date-range.md
             - name: Relatívidő-szeletelők és szűrők
               href: slicer-filter-relative-time.md
             - name: Átméretezhető szeletelő létrehozása
-              href: ../power-bi-slicer-filter-responsive.md
+              href: power-bi-slicer-filter-responsive.md
             - name: Több mező hozzáadása egy szeletelőhöz
               href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Az adathozzáférés korlátozása sorszintű biztonsággal
-              href: ../desktop-rls.md
+              href: desktop-rls.md
             - name: Az elemleírások testreszabása
-              href: ../desktop-custom-tooltips.md
+              href: desktop-custom-tooltips.md
             - name: Szövegmezők és alakzatok hozzáadása egy jelentéshez
-              href: ../power-bi-reports-add-text-and-shapes.md
+              href: power-bi-reports-add-text-and-shapes.md
             - name: Hivatkozás hozzáadása egy szövegdobozhoz
-              href: ../service-add-hyperlink-to-text-box.md
+              href: service-add-hyperlink-to-text-box.md
             - name: Hivatkozások táblázathoz adása
-              href: ../power-bi-hyperlinks-in-tables.md
+              href: power-bi-hyperlinks-in-tables.md
             - name: 'Képek megjelenítése táblázatban, mátrixban vagy szeletelőben'
-              href: ../power-bi-images-tables.md
+              href: power-bi-images-tables.md
             - name: Egyéni formátumsztringek megjelenítése
-              href: ../desktop-custom-format-strings.md
+              href: desktop-custom-format-strings.md
             - name: Táblázat feltételes formázása
-              href: ../desktop-conditional-table-formatting.md
+              href: desktop-conditional-table-formatting.md
             - name: 'Dinamikus, kifejezésen alapuló címek létrehozása'
-              href: ../desktop-conditional-format-visual-titles.md
+              href: desktop-conditional-format-visual-titles.md
             - name: Rendezés oszlop szerint
-              href: ../desktop-sort-by-column.md
+              href: desktop-sort-by-column.md
             - name: Jelentések optimalizálása mobilalkalmazásokhoz
-              href: ../desktop-create-phone-report.md
+              href: desktop-create-phone-report.md
             - name: Az Adatok megtekintése és a Rekordok megtekintése lehetőség használata
-              href: ../desktop-see-data-see-records.md
+              href: desktop-see-data-see-records.md
             - name: Tippek és trükkök jelentések létrehozásához
-              href: ../desktop-tips-and-tricks-for-creating-reports.md
+              href: desktop-tips-and-tricks-for-creating-reports.md
             - name: Csoportvizualizációk jelentésekben
-              href: ../desktop-grouping-visuals.md
+              href: desktop-grouping-visuals.md
             - name: Jelentéskészítési sablonok létrehozása
-              href: ../desktop-templates.md
+              href: desktop-templates.md
             - name: Jelentés létrehozása adatkészletből
-              href: ../service-report-create-new.md
+              href: service-report-create-new.md
             - name: Jelentés mentése
-              href: ../service-report-save.md
+              href: service-report-save.md
             - name: Jelentés használata Szerkesztő nézetben
-              href: ../service-interact-with-a-report-in-editing-view.md
+              href: service-interact-with-a-report-in-editing-view.md
             - name: Elemzés az Excelben
-              href: ../service-analyze-in-excel.md
+              href: ../collaborate-share/service-analyze-in-excel.md
             - name: Összesítések használata a szolgáltatásban
-              href: ../service-aggregates.md
+              href: service-aggregates.md
             - name: QR-kód létrehozása jelentéshez
-              href: ../service-create-qr-code-for-report.md
+              href: service-create-qr-code-for-report.md
             - name: Vizualizációk testre szabásának engedélyezése fogyasztók számára (előzetes verzió)
               href: power-bi-personalize-visuals.md
             - name: Jelentés exportálása a Power BI Desktopba (előzetes verzió)
-              href: ../service-export-to-pbix.md
+              href: service-export-to-pbix.md
             - name: Adatkészletek és jelentések közzététele
-              href: ../desktop-upload-desktop-files.md
+              href: desktop-upload-desktop-files.md
         - name: Vizualizációk
           items:
             - name: Vizualizációk hozzáadása egy jelentéshez (1. rész)
@@ -226,7 +226,7 @@
             - name: 'Vizuális címek, hátterek és jelmagyarázatok testreszabása'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
             - name: Adatot nem tartalmazó elemek megjelenítése
-              href: ../desktop-show-items-no-data.md
+              href: desktop-show-items-no-data.md
             - name: Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
               href: ../visuals/power-bi-data-points.md
             - name: Vizualizáció alapjául szolgáló adatok megjelenítése
@@ -242,7 +242,7 @@
             - name: 'Vizuális elem áthelyezése, átméretezése és kiugróvá tétele a jelentésben'
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: Vizualizációk jelentésen belüli működésének módosítása
-              href: ../service-reports-visual-interactions.md
+              href: service-reports-visual-interactions.md
             - name: Tippek és trükkök térképvizualizációkhoz
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X és Y tengely tulajdonságainak testreszabása
@@ -276,9 +276,9 @@
             - name: R vizualizációk
               href: ../visuals/service-r-visuals.md
             - name: Power BI-vizualizációk létrehozása az R programozási nyelvvel
-              href: ../desktop-r-visuals.md
+              href: desktop-r-visuals.md
             - name: R-alapú Power BI-vizualizációk a letöltése
-              href: ../desktop-r-powered-custom-visuals.md
+              href: desktop-r-powered-custom-visuals.md
             - name: Tárcsadiagramok
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Szalagdiagramok
@@ -304,29 +304,29 @@
             - name: Q&A – ajánlott eljárások
               href: ../natural-language/q-and-a-best-practices.md
             - name: Adatok feltárása Q&A használatával
-              href: ../power-bi-tutorial-q-and-a.md
+              href: power-bi-tutorial-q-and-a.md
             - name: Vizualizáció létrehozása a Q&A segítségével
-              href: ../power-bi-visualization-introduction-to-q-and-a.md
+              href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Excel-adatok megfelelő működésének biztosítása a Q&A használatakor
-              href: ../service-prepare-data-for-q-and-a.md
+              href: service-prepare-data-for-q-and-a.md
             - name: Kiemelt kérdések létrehozása a Q&A-hez
-              href: ../service-q-and-a-create-featured-questions.md
+              href: service-q-and-a-create-featured-questions.md
             - name: A Q&A használata élő kapcsolatokkal
-              href: ../service-q-and-a-direct-query.md
+              href: service-q-and-a-direct-query.md
             - name: Gyors elemzések
-              href: ../service-insights.md
+              href: service-insights.md
             - name: Adatok optimalizálása gyors elemzésekhez
-              href: ../service-insights-optimize.md
+              href: service-insights-optimize.md
         - name: Akadálymentesség
           items:
             - name: Akadálymentes jelentések tervezése
-              href: ../desktop-accessibility-creating-reports.md
+              href: desktop-accessibility-creating-reports.md
             - name: Akadálymentességi eszközökkel rendelkező jelentések létrehozása
-              href: ../desktop-accessibility-creating-tools.md
+              href: desktop-accessibility-creating-tools.md
             - name: Akadálymentességi eszközökkel rendelkező jelentések használata
-              href: ../desktop-accessibility-consuming-tools.md
+              href: desktop-accessibility-consuming-tools.md
             - name: Billentyűparancsok a Power BI Desktopban
-              href: ../desktop-accessibility-keyboard-shortcuts.md
+              href: desktop-accessibility-keyboard-shortcuts.md
         - name: Oldalakra osztott jelentések
           items:
             - name: Adatok megadása közvetlenül többoldalas jelentésben
@@ -350,39 +350,39 @@
         - name: Irányítópultok
           items:
             - name: Az irányítópult bemutatása
-              href: ../service-dashboards.md
+              href: service-dashboards.md
             - name: Irányítópult-csempék
-              href: ../service-dashboard-tiles.md
+              href: service-dashboard-tiles.md
             - name: Irányítópult létrehozása jelentésből
-              href: ../service-dashboard-create.md
+              href: service-dashboard-create.md
             - name: Irányítópult másolatának létrehozása
-              href: ../service-dashboard-copy.md
+              href: service-dashboard-copy.md
             - name: Csempe rögzítése az irányítópultra jelentésből
-              href: ../service-dashboard-pin-tile-from-report.md
+              href: service-dashboard-pin-tile-from-report.md
             - name: Csempe kitűzése egy irányítópultról egy másikra
-              href: ../service-pin-tile-to-another-dashboard.md
+              href: service-pin-tile-to-another-dashboard.md
             - name: Csempe rögzítése az irányítópultra az Excelből
-              href: ../service-dashboard-pin-tile-from-excel.md
+              href: service-dashboard-pin-tile-from-excel.md
             - name: Csempe rögzítése az irányítópultra a Q&A kérdésmezőből
-              href: ../service-dashboard-pin-tile-from-q-and-a.md
+              href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Teljes jelentésoldal rögzítése irányítópultra
-              href: ../service-dashboard-pin-live-tile-from-report.md
+              href: service-dashboard-pin-live-tile-from-report.md
             - name: Adatriasztások a szolgáltatásban
-              href: ../service-set-data-alerts.md
+              href: service-set-data-alerts.md
             - name: 'Kép, szövegmező, videó vagy kód felvétele az irányítópultra'
-              href: ../service-dashboard-add-widget.md
+              href: service-dashboard-add-widget.md
             - name: Csempe szerkesztése
-              href: ../service-dashboard-edit-tile.md
+              href: service-dashboard-edit-tile.md
             - name: Tippek a tökéletes irányítópult megtervezéséhez
-              href: ../service-dashboards-design-tips.md
+              href: service-dashboards-design-tips.md
             - name: Irányítópult optimalizálása telefonokra
-              href: ../service-create-dashboard-mobile-phone-view.md
+              href: service-create-dashboard-mobile-phone-view.md
             - name: QR-kód létrehozása csempéhez
-              href: ../service-create-qr-code-for-tile.md
+              href: service-create-qr-code-for-tile.md
             - name: Irányítópult adatainak besorolása
-              href: ../service-data-classification.md
+              href: service-data-classification.md
             - name: Irányítópult-témák
-              href: ../service-dashboard-themes.md
+              href: service-dashboard-themes.md
         - name: Üzembe helyezési folyamatok
           items:
             - name: Első lépések
@@ -392,8 +392,8 @@
         - name: Egyéb feladatok
           items:
             - name: Tartalom átnevezése
-              href: ../service-rename.md
+              href: service-rename.md
             - name: Elemek névjegyének beállítása
-              href: ../service-item-contact.md
+              href: service-item-contact.md
             - name: Szinte bármelyik elem törlése
-              href: ../service-delete.md
+              href: service-delete.md

@@ -27,9 +27,9 @@
         - name: Kérdések feltétele természetes nyelven
           href: end-user-q-and-a.md
         - name: Navigálás az „új megjelenésen”
-          href: ../service-new-look.md
+          href: service-new-look.md
         - name: 'Az „új megjelenés”: Hol vannak a műveletek?'
-          href: ../service-new-look-where-actions.md
+          href: service-new-look-where-actions.md
     - name: Útmutató
       items:
         - name: Irányítópultok
@@ -93,7 +93,7 @@
             - name: Vizualizációk részletes elemzése
               href: end-user-drill.md
             - name: Az ArcGIS-térképek használata
-              href: ../power-bi-visualizations-arcgis.md
+              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Gyakori feladatok
           items:
             - name: Adatok exportálása Excelbe
