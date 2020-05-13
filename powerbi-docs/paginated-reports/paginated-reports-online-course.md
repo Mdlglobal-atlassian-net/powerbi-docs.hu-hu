@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ada695b2a568358f96010feb320226437beeb075
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81675639"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349172"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Online kurzus: Többoldalas Power BI-jelentések egy nap alatt
 
@@ -100,11 +100,11 @@ Javasoljuk, hogy először tekintse meg az online tanfolyamot. A prezentáció e
 Amikor készen áll az első laborgyakorlat megkezdésére, nyissa meg a **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** fájlt. Ez a dokumentum segít bejelentkezni a Power BI szolgáltatásba, feltölteni egy adatkészletet, majd telepíteni a [Power BI Jelentéskészítőt](report-builder-power-bi.md).
 
 > [!NOTE]
-> Power BI-fiókot Önnek kell létrehoznia. Ha még nem rendelkezik eggyel, [regisztráljon a Power BI-ra egyéni felhasználóként](../service-self-service-signup-for-power-bi.md).
+> Power BI-fiókot Önnek kell létrehoznia. Ha még nem rendelkezik eggyel, [regisztráljon a Power BI-ra egyéni felhasználóként](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Ha egy Power BI Desktop-fájlt szeretne közzétenni egy munkaterületen, be kell jelentkeznie a Power BI-ba. A közzététel eredményeképp létrejött adatkészlet a jelentés adatforrása. Ahhoz, hogy a jelentés adatforrásaként egy adatkészletet használjon, nem szükséges Power BI Pro-licenccel vagy Power BI Premium-előfizetéssel rendelkeznie.
 >
-> Néhány laborgyakorlatban azonban közzé kell tennie egy lapszámozott jelentést egy munkaterületen. Lapszámozott jelentést csak akkor nyithat meg, ha az egy olyan [dedikált kapacitáson](../service-premium-what-is.md#dedicated-capacities) található munkaterületen van mentve, amelyen engedélyezve van a lapszámozott jelentések számítási feladata. Ha nem rendelkezik megfelelő munkaterülettel, egy hivatkozással megtekinthet egy videót arról, hogy hogyan teheti közzé a jelentést.
+> Néhány laborgyakorlatban azonban közzé kell tennie egy lapszámozott jelentést egy munkaterületen. Lapszámozott jelentést csak akkor nyithat meg, ha az egy olyan [dedikált kapacitáson](../admin/service-premium-what-is.md#dedicated-capacities) található munkaterületen van mentve, amelyen engedélyezve van a lapszámozott jelentések számítási feladata. Ha nem rendelkezik megfelelő munkaterülettel, egy hivatkozással megtekinthet egy videót arról, hogy hogyan teheti közzé a jelentést.
 
 ## <a name="instructor-kit"></a>Oktatói csomag
 

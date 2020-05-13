@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b87848953722d33235a11729a3643c627cca7234
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d9fd23a0cf5c3ed26c78e4c53ae600bf74daca91
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525614"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348183"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services-jelentések migrálása a Power BI-ba
 
@@ -37,7 +37,7 @@ A migrálás megkezdése előtt ellenőrizze, hogy a környezet megfelel-e bizon
 
 ### <a name="preparing-for-migration"></a>A migrálás előkészítése
 
-A Power BI-ba való jelentésmigrálás előkészítésének első lépéseként ellenőrizze, hogy szervezete rendelkezik-e [Power BI Premium](../service-premium-what-is.md) előfizetéssel. A Power BI lapszámozott jelentéseinek üzemeltetéséhez és futtatásához szükség van erre az előfizetésre.
+A Power BI-ba való jelentésmigrálás előkészítésének első lépéseként ellenőrizze, hogy szervezete rendelkezik-e [Power BI Premium](../admin/service-premium-what-is.md) előfizetéssel. A Power BI lapszámozott jelentéseinek üzemeltetéséhez és futtatásához szükség van erre az előfizetésre.
 
 ### <a name="supported-versions"></a>Támogatott verziók
 
@@ -112,12 +112,12 @@ A Power BI lapszámozott jelentései általában **nyomtatáshoz** vagy **PDF-l�
 
 A _előkészítési_ fázis célja, hogy minden készen álljon. Ismerteti a Power BI-környezet beállítását, a jelentések biztonságossá tételének és közzétételének megtervezését, valamint a nem migrált SSRS-elemek újrafejlesztéséhez használható ötleteket.
 
-1. Győződjön meg arról, hogy a [Lapszámozott jelentések számítási feladat](../service-admin-premium-workloads.md#paginated-reports) engedélyezve van a Power BI Premium-kapacitáshoz, és hogy elegendő memóriával rendelkezik.
-1. Ellenőrizze a jelentés [adatforrásainak](../paginated-reports/paginated-reports-data-sources.md) támogatását, és állítson be egy [Power BI-átjárót](../service-gateway-onprem.md), amely lehetővé teszi a helyszíni adatforrásokhoz való kapcsolódást.
-1. Ismerje meg a Power BI biztonsági funkcióit, és tervezze meg, [hogyan fogja reprodukálni az SSRS-mappákat és az engedélyeket](/sql/reporting-services/security/secure-folders) a [Power BI munkaterületeivel és munkaterület-szerepköreivel](../service-new-workspaces.md).
-1. Ismerje meg a Power BI megosztási funkcióit, és tervezze meg, hogyan fogja terjeszteni a tartalmat [Power BI-alkalmazások](../service-create-distribute-apps.md) közzétételével.
-1. Használjon [megosztott Power BI-adatkészleteket](../service-datasets-build-permissions.md) az SSRS megosztott adatforrásai helyett.
-1. A [Power BI Desktoppal](../desktop-what-is-desktop.md) fejlesszen mobilra optimalizált jelentéseket. Ehhez a [Power KPI egyéni vizualizációt](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) is használhatja az SSRS-mobiljelentések és KPI-k helyett.
+1. Győződjön meg arról, hogy a [Lapszámozott jelentések számítási feladat](../admin/service-admin-premium-workloads.md#paginated-reports) engedélyezve van a Power BI Premium-kapacitáshoz, és hogy elegendő memóriával rendelkezik.
+1. Ellenőrizze a jelentés [adatforrásainak](../paginated-reports/paginated-reports-data-sources.md) támogatását, és állítson be egy [Power BI-átjárót](../connect-data/service-gateway-onprem.md), amely lehetővé teszi a helyszíni adatforrásokhoz való kapcsolódást.
+1. Ismerje meg a Power BI biztonsági funkcióit, és tervezze meg, [hogyan fogja reprodukálni az SSRS-mappákat és az engedélyeket](/sql/reporting-services/security/secure-folders) a [Power BI munkaterületeivel és munkaterület-szerepköreivel](../collaborate-share/service-new-workspaces.md).
+1. Ismerje meg a Power BI megosztási funkcióit, és tervezze meg, hogyan fogja terjeszteni a tartalmat [Power BI-alkalmazások](../collaborate-share/service-create-distribute-apps.md) közzétételével.
+1. Használjon [megosztott Power BI-adatkészleteket](../connect-data/service-datasets-build-permissions.md) az SSRS megosztott adatforrásai helyett.
+1. A [Power BI Desktoppal](../fundamentals/desktop-what-is-desktop.md) fejlesszen mobilra optimalizált jelentéseket. Ehhez a [Power KPI egyéni vizualizációt](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) is használhatja az SSRS-mobiljelentések és KPI-k helyett.
 1. A **UserID** (Felhasználóazonosító) beépített mező használatának újraértékelése a jelentésekben. Ha a jelentés adatainak védelmekor a **UserID** mezőre hagyatkozik, akkor vegye figyelembe, hogy ez az oldalakra osztott jelentések (ha a Power BI szolgáltatásban tárolják) esetében az egyszerű felhasználónevet (UPN) adja vissza. Tehát az NT-fióknév, például az _AW\mblythe_ visszaadása helyett a beépített mező az _m.blythe&commat;adventureworks.com_ értékhez hasonlót fog visszaadni. Át kell néznie az adathalmaz definícióit és lehet, hogy még a forrásadatokat is. Az áttekintést és közzétételt követően javasoljuk a jelentések alapos tesztelését, hogy az adatengedélyek a várt módon működjenek.
 1. Az **ExecutionTime** (Végrehajtási idő) beépített mező használatának újraértékelése a jelentésekben. Az oldalakra osztott jelentések esetében (ha a Power BI szolgáltatásban tárolják), a beépített mező a dátum/idő értéket _egyezményes világidő (vagy UTC)_ értékként adja vissza. Ez hatással lehet a jelentésparaméterek alapértelmezett értékeire és a jelentés-végrehajtási időcímkékre (amelyeket általában a jelentés lábléceihez adnak hozzá).
 1. Ha az adatforrás a (helyszíni) SQL Server, ellenőrizze, hogy a jelentések nem használnak-e térkép-vizualizációkat. A térkép-vizualizáció az SQL Server térbeli adattípusaitól függ, amelyeket az átjáró nem támogat. További információ: [Adatlekérési útmutató lapszámozott jelentésekhez (Az SQL Server összetett adattípusai)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
@@ -171,9 +171,9 @@ Miután migrálta a jelentéseket a Power BI-ba, gondoskodnia kell arról, hogy 
 
 Javasoljuk, hogy a lehető legjobb felhasználói élmény érdekében végezze el az alábbi műveleteket:
 
-1. Tesztelje a jelentéseket a [Power BI által támogatott összes böngészőben](../power-bi-browsers.md), így meggyőződhet arról, hogy azok megfelelően lesznek renderelve.
+1. Tesztelje a jelentéseket a [Power BI által támogatott összes böngészőben](../fundamentals/power-bi-browsers.md), így meggyőződhet arról, hogy azok megfelelően lesznek renderelve.
 1. Futtasson teszteket, amelyekkel összehasonlítja az SSRS és a Power BI jelentésrenderelési idejeit. Ellenőrizze, hogy a Power BI-jelentések renderelésének ideje elfogadható-e.
-1. Ha a Power BI-jelentések renderelése meghiúsul a nem elegendő memória miatt, foglaljon le [további erőforrásokat a Power BI Premium-kapacitásban](../service-admin-premium-workloads.md#paginated-reports).
+1. Ha a Power BI-jelentések renderelése meghiúsul a nem elegendő memória miatt, foglaljon le [további erőforrásokat a Power BI Premium-kapacitásban](../admin/service-admin-premium-workloads.md#paginated-reports).
 1. A hosszú renderelési idejű jelentések esetén célszerű lehet a Power BI által eljuttatni őket a felhasználóknak, [jelentésmellékleteket tartalmazó e-mail-feliratkozásként](../consumer/paginated-reports-subscriptions.md).
 1. Power BI-adatkészleteken alapuló Power BI-jelentések esetén tekintse át a modellterveket, így meggyőződhet arról, hogy teljes mértékben optimalizálva vannak.
 
@@ -183,8 +183,8 @@ A migrálás utáni fázis elengedhetetlen az esetleges hibák feloldásához, v
 
 További információt ezekről a problémákról, beleértve ezek ismertetését és megoldását, a következő cikkekben találhat:
 
-- [Premium-kapacitások optimalizálása](../service-premium-capacity-optimize.md)
-- [Premium-kapacitások monitorozása az alkalmazásban](../service-admin-premium-monitor-capacity.md)
+- [Premium-kapacitások optimalizálása](../admin/service-premium-capacity-optimize.md)
+- [Premium-kapacitások monitorozása az alkalmazásban](../admin/service-admin-premium-monitor-capacity.md)
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -195,7 +195,7 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 - [Többoldalas jelentések használata a Power BI-ban](report-paginated-or-power-bi.md)
 - [Lapszámozott jelentések a Power BI-ban: GYIK](../paginated-reports/paginated-reports-faq.md)
 - [Online kurzus: Lapszámozott jelentések egy nap alatt](../paginated-reports/paginated-reports-online-course.md)
-- [Power BI Premium – gyakori kérdések](../service-premium-faq.md)
+- [Power BI Premium – gyakori kérdések](../admin/service-premium-faq.md)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)

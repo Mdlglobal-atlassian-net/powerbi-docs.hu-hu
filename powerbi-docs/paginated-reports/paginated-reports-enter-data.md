@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: maggies
-ms.openlocfilehash: 5ef019c1c8d488735509ac3c2767fbc9d395786a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 074bc95a9e259df84211d3f922831db323d506cc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922091"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348666"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Adatok megadása közvetlenül többoldalas jelentésben a jelentéskészítőben – Power BI
 
@@ -22,7 +22,7 @@ Ebben a cikkben megismerkedhet az SQL Server 2016 jelentéskészítője új verz
 ## <a name="prerequisites"></a>Előfeltételek
 
 - Ha közvetlenül egy lapszámozott jelentésben szeretne adatokat megadni, telepítse a [jelentéskészítő új verzióját a Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53613). 
-- A lapszámozott jelentés a Power BI szolgáltatásban való mentéséhez [Power BI Pro-fiókra](../service-self-service-signup-for-power-bi.md), valamint egy [Power BI Premium kapacitásbeli](../service-premium-what-is.md) munkaterület írási hozzáférésére lesz szüksége.
+- A lapszámozott jelentés a Power BI szolgáltatásban való mentéséhez [Power BI Pro-fiókra](../fundamentals/service-self-service-signup-for-power-bi.md), valamint egy [Power BI Premium kapacitásbeli](../admin/service-premium-what-is.md) munkaterület írási hozzáférésére lesz szüksége.
 - A lapszámozott jelentés egy jelentéskészítő kiszolgálón való mentéséhez az [RsReportServer.config fájl](#upload-the-paginated-report-to-a-report-server) szerkesztésére vonatkozó engedélyre van szüksége.
 
 ## <a name="get-started"></a>Az első lépések

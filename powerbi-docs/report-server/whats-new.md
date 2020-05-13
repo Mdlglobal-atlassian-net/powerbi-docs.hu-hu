@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381307"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348160"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>A Power BI jelentéskészítő kiszolgáló újdonságai
 
@@ -23,8 +23,8 @@ Töltse le a [Power BI jelentéskészítő kiszolgálót és a Power BI jelenté
 
 Az újdonságokra vonatkozó Power BI-információk:
 
-* [A Power BI szolgáltatás újdonságai](../service-whats-new.md)
-* [A Power BI Desktop újdonságai](../desktop-latest-update.md)
+* [A Power BI szolgáltatás újdonságai](../fundamentals/service-whats-new.md)
+* [A Power BI Desktop újdonságai](../fundamentals/desktop-latest-update.md)
 * [A Power BI-mobilalkalmazások újdonságai](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="january-2020"></a>2020. január
@@ -128,7 +128,7 @@ Ebben a hónapban kibocsátjuk az új .pbids fájlformátumot, amellyel egyszer�
 
 Amikor a jelentéskészítő megnyit egy .pbids-fájlt, a Power BI Desktop hitelesítést kér a fájlban megadott adatforráshoz való csatlakozáshoz. Ez után a felhasználó kiválasztja a modellbe betöltendő táblákat. Esetleg ki kell választania az adatbázist is, ha az nem lett megadva a fájlban. Ekkor a jelentéskészítő megkezdheti a vizualizációk készítését.
 
-Részleteket és példákat az „Adatforrások a Power BI Desktopban” című cikk [Adatok beolvasása .pbids-fájlok használatával](../desktop-data-sources.md#using-pbids-files-to-get-data) szakaszában talál.
+Részleteket és példákat az „Adatforrások a Power BI Desktopban” című cikk [Adatok beolvasása .pbids-fájlok használatával](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data) szakaszában talál.
 
 *A modellezési műveletek teljesítményét javító fejlesztések*
 
@@ -239,11 +239,11 @@ Kiemelünk néhányat a kiadás legfontosabb részletei közül:
 
 #### <a name="performance-analyzer"></a>Teljesítményelemző 
 
-Ha a jelentés a vártnál lassabban fut, kipróbálhatja a Power BI Desktop Teljesítményelemzőjét. Ez az elindításakor naplófájl hoz létre a jelentéssel végzett összes művelettel kapcsolatos információkkal. További információk a [Teljesítményelemzőről](../desktop-performance-analyzer.md).
+Ha a jelentés a vártnál lassabban fut, kipróbálhatja a Power BI Desktop Teljesítményelemzőjét. Ez az elindításakor naplófájl hoz létre a jelentéssel végzett összes művelettel kapcsolatos információkkal. További információk a [Teljesítményelemzőről](../create-reports/desktop-performance-analyzer.md).
 
 #### <a name="new-modeling-view"></a>Új modellezési nézet
 
-A Power BI Desktop új Modellezés nézetében sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és kezelhet. Ennek lényeges eleme például a többszörös diagramelrendezés, valamint az oszlopok, mértékek és táblázatok csoportos szerkesztése. További tudnivalók a [Modellezés nézetről](../desktop-modeling-view.md).
+A Power BI Desktop új Modellezés nézetében sok táblát tartalmazó, összetett adathalmazokat tekinthet meg és kezelhet. Ennek lényeges eleme például a többszörös diagramelrendezés, valamint az oszlopok, mértékek és táblázatok csoportos szerkesztése. További tudnivalók a [Modellezés nézetről](../transform-model/desktop-modeling-view.md).
 
 #### <a name="accessible-visual-interaction"></a>Vizualizációk akadálymentes használata
 
@@ -251,11 +251,11 @@ Mostantól a beépített vizualizációk többségében a billentyűzettel navig
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Címek feltételes formázása és webes URL-műveletek
 
-A Power BI-jelentések interaktívak. Kézenfekvő, hogy a jelentések címe is dinamikus legyen, és tükrözze a jelentés aktuális állapotát. Ugyanazzal a kifejezésalapú formázással teheti dinamikussá a gombok, alakzatok és képek URL-címeit. További információ a [kifejezésalapú címekről](../desktop-conditional-format-visual-titles.md).
+A Power BI-jelentések interaktívak. Kézenfekvő, hogy a jelentések címe is dinamikus legyen, és tükrözze a jelentés aktuális állapotát. Ugyanazzal a kifejezésalapú formázással teheti dinamikussá a gombok, alakzatok és képek URL-címeit. További információ a [kifejezésalapú címekről](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### <a name="cross-highlight-by-axis-labels"></a>Keresztkiemelés tengelyfeliratok alapján
 
-Egy vizualizáció kategóriatengely-feliratainak kijelölésével keresztkiemelést végezhet az oldal más elemein, mintha az adatpontokat jelölte volna ki a vizualizáción. További tudnivalók a [keresztkiemelésről](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Egy vizualizáció kategóriatengely-feliratainak kijelölésével keresztkiemelést végezhet az oldal más elemein, mintha az adatpontokat jelölte volna ki a vizualizáción. További tudnivalók a [keresztkiemelésről](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### <a name="all-the-new-features"></a>Az összes új funkció
 

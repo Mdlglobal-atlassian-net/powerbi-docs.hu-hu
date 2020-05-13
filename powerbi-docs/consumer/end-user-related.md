@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3dcd968d00d98106a8b717e635b8a7fdf958dc70
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114389"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347332"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban
 
@@ -47,12 +47,12 @@ Megnyílik a **Kapcsolódó tartalom** ablaktábla. Irányítópult esetén itt 
 
 ![Kapcsolódó tartalom panel](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot.  A felsorolt jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../service-analyze-in-excel.md), vagy az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre. Adatkészletek esetében megtekintheti a legutóbbi frissítés dátumát és idejét, valamint az [Elemzés az Excelben](../service-analyze-in-excel.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
+Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon.  Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot.  A felsorolt jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md), vagy az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre. Adatkészletek esetében megtekintheti a legutóbbi frissítés dátumát és idejét, valamint az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
 
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Egy adatkészlet kapcsolódó tartalmainak megtekintése
-A *Kapcsolódó tartalom* adattábla megnyitásához legalább **megtekintési engedéllyel** kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../sample-procurement.md) fogjuk használni.
+A *Kapcsolódó tartalom* adattábla megnyitásához legalább **megtekintési engedéllyel** kell rendelkeznie az adott adatkészlethez. A példában a [Beszerzéselemzési mintát](../create-reports/sample-procurement.md) fogjuk használni.
 
 A navigációs panelen keresse meg a **Munkaterületek** fejlécet, és válasszon ki egy munkaterületet a listából. Ha rendelkezik tartalommal a munkaterületen, az megjelenik a jobb oldali vásznon. 
 
@@ -67,7 +67,7 @@ Válassza ki az ikont a **Kapcsolódó tartalom** ablaktábla megnyitásához.
 
 ![A Kapcsolódó tartalom panel a Power BI tartalom nézete fölött jelenik meg](media/end-user-related/power-bi-dataset.png)
 
-Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot vagy jelentést.  A felsorolt irányítópultok esetében a megfelelő ikon kiválasztásával [megoszthatja az irányítópultot másokkal](../service-share-dashboards.md), vagy megnyithatja az adott irányítópult **Beállítások** ablakát. Jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../service-analyze-in-excel.md), az [Átnevezés](../service-rename.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
+Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például, az egyik irányítópult vagy jelentés nevének kiválasztásával megnyithatja az adott irányítópultot vagy jelentést.  A felsorolt irányítópultok esetében a megfelelő ikon kiválasztásával [megoszthatja az irányítópultot másokkal](../collaborate-share/service-share-dashboards.md), vagy megnyithatja az adott irányítópult **Beállítások** ablakát. Jelentések esetében a megfelelő ikon kiválasztásával az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md), az [Átnevezés](../create-reports/service-rename.md) és az [Elemzések lekérése](end-user-insights.md) műveleteket hajthatja végre.  
 
 ## <a name="limitations-and-troubleshooting"></a>Korlátozások és hibaelhárítás
 * Ha nem jelenik meg a „Kapcsolódó megtekintése” szöveg, akkor keresse az ikont ![Kapcsolódó megtekintése ikon](./media/end-user-related/power-bi-view-related-icon-new.png). Válassza ki az ikont a **Kapcsolódó tartalom** ablaktábla megnyitásához.
@@ -75,6 +75,5 @@ Innen közvetlen műveleteket is végezhet a kapcsolódó tartalmakon. Például
 * A Kapcsolódó tartalom funkció nem működik streamelt adatkészletek esetében.
 
 ## <a name="next-steps"></a>További lépések
-* [A Power BI szolgáltatás használatának első lépései](../service-get-started.md)
+* [A Power BI szolgáltatás használatának első lépései](../fundamentals/service-get-started.md)
 * Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

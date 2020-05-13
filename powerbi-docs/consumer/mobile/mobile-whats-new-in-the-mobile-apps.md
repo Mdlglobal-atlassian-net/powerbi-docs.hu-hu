@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841710"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349264"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
 
 * [A Power BI csapatának blogja a mobilalkalmazásokról](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [A Power BI Desktop újdonságai](../../desktop-latest-update.md)  
-* [A Power BI szolgáltatás újdonságai](../../service-whats-new.md)
+* [A Power BI Desktop újdonságai](../../fundamentals/desktop-latest-update.md)  
+* [A Power BI szolgáltatás újdonságai](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
 >A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További információ](https://go.microsoft.com/fwlink/?linkid=2121400)
@@ -476,7 +476,7 @@ Olvassa el a [mobilalkalmazások funkcióinak 2017. júliusi összefoglalását]
 
 ### <a name="june-2107"></a>2017. június
 #### <a name="all-devices"></a>Minden eszköz
-**Alkalmazások megjelölése kedvencként** Már eddig is lehetőség volt megjelölni egy irányítópultot kedvencként. A közelmúltban a [Power BI elérhetővé tett alkalmazásokat](../../service-create-distribute-apps.md), és mostantól ezeket is meg lehet jelölni kedvencként. 
+**Alkalmazások megjelölése kedvencként** Már eddig is lehetőség volt megjelölni egy irányítópultot kedvencként. A közelmúltban a [Power BI elérhetővé tett alkalmazásokat](../../collaborate-share/service-create-distribute-apps.md), és mostantól ezeket is meg lehet jelölni kedvencként. 
 
 ### <a name="may-2017"></a>2017. május
 #### <a name="all-devices"></a>Minden eszköz
@@ -493,7 +493,7 @@ További tudnivalók [a Power BI-tartalmak elrendezéséről](mobile-apps-quicks
 Olvassa el a [mobilalkalmazások funkcióinak 2017. áprilisi összefoglalását](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)
 
 #### <a name="all-devices"></a>Minden eszköz
-**Háttérszín a telefonos jelentésekhez** Ha megad háttérszínt egy adott jelentéshez a Power BI Desktopban, a telefonos jelentésnek is ugyanez lesz a háttérszíne. További információ [a jelentésoldalak telefonra optimalizálásáról](../../desktop-create-phone-report.md).
+**Háttérszín a telefonos jelentésekhez** Ha megad háttérszínt egy adott jelentéshez a Power BI Desktopban, a telefonos jelentésnek is ugyanez lesz a háttérszíne. További információ [a jelentésoldalak telefonra optimalizálásáról](../../create-reports/desktop-create-phone-report.md).
 
 **Mobilbarát Power BI-vizualizációkat fejleszthet** Olvassa el ezt a [fejlesztői útmutatót](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md), amely bemutatja, hogyan készíthetők olyan Power BI-vizualizációk, amelyek jól mutatnak és jól működnek mobileszközökön.
 
@@ -553,7 +553,7 @@ Olvassa el a [mobilalkalmazások funkcióinak 2017. januári összefoglalásár�
 #### <a name="all-devices"></a>Minden eszköz
 **Több mint 100 sor tölthető be a táblázatokhoz és mátrixokhoz** Mostantól ha nagy méretű tábla vagy mátrix található egy irányítópulton vagy jelentésben, a lehető legtöbb adatot megjelenítjük a csempén. Fókusz módban ezután legörgethet a többi sorhoz is.
 
-**A telefonos jelentések általánosan elérhetőek** A telefonos Power BI-jelentések mostantól általánosan elérhetőek. A Power BI Desktopban elkészítheti a meglévő jelentések álló tájolású nézetét mobilfelhasználók számára. Többet tudhat meg [telefonos jelentések készítéséről a Power BI Desktopban](../../desktop-create-phone-report.md) és a [jelentések kezeléséről telefonon](mobile-apps-view-phone-report.md).
+**A telefonos jelentések általánosan elérhetőek** A telefonos Power BI-jelentések mostantól általánosan elérhetőek. A Power BI Desktopban elkészítheti a meglévő jelentések álló tájolású nézetét mobilfelhasználók számára. Többet tudhat meg [telefonos jelentések készítéséről a Power BI Desktopban](../../create-reports/desktop-create-phone-report.md) és a [jelentések kezeléséről telefonon](mobile-apps-view-phone-report.md).
 
 #### <a name="ios"></a>iOS
 **SSRS-hitelesítés az Active Directory összevonási szolgáltatások (ADFS) előzetes verziójával** Mostantól mobileszközéről is bejelentkezhet helyszíni SQL Server Reporting Services-kiszolgálókra vállalati fiókjával. Többet tudhat meg [az SSRS-kiszolgálókhoz való csatlakozásról az OAuth használatával](mobile-oauth-ssrs.md).
@@ -644,7 +644,7 @@ Olvassa el a [Power BI mobilalkalmazásai funkcióinak 2016. októberi összefog
 #### <a name="all-phones"></a>Minden telefon
 **Kedvencek** Megtekintheti a kedvenc irányítópultjait az összes Power BI mobilalkalmazásból, és a Power BI mobilalkalmazásokból kezelheti a kedvencek listáját iOS és Windows 10 rendszerű eszközökön. További információ a [kedvencekről a Power BI-mobilalkalmazásokban](mobile-apps-favorites.md).
 
-**Irányítópultok adatainak besorolása** Megtekintheti azokat az adatbesorolásokat, amelyeket a tulajdonosok az irányítópultjaikhoz rendeltek. További információk az [irányítópultok besorolásáról](../../service-data-classification.md).
+**Irányítópultok adatainak besorolása** Megtekintheti azokat az adatbesorolásokat, amelyeket a tulajdonosok az irányítópultjaikhoz rendeltek. További információk az [irányítópultok besorolásáról](../../create-reports/service-data-classification.md).
 
 **Adatvezérelt riasztások** Riasztást kaphat, ha adatai előre meghatározott módokon módosulnak a KPI, kijelző és kártya típusú csempéken. További információk:
 
@@ -659,14 +659,14 @@ Olvassa el a [Power BI mobilalkalmazásai funkcióinak 2016. októberi összefog
 
 **Az Intune MAM támogatása** További támogatás érhető el a Microsoft Intune mobilalkalmazás-kezelési (MAM) képességeihez.
 
-További információ a [Power BI mobilalkalmazásokon elérhető Microsoft Intune-ról](../../service-admin-mobile-intune.md).
+További információ a [Power BI mobilalkalmazásokon elérhető Microsoft Intune-ról](../../admin/service-admin-mobile-intune.md).
 
 #### <a name="windows-10-devices"></a>Windows 10-eszközök
 **Teljes képernyős és bemutató mód** A jelentéseket megjelenítheti bemutató módban a Surface Hubon, az irányítópultokat, jelentéseket és csempéket pedig teljes képernyős módban a Windows 10 rendszerű eszközökön.
 
 ### <a name="july-2016"></a>2016. július
 #### <a name="all-phones"></a>Minden telefon
-A Power BI szolgáltatásban mostantól [létrehozhatja az irányítópultok kifejezetten telefonokhoz készült nézetét](../../service-create-dashboard-mobile-phone-view.md) álló tájolású módban. 
+A Power BI szolgáltatásban mostantól [létrehozhatja az irányítópultok kifejezetten telefonokhoz készült nézetét](../../create-reports/service-create-dashboard-mobile-phone-view.md) álló tájolású módban. 
 
 #### <a name="android-phones"></a>Android rendszerű telefonok
 **Kedvencek lap** Egyetlen helyen érheti el kedvenc irányítópultjait.
@@ -795,7 +795,7 @@ Az összes januári fejlesztés már elérhető a 2015 decemberében kiadott, [W
 
 **R-csempék és webes widgetek** Ezek az új csempetípusok is megtekinthetők az irányítópultjain mobileszközön.
 
-**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../../service-connect-to-services.md), és megtekintheti őket mobileszközén.
+**Bing-irányítópultok** A Power BI szolgáltatásban mostantól létrehozhat [Bing keresési eredményeket tartalmazó irányítópultokat](../../connect-data/service-connect-to-services.md), és megtekintheti őket mobileszközén.
 
 **Jelentésoldalak rögzítése csempékként az irányítópultokon** Mostantól teljes jelentésoldalakat rögzíthet az irányítópultokra a Power BI szolgáltatásban, így megtekintheti a jelentésoldalakat iPhone-ján vagy androidos telefonján a Power BI alkalmazásban.
 
@@ -805,41 +805,42 @@ A Power BI csapata erősen zárta a 2015-ös évet, több fontos újdonság és 
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>SQL Server 2016 Reporting Services-mobiljelentések iOS rendszeren
 Mostantól iOS-eszközén is megtekintheti az SQL Server-mobiljelentéseket a Power BI alkalmazásban, legyen szó iPadről vagy iPhone-ról. További információk:
 
-* [SQL 16 SSRS az iOS rendszerhez készült Power BI alkalmazásban](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) blogbejegyzés
+* [SQL 16 SSRS az iOS rendszerhez készült Power BI alkalmazásban](https://powerbi.microsoft.com/blog/sql-16-ssrs-on-power-bi-app-for-ios/
+) blogbejegyzés
 * [SQL Server-mobiljelentések és KPI-k megtekintése iPhone- és iPad-alkalmazásokban](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) dokumentáció
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Windows 10-telefonokhoz készült Power BI alkalmazás
 A Windows 10-hez készült új Power BI alkalmazás érintésvezérelt működésre és hatékony mobileszközös munkavégzésre lett optimalizálva. Áttekintheti az irányítópultokat és a jelentéseket, meghívhatja munkatársait adatok megtekintésére, és elemzéseket oszthat meg e-mailben a csapatával. Emellett [Power BI-irányítópultokat rögzíthet Windows Phone-telefonja kezdőképernyőjére](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Olvassa el [a Windows 10-es telefonokhoz készült Power BI alkalmazásról szóló blogbejegyzést](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Olvassa el [a Windows 10-es telefonokhoz készült Power BI alkalmazásról szóló blogbejegyzést](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-for-windows-10-mobile/).
 * [A Windows 10-es telefonokhoz készült Power BI alkalmazás első lépései](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>További újdonságok
-További részletekért olvassa el a [Power BI mobilalkalmazásairól szóló decemberi blogbejegyzést](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
+További részletekért olvassa el a [Power BI mobilalkalmazásairól szóló decemberi blogbejegyzést](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-december-2015/).
 
 * Értesítéseket kaphat, amikor munkatársai irányítópultokat osztanak meg Önnel. (iOS)
 * Teljes rögzített jelentésoldalakat tekinthet meg az irányítópultjain. (iOS és Android)
-* [Egy QR-kód beolvasásával](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) közvetlenül a kapcsolódó csempére léphet androidos telefonján.
+* [Egy QR-kód beolvasásával](https://powerbi.microsoft.com/blog/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes/) közvetlenül a kapcsolódó csempére léphet androidos telefonján.
 
 ### <a name="november-2015"></a>2015. november
-Olvassa el a [Power BI mobilalkalmazásairól szóló 2015. novemberi blogbejegyzést](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Olvassa el a [Power BI mobilalkalmazásairól szóló 2015. novemberi blogbejegyzést](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-november-2015/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Minden Power BI-mobilalkalmazás
 * Új üdvözlőélmény.
 * Továbbfejlesztett adatkapacitás a diagramokban.
 
 #### <a name="ios-and-android-mobile-apps"></a>iOS- és Android-mobilalkalmazások
-* A vállalatok mostantól [konfigurálhatják az iOS és Android rendszerhez készült Power BI-mobilalkalmazásokat a Microsoft Intune-nal](../../service-admin-mobile-intune.md) az eszközök és alkalmazások kezeléséhez.
+* A vállalatok mostantól [konfigurálhatják az iOS és Android rendszerhez készült Power BI-mobilalkalmazásokat a Microsoft Intune-nal](../../admin/service-admin-mobile-intune.md) az eszközök és alkalmazások kezeléséhez.
 
 #### <a name="iphone-mobile-app"></a>iPhone-mobilalkalmazás
 * [Képcsempéket adhat az irányítópultokhoz](mobile-iphone-app-get-started.md) közvetlenül az iPhone-járól.
-* [QR-kódokat hozhat létre a Power BI szolgáltatásban](../../service-create-qr-code-for-tile.md), amelyeket azután iPhone-jával beolvasva egy adott csempénél nyílik meg a Power BI alkalmazás.
+* [QR-kódokat hozhat létre a Power BI szolgáltatásban](../../create-reports/service-create-qr-code-for-tile.md), amelyeket azután iPhone-jával beolvasva egy adott csempénél nyílik meg a Power BI alkalmazás.
 
 #### <a name="the-power-bi-app-for-windows-devices"></a>A Windows-eszközökhöz készült Power BI alkalmazás
-* [Közvetlenül hivatkozhat csempékről konkrét URL-címekre](../../service-dashboard-edit-tile.md#hyperlink).
+* [Közvetlenül hivatkozhat csempékről konkrét URL-címekre](../../create-reports/service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>2015. október
-Olvassa el a [Power BI mobilalkalmazásairól szóló október közepi blogbejegyzést](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Olvassa el a [Power BI mobilalkalmazásairól szóló október közepi blogbejegyzést](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-october-updates-are-here/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Minden Power BI-mobilalkalmazás
 * A százalékskálájú Y tengellyel rendelkező vonaldiagramok mostantól a tényleges adatok alapján számítják ki a vizualizáció tartományát. A gráf mostantól a diagram legalacsonyabb adatpontjától indul az alapértelmezett érték helyett.
@@ -851,12 +852,12 @@ Olvassa el a [Power BI mobilalkalmazásairól szóló október közepi blogbejeg
 * Folyamatosan naprakész lehet csoportja legújabb irányítópultjait illetően – értesítéseket kaphat iPhone-jára minden alkalommal, amikor egy tag hozzáad egy irányítópultot valamelyik csoportjához.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Mostantól fekvő tájolásban is megjelenítheti az irányítópultokat, egyszerűen a telefon elfordításával. További információk [a fekvő tájolásról az iPhone-alkalmazásban](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Mostantól fekvő tájolásban is megjelenítheti az irányítópultokat, egyszerűen a telefon elfordításával. További információk [a fekvő tájolásról az iPhone-alkalmazásban](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>2015. szeptember
-A Power BI-mobilalkalmazások fejlesztései – Android, iOS (iPhone és iPad) és Windows. Olvassa el a [Power BI mobilalkalmazásairól szóló szeptember közepi blogbejegyzést](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+A Power BI-mobilalkalmazások fejlesztései – Android, iOS (iPhone és iPad) és Windows. Olvassa el a [Power BI mobilalkalmazásairól szóló szeptember közepi blogbejegyzést](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).
 
 #### <a name="android"></a>Android
 * Csoportos munkaterületek támogatása: Csoportos munkaterületek érhetők el a munkatársakkal való együttműködéshez. 

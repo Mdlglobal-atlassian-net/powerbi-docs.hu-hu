@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a22bba65b44446e7027627a24ebcf316f8f073d4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79039986"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348390"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
@@ -42,21 +42,21 @@ További információ: [Milyen típusú licencem van?](end-user-license.md).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Mi a teendő, ha kérdéseim vannak a Power BI Premium verzióval kapcsolatban?
 
-A Power BI Premium verzióval kapcsolatos kérdésekért lásd: [Power BI Premium – gyakori kérdések](../service-premium-faq.md).
+A Power BI Premium verzióval kapcsolatos kérdésekért lásd: [Power BI Premium – gyakori kérdések](../admin/service-premium-faq.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Mi az a Power BI Desktop?
 
-A Power BI Desktop egy ingyenes alkalmazás, amelyet közvetlenül a saját számítógépére telepíthet. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással.  A Power BI Desktoppal dolgozó adatelemzők, jelentéstervezők, rendszergazdák és fejlesztők jelentéseket állítanak elő és tesznek elérhetővé a Power BI szolgáltatás Önhöz hasonló *felhasználói* számára. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../desktop-what-is-desktop.md).
+A Power BI Desktop egy ingyenes alkalmazás, amelyet közvetlenül a saját számítógépére telepíthet. A Power BI Desktop szorosan együttműködik a Power BI szolgáltatással.  A Power BI Desktoppal dolgozó adatelemzők, jelentéstervezők, rendszergazdák és fejlesztők jelentéseket állítanak elő és tesznek elérhetővé a Power BI szolgáltatás Önhöz hasonló *felhasználói* számára. További olvasnivaló arról, hogy [Mi az a Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>Mire van szükségem, hogy *felhasználóként* igénybe vehessem a Power BI szolgáltatást?
 
 Ha a vállalata Power BI-licenceket vagy egy Premium-kapacitással rendelkező fiókot vásárolt, mindössze egy webböngészőre és hitelesítő adatokra lesz szüksége. A bejelentkezéshez használhatja a munkahelyi e-mail-címét és jelszavát (amelyet a Power BI rendszergazdája állít be).  
 
-A Power BI szolgáltatásra egyénileg is regisztrálhat. További információ: [A Power BI önkiszolgáló regisztrációs folyamata](../service-self-service-signup-for-power-bi.md)
+A Power BI szolgáltatásra egyénileg is regisztrálhat. További információ: [A Power BI önkiszolgáló regisztrációs folyamata](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miért a munkahelyi e-mail-címemmel kell regisztrálni?
 
-A Power BI nem támogatja a fogyasztói e-mail-szolgáltatók vagy távközlési szolgáltatók által biztosított e-mail-címeket. További információ: [A Power BI önkiszolgáló regisztrációs folyamata](../service-self-service-signup-for-power-bi.md).
+A Power BI nem támogatja a fogyasztói e-mail-szolgáltatók vagy távközlési szolgáltatók által biztosított e-mail-címeket. További információ: [A Power BI önkiszolgáló regisztrációs folyamata](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## <a name="does-power-bi-support-mobile-devices"></a>A Power BI támogatja a mobileszközöket?
 
@@ -80,12 +80,12 @@ A Power BI mobilalkalmazásait is letöltheti a megfelelő áruházakból – sz
 
 Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhez:
 
-* [A Power BI blogja](https://blogs.msdn.com/b/powerbi/)
-* [Webináriumok](../webinars.md)
+* [A Power BI blogja](https://powerbi.microsoft.com/blog/)
+* [Webináriumok](../fundamentals/webinars.md)
 * Az első lépések megtételét segítő videók a [YouTube-csatornán](https://www.youtube.com/user/mspowerbi)
 * [A Power BI Desktop *fogyasztói* használatának első lépései](index.yml) című cikk
 * [Csatlakozzon közösségünkhöz](https://community.powerbi.com/), és tegyen fel kérdéseket
-* További javaslatokért lásd: [10 tanács segítségkéréshez](../service-tips-for-finding-help.md)
+* További javaslatokért lásd: [10 tanács segítségkéréshez](../fundamentals/service-tips-for-finding-help.md)
 
 ## <a name="what-browsers-does-power-bi-support"></a>Milyen böngészőket támogat a Power BI?
 
@@ -93,7 +93,7 @@ Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhe
 
 ## <a name="what-regions-and-languages-does-power-bi-support"></a>Milyen régiókat és nyelveket támogat a Power BI?
 
-Íme a [Power BI által támogatott régiók és nyelvek](../supported-languages-countries-regions.md) teljes listája.
+Íme a [Power BI által támogatott régiók és nyelvek](../fundamentals/supported-languages-countries-regions.md) teljes listája.
 
 ## <a name="where-can-i-learn-more-about-security"></a>Hol tájékozódhatok a biztonságról?
 
@@ -101,7 +101,7 @@ További információ a Power BI biztonságáról, adatvédelméről és megfele
 
 * A [Power BI biztonsága](https://go.microsoft.com/fwlink/?LinkId=829185) – tanulmány
 
-* A [Power BI biztonsági támogatása](../service-admin-power-bi-security.md) – cikk
+* A [Power BI biztonsági támogatása](../admin/service-admin-power-bi-security.md) – cikk
 
 ## <a name="how-do-i-undo-in-power-bi"></a>Hogyan lehet műveleteket visszavonni a Power BI-ban?
 

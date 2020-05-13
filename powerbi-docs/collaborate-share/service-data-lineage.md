@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525399"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348206"
 ---
 # <a name="data-lineage"></a>Adatéletút
 A modern üzletiintelligencia-projektekben az adatok adatforrásból a célba történő eljutásának megértése kihívást jelenthet. A kihívás még nagyobb a több adatforráson, összetevőn és függőségen átívelő speciális elemzési projektek esetén. Nehéz választ adni az olyan kérdésekre, hogy például mi történik egy adat módosításakor, vagy hogy miért nem naprakész egy jelentés. Ezek megértéséhez szakértői csapatokra vagy mélyreható vizsgálatra van szükség. A kérdések megválaszolásában egy adatéletút-nézet lesz a segítségére.
@@ -88,9 +88,9 @@ A származtatott nézet egy interaktív vászon. Az egér és az érintőpad has
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-- A származtatott nézet nem érhető el az Internet Explorerben. További információt [A Power BI használatát támogató böngészők](../power-bi-browsers.md) című cikkben talál.
+- A származtatott nézet nem érhető el az Internet Explorerben. További információt [A Power BI használatát támogató böngészők](../fundamentals/power-bi-browsers.md) című cikkben talál.
 
 ## <a name="next-steps"></a>További lépések
 
-* [Adathalmazok használata több munkaterületen (előzetes verzió)](../service-datasets-across-workspaces.md)
+* [Adathalmazok használata több munkaterületen (előzetes verzió)](../connect-data/service-datasets-across-workspaces.md)
 * [Adatkészletek hatáselemzése](service-dataset-impact-analysis.md)

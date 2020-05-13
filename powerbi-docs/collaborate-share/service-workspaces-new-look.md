@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e74a59d3ff4a5568352c647ec9f384ad8c3a09b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 53a4ae78fa996c1e48ed0c16e0caf15e4f687697
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81638525"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347930"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>A munkaterületek új megjelenésének (előzetes verzió) kipróbálása
 
-A munkaterületek és a Power BI szolgáltatás [új megjelenéssel](../service-new-look.md) rendelkeznek. Mindenki használhatja, aki a Power BI szolgáltatást (app.powerbi.com) használja. Ha bekapcsolja az **Új megjelenést** a fekete fejlécsávon, azzal az új megjelenésre vált a jelentéseknél és a munkaterületeken. Az új megjelenést mind a klasszikus, mind az új munkaterületek használhatják.
+A munkaterületek és a Power BI szolgáltatás [új megjelenéssel](../consumer/service-new-look.md) rendelkeznek. Mindenki használhatja, aki a Power BI szolgáltatást (app.powerbi.com) használja. Ha bekapcsolja az **Új megjelenést** a fekete fejlécsávon, azzal az új megjelenésre vált a jelentéseknél és a munkaterületeken. Az új megjelenést mind a klasszikus, mind az új munkaterületek használhatják.
 
-További információt szeretne a **Power BI Desktop** új megjelenéséről? Tekintse meg a [Frissített menüszalag használata a Power BI Desktopban](../desktop-ribbon.md) című cikket.
+További információt szeretne a **Power BI Desktop** új megjelenéséről? Tekintse meg a [Frissített menüszalag használata a Power BI Desktopban](../create-reports/desktop-ribbon.md) című cikket.
 
 ## <a name="features-of-the-new-look"></a>Az új megjelenés funkciói
 
@@ -50,7 +50,6 @@ Ha vissza szeretne térni a régi nézethez, váltson vissza **kikapcsolt** ért
 
 ## <a name="next-steps"></a>Következő lépések
 
-- [A frissített menüszalag használata a Power BI Desktopban](../desktop-ribbon.md)
-- [A Power BI szolgáltatás új arculata](../service-new-look.md)
+- [A frissített menüszalag használata a Power BI Desktopban](../create-reports/desktop-ribbon.md)
+- [A Power BI szolgáltatás új arculata](../consumer/service-new-look.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

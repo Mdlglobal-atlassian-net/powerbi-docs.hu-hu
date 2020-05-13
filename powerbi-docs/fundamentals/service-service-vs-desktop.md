@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 87a30acce38966d0e044f4ed0b6691ccbc7acd3f
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79126259"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349218"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>A Power BI Desktop és a Power BI szolgáltatás összehasonlítása
 
@@ -23,7 +23,7 @@ A Power BI Desktopot és a Power BI szolgáltatást összehasonlító Venn-diagr
 
 ![A Power BI Desktop és a szolgáltatás Venn-diagramja](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-A **Power BI Desktop** teljes értékű adatelemző és jelentéskészítő eszköz, amelyet ingyenes alkalmazásként telepíthet helyszíni számítógépére. Ennek része a Lekérdezésszerkesztő, amellyel több különböző adatforráshoz csatlakozhat, és adatmodellé kombinálhatja ezeket (ezt gyakran modellezésnek nevezik). Ezt követően az adatmodellre alapozott jelentést tervezhet. A [Power BI Desktop Első lépések útmutatója](../desktop-getting-started.md) végigvezeti a lépéseken.
+A **Power BI Desktop** teljes értékű adatelemző és jelentéskészítő eszköz, amelyet ingyenes alkalmazásként telepíthet helyszíni számítógépére. Ennek része a Lekérdezésszerkesztő, amellyel több különböző adatforráshoz csatlakozhat, és adatmodellé kombinálhatja ezeket (ezt gyakran modellezésnek nevezik). Ezt követően az adatmodellre alapozott jelentést tervezhet. A [Power BI Desktop Első lépések útmutatója](desktop-getting-started.md) végigvezeti a lépéseken.
 
 A **Power BI szolgáltatás** felhőalapú szolgáltatás. Támogatja az egyszerű jelentésszerkesztést, valamint a csoportok és a vállalatok együttműködését. A Power BI szolgáltatásban is csatlakozhat adatforrásokhoz, de a modellezés korlátozott. 
 
@@ -50,19 +50,18 @@ Ez a videó bemutatja a jelentésszerkesztőt a Power BI Desktopban.
 ### <a name="collaborating"></a>Együttműködés
 
 
-Miután létrehozta a jelentéseket, mentheti őket egy *munkaterületre* a **Power BI szolgáltatásban**, ahol együttműködhet a munkatársaival. Ezekhez a jelentésekhez létrehozhat *irányítópultokat*. Majd ezeket az irányítópultokat és jelentések megoszthatja a szervezeten belüli és kívüli jelentésfogyasztókkal. A jelentésfogyasztók a Power BI szolgáltatásban *Olvasó nézetben*, tekinthetik meg ezeket, nem Szerkesztési nézetben. Ők nem férhetnek hozzá a jelentés létrehozói számára elérhető összes funkcióhoz.  Adathalmazokat is megoszthat, és lehetővé teheti, hogy mások azokra építsék jelentéseiket. További információ a [Power BI szolgáltatásbeli együttműködésről](../service-new-workspaces.md).
+Miután létrehozta a jelentéseket, mentheti őket egy *munkaterületre* a **Power BI szolgáltatásban**, ahol együttműködhet a munkatársaival. Ezekhez a jelentésekhez létrehozhat *irányítópultokat*. Majd ezeket az irányítópultokat és jelentések megoszthatja a szervezeten belüli és kívüli jelentésfogyasztókkal. A jelentésfogyasztók a Power BI szolgáltatásban *Olvasó nézetben*, tekinthetik meg ezeket, nem Szerkesztési nézetben. Ők nem férhetnek hozzá a jelentés létrehozói számára elérhető összes funkcióhoz.  Adathalmazokat is megoszthat, és lehetővé teheti, hogy mások azokra építsék jelentéseiket. További információ a [Power BI szolgáltatásbeli együttműködésről](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Önkiszolgáló adatelőkészítés adatfolyamokkal
 
-Az adatfolyamok segítenek a vállalatoknak egységesíteni a különféle forrásokból származó adatokat, valamint előkészíteni azokat modellezésre. Az elemzők könnyen, jól ismert és önkiszolgáló eszközökkel hozhatnak létre adatfolyamokat. Az elemzők az adatfolyamok használatával big data típusú adatokat tölthetnek be, alakíthatnak át, integrálhatnak és egészíthetnek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhatnak. További információ az [adatfolyamokkal végzett önkiszolgáló adat-előkészítésről](../service-dataflows-overview.md).
+Az adatfolyamok segítenek a vállalatoknak egységesíteni a különféle forrásokból származó adatokat, valamint előkészíteni azokat modellezésre. Az elemzők könnyen, jól ismert és önkiszolgáló eszközökkel hozhatnak létre adatfolyamokat. Az elemzők az adatfolyamok használatával big data típusú adatokat tölthetnek be, alakíthatnak át, integrálhatnak és egészíthetnek ki. Ehhez adatforrás-kapcsolatokat, ETL logikát, frissítésütemezést és egyéb funkciókat definiálhatnak. További információ az [adatfolyamokkal végzett önkiszolgáló adat-előkészítésről](../transform-model/service-dataflows-overview.md).
 
 ## <a name="next-steps"></a>További lépések
 
-[Mi az a Power BI Desktop?](../desktop-what-is-desktop.md)
+[Mi az a Power BI Desktop?](desktop-what-is-desktop.md)
 
-[Jelentés létrehozása](../service-report-create-new.md) a Power BI szolgáltatásban
+[Jelentés létrehozása](../create-reports/service-report-create-new.md) a Power BI szolgáltatásban
 
-[Alapfogalmak jelentéstervezőknek](../service-basic-concepts.md)
+[Alapfogalmak jelentéstervezőknek](service-basic-concepts.md)
 
 Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

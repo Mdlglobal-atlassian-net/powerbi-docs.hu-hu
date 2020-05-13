@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77259800"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347217"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Első lépések az androidos eszközökhöz készült Power BI mobilalkalmazással
 A Microsoft Power BI Android rendszerű eszközökön futó alkalmazása mobil felületet nyújt a Power BI, a Power BI jelentéskészítő kiszolgáló és a Reporting Services használatához. Bárhonnan megtekintheti és kezelheti helyszíni vagy felhőbeli céges irányítópultjait élő, érintésre reagáló mobil hozzáféréssel. Fedezze fel az adatokat az irányítópultokon, és ossza meg eredményeit munkatársaival e-mailben vagy SMS-ben. 
@@ -46,7 +46,7 @@ Ismerje meg [a Power BI mobilalkalmazások újdonságait](../../mobile-whats-new
 Ha meg nem regisztrált, lépjen a [Power BI szolgáltatásra](https://powerbi.com/), és hozzon létre egy saját fiókot, ahol irányítópultokat és jelentéseket hozhat létre és tárolhat, valamint összevonhatja az adatait. Ezután bárhol is tartózkodjon, beléphet a Power BI-ba az androidos eszközről, és megtekintheti saját irányítópultjait.
 
 1. A Power BI szolgáltatásban koppintson a [Regisztráció](https://go.microsoft.com/fwlink/?LinkID=513879) gombra a Power BI-fiók létrehozásához.
-2. Hozzáláthat a [saját irányítópultok és jelentések létrehozásához](../../service-get-started.md).
+2. Hozzáláthat a [saját irányítópultok és jelentések létrehozásához](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Első lépések az eszközön futó Power BI alkalmazással
 1. Nyissa meg az Androidhoz készült Power BI alkalmazást az androidos eszköz nyitóképernyőjéről.
@@ -94,17 +94,17 @@ A Microsoft Intune segítségével a cégek szabályozhatják az olyan elemeket,
 > 
 > 
 
-További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../service-admin-mobile-intune.md). 
+További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Következő lépések
 Az androidos Power BI alkalmazásban az alábbi műveleteket is elvégezheti a Power BI-irányítópultokkal és -jelentésekkel, valamint a Microsoft Power BI jelentéskészítő kiszolgálón vagy a Reporting Services webes portálján található jelentésekkel és KPI-kkel.
 
 ### <a name="power-bi-dashboards-and-reports"></a>A Power BI irányítópultok és jelentések
-* [Az alkalmazásai](../../service-create-distribute-apps.md) megtekintése.
+* [Az alkalmazásai](../../collaborate-share/service-create-distribute-apps.md) megtekintése.
 * Megtekintheti [irányítópultjait](../../mobile-apps-view-dashboard.md).
 * Felfedezheti [irányítópultjai csempéit](../../mobile-tiles-in-the-mobile-apps.md).
 * Megnyithat [Power BI-jelentéseket](../../mobile-reports-in-the-mobile-apps.md).
-* Megtekintheti [alkalmazásait](../../service-create-distribute-apps.md).
+* Megtekintheti [alkalmazásait](../../collaborate-share/service-create-distribute-apps.md).
 * [Jegyzettel láthat el és megoszthat csempéket](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * [Irányítópultok](../../mobile-share-dashboard-from-the-mobile-apps.md) megosztása.
 * [Power BI QR-kód beolvasása](../../mobile-apps-qr-code.md) androidos telefonnal egy kapcsolódó irányítópult vagy jelentés megnyitásához. 
@@ -119,5 +119,3 @@ Az androidos Power BI alkalmazásban az alábbi műveleteket is elvégezheti a P
 * [Töltse le az Android-alkalmazást](https://go.microsoft.com/fwlink/?LinkID=544867) az Androidos alkalmazás-áruházból.
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
-

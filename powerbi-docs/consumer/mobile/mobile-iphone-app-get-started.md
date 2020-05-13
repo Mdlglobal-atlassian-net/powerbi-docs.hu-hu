@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 56b3a4f67f5bc6dda777ea7c94b92c65abb4f3b0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77426633"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349402"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Első lépések az iOS-eszközökhöz készült Power BI mobilalkalmazással
 Az iPhone-on vagy iPad-en futó iOS-es Microsoft Power BI-alkalmazás mobil BI-élményt kínál a Power BI-hoz, a Power BI jelentéskészítő kiszolgálóhoz és a Reporting Services-hez. Az élő, érintéssel vezérelhető mobil hozzáférés révén bárhonnan megtekintheti és kezelheti vállalata helyszíni és felhőbeli irányítópultjait. Böngészheti az irányítópultokon szereplő adatokat, és megoszthatja azokat kollégáival e-mail vagy szöveges üzenet formájában. Kísérje figyelemmel a legidőszerűbb adatokat [Appla Watch](mobile-apple-watch.md)on.  
@@ -22,7 +22,7 @@ Az iPhone-on vagy iPad-en futó iOS-es Microsoft Power BI-alkalmazás mobil BI-�
 
 Létrehozhat Power BI-jelentéseket a Power BI Desktopban, és közzéteheti őket:
 
-* [Közzéteheti őket a Power BI szolgáltatásban](../../service-get-started.md), és irányítópultokat hozhat létre.
+* [Közzéteheti őket a Power BI szolgáltatásban](../../fundamentals/service-get-started.md), és irányítópultokat hozhat létre.
 * [Közzéteheti őket a helyszínen a Power BI jelentéskészítő kiszolgálón](../../report-server/quickstart-create-powerbi-report.md).
 
 Ezután az iOS-es Power BI mobilalkalmazásban a helyszínen és a felhőben is dolgozhat az irányítópultokkal és a jelentésekkel.
@@ -79,11 +79,9 @@ A Microsoft Intune segítségével a cégek szabályozhatják az olyan elemeket,
 > Ha a Power BI mobilalkalmazást egy iOS-eszközön használja, és a cége konfigurálta a Microsoft Intune MAM felügyeletet, a háttérben futó adatfrissítés ki van kapcsolva. A Power BI a weben futó Power BI szolgáltatásból frissíti az adatokat, amikor legközelebb belép az alkalmazásba.
 > 
 
-További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../service-admin-mobile-intune.md). 
+További információ a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásáról](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Következő lépések
 
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
-

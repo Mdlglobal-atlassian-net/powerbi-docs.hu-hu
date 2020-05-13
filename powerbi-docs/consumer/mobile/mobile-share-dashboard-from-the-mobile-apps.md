@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31d3ee405f77acaa47bb158ddde97778a8af9ff0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435789"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349333"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Irányítópult vagy jelentés megosztása a Power BI-mobilalkalmazásokból
 Hatóköre:
@@ -25,7 +25,7 @@ Hatóköre:
 >[!NOTE]
 >A Power BI-mobilalkalmazás támogatása a **Windows 10 Mobile rendszerű telefonokhoz** 2021. március 16-án megszűnik. [További tudnivalók](https://go.microsoft.com/fwlink/?linkid=2121400)
 
-[Power BI Pro-licenccel](../../service-features-license-type.md) megoszthatja a Power BI mobilalkalmazások hivatkozásait, hogy meghívjon másokat irányítópultjainak vagy jelentéseinek megtekintésére. A hivatkozásokat bárkivel megoszthatja vállalatán belül vagy azon kívül, akár rendelkezik az illető vállalati e-mail-fiókkal, akár nem. Ha a tartalom nem [Prémium kapacitást](../../service-premium-what-is.md) használ, akkor nekik is Power BI Pro-licenccel kell rendelkezniük.
+[Power BI Pro-licenccel](../../fundamentals/service-features-license-type.md) megoszthatja a Power BI mobilalkalmazások hivatkozásait, hogy meghívjon másokat irányítópultjainak vagy jelentéseinek megtekintésére. A hivatkozásokat bárkivel megoszthatja vállalatán belül vagy azon kívül, akár rendelkezik az illető vállalati e-mail-fiókkal, akár nem. Ha a tartalom nem [Prémium kapacitást](../../admin/service-premium-what-is.md) használ, akkor nekik is Power BI Pro-licenccel kell rendelkezniük.
 
 Az iOS vagy Android rendszerű Power BI mobilalkalmazásokban [jegyzetekkel láthatja el és megoszthatja másokkal a csempék, jelentések vagy vizualizációk pillanatképét](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
@@ -42,7 +42,7 @@ Az iOS vagy Android rendszerű Power BI mobilalkalmazásokban [jegyzetekkel lát
    * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
    * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
    
-   További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
+   További információk [a munkatársakkal való megosztással kapcsolatban](../../collaborate-share/service-share-dashboards.md).
 
 ### <a name="unshare-from-your-iphone-or-ipad"></a>Megosztás megszüntetése iPhone-ról vagy iPadről
 A megosztást csak a tulajdonos törölheti.
@@ -67,7 +67,7 @@ A megosztást csak a tulajdonos törölheti.
    * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
    * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
    
-   További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
+   További információk [a munkatársakkal való megosztással kapcsolatban](../../collaborate-share/service-share-dashboards.md).
 
 
 ### <a name="unshare-from-your-android-device"></a>Megosztása törlése androidos készülékről
@@ -97,10 +97,9 @@ A megosztást csak a tulajdonos törölheti.
    * A Power BI mobilalkalmazásban koppintson a **További beállítások** (...) lehetőségre a navigációs sávon, majd válassza a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőséget.
    * A Power BI szolgáltatásban kattintson a ![Velem megosztva](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Velem megosztva** lehetőségre a bal oldali navigációs panelen.
    
-   További információk [a munkatársakkal való megosztással kapcsolatban](../../service-share-dashboards.md).
+   További információk [a munkatársakkal való megosztással kapcsolatban](../../collaborate-share/service-share-dashboards.md).
 
 ## <a name="next-steps"></a>További lépések
 * [Csempe, jelentés vagy vizualizáció pillanatképének megosztása vagy jegyzetekkel való ellátása a mobilalkalmazásokban](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Irányítópult vagy jelentés megosztása a Power BI-ban](../../service-share-dashboards.md)
+* [Irányítópult vagy jelentés megosztása a Power BI-ban](../../collaborate-share/service-share-dashboards.md)
 * Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
-

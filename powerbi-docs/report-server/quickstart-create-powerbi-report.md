@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: efc316e93bea9cfc1b3f429657ac2810e13f4e63
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76975010"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349471"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI-jelentés létrehozása a Power BI jelentéskészítő kiszolgálóhoz
 A Power BI-jelentéseket helyszínen is tárolhatja és kezelheti a Power BI jelentéskészítő kiszolgáló webportálján, illetve tárolhatja őket a felhőbeli Power BI szolgáltatásban (https://powerbi.com) ). A jelentéseket a Power BI Desktopban hozhatja létre, majd közzéteheti a webportálon. Ekkor a jelentések megtekinthetővé válnak a cégen belüli olvasók számára egy böngésző vagy egy Power BI-mobilalkalmazás használatával.
@@ -79,7 +79,7 @@ Például tölcsérdiagramot hozhat létre az éves jövedelem alapján csoporto
 2. Húzza a megszámlálandó mezőt az **Értékek** oszlopba. Ha nem numerikus mezőről van szó, a Power BI Desktop automatikusan hozzáteszi a *Count of* (Száma) kiegészítést.
 3. A csoportosítandó mezőt húzza a **Csoport** oszlopba.
 
-További információk a [Power BI-jelentés megtervezéséről](../desktop-report-view.md).
+További információk a [Power BI-jelentés megtervezéséről](../create-reports/desktop-report-view.md).
 
 ## <a name="step-4-save-your-report-to-the-report-server"></a>4\. lépés: Mentse a jelentést a jelentéskészítő kiszolgálón
 A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskészítő kiszolgálón.
@@ -98,7 +98,7 @@ A kész jelentést mentse a 2. lépésben kiválasztott Power BI jelentéskész�
 ### <a name="power-bi-desktop"></a>Power BI Desktop
 A Power BI Desktop számos nagyszerű erőforrással segíti a jelentéskészítést. Egy jó kiindulási pont ez a hivatkozás.
 
-* [Első lépések a Power BI Desktopban](../desktop-getting-started.md)
+* [Első lépések a Power BI Desktopban](../fundamentals/desktop-getting-started.md)
 * Interaktív tanulás: [Ismerkedés a Power BI Desktoppal](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI jelentéskészítő kiszolgáló

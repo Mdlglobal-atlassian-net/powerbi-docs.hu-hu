@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 088844ccf52a67cfd67590e62a2dd8cab83add66
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065753"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348413"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>A Power BI funkcióinak listája *fogyasztók* és más, ingyenes licencekkel rendelkező felhasználók számára
 
@@ -23,7 +23,7 @@ ms.locfileid: "82065753"
 
 *Ügyfélként* a Power BI szolgáltatást használhatja a jelentések és irányítópultok megismeréséhez és ezek alapján az üzleti döntések meghozatalához. Ezeket a jelentéseket és irányítópultokat olyan *tervezők* hozzák létre, akik Power BI *Pro* licenccel rendelkeznek. A Pro verzió felhasználói megoszthatják munkatársaikkal saját tartalmaikat, és azt is megszabhatják, hogy a munkatársak mit tehessenek ezekkel a tartalmakkal. Előfordul, hogy a tervezők hivatkozásokat küldve osztják meg a tartalmakat, máskor a tartalmak automatikusan települnek és megjelennek a Power BI **Alkalmazások** vagy **Velem megosztva** területén.
 
-A tervezők számos különböző módon oszthatják meg a tartalmaikat. Ez a cikk azonban a Power BI *fogyasztóira* vonatkozik, ezért csak azt mutatja be, hogy a fogyasztók hogyan érhetik el és használhatják a tartalmakat. A tartalmak megosztásának egyéb módjaival kapcsolatban további információt [A munka megosztásának módjai a Power BI-ban](../service-how-to-collaborate-distribute-dashboards-reports.md) című cikkben talál.
+A tervezők számos különböző módon oszthatják meg a tartalmaikat. Ez a cikk azonban a Power BI *fogyasztóira* vonatkozik, ezért csak azt mutatja be, hogy a fogyasztók hogyan érhetik el és használhatják a tartalmakat. A tartalmak megosztásának egyéb módjaival kapcsolatban további információt [A munka megosztásának módjai a Power BI-ban](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) című cikkben talál.
 
 ![A Power BI navigációs panelje](media/end-user-features/power-bi-share.png)
 
@@ -47,7 +47,7 @@ Ha egy vállalat prémium szintű kapacitásra rendelkezik előfizetéssel, a re
 ### <a name="licenses"></a>Licencek 
 A Power BI-felhasználók ingyenes licenccel vagy Pro-licenccel rendelkeznek. A *felhasználók* ingyenes licenccel rendelkeznek.
 
-- **Ingyenes licenc** – általában egy vállalaton belüli *fogyasztók* kapják (lásd az alábbi első képet). Azok is ilyen licenccel rendelkeznek, akik magánszemélyként regisztrálnak a Power BI szolgáltatásra, és a [Power BI szolgáltatást önálló módban](../service-self-service-signup-for-power-bi.md) szeretnék kipróbálni (lásd a második képet alább). 
+- **Ingyenes licenc** – általában egy vállalaton belüli *fogyasztók* kapják (lásd az alábbi első képet). Azok is ilyen licenccel rendelkeznek, akik magánszemélyként regisztrálnak a Power BI szolgáltatásra, és a [Power BI szolgáltatást önálló módban](../fundamentals/service-self-service-signup-for-power-bi.md) szeretnék kipróbálni (lásd a második képet alább). 
 
     ![az ingyenes felhasználót megjelenítő képernyőkép](media/end-user-features/power-bi-free-organization.png)
 
