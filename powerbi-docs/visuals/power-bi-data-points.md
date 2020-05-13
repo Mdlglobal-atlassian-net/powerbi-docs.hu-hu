@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a874875c470cd85720570e57b7c6d7cf50dabca1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381445"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274167"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Adatpontkorlátok és -stratégiák alkalmazása vizualizációtípus szerint
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 Amikor a Power BI-ban vizualizációt renderel, a vizualizációnak gyorsan és pontosan kell megjelennie. Ez minden vizualizációtípushoz külön konfigurált háttérbeli algoritmusokat igényel. A Power BI-beli vizualizációknak elég rugalmasnak kell lenniük a különböző méretű adathalmazok kezeléséhez. Egyes adathalmazok csupán néhány adatpontból állnak, mások viszont több petabájtnyiból. Ez a cikk a Power BI által a vizualizációk rendereléséhez használt stratégiákat ismerteti.
 
@@ -57,7 +59,7 @@ A dinamikus korlátok stratégiája automatikusan alkalmazva lesz megfelelő kis
 ## <a name="strategies-and-data-point-limits-by-visual-type"></a>Stratégiákra és adatpontokra vonatkozó korlátozások vizualizációtípus szerint
 
 ### <a name="area-chart"></a>Területdiagram
-Lásd: [A vonalas mintavételezés működése](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Lásd: [A vonalas mintavételezés működése](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="barcolumn-chart"></a>Sáv- és oszlopdiagram
 - Kategorikus módban
@@ -97,10 +99,10 @@ A kartogram használhat statisztikákat vagy dinamikus korlátokat. A Power BI a
 - Utolsó 3500
 
 ### <a name="line-chart"></a>Vonaldiagram
-Lásd: [A vonalas mintavételezés működése](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Lásd: [A vonalas mintavételezés működése](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="line-chart-high-density"></a>Vonaldiagram, nagy sűrűségű
-Lásd: [Sűrű mintavételezés](../desktop-high-density-sampling.md)
+Lásd: [Sűrű mintavételezés](../create-reports/desktop-high-density-sampling.md)
 
 ### <a name="map"></a>Térkép 
 - Pontok maximális száma: 3,500
@@ -109,9 +111,9 @@ A konfigurációtól függően a térképen a következők szerepelhetnek:
 - Hely: Első 3500
 - Hely, méret: Első 3500
 - Hely, szélesség és hosszúság összesítése (+/-Méret): Első 3500
-- Szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](desktop-high-density-scatter-charts.md)
+- Szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](../create-reports/desktop-high-density-scatter-charts.md)
 - Szélesség, hosszúság, méret: Első 3500
-- Jelmagyarázat, szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](desktop-high-density-scatter-charts.md)
+- Jelmagyarázat, szélesség, hosszúság – lásd: [nagy sűrűségű pontdiagram](../create-reports/desktop-high-density-scatter-charts.md)
 - Jelmagyarázat, szélesség, hosszúság, méret: Első 233 jelmagyarázat, első 15 szélesség és hosszúság (használhat statisztikákat vagy dinamikus korlátokat)
 - Hely, jelmagyarázat, szélesség és hosszúság összesítve (+/-Méret): Első 233 hely, első 15 jelmagyarázat (használhat statisztikákat vagy dinamikus korlátokat)
 

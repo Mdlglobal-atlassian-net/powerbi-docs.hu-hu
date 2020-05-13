@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866587"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279181"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Mátrixvizualizációk létrehozása a Power BI-ban
 
@@ -62,7 +62,7 @@ A mátrix bővítési állapotát a rendszer a jelentéssel együtt menti. A má
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
-> Ha az Analysis Services többdimenziós modelljén alapuló jelentést készít, a kibontás/összecsukás esetén figyelembe kell vennie néhány speciális szempontot is, ha a modell az alapértelmezett tag funkciót használja. További információt a [Többdimenziós modellek használata a Power BI-ban](../desktop-default-member-multidimensional-models.md) című témakörben talál.
+> Ha az Analysis Services többdimenziós modelljén alapuló jelentést készít, a kibontás/összecsukás esetén figyelembe kell vennie néhány speciális szempontot is, ha a modell az alapértelmezett tag funkciót használja. További információt a [Többdimenziós modellek használata a Power BI-ban](../connect-data/desktop-default-member-multidimensional-models.md) című témakörben talál.
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Részletes elemzés használata a Mátrix vizualizációval
 Mátrixvizualizációval számos érdekes, korábban nem elérhető részletes elemzési tevékenység hajtható végre. Például a részletes elemzés sorok, oszlopok vagy külön szakaszok és cellák használatával. Vessünk egy pillantást ezek működésére.
@@ -211,7 +211,7 @@ Ha egy olyan oszloppal vagy mértékkel rendelkezik, amely webhelyek URL-címeit
 
 Kapcsolja be a **webes URL-címet**, majd válassza ki az oszlop URL-címéhez használni kívánt mezőt. Az alkalmazás után az adott mező (oszlop) értékei aktív hivatkozásokká válnak. Vigye föléjük az egérmutatót a hivatkozás megjelenítéséhez, és válassza ki a hivatkozást az oldalra való ugráshoz. 
 
-További információt a [Táblázatok feltételes formázása](../desktop-conditional-table-formatting.md) című témakörben talál.
+További információt a [Táblázatok feltételes formázása](../create-reports/desktop-conditional-table-formatting.md) című témakörben talál.
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Árnyékolás és betűtípus mátrixvizualizációkkal
 A Mátrix vizualizációval Feltételes formázást (színek, árnyékolás és adatsávok) alkalmazhat a mátrixban található cellák hátterére, valamint magára a szövegre és az értékekre is.
@@ -233,3 +233,5 @@ Válassza a *Speciális vezérlők* hivatkozást, így megjelenik egy párbeszé
 [A Power BI-hoz készült Power Apps-vizualizációk](power-bi-visualization-powerapp.md)
 
 [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

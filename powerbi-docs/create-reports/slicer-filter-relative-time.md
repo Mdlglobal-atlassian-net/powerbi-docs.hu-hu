@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4f0bfdbf3eb3856f872c872fbe0880ad39839e07
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 31563e5bb5b91468b8913c3204e9d27607716c77
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867599"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279204"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Relatívidő-szeletelő és -szűrő használata a Power BI-ban
 
@@ -24,7 +24,7 @@ Gyors frissítési forgatókönyvek esetén hasznos lehet egy kisebb időtartam 
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Példa a relatív időre":::
 
-A funkciót nem kell az [automatikus oldalfrissítéssel](../desktop-automatic-page-refresh.md) együtt használnia. Azonban számos, relatív időt tartalmazó forgatókönyv jól működik együtt az automatikus oldalfrissítés funkcióval is.  
+A funkciót nem kell az [automatikus oldalfrissítéssel](../create-reports/desktop-automatic-page-refresh.md) együtt használnia. Azonban számos, relatív időt tartalmazó forgatókönyv jól működik együtt az automatikus oldalfrissítés funkcióval is.  
 
 > [!NOTE]
 > Ha egy relatívidő-szűrőt vagy -szeletelőt alkalmaz az oldal vagy a jelentés szintjén, az oldal vagy a jelentés minden vizualizációját pontosan ugyanarra az időtartományra szűr egy megosztott *rögzített kezdőidő* használatával. Mivel a vizualizációk némileg eltérő végrehajtási idővel rendelkezhetnek, a megosztott rögzített kezdőidő gondoskodik a vizualizációk szinkronizálásáról az oldalon vagy a jelentésben. Ebben a cikkben további információt talál a [rögzített kezdőidőről](#understanding-anchor-time).
@@ -107,4 +107,3 @@ A relatívidő-szeletelők és -szűrők használatára jelenleg a következő k
 
 - [Relatívdátum-szeletelő és -szűrő használata a Power BI-ban](../visuals/desktop-slicer-filter-date-range.md)
 - [Szeletelők a Power BI-ban](../visuals/power-bi-visualization-slicers.md)
-

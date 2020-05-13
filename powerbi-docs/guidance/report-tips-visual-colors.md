@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 007f91a0f220ce7482600ac284336a3ac1cbfa0f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7e8526e5e8acf45afe125495cf8eca4628b70a06
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065501"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278882"
 ---
 # <a name="tips-to-optimize-visual-colors-in-power-bi-reports"></a>Vizualizációk színeinek optimalizálása Power BI-jelentésekben – tippek
 
@@ -41,7 +41,8 @@ Tekintse meg a Power BI-jelentésvizualizációk színeinek optimalizálásához
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Tippek lenyűgöző jelentések készítéséhez](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tippek lenyűgöző jelentések készítéséhez](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-videó: [Vizualizációk színeinek optimalizálása Power BI-ban – a nyolc legfontosabb tipp tippek](https://www.youtube.com/watch?v=RhYcEsdPqJg)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)
+

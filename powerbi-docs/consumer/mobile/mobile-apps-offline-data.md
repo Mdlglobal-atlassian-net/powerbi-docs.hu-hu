@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cfb5e4f1f75437db6235ece0d8661bab3f008649
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435444"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148414"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Adatok megtekintése offline módban a Power BI-mobilalkalmazásokban
 Hatóköre:
@@ -44,7 +44,7 @@ A háttérben futó frissítéseket ki is kapcsolhatja, például ha kerülni sz
 > [!NOTE]
 > Ha a Power BI mobilalkalmazást egy iOS-eszközön használja, és a cége konfigurálta a Microsoft Intune MAM felügyeletet, a háttérben futó adatfrissítés ki van kapcsolva. A Power BI a weben futó Power BI szolgáltatásból frissíti az adatokat, amikor legközelebb belép az alkalmazásba.
 > 
-> További információt a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásával](../../service-admin-mobile-intune.md) foglalkozó témakörben talál. 
+> További információt a [Power BI-mobilalkalmazások Microsoft Intune-nal történő konfigurálásával](../../admin/service-admin-mobile-intune.md) foglalkozó témakörben talál. 
 > 
 > 
 

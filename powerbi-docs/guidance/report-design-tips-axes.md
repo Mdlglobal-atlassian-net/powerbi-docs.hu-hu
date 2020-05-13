@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9a1d0abc065380a30b1868710bea31d0bf1fa89f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 110aadce6bafd61b3c8b60a7370cedecf0d27ae0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066150"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278100"
 ---
 # <a name="tips-to-manage-axes-in-power-bi-reports"></a>Tippek a tengelyek kezeléséhez Power BI-jelentésekben
 
@@ -41,7 +41,8 @@ Tekintse meg a Power BI-jelentésekben használt tengelyek hatékony használat�
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Tippek lenyűgöző jelentések készítéséhez](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tippek lenyűgöző jelentések készítéséhez](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-videó: [A 8 legfontosabb a tengelyek hatékony kezeléséhez a Power BI-ban](https://www.youtube.com/watch?v=3t9W7Xvpzo0)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)
+

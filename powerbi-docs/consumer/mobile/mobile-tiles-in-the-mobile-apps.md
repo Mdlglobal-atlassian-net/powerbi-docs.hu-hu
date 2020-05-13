@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5f4fc253fbb7427de8adb21305f66769abcd428
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435904"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273086"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Ismerkedés a Power BI-mobilalkalmazások csempéivel
 A következőkre vonatkozik:
@@ -52,7 +52,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    A hivatkozások más Power BI-irányítópultokra vagy külső URL-címre mutathatnak. A [hivatkozásra koppintva](../../service-dashboard-edit-tile.md#hyperlink) megnyithatja az a Power BI alkalmazásban. Ha külső helyre mutat, akkor a Power BI jóváhagyást kér.
+    A hivatkozások más Power BI-irányítópultokra vagy külső URL-címre mutathatnak. A [hivatkozásra koppintva](../../create-reports/service-dashboard-edit-tile.md#hyperlink) megnyithatja az a Power BI alkalmazásban. Ha külső helyre mutat, akkor a Power BI jóváhagyást kér.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -77,7 +77,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    A hivatkozások más Power BI-irányítópultokra vagy külső URL-címre mutathatnak. A [hivatkozásra koppintva](../../service-dashboard-edit-tile.md#hyperlink) megnyithatja az a Power BI alkalmazásban. Ha külső helyre mutat, akkor a Power BI jóváhagyást kér.
+    A hivatkozások más Power BI-irányítópultokra vagy külső URL-címre mutathatnak. A [hivatkozásra koppintva](../../create-reports/service-dashboard-edit-tile.md#hyperlink) megnyithatja az a Power BI alkalmazásban. Ha külső helyre mutat, akkor a Power BI jóváhagyást kér.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -98,7 +98,7 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
    
     A [csempe alapjául szolgáló jelentés megtekintése](mobile-reports-in-the-mobile-apps.md) a **Jelentés megnyitása** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) lehetőségre koppintva.
    
-    [Hivatkozás megnyitása](../../service-dashboard-edit-tile.md#hyperlink), ha tartalmaz hivatkozást. A hivatkozások Power BI-irányítópultokra vagy külső URL-címre mutathatnak.
+    [Hivatkozás megnyitása](../../create-reports/service-dashboard-edit-tile.md#hyperlink), ha tartalmaz hivatkozást. A hivatkozások Power BI-irányítópultokra vagy külső URL-címre mutathatnak.
 3. Koppintson a **Csempe kibontása** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png) lehetőségre. Megnyílik fókusz módban, így a csempe adatai könnyebben áttekinthetők és vizsgálhatók. Ebben a módban a következő műveleteket végrehajtására van lehetőség:
    
    Elforgathat egy kördiagramot, hogy felette megjelenjen a körcikkhez tartozó érték.  
@@ -130,4 +130,3 @@ Ezek a csempék aztán a Power BI mobilalkalmazásban fókusz módban megnyithat
 ## <a name="next-steps"></a>Következő lépések
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e16acffd683b14eb48a6e21ddc456caeac25efc3
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79112498"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83132001"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Adatvédelmi metrikákról készült jelentés (előzetes verzió)
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Mi az adatvédelmi metrikákról készült jelentés?
-Az adatvédelmi metrikákról készült dedikált jelentéssel a [Power BI-rendszergazdák](../service-admin-role.md) figyelhetik és követhetik az adatbizalmassági címkék használatát és a bérlőn belüli alkalmazását.
+Az adatvédelmi metrikákról készült dedikált jelentéssel a [Power BI-rendszergazdák](../admin/service-admin-role.md) figyelhetik és követhetik az adatbizalmassági címkék használatát és a bérlőn belüli alkalmazását.
 
 ![Adatvédelmi metrikák jelentése](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
@@ -32,7 +32,7 @@ A jelentés 24 óránként frissül.
 
 ## <a name="viewing-the-data-protection-metrics-report"></a>Az adatvédelmi metrikákról készült jelentés megtekintése
 
-A jelentés megnyitásához és megtekintéséhez rendelkeznie kell a [Power BI-rendszergazdai szerepkörrel](../service-admin-role.md).
+A jelentés megnyitásához és megtekintéséhez rendelkeznie kell a [Power BI-rendszergazdai szerepkörrel](../admin/service-admin-role.md).
 A jelentés megtekintéséhez nyissa meg a **Beállítások > Felügyeleti portál** elemet, majd válassza **Védelmi metrikák (előzetes verzió)** .
 
 ![Védelmi metrikák a felügyeleti portálon](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
@@ -47,13 +47,13 @@ Amikor először nyitja meg az adatvédelmi metrikákról készülő jelentést,
 
 Az adatvédelmi metrikákról készülő jelentés javított verziói szabályos időközönként jelennek meg. Ha a jelentés megnyitásakor elérhető újabb verzió, a rendszer rákérdez, hogy az új verziót szeretné-e megnyitni. Ha igennel válaszol, a jelentés új verziója lesz betöltve, amely felülírja a régit. Az előző jelentésen és/vagy adathalmazon esetleg végrehajtott összes módosítás elveszik. Dönthet úgy, hogy nem az új verziót nyitja meg, de ilyenkor nem tudja kihasználni az új verzió fejlesztéseinek előnyeit. 
 ## <a name="notes-and-considerations"></a>Megjegyzések és megfontolandó szempontok
-* Az adatvédelmi metrikákról készülő jelentés sikeres generálásához a bérlőben engedélyezni kell az [információvédelmet](./service-security-enable-data-sensitivity-labels.md), és [bizalmassági címkéket kell alkalmazni](../designer/service-security-apply-data-sensitivity-labels.md). 
+* Az adatvédelmi metrikákról készülő jelentés sikeres generálásához a bérlőben engedélyezni kell az [információvédelmet](./service-security-enable-data-sensitivity-labels.md), és [bizalmassági címkéket kell alkalmazni](../collaborate-share/service-security-apply-data-sensitivity-labels.md). 
 * A Cloud App Security információi csak akkor érhetők el, ha a vállalat rendelkezik a megfelelő [Cloud App Security-licenccel](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * Ha úgy dönt, hogy olyan felhasználóval oszt meg az adatvédelmi metrikákról készült jelentésből származó információkat, aki nem Power BI-rendszergazda, szem előtt kell tartania, hogy ez a jelentés bizalmas információkat tartalmaz a vállalatról.
 * Az adatvédelmi metrikákról készülő jelentés speciális jelentés, amely nem jelenik meg a Velem megosztva, a Legutóbbiak és a Kedvencek listában sem.
-* Az adatvédelmi metrikákról szóló jelentés nem érhető el [külső felhasználók számára (Azure Active Directory B2B-vendégfelhasználók)](../service-admin-azure-ad-b2b.md).
+* Az adatvédelmi metrikákról szóló jelentés nem érhető el [külső felhasználók számára (Azure Active Directory B2B-vendégfelhasználók)](../admin/service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>További lépések
 * [Adatvédelem a Power BI-ban (előzetes verzió)](./service-security-data-protection-overview.md)
 * [A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban (előzetes verzió)](./service-security-using-microsoft-cloud-app-security-controls.md)
-* [A Power BI-szolgáltatásgazda szerepkör ismertetése](../service-admin-role.md)
+* [A Power BI-szolgáltatásgazda szerepkör ismertetése](../admin/service-admin-role.md)
 * [Bizalmassági adatcímkézés engedélyezése a Power BI-ban](./service-security-enable-data-sensitivity-labels.md)

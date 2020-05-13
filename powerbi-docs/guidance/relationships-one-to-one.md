@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 92aa2c5d8da91590f5d491090761a6a6b1501061
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263806"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278261"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Útmutató egy-az-egyhez kapcsolatokhoz
 
@@ -99,7 +99,7 @@ Ha csak lehetséges, ajánlott kerülni az egy-az-egyhez kapcsolatok létrehozá
 - A hierarchiák létrehozásának lehetősége korlátozott, mert azok szintjei _egyazon tábla_ oszlopain alapulnak
 - Váratlan eredmények előállítása, ha a táblák sorai között nem teljes az egyezés
 
-A pontos javaslatok eltérőek aszerint, hogy az egy-az-egyhez kapcsolat _szigeten belüli_ vagy _szigetek közötti_. A kapcsolatok kiértékeléséről a [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../desktop-relationships-understand.md#relationship-evaluation) című cikk nyújt bővebb információt.
+A pontos javaslatok eltérőek aszerint, hogy az egy-az-egyhez kapcsolat _szigeten belüli_ vagy _szigetek közötti_. A kapcsolatok kiértékeléséről a [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../transform-model/desktop-relationships-understand.md#relationship-evaluation) című cikk nyújt bővebb információt.
 
 ### <a name="intra-island-one-to-one-relationship"></a>Szigeten belüli egy-az-egyhez kapcsolat
 
@@ -107,7 +107,7 @@ Ha _szigeten belüli_ egy-az-egyhez kapcsolat áll fenn a táblák között, aj�
 
 Az alábbi lépések az egy-az-egyhez kapcsolatú adatok egyesítésére és modellezésére kínálnak módot:
 
-1. **Lekérdezések egyesítése**: [A két lekérdezés egyesítésekor](../desktop-shape-and-combine-data.md#combine-queries) vegye figyelembe az egyes lekérdezésekben szereplő adatok teljességét. Ha az egyik lekérdezés a sorok teljes halmazát tartalmazza (például egy fő lista), egyesítse ezzel a másik lekérdezést. Az egyesítési átalakítást konfigurálja úgy, hogy _bal oldali külső illesztést_ használjon, amely az alapértelmezett illesztési típus. Ez az illesztési típus biztosítja, hogy az első lekérdezés összes sora megmarad, kiegészítve a második lekérdezés egyező soraival. A második lekérdezés összes szükséges oszlopát bontsa ki az első lekérdezésbe.
+1. **Lekérdezések egyesítése**: [A két lekérdezés egyesítésekor](../connect-data/desktop-shape-and-combine-data.md#combine-queries) vegye figyelembe az egyes lekérdezésekben szereplő adatok teljességét. Ha az egyik lekérdezés a sorok teljes halmazát tartalmazza (például egy fő lista), egyesítse ezzel a másik lekérdezést. Az egyesítési átalakítást konfigurálja úgy, hogy _bal oldali külső illesztést_ használjon, amely az alapértelmezett illesztési típus. Ez az illesztési típus biztosítja, hogy az első lekérdezés összes sora megmarad, kiegészítve a második lekérdezés egyező soraival. A második lekérdezés összes szükséges oszlopát bontsa ki az első lekérdezésbe.
 2. **Lekérdezések betöltésének letiltása**: Mindig [tiltsa le](import-modeling-data-reduction.md#disable-power-query-query-load) a második lekérdezés betöltését. Így az nem tölti be az eredményét modelltáblaként. Ez a konfiguráció csökkenti az adatmodell tárolási méretét, és hozzájárul a **Mezők** panel zsúfoltságának csökkentéséhez.
 
     Példánkban a jelentéskészítők már csak egyetlen, **Product** nevű táblát látnak a **Mezők** panelen. Ez tartalmazza a termékekkel kapcsolatos összes mezőt.
@@ -131,11 +131,11 @@ Ebben a példában a jelentéskészítők a **Category** mezőt a **Marketing** 
 
 ![A Mezők panelen a Category mező látható a Marketing nevű megjelenítési mappában.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Ha ennek ellenére úgy dönt, hogy szigeten belüli egy-az-egyhez kapcsolatokat definiál a modellben, lehetőség szerint ellenőrizze, hogy a kapcsolódó táblákban egyező sorok vannak. Mivel az szigeten belüli egy-az-egyhez kapcsolatok [erős kapcsolatokként](../desktop-relationships-understand.md#strong-relationships) vannak kiértékelve, az adatintegritási problémák a jelentésvizualizációkban megjelenő BLANK értékekhez vezethetnek. (A BLANK csoportosításra a cikkben elsőként bemutatott táblázatos vizualizációban láthat példát.)
+Ha ennek ellenére úgy dönt, hogy szigeten belüli egy-az-egyhez kapcsolatokat definiál a modellben, lehetőség szerint ellenőrizze, hogy a kapcsolódó táblákban egyező sorok vannak. Mivel az szigeten belüli egy-az-egyhez kapcsolatok [erős kapcsolatokként](../transform-model/desktop-relationships-understand.md#strong-relationships) vannak kiértékelve, az adatintegritási problémák a jelentésvizualizációkban megjelenő BLANK értékekhez vezethetnek. (A BLANK csoportosításra a cikkben elsőként bemutatott táblázatos vizualizációban láthat példát.)
 
 ### <a name="inter-island-one-to-one-relationship"></a>Szigetek közötti egy-az-egyhez kapcsolat
 
-Ha a táblák között _szigetek közötti_ egy-az-egyhez kapcsolat áll fenn, akkor a modell csak abban az esetben építhető fel másként, ha az adatokat előre egyesítette az adatforrásokban. A Power BI [gyenge kapcsolatként](../desktop-relationships-understand.md#weak-relationships) értékeli ki az egy-az-egyhez modellkapcsolatot. Emiatt fontos ellenőrizni, hogy a kapcsolódó táblák illeszkedő sorokat tartalmaznak, a párosítatlan sorok ugyanis nem jelennek meg a lekérdezés eredményében.
+Ha a táblák között _szigetek közötti_ egy-az-egyhez kapcsolat áll fenn, akkor a modell csak abban az esetben építhető fel másként, ha az adatokat előre egyesítette az adatforrásokban. A Power BI [gyenge kapcsolatként](../transform-model/desktop-relationships-understand.md#weak-relationships) értékeli ki az egy-az-egyhez modellkapcsolatot. Emiatt fontos ellenőrizni, hogy a kapcsolódó táblák illeszkedő sorokat tartalmaznak, a párosítatlan sorok ugyanis nem jelennek meg a lekérdezés eredményében.
 
 Az alábbi ábrán annak eredménye látható, hogy a táblázatos vizualizációhoz mindkét táblából vettünk fel mezőket, a táblák között pedig gyenge kapcsolat áll fenn.
 
@@ -147,7 +147,7 @@ A táblázatban csak két sor jelenik meg. A CL-02 termékváltozat hiányzik, a
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
+- [Modellbeli kapcsolatok a Power BI Desktopban](../transform-model/desktop-relationships-understand.md)
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](star-schema.md)
 - [Kapcsolatok hibaelhárítási útmutatója](relationships-troubleshoot.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

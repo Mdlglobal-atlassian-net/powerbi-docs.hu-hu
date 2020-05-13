@@ -4,22 +4,24 @@ description: A Microsoft Power BI jelentésvizualizációinak áttekintése.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
-featuredvideoid: SYk_gWrtKvM
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 65a6ab132cccc56d96f5ac22fef5d80f59f96ca9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381468"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277548"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Vizualizációk Power BI-jelentésekben
 
-A vizualizációk az adatokból nyert megállapításokat jelenítik meg. Egy Power BI-jelentés állhat egyetlen oldalból, amelyen csak egy vizualizáció szerepel, de előfordulhatnak olyan jelentések is, amelyek számos vizualizációt tartalmazó oldalakból állnak. A Power BI szolgáltatásban a vizualizációkat a [jelentésekből irányítópultokra lehet rögzíteni](../service-dashboard-pin-tile-from-report.md).
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
+
+A vizualizációk az adatokból nyert megállapításokat jelenítik meg. Egy Power BI-jelentés állhat egyetlen oldalból, amelyen csak egy vizualizáció szerepel, de előfordulhatnak olyan jelentések is, amelyek számos vizualizációt tartalmazó oldalakból állnak. A Power BI szolgáltatásban a vizualizációkat a [jelentésekből irányítópultokra lehet rögzíteni](../create-reports/service-dashboard-pin-tile-from-report.md).
 
 Fontos különbséget tenni a *jelentéstervezők* és a *jelentésfelhasználók* között.  Ha Ön az a személy, akik a jelentést létrehozza vagy módosítja, akkor Ön tervező.  A tervezőknek szerkesztési jogosultságuk van a jelentéshez és az alapul szolgáló adathalmazhoz. A Power BI Desktopban ez azt jelenti, hogy megnyithatja az adatkészletet Adatnézetben, és vizualizációkat hozhat létre Jelentés nézetben. A Power BI szolgáltatásban ez azt jelenti, hogy megnyithatja az adathalmazt vagy a jelentést a jelentésszerkesztőben [Szerkesztési nézetben](../consumer/end-user-reading-view.md). Ha a jelentést vagy az irányítópultot [megosztották Önnel](../consumer/end-user-shared-with-me.md), akkor Ön a jelentés *felhasználója*. A jelentést és a rajta szereplő vizualizációkat megtekintheti és használhatja, de nem végezhet annyi módosítást, amennyit egy *tervező*.
 
@@ -28,9 +30,6 @@ A Power BI Vizualizációk paneljén számos különféle típusú vizualizáci�
 ![az egyes vizualizációs típusok ikonjait tartalmazó ablaktábla](media/power-bi-report-visualizations/power-bi-icons.png)
 
 Még nagyobb választékot talál a [Microsoft AppSource közösség webhelyén](https://appsource.microsoft.com), ahol a Microsoft és a közösség által kínált [Power BI-vizualizációkat](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) kereshet meg és [tölthet le](../developer/visuals/custom-visual-develop-tutorial.md).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-
 
 Ha még nem használta a Power BI-t, vagy fel szeretné frissíteni a tudását, az alábbi hivatkozásokat követve megismerkedhet a Power BI-vizualizációk használatának alapfogalmaival.  A (cikk bal oldalán látható) Tartalomjegyzék alapján további hasznos információkhoz juthat.
 
@@ -60,7 +59,7 @@ Próbálkozhat [a vizualizáció típusának módosításával](power-bi-report-
 
 ## <a name="pin-the-visualization"></a>A vizualizáció rögzítése
 
-Ha a vizualizáció pont úgy néz ki, ahogy szeretné, a Power BI szolgáltatásban csempeként [rögzítheti az irányítópultra](../service-dashboard-pin-tile-from-report.md). Ha rögzítés után megváltoztatja a jelentésben használt vizualizációt, az irányítópulton lévő csempe nem változik. Ha például vonaldiagram volt, akkor az is marad, noha a jelentésben fánkdiagrammá alakította át.
+Ha a vizualizáció pont úgy néz ki, ahogy szeretné, a Power BI szolgáltatásban csempeként [rögzítheti az irányítópultra](../create-reports/service-dashboard-pin-tile-from-report.md). Ha rögzítés után megváltoztatja a jelentésben használt vizualizációt, az irányítópulton lévő csempe nem változik. Ha például vonaldiagram volt, akkor az is marad, noha a jelentésben fánkdiagrammá alakította át.
 
 ## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
 - Az adatforrástól és a mezők számától függően (mérőszámok vagy oszlopok) előfordulhat, hogy a vizualizációk lassan töltenek be.  Javasoljuk, hogy a vizualizációkat korlátozza összesen 10–20 mezőre a jobb olvashatóság és teljesítmény érdekében. 

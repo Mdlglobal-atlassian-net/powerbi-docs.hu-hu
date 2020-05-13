@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a8c8c50369911e76376ccbda3a95743813fde6bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263668"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273224"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Útmutató aktív vagy inaktív kapcsolatokhoz
 
@@ -114,7 +114,7 @@ Ez a modellterv támogatja az alábbi jelentéskivitel előállítását.
 
 A jelentésoldal 2019. negyedik negyedévére szűr. A táblázatos vizualizáció havonként csoportosít, és különböző értékesítési statisztikákat jelenít meg. Az **Orders** és az **Orders Shipped** mérték különböző eredményt ad. Mindkettő ugyanazt az összesítési logikát használja (megszámlálja a **Sales** tábla sorait), de a **Date** tábla szűrésének más propagálásával.
 
-Megfigyelheti, hogy a negyedéves szeletelő egy BLANK (üres) elemet is tartalmaz. Ez a szeletelőelem a [táblakiterjesztés](../desktop-relationships-understand.md#strong-relationships) eredményeként jelenik meg. Bár a **Sales** tábla minden sorában szerepel megrendelési dátum, egyes sorokban a kiszállítási dátum BLANK – ezek a még kiszállításra váró rendelések. A tábla kiterjesztése az inaktív kapcsolatokat is figyelembe veszi, ezért BLANK értékek is megjelenhetnek a kapcsolat több-oldalán lévő üres értékek, vagy adatintegritási problémák miatt.
+Megfigyelheti, hogy a negyedéves szeletelő egy BLANK (üres) elemet is tartalmaz. Ez a szeletelőelem a [táblakiterjesztés](../transform-model/desktop-relationships-understand.md#strong-relationships) eredményeként jelenik meg. Bár a **Sales** tábla minden sorában szerepel megrendelési dátum, egyes sorokban a kiszállítási dátum BLANK – ezek a még kiszállításra váró rendelések. A tábla kiterjesztése az inaktív kapcsolatokat is figyelembe veszi, ezért BLANK értékek is megjelenhetnek a kapcsolat több-oldalán lévő üres értékek, vagy adatintegritási problémák miatt.
 
 ## <a name="recommendations"></a>Javaslatok
 
@@ -129,7 +129,7 @@ Bizonyos körülmények között azonban egy vagy több inaktív kapcsolat is de
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
+- [Modellbeli kapcsolatok a Power BI Desktopban](../transform-model/desktop-relationships-understand.md)
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](star-schema.md)
 - [Kapcsolatok hibaelhárítási útmutatója](relationships-troubleshoot.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d94e9696ee41e8bd76f7d11aab794ccd2dc701b3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73859181"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277985"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sorszintű biztonság (RLS) a Power BI jelentéskészítő kiszolgálóban
 
@@ -33,7 +33,7 @@ A sorszintű biztonsági szűrés alapbeállítás szerint egyirányú szűrőke
 
 Ezt a négyzetet akkor jelölje be, ha [dinamikus sorszintű biztonságot](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) alkalmaz felhasználónév vagy bejelentkezési azonosító alapján. 
 
-További információt a [Kétirányú keresztszűrés a DirectQuery használatával a Power BI Desktopban](../desktop-bidirectional-filtering.md) és [A táblázatos BI szemantikai modell biztonságossá tétele](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) című tanulmányban talál.
+További információt a [Kétirányú keresztszűrés a DirectQuery használatával a Power BI Desktopban](../transform-model/desktop-bidirectional-filtering.md) és [A táblázatos BI szemantikai modell biztonságossá tétele](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) című tanulmányban talál.
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 
@@ -84,7 +84,7 @@ Itt találja a sorszintű biztonság Power BI-modellekben érvényes aktuális k
 
 Azok a felhasználók, akik a username() DAX-függvényt használó jelentésekkel rendelkeznek, új viselkedést fognak tapasztalni, amelyben a függvény visszaadja az egyszerű felhasználónevet (UPN-t), KIVÉVE, ha a DirectQueryt integrált biztonsági megoldással használják.  Mivel ebben a helyzetben az RLS nem érvényesül, az itteni viselkedés változatlan marad.
 
-Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyezni az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. További információ az [Excel-fájlok konvertálásáról](../desktop-import-excel-workbooks.md).
+Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyezni az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. További információ az [Excel-fájlok konvertálásáról](../connect-data/desktop-import-excel-workbooks.md).
 
 Csak az Extract, a Transform, a Load (ETL) és a tárolt hitelesítő adatokat használó DirectQuery-kapcsolatok vannak támogatva. Az Analysis Servicesbe irányuló élő kapcsolatok és az integrált hitelesítést használó DirectQuery-kapcsolatok az alapul szolgáló adatforrásban vannak kezelve. 
 
@@ -122,3 +122,4 @@ Igen, ha már rendelkezik meglévő szerepkörökkel és hozzárendelt tagokkal 
 [Rendszergazdai kézikönyv](admin-handbook-overview.md)  
 
 Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
+

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 61322db7085bd41539c0c79d483403b794f23f26
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8c91e2a07143a6355b7049e80cbdc3e4ba906013
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114301"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145388"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Nyomtatás a Power BI szolgáltatásból
 
@@ -116,7 +116,6 @@ A jelentésekből egyszerre egy oldal nyomtatható ki.
 * VÁLASZ: Térjen vissza az irányítópultra vagy jelentésre az alapértelmezett nézetben, majd nyissa meg újra a vizualizációt fókusz módban, majd a teljes képernyős módban. 
 
 ## <a name="next-steps"></a>Következő lépések
-[Irányítópultok és jelentések megosztása munkatársakkal és más személyekkel](../service-share-dashboards.md)
+[Irányítópultok és jelentések megosztása munkatársakkal és más személyekkel](../collaborate-share/service-share-dashboards.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

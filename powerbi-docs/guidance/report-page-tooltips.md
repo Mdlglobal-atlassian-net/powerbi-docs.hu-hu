@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5a6b7bda8bf5e8d80ae8b22a71035f8bc362fb89
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377742"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277847"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Vizualizációk kibővítése a jelentésoldalak elemleírásával
 
-Ez a cikk a Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokat és ajánlásokat fogalmaz meg a [jelentésoldal elemleírásainak](../desktop-tooltips.md) létrehozásához.
+Ez a cikk a Power BI-jelentéseket megtervező jelentéskészítők számára készült. Javaslatokat és ajánlásokat fogalmaz meg a [jelentésoldal elemleírásainak](../create-reports/desktop-tooltips.md) létrehozásához.
 
 ## <a name="suggestions"></a>Javaslatok
 
@@ -29,7 +29,7 @@ A jelentésoldali elemleírások javíthatják a jelentésfelhasználói élmén
 > [!NOTE]
 > A jelentésvizualizáció csak akkor jelenítheti meg egy oldal elemleírását, ha az elemleírás oldalszűrői kompatibilisek a vizualizáció kialakításával. Egy _termék_ szerint csoportosított vizualizáció például egy olyan elemleírás-oldallal kompatibilis, amely _termék_ szerint szűr.
 >
-> Az oldalak elemleírásai nem támogatják az interaktivitást. Ha azt szeretné, hogy a jelentés felhasználói interakciókat végezhessenek, készítsen inkább [részletező lapot](../desktop-drillthrough.md).
+> Az oldalak elemleírásai nem támogatják az interaktivitást. Ha azt szeretné, hogy a jelentés felhasználói interakciókat végezhessenek, készítsen inkább [részletező lapot](../create-reports/desktop-drillthrough.md).
 >
 > A Power BI-vizualizációk nem támogatják az oldalak elemleírásait.
 
@@ -65,7 +65,7 @@ A vizualizációs fejlécek úgy konfigurálhatók, hogy oldalak elemleírásait
 
 Érdekes módon a gombok, képek, szövegmezők és alakzatok is megjeleníthetik oldalak elemleírásait a vizualizációs fejlécben.
 
-A következő példa azt mutatja be, hogy mi történik, ha a jelentés felhasználója a kurzort a [vizualizációs fejléc ikon](../desktop-visual-elements-for-reports.md) fölé viszi.
+A következő példa azt mutatja be, hogy mi történik, ha a jelentés felhasználója a kurzort a [vizualizációs fejléc ikon](../create-reports/desktop-visual-elements-for-reports.md) fölé viszi.
 
 ![A jelentés felhasználója a kurzort a vizualizáció fejlécének ikonja (kérdőjel ikon) fölé helyezte. Megjelent egy részletesen formázott elemleírás.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -85,8 +85,8 @@ A jelentés tervezésének idején a következő eljárásokat ajánljuk:
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban](../desktop-tooltips.md)
-- [Elemleírások testreszabása a Power BI Desktopban](../desktop-custom-tooltips.md)
-- [Vizuális elemek használata Power BI-jelentések továbbfejlesztéséhez](../desktop-visual-elements-for-reports.md)
+- [Elemleírások létrehozása jelentésoldalak alapján a Power BI Desktopban](../create-reports/desktop-tooltips.md)
+- [Elemleírások testreszabása a Power BI Desktopban](../create-reports/desktop-custom-tooltips.md)
+- [Vizuális elemek használata Power BI-jelentések továbbfejlesztéséhez](../create-reports/desktop-visual-elements-for-reports.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

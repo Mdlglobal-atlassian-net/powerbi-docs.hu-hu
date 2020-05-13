@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: 0adfb72c408f96749afc8a3d7a6884e10e52fadb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 10939c23a5c25a2ff4233f6b74f9efd99d8e10fd
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114681"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148074"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Power BI-alkalmazások automatikus telepítése szervezeti beágyazáskor
 
-Egy alkalmazás tartalmának beágyazásához a beágyazó felhasználónak [hozzáféréssel kell rendelkeznie az alkalmazáshoz](../../service-create-distribute-apps.md). Ha az alkalmazás telepítve van a felhasználó számára, a beágyazás zökkenőmentesen működik. További információ: [Jelentések és irányítópultok beágyazása alkalmazásokból](embed-from-apps.md). A PowerBI.com oldalon megszabható,hogy minden alkalmazás [telepítése automatikusan történjen](https://powerbi.microsoft.com/blog/automatically-install-apps/). Ez a művelet azonban bérlői szinten végezhető el, és minden alkalmazásra vonatkozik.
+Egy alkalmazás tartalmának beágyazásához a beágyazó felhasználónak [hozzáféréssel kell rendelkeznie az alkalmazáshoz](../../collaborate-share/service-create-distribute-apps.md). Ha az alkalmazás telepítve van a felhasználó számára, a beágyazás zökkenőmentesen működik. További információ: [Jelentések és irányítópultok beágyazása alkalmazásokból](embed-from-apps.md). A PowerBI.com oldalon megszabható,hogy minden alkalmazás [telepítése automatikusan történjen](https://powerbi.microsoft.com/blog/automatically-install-apps/). Ez a művelet azonban bérlői szinten végezhető el, és minden alkalmazásra vonatkozik.
 
 ## <a name="auto-install-app-on-embedding"></a>Alkalmazások automatikus telepítése beágyazáskor
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 27d6ddd9b24e09805bd22150a22347e5cd93c8e0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 66ef36f669b5f34c19f283cf9ebc8be2b12332ec
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492836"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148656"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapacitás és SKU a Power BI Embedded Analyticsben
 
@@ -38,7 +38,7 @@ A Power BI Embeddedet használó alkalmazások lehetővé teszik a felhasználó
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-A [Power BI Premium](../../service-premium-what-is.md) azokat a nagyvállalatokat célozza meg, akik egy teljes körű Power BI-megoldást szeretnének, amellyel egyetlen helyről áttekinthetik vállalatukat, partnereiket, ügyfeleiket és szállítóikat.
+A [Power BI Premium](../../admin/service-premium-what-is.md) azokat a nagyvállalatokat célozza meg, akik egy teljes körű Power BI-megoldást szeretnének, amellyel egyetlen helyről áttekinthetik vállalatukat, partnereiket, ügyfeleiket és szállítóikat.
 
 A Power BI Premium egy szolgáltatottszoftver-termék, amely mobilalkalmazásokon, belsőleg fejlesztett alkalmazásokon, vagy a Power BI portálon (Power BI szolgáltatás) keresztül a felhasználók számára is lehetővé teszi a tartalmak használatát. Ez lehetővé teszi, hogy a Power BI Premium a belső és külső ügyfelek felé irányuló alkalmazásokhoz is biztosítson megoldást.
 
@@ -46,21 +46,21 @@ A Power BI Premium egy szolgáltatottszoftver-termék, amely mobilalkalmazásoko
 
 Minden egyes kapacitás több SKU-t kínál, és minden SKU különböző erőforrásszinteket biztosít a memória és a számítási teljesítmény terén. Az, hogy milyen típusú SKU-ra van szükség attól függ, hogy milyen típusú megoldást szeretne üzembe helyezni.
 
-Arról, hogy mely számítási feladatok támogatottak az egyes szinteken, a [Számítási feladatok konfigurálása a prémium szintű kapacitásban](../../service-admin-premium-workloads.md) című cikkben talál információt.
+Arról, hogy mely számítási feladatok támogatottak az egyes szinteken, a [Számítási feladatok konfigurálása a prémium szintű kapacitásban](../../admin/service-admin-premium-workloads.md) című cikkben talál információt.
 
 Az alkalmazás megtervezéséhez és teszteléséhez használja a következő hivatkozásokat:
 * [Kapacitástervezés](embedded-capacity-planning.md)
-* [Tesztelési módszerek](../../service-premium-capacity-optimize.md#testing-approaches)
+* [Tesztelési módszerek](../../admin/service-premium-capacity-optimize.md#testing-approaches)
 
 ### <a name="power-bi-embedded-skus"></a>A Power BI Embedded SKU-i
 
-A Power BI Embedded egy [*a* SKU-t](../../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) tartalmaz.
+A Power BI Embedded egy [*a* SKU-t](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) tartalmaz.
 
 ### <a name="power-bi-premium-skus"></a>A Power BI Premium termékváltozatai
 
 A Power BI Premium két SKU-t kínál: *P* és *EM*.
-* [A *P* és az *EM* SKU közötti különbségek megismerése](../../service-premium-what-is.md#subscriptions-and-licensing)
-* [Prémium szintű SKU megvásárlása](../../service-admin-premium-purchase.md)
+* [A *P* és az *EM* SKU közötti különbségek megismerése](../../admin/service-premium-what-is.md#subscriptions-and-licensing)
+* [Prémium szintű SKU megvásárlása](../../admin/service-admin-premium-purchase.md)
 
 ### <a name="which-sku-should-i-use"></a>Melyik SKU-t használjam?
 

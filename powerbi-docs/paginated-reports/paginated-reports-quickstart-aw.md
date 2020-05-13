@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404882"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145222"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Oktatóanyag: Lapszámozott jelentés létrehozása és feltöltése a Power BI szolgáltatásba
 
@@ -43,7 +43,7 @@ Lapszámozott jelentések létrehozásának előfeltételei:
 A lapszámozott jelentés a Power BI szolgáltatásba való feltöltésének előfeltételei:
 
 - [Power BI Pro-licencre](../service-admin-power-bi-pro-in-your-organization.md) lesz szüksége.
-- Egy [Power BI Premium-kapacitásban](../service-premium-what-is.md) található munkaterületre van szüksége a szolgáltatásban. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
+- Egy [Power BI Premium-kapacitásban](../admin/service-premium-what-is.md) található munkaterületre van szüksége a szolgáltatásban. A munkaterület neve mellett egy gyémánt ikon látható ![prémium gyémánt ikon](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>A mátrix létrehozása a varázslóval
   
@@ -329,4 +329,3 @@ Most, hogy létrehozta a lapszámozott jelentést, ideje feltölteni a Power BI 
 ## <a name="next-steps"></a>Következő lépések
 
 [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
-

@@ -2,22 +2,25 @@
 title: Tippek és trükkök térképekhez (beleértve a Bing Maps-integrációt)
 description: 'Tippek és trükkök Power BI-térképvizualizációkhoz, vizualizációkhoz, helyekhez, szélességhez és hosszúsághoz, valamint ezek a Bing Térképekkel való használatához. '
 author: mihart
-ms.reviewer: ''
+ms.reviewer: rien
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e5c89a8089929b7d87d2a1291ef2c5d3a5b012b7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525913"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277824"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 A Power BI integrálva van a Bing Térképekkel alapértelmezett térképkoordináták biztosításához (ez a geokódolás nevű folyamat), így térképeket hozhat létre. Együtt algoritmusokat használnak a megfelelő hely azonosításához, de ez néha csak feltételezésen alapul. Ha a Power BI nem tudja egyedül létrehozni a térkép-vizualizációt, igénybe veszi a Bing Térképek segítségét. 
 
 Lehetséges, hogy Önnek vagy a cégnek frissítenie kell a tűzfalat, hogy engedélyezze a hozzáférést azokhoz az URL-címekhez, amelyeket a Bing a geokódoláshoz használ.  Ezek az alábbiak:
@@ -47,7 +50,7 @@ Ha hozzáféréssel rendelkezik a térkép-vizualizáció létrehozásához hasz
 
 **1. Földrajzi mezők kategorizálása a Power BI Desktopban**
 
-A Power BI Desktopban biztosíthatja a mezők helyes geokódolását úgy, hogy az adatmezőkön beállítja az *Adatkategóriát*. Az Adatnézetben válassza ki a kívánt oszlopot. A szalagon válassza a **Modellezés** lapot, majd állítsa az **Adatkategóriát** **Cím**, **Város**, **Kontinens**, **Ország/régió**, **Megye**, **Irányítószám**, **Állam** vagy **Tartomány** értékre. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](../desktop-data-categorization.md). Ha élőben csatlakozik az SQL Server Analysis Serviceshez, be kell állítania a Power BI-n kívüli adatkategorizálást az [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) használatával.
+A Power BI Desktopban biztosíthatja a mezők helyes geokódolását úgy, hogy az adatmezőkön beállítja az *Adatkategóriát*. Az Adatnézetben válassza ki a kívánt oszlopot. A szalagon válassza a **Modellezés** lapot, majd állítsa az **Adatkategóriát** **Cím**, **Város**, **Kontinens**, **Ország/régió**, **Megye**, **Irányítószám**, **Állam** vagy **Tartomány** értékre. Ezek az adatkategóriák segítenek a Bingnek helyesen kódolni az adatokat. További tudnivalókért lásd az [adatok kategorizálását a Power BI Desktopban](../transform-model/desktop-data-categorization.md). Ha élőben csatlakozik az SQL Server Analysis Serviceshez, be kell állítania a Power BI-n kívüli adatkategorizálást az [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) használatával.
 
 **2. Több helyoszlop használata.**     
  Időnként az adatkategóriák beállítása a térképekhez nem elég, hogy a Bing helyesen megállapítsa a szándékait. Néhány megjelölés nem egyértelmű, mivel a hely több országban vagy régióban is megtalálható. Például ***Southampton*** Angliában, Pennsylvaniában és New Yorkban is található.
@@ -94,4 +97,5 @@ Ha a geohierarchiákkal végez le- vagy felhatolást, fontos tudnia, hogyan műk
 [Power BI-vizualizációk](power-bi-report-visualizations.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
 

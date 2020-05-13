@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841779"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273523"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Telefonra optimalizált Power BI-jelentések megtekintése
 
@@ -48,7 +48,7 @@ Ha egy telefonra optimalizált jelentéshez szűrők vannak definiálva, a jelen
 ## <a name="cross-highlight-visuals"></a>Vizualizációk keresztkiemelése
 A vizualizációk keresztkiemelése telefonos jelentésekben ugyanúgy működik, mint a Power BI szolgáltatásban, és telefonokon a fekvő tájolású jelentésekben: Ha egy vizualizáción ki van jelölve egy adat, akkor az ahhoz kapcsolódó adatok is ki lesznek emelve az oldal többi vizualizációjában.
 
-A [Power BI szűrés és kiemelés funkcionalitásáról itt talál](../../power-bi-reports-filters-and-highlighting.md) további információkat.
+A [Power BI szűrés és kiemelés funkcionalitásáról itt talál](../../create-reports/power-bi-reports-filters-and-highlighting.md) további információkat.
 
 ## <a name="select-visuals"></a>Vizualizációk kijelölése
 Amikor a telefonos jelentésekben kijelöl egy vizualizációt, a telefonos jelentés kiemeli és középre fókuszálja az adott vizualizációt, és kikapcsolja a vászonmozdulatokat.
@@ -131,8 +131,7 @@ A jelentés szerzője a jelentés létrehozásakor [definiálhatja az áthatolá
 
 
 ## <a name="next-steps"></a>Következő lépések
-* [A Power BI mobilalkalmazásokhoz optimalizált jelentések létrehozása](../../desktop-create-phone-report.md)
-* [Power BI-irányítópult telefonos nézetének létrehozása](../../service-create-dashboard-mobile-phone-view.md)
+* [A Power BI mobilalkalmazásokhoz optimalizált jelentések létrehozása](../../create-reports/desktop-create-phone-report.md)
+* [Power BI-irányítópult telefonos nézetének létrehozása](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Bármely méretre optimalizált rugalmas vizualizációk létrehozása](../../visuals/desktop-create-responsive-visuals.md)
 * További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

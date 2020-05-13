@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 60b7c858a98a105454efe0233484120ad4319f62
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76537232"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131912"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Bizalmassági adatcímkézés engedélyezése a Power BI-ban (előzetes verzió)
 
 Ha engedélyezve vannak a [Microsoft Information Protection bizalmassági adatcímkéi](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) a Power BI-ban, arra az alábbiak vonatkoznak:
 
-* A szervezet bizonyos felhasználói és csoportja osztályozhatják és [alkalmazhatják a bizalmassági adatcímkéket](../designer/service-security-apply-data-sensitivity-labels.md) a Power BI-beli irányítópultjaikra, jelentéseikre, adathalmazaikra és adatfolyamaikra (a továbbiakban *adategységek*).
+* A szervezet bizonyos felhasználói és csoportja osztályozhatják és [alkalmazhatják a bizalmassági adatcímkéket](../collaborate-share/service-security-apply-data-sensitivity-labels.md) a Power BI-beli irányítópultjaikra, jelentéseikre, adathalmazaikra és adatfolyamaikra (a továbbiakban *adategységek*).
 * Ezeket a címkéket a szervezet minden tagja láthatja.
 
 A bizalmassági adatcímkék elősegítik az adatvédelmet azáltal, hogy felhívják a Power BI szerzőinek és fogyasztóinak a figyelmét az adatok bizalmas jellegére, valamint információt nyújtanak a besorolás jelentéséről, és hogy az adott besorolású adatokat miként kell kezelni.
@@ -71,6 +71,6 @@ A Power BI a Microsoft Information Protection bizalmassági címkéit használja
 Ez a cikk azt ismertette, hogyan engedélyezheti a bizalmasság adatcímkéket a Power BI-ban. A következő cikkek további részleteket tartalmaznak a Power BI-ban alkalmazható adatvédelemről. 
 
 * [A Power BI adatvédelmi lehetőségeinek áttekintése](service-security-data-protection-overview.md)
-* [Bizalmassági címkék alkalmazása a Power BI-ban](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Bizalmassági címkék alkalmazása a Power BI-ban](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [A Microsoft Cloud App Security vezérlőinek használata a Power BI-ban](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Adatvédelmi metrikák jelentése](service-security-data-protection-metrics-report.md)

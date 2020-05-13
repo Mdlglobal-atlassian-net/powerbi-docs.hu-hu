@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 387f0cd4ecea59fd55af0a9eceff2272ddd8097b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75220065"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278859"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Helyszíni jelentéskészítő kiszolgálói jelentések és KPI-k megtekintése a Power BI-mobilalkalmazásokban
 
@@ -107,7 +107,7 @@ A Power BI-jelentések, a Reporting Services mobiljelentései és a KPI-k ugyana
   > A részletezés jelenleg nem engedélyezett a Power BI jelentéseiben és a Power BI jelentéskészítő kiszolgálón.
   
     ![Power BI-jelentés](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* A Power BI Desktopban a jelentések tulajdonosai [optimalizálhatják a jelentéseket](../../desktop-create-phone-report.md) a Power BI-mobilalkalmazásokhoz. Az optimalizált jelentések a mobiltelefonon különleges ikonnal ![Optimalizált Power BI-jelentés ikonja](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) és elrendezéssel rendelkeznek.
+* A Power BI Desktopban a jelentések tulajdonosai [optimalizálhatják a jelentéseket](../../create-reports/desktop-create-phone-report.md) a Power BI-mobilalkalmazásokhoz. Az optimalizált jelentések a mobiltelefonon különleges ikonnal ![Optimalizált Power BI-jelentés ikonja](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) és elrendezéssel rendelkeznek.
   
     ![Mobilra optimalizált Power BI-jelentés](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Koppintson a KPI-re a fókuszált módban való megjelenítéséhez.
@@ -133,4 +133,3 @@ KPI-ket és jelentéseket jelölhet meg kedvencekként a webes portálon, majd a
 ## <a name="next-steps"></a>További lépések
 * [Mi az a Power BI?](../../fundamentals/power-bi-overview.md)  
 * Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
-

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 6eee86423fdfc1e1a9338aa4fecfd5eae0c0d111
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865253"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272856"
 ---
 # <a name="create-and-use-funnel-charts"></a>Tölcsérdiagramok létrehozása és használata
 
@@ -94,20 +94,23 @@ Most hozzon létre egy saját tölcsérdiagramot az egyes értékesítési fázi
      
      ![a Javaslat sáv részletei](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Mentse a jelentést](../service-report-save.md).
+6. [Mentse a jelentést](../create-reports/service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-A Szűrök ablaktábla használatával kapcsolatos információkért lásd: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
+A Szűrök ablaktábla használatával kapcsolatos információkért lásd: [Szűrők hozzáadása jelentésekhez](../create-reports/power-bi-report-add-filter.md).
 
 A tölcsér egyes sávjainak kiemelésével a rendszer keresztszűri a jelentésoldalon lévő többi vizualizációt... és viszont. A feladat következő lépéseként adjon hozzá néhány vizualizációt a tölcsérdiagramot tartalmazó jelentésoldalhoz.
 
 1. A tölcséren jelölje ki a **Proposal** sávot. Ez kiemeli a lapon lévő többi vizualizáció megfelelő adatait is. A többszörös kijelöléshez használja a CTRL billentyűt.
    
    ![a vizualizáció-interakciókat bemutató rövid videó](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. A vizualizációk keresztkiemelési és keresztszűrési beállításaival kapcsolatban lásd: [A Power BI vizualizációk interakciója](../service-reports-visual-interactions.md)
+2. A vizualizációk keresztkiemelési és keresztszűrési beállításaival kapcsolatban lásd: [A Power BI vizualizációk interakciója](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Következő lépések
 
 [Mérőműszerek a Power BI-ban](power-bi-visualization-radial-gauge-charts.md)
 
 [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

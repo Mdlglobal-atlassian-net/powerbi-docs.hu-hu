@@ -1,6 +1,6 @@
-- name: Ismerkedés a Power BI-jal (fogyasztó)
+- name: Ismerkedés a Power BI-jal (../fogyasztó)
   href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
-- name: Adatelemzés Power BI-ban (fogyasztó)
+- name: Adatelemzés Power BI-ban (../fogyasztó)
   href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
 - name: Első lépések a Power BI-beli munkához
   href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'
@@ -10,7 +10,7 @@
   href: 'https://docs.microsoft.com/learn/modules/model-data-power-bi'
 - name: Vizualizációk használata
   href: 'https://docs.microsoft.com/learn/modules/visuals-in-power-bi'
-- name: Adatok megismerése
+- name: Adatok feltárása
   href: 'https://docs.microsoft.com/learn/modules/explore-data-power-bi'
 - name: Közzététel és megosztás
   href: 'https://docs.microsoft.com/learn/modules/publish-share-power-bi'

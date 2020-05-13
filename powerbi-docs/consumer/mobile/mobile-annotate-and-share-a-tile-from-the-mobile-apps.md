@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31a899001b5a821a38a3de01db0357c26f2e58dc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205504"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149212"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Csempék, jelentések és vizualizációk jegyzetekkel való ellátása és megosztása a Power BI mobilalkalmazásokban
 Hatóköre:
@@ -28,7 +28,7 @@ Az iOS- és Android-eszközökre készült Power BI mobilalkalmazásokkal jegyze
 
 *Jegyzetekkel ellátott jelentés*
 
-A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy hivatkozást is tartalmaz, amely a tényleges objektumra mutat a Power BI szolgáltatásban ([https://powerbi.com](https://powerbi.com)). A címzettek a hivatkozásra kattintva megnyithatják az adott csempét, jelentést vagy vizualizációt, ha Ön és ők is rendelkeznek Power BI Pro licenccel, vagy ha a tartalom egy [prémium szintű kapacitáson](../../service-premium-what-is.md) található, és már megosztotta velük az adott elemet. 
+A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy hivatkozást is tartalmaz, amely a tényleges objektumra mutat a Power BI szolgáltatásban ([https://powerbi.com](https://powerbi.com)). A címzettek a hivatkozásra kattintva megnyithatják az adott csempét, jelentést vagy vizualizációt, ha Ön és ők is rendelkeznek Power BI Pro licenccel, vagy ha a tartalom egy [prémium szintű kapacitáson](../../admin/service-premium-what-is.md) található, és már megosztotta velük az adott elemet. 
 
 [A Windows 10 rendszerű eszközökre készült Power BI mobilalkalmazásból is megoszthat csempéket](mobile-windows-10-phone-app-get-started.md), viszont nem láthatja el jegyzetekkel azokat.
 
@@ -74,4 +74,3 @@ A csempe, jelentés vagy vizualizáció pillanatképét tartalmazó e-mail egy h
 ## <a name="next-steps"></a>További lépések
 * [Irányítópult megosztása a Power BI mobilalkalmazásokból](mobile-share-dashboard-from-the-mobile-apps.md)
 * Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
-

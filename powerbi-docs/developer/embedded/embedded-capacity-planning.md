@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: f437b1d1fbfc1e905878fbb99875f1fc455e7b14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79493250"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145125"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapacitástervezés a Power BI Embedded Analyticsben
 
@@ -51,7 +51,7 @@ Az eszköz futtatásakor ügyeljen a kapacitások meglévő terhelésére, valam
 
 Ha a teszt futtatása után meg szeretné tekinteni a terhelési teszt hatásait a Metrics alkalmazásban, kövesse az alábbi utasításokat. Számítson 15 perc késésre a terhelés létrehozásának kezdetétől a terhelés metrikákban való megjelenéséig.
 
-1. Bontsa ki az **Adathalmazok** fület a [Metrics alkalmazás](../../service-admin-premium-monitor-capacity.md) kezdőlapján.
+1. Bontsa ki az **Adathalmazok** fület a [Metrics alkalmazás](../../admin/service-admin-premium-monitor-capacity.md) kezdőlapján.
 2. Indítson egy igény szerinti frissítést az **azonnali frissítés** gombra kattintva. A rendszergazdáknak kell elvégezniük.
 
     ![Power BI Premium Capacity Metrics](media/embedded-capacity-planning/embedded-capacity-planning.png)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d70d1357af3309ddd9584b11ccf79115cde095c8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0a66b0fc1a984e0905fba209ca59afb3a02696b2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79383298"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131307"
 ---
 # <a name="power-bi-visuals-faq"></a>Power BI-vizualizációk – GYIK
 
@@ -24,7 +24,7 @@ A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Hogyan felügyelheti a rendszergazda a szervezeti Power BI-vizualizációkat?
 
-A felügyeleti portál *Szervezeti vizualizációk* lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes szervezeti Power BI-vizualizációját](../../service-admin-portal.md#organizational-visuals). Többek között hozzáadhat, letilthat, engedélyezhet és törölhet is Power BI-vizualizációkat.
+A felügyeleti portál *Szervezeti vizualizációk* lapján a rendszergazda megtekintheti és [felügyelheti a vállalat összes szervezeti Power BI-vizualizációját](../../admin/service-admin-portal.md#organizational-visuals). Többek között hozzáadhat, letilthat, engedélyezhet és törölhet is Power BI-vizualizációkat.
 
 A szervezet felhasználói könnyedén megtalálhatják a Power BI-vizualizációkat, és közvetlenül a Power BI Desktopból vagy szolgáltatásból importálhatják azokat a jelentéseikbe.
 

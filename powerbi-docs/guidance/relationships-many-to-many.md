@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260450"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278330"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Útmutató a több-a-többhöz kapcsolatokhoz
 
@@ -161,7 +161,7 @@ A vizualizáció pontos eredményt ad. A modell hasznossága azonban korlátozot
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Több-a-többhöz típusú tények összekapcsolása – útmutató
 
-Általában nem ajánlott két tény típusú táblát közvetlenül, több-a-többhöz típusú számossággal összekapcsolni. Ennek legfőbb oka, hogy a modell nem lesz rugalmas a jelentésvizualizációk szűrésekor vagy csoportosításakor. A példában a vizualizációk csak az **Order** tábla **OrderID** oszlopa alapján szűrhetnek vagy csoportosíthatnak. A másodlagos ok az adatok minőségére vonatkozik. Ha az adatintegritással problémák adódnak, előfordulhat, hogy bizonyos sorok kimaradnak a lekérdezés során a _gyenge kapcsolatok_ miatt. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../desktop-relationships-understand.md#relationship-evaluation).
+Általában nem ajánlott két tény típusú táblát közvetlenül, több-a-többhöz típusú számossággal összekapcsolni. Ennek legfőbb oka, hogy a modell nem lesz rugalmas a jelentésvizualizációk szűrésekor vagy csoportosításakor. A példában a vizualizációk csak az **Order** tábla **OrderID** oszlopa alapján szűrhetnek vagy csoportosíthatnak. A másodlagos ok az adatok minőségére vonatkozik. Ha az adatintegritással problémák adódnak, előfordulhat, hogy bizonyos sorok kimaradnak a lekérdezés során a _gyenge kapcsolatok_ miatt. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 A tény típusú táblák közvetlen összekapcsolása helyett [csillagséma](star-schema.md) típusú tervezési alapelvek bevezetését javasoljuk. Ezt dimenzió típusú táblák hozzáadásával teheti meg. A dimenzió típusú táblák ezután egy-a-többhöz típusú kapcsolatokkal összekapcsolhatók a tény típusúakkal. Ez egy robusztus tervezési módszer, amely rugalmas jelentéskészítési lehetőségeket nyújt. Így Ön bármilyen dimenzió típusú oszlop alapján szűrhet vagy csoportosíthat, és bármilyen kapcsolódó, tény típusú táblát összegezhet.
 
@@ -184,7 +184,7 @@ A csillagsémás tervezési alapelvek alkalmazása a következő előnyökkel j�
 - A jelentésvizualizációk a dimenzió típusú táblák bármelyik látható oszlopa alapján _szűrhetnek vagy csoportosíthatnak_
 - A jelentésvizualizációk a tény típusú táblák bármelyik látható oszlopa alapján _összegezhetnek_
 - Az **OrderLine**, **OrderDate**, vagy **Product** táblára alkalmazott szűrők mindkét tény típusú táblához propagálhatnak
-- Mindegyik kapcsolat egy-a-többhöz típusú, és mindegyik _erős kapcsolat_. Az adatintegritásbeli problémák nem lesznek elrejtve. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../desktop-relationships-understand.md#relationship-evaluation).
+- Mindegyik kapcsolat egy-a-többhöz típusú, és mindegyik _erős kapcsolat_. Az adatintegritásbeli problémák nem lesznek elrejtve. További információ: [Modellkapcsolatok a Power BI Desktopban (Kapcsolatok kiértékelése)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Részletesebb tények összekapcsolása
 
@@ -209,7 +209,7 @@ A **Date** és a **Target** tábla kapcsolatának egy-a-többhöz típusúnak ke
 
 Ügyeljen azonban arra, hogy a hónap vagy dátum szintű szűrők értelmes eredményt adjanak. Speciális számítási logika nélkül a jelentésvizualizációk azt mutathatják, hogy a céldátumok az egyes évek első napjai. Az összes többi nap – és január kivételével hónap – BLANK (ÜRES) értékként összegzi a célmennyiséget.
 
-Az alábbi mátrixvizualizáció bemutatja, mi történik, ha a jelentés felhasználója egy évet részletez hónapok szerint. A vizualizáció a **TargetQuantity** oszlopot foglalja össze. (Az [Adatot nem tartalmazó elemek megjelenítése](../desktop-show-items-no-data.md) lehetőség engedélyezve van a mátrixsorokhoz.)
+Az alábbi mátrixvizualizáció bemutatja, mi történik, ha a jelentés felhasználója egy évet részletez hónapok szerint. A vizualizáció a **TargetQuantity** oszlopot foglalja össze. (Az [Adatot nem tartalmazó elemek megjelenítése](../create-reports/desktop-show-items-no-data.md) lehetőség engedélyezve van a mátrixsorokhoz.)
 
 ![A mátrixvizualizáción láthatjuk, hogy a 2020-as év célmennyisége 270. Ha ezt 2020 hónapjaira részletezzük, a január értéke 270, a többi hónapszintű cél mennyisége pedig BLANK.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -295,7 +295,7 @@ Ha dimenzió típusú táblát kell tény típusú táblával összekapcsolnia, 
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
+- [Modellbeli kapcsolatok a Power BI Desktopban](../transform-model/desktop-relationships-understand.md)
 - [A csillagséma és a Power BI-ban játszott szerepének a bemutatása](star-schema.md)
 - [Kapcsolatok hibaelhárítási útmutatója](relationships-troubleshoot.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

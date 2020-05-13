@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1d51c16502d3217e0158add2126d0b5726d87ff1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525468"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144708"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI-jelentés exportálása fájlba (előzetes verzió)
 
@@ -34,7 +34,7 @@ Az exportálási funkció többféleképpen is felhasználható. Bemutatunk néh
 
 ## <a name="using-the-api"></a>Az API használata
 
-Az API használatba vétele előtt ellenőrizze, hogy engedélyezve vannak az alábbi [rendszergazdai bérlő-beállítások](../../service-admin-portal.md#tenant-settings):
+Az API használatba vétele előtt ellenőrizze, hogy engedélyezve vannak az alábbi [rendszergazdai bérlő-beállítások](../../admin/service-admin-portal.md#tenant-settings):
 * **Jelentések exportálása PowerPoint-bemutatóként vagy PDF-dokumentumként** – Alapértelmezés szerint engedélyezett.
 * **Jelentések exportálása képfájlokként** – Csak a *.png* formátumhoz szükséges, és alapértelmezés szerint le van tiltva.
 

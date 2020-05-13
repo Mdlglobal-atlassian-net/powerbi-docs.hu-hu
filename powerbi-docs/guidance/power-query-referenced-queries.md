@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290569"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278675"
 ---
 # <a name="referencing-power-query-queries"></a>Power Query-lekérdezésekre való hivatkozás
 
@@ -42,7 +42,7 @@ A [Table.Buffer](/powerquery-m/table-buffer) funkció **Query1**-ben való haszn
 
 A lekérdezéslogika duplikálásának elkerülése érdekében általában a lekérdezések hivatkozását javasoljuk. Ez a kialakítás azonban, ahogy a jelen cikk is leírja, az adatfrissítések lassulásához vezethet, és túlterhelheti az adatforrásokat.
 
-Ehelyett inkább egy [adatfolyam](../service-dataflows-overview.md) kialakítását javasoljuk. Az adatfolyam használata lerövidítheti az adatfrissítési időt, és mérsékelheti az adatforrásokra gyakorolt negatív hatást.
+Ehelyett inkább egy [adatfolyam](../transform-model/service-dataflows-overview.md) kialakítását javasoljuk. Az adatfolyam használata lerövidítheti az adatfrissítési időt, és mérsékelheti az adatforrásokra gyakorolt negatív hatást.
 
 Az adatfolyamot kialakíthatja az adatforrások és az átalakítások beágyazására. Mivel az adatfolyam egy megőrzött adattárolás a Power BI-szolgáltatáson belül, az adatbeolvasást gyorsan végzi el. Ezért az adatfrissítések időtartama akkor is rövidebb lehet, ha a lekérdezések hivatkozása többszörös kérelmeket eredményez az adatfolyam számára.
 
@@ -52,7 +52,7 @@ A példánkban szereplő **Query1** adatfolyam-entitásként újratervezett vál
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Önkiszolgáló adat-előkészítés a Power BI-ban](../service-dataflows-overview.md)
-- [Adatfolyamok létrehozása és használata a Power BI-ban](../service-dataflows-create-use.md)
+- [Önkiszolgáló adat-előkészítés a Power BI-ban](../transform-model/service-dataflows-overview.md)
+- [Adatfolyamok létrehozása és használata a Power BI-ban](../transform-model/service-dataflows-create-use.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

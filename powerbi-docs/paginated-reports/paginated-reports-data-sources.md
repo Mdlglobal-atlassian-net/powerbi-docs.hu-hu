@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/28/2020
-ms.openlocfilehash: ad75cf6b85a896fbdc275748dc31c620206e08a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82692891"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279158"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>A Power BI többoldalas jelentéseihez használható támogatott adatforrások
 
@@ -38,7 +38,7 @@ Az Azure SQL Database-adatforrások esetében több információt kell megadnia.
 
 ## <a name="other-data-sources"></a>Más adatforrások
 
-A fent felsorolt natív módon támogatott adatforrások mellett egy [Power BI-adatátjáró](../service-gateway-onprem.md) segítségével a következő adatforrások is használhatók:
+A fent felsorolt natív módon támogatott adatforrások mellett egy [Power BI-adatátjáró](../connect-data/service-gateway-onprem.md) segítségével a következő adatforrások is használhatók:
 
 - SQL Server
 - SQL Server Analysis Services
@@ -74,3 +74,4 @@ Ahhoz, hogy az egyszeri bejelentkezés és az OAuth2 megfelelően működjön, a
 [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](../consumer/paginated-reports-view-power-bi-service.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+

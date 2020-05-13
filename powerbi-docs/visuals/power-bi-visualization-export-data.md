@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781731"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273017"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>A vizualizáció létrehozásához használt adatok exportálása
 
@@ -54,7 +54,7 @@ Tekintse meg, ahogyan Will exportálja az adatokat az egyik jelentésében talá
 
 ## <a name="export-data-from-a-report"></a>Adatok exportálása jelentésből
 
-Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../sample-procurement.md) a Power BI szolgáltatás Szerkesztés nézetében. Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést, hierarchiát és egy vizualizáció-szintű szűrőt.
+Annak érdekében, hogy követni tudja a lépéseket, nyissa meg a [Beszerzéselemzési mintajelentést](../create-reports/sample-procurement.md) a Power BI szolgáltatás Szerkesztés nézetében. Adjon hozzá egy új üres jelentésoldalt. Ezután kövesse az alábbi lépéseket, és adjon hozzá egy összesítést, hierarchiát és egy vizualizáció-szintű szűrőt.
 
 ### <a name="create-a-stacked-column-chart"></a>Halmozott oszlopdiagram létrehozása
 
@@ -94,7 +94,7 @@ Válassza az **Összegzett adatok** lehetőséget, ha a vizualizációban látha
 
     - **Mögöttes adatok**
 
-    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../service-aggregates.md) ismertető szakaszt.
+    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../create-reports/service-aggregates.md) ismertető szakaszt.
 
 
     > [!NOTE]
@@ -133,7 +133,7 @@ Ha az **Exportálás** lehetőséget választja, a Power BI egy *.xlsx*-fájlba 
 
     - **Mögöttes adatok**
 
-    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../service-aggregates.md) ismertető szakaszt.
+    Az összesítésekkel kapcsolatos magyarázatokért tekintse meg [a Power BI összesítéseit](../create-reports/service-aggregates.md) ismertető szakaszt.
 
 
     > [!NOTE]
@@ -164,7 +164,7 @@ Többféle stratégia is a Power BI-rendszergazdák és a tervezők rendelkezés
 
 - A Power BI-rendszergazdák letilthatják az adatexportálást a vállalatnál. 
 
-- Az adathalmaz tulajdonosai sorszintű biztonságot (RLS) állíthatnak be. Az RLS korlátozza a csak olvasási jogosultsággal rendelkező felhasználók hozzáférését. Ha azonban alkalmazás-munkaterületet konfigurált, amelyhez szerkesztési jogosultságot adott a tagoknak, rájuk nem vonatkoznak az RLS-szerepkörök. További információ: [Sorszintű biztonság](../service-admin-rls.md).
+- Az adathalmaz tulajdonosai sorszintű biztonságot (RLS) állíthatnak be. Az RLS korlátozza a csak olvasási jogosultsággal rendelkező felhasználók hozzáférését. Ha azonban alkalmazás-munkaterületet konfigurált, amelyhez szerkesztési jogosultságot adott a tagoknak, rájuk nem vonatkoznak az RLS-szerepkörök. További információ: [Sorszintű biztonság](../admin/service-admin-rls.md).
 
 - A jelentéstervezők oszlopokat rejthetnek el, hogy azok ne jelenjenek meg a **Mezők** listájában. További információ: [Adathalmaz-tulajdonságok](../developer/automation/api-dataset-properties.md)
 

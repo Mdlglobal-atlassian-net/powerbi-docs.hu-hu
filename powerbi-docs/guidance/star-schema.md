@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751600"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273454"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>A csillagséma és a Power BI-ban játszott szerepének a bemutatása
 
@@ -42,7 +42,7 @@ Figyelembe kell venni, hogy minden Power BI-jelentésbeli vizualizáció lekérd
 - A dimenziótáblák a _szűrést_ és a _csoportosítást_ támogatják
 - A ténytáblák az _összegzést_ támogatják
 
-A táblának nincs a modellező által megadható beállítása, amellyel a tábla típusa (dimenzió vagy tény) konfigurálható. Ezt a modellen belüli kapcsolatok határozzák meg. Egy modellbeli kapcsolat szűrőátadási útvonalat hoz létre két tábla között, a tábla típusát pedig ennek a kapcsolatnak a **Számosság** tulajdonsága határozza meg. Gyakori kapcsolatszámosság az _egy-a-többhöz_, vagy a _több-az-egyhez_. Az „egy” oldal mindig dimenzió típusú tábla, a „több” oldal pedig mindig tény típusú tábla. További információ a kapcsolatokról: [Modellkapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md).
+A táblának nincs a modellező által megadható beállítása, amellyel a tábla típusa (dimenzió vagy tény) konfigurálható. Ezt a modellen belüli kapcsolatok határozzák meg. Egy modellbeli kapcsolat szűrőátadási útvonalat hoz létre két tábla között, a tábla típusát pedig ennek a kapcsolatnak a **Számosság** tulajdonsága határozza meg. Gyakori kapcsolatszámosság az _egy-a-többhöz_, vagy a _több-az-egyhez_. Az „egy” oldal mindig dimenzió típusú tábla, a „több” oldal pedig mindig tény típusú tábla. További információ a kapcsolatokról: [Modellkapcsolatok a Power BI Desktopban](../transform-model/desktop-relationships-understand.md).
 
 ![Elvi csillagséma](media/star-schema/star-schema-example2.png)
 
@@ -209,10 +209,12 @@ A több-a-többhöz kapcsolat tervezésének ez a módja jól dokumentált, és 
 Csillagséma vagy Power BI-modell tervezéséről a következő cikkekből tájékozódhat bővebben:
 
 - [Wikipedia-cikk a dimenzionális modellezésről](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](../desktop-create-and-manage-relationships.md)
+- [Kapcsolatok létrehozása és kezelése a Power BI Desktopban](../transform-model/desktop-create-and-manage-relationships.md)
 - [Útmutató egy-az-egyhez kapcsolatokhoz](relationships-one-to-one.md)
 - [Útmutató a több-a-többhöz kapcsolatokhoz](relationships-many-to-many.md)
 - [Útmutatás kétirányú kapcsolatokhoz](relationships-bidirectional-filtering.md)
 - [Útmutató aktív vagy inaktív kapcsolatokhoz](relationships-active-inactive.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
+
+

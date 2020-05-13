@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 28af5cd89e918fad7fc7064479ac95c67ca3cee3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114246"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277456"
 ---
 # <a name="reports-in-power-bi"></a>Jelentések a Power BI-ban
 
@@ -76,7 +76,7 @@ Lehet *felhasználó* is, aki másoktól kap jelentéseket. Ez esetben azt kell 
 
 * Kezdje a [Power BI szolgáltatás áttekintésével](end-user-basic-concepts.md), amelyből megtudhatja, hol találhatja meg a jelentéseket és a jelentéseszközöket.
 * Ismerje meg, hogyan tud [megnyitni egy jelentést](end-user-report-open.md), és fedezze fel a [felhasználók számára elérhető műveleteket](end-user-reading-view.md).
-* Gyakorolja a jelentések használatát az egyik [mintánk](../sample-tutorial-connect-to-the-samples.md) segítségével.  
+* Gyakorolja a jelentések használatát az egyik [mintánk](../create-reports/sample-tutorial-connect-to-the-samples.md) segítségével.  
 * Annak megtekintéséhez, hogy a jelentés melyik adathalmazt használja, és mely irányítópultok rendelkeznek a jelentésből származó vizualizációkat (*rajzszögek*), olvassa el a [kapcsolódó tartalom Power BI szolgáltatásban való megtekintését](end-user-related.md) ismertető témakört.
 
 > [!TIP]
@@ -86,3 +86,4 @@ Lehet *felhasználó* is, aki másoktól kap jelentéseket. Ez esetben azt kell 
 
 [Jelentés megnyitása és megtekintése](end-user-report-open.md)    
 [Irányítópultok a Power BI szolgáltatásban](end-user-dashboards.md)
+

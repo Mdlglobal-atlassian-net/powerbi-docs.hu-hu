@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8f71eab47aba9621805891b10874ea9e501ed0bf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496293"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277916"
 ---
 # <a name="view-a-dashboard"></a>Irányítópult megtekintése
 
@@ -49,10 +49,10 @@ Irányítópultokat a navigációs panel összes tárolójában találhat.
 - **Legutóbbi** – ha nemrég látogatott meg egy irányítópultot.
 - **Alkalmazások** – a legtöbb alkalmazás irányítópultokat és jelentéseket is tartalmaz.
 - **Velem megosztva** – ha munkatársai [irányítópultokat osztanak meg Önnel](end-user-shared-with-me.md).
-- **Saját munkaterület** – ha [Power BI-példákat](../sample-datasets.md) töltött le.
+- **Saját munkaterület** – ha [Power BI-példákat](../create-reports/sample-datasets.md) töltött le.
 
 
 
 ## <a name="next-steps"></a>További lépések
-* [Minta-irányítópultjaink](../sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.    
+* [Minta-irányítópultjaink](../create-reports/sample-tutorial-connect-to-the-samples.md) egyikének megtekintése révén megismerkedhet az irányítópultok használatával.    
 * Ismerkedjen meg az [irányítópult-csempékkel](end-user-tiles.md), és fedezze fel mi történik, ha kiválaszt egy csempét.

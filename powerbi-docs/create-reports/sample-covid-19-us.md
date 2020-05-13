@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584921"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277893"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-nyomonkövetési minta az USA tagállami és helyi szintű közigazgatási szervei részére
 
@@ -48,7 +48,7 @@ Ha szeretné felvenni az interaktív grafikát a webhelyén, másolja és illess
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](../service-publish-to-web.md#tips-for-iframe-height-and-width).
+A beágyazási kód egy HTML iFrame-elem, amelyet bármely HTML-oldalra beilleszthet. Állítsa be a biztosított iFrame hosszát és szélességét a webhelynek megfelelően. A mintajelentés 16:9-es aránnyal készült, ezért válasszon olyan méretet, amely megőrzi ezt az arányt. Helyes megvalósítás esetén a grafika kiegészítő szürke szegély nélkül jelenik meg. A módosítások végrehajtásakor érdemes lehet [áttekinteni az iFrame méretezésével kapcsolatos tippeket és trükköket](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width).
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>2\. lehetőség A Power BI-mintafájl testreszabása
 
@@ -93,18 +93,18 @@ Első lépésként [töltse le (innen) a .pbix fájlt](https://go.microsoft.com/
 
 ### <a name="publish-your-report-to-the-power-bi-service"></a>Jelentés közzététele a Power BI szolgáltatásban
 
-Miután igényei szerint testre szabta a jelentést, [az alábbi lépések végrehajtásával teheti közzé a jelentést](../desktop-upload-desktop-files.md) a Power BI szolgáltatásban.
+Miután igényei szerint testre szabta a jelentést, [az alábbi lépések végrehajtásával teheti közzé a jelentést](../create-reports/desktop-upload-desktop-files.md) a Power BI szolgáltatásban.
 
 ### <a name="configure-scheduled-refresh"></a>Ütemezett frissítés beállítása
 
-A jelentés adatainak naprakészen tartásához a jelentés közzététele után [beállíthatja az ütemezett frissítést](../refresh-scheduled-refresh.md).
+A jelentés adatainak naprakészen tartásához a jelentés közzététele után [beállíthatja az ütemezett frissítést](../connect-data/refresh-scheduled-refresh.md).
 
 A lépések végrehajtásakor válassza az alábbi beállításokat:
 
 1. Adatforrás azonosító adatainak hitelesítési módszere: Névtelen
 2. Az adatforrás adatvédelmi szintjének beállítása: Nyilvános
 
-A frissítési beállítás ellenőrzéséhez kattintson az adathalmazelemből elérhető [Azonnali frissítés](../refresh-data.md#data-refresh) lehetőségre.
+A frissítési beállítás ellenőrzéséhez kattintson az adathalmazelemből elérhető [Azonnali frissítés](../connect-data/refresh-data.md#data-refresh) lehetőségre.
 
 A frissített adatok az ütemezés minden futtatásakor betöltődnek. Az alapadatokat az USAFacts bocsátja rendelkezésre, és előfordulhat, hogy nem frissülnek olyan gyakran, mint a frissítési ütemezése. Az [USAFacts webhelyén](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) megtekintheti a jelentésben használt adatok legutóbbi frissülésének idejét. 
 
@@ -112,7 +112,7 @@ Ha szeretné a saját webhelyén közzétenni a testreszabott jelentést, érdem
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Beágyazási kód létrehozása webes közzétételhez 
 
-A testreszabott jelentés saját webhelyen való közzétételéhez kövesse a [Saját beágyazási kód létrehozása webes közzétételhez](../service-publish-to-web.md#create-embed-codes-with-publish-to-web) című cikk utasításait.
+A testreszabott jelentés saját webhelyen való közzétételéhez kövesse a [Saját beágyazási kód létrehozása webes közzétételhez](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web) című cikk utasításait.
 
 A beágyazási kód közzétételét követően a megerősítő párbeszédpanelen elérhető iFrame használatával végezhet beágyazást a webhelyen.
 
@@ -143,7 +143,7 @@ A jelentés adatait más forrásból származó adatokkal is egyesítheti. Az al
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Adatok betöltése a webről":::
 
-    A [Csatlakozás weblapokhoz a Power BI Desktopból](../desktop-connect-to-web.md) című cikkben találhat további információt a webről való adatbetöltésről.
+    A [Csatlakozás weblapokhoz a Power BI Desktopból](../connect-data/desktop-connect-to-web.md) című cikkben találhat további információt a webről való adatbetöltésről.
     
 Ezt követően megjelenítheti az adatokat a Power BI Desktopban. Végül hajtsa végre a **2. lehetőség** lépéseit: A jelentés közzétételéhez és az egyéni beágyazási kód létrehozásához kövesse a [Jelentés közzététele a Power BI szolgáltatásban](#publish-your-report-to-the-power-bi-service) című cikk utasításait. 
 
@@ -168,4 +168,8 @@ A Johns Hopkins Egyetem adatait szerzői jog védi. Copyright 2020 Johns Hopkins
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Power BI-minták beszerzése](../sample-datasets.md)
+[Power BI-minták beszerzése](../create-reports/sample-datasets.md)
+
+
+
+

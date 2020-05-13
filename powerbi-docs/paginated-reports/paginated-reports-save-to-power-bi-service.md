@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/04/2020
-ms.openlocfilehash: 3e7e1590adbf953db4232ddffa5f26778e5670c2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a634844093f103c942b70cd81d93822ca240cf0a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781616"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272028"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Lapszámozott jelentés közzététele a Power BI szolgáltatásban
 
@@ -105,7 +105,7 @@ Mint minden Power BI-jelentésnél, itt is érvényes, hogy ha a jelentésnek he
 
    ![A lapszámozott jelentés kezelése](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. A részleteket és a következő lépéseket a [Mi az a helyszíni adatátjáró](../service-gateway-onprem.md) című Power BI szolgáltatás-cikkben találja meg.
+1. A részleteket és a következő lépéseket a [Mi az a helyszíni adatátjáró](../connect-data/service-gateway-onprem.md) című Power BI szolgáltatás-cikkben találja meg.
 
 
 
@@ -114,4 +114,5 @@ Mint minden Power BI-jelentésnél, itt is érvényes, hogy ha a jelentésnek he
 - [Lapszámozott jelentés megtekintése a Power BI szolgáltatásban](../consumer/paginated-reports-view-power-bi-service.md)
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
 - [Oktatóanyag: Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embed-paginated-reports-customers.md)
+
 

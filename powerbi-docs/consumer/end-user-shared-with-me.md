@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e54fbf7c521d057b6cc9fe1dde6c66358a9c349d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80302502"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277525"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>A velem megosztott irányítópultok és jelentések megjelenítése
 
@@ -26,7 +26,7 @@ Ha egy munkatárs tartalmakat oszt meg Önnel a **Megosztás** gomb használatá
 
 ![Megosztás ikonja](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Nézze meg, ahogy Amanda elmagyarázza a **Velem megosztva** tartalomlistát, és bemutatja, hogyan lehet a listában navigálni és szűrőket használni. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is. Az Önnel megosztott irányítópultok megtekintéséhez Power BI Pro-licencre van szükség. További részletekért olvassa el [A Power BI Premium bemutatása](../service-premium-what-is.md) cikket.
+Nézze meg, ahogy Amanda elmagyarázza a **Velem megosztva** tartalomlistát, és bemutatja, hogyan lehet a listában navigálni és szűrőket használni. Ha végzett, a videó alatti részletes útmutatást követve próbálja ki Ön is. Az Önnel megosztott irányítópultok megtekintéséhez Power BI Pro-licencre van szükség. További részletekért olvassa el [A Power BI Premium bemutatása](../admin/service-premium-what-is.md) cikket.
     
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállít�
 * Az [elemzések ikonnal](end-user-insights.md) megtekintheti a Power BI által az adatokon végzett ![elemzéseket](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > Az EGRC-besorolásokról további információért válassza a **Besorolás** gombot, majd [tekintse meg az Irányítópult adatainak besorolása cikket](../service-data-classification.md).
+  > Az EGRC-besorolásokról további információért válassza a **Besorolás** gombot, majd [tekintse meg az Irányítópult adatainak besorolása cikket](../create-reports/service-data-classification.md).
   > 
 
 

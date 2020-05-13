@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525330"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274857"
 ---
 # <a name="dataset-impact-analysis"></a>Adatkészletek hatáselemzése
 
@@ -54,7 +54,7 @@ A használati metrikák az elmúlt 30 napra vonatkoznak, és az aktuális nap ad
 
 ## <a name="notify-contacts"></a>Felhasználók értesítése
 
-Ha módosított egy adathalmazt, vagy változtatáson gondolkodik, érdemes lehet kapcsolatba lépni az érintett felhasználókkal, hogy a változtatásról őket is tájékoztassa. A felhasználók értesítésekor a rendszer e-mailt küld minden olyan felhasználónak, aki szerepel az érintett munkaterületek [partnerlistáján](../service-create-the-new-workspaces.md#workspace-contact-list). Az e-mail az Ön nevét is tartalmazza, így a felhasználók könnyedén megtalálhatják, és válaszolhatnak egy új e-mail-beszélgetésben. 
+Ha módosított egy adathalmazt, vagy változtatáson gondolkodik, érdemes lehet kapcsolatba lépni az érintett felhasználókkal, hogy a változtatásról őket is tájékoztassa. A felhasználók értesítésekor a rendszer e-mailt küld minden olyan felhasználónak, aki szerepel az érintett munkaterületek [partnerlistáján](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list). Az e-mail az Ön nevét is tartalmazza, így a felhasználók könnyedén megtalálhatják, és válaszolhatnak egy új e-mail-beszélgetésben. 
 
 1. Kattintson a **Felhasználók értesítése** hivatkozásra a Hatáselemzés oldalsó paneljében. Ekkor megjelenik a Felhasználók értesítése párbeszédpanel.
 
@@ -89,5 +89,6 @@ Amikor módosít egy adathalmazt a Power BI Desktopban, majd azt újból közzé
 
 ## <a name="next-steps"></a>Következő lépések
 
-* [Adathalmazok használata több munkaterületen (előzetes verzió)](../service-datasets-across-workspaces.md)
+* [Adathalmazok használata több munkaterületen (előzetes verzió)](../connect-data/service-datasets-across-workspaces.md)
 * [Adatéletút](service-data-lineage.md)
+

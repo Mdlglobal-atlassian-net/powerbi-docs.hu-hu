@@ -12,6 +12,10 @@
       items:
         - name: Power BI-vizualizáció fejlesztése
           href: custom-visual-develop-tutorial.md
+        - name: Reakcióalapú vizualizációk létrehozása
+          href: create-react-visual.md
+        - name: Sávdiagram készítése
+          href: create-bar-chart.md
         - name: Formázási lehetőségek hozzáadása
           href: custom-visual-develop-tutorial-format-options.md
         - name: Egységtesztek hozzáadása vizualizációs projekthez
@@ -38,14 +42,20 @@
           href: objects-properties.md
         - name: Speciális szerkesztési mód
           href: advanced-edit-mode.md
+        - name: A supportsKeyboardFocus funkció
+          href: supportskeyboardfocus-feature.md
+        - name: supportsMultiVisualSelection-feature.md
+          href: supportsmultivisualselection-feature.md
     - name: Útmutató
       items:
         - name: Power BI-vizualizáció minősíttetése
           href: power-bi-custom-visuals-certified.md
         - name: Power BI-vizualizációk közzététele az AppSource-ban
           href: office-store.md
+        - name: A Power BI-vizualizáció tesztelése
+          href: submission-testing.md
         - name: R-alapú Power BI-vizualizációk a Power BI-ban
-          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+          href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
         - name: Vizualizációk interakciói
           href: visuals-interactions.md
         - name: Kijelölések hozzáadása
@@ -64,6 +74,8 @@
           href: context-menu.md
         - name: Lehatolási támogatás hozzáadása
           href: drill-down-support.md
+        - name: A vizualizáció színezése
+          href: add-colors-power-bi-visual.md
         - name: Adatkiemelés vizualizációkban
           href: highlight.md
         - name: Magas kontrasztú mód támogatásának hozzáadása
@@ -78,10 +90,14 @@
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Hivatkozás
       items:
+        - name: Változásnapló
+          href: changelog.md
         - name: Kezdőlap
           href: landing-page.md
         - name: Indítási URL-cím
           href: launch-url.md
+        - name: Vizualizációs API
+          href: visual-api.md
         - name: Helyi tárolási API
           href: local-storage.md
         - name: Események renderelése
@@ -119,8 +135,8 @@
         - name: Fejlesztői központ
           href: 'https://powerbi.microsoft.com/developers/'
         - name: Minták a Power BI-vizualizációkhoz
-          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-        - name: Power BI-vizualizációk Git-adattára
+          href: samples.md
+        - name: Egyéni vizuális elemek Git-tárház
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
         - name: SSL-tanúsítvány létrehozása
           href: create-ssl-certificate.md

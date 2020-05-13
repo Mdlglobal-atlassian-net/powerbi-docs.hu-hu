@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378869"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278607"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimalizálási útmutató a Power BI-hoz
 
@@ -26,7 +26,7 @@ Az ebben a cikkben olvasható útmutatás alapján optimalizált Power BI-megold
 
 ## <a name="optimizing-the-data-model"></a>Az adatmodell optimalizálása
 
-Az adatmodellre épül a teljes vizualizációs környezet. Az adatmodellek külső vagy belső üzemeltetésűek lehetnek, és a Power BI-ban _adatkészleteknek_ hívjuk őket. Fontos, hogy megértse a lehetőségeket, és hogy a saját megoldásához illő adatkészlettípust válassza. Három adatkészletmódot különböztetünk meg: Importálás, DirectQuery és Összetett. További információt az [Adatkészletek a Power BI szolgáltatásban](../service-datasets-understand.md) és az [Adatkészletmódok a Power BI szolgáltatásban](../service-dataset-modes-understand.md) című témakörben talál.
+Az adatmodellre épül a teljes vizualizációs környezet. Az adatmodellek külső vagy belső üzemeltetésűek lehetnek, és a Power BI-ban _adatkészleteknek_ hívjuk őket. Fontos, hogy megértse a lehetőségeket, és hogy a saját megoldásához illő adatkészlettípust válassza. Három adatkészletmódot különböztetünk meg: Importálás, DirectQuery és Összetett. További információt az [Adatkészletek a Power BI szolgáltatásban](../connect-data/service-datasets-understand.md) és az [Adatkészletmódok a Power BI szolgáltatásban](../connect-data/service-dataset-modes-understand.md) című témakörben talál.
 
 Az egyes adatkészletmódokhoz itt talál útmutatást:
 
@@ -40,7 +40,7 @@ A Power BI vizualizációi lehetnek irányítópultok, Power BI-jelentések vagy
 
 ### <a name="dashboards"></a>Irányítópultok
 
-Fontos tudni, hogy a Power BI gyorsítótárazza az irányítópult-csempéket, kivéve az élő jelentéscsempéket és a streamelési csempéket. További információt az Adatfrissítés a Power BI-ban című témakör [Csempék frissítése](../refresh-data.md#tile-refresh) című szakasza tartalmaz. Ha dinamikus [sorszintű biztonságot (RLS)](../service-admin-rls.md) követel meg az adatkészlet, mindenképpen tisztában kell lennie a teljesítményre gyakorolt hatásokkal, mert a csempék gyorsítótárazása felhasználónként fog történni.
+Fontos tudni, hogy a Power BI gyorsítótárazza az irányítópult-csempéket, kivéve az élő jelentéscsempéket és a streamelési csempéket. További információt az Adatfrissítés a Power BI-ban című témakör [Csempék frissítése](../connect-data/refresh-data.md#tile-refresh) című szakasza tartalmaz. Ha dinamikus [sorszintű biztonságot (RLS)](../admin/service-admin-rls.md) követel meg az adatkészlet, mindenképpen tisztában kell lennie a teljesítményre gyakorolt hatásokkal, mert a csempék gyorsítótárazása felhasználónként fog történni.
 
 Amikor élő jelentéscsempéket tűz ki valamelyik irányítópultra, akkor nem a lekérdezési gyorsítótárból történik a kiszolgálásuk. Ehelyett jelentésekként viselkednek, és menet közben küldenek lekérdezéseket a háttérbeli magoknak.
 
@@ -75,7 +75,7 @@ Tesztelje az összes egyéni vizualizációt annak megállapításához, hogy bi
 
 A többoldalas Power BI-jelentések terveinek optimalizálásához felhasználhatja az ajánlott eljárások szerint készült tervet a jelentés adatlekérési fázisához. További információt az [Adatlekérési útmutató többoldalas jelentésekhez](report-paginated-data-retrieval.md) című témakörben talál.
 
-Győződjön meg arról is, hogy elegendő memóriát foglalt le a [többoldalas jelentések számítási feladataihoz](../service-admin-premium-workloads.md#paginated-reports).
+Győződjön meg arról is, hogy elegendő memóriát foglalt le a [többoldalas jelentések számítási feladataihoz](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## <a name="optimizing-the-environment"></a>A környezet optimalizálása
 
@@ -83,11 +83,11 @@ A kapacitásbeállítások konfigurálásával, az adatátjárók méretezésév
 
 ### <a name="capacity-settings"></a>Kapacitásbeállítások
 
-Ha dedikált kapacitásokat használ (a Power BI Premium szolgáltatás P jelű termékváltozataival vagy a Power BI Embedded szolgáltatás A jelű (A4–A6) termékváltozataival), kezelheti a kapacitásbeállításokat. További információ: [Prémium szintű kapacitások kezelése](../service-premium-capacity-manage.md). A kapacitás optimalizálásához a [Prémiumszintű kapacitások optimalizálása](../service-premium-capacity-optimize.md) című témakörben talál útmutatást.
+Ha dedikált kapacitásokat használ (a Power BI Premium szolgáltatás P jelű termékváltozataival vagy a Power BI Embedded szolgáltatás A jelű (A4–A6) termékváltozataival), kezelheti a kapacitásbeállításokat. További információ: [Prémium szintű kapacitások kezelése](../admin/service-premium-capacity-manage.md). A kapacitás optimalizálásához a [Prémiumszintű kapacitások optimalizálása](../admin/service-premium-capacity-optimize.md) című témakörben talál útmutatást.
 
 ### <a name="gateway-sizing"></a>Átjárók méretezése
 
-Átjáróra akkor van szükség, amikor az interneten közvetlenül nem elérhető adatokhoz kell hozzáférnie a Power BI-nak. A [helyszíni adatátjárót](../service-gateway-onprem.md) helyszíni kiszolgálón és virtuális gépen üzemelő IaaS-környezetekben egyaránt telepítheti.
+Átjáróra akkor van szükség, amikor az interneten közvetlenül nem elérhető adatokhoz kell hozzáférnie a Power BI-nak. A [helyszíni adatátjárót](../connect-data/service-gateway-onprem.md) helyszíni kiszolgálón és virtuális gépen üzemelő IaaS-környezetekben egyaránt telepítheti.
 
 Ha tisztában szeretne lenni az átjárók számítási feladataival és a méretezési javaslatokkal, olvassa el a [Helyszíni adatátjáró méretezése](gateway-onprem-sizing.md) című témakört.
 
@@ -96,7 +96,7 @@ Ha tisztában szeretne lenni az átjárók számítási feladataival és a mére
 A hálózati késés hatással van a jelentések teljesítményére, hiszen megnöveli azt az időt, amely a kérések Power BI szolgáltatásba való eljuttatásához, illetve a válaszok kézbesítéséhez szükséges. A Power BI-bérlők konkrét régióhoz vannak társítva.
 
 > [!TIP]
-> A [Hol található a Power BI-bérlőm?](../service-admin-where-is-my-tenant-located.md) című témakörből megtudhatja, hogy hol üzemel a bérlője.
+> A [Hol található a Power BI-bérlőm?](../admin/service-admin-where-is-my-tenant-located.md) című témakörből megtudhatja, hogy hol üzemel a bérlője.
 
 Amikor egy bérlő felhasználói hozzáférnek a Power BI szolgáltatáshoz, a kéréseiket a rendszer mindig ehhez a régióhoz irányítja. A kérések Power BI szolgáltatásba érkezésekor a szolgáltatás további kéréseket küldhet (például az alapul szolgáló adatforrásnak vagy egy adatátjárónak), amelyekre szintén érvényes a hálózati késés.
 
@@ -115,3 +115,7 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 - Tanulmány: [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
+
+
+
+

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ae73f2e32d34c3e1b37991358545997c4b4bb961
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865460"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272902"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Kitöltött (koropletikus) térképek létrehozása és használata a Power BI-ban
 
@@ -92,12 +92,12 @@ Ez az oktatóanyag az [Értékesítési és marketing minta PBIX-fájlt](https:/
 7. A kitöltött térkép zöld és piros árnyalattal jelenik meg, ahol a piros az alacsonyabb véleménypontszámot, a zöld pedig a magasabb, pozitívabb véleménypontszámot jelöli.  További részletek megjelenítéséhez húzza a mezőt az Elemleírások területre.  Itt felvettük a **SalesFact** > **Véleményeltérés** értéket. Idaho (ID) állam kiemelése megmutatja, hogy a véleményeltérés értéke alacsony, 6-os.
    ![tematikus térkép Idaho elemleírásának megjelenítésével](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Mentse a jelentést](../service-report-save.md).
+10. [Mentse a jelentést](../create-reports/service-report-save.md).
 
 A Power BI-ban számos lehetőség van a kitöltött térkép megjelenésének szabályozására. Az adatszínvezérlők használatával elérheti a kívánt külalakot. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
+További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../create-reports/power-bi-report-add-filter.md).
 
 A kitöltött térképek egyes helyeinek kiemelésével a rendszer keresztszűri a jelentésoldalon lévő többi vizualizációt, és fordítva.
 
@@ -136,3 +136,5 @@ A térképi vizualizációkhoz további segítséget nyújt a [Tippek és trükk
 [Alakzat leképezése](desktop-shape-map.md)
 
 [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

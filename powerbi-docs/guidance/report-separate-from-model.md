@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: dad451da460abed65a69990394522f268d7f21cd
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525259"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277433"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Jelentések elkülönítése a modellektől a Power BI Desktopban
 
 Új Power BI Desktop-megoldás létrehozásakor az egyik első feladat az adatok lekérése. Az adat beolvasása két különböző kimenetet eredményezhet. Lehet a következő:
 
-- Hozzon létre egy [élő kapcsolatot](../desktop-report-lifecycle-datasets.md) egy már közzétett modellhez, amely lehet egy Power BI-adatkészlet vagy egy távoli üzemeltetésű Analysis Services-modell.
+- Hozzon létre egy [élő kapcsolatot](../connect-data/desktop-report-lifecycle-datasets.md) egy már közzétett modellhez, amely lehet egy Power BI-adatkészlet vagy egy távoli üzemeltetésű Analysis Services-modell.
 - Megkezdheti egy új modell fejlesztését, amely lehet importálási, DirectQuery- vagy összetett modell.
 
 Ez a cikk a második esettel foglalkozik. Ahhoz nyújt útmutatást, hogy egy jelentést és egy modellt érdemes-e egyetlen Power BI Desktop-fájlban egyesíteni.
@@ -67,7 +67,7 @@ Javasoljuk, hogy vegye fel a kapcsolatot az egyes kapcsolódó összetevők tula
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Kapcsolódás a Power BI szolgáltatásban lévő adathalmazokhoz a Power BI Desktopból](../desktop-report-lifecycle-datasets.md)
+- [Kapcsolódás a Power BI szolgáltatásban lévő adathalmazokhoz a Power BI Desktopból](../connect-data/desktop-report-lifecycle-datasets.md)
 - [Kapcsolódó tartalom megtekintése a Power BI szolgáltatásban](../consumer/end-user-related.md)
 - [Adatéletút](../collaborate-share/service-data-lineage.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

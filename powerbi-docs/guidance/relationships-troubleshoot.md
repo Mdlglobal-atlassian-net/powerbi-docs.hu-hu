@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ccff80391ed0625aac063af3bf7a86b83cd7e85
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263645"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278123"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Kapcsolatok hibaelhárítási útmutatója
 
@@ -44,18 +44,18 @@ Ebben az esetben kövesse a következő általános hibaelhárítási ellenőrz�
 
 |Probléma|Lehetséges ok(ok)|
 |---------|---------|
-|A vizualizáció nem jelenít meg eredményt|– A modellbe nincsenek betöltve adatok<br />– A szűrő kontextusában nem találhatók adatok<br />– Kényszerítve van a sorszintű biztonság<br />– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_<br />– Kényszerítve van a sorszintű biztonság, azonban nincs engedélyezve a kétirányú kapcsolat propagálása – lásd: [Sorszintű biztonság (RLS) a Power BI Desktoppal](../desktop-rls.md)|
+|A vizualizáció nem jelenít meg eredményt|– A modellbe nincsenek betöltve adatok<br />– A szűrő kontextusában nem találhatók adatok<br />– Kényszerítve van a sorszintű biztonság<br />– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_<br />– Kényszerítve van a sorszintű biztonság, azonban nincs engedélyezve a kétirányú kapcsolat propagálása – lásd: [Sorszintű biztonság (RLS) a Power BI Desktoppal](../create-reports/desktop-rls.md)|
 |A vizualizáció ugyanazt az értéket jeleníti meg minden csoportosításhoz |– A kapcsolatok nem léteznek<br />– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_|
 |A vizualizáció megjelenít eredményeket, ezek azonban helytelenek|– A vizualizáció helytelenül van konfigurálva<br />– A mérték logikája helytelen<br />– Frissíteni kell a modelladatokat<br />– A forrásadatok helytelenek<br />– A kapcsolati oszlopok helytelenül kapcsolódnak egymáshoz (például a **ProductID** a **CustomerID** oszlopra van leképezve)<br />– Két DirectQuery-tábla közti kapcsolat esetén a kapcsolat „egy” oldali oszlopa ismétlődő értékeket tartalmaz|
-|ÜRES csoportosítások vagy szeletelő-/szűrőelemek jelennek meg, a forrásoszlopok pedig nem tartalmaznak ÜRES értéket|– Erős kapcsolat, ahol a „több” oldali oszlop olyan értékeket tartalmaz, amelyek nem az „egy” oldali oszlopban vannak tárolva – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (erős kapcsolatok)](../desktop-relationships-understand.md#strong-relationships)<br />– Erős egy az egyhez típusú kapcsolat, ahol a kapcsolódó oszlopok ÜRES értékeket tartalmaznak – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (erős kapcsolatok)](../desktop-relationships-understand.md#strong-relationships)<br />– Egy inaktiválási kapcsolat „több” oldali oszlopa ÜRES értékeket tárol, vagy olyan értékeket tartalmaz, amelyek nincsenek az „egy” oldalon tárolva|
-|A vizualizációból adatok hiányoznak|– Helytelen/nem várt szűrők vannak alkalmazva<br />– Kényszerítve van a sorszintű biztonság<br />– Gyenge kapcsolat, ahol ÜRES értékek találhatók a kapcsolódó oszlopokban, vagy adatintegritási hibák lépnek fel – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (gyenge kapcsolatok)](../desktop-relationships-understand.md#weak-relationships)<br />– Két DirectQuery-tábla közötti kapcsolat, amely [hivatkozási integritás feltételezéséhez](../desktop-relationships-understand.md#assume-referential-integrity) van konfigurálva, azonban adatintegritásbeli problémák adódtak (nem egyező értékek a kapcsolódó oszlopokban)|
-|A sorszintű biztonság nincs megfelelően kényszerítve|– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_<br />– Kényszerítve van a sorszintű biztonság, azonban nincs engedélyezve a kétirányú kapcsolat propagálása – lásd: [Sorszintű biztonság (RLS) a Power BI Desktoppal](../desktop-rls.md)|
+|ÜRES csoportosítások vagy szeletelő-/szűrőelemek jelennek meg, a forrásoszlopok pedig nem tartalmaznak ÜRES értéket|– Erős kapcsolat, ahol a „több” oldali oszlop olyan értékeket tartalmaz, amelyek nem az „egy” oldali oszlopban vannak tárolva – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (erős kapcsolatok)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– Erős egy az egyhez típusú kapcsolat, ahol a kapcsolódó oszlopok ÜRES értékeket tartalmaznak – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (erős kapcsolatok)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />– Egy inaktiválási kapcsolat „több” oldali oszlopa ÜRES értékeket tárol, vagy olyan értékeket tartalmaz, amelyek nincsenek az „egy” oldalon tárolva|
+|A vizualizációból adatok hiányoznak|– Helytelen/nem várt szűrők vannak alkalmazva<br />– Kényszerítve van a sorszintű biztonság<br />– Gyenge kapcsolat, ahol ÜRES értékek találhatók a kapcsolódó oszlopokban, vagy adatintegritási hibák lépnek fel – lásd: [Modellbeli kapcsolatok a Power BI Desktopban (gyenge kapcsolatok)](../transform-model/desktop-relationships-understand.md#weak-relationships)<br />– Két DirectQuery-tábla közötti kapcsolat, amely [hivatkozási integritás feltételezéséhez](../transform-model/desktop-relationships-understand.md#assume-referential-integrity) van konfigurálva, azonban adatintegritásbeli problémák adódtak (nem egyező értékek a kapcsolódó oszlopokban)|
+|A sorszintű biztonság nincs megfelelően kényszerítve|– A kapcsolatok nem propagálnak a táblák között – _kövesse a fenti ellenőrzőlistát_<br />– Kényszerítve van a sorszintű biztonság, azonban nincs engedélyezve a kétirányú kapcsolat propagálása – lásd: [Sorszintű biztonság (RLS) a Power BI Desktoppal](../create-reports/desktop-rls.md)|
 |||
 
 ## <a name="next-steps"></a>További lépések
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Modellbeli kapcsolatok a Power BI Desktopban](../desktop-relationships-understand.md)
+- [Modellbeli kapcsolatok a Power BI Desktopban](../transform-model/desktop-relationships-understand.md)
 - Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

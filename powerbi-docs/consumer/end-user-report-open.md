@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 6ffdc73e5e9ef9ccd416378c19da587986c80b55
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 661277337c00f160c010351ba5f827b6e0fc2f8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114325"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277617"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>A *felhasználóknak* készült Power BI szolgáltatásban jelentéseket tekinthet meg
 
@@ -99,14 +99,14 @@ A jelentések irányítópultokról is megnyithatók. Az irányítópult legtöb
     ![megnyitott jelentés az Olvasó nézetben](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
-> Nem minden csempe mutat jelentésekre. Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](end-user-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét nyit meg, amelyet az [irányítópult **Csempe felvétele** vezérlője használatával hoztak létre](../service-dashboard-add-widget.md), számos különböző dolog történhet: lejátszódhat egy videó, megnyílhat egy webhely és így tovább.  
+> Nem minden csempe mutat jelentésekre. Ha olyan csempét nyit meg, amelyet a [Q&A használatával hoztak létre](end-user-q-and-a.md), akkor a Q&A képernyő is megnyílik. Ha olyan csempét nyit meg, amelyet az [irányítópult **Csempe felvétele** vezérlője használatával hoztak létre](../create-reports/service-dashboard-add-widget.md), számos különböző dolog történhet: lejátszódhat egy videó, megnyílhat egy webhely és így tovább.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>További lehetőségek a jelentés megnyitására
 Ha már otthonosabban mozog a Power BI szolgáltatásban, minden bizonnyal tudni fogja, mely munkafolyamatok a legkényelmesebbek az Ön számára. Íme még néhány további lehetőség a jelentések megnyitásához:
 - A navigációs panelen a [Kedvencek](end-user-favorite.md), [Legutóbbi](end-user-recent.md) elemnél    
 - A [Kapcsolódó megtekintése](end-user-related.md) használata    
-- E-mailben, ha valaki [megosztja Önnel](../service-share-reports.md) vagy Ön [riasztást állít be](end-user-alerts.md);    
+- E-mailben, ha valaki [megosztja Önnel](../collaborate-share/service-share-reports.md) vagy Ön [riasztást állít be](end-user-alerts.md);    
 - Az [Értesítési központból](end-user-notification-center.md)    
 - Egy munkaterületről
 - és még néhány további lehetőség

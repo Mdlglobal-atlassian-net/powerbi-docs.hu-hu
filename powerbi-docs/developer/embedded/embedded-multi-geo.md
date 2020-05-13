@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114658"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149257"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-támogatás a Power BI Embedded számára
 
 A **Multi-Geo-támogatás a Power BI Embedded számára** azt jelenti, hogy az alkalmazásokat létrehozó független szoftverszolgáltatók és szervezetek, amelyek a Power BI Embeddedel ágyazzák be az elemzéseket az alkalmazásokba, már üzembe helyezhetik adataikat a világ különböző régióiban.
 
-A **Power BI Embedded** szolgáltatást használó ügyfelek már beállíthatnak egy **A kapacitást** a **Multi-Geo** beállítási lehetőségeinek használatával, ugyanazon funkciók és korlátozások alapján, amelyeket a [Power BI Premium is támogat a Multi-Geo funkció használatakor](../../service-admin-premium-Multi-Geo.md).
+A **Power BI Embedded** szolgáltatást használó ügyfelek már beállíthatnak egy **A kapacitást** a **Multi-Geo** beállítási lehetőségeinek használatával, ugyanazon funkciók és korlátozások alapján, amelyeket a [Power BI Premium is támogat a Multi-Geo funkció használatakor](../../admin/service-admin-premium-Multi-Geo.md).
 
 ## <a name="creating-new-power-bi-embedded-capacity-resource-with-multi-geo"></a>Új Power BI Embedded-beli kapacitás-erőforrás létrehozása Multi-Geoval
 
@@ -89,6 +89,6 @@ További információ a Power BI Embedded-kapacitásokról és a Multi-Geo beál
 
 * [Power BI Embedded-kapacitás létrehozása](azure-pbie-create-capacity.md)
 
-* [Multi-Geo a Power BI Premium kapacitásaiban](../../service-admin-premium-multi-geo.md)
+* [Multi-Geo a Power BI Premium kapacitásaiban](../../admin/service-admin-premium-multi-geo.md)
 
 Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

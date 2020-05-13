@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 711c920f5b0b7feeeeb2297e0f93714e1e89f1a2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75219879"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148179"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Külső vállalat által Önnel megosztott Power BI-tartalom megtekintése
 
@@ -28,7 +28,7 @@ Hatóköre:
 
 ## <a name="accessing-shared-content"></a>Hozzáférés megosztott tartalomhoz
 
-**Az első lépés, hogy valaki egy külső vállalattól megosszon Önnel valamit.** Amikor valaki a vállalaton belül vagy egy külső vállalatnál [megoszt Önnel egy elemet](../../service-share-dashboards.md), Ön e-mailt kap a megosztott elemre mutató hivatkozással. Ha a mobileszközén követi ezt a hivatkozást, megnyílik a Power BI-mobilalkalmazás. Ha az alkalmazás azt észleli, hogy az elem egy külső vállalatnál lett megosztva Önnel, az alkalmazás újracsatlakozik ahhoz a vállalathoz az Ön identitásával. Az alkalmazás ez után betölti az annál a vállalatnál Önnel megosztott összes elemet.
+**Az első lépés, hogy valaki egy külső vállalattól megosszon Önnel valamit.** Amikor valaki a vállalaton belül vagy egy külső vállalatnál [megoszt Önnel egy elemet](../../collaborate-share/service-share-dashboards.md), Ön e-mailt kap a megosztott elemre mutató hivatkozással. Ha a mobileszközén követi ezt a hivatkozást, megnyílik a Power BI-mobilalkalmazás. Ha az alkalmazás azt észleli, hogy az elem egy külső vállalatnál lett megosztva Önnel, az alkalmazás újracsatlakozik ahhoz a vállalathoz az Ön identitásával. Az alkalmazás ez után betölti az annál a vállalatnál Önnel megosztott összes elemet.
 
 ![Megosztott Power BI-elem megnyitása e-mailből ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 

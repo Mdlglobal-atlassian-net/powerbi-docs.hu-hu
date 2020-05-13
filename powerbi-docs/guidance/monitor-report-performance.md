@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525537"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279020"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Jelentések teljesítményének figyelése a Power BI-ban
 
-Figyelheti a jelentések Power BI Desktopbeli teljesítményét a [Power BI Premium Metrics alkalmazással](../service-premium-metrics-app.md), kiderítheti, hogy hol vannak a szűk keresztmetszetek, és megtudhatja, hogy miként javítható a jelentések teljesítménye.
+Figyelheti a jelentések Power BI Desktopbeli teljesítményét a [Power BI Premium Metrics alkalmazással](../admin/service-premium-metrics-app.md), kiderítheti, hogy hol vannak a szűk keresztmetszetek, és megtudhatja, hogy miként javítható a jelentések teljesítménye.
 
 Ezekben az esetekben fontos figyelni a teljesítményt:
 
@@ -39,7 +39,7 @@ A Power BI Desktop [Lekérdezési diagnosztika](/power-query/QueryDiagnostics) f
 
 ## <a name="use-performance-analyzer"></a>A Teljesítményelemző használata
 
-A Power BI Desktop [Teljesítményelemző](../desktop-performance-analyzer.md) funkciójával kiderítheti, hogy milyen teljesítményt nyújtanak az egyes jelentéselemek, köztük a vizualizációk és a DAX-képletek. Különösen hasznos annak megállapításához, hogy a lekérdezés vagy a vizualizáció renderelése okoz-e teljesítményproblémákat.
+A Power BI Desktop [Teljesítményelemző](../create-reports/desktop-performance-analyzer.md) funkciójával kiderítheti, hogy milyen teljesítményt nyújtanak az egyes jelentéselemek, köztük a vizualizációk és a DAX-képletek. Különösen hasznos annak megállapításához, hogy a lekérdezés vagy a vizualizáció renderelése okoz-e teljesítményproblémákat.
 
 ## <a name="use-sql-server-profiler"></a>Az SQL Server Profiler használata
 
@@ -77,15 +77,15 @@ Az SQL Server Profiler használatának egyik előnye, hogy menteni lehet az SQL 
 
 ## <a name="monitor-premium-metrics"></a>Premium-metrikák figyelése
 
-Power BI Premium-kapacitások esetén a **Power BI Premium Metrics alkalmazással** figyelheti Power BI Premium-előfizetése állapotát és kapacitását. További információt [A Power BI Premium Metrics alkalmazás](../service-premium-metrics-app.md) című témakör tartalmaz.
+Power BI Premium-kapacitások esetén a **Power BI Premium Metrics alkalmazással** figyelheti Power BI Premium-előfizetése állapotát és kapacitását. További információt [A Power BI Premium Metrics alkalmazás](../admin/service-premium-metrics-app.md) című témakör tartalmaz.
 
 ## <a name="next-steps"></a>Következő lépések
 
 Erről a cikkről a következő forrásanyagokban talál további információt:
 
 - [Lekérdezési diagnosztika](/power-query/QueryDiagnostics)
-- [Teljesítményelemző](../desktop-performance-analyzer.md)
+- [Teljesítményelemző](../create-reports/desktop-performance-analyzer.md)
 - [Jelentésteljesítménnyel kapcsolatos problémák elhárítása a Power BI-ban](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics alkalmazás](../service-premium-metrics-app.md)
+- [Power BI Premium Metrics alkalmazás](../admin/service-premium-metrics-app.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

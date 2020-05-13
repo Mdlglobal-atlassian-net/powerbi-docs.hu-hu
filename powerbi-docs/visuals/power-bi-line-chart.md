@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867024"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274190"
 ---
 # <a name="line-charts-in-power-bi"></a>Vonaldiagramok a Power BI-ban
 
@@ -32,7 +32,7 @@ Ezen útmutatás a Értékesítési és marketing mintaalkalmazást használja e
 > [!NOTE]
 > A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie.
 
-1. Kezdje a műveletet egy üres jelentésoldalon. Ha a Power BI szolgáltatást használja, mindenképpen a [Szerkesztési nézetében](../service-interact-with-a-report-in-editing-view.md) nyissa meg a jelentést.
+1. Kezdje a műveletet egy üres jelentésoldalon. Ha a Power BI szolgáltatást használja, mindenképpen a [Szerkesztési nézetében](../create-reports/service-interact-with-a-report-in-editing-view.md) nyissa meg a jelentést.
 
 2. A Mezők panelen válassza az **Értékesítési adatok** \> **Összes egység**, majd a **Dátum** > **Hónap** elemet.  A Power BI oszlopdiagramot hoz létre a jelentésvásznon.
 
@@ -74,7 +74,7 @@ Nagyon különböző értékek egy diagramon való ábrázolására a kombinált
    ![erősen eltérő értékek](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
+További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../create-reports/power-bi-report-add-filter.md).
 
 Egy adatpont kijelölése egy vonaldiagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción és viszont. A lépések követéséhez nyissa meg a **Piaci részesedés** lapot.  
 
@@ -86,7 +86,7 @@ Ebben a példában a kijelölt adatpont a következőket foglalja magában: 2014
 
 Az oszlopdiagramon a keresztkiemelést, a tárcsán a keresztszűrést figyelheti meg.
 
-A keresztkiemelések és keresztszűrések használatának módját a [Vizualizációk közötti interakciók Power BI-jelentésekben](../service-reports-visual-interactions.md) című cikk ismerteti.
+A keresztkiemelések és keresztszűrések használatának módját a [Vizualizációk közötti interakciók Power BI-jelentésekben](../create-reports/service-reports-visual-interactions.md) című cikk ismerteti.
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás
 * Egy vonaldiagramnak nem lehet két Y tengelye.  Ehhez kombinált diagramot kell használnia.
@@ -95,5 +95,8 @@ A keresztkiemelések és keresztszűrések használatának módját a [Vizualiz�
 ## <a name="next-steps"></a>Következő lépések
 
 [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+
 
 

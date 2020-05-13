@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290585"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278077"
 ---
 # <a name="use-report-page-drillthrough"></a>Jelentésoldal részletezésének használata
 
-Ez a cikk a Power BI-jelentéseket megtervező jelentéskészítők számára íródott. Javaslatokat és ajánlásokat fogalmaz meg a [jelentésoldal részletezésének](../desktop-drillthrough.md) létrehozásához.
+Ez a cikk a Power BI-jelentéseket megtervező jelentéskészítők számára íródott. Javaslatokat és ajánlásokat fogalmaz meg a [jelentésoldal részletezésének](../create-reports/desktop-drillthrough.md) létrehozásához.
 
 Javasoljuk, úgy tervezze meg a jelentést, hogy lehetővé tegye a jelentés felhasználói számára a következő folyamat elérését:
 
@@ -58,8 +58,8 @@ A jelentés tervezésének idején a következő eljárásokat ajánljuk:
 - **Részletezési szűrők:** Úgy állítsa be a részletezési szűrőket, hogy megtekinthesse az eredmény valóságos előnézetét a részletezési oldal megtervezésekor. A jelentés közzététele előtt ne felejtse el eltávolítani ezeket a szűrőket.
 - **További képességek:** A részletezési oldal olyan, mint bármely más jelentésoldal. Még további interaktív képességekkel is bővítheti, többek között szeletelőkkel és szűrőkkel.
 - **Üres értékek:** Kerülje el olyan vizualizációk felvételét, amelyek képesek ÜRES érték megjelenítésére, vagy hibákat eredményeznek a részletezési szűrők alkalmazásakor.
-- **Oldal láthatósága:** Fontolja meg a részletezési oldalak elrejtését. Ha úgy dönt, hogy láthatóvá tesz egy részletezési oldalt, adjon hozzá egy gombot, amellyel a felhasználók törölhetik a korábban beállított részletezési szűrőket. Rendeljen hozzá egy [könyvjelzőt](../desktop-bookmarks.md) a gombhoz. A könyvjelzőt úgy kell konfigurálni, hogy eltávolítsa az összes szűrőt.
-- **Vissza gomb:** Részletezési szűrő hozzáadásakor a rendszer automatikusan felvesz egy vissza [gombot](../desktop-buttons.md). Jó ötlet, ha ezt megtartja. Így a jelentés felhasználói egyszerűen visszatérhetnek a forrásoldalhoz.
+- **Oldal láthatósága:** Fontolja meg a részletezési oldalak elrejtését. Ha úgy dönt, hogy láthatóvá tesz egy részletezési oldalt, adjon hozzá egy gombot, amellyel a felhasználók törölhetik a korábban beállított részletezési szűrőket. Rendeljen hozzá egy [könyvjelzőt](../create-reports/desktop-bookmarks.md) a gombhoz. A könyvjelzőt úgy kell konfigurálni, hogy eltávolítsa az összes szűrőt.
+- **Vissza gomb:** Részletezési szűrő hozzáadásakor a rendszer automatikusan felvesz egy vissza [gombot](../create-reports/desktop-buttons.md). Jó ötlet, ha ezt megtartja. Így a jelentés felhasználói egyszerűen visszatérhetnek a forrásoldalhoz.
 - **Felderítés:** Segítheti a részletezési oldal megtalálását, ha megadja a vizuális fejléc ikonjának szövegét, vagy utasításokat ad hozzá a szövegmezőhöz. Átfedést is tervezhet, amint az [ebben a blogbejegyzésben](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/) szerepel.
 
 > [!TIP]
@@ -69,6 +69,6 @@ A jelentés tervezésének idején a következő eljárásokat ajánljuk:
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Részletezés használata a Power BI Desktopban](../desktop-drillthrough.md)
+- [Részletezés használata a Power BI Desktopban](../create-reports/desktop-drillthrough.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)
