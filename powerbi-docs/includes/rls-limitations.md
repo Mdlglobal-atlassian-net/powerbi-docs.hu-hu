@@ -4,12 +4,12 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: b67025de5e2a70876a31fd42e22c9572403288fa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 912b0213c328c623e7881f7f30fe7d67f6d889b3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77464405"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274637"
 ---
 ## <a name="limitations"></a>Korlátozások
 
@@ -17,7 +17,7 @@ Itt találhatók a sorszintű biztonság felhőmodellekben érvényes aktuális 
 
 * Ha korábban szerepköröket és szabályokat adott meg a Power BI szolgáltatásban, újból létre kell hoznia őket a Power BI Desktopban.
 
-* Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyeznie az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. [További tudnivalók](../desktop-import-excel-workbooks.md).
+* Csak a Power BI Desktoppal létrehozott adathalmazokon határozhat meg RLS-t. Ha az Excellel létrehozott adatkészletekhez szeretné engedélyeznie az RLS-t, először Power BI Desktop- (PBIX-) fájlokká kell konvertálnia a fájlokat. [További tudnivalók](../connect-data/desktop-import-excel-workbooks.md).
 
 * Csak az importálási és a DirectQuery-kapcsolatok támogatottak. Az Analysis Services élő kapcsolatait a helyszíni modellen lehet kezelni.
 
@@ -32,3 +32,4 @@ Az egyik ismert hiba, hogy hibaüzenet jelenik meg, amikor korábban már közz�
 1. Anna hibaüzenetet kap.
 
 **Áthidaló megoldás:** Tegye közzé újra a Power BI Desktop-fájlt a Power BI szolgáltatásból a probléma megoldásáig. Ehhez válassza az **Adatok lekérése** > **Fájlok** lehetőséget.
+

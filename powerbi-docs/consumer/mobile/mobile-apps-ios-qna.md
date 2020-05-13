@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 78bfc17e81a3de3ce9f6f32c694de902ae0a1ef9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 015c227fd600827e306c8b31b68992e33e6a3206
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114833"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276191"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A virtuális elemző iOS-alkalmazásokban – Power BI
 
@@ -102,7 +102,7 @@ Az eredmények, melyeket ügyfelei a Q&A virtuális elemző adott adatkészlet k
 * Tekintse át a [Power BI Q&A-ben feltehető kérdésekkel kapcsolatos tippeket](../end-user-q-and-a-tips.md) vagy kövesse iOS-es mobilalkalmazása Q&A virtuális elemzőjét.
 
 ### <a name="how-to-enhance-the-dataset"></a>Adatkészlet továbbfejlesztése
-* A Power BI Desktop alkalmazásban vagy a Power BI szolgáltatásban használt adatkészleteket az [adatok Q&A-hoz és Q&A virtuális elemzőhöz jól használhatóvá tételét](../../service-prepare-data-for-q-and-a.md) bemutató cikkben leírtakat követve fejlesztheti tovább.
+* A Power BI Desktop alkalmazásban vagy a Power BI szolgáltatásban használt adatkészleteket az [adatok Q&A-hoz és Q&A virtuális elemzőhöz jól használhatóvá tételét](../../create-reports/service-prepare-data-for-q-and-a.md) bemutató cikkben leírtakat követve fejlesztheti tovább.
 
 ## <a name="next-steps"></a>Következő lépések
 * [Q&A a Power BI szolgáltatásban](../end-user-q-and-a.md)

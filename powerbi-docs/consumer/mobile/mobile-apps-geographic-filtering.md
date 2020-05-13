@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ee8887752f6a5161e0046e4aac1711f2ce64922
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435329"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276214"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Jelentések szűrése földrajzi hely alapján a Power BI mobilalkalmazásokban
 Hatóköre:
@@ -39,17 +39,16 @@ A mobileszközön megjelenített Power BI-jelentés jobb felső sarkában látha
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Miért nem láthatók a helyek címkéi a jelentésben?
 Ahhoz, hogy a helyek címkéi megjelenjenek, mindhárom alábbi feltételnek teljesülnie kell. 
 
-* A jelentést a Power BI Desktop alkalmazásban létrehozó személynek legalább egy oszlop esetében [kategorizált földrajzi adatokat](../../desktop-mobile-geofiltering.md) (például Város, Állam vagy Ország/Régió) kellett megadnia.
+* A jelentést a Power BI Desktop alkalmazásban létrehozó személynek legalább egy oszlop esetében [kategorizált földrajzi adatokat](../../transform-model/desktop-mobile-geofiltering.md) (például Város, Állam vagy Ország/Régió) kellett megadnia.
 * Olyan helyen tartózkodik, amelyik rendelkezik adattal a kérdéses oszlopban.
 * A következő mobileszközök valamelyikét használja:
   * iOS (iPad, iPhone vagy iPod).
   * Android (telefon, táblagép).
   * Windows 10 rendszerű telefon (az egyéb Windows 10 rendszerű eszközök, például számítógépek és táblagépek nem támogatják a földrajzi szűrést).
 
-A Power BI Desktop [földrajzi szűrésének beállításáról itt](../../desktop-mobile-geofiltering.md) olvashat további információkat.
+A Power BI Desktop [földrajzi szűrésének beállításáról itt](../../transform-model/desktop-mobile-geofiltering.md) olvashat további információkat.
 
 ### <a name="next-steps"></a>További lépések
 * [Power BI-információk elérése a való világból](mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
-* [Adatok kategorizálása a Power BI Desktopban](../../desktop-data-categorization.md) 
+* [Adatok kategorizálása a Power BI Desktopban](../../transform-model/desktop-data-categorization.md) 
 * Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
-

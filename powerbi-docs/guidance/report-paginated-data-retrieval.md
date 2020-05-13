@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 067171f7ec74beccdb5a312c1cac5bbc6c87541f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 511dc42a3090f838654cda84f596d34f02bb3439
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377650"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275087"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Adatlekérési útmutató lapszámozott jelentésekhez
 
@@ -101,14 +101,14 @@ Azt javasoljuk, alkalmazzon _adatkészlet-paraméterezést_ olyan esetekben, ami
 
 ## <a name="non-native-data-sources"></a>Nem natív adatforrások
 
-Ha olyan adatforrásokon alapuló lapszámozott jelentéseket kell létrehoznia, amelyeket [nem támogatnak natív módon a lapszámozott jelentések](../paginated-reports/paginated-reports-data-sources.md), először kifejleszthet egy Power BI Desktop-adatmodellt. Így több mint 100 [Power BI-adatforráshoz csatlakozhat](../power-bi-data-sources.md). Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
+Ha olyan adatforrásokon alapuló lapszámozott jelentéseket kell létrehoznia, amelyeket [nem támogatnak natív módon a lapszámozott jelentések](../paginated-reports/paginated-reports-data-sources.md), először kifejleszthet egy Power BI Desktop-adatmodellt. Így több mint 100 [Power BI-adatforráshoz csatlakozhat](../connect-data/power-bi-data-sources.md). Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
 
 ## <a name="data-integration"></a>Adatintegráció
 
 Ha több adatforrásból kell adatokat egyesítenie, erre két módja van:
 
 - **Jelentés adatkészleteinek egyesítése**: Ha az adatforrásokat [natív módon támogatják a lapszámozott jelentések](../paginated-reports/paginated-reports-data-sources.md), célszerű lehet olyan számított mezőket létrehozni, amelyek a [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) vagy a [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) jelentéskészítő-függvényeket használják.
-- **Power BI Desktop-modell fejlesztése**: Ennél azonban hatékonyabb lehet, ha egy adatmodellt fejleszt a Power BI Desktopban. A Power Queryvel egyesítheti a lekérdezéseket bármilyen [támogatott adatforrás](../power-bi-data-sources.md) alapján. Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
+- **Power BI Desktop-modell fejlesztése**: Ennél azonban hatékonyabb lehet, ha egy adatmodellt fejleszt a Power BI Desktopban. A Power Queryvel egyesítheti a lekérdezéseket bármilyen [támogatott adatforrás](../connect-data/power-bi-data-sources.md) alapján. Miután közzétette a Power BI szolgáltatásban, olyan lapszámozott jelentést fejleszthet, amely a Power BI-adatkészlethez csatlakozik.
 
 ## <a name="sql-server-complex-data-types"></a>Az SQL Server összetett adattípusai
 

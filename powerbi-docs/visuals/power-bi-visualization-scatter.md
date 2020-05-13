@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33c07df0cd8c0e00489f344e721164ed9252fcaf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866909"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276835"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
 
@@ -177,13 +177,13 @@ Vagy ha nem szerepel ilyen az adatokban, hozzon létre egy mezőt, amely pontonk
 
 ![Pontdiagram a Részletek területhez adott TempTime értékkel.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-Új mező létrehozásához [a Power BI Desktop Lekérdezésszerkesztőjével adjon hozzá egy indexoszlopot](../desktop-add-custom-column.md) az adatkészlethez. Ez után adja hozzá ezt az oszlopot a vizualizáció **Részletek** területéhez.
+Új mező létrehozásához [a Power BI Desktop Lekérdezésszerkesztőjével adjon hozzá egy indexoszlopot](../create-reports/desktop-add-custom-column.md) az adatkészlethez. Ez után adja hozzá ezt az oszlopot a vizualizáció **Részletek** területéhez.
 
 ## <a name="next-steps"></a>Következő lépések
 
 Az alábbi cikkeket is érdekesnek találhatja:
 
-* [Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban](desktop-high-density-scatter-charts.md)
+* [Nagy sűrűségű mintavételezés a Power BI-pontdiagramokban](../create-reports/desktop-high-density-scatter-charts.md)
 * [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Tippek az adatábrázolások Power BI-jelentésekben történő rendezéséhez és terjesztéséhez](../guidance/report-tips-sort-distribute-data-plots.md)
 

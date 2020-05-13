@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377190"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279434"
 ---
 # <a name="visual-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 
@@ -152,7 +152,7 @@ A jelentéstervezők létrehozhatnak egy Power App-alkalmazást, amelyet beágya
 ![Q&A-vizualizációk](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->Az [irányítópultok Q&A-felületéhez](../power-bi-tutorial-q-and-a.md) hasonlóan a Q&A-vizualizációk lehetővé teszik, hogy természetes nyelven tegyen fel kérdéseket az adataival kapcsolatban. 
+>Az [irányítópultok Q&A-felületéhez](../create-reports/power-bi-tutorial-q-and-a.md) hasonlóan a Q&A-vizualizációk lehetővé teszik, hogy természetes nyelven tegyen fel kérdéseket az adataival kapcsolatban. 
 
 További információért lásd: [Q&A-vizualizációk a Power BI-ban](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -248,3 +248,4 @@ Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, meg
 ## <a name="next-steps"></a>Következő lépések
 [Interakció vizualizációkkal jelentésekben, irányítópultokon és alkalmazásokban](end-user-visualizations.md)    
 [A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

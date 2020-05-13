@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 8610f5c0efbc3da394e4de7c263a88aad813eae2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 14e3b0f2956252e0b09abcf314d6e14b9a9709ad
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066032"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83129484"
 ---
 # <a name="using-the-power-bi-service-as-a-consumer"></a>A Power BI szolgáltatás használata *fogyasztóként*
 
@@ -47,7 +47,7 @@ A Premium lehetővé teszi, hogy a Pro-felhasználók széles körben megoszthas
 
 Ezeken a munkaterületeken a tervezők olyan szerepköröket osztanak ki, például **Megtekintő**, **Közreműködő**, **Tag** vagy **Rendszergazda**, amely meghatározza, hogy a munkatársak milyen mértékben kezelhetik a tartalmat. További információt a [munkaterület engedélyei és szerepkörei](end-user-workspaces.md) című cikkben talál. 
 
-A prémium szintű kapacitásról a [Mi az a Microsoft Power BI Premium?](../service-premium-what-is.md) című témakörben talál további információt.
+A prémium szintű kapacitásról a [Mi az a Microsoft Power BI Premium?](../admin/service-premium-what-is.md) című témakörben talál további információt.
 
 
 ## <a name="find-out-which-licenses-you-have"></a>Az Ön tulajdonában lévő licenc azonosítása

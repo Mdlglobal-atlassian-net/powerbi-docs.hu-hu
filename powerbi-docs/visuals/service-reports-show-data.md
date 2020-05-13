@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b2c587be792e0ad6318dd066cb239949b30cc9e5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758623"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276559"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Vizualizáció alapjául szolgáló adatok megjelenítése
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Adatok megjelenítése
 A Power BI-vizualizációk az adatkészletekből származó adatokból jönnek létre. Ha látni szeretné a háttérfolyamatokat, a Power BI-jal *megjelenítheti* a vizualizáció létrehozásához használt adatokat. Amikor az **Adatok megjelenítése** elemet választja, a Power BI megjeleníti a vizualizáció alatt (vagy mellett) lévő adatokat.
@@ -24,7 +26,7 @@ A Power BI-vizualizációk az adatkészletekből származó adatokból jönnek l
 A vizualizáció létrehozásához használt adatokat exportálhatja is .xlsx vagy .csv fájlként, és megtekintheti azokat az Excelben. További információt az [Adatok exportálása Power BI-vizualizációkból](power-bi-visualization-export-data.md) című szakaszban talál.
 
 > [!NOTE]
-> Az *Adatok megjelenítése* és az *Adatok exportálása* a Power BI szolgáltatásban és a Power BI Desktopban is elérhető. A Power BI Desktop azonban egy további részletességi szintet nyújt; a [*Rekordok megjelenítése* megjeleníti az adatkészletből származó tényleges sorokat](../desktop-see-data-see-records.md).
+> Az *Adatok megjelenítése* és az *Adatok exportálása* a Power BI szolgáltatásban és a Power BI Desktopban is elérhető. A Power BI Desktop azonban egy további részletességi szintet nyújt; a [*Rekordok megjelenítése* megjeleníti az adatkészletből származó tényleges sorokat](../create-reports/desktop-see-data-see-records.md).
 > 
 > 
 
@@ -75,4 +77,5 @@ A vizualizációk egy-egy adatrekordja is a középpontba állítható, és rés
 [Adatok exportálása Power BI-vizualizációkból](power-bi-visualization-export-data.md)    
 
 Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
 

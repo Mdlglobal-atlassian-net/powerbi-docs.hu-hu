@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dfe5e6350d0209f836900a921aadc5347b181766
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802049"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276168"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Vonalkód beolvasása saját eszközzel a Power BI mobilalkalmazásból
 Beolvashatja a való világbeli vonalkódokat, hogy közvetlenül a szűrt BI-adatokhoz jusson a Power BI mobilalkalmazásban.
@@ -25,7 +25,7 @@ A következőkre vonatkozik:
 |:--- |:--- |:--- |:--- |
 |iPhone-ok |iPadek |Android rendszerű telefonok |Android rendszerű táblagépek |
 
-Tegyük fel, hogy az egyik munkatársa [megcímkézett egy vonalkódmezőt egy jelentésben a Power BI Desktopban](../../desktop-mobile-barcodes.md), majd megosztotta ezt a jelentést Önnel. 
+Tegyük fel, hogy az egyik munkatársa [megcímkézett egy vonalkódmezőt egy jelentésben a Power BI Desktopban](../../transform-model/desktop-mobile-barcodes.md), majd megosztotta ezt a jelentést Önnel. 
 
 ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
@@ -64,13 +64,12 @@ A beolvasott vonalkódérték megtalálható a modellben, de a jelentés vizuali
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>„Úgy tűnik, hogy nem rendelkezik olyan jelentéssel, amelyet vonalkódok alapján lehetne szűrni.”
 Ez azt jelenti, hogy nincs egyetlen jelentés sem, amelyben engedélyezett lenne a vonalkódok használata. A vonalkódolvasó csak azokat a jelentéseket tudja szűrni, amelyekben van **Barcode** (Vonalkód) megjelölésű oszlop.  
 
-Győződjön meg róla, hogy Ön vagy a jelentés tulajdonosa **Barcode** (Vonalkód) címkével látott el egy oszlopot a Power BI Desktopban. További tudnivalók a [vonalkódmezők Power BI Desktopban való címkézéséről](../../desktop-mobile-barcodes.md)
+Győződjön meg róla, hogy Ön vagy a jelentés tulajdonosa **Barcode** (Vonalkód) címkével látott el egy oszlopot a Power BI Desktopban. További tudnivalók a [vonalkódmezők Power BI Desktopban való címkézéséről](../../transform-model/desktop-mobile-barcodes.md)
 
 ### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>„A jelentés szűrése nem sikerült – Úgy tűnik, ez a vonalkód nem szerepel a jelentés adatai között.”
 A jelentés, amelynek a szűrését választotta olyan adatmodellen alapul, amely ezt a vonalkódértéket nem tartalmazza. A „mineral water” (ásványvíz) termék például nem szerepel a jelentésben. Beolvashat egy másik terméket, választhat másik jelentést (ha több jelentés is rendelkezésre áll), vagy megtekintheti a jelentést szűrés nélkül. 
 
 ## <a name="next-steps"></a>Következő lépések
-* [Vonalkódmező címkézése a Power BI Desktopban](../../desktop-mobile-barcodes.md)
+* [Vonalkódmező címkézése a Power BI Desktopban](../../transform-model/desktop-mobile-barcodes.md)
 * [A Power BI-irányítópultok csempéi](../end-user-tiles.md)
 * [A Power BI-irányítópultok](../end-user-dashboards.md)
-

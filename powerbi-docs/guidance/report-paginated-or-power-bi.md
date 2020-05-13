@@ -8,19 +8,19 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f1608fd2511e38758b5bf05041d625cf524fff34
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920741"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83127813"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Többoldalas jelentések használata a Power BI-ban
 
 Ez a cikk a Power BI-hoz jelentéseket tervező jelentéskészítőknek szól. Javaslatokat kínál annak eldöntéséhez, hogy mikor érdemes [többoldalas Power BI-jelentést](../paginated-reports/paginated-reports-report-builder-power-bi.md) készíteni.
 
 > [!NOTE]
-> A többoldalas Power BI-jelentések közzétételéhez Power BI Premium-előfizetés szükséges. A jelentések csak akkor lesznek renderelve, ha olyan dedikált kapacitásban lévő munkaterületen vannak, amelyen [engedélyezve van a Többoldalas jelentések számítási feladat](../service-admin-premium-workloads.md#paginated-reports).
+> A többoldalas Power BI-jelentések közzétételéhez Power BI Premium-előfizetés szükséges. A jelentések csak akkor lesznek renderelve, ha olyan dedikált kapacitásban lévő munkaterületen vannak, amelyen [engedélyezve van a Többoldalas jelentések számítási feladat](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 A Power BI többoldalas jelentései általában **nyomtatáshoz** vagy **PDF-létrehozáshoz** vannak optimalizálva. Lehetőséget biztosítanak aprólékosan formázott, gondosan kivitelezett elrendezések kialakítására is. A többoldalas jelentések ezáltal ideálisak az olyan üzemeltetési jelentésekhez, mint az értékesítési számlák.
 
@@ -36,7 +36,7 @@ A többoldalas Power BI-jelentések használatát a következő helyzetekben ér
 
 Ha már rendelkezik az SQL Server Reporting Services (SSRS) [Report Definition Language (RDL)](/sql/reporting-services/reports/report-definition-language-ssrs) nyelvű jelentéseivel, újra elkészítheti azokat [Power BI-jelentésekként](../consumer/end-user-reports.md), vagy többoldalas jelentésekként migrálhatja őket a Power BI-ba. További információ: [SQL Server Reporting Services-jelentések migrálása a Power BI-ba](migrate-ssrs-reports-to-power-bi.md).
 
-Az egy Power BI-munkaterületen történt közzététel után a többoldalas jelentések is rendelkezésre állnak a Power BI-jelentések mellett. Ez után egyszerűen terjeszthetők [Power BI-alkalmazások](../service-create-distribute-apps.md) segítségével.
+Az egy Power BI-munkaterületen történt közzététel után a többoldalas jelentések is rendelkezésre állnak a Power BI-jelentések mellett. Ez után egyszerűen terjeszthetők [Power BI-alkalmazások](../collaborate-share/service-create-distribute-apps.md) segítségével.
 
 Az SSRS-jelentések migrálása helyett érdemesebb lehet azokat újra elkészíteni. Ez különösen azokra a jelentésekre igaz, amelyeket elemzési felületre szánnak. Ilyen esetekben valószínűleg a Power BI-jelentések biztosítanak jobb felhasználó felületet.
 

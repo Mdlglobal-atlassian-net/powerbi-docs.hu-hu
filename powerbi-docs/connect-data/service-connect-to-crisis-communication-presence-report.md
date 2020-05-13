@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f637bb10ed7ec27dcb3da07fc04cae39328ffebe
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fef6bc5c396ccaf89ff4cd0e5a449cb9d01ce75b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752257"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275501"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Csatlakozás a válsághelyzettel kapcsolatos kommunikációról szóló jelentéshez
 
@@ -89,20 +89,20 @@ A Kríziskommunikáció-minta telepítésekor figyelje a [SharePoint-lista „CI
 
 ## <a name="schedule-report-refresh"></a>Jelentés frissítésének ütemezése
 
-Miután lezajlott az adatfrissítés, [állítson be frissítési ütemezést](../refresh-scheduled-refresh.md) a jelentés adatainak naprakészen tartásához.
+Miután lezajlott az adatfrissítés, [állítson be frissítési ütemezést](../connect-data/refresh-scheduled-refresh.md) a jelentés adatainak naprakészen tartásához.
 
 1. A felül látható fejlécen kattintson a **Power BI** elemre.
 
    ![Power BI-útkövetés](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-powerbi-breadcrumb.png)
 
-1. A bal oldali navigációs panelen, a **Munkaterületek** rész alatt, keresse meg a Kórházi vészhelyzetekre vonatkozó döntési támogatás munkaterületet, és kövesse az [Ütemezett frissítés konfigurálása](../refresh-scheduled-refresh.md) című cikkben ismertetett utasításokat.
+1. A bal oldali navigációs panelen, a **Munkaterületek** rész alatt, keresse meg a Kórházi vészhelyzetekre vonatkozó döntési támogatás munkaterületet, és kövesse az [Ütemezett frissítés konfigurálása](../connect-data/refresh-scheduled-refresh.md) című cikkben ismertetett utasításokat.
 
 ## <a name="customize-and-share"></a>Testreszabás és megosztás
 
-További információkért lásd: [Az alkalmazás testreszabása és megosztása](../service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
+További információkért lásd: [Az alkalmazás testreszabása és megosztása](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
 
 ## <a name="next-steps"></a>Következő lépések
 * [Kríziskommunikáció-mintasablon beállítása és megismerése a Power Apps-ben](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-* [Mik azok a Power BI-sablonalkalmazások?](../service-template-apps-overview.md)
-* [Sablonalkalmazások telepítése és terjesztése a vállalatnál](../service-template-apps-install-distribute.md)
+* [Mik azok a Power BI-sablonalkalmazások?](../connect-data/service-template-apps-overview.md)
+* [Sablonalkalmazások telepítése és terjesztése a vállalatnál](../connect-data/service-template-apps-install-distribute.md)

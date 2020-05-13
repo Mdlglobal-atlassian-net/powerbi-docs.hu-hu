@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751631"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275961"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI-tartalom beágyazása szolgáltatásnév és titkos alkalmazáskód használatával
 
@@ -183,14 +183,14 @@ A tartalom beágyazása után minden készen áll [az éles üzemre való átál
 
 ## <a name="considerations-and-limitations"></a>Megfontolandó szempontok és korlátozások
 
-* A szolgáltatásnév csak az [új munkaterületeken](../../service-create-the-new-workspaces.md) működik.
+* A szolgáltatásnév csak az [új munkaterületeken](../../collaborate-share/service-create-the-new-workspaces.md) működik.
 * A **Saját munkaterület** nem támogatott szolgáltatásnév használatakor.
 * Az éles üzemre való átálláshoz dedikált kapacitás szükséges.
 * A Power BI Portalra szolgáltatásnévvel nem lehet bejelentkezni.
 * A szolgáltatásnév Power BI felügyeleti portáljának fejlesztői beállításaiban történő engedélyezéséhez rendszergazdai jogosultságok szükségesek a Power BI-ban.
 * Szolgáltatásnév használatával nem telepíthet vagy kezelhet helyszíni adatátjárót.
 * A [Beágyazás a vállalat számra](embed-sample-for-your-organization.md) beállítású alkalmazások nem használhatnak szolgáltatásnevet.
-* Az [adatfolyamok](../../service-dataflows-overview.md) kezelése nem támogatott.
+* Az [adatfolyamok](../../transform-model/service-dataflows-overview.md) kezelése nem támogatott.
 * A szolgáltatásnév jelenleg nem támogat rendszergazdai API-kat.
 * Ha egyszerű szolgáltatást használ [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-adatforrással, akkor magának az egyszerű szolgáltatásnak kell az Azure Analysis Services-példányra vonatkozó engedélyekkel rendelkeznie. Erre a célra nem használható az egyszerű szolgáltatást tartalmazó biztonsági csoport.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 19abcd84809f0bf8d3560fd8734d30fcf31b9ecb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550977"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277019"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sorszintű biztonság a Power BI Embeddeddel
 
@@ -21,7 +21,7 @@ A **sorszintű biztonság (RLS)** a felhasználók adatokhoz való hozzáférés
 
 Ha nem Power BI-felhasználóknak végez beágyazást (alkalmazás tulajdonában lévő adatok, ez általában a szoftverszolgáltatóknál fordul elő), akkor ez a cikk Önnek szól. Konfigurálnia kell a beágyazási tokent a felhasználó és a szerepkör figyelembe vételéhez.
 
-Ha Power BI-felhasználóknak végez beágyazást (a felhasználó az adatok tulajdonosa) a cégen belül, az RLS ugyanúgy működik, mintha közvetlenül a Power BI szolgáltatásban lenne. Nem kell semmi mást csinálnia az alkalmazásban. További információkat a [Power BI sorszintű biztonság (RLS) használatával kapcsolatos](../../service-admin-rls.md) részben találhat.
+Ha Power BI-felhasználóknak végez beágyazást (a felhasználó az adatok tulajdonosa) a cégen belül, az RLS ugyanúgy működik, mintha közvetlenül a Power BI szolgáltatásban lenne. Nem kell semmi mást csinálnia az alkalmazásban. További információkat a [Power BI sorszintű biztonság (RLS) használatával kapcsolatos](../../admin/service-admin-rls.md) részben találhat.
 
 ![A sorszintű biztonságban szereplő elemek.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -29,7 +29,7 @@ Az RLS kihasználása érdekében fontos megérteni a három fő alapelvet: a fe
 
 **Felhasználók** – Az összetevőket (irányítópultokat, csempéket, jelentéseket vagy adatkészleteket) megtekintő tényleges végfelhasználók. A Power BI Embedded esetében a felhasználókat beágyazási jogkivonatban lévő felhasználónév tulajdonság azonosítja.
 
-**Szerepkörök** – A felhasználók szerepkörökhöz tartoznak. A szerepkörök szabályok tárolói és olyan nevük lehet, mint *Értékesítési igazgató* vagy *Értékesítési képviselő*. A Power BI Desktopban hozhat létre szerepköröket. További információkat a [sorszintű biztonság (RLS) Power BI Desktoppal való használatával kapcsolatos](../../desktop-rls.md) részben találhat.
+**Szerepkörök** – A felhasználók szerepkörökhöz tartoznak. A szerepkörök szabályok tárolói és olyan nevük lehet, mint *Értékesítési igazgató* vagy *Értékesítési képviselő*. A Power BI Desktopban hozhat létre szerepköröket. További információkat a [sorszintű biztonság (RLS) Power BI Desktoppal való használatával kapcsolatos](../../create-reports/desktop-rls.md) részben találhat.
 
 **Szabályok** – A szerepkörök szabályokkal rendelkeznek, és ezek a szabályok az adatokra alkalmazott tényleges szűrők. A szabályok lehetnek olyan egyszerűek, mint a „Country = USA”, vagy sokkal dinamikusabbak is lehetnek.
 A cikk hátralévő részében egy példa szerepel az RLS elkészítésére és beágyazott alkalmazásban való használatára. A példánk a [Kiskereskedelmi elemzési minta](https://go.microsoft.com/fwlink/?LinkID=780547) PBIX-fájlját használja.
@@ -135,7 +135,7 @@ A felhasználónév tulajdonsághoz megadott hatályos identitásnak Windows-fel
 
 ### <a name="on-premises-data-gateway-configuration"></a>Helyszíni adatátjáró konfigurációja
 
-Az élő Analysis Services-kapcsolatok használatakor [helyszíni adatátjárót](../../service-gateway-onprem.md) kell használni. Az identitást tartalmazó beágyazási token létrehozásakor a fő fióknak az átjáró rendszergazdájaként kell szerepelnie. Ha a fő fiók nincs felsorolva, a sorszintű biztonság nem fog érvényesülni az adatok tulajdonságán. Az átjáró nem rendszergazda felhasználója megadhat szerepköröket, de a saját felhasználónevét kell megadnia a hatályos identitáshoz.
+Az élő Analysis Services-kapcsolatok használatakor [helyszíni adatátjárót](../../connect-data/service-gateway-onprem.md) kell használni. Az identitást tartalmazó beágyazási token létrehozásakor a fő fióknak az átjáró rendszergazdájaként kell szerepelnie. Ha a fő fiók nincs felsorolva, a sorszintű biztonság nem fog érvényesülni az adatok tulajdonságán. Az átjáró nem rendszergazda felhasználója megadhat szerepköröket, de a saját felhasználónevét kell megadnia a hatályos identitáshoz.
 
 ### <a name="use-of-roles"></a>Szerepkörök használata
 
@@ -235,9 +235,9 @@ Az alábbi lépések követésével megkezdheti a CustomData() függvény beáll
 
 Ha a jelentés adainak szűrése mellett dönt, használhat **sorszintű biztonságot (RLS)** vagy **JavaScript-szűrőket**.
 
-A [sorszintű biztonság](../../service-admin-rls.md) olyan szolgáltatás, amely az adatmodell szintjén szűri az adatokat. A háttéralkalmazás adatforrása szabályozza az RLS-beállításait. Az adatmodell alapján a beágyazási tokengenerálás állítja be a felhasználónevet és a szerepköröket a munkamenethez. Nem lehet felülírni, eltávolítani vagy vezérelni az ügyféloldali kóddal, és ezért számít biztonságosnak. Az adatok biztonságos szűréséhez az RLS-t ajánljuk. Az adatokat az RLS-sel az alábbi lehetőségek egyikének használatával szűrheti.
+A [sorszintű biztonság](../../admin/service-admin-rls.md) olyan szolgáltatás, amely az adatmodell szintjén szűri az adatokat. A háttéralkalmazás adatforrása szabályozza az RLS-beállításait. Az adatmodell alapján a beágyazási tokengenerálás állítja be a felhasználónevet és a szerepköröket a munkamenethez. Nem lehet felülírni, eltávolítani vagy vezérelni az ügyféloldali kóddal, és ezért számít biztonságosnak. Az adatok biztonságos szűréséhez az RLS-t ajánljuk. Az adatokat az RLS-sel az alábbi lehetőségek egyikének használatával szűrheti.
 
-* [Szerepkörök konfigurálása Power BI-jelentésekben](../../desktop-rls.md).
+* [Szerepkörök konfigurálása Power BI-jelentésekben](../../create-reports/desktop-rls.md).
 * Szerepkörök konfigurálása az adatforrás szintjén (csak Analysis Services élő kapcsolat esetén).
 * Programozott módon egy [beágyazási tokennel](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) az `EffectiveIdentity` használatával. Beágyazási token használatakor a tényleges szűrő áthalad a beágyazási tokenen az adott munkamenetnél.
 

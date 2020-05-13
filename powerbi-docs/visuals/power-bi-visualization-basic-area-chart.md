@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18d16440e8894e69101357af700c9b295eaa30c6
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866963"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277157"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Alapszintű területdiagram létrehozása és használata
 
@@ -68,7 +68,7 @@ Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://downl
    d.  A diagram havi bontásban való megjelenítéséhez kattintson a három pontra (...) a vizualizáció jobb felső sarkában, és válassza a **Rendezés hónapok szerint** lehetőséget. Ha módosítani szeretné a rendezési elvet, kattintson ismét a három pontra, majd válassza a **Növekvő sorrend** vagy a **Csökkenő sorrend** lehetőséget.
 
 ## <a name="highlighting-and-cross-filtering"></a>Kiemelés és keresztszűrés
-További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../power-bi-report-add-filter.md).
+További információ a Szűrök ablaktábla használatáról: [Szűrők hozzáadása jelentésekhez](../create-reports/power-bi-report-add-filter.md).
 
 A diagram egy meghatározott területét a terület felső szegélyének kiválasztásával jelölheti ki.  Más típusú vizualizációktól eltérően az alapszintű területdiagram kiválasztásakor nem történik keresztszűrés ugyanannak a jelentésoldalnak a többi vizualizációjával (ha vannak ilyenek). A területdiagramokat magukat azonban a jelentésoldalon lévő többi vizualizáció képes keresztszűrni. 
 
@@ -78,7 +78,7 @@ A diagram egy meghatározott területét a terület felső szegélyének kivála
 
     ![Példák szűrőkre](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-További információt a [Vizualizációk interakciói a jelentésekben](../service-reports-visual-interactions.md) című témakörben talál
+További információt a [Vizualizációk interakciói a jelentésekben](../create-reports/service-reports-visual-interactions.md) című témakörben talál
 
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás   
@@ -87,4 +87,6 @@ További információt a [Vizualizációk interakciói a jelentésekben](../serv
 
 ## <a name="next-step"></a>Következő lépés
 [Power BI-jelentések](power-bi-visualization-card.md)  
+
+
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79494952"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276007"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Több-bérlős konfiguráció kezelése Power BI Embedded-analitikával
 
@@ -40,7 +40,7 @@ Ez a cikk ismerteti és többféle kiértékelési szempont alapján elemzi a k�
 
 **Power BI-bérlő** – Egyetlen AAD-bérlőhöz társított Power BI-erőforrások halmaza.
 
-**[Power BI-munkaterület](../../service-create-workspaces.md)** – Tároló Power BI-beli tartalomhoz.
+**[Power BI-munkaterület](../../collaborate-share/service-create-workspaces.md)** – Tároló Power BI-beli tartalomhoz.
 
 **Power BI-összetevők** – A Power BI-munkaterületeken több Power BI-összetevő, például irányítópult, jelentés, adathalmaz és adatfolyam is lehet.
 
@@ -52,11 +52,11 @@ Ez a cikk ismerteti és többféle kiértékelési szempont alapján elemzi a k�
 
 **AAD-alkalmazás felhasználó (szolgáltatásnév)** – Az SaaS-alkalmazást a Power BI-ban képviselő identitás, amelyet az SaaS-alkalmazás a Power BI API-k hívása során használ. AAD-webalkalmazásnak kell lennie. Helyettesítheti a *fő* felhasználót a Power BI-jal való hitelesítésnél.
 
-**Kapacitás** – A Power BI szolgáltatás futtatásához dedikált erőforrások halmaza. A [Power BI Premium-kapacitások](../../service-premium-what-is.md) a Power BI-t belsőleg használó nagyvállalatoknak, a [Power BI Embedded-kapacitások](azure-pbie-create-capacity.md) pedig SaaS-alkalmazásokat külső felek számára készítő alkalmazásfejlesztőknek ajánlottak.
+**Kapacitás** – A Power BI szolgáltatás futtatásához dedikált erőforrások halmaza. A [Power BI Premium-kapacitások](../../admin/service-premium-what-is.md) a Power BI-t belsőleg használó nagyvállalatoknak, a [Power BI Embedded-kapacitások](azure-pbie-create-capacity.md) pedig SaaS-alkalmazásokat külső felek számára készítő alkalmazásfejlesztőknek ajánlottak.
 
-**[Power BI Pro-licenc](../../service-admin-purchasing-power-bi-pro.md)** – Felhasználói szintű licenc, amely jogot biztosít tartalom munkaterületeken való közzétételére, prémium szintű kapacitás nélküli alkalmazások felhasználására, irányítópultok megosztására, valamint irányítópultokra és jelentésekre való feliratkozásra.
+**[Power BI Pro-licenc](../../admin/service-admin-purchasing-power-bi-pro.md)** – Felhasználói szintű licenc, amely jogot biztosít tartalom munkaterületeken való közzétételére, prémium szintű kapacitás nélküli alkalmazások felhasználására, irányítópultok megosztására, valamint irányítópultokra és jelentésekre való feliratkozásra.
 
-**[Adatkapcsolati módok](../../desktop-directquery-about.md)** – Csatlakozás Power BI-beli adatforrásokhoz, amely többféle módon valósítható meg:
+**[Adatkapcsolati módok](../../connect-data/desktop-directquery-about.md)** – Csatlakozás Power BI-beli adatforrásokhoz, amely többféle módon valósítható meg:
 
    * Importálás – az adatok elérésének leggyakoribb módja.
    * DirectQuery – csatlakozás közvetlenül az adatokhoz azok forrás-adattárában.
@@ -104,9 +104,9 @@ A Power BI Embedded támogatja a több földrajzi helyen történő üzembe hely
 
 ### <a name="cost"></a>Cost
 
-A [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden [fő](../../service-admin-licensing-organization.md) felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, *Power BI Pro-licenccel* kell rendelkeznie.
+A [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) erőforrás-alapú vásárlási modelje a **Power BI Premiuméhoz** hasonló. Egy vagy több, rögzített számítási teljesítménnyel és memóriával rendelkező kapacitás vásárolható meg. A **Power BI Embeddeddel** végzett munka során ez a kapacitás a költség fő tétele. A kapacitást használó felhasználók száma nincs korlátozva. Az egyetlen korlát a kapacitás teljesítménye. Minden [fő](../../admin/service-admin-licensing-organization.md) felhasználónak vagy olyan megadott felhasználónak, akinek el kell érnie a Power BI portált, *Power BI Pro-licenccel* kell rendelkeznie.
 
-A kapacitás várható terhelését ajánlott élő környezet és használat szimulálásával, és a kapacitáson futtatott terheléstesztekkel tesztelni és mérni. A terhelés és a teljesítmény az Azure-kapacitás vagy a [prémium szintű kapacitás metrika-alkalmazásában](../../service-admin-premium-monitor-capacity.md) elérhető különböző metrikákkal mérhető.
+A kapacitás várható terhelését ajánlott élő környezet és használat szimulálásával, és a kapacitáson futtatott terheléstesztekkel tesztelni és mérni. A terhelés és a teljesítmény az Azure-kapacitás vagy a [prémium szintű kapacitás metrika-alkalmazásában](../../admin/service-admin-premium-monitor-capacity.md) elérhető különböző metrikákkal mérhető.
 
 ### <a name="content-customization-and-authoring"></a>Tartalom testreszabása és szerzői műveletek
 
@@ -131,7 +131,7 @@ A bérlők adatainak felügyeletére két fő módszer használatos.
 
 Ha az SaaS-alkalmazás tárolója bérlőnként külön adatbázist tart fenn, akkor magától értetődő választás a Power BI-ban egybérlős adathalmazokat használni, ahol az egyes adathalmazok kapcsolati sztringje mutat a megfelelő adatbázisra.
 
-Amennyiben az SaaS-alkalmazás tárolója minden bérlőhöz egy több-bérlős adatbázist használ, akkor a bérlők könnyen elkülöníthetők munkaterületek szerint. A Power BI-adathalmaz adatbázis-kapcsolata paraméteres adatbázis-lekérdezéssel konfigurálható, amely csak a megfelelő bérlő adatait adja vissza. A kapcsolati sztring a [Power BI Desktoppal](../../desktop-query-overview.md), vagy az [API-val](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) frissíthető, a lekérdezés [paramétereivel](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
+Amennyiben az SaaS-alkalmazás tárolója minden bérlőhöz egy több-bérlős adatbázist használ, akkor a bérlők könnyen elkülöníthetők munkaterületek szerint. A Power BI-adathalmaz adatbázis-kapcsolata paraméteres adatbázis-lekérdezéssel konfigurálható, amely csak a megfelelő bérlő adatait adja vissza. A kapcsolati sztring a [Power BI Desktoppal](../../transform-model/desktop-query-overview.md), vagy az [API-val](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) frissíthető, a lekérdezés [paramétereivel](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
 
 ### <a name="data-isolation"></a>Adatelkülönítés
 
@@ -193,7 +193,7 @@ Sorszintű biztonságon alapuló elkülönítés esetén az adatelkülönítés 
 
 ### <a name="scalability"></a>Méretezhetőség
 
-Sorszintű biztonságon alapuló elkülönítés használatakor az adatoknak el kell férniük az adathalmaz méretkorlátján belül, amely jelenleg 10 GB. A [növekményes frissítés](../../service-premium-incremental-refresh.md) bevezetésével, és egy Power BI-adathalmazokhoz készülő XMLA-végpont közeljövőbeli megjelenésével várható, hogy az adathalmaz méretkorlátja jelentősen emelkedni fog. Az adatoknak azonban továbbra is el kell férniük a kapacitás memóriájában úgy, hogy elég memória maradjon az adatfrissítések futásához. A nagyméretű üzembe helyezett példányok nagy kapacitást igényelnek, hogy a felhasználók ne tapasztaljanak problémákat a jelenlegi kapacitás korlátait túllépő memóriahasználat miatt. A méretezés kezelésének további módja az [összesítések](../../desktop-aggregations.md) használata, vagy az adatforráshoz való közvetlen csatlakozás DirectQuery vagy élő kapcsolat használatával ahelyett, hogy minden adat a Power BI-kapacitásban van gyorsítótárazva.
+Sorszintű biztonságon alapuló elkülönítés használatakor az adatoknak el kell férniük az adathalmaz méretkorlátján belül, amely jelenleg 10 GB. A [növekményes frissítés](../../admin/service-premium-incremental-refresh.md) bevezetésével, és egy Power BI-adathalmazokhoz készülő XMLA-végpont közeljövőbeli megjelenésével várható, hogy az adathalmaz méretkorlátja jelentősen emelkedni fog. Az adatoknak azonban továbbra is el kell férniük a kapacitás memóriájában úgy, hogy elég memória maradjon az adatfrissítések futásához. A nagyméretű üzembe helyezett példányok nagy kapacitást igényelnek, hogy a felhasználók ne tapasztaljanak problémákat a jelenlegi kapacitás korlátait túllépő memóriahasználat miatt. A méretezés kezelésének további módja az [összesítések](../../transform-model/desktop-aggregations.md) használata, vagy az adatforráshoz való közvetlen csatlakozás DirectQuery vagy élő kapcsolat használatával ahelyett, hogy minden adat a Power BI-kapacitásban van gyorsítótárazva.
 
 ### <a name="automation--operational-complexity"></a>Automatizálás és az üzemeltetés bonyolultsága
 
@@ -244,17 +244,17 @@ A jelentéseket szerkesztő vagy létrehozó végfelhasználók az éles, több-
 
 **Power BI-kapacitásokra vonatkozó szempontok és korlátozások:**
 
-* Minden kapacitás csak az ahhoz lefoglalt memóriát és virtuális magokat használhatja, a [megvásárolt SKU-nak](../../service-premium-what-is.md) megfelelően.
-* Az egyes SKU-khoz javasolt adatbázismérettel kapcsolatban a [prémium szintű nagy adathalmazokról](../../service-premium-what-is.md#large-datasets) szóló cikk nyújt útmutatást.
+* Minden kapacitás csak az ahhoz lefoglalt memóriát és virtuális magokat használhatja, a [megvásárolt SKU-nak](../../admin/service-premium-what-is.md) megfelelően.
+* Az egyes SKU-khoz javasolt adatbázismérettel kapcsolatban a [prémium szintű nagy adathalmazokról](../../admin/service-premium-what-is.md#large-datasets) szóló cikk nyújt útmutatást.
 * Dedikált kapacitásban a maximális adathalmaz-méret 10 GB.
 * *Importálás módú* adathalmaz ütemezett frissítéseinek számra naponta 48.
 * *Importálás módú* adathalmaz ütemezett frissítéseinek időköze 30 perc.
-* Az egy kapacitásban egyidejűleg futtatható frissítések számáról az [erőforrás-kezelést és optimalizálást](../../service-premium-what-is.md#capacity-nodes) ismertető cikk nyújt tájékoztatást.
+* Az egy kapacitásban egyidejűleg futtatható frissítések számáról az [erőforrás-kezelést és optimalizálást](../../admin/service-premium-what-is.md#capacity-nodes) ismertető cikk nyújt tájékoztatást.
 * Egy kapacitás méretezésének átlagos időtartama 1-2 perc. Ezalatt a kapacitás nem érhető el. A [kimaradás elkerülése](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script) érdekében ajánlott horizontális felméretezést alkalmazni.
 
 ## <a name="next-steps"></a>További lépések
 
 * [Beágyazott analitika a Power BI-jal](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../../service-premium-what-is.md)
+* [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Sorszintű biztonság](embedded-row-level-security.md)

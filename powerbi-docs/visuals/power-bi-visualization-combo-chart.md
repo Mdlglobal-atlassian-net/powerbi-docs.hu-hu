@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c8dcfec103bb53d645cdfd347112d7443506569
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 036343df0a9af678b5a88c261a60ce603483a1cc
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867001"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277180"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Kombinált diagramok létrehozása és használata a Power BI-ban
 
@@ -121,16 +121,19 @@ A januári bruttó nyereség 35% volt, áprilisban egy 45%-os csúcs következet
 
 Ezután az alábbiakat lehet érdemes elvégezni:
 
-* [Kombinált diagram felvétele irányítópult-csempeként](../service-dashboard-tiles.md).
-* [Mentse a jelentést](../service-report-save.md).
+* [Kombinált diagram felvétele irányítópult-csempeként](../create-reports/service-dashboard-tiles.md).
+* [Mentse a jelentést](../create-reports/service-report-save.md).
 * [Jelentés nevének akadálymentesítése a fogyatékkal élők számára](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Keresztkiemelés és keresztszűrés
 
-Egy oszlop vagy egy sor kijelölése egy kombinált diagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción és viszont. Az alapértelmezett viselkedés módosításához használja a [Vizualizációs interakciók](../service-reports-visual-interactions.md) vezérlőt.
+Egy oszlop vagy egy sor kijelölése egy kombinált diagramon keresztkiemelést és keresztszűrést végez a jelentés oldalon lévő többi vizualizáción és viszont. Az alapértelmezett viselkedés módosításához használja a [Vizualizációs interakciók](../create-reports/service-reports-visual-interactions.md) vezérlőt.
 
 ## <a name="next-steps"></a>Következő lépések
 
 [Perecdiagramok a Power BI-ban](power-bi-visualization-doughnut-charts.md)
 
 [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

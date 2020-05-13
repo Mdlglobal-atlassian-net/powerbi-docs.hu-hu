@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 90d5e48ca200a6817338ae6c44595905cc76bfed
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 97e0a4f6e522997e6f132d1c3dbc493188ba66ba
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752671"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275478"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Csatlakozás a COVID-19 USA-beli nyomon követésére szolgáló jelentéshez
 Ez a cikk a COVID-19 nyomon követésére szolgáló jelentés sablonalkalmazásának telepítését és az adatforrásokhoz való csatlakozást ismerteti.
@@ -54,14 +54,14 @@ Miután telepítette a sablonalkalmazást, és csatlakoztatta az adatforrásokat
 
 ## <a name="schedule-report-refresh"></a>Jelentés frissítésének ütemezése
 
-Amikor az adatfrissítés befejeződött, az alkalmazáshoz tartozó munkaterületre kerül. [Állítson be frissítési ütemezést](../refresh-scheduled-refresh.md) a jelentés adatainak naprakészen tartásához.
+Amikor az adatfrissítés befejeződött, az alkalmazáshoz tartozó munkaterületre kerül. [Állítson be frissítési ütemezést](../connect-data/refresh-scheduled-refresh.md) a jelentés adatainak naprakészen tartásához.
 
 ## <a name="customize-and-share"></a>Testreszabás és megosztás
 
-További információkért lásd: [Az alkalmazás testreszabása és megosztása](../service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
+További információkért lásd: [Az alkalmazás testreszabása és megosztása](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Az alkalmazás közzététele és terjesztése előtt mindenképpen tekintse át a [jelentésekre vonatkozó jogi nyilatkozatokat](../create-reports/sample-covid-19-us.md#disclaimers).
 
 ## <a name="next-steps"></a>Következő lépések
 * [COVID-19-nyomonkövetési minta az USA tagállami és helyi szintű közigazgatási szervei részére](../create-reports/sample-covid-19-us.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-* [Mik azok a Power BI-sablonalkalmazások?](../service-template-apps-overview.md)
-* [Sablonalkalmazások telepítése és terjesztése a vállalatnál](../service-template-apps-install-distribute.md)
+* [Mik azok a Power BI-sablonalkalmazások?](../connect-data/service-template-apps-overview.md)
+* [Sablonalkalmazások telepítése és terjesztése a vállalatnál](../connect-data/service-template-apps-install-distribute.md)

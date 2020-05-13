@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c72863407fea0cf550643e5193a8b514b2bb51bd
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82585069"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276329"
 ---
 # <a name="slicers-in-power-bi"></a>Szeletelők a Power BI-ban
 
@@ -24,11 +24,11 @@ Tegyük fel, hogy a jelentést olvasók számára az összesítő értékesíté
 
 ![Szeletelő animációja](media/power-bi-visualization-slicers/slicer2.gif)
 
-Ez a cikk egy egyszerű szeletelő létrehozását és formázását mutatja be lépésenként az ingyenes [Kiskereskedelmi elemzési minta](../sample-retail-analysis.md) használatával. Azt is bemutatja, hogyan szabályozható a szeletelő által befolyásolt vizualizációk köre, és hogyan lehet más oldalakon lévő szeletelőkkel szinkronizálni. A következő cikkek bizonyos szeletelőtípusok elkészítését ismertetik:
+Ez a cikk egy egyszerű szeletelő létrehozását és formázását mutatja be lépésenként az ingyenes [Kiskereskedelmi elemzési minta](../create-reports/sample-retail-analysis.md) használatával. Azt is bemutatja, hogyan szabályozható a szeletelő által befolyásolt vizualizációk köre, és hogyan lehet más oldalakon lévő szeletelőkkel szinkronizálni. A következő cikkek bizonyos szeletelőtípusok elkészítését ismertetik:
 
-- [Numerikustartomány-szeletelők](../desktop-slicer-numeric-range.md).
+- [Numerikustartomány-szeletelők](../create-reports/desktop-slicer-numeric-range.md).
 - [Relatívdátum-szeletelők](desktop-slicer-filter-date-range.md).
-- Rugalmas, [átméretezhető szeletelők](../power-bi-slicer-filter-responsive.md).
+- Rugalmas, [átméretezhető szeletelők](../create-reports/power-bi-slicer-filter-responsive.md).
 - Több mezőt tartalmazó [hierarchia-szeletelők](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md).
 
 ## <a name="when-to-use-a-slicer"></a>Mikor érdemes szeletelőt használni?
@@ -92,7 +92,7 @@ A vizualizációk interakcióival egyes oldalvizualizációkat kivonhat a többi
 
    Így a **Teljes értékesítési szórásnégyzet pénzügyi hónap és körzeti vezető szerint** diagram a szeletelőkben levő nevek és dátumtartományok kiválasztása esetén is változatlan marad.
 
-További információ az interakciók szerkesztéséről: [A vizualizációk interakciójának módosítása a Power BI-jelentésekben](../service-reports-visual-interactions.md).
+További információ az interakciók szerkesztéséről: [A vizualizációk interakciójának módosítása a Power BI-jelentésekben](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Más oldalakon levő szeletelők szinkronizálása és használata
 A Power BI 2018. februári frissítésétől kezdve a szeletelők szinkronizálhatók és egy jelentés bármely – vagy akár az összes – oldalán felhasználhatók. 
@@ -134,7 +134,7 @@ Az aktuális jelentésben a **Körzeti havi értékesítés** oldal egy **Körze
 ## <a name="filtering-slicers"></a>Szeletelők szűrése
 A szeletelőkre alkalmazott vizualizációszintű szűrőkkel rövidebbé teheti a szeletelőben megjelenő értékek listáját. Kiszűrheti például az üres értékeket egy listaszeletelőből, vagy kiszűrhet bizonyos dátumokat egy tartomány-szeletelőből. Ez csupán *a szeletelőben megjelenő értékekre* van hatással, nem pedig *azokra a szűrőkre, amelyeket a szeletelő alkalmaz más vizualizációkon* a kijelöléskor. Tegyük fel például, hogy egy tartomány-szeletelőre alkalmaz szűrőt, hogy az csak bizonyos dátumokat mutasson. A szeletelőben a kijelölés csak ennek a tartománynak az első és az utolsó dátumát mutatja meg, de a többi vizualizációban továbbra is látható a többi dátum. A szeletelőben kiválasztott tartomány módosításakor a többi vizualizáció is frissülni fog. A szeletelő törlésekor ismét megjelenik az összes dátum.
 
-A vizualizációszintű szűrőkről a [Szűrőtípusok](../power-bi-report-filter-types.md) című cikkből tájékozódhat bővebben.
+A vizualizációszintű szűrőkről a [Szűrőtípusok](../create-reports/power-bi-report-filter-types.md) című cikkből tájékozódhat bővebben.
 
 ## <a name="format-slicers"></a>Szeletelők formázása
 A szeletelő típusától függően különböző formázási beállítások érhetők el. A **Vízszintes** tájolás, a **Rugalmas** elrendezés és az **Elem** színezés használatával a szokásos listaelemek helyett gombokat vagy csempéket hozhat létre, és a szeletelő elemeket a különböző képernyőméretekhez és elrendezésekhez igazodóvá teheti.  
@@ -169,7 +169,7 @@ A szeletelő típusától függően különböző formázási beállítások ér
 
     ![Vízszintes beállítások](media/power-bi-visualization-slicers/6-buttons.png)
 
-A vízszintes tájolásokról és a rugalmas elrendezésekről az [Átméretezhető rugalmas szeletelő létrehozása a Power BI-ban](../power-bi-slicer-filter-responsive.md) című cikk tartalmaz bővebb információt.
+A vízszintes tájolásokról és a rugalmas elrendezésekről az [Átméretezhető rugalmas szeletelő létrehozása a Power BI-ban](../create-reports/power-bi-slicer-filter-responsive.md) című cikk tartalmaz bővebb információt.
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Kijelölési vezérlők beállításai (csak lista típusú szeletelők esetén)
 1. A **Kijelölési vezérlők** területen kapcsolja **Be** **„Az összes kijelölése” beállítás megjelenítése** lehetőséget **Az összes kijelölése** elem hozzáadásához a szeletelőhöz. 
@@ -222,4 +222,3 @@ További információért tekintse át a következő cikkeket:
 - [Vizualizációtípusok a Power BI-ban](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Táblák a Power BI-ban](power-bi-visualization-tables.md)
-

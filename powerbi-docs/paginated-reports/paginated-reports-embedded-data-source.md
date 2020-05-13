@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 83fadfe5f690a87563d20b9c6385b9a37193b9c9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b70db42732143d5db938ad793be8aa3997ecdd8c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921769"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276904"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Beágyazott adatforrás létrehozása lapszámozott jelentésekhez a Power BI szolgáltatásban
 
@@ -27,11 +27,11 @@ Ebből a cikkből beágyazott adatforrások lapszámozott jelentésekhez való l
 - Oracle 
 - Teradata 
 
-A következő adatforrások esetében használja az [SQL Server Analysis Services-kapcsolat](../service-premium-connect-tools.md) lehetőséget:
+A következő adatforrások esetében használja az [SQL Server Analysis Services-kapcsolat](../admin/service-premium-connect-tools.md) lehetőséget:
 
 - Power BI Premium-adatkészletek
 
-A lapszámozott jelentések átjárón keresztül kapcsolódnak a [Power BI-átjáróhoz](../service-gateway-onprem.md). Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban.
+A lapszámozott jelentések átjárón keresztül kapcsolódnak a [Power BI-átjáróhoz](../connect-data/service-gateway-onprem.md). Az átjárót azután állíthatja be, hogy a jelentést közzéteszi a Power BI szolgáltatásban.
 
 További információ: [Jelentésadatok a Power BI Jelentéskészítőben](report-builder-data.md).
 
@@ -93,3 +93,4 @@ A Power BI-adatkészletekhez csatlakozó többoldalas jelentések kisebb eltér�
 
 - [Beágyazott adathalmaz létrehozása lapszámozott jelentéshez a Power BI szolgáltatásban](paginated-reports-create-embedded-dataset.md)
 - [Mik a lapszámozott jelentések a Power BI Premiumban?](paginated-reports-report-builder-power-bi.md)
+

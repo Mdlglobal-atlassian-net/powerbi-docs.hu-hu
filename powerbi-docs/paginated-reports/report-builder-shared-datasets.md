@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 717627e171df6a0843453a72b54ec591a7fd5a19
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78923195"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276628"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Többoldalas jelentés létrehozása megosztott Power BI-adathalmaz alapján
 
@@ -20,14 +20,14 @@ Egy Power BI Desktopban létrehozott adathalmazt adatforrásként használhat a 
 
 ![A Power BI Desktop és a Jelentéskészítő többoldalas jelentése](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Az adathalmaznak nem kell Prémium szintű kapacitásban lévő munkaterületen lennie, és Önnek sem kell a munkaterület tagjának lennie. Elég [Összeállítási engedéllyel](../service-datasets-build-permissions.md) rendelkeznie az adathalmazra. Többoldalas jelentése közzétételéhez viszont Power BI Pro-licencre lesz szüksége. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen.
+Az adathalmaznak nem kell Prémium szintű kapacitásban lévő munkaterületen lennie, és Önnek sem kell a munkaterület tagjának lennie. Elég [Összeállítási engedéllyel](../connect-data/service-datasets-build-permissions.md) rendelkeznie az adathalmazra. Többoldalas jelentése közzétételéhez viszont Power BI Pro-licencre lesz szüksége. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen.
 
 ## <a name="what-you-need"></a>Amire szükség lesz
 
 Az alábbi lista felsorolja mindazt, ami megosztott adathalmaz Power BI Jelentéskészítőben való felhasználásához szükséges, és ami nem szükséges.
 
 - Power BI Jelentéskészítő. [Töltse le és telepítse a Power BI Jelentéskészítőt](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](../service-datasets-build-permissions.md).
+- Power BI-adathalmazhoz akkor férhet hozzá, ha rendelkezik az adathalmazra vonatkozó Összeállítási engedéllyel. Tájékozódjon az [Összeállítási engedélyről](../connect-data/service-datasets-build-permissions.md).
 - Többoldalas jelentést Power BI Pro-licenc nélkül is létrehozhat a Jelentéskészítőben. 
 - A többoldalas jelentés közzétételéhez viszont Power BI Pro-licenc szükséges. Ezen kívül legalább Közreműködői szerepkörrel kell rendelkeznie egy Prémium szintű kapacitásbeli munkaterületen. 
 - Választható: Ha követni szeretné a cikk tartalmát, töltse le a [Kiskereskedelmi elemzési minta .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktop-fájlt, nyissa meg a Power BI Desktopban, és vegyen fel egy sok oszlopból álló táblázatot. A **Formátum** panelen kapcsolja ki az **Összegek** beállítást. Ez után tegye közzé egy munkaterületen a Power BI szolgáltatásban.
@@ -74,7 +74,7 @@ A lekérdezés átvételének lépései a következők.
 1. Nyissa meg a Power BI-jelentést (.pbix) a Power BI Desktopban.
 1. Ellenőrizze, hogy a jelentés egyik táblázata a többoldalas jelentésben kívánt összes adatot tartalmazza-e. A táblázatnak eleget kell tennie az alábbi két feltételnek:
     - Csak egyszerű táblázat lehet, mátrix vagy más vizualizáció nem. Ha nem táblázat, konvertálja táblázattá a Teljesítményelemző alábbi lépéseivel, majd konvertálja vissza a kívánt vizualizációvá.
-    - A numerikus mezőkhöz *előre definiált mértékeket* kell használnia. Ezek mellett számológép szimbólum látható. Tájékozódjon a [mértékek létrehozásáról](../desktop-measures.md). 
+    - A numerikus mezőkhöz *előre definiált mértékeket* kell használnia. Ezek mellett számológép szimbólum látható. Tájékozódjon a [mértékek létrehozásáról](../transform-model/desktop-measures.md). 
 
         ![Mérték ikon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 

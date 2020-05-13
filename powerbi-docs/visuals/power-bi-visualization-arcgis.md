@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c296e202dccf814fcb9e1a4c6ee0620185723248
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 34c0287c8a4df296e41826f32de95b0c050c8d08
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865690"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277295"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>ArcGIS-térképek létrehozása a Power BI Desktopban
 
@@ -73,7 +73,7 @@ Ez az oktatóanyag a Power BI Desktopot és a [Kiskereskedelmi elemzési minta .
    
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>ArcGIS Maps for Power BI-térképvizualizáció létrehozása
 
-Figyelje meg, hogyan hoz létre Will néhány vizualizációt, majd az alábbi lépések alapján próbálja ki Ön is a [Kiskereskedelmi elemzési minta .PBIX-fájl](../sample-datasets.md) használatával.
+Figyelje meg, hogyan hoz létre Will néhány vizualizációt, majd az alábbi lépések alapján próbálja ki Ön is a [Kiskereskedelmi elemzési minta .PBIX-fájl](../create-reports/sample-datasets.md) használatával.
     
 
    > [!NOTE]
@@ -368,4 +368,5 @@ Jelenleg nem. [Szavazzon erre az ötletre](https://ideas.powerbi.com/forums/2652
 [Az ArcGIS Maps for Power BI elérhetőségét bejelentő blogbejegyzés](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
 

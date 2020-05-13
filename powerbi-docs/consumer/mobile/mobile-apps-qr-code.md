@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c4d1ce3a4a15c2d79951865e03131e001260e2c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802072"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276076"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI QR-kód beolvasása mobileszközzel
 Hatóköre:
@@ -24,7 +24,7 @@ Hatóköre:
 
 A Power BI-ban lévő QR-kódok a való világból bármit közvetlenül összekapcsolhatnak a kapcsolódó BI-információkkal, és ehhez nincs szükség navigálásra vagy keresésre.
 
-Tegyük fel, hogy egy kollégája [létrehozott egy QR-kódot a Power BI szolgáltatásban](../../service-create-qr-code-for-tile.md) egy jelentéshez vagy egy irányítópult valamely csempéjéhez, majd megosztotta Önnel az irányítópultot vagy a jelentést, a QR-kódot pedig elhelyezte a kívánt helyen, például egy e-mailben vagy valamilyen tárgyon. 
+Tegyük fel, hogy egy kollégája [létrehozott egy QR-kódot a Power BI szolgáltatásban](../../create-reports/service-create-qr-code-for-tile.md) egy jelentéshez vagy egy irányítópult valamely csempéjéhez, majd megosztotta Önnel az irányítópultot vagy a jelentést, a QR-kódot pedig elhelyezte a kívánt helyen, például egy e-mailben vagy valamilyen tárgyon. 
 
 A Power BI alkalmazás beolvasó funkciójával vagy a telefonra telepített bármely egyéb olvasóval beolvashatja a QR-kódot, és ezáltal azonnal, közvetlenül a telefonjáról érheti el a vonatkozó csempét vagy jelentést. 
 
@@ -75,8 +75,7 @@ Ha kollégája nem osztotta meg Önnel az irányítópultot vagy jelentést, kö
 
 ## <a name="next-steps"></a>További lépések
 * [Power BI-információk elérése a való világból](mobile-apps-data-in-real-world-context.md) a mobilalkalmazásokkal
-* [QR-kód létrehozása a Power BI szolgáltatásban lévő csempékhez](../../service-create-qr-code-for-tile.md)
-* [QR-kód létrehozása a Power BI szolgáltatásban lévő jelentésekhez](../../service-create-qr-code-for-report.md)
+* [QR-kód létrehozása a Power BI szolgáltatásban lévő csempékhez](../../create-reports/service-create-qr-code-for-tile.md)
+* [QR-kód létrehozása a Power BI szolgáltatásban lévő jelentésekhez](../../create-reports/service-create-qr-code-for-report.md)
 * [QR-kódot a Power BI vegyes valósághoz alkalmazással is beolvashat](mobile-mixed-reality-app.md)
 * Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
-

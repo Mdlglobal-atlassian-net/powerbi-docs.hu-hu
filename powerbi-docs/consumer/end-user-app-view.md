@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a38b3aa72c37d10ce19344ebe6f3c3f286661d62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120275"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275524"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Alkalmazások telepítése és használata irányítópultokkal és jelentésekkel a Power BI-ban
 
@@ -65,7 +65,7 @@ Alkalmazásokat a Microsoft AppSource-on is találhat, és onnan telepíthet. Cs
 
 ## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Alkalmazás beszerzése a Microsoft AppSource webhelyről 
 
-Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on számos olyan alkalmazást talál, amely alkalmas az üzleti feladatainak elvégzéséhez használt szolgáltatásokhoz.  Ezek között olyan szolgáltatások vannak, mint például a Salesforce, a Microsoft Dynamics, a Google Analytics, a GitHub, a Zendesk, a Marketo és sok más. További információt az [Alkalmazások a Power BI-jal használt szolgáltatásokhoz](../service-connect-to-services.md) című témakörben talál. 
+Ebben a példában egy Microsoft-mintaalkalmazást nyitunk meg. Az AppSource-on számos olyan alkalmazást talál, amely alkalmas az üzleti feladatainak elvégzéséhez használt szolgáltatásokhoz.  Ezek között olyan szolgáltatások vannak, mint például a Salesforce, a Microsoft Dynamics, a Google Analytics, a GitHub, a Zendesk, a Marketo és sok más. További információt az [Alkalmazások a Power BI-jal használt szolgáltatásokhoz](../connect-data/service-connect-to-services.md) című témakörben talál. 
 
 1. A böngészőben nyissa meg a [https://appsource.microsoft.com](https://appsource.microsoft.com) weblapot, majd válassza a **Power BI-alkalmazások** elemet.
 
@@ -142,3 +142,4 @@ Az alkalmazások készítői időnként az alkalmazás újabb verzióit adhatjá
 * [Vissza az alkalmazás áttekintéséhez](end-user-apps.md)
 * [Power BI-jelentés megtekintése](end-user-report-open.md)
 * [A tartalom megosztásának egyéb módjai](end-user-shared-with-me.md)
+
