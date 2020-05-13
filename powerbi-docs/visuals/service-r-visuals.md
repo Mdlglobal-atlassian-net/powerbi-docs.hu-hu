@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eee7b67fcfaed987170baa8cb5a0b3c8cba86350
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: a7de3dfbbd378ea96f56c1d6d37d273434f5c2f9
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866413"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349816"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-vizualizációk létrehozása és használata a Power BI-ban
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-R-vizualizációk jelenleg csak a **Power BI Desktopban** hozhatók létre és tehetők közzé a Power BI szolgáltatásban. R-vizualizációk létrehozásáról a [Power BI-vizualizációk létrehozása az R használatával](../desktop-r-visuals.md) című cikk nyújt további információt.
+R-vizualizációk jelenleg csak a **Power BI Desktopban** hozhatók létre és tehetők közzé a Power BI szolgáltatásban. R-vizualizációk létrehozásáról a [Power BI-vizualizációk létrehozása az R használatával](../create-reports/desktop-r-visuals.md) című cikk nyújt további információt.
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>R-vizualizációk megtekintése a Power BI szolgáltatásban
 A Power BI szolgáltatás támogatja az R-parancsfájlokkal létrehozott vizualizációk megtekintését és használatát. Az R-parancsfájlokkal létrehozott, gyakran *R-vizualizációknak* nevezett vizualizációk fejlett adatformázást és elemzéseket, például előrejelzéseket kínálnak az R gazdag elemzési és megjelenítési lehetőségeinek kihasználásával.
@@ -34,7 +34,7 @@ Az alábbi ábrán egy Power BI-irányítópult látható fejlett elemzésekhez 
 
 ![Képernyőkép a Power BI szolgáltatás jelentésvásznáról](media/service-r-visuals/power-bi-r-visuals.png)
 
-R-vizualizációk olyan [Power BI Desktop-jelentésekben](../desktop-get-the-desktop.md) hozhatók létre, amilyen a következő képen látható.
+R-vizualizációk olyan [Power BI Desktop-jelentésekben](../fundamentals/desktop-get-the-desktop.md) hozhatók létre, amilyen a következő képen látható.
 
 ![Asztali jelentés két vizualizációval](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
@@ -44,7 +44,7 @@ A jelentésnek a **Power BI Desktopban** történő létrehozása után az egy v
 
 Letöltheti ezt a néhány R-vizualizációt tartalmazó [Power BI Desktop mintafájlt](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fájl), hogy kipróbálja a működését.
 
-A **Power BI Desktopban** létrehozott, majd a Power BI szolgáltatásban közzétett R-vizualizációk szinte mindenben a Power BI szolgáltatásbeli más vizualizációkkal azonos módon viselkednek. Használhatók, szűrhetők, szűkíthetők, irányítópultra rögzíthetők vagy megoszthatók másokkal. Irányítópultok és vizualizációk megosztásáról az [Irányítópult megosztása munkatársakkal és másokkal](../service-share-dashboards.md) című cikkben talál további információt. A más vizualizációktól való egyik eltérés az, hogy az R-vizualizációk nem jeleníthetnek meg elemleírásokat és nem használhatók más vizualizációk szűrésére.
+A **Power BI Desktopban** létrehozott, majd a Power BI szolgáltatásban közzétett R-vizualizációk szinte mindenben a Power BI szolgáltatásbeli más vizualizációkkal azonos módon viselkednek. Használhatók, szűrhetők, szűkíthetők, irányítópultra rögzíthetők vagy megoszthatók másokkal. Irányítópultok és vizualizációk megosztásáról az [Irányítópult megosztása munkatársakkal és másokkal](../collaborate-share/service-share-dashboards.md) című cikkben talál további információt. A más vizualizációktól való egyik eltérés az, hogy az R-vizualizációk nem jeleníthetnek meg elemleírásokat és nem használhatók más vizualizációk szűrésére.
 
 Amint a következő képen látható, az R-vizualizációk a Power BI szolgáltatásban az irányítópultokon vagy jelentésekben szinte ugyanúgy jelennek meg és viselkednek, mint bármely más vizualizáció, és a felhasználóknak nem is kell tudniuk a vizualizációt létrehozó mögöttes R-parancsfájlról.
 
@@ -69,9 +69,9 @@ Amikor egy R-parancsfájl futása során hiba jelentkezik, az R-vizualizáció n
 ![Képernyőkép egy futásidejű hibáról](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>Licencelés
-Az R-vizualizációknak [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licencre van szükségük a jelentésekben való megjelenéshez, frissüléshez, szűréshez és keresztszűréshez. A Power BI Pro-licencekről és az ingyenes licencektől való eltéréseikről a [Power BI Pro-tartalom – mi is ez?](../service-admin-purchasing-power-bi-pro.md) című cikk nyújt további információt.
+Az R-vizualizációknak [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md)-licencre van szükségük a jelentésekben való megjelenéshez, frissüléshez, szűréshez és keresztszűréshez. A Power BI Pro-licencekről és az ingyenes licencektől való eltéréseikről a [Power BI Pro-tartalom – mi is ez?](../admin/service-admin-purchasing-power-bi-pro.md) című cikk nyújt további információt.
 
-A Power BI ingyenes felhasználói csak a velük megosztott csempéket használhatják a prémium szintű munkaterületeken. További információ: [A Power BI Pro megvásárlása](../service-admin-purchasing-power-bi-pro.md).
+A Power BI ingyenes felhasználói csak a velük megosztott csempéket használhatják a prémium szintű munkaterületeken. További információ: [A Power BI Pro megvásárlása](../admin/service-admin-purchasing-power-bi-pro.md).
 
 Az alábbi táblázat az R-vizualizációk használhatóságát részletezi licencelés alapján.
 
@@ -88,7 +88,7 @@ Az alábbi táblázat az R-vizualizációk használhatóságát részletezi lice
 ## <a name="known-limitations"></a>Ismert korlátozások
 A Power BI-beli R-vizualizációkra vonatkozik néhány korlátozás:
 
-* Az R-vizualizációk támogatása a [támogatott R-csomagok ismertetésében](../service-r-packages-support.md) megadott csomagokra korlátozódik. Egyéni csomagok jelenleg nem támogatottak.
+* Az R-vizualizációk támogatása a [támogatott R-csomagok ismertetésében](../connect-data/service-r-packages-support.md) megadott csomagokra korlátozódik. Egyéni csomagok jelenleg nem támogatottak.
 * Adatmennyiség korlátozásai – az R-vizualizációk által az ábrázoláshoz felhasznált adatmennyiség 150 000 sorban van korlátozva. 150 000-nél több sor kiválasztásakor a rendszer csak az első 150 000 sort használja fel, és megjelenít egy üzenetet a képen. A megadott adatok ezenkívül legfeljebb 250 MB-ot tehetnek ki.
 * Felbontás – minden R-vizualizáció 72 DPI felbontású.
 * Eszközábrázolás – Csak az alapértelmezett eszközre való ábrázolás támogatott. 
@@ -119,7 +119,7 @@ Az R-csomagok R-függvények, adatok és lefordított kód jól definiált form�
 
 A **Power BI Desktop** bármilyen R-csomagot használni tud, korlátozás nélkül. A **Power BI Desktopban** használni kívánt R-csomagokat saját maga is telepítheti (például az [RStudio IDE](https://www.rstudio.com/) használatával).
 
-A **Power BI szolgáltatásban** az R-vizualizációk támogatása **ennek a cikknek** a [támogatott csomagokról szóló](../service-r-packages-support.md) bekezdésében megtalálható csomagokon múlik. Ha nem találja meg az Önt érdeklő csomagot a támogatott csomagok listájában, akkor kérheti a csomag támogatását. A támogatás kérésének menetéről az [R-csomagok a Power BI szolgáltatásban](../service-r-packages-support.md) című cikk nyújt tájékoztatást.
+A **Power BI szolgáltatásban** az R-vizualizációk támogatása **ennek a cikknek** a [támogatott csomagokról szóló](../connect-data/service-r-packages-support.md) bekezdésében megtalálható csomagokon múlik. Ha nem találja meg az Önt érdeklő csomagot a támogatott csomagok listájában, akkor kérheti a csomag támogatását. A támogatás kérésének menetéről az [R-csomagok a Power BI szolgáltatásban](../connect-data/service-r-packages-support.md) című cikk nyújt tájékoztatást.
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R-csomagokra vonatkozó követelmények és korlátozások
 Az R-csomagokra néhány követelmény és korlátozás is vonatkozik:
@@ -130,11 +130,10 @@ Az R-csomagokra néhány követelmény és korlátozás is vonatkozik:
   
   * R-vizualizációkhoz bármilyen csomag, akár egyéni R-csomag is telepíthető
   * Egyéni R-vizualizációkhoz csak nyilvános CRAN-csomagok esetén támogatott a csomagok automatikus telepítése
-* Biztonsági és adatvédelmi okokból a szolgáltatásban jelenleg nem támogatott az olyan R-csomagok használata, amelyek webszolgáltatásokon keresztül bonyolítják az ügyfél-kiszolgáló lekérdezéseket (mint az RgoogleMaps). Ilyen kísérletekkel szemben a hálózati elérés blokkolva van. A támogatott és nem támogatott R-csomagok listáját az [R-csomagok a Power BI szolgáltatásban](../service-r-packages-support.md) című cikkben találja meg.
+* Biztonsági és adatvédelmi okokból a szolgáltatásban jelenleg nem támogatott az olyan R-csomagok használata, amelyek webszolgáltatásokon keresztül bonyolítják az ügyfél-kiszolgáló lekérdezéseket (mint az RgoogleMaps). Ilyen kísérletekkel szemben a hálózati elérés blokkolva van. A támogatott és nem támogatott R-csomagok listáját az [R-csomagok a Power BI szolgáltatásban](../connect-data/service-r-packages-support.md) című cikkben találja meg.
 * Új R-csomag felvételének jóváhagyási folyamata egy függőségi fán múlik. A szolgáltatásban telepítendő függőségek közül nem mindegyik támogatható.
 
 ### <a name="supported-packages"></a>Támogatott csomagok:
 A támogatott R-csomagok hosszú (és a nem támogatott csomagok rövid) listáját a következő cikkben találja meg:
 
-* [R-csomagok a Power BI szolgáltatásban](../service-r-packages-support.md)
-
+* [R-csomagok a Power BI szolgáltatásban](../connect-data/service-r-packages-support.md)

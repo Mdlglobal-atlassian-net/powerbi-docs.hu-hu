@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 332b9d500aa45ed25199630422e89f890a81f6a3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 125c8ddbdda48b5c7249a6f810d33a65a5f908ee
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621649"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349793"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba a cége számára
 
@@ -31,7 +31,7 @@ Eben az oktatóanyagban az alábbi feladatokkal fog megismerkedni:
 
 Első lépésként, rendelkeznie kell az alábbiakkal:
 
-* Egy [Power BI Pro-fiók](../../service-self-service-signup-for-power-bi.md).
+* Egy [Power BI Pro-fiók](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetéssel.
 * Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
 * Többoldalas jelentések beágyazásához legalább P1-kapacitás szükséges: [Milyen méretű Prémium szintű kapacitás szükséges a többoldalas jelentésekhez?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -60,7 +60,7 @@ Miután létrehozta az alkalmazást az Azure-ban, nyissa meg az alkalmazást az 
 
 ### <a name="create-a-workspace"></a>Munkaterület létrehozása
 
-Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../../service-create-workspaces.md) vagy [új munkaterületeket](../../service-create-the-new-workspaces.md).
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../../collaborate-share/service-create-workspaces.md) vagy [új munkaterületeket](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Saját Power BI-jelentések létrehozása és közzététele
 
@@ -381,9 +381,9 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
-Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az munkaterületen a tartalom számára. Többoldalas jelentésekhez a munkaterülethez legalább P1-kapacitást kell biztosítania. Dedikált kapacitást a [Power BI Premium](../../service-premium-what-is.md) segítségével hozhat létre.
+Dedikált kapacitás létrehozásával kihasználhatja annak az előnyeit, hogy egy dedikált erőforrás áll rendelkezésre az munkaterületen a tartalom számára. Többoldalas jelentésekhez a munkaterülethez legalább P1-kapacitást kell biztosítania. Dedikált kapacitást a [Power BI Premium](../../admin/service-premium-what-is.md) segítségével hozhat létre.
 
-A következő táblázat a [Microsoft Office 365-ben](../../service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
+A következő táblázat a [Microsoft Office 365-ben](../../admin/service-admin-premium-purchase.md) elérhető Power BI Premium-termékváltozatokat sorolja fel:
 
 | Kapacitási csomópont | Virtuális magok száma összesen<br/>(háttérrendszer + előtérrendszer) | Háttérrendszerbeli virtuális magok | Előtérrendszerbeli virtuális magok | DirectQuery-/élő kapcsolat korlátai |
 | --- | --- | --- | --- | --- | --- |
@@ -418,7 +418,7 @@ A dedikált kapacitás létrehozása után hozzárendelheti a munkaterületet eh
 
 ## <a name="admin-settings"></a>Rendszergazdai beállítások
 
-A globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdái be- és kikapcsolhatják a REST API-k használatának képességét a bérlők esetében. A Power BI-rendszergazdák a teljes szervezethez vagy egyes biztonsági csoportokhoz is megadhatják ezt a beállítást. A beállítás alapértelmezés szerint a teljes szervezethez engedélyezve van. Ezeket a módosításokat a [Power BI felügyeleti portálon](../../service-admin-portal.md) végezheti el.
+A globális rendszergazdák vagy a Power BI szolgáltatás-rendszergazdái be- és kikapcsolhatják a REST API-k használatának képességét a bérlők esetében. A Power BI-rendszergazdák a teljes szervezethez vagy egyes biztonsági csoportokhoz is megadhatják ezt a beállítást. A beállítás alapértelmezés szerint a teljes szervezethez engedélyezve van. Ezeket a módosításokat a [Power BI felügyeleti portálon](../../admin/service-admin-portal.md) végezheti el.
 
 ## <a name="next-steps"></a>Következő lépések
 

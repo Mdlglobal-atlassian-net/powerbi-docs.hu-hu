@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c3218e20274c0607c2bbec86e961685ccd276659
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80487750"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349609"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Az adatok lehetnek akár egy Excel-táblában, vagy felhőalapú és helyszíni hibrid adattárházak gyűjteményében is. A Power BI-jal egyszerűen csatlakozhat az adatforrásokhoz, vizuálisan megjelenítheti és feltárhatja a fontos részeket, és ezt bárkivel meg is oszthatja.
@@ -42,9 +42,9 @@ A Power BI egyes elemeit használhatja emellett felváltva is attól függően, 
 A Power BI használatát az határozza meg, hogy e Power BI melyik funkciója vagy szolgáltatása a legmegfelelőbb az adott helyzetben. Például a Power BI Desktop alkalmazással jelentéseket hozhat létre a saját csapatának az ügyfélkapcsolati statisztikákról, és megtekintheti a leltárat és a gyártási folyamat állapotát a szolgáltatás egy valós idejű irányítópultján. A Power BI minden elemét elérheti, ami nagy mértékű rugalmasságot jelent.
 
 A szerepköréhez kapcsolódó dokumentumok elemzése:
-- Power BI Desktop [*tervezők*](../desktop-what-is-desktop.md) számára
+- Power BI Desktop [*tervezők*](desktop-what-is-desktop.md) számára
 - Power BI [*felhasználók*](../consumer/end-user-consumer.md) számára
-- Power BI [*rendszergazdák*](../service-admin-administering-power-bi-in-your-organization.md) számára
+- Power BI [*rendszergazdák*](../admin/service-admin-administering-power-bi-in-your-organization.md) számára
 - Power BI *fejlesztők* számára
     * [Beágyazott analitika a Power BI-jal](../developer/embedded/embedding.md)
     * [A Power BI Embedded az Azure-ban ismertetése](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
@@ -71,5 +71,5 @@ További információ: [Power BI jelentéskészítő kiszolgáló](../report-ser
 
 ## <a name="next-steps"></a>Következő lépések
 - [Rövid útmutató:: Eligazodás a Power BI szolgáltatásban](../service-the-new-power-bi-experience.md)   
-- [Oktatóanyag: Első lépések a Power BI szolgáltatással](../service-get-started.md)
-- [Rövid útmutató:: Csatlakozás adatokhoz a Power BI Desktopban](../desktop-quickstart-connect-to-data.md)
+- [Oktatóanyag: Első lépések a Power BI szolgáltatással](service-get-started.md)
+- [Rövid útmutató:: Csatlakozás adatokhoz a Power BI Desktopban](../connect-data/desktop-quickstart-connect-to-data.md)

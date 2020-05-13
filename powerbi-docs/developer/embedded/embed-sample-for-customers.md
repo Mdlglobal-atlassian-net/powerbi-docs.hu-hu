@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7eef6c7522bc364bc4b66c9567189dd7aec72239
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403826"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349839"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Oktatóanyag: Power BI tartalom beágyazása egy alkalmazásba az ügyfelek számára
 
@@ -31,7 +31,7 @@ Az oktatóanyag a következőket ismerteti:
 
 Első lépésként, rendelkeznie kell az alábbiakkal:
 
-* Egy [Power BI Pro-fiókkal](../../service-self-service-signup-for-power-bi.md) (egy felhasználónévből és jelszóból álló fő fiókkal a Power BI Pro-fiókba való bejelentkezéshez) vagy egy [szolgáltatásnévvel (csak az alkalmazáson belül használható tokennel)](embed-service-principal.md).
+* Egy [Power BI Pro-fiókkal](../../fundamentals/service-self-service-signup-for-power-bi.md) (egy felhasználónévből és jelszóból álló fő fiókkal a Power BI Pro-fiókba való bejelentkezéshez) vagy egy [szolgáltatásnévvel (csak az alkalmazáson belül használható tokennel)](embed-service-principal.md).
 * Be kell állítana egy saját [Azure Active Directory-bérlőt](create-an-azure-active-directory-tenant.md).
 
 Ha még nem regisztrált a **Power BI Pro** szolgáltatásra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://powerbi.microsoft.com/pricing/).
@@ -58,7 +58,7 @@ Ha azonban továbbra is a szolgáltatásnevet használja, akkor regisztrálnia k
 
 ### <a name="create-a-workspace"></a>Munkaterület létrehozása
 
-Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../../service-create-workspaces.md) vagy [új munkaterületeket](../../service-create-the-new-workspaces.md). Ha egy *fő* fiókot használ, akkor nem számít, hogy milyen típusú munkaterületet használ. Ha azonban *[szolgáltatásnevet](embed-service-principal.md)* használ az alkalmazásba való bejelentkezéshez, akkor az új munkaterületeket kell használnia. Mindkét forgatókönyvre érvényes, hogy mind a *fő* fióknak, mind a *szolgáltatásnévnek* az adminisztrátorának kell lennie azoknak a munkaterületeknek, amelyeket az alkalmazásához használ.
+Ha jelentéseket, irányítópultokat vagy csempéket ágyaz be az ügyfelek számára, akkor ezeket a tartalmakat egy munkaterületre kell helyezni. Különböző típusú munkaterületeket állíthat be: [hagyományos munkaterületeket](../../collaborate-share/service-create-workspaces.md) vagy [új munkaterületeket](../../collaborate-share/service-create-the-new-workspaces.md). Ha egy *fő* fiókot használ, akkor nem számít, hogy milyen típusú munkaterületet használ. Ha azonban *[szolgáltatásnevet](embed-service-principal.md)* használ az alkalmazásba való bejelentkezéshez, akkor az új munkaterületeket kell használnia. Mindkét forgatókönyvre érvényes, hogy mind a *fő* fióknak, mind a *szolgáltatásnévnek* az adminisztrátorának kell lennie azoknak a munkaterületeknek, amelyeket az alkalmazásához használ.
 
 ### <a name="create-and-publish-your-reports"></a>Saját jelentések létrehozása és közzététele
 
@@ -409,7 +409,7 @@ Most, hogy elkészült az alkalmazás fejlesztésével, ideje dedikált kapacit�
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
 Dedikált kapacitás létrehozásával dedikált erőforrást rendelhet egy ügyfélhez. Két típusú kapacitás közül választhat:
-* A **Power BI Premium** bérlői szintű Office 356-előfizetés, amely két SKU- (termékváltozat-) családban érhető el: *EM* és *P*. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. További információ erről az előfizetésről: [Mi az a Power BI Premium?](../../service-premium-what-is.md)
+* A **Power BI Premium** bérlői szintű Office 356-előfizetés, amely két SKU- (termékváltozat-) családban érhető el: *EM* és *P*. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. További információ erről az előfizetésről: [Mi az a Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – Dedikált kapacitást a [Microsoft Azure Portalon](https://portal.azure.com) vásárolhat. Ez az előfizetés az *A* termékváltozatokat használja. A Power BI Embedded-kapacitások létrehozásával kapcsolatos részletekért tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket.
 > [!NOTE]
 > A termékváltozatokkal nem férhet hozzá a Power BI-tartalmakhoz INGYENES Power BI-licenccel.

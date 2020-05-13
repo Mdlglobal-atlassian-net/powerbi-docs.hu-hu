@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1aa682a71fe7469f8a9c7d5415fb843400e5d312
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613557"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148329"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI-vizualizációk közzététele a Partnerközpontban
 
@@ -27,7 +27,7 @@ Az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>A Power BI-vizualizáció beküldésének előkészítése
 
-Mielőtt beküldené a Power BI-vizualizációt az AppSource-ba, olvassa el a [Power BI-vizualizációk útmutatóját](guidelines-powerbi-visuals.md), és [tesztelje az egyéni vizualizációt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Mielőtt beküldené a Power BI-vizualizációt az AppSource-ba, olvassa el a [Power BI-vizualizációk útmutatóját](guidelines-powerbi-visuals.md), és [tesztelje az egyéni vizualizációt](./submission-testing.md).
 
 Ha készen áll a Power BI-vizualizáció beküldésére, ellenőrizze, hogy a vizualizáció megfelel-e az alábbi követelményeknek.
 
@@ -99,9 +99,10 @@ Kövesse az alábbi lépéseket a Power BI-vizualizáció Partnerközpontba val�
 
 10. Válassza a **Termék beállítása** lehetőséget, és kattintson az **Áttekintés és közzététel** lehetőségre.
 
+
 ## <a name="tracking-submission-status-and-usage"></a>A beküldési állapot és a használat nyomon követése
 
-* Áttekintheti az [érvényesítési szabályzatokat](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Áttekintheti az [érvényesítési szabályzatokat](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * A beküldés után az [alkalmazás irányítópultján](https://sellerdashboard.microsoft.com/Application/Summary/) tekintheti meg a beküldés állapotát.
 
