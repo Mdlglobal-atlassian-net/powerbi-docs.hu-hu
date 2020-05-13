@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7816fd6e75c9b8925ba0d707f6a63f58af546fcf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205780"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279480"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Adatmennyiség-csökkentési technikák importálási modellek készítéséhez
 
@@ -23,8 +23,8 @@ Az importálási modellekbe töltött tömörített és optimalizált adatok, a 
 
 A VertiPaq tárolási összetevő által elért hatékonyság mellett is fontos a modellbe betöltött adatmennyiség minimalizálására törekedni. Ez különösen így van a nagy modellek vagy olyan modellek esetén, amelyek idővel várhatóan nagyra növekednek. Emellett szól egyebek mellett as következő négy meggyőző érv:
 
-- A kapacitás esetleg nem támogatja a nagyobb méretű modelleket. A megosztott kapacitások legfeljebb 1 GB, a prémium szintű kapacitások legfeljebb 13 GB méretű modellt képesek üzemeltetni. További információt a [Nagyméretű adathalmazok Power BI Premium-támogatása](../service-premium-large-datasets.md) című cikk kínál.
-- A kisebb modellek csökkentik a kapacitás erőforrásai, elsősorban a memória iránti igényt. Így több modell hosszabb időtartam alatt tölthető be egyidejűleg, csökkentve a kiürítések számát. További információ: [Prémium szintű kapacitások kezelése](../service-premium-capacity-manage.md).
+- A kapacitás esetleg nem támogatja a nagyobb méretű modelleket. A megosztott kapacitások legfeljebb 1 GB, a prémium szintű kapacitások legfeljebb 13 GB méretű modellt képesek üzemeltetni. További információt a [Nagyméretű adathalmazok Power BI Premium-támogatása](../admin/service-premium-what-is.md) című cikk kínál.
+- A kisebb modellek csökkentik a kapacitás erőforrásai, elsősorban a memória iránti igényt. Így több modell hosszabb időtartam alatt tölthető be egyidejűleg, csökkentve a kiürítések számát. További információ: [Prémium szintű kapacitások kezelése](../admin/service-premium-capacity-manage.md).
 - Kisebb modellekkel gyorsabb adatfrissítés érhető el, ez pedig a jelentéskészítés kisebb késését és az adathalmaz gyorsabb frissítését eredményezi, valamint kevésbé terheli a forrásrendszer és a kapacitás erőforrásait.
 - A táblák sorainak alacsonyabb száma a számítások gyorsabb kiértékelését eredményezi, ez pedig a teljesítmény általános javulásában mutatkozhat meg.
 
@@ -88,7 +88,7 @@ A más lekérdezésekkel való adatintegráció támogatására szánt Power Que
 
 ## <a name="disable-auto-datetime"></a>Automatikus dátum/idő letiltása
 
-A Power BI Desktop tartalmaz egy _Automatikus dátum/idő_ beállítást. Ha engedélyezve van, egy rejtett automatikus dátum/idő táblát hoz létre a dátumoszlopok számára, hogy támogassa a jelentések szerzőit a szűrők konfigurálásában, a csoportosításban és a naptári időszakokra vonatkozó részletes elemzésben. A rejtett táblák valójában számított táblák, amelyek megnövelik a modell méretét. Ha útmutatásra van szüksége a beállítás használatával kapcsolatban, tekintse meg az [automatikus dátum/idő a Power BI Desktopban történő használatának](../desktop-auto-date-time.md) útmutatócikkét.
+A Power BI Desktop tartalmaz egy _Automatikus dátum/idő_ beállítást. Ha engedélyezve van, egy rejtett automatikus dátum/idő táblát hoz létre a dátumoszlopok számára, hogy támogassa a jelentések szerzőit a szűrők konfigurálásában, a csoportosításban és a naptári időszakokra vonatkozó részletes elemzésben. A rejtett táblák valójában számított táblák, amelyek megnövelik a modell méretét. Ha útmutatásra van szüksége a beállítás használatával kapcsolatban, tekintse meg az [automatikus dátum/idő a Power BI Desktopban történő használatának](../transform-model/desktop-auto-date-time.md) útmutatócikkét.
 
 ## <a name="switch-to-mixed-mode"></a>Váltás Vegyes módra
 
@@ -96,12 +96,13 @@ A Power BI Desktopban a Vegyes módú tervezés összetett modellt állít elő.
 
 A modell méretét hatékonyan csökkentő technika a nagyobb tény típusú táblák Tárolási módjának DirectQuery értékre állítása. Megfontolandó, hogy ez a tervezési elv jól használható a korábban bemutatott [Csoportosítás és összesítés](#group-by-and-summarize) technikával együtt. Az összesített értékesítési adatok például felhasználhatók „összegző” jelentések nagy teljesítményű készítéséhez. Egy részletező oldal úgy mutathatja be részletesen a megadott (szűk) szűrőkörnyezethez tartozó értékesítéseket, hogy a környezeten belüli összes értékesítési megrendelést megjeleníti. Ebben a példában a részletező oldal egy DirectQuery-táblán alapuló vizualizációkat tartalmazna az értékesítési megrendelések adatainak lekéréséhez.
 
-Az összetett modellek használatának azonban számos biztonsági és a teljesítményt érintő velejárója van. Erről az [Összetett modellek használata a Power BI Desktopban](../desktop-composite-models.md) című cikkben talál további tájékoztatást.
+Az összetett modellek használatának azonban számos biztonsági és a teljesítményt érintő velejárója van. Erről az [Összetett modellek használata a Power BI Desktopban](../transform-model/desktop-composite-models.md) című cikkben talál további tájékoztatást.
 
 ## <a name="next-steps"></a>Következő lépések
 
 Power BI-beli importálási modell tervezéséről a következő cikkekből tájékozódhat bővebben:
 
-- [Összetett modellek használata a Power BI Desktopban](../desktop-composite-models.md)
-- [Tárolási mód a Power BI Desktopban](../desktop-storage-mode.md)
+- [Összetett modellek használata a Power BI Desktopban](../transform-model/desktop-composite-models.md)
+- [Tárolási mód a Power BI Desktopban](../transform-model/desktop-storage-mode.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+

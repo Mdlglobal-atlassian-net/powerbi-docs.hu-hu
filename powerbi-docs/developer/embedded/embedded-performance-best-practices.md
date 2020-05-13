@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 7284532d95cce780f4022477faab9033adcd764a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492606"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279388"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Ajánlott eljárások a Power BI Embedded teljesítményének javításához
 
@@ -59,7 +59,7 @@ Amikor több jelentést ágyaz be ugyanazon iFrame-be, ne hozzon létre új iFra
 
 A Power BI Premium- vagy Power BI Embedded-kapacitással rendelkező cégek kihasználhatják a lekérdezések gyorsítótárazása funkciót az adatkészletekhez társított jelentések felgyorsítására.
 
-[További információ a Power BI lekérdezési gyorsítótárazásáról](../../power-bi-query-caching.md).
+[További információ a Power BI lekérdezési gyorsítótárazásáról](../../connect-data/power-bi-query-caching.md).
 
 ## <a name="preload"></a>Előzetes betöltés
 
@@ -99,7 +99,7 @@ A gyorsítótárazott adatokat a rendszer akkor rendereli, amikor azok elérhet�
 A jelentéselemek teljesítményének vizsgálatához használhatja a Power BI Desktop Teljesítményelemzőjét.
 A Teljesítményelemzővel megtekintheti és rögzítheti azokat a naplókat, amelyek a jelentéselemek működését mérik.
 
-[További információ a Teljesítményelemzőről](../../desktop-performance-analyzer.md).
+[További információ a Teljesítményelemzőről](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > A beágyazott jelentések teljesítményét célszerű gyakran összehasonlítani a powerbi.com teljesítményével. Így könnyebben azonosíthatja a teljesítménnyel kapcsolatos problémák gyökerét

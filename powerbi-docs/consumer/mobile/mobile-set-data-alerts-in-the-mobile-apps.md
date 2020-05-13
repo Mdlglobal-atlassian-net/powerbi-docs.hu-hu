@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 288ac6620af03c49d0a7f96e219e88d855381caf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435812"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279549"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Adatriasztások beállítása a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -29,7 +29,7 @@ Ha Power BI Pro-licenccel rendelkezik, vagy a megosztott irányítópult prémiu
 > [!WARNING]
 > Az adatalapú riasztások értesítései az adatokkal kapcsolatos információkat tartalmaznak. Ha a mobileszközét ellopják, javasoljuk, hogy a Power BI szolgáltatásban tiltsa le az összes adatalapú riasztási szabályt. 
 > 
-> További információk [az adatriasztások kezeléséről a Power BI szolgáltatásban](../../service-set-data-alerts.md).
+> További információk [az adatriasztások kezeléséről a Power BI szolgáltatásban](../../create-reports/service-set-data-alerts.md).
 > 
 > 
 
@@ -58,7 +58,7 @@ Ha Power BI Pro-licenccel rendelkezik, vagy a megosztott irányítópult prémiu
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### <a name="manage-alerts-on-your-iphone-or-ipad"></a>Riasztások kezelése iPhone vagy iPad készüléken
-A riasztásokat egyenként kezelheti a mobileszközökön vagy [az összeset együtt a Power BI szolgáltatásban](../../service-set-data-alerts.md).
+A riasztásokat egyenként kezelheti a mobileszközökön vagy [az összeset együtt a Power BI szolgáltatásban](../../create-reports/service-set-data-alerts.md).
 
 1. Koppintson az irányítópulton az egyik számot vagy mérőműszert tartalmazó csempére, amelyikhez van riasztás rendelve.  
    
@@ -92,7 +92,7 @@ A riasztásokat egyenként kezelheti a mobileszközökön vagy [az összeset egy
 8. Koppintson a **Mentés** gombra.
 
 ### <a name="manage-alerts-on-an-android-device"></a>Riasztások kezelése Android-eszközökön
-A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az összeset együtt a Power BI szolgáltatásban](../../service-set-data-alerts.md).
+A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az összeset együtt a Power BI szolgáltatásban](../../create-reports/service-set-data-alerts.md).
 
 1. Koppintson az irányítópulton az egyik kártyára vagy mérőműszert tartalmazó csempére, amelyikhez van riasztás rendelve.  
 2. Koppintson az egyszínű harang ikonra ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
@@ -131,7 +131,7 @@ A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az ös
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### <a name="manage-alerts-on-a-windows-device"></a>Adatriasztások kezelése Windows-eszközökön
-A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az összeset együtt a Power BI szolgáltatásban](../../service-set-data-alerts.md).
+A riasztásokat egyenként kezelheti a Power BI mobilalkalmazásban vagy [az összeset együtt a Power BI szolgáltatásban](../../create-reports/service-set-data-alerts.md).
 
 1. Koppintson az irányítópulton az egyik kártyára vagy mérőműszert tartalmazó csempére, amelyikhez van riasztás rendelve.  
 2. Koppintson a harang ikonra ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
@@ -172,7 +172,6 @@ Az adatforrások általában napi frissítésre vannak állítva, némelyik azon
 * A riasztások streamelési adatokat tartalmazó csempéken nem működnek.
 
 ## <a name="next-steps"></a>Következő lépések
-* [Riasztások kezelése a Power BI szolgáltatásban](../../service-set-data-alerts.md)
+* [Riasztások kezelése a Power BI szolgáltatásban](../../create-reports/service-set-data-alerts.md)
 * [Power BI mobil értesítési központ](mobile-apps-notification-center.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

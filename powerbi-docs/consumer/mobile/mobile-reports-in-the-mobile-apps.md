@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 48b13b73455d39eb7dc8cbf9df3e95408592f7f5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841733"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279503"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Jelentések vizsgálata a Power BI mobilalkalmazásokban
 A következőkre vonatkozik:
@@ -27,7 +27,7 @@ A következőkre vonatkozik:
 
 A Power BI jelentés egy interaktív nézet az adatokról különböző, az adatokból származó eredményeket és elemzéseket bemutató vizualizációkkal. A jelentések megtekintése a Power BI mobilalkalmazásokban a harmadik lépés egy háromlépéses folyamatban:
 
-1. [Jelentések létrehozása a Power BI Desktopban](../../desktop-report-view.md). A jelentéseket [optimalizálhatja is telefonra](mobile-apps-view-phone-report.md) a Power BI Desktopban.
+1. [Jelentések létrehozása a Power BI Desktopban](../../create-reports/desktop-report-view.md). A jelentéseket [optimalizálhatja is telefonra](mobile-apps-view-phone-report.md) a Power BI Desktopban.
 2. A jelentéseket tegye közzé a Power BI szolgáltatásban [(https://powerbi.com)](https://powerbi.com) vagy a [Power BI jelentéskészítő kiszolgálón](../../report-server/get-started.md).  
 3. Ezután használhatja a jelentéseket a Power BI mobilalkalmazásokban.
 
@@ -100,7 +100,7 @@ A jelentések szerzői meghatározhatnak hierarchiákat adatokban és a jelenté
 *Részletezés* használatakor, ha rákoppint a vizualizáció egy meghatározott részére, a Power BI a jelentés egy másik oldalára irányítja, amelyet annak az értéknek az alapján szűr, amelyre koppintott. A jelentés szerzője definiálhat egy vagy több részletező beállítást, amelyek mindegyike egy másik oldalra irányítja át. Ebben az esetben kiválaszthatja, hogy melyiket szeretné részletesen megjeleníteni. A vissza gomb visszaviszi az előző oldalra.
 
 
-További információért olvassa el, hogyan [adhat hozzá részletezést a Power BI Desktopban](../../desktop-drillthrough.md).
+További információért olvassa el, hogyan [adhat hozzá részletezést a Power BI Desktopban](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > A Power BI-mobilalkalmazásokban megjelenő mátrix és a tábla típusú vizualizációkban csak a cellaértékeknél lehet részletezést indítani, oszlop- és sorfejlécekből nem.
@@ -164,6 +164,5 @@ Ezeknek a beállításoknak a módosításáról az [alkalmazás kezelési beál
 
 ## <a name="next-steps"></a>Következő lépések
 * [Telefonra optimalizált Power BI-jelentések megtekintése és használata](mobile-apps-view-phone-report.md)
-* [Telefonra optimalizált verzió létrehozása egy jelentéshez](../../desktop-create-phone-report.md)
+* [Telefonra optimalizált verzió létrehozása egy jelentéshez](../../create-reports/desktop-create-phone-report.md)
 * Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
