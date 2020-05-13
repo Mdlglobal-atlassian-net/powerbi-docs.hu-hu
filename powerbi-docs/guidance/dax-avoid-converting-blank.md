@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2f70b98ed540a2e5b87e5a949e30b0c1c02069d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74700386"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279641"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX: Ne konvertálja a BLANK-eket értékekre
 
@@ -66,7 +66,7 @@ A táblázatos vizualizáció most azokat az ügyfeleket jeleníti meg, akik az 
 ![Ugyanez a táblázatos vizualizáció most négy sornyi adatot jelenít meg. Minden sor egy olyan ügyfélhez tartozik, amely értékesítési értékkel rendelkezik, és a Profit Margin értéke nem nulla.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
-> Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportosítását (amely értékeket vagy BLANK eredményt ad) megjelenítse. Ehhez engedélyeznie kell az [Adatot nem tartalmazó elemek megjelenítése](../desktop-show-items-no-data.md) beállítást.
+> Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportosítását (amely értékeket vagy BLANK eredményt ad) megjelenítse. Ehhez engedélyeznie kell az [Adatot nem tartalmazó elemek megjelenítése](../create-reports/desktop-show-items-no-data.md) beállítást.
 
 ## <a name="recommendation"></a>Javaslat
 
@@ -80,3 +80,4 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 
 - [Data Analysis Expressions-referencia (DAX)](/dax/)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+

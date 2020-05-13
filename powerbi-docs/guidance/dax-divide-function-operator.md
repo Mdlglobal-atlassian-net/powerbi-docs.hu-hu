@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b792c7d9f6200544188e9f9fe711cd1394e8b921
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75304166"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279572"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: A DIVIDE függvény és a divide operátor (/)
 
@@ -58,7 +58,7 @@ A DIVIDE függvényt olyan esetekben célszerű használnia, amikor a nevető eg
 
 Ha a nevező egy állandó érték, használja a divide operátort. Ebben az esetben az osztás mindenképpen sikeres lesz, a kifejezés pedig jobb teljesítményt nyújt, mivel elkerüli a felesleges tesztelést.
 
-Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. Mértékek esetében általában célszerűbb, ha BLANK értéket adnak vissza. A BLANK érték visszaadása jobb választás, mivel a jelentésvizualizációk alapértelmezés szerint eltávolítják a csoportosításokat, ha az összegzések BLANK értékűek. A vizualizáció így olyan csoportokra összpontosíthat, amelyekben vannak adatok. Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportját (amely értékeket vagy ÜRES eredményt ad) megjelenítse. Ehhez engedélyeznie kell az [Adatot nem tartalmazó elemek megjelenítése](../desktop-show-items-no-data.md) beállítást.
+Alaposan fontolja meg, hogy a DIVIDE függvény adjon-e vissza alternatív értéket. Mértékek esetében általában célszerűbb, ha BLANK értéket adnak vissza. A BLANK érték visszaadása jobb választás, mivel a jelentésvizualizációk alapértelmezés szerint eltávolítják a csoportosításokat, ha az összegzések BLANK értékűek. A vizualizáció így olyan csoportokra összpontosíthat, amelyekben vannak adatok. Szükség esetén konfigurálhatja a vizualizációt úgy, hogy a szűrő minden csoportját (amely értékeket vagy ÜRES eredményt ad) megjelenítse. Ehhez engedélyeznie kell az [Adatot nem tartalmazó elemek megjelenítése](../create-reports/desktop-show-items-no-data.md) beállítást.
 
 ## <a name="next-steps"></a>Következő lépések
 
@@ -66,3 +66,4 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 
 - [Data Analysis Expressions-referencia (DAX)](/dax/)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+

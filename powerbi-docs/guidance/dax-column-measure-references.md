@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3ca49008639f7e3e084c8d045bc911aff57b7b21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 42d99c7139586a78565198b59bc74716261537e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75498737"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279618"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX: Oszlopok és mértékek hivatkozásai
 
@@ -43,7 +43,7 @@ Az oszlophivatkozásokat ajánlott mindig teljes névvel megadni. Ennek indokait
 
 ## <a name="measures"></a>Mértékek
 
-A mértékek modellszintű objektumok. Amiatt a mértékek nevének a modellen belül egyedinek kell lennie. A **Mezők** panelen viszont a jelentéskészítők az egytáblás modellekhez tartozó összes mértéket látják. Ez a hozzárendelés esztétikai okokból van beállítva, és a mérték **Kezdőtábla** tulajdonságának beállításával konfigurálható. További információ: [Mértékek a Power BI Desktopban (mértékek rendszerezése)](../desktop-measures.md#organizing-your-measures).
+A mértékek modellszintű objektumok. Amiatt a mértékek nevének a modellen belül egyedinek kell lennie. A **Mezők** panelen viszont a jelentéskészítők az egytáblás modellekhez tartozó összes mértéket látják. Ez a hozzárendelés esztétikai okokból van beállítva, és a mérték **Kezdőtábla** tulajdonságának beállításával konfigurálható. További információ: [Mértékek a Power BI Desktopban (mértékek rendszerezése)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 A kifejezésekben használható a mértékek teljes neve. A DAX IntelliSense fel is kínálja javaslatként. Ennek ellenére szükségtelen és nem ajánlott a használata. Egy mérték kezdőtáblájának módosításakor a mértékekre azok teljes nevével hivatkozó kifejezések hibássá válnak. Ilyen esetben minden hibás képletet szerkeszteni kell, hogy eltávolítsa (vagy frissítse) a mértékekre való hivatkozásokat.
 
@@ -68,3 +68,4 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 
 - [Data Analysis Expressions-referencia (DAX)](/dax/)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+

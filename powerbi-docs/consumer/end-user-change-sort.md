@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 811e0513c1b4a16a731e6d9bd90cbc0689ca76e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496477"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279779"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>A diagramok rendezésének módosítása egy Power BI-jelentésben
 
@@ -22,7 +22,7 @@ ms.locfileid: "77496477"
 
 
 > [!IMPORTANT]
-> **Ez a cikk olyan Power BI-felhasználók számára készült, akik nem rendelkeznek szerkesztési engedéllyel a jelentéshez vagy adathalmazhoz, és akik csak az Power BI online verziójában (a Power BI szolgáltatásban) dolgoznak. Ha Ön a jelentések *tervezője* vagy *rendszergazdája* vagy *tulajdonosa*, lehet, hogy ez a cikk nem tartalmazza az összes információt, amire szüksége van. Ehelyett olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../desktop-sort-by-column.md)** bekezdést.
+> **Ez a cikk olyan Power BI-felhasználók számára készült, akik nem rendelkeznek szerkesztési engedéllyel a jelentéshez vagy adathalmazhoz, és akik csak az Power BI online verziójában (a Power BI szolgáltatásban) dolgoznak. Ha Ön a jelentések *tervezője* vagy *rendszergazdája* vagy *tulajdonosa*, lehet, hogy ez a cikk nem tartalmazza az összes információt, amire szüksége van. Ehelyett olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../create-reports/desktop-sort-by-column.md)** bekezdést.
 
 A Power BI szolgáltatásban módosíthatja egy vizualizáció kinézetét, ha különböző adatmezők szerint rendezi. A vizualizáció rendezésének módosításával kiemelheti a közvetíteni kívánt információt. Akár numerikus adatokat használ (például értékesítési adatokat), akár szöveges adatokat (például államneveket), tetszése szerint rendezheti a vizualizációkat. A Power BI nagyon rugalmas rendezhetőséget és egyszerűen használható menüket biztosít. 
 
@@ -69,7 +69,7 @@ Ezeket a módosításokat csak a jelentés tervezője végezheti el Önnek. A *t
 
 ![A kapcsolattartási adatokat megjelenítő legördülő lista](media/end-user-change-sort/power-bi-contact.png)
 
-Ha Ön *tervező*, és szerkesztési engedéllyel rendelkezik a tartalomhoz, olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../desktop-sort-by-column.md) fejezetet, hogy megtudja, hogyan frissítheti az adatkészletet, és engedélyezheti az ilyen típusú rendezést.
+Ha Ön *tervező*, és szerkesztési engedéllyel rendelkezik a tartalomhoz, olvassa el a [Rendezés oszlop szerint a Power BI Desktopban](../create-reports/desktop-sort-by-column.md) fejezetet, hogy megtudja, hogyan frissítheti az adatkészletet, és engedélyezheti az ilyen típusú rendezést.
 
 ## <a name="next-steps"></a>Következő lépések
 További információk [a Power BI-jelentésekben lévő vizualizációkról](end-user-visualizations.md).

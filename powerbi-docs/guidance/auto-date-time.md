@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a65b17c91640f6ea7fff1d762e8d5b71cc99575e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a143a9b158d8a00fc129953a601f9e4c8f19875f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77154143"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279710"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Útmutató automatikus dátum/időhöz a Power BI Desktopban
 
-Ez a cikk azoknak az adatmodellezőknek szól, akik importálási vagy összetett modelleket fejlesztenek a Power BI Desktopban. Útmutatást, javaslatokat és szempontokat nyújt a Power BI Desktop _automatikus dátum/idő_ funkciójának konkrét helyzetekben való használatához. Az _automatikus dátum/idő_ funkció általános áttekintését és bevezetését lásd [A Power BI Desktop automatikus dátum/idő funkciója](../desktop-auto-date-time.md) című részben.
+Ez a cikk azoknak az adatmodellezőknek szól, akik importálási vagy összetett modelleket fejlesztenek a Power BI Desktopban. Útmutatást, javaslatokat és szempontokat nyújt a Power BI Desktop _automatikus dátum/idő_ funkciójának konkrét helyzetekben való használatához. Az _automatikus dátum/idő_ funkció általános áttekintését és bevezetését lásd [A Power BI Desktop automatikus dátum/idő funkciója](../transform-model/desktop-auto-date-time.md) című részben.
 
 Az _automatikus dátum/idő_ lehetőség kényelmes, gyors és könnyen használható időintelligenciát biztosít. A jelentéskészítők az időintelligenciát a naptári időszakokban történő szűréshez, csoportosításhoz és részletezéshez használhatják.
 
@@ -34,13 +34,13 @@ Az alábbi felsorolási lista az _automatikus dátum/idő_ lehetőséghez kapcso
     Ezért fontos, hogy a szűrés és a csoportosítás az **Év** oszlopban menjen végbe. Hierarchia alapján végzett lefúrás esetén a szűrés az évre vonatkozik, kivéve ha az **Év** szintje szándékosan el lett távolítva. Ha nincs évre vonatkozó szűrő vagy csoport, akkor például egy havi csoportosítás az összes év adott hónapjára vonatkozó értékeket összegzi.
 - **Dátumszűrés egyetlen táblázatban:** Mivel minden dátumoszlop létrehozza a saját (rejtett) automatikus dátum/idő táblázatát, nem lehet egy táblázatra időszűrőt alkalmazni és több modelltáblázatra kiterjeszteni. Ez a szűrésforma általános modellezési követelmény az olyan többszörös tárgyú jelentések (tény típusú táblázatok) létrehozásakor, mint az értékesítés és az értékesítési költségkeret. A jelentéskészítőnek az automatikus dátum/idő használatakor minden dátumoszlophoz külön szűrőt kell alkalmaznia.
 - **A modell mérete:** Ez minden egyes (rejtett) automatikus dátum/idő táblázatot létrehozó dátumoszlop esetén nagyobb modellméretet és hosszabb adatfrissítési időt eredményez.
-- **Egyéb jelentéskészítő eszközök:** Nem lehet az automatikus dátum- és időtáblákkal dolgozni az [Elemzés az Excelben](../service-analyze-in-excel.md) használatakor, vagy amikor a modellhez nem Power BI-tervezők használatával csatlakoznak.
+- **Egyéb jelentéskészítő eszközök:** Nem lehet az automatikus dátum- és időtáblákkal dolgozni az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md) használatakor, vagy amikor a modellhez nem Power BI-tervezők használatával csatlakoznak.
 
 ## <a name="recommendations"></a>Javaslatok
 
 Javaslatunk szerint az _automatikus dátum/idő_ funkciót csak akkor kell bekapcsolt állapotban hagynia, ha naptári időszakokkal dolgozik, és az idővel kapcsolatban egyszerű modellkövetelményeket használ. Ez a lehetőség akkor is kényelmes megoldás, ha egyszeri modelleket hoz létre, vagy adatfeltárást, illetve profilkészítést végez.
 
-Ha az adatforrás már meghatároz egy dátumdimenzió-táblát, ezt a táblát a cégen belül konzisztensen kell használni az idő meghatározására. Ha az adatforrás egy adattárház, akkor biztosan ez lesz a helyzet. A modellben szereplő dátumtáblázatokat létrehozhatja a DAX [CALENDAR](/dax/calendar-function-dax) vagy [CALENDARAUTO](/dax/calendarauto-function-dax) függvények használatával is. Ezt követően hozzáadhat számított oszlopokat az ismert időszűrési és csoportosítási igények támogatására. Ez a tervezési módszer lehetővé teszi egy minden ténytípusú táblázatra propagálódó egyetlen dátumtáblázat létrehozását, ez pedig egyetlen táblázatot eredményezhet az időszűrők alkalmazásához. A dátumtáblázatok létrehozásáról a [Dátumtáblázatok beállítása és használata Power BI Desktopban](../desktop-date-tables.md) című cikkben talál további információkat.
+Ha az adatforrás már meghatároz egy dátumdimenzió-táblát, ezt a táblát a cégen belül konzisztensen kell használni az idő meghatározására. Ha az adatforrás egy adattárház, akkor biztosan ez lesz a helyzet. A modellben szereplő dátumtáblázatokat létrehozhatja a DAX [CALENDAR](/dax/calendar-function-dax) vagy [CALENDARAUTO](/dax/calendarauto-function-dax) függvények használatával is. Ezt követően hozzáadhat számított oszlopokat az ismert időszűrési és csoportosítási igények támogatására. Ez a tervezési módszer lehetővé teszi egy minden ténytípusú táblázatra propagálódó egyetlen dátumtáblázat létrehozását, ez pedig egyetlen táblázatot eredményezhet az időszűrők alkalmazásához. A dátumtáblázatok létrehozásáról a [Dátumtáblázatok beállítása és használata Power BI Desktopban](../transform-model/desktop-date-tables.md) című cikkben talál további információkat.
 
 Ha az _automatikus dátum/idő_ funkciónak nincs jelentősége a projektjeiben, akkor a globális _automatikus dátum/idő_ funkció kikapcsolását javasoljuk. Ezzel biztosíthatja, hogy az újonnan létrehozott Power BI Desktop-fájlok egyike se kapcsolja be az _automatikus dátum/idő_ funkciót.
 
@@ -48,7 +48,7 @@ Ha az _automatikus dátum/idő_ funkciónak nincs jelentősége a projektjeiben,
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Automatikus dátum/idő a Power BI Desktopban](../desktop-auto-date-time.md)
-- [Dátumtáblák beállítása és használata a Power BI Desktopban](../desktop-date-tables.md)
+- [Automatikus dátum/idő a Power BI Desktopban](../transform-model/desktop-auto-date-time.md)
+- [Dátumtáblák beállítása és használata a Power BI Desktopban](../transform-model/desktop-date-tables.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com/)

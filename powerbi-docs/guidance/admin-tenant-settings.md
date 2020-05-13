@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79487809"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279756"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Útmutató a bérlő rendszergazdai beállításokhoz
 
@@ -21,7 +21,7 @@ Ez a cikk a Power BI-adminisztrátoroknak szól, akiknek az a feladata, hogy a s
 
 Útmutatást nyújtunk az olyan bérlői beállításokhoz, amelyek javítják a Power BI használati élményét, vagy amelyek kockázatot jelenthetnek a szervezet számára. Javasoljuk, hogy a bérlőt mindig úgy konfigurálja, hogy az megfeleljen a szervezet szabályzatainak és folyamatainak.
 
-A [bérlői beállításokat](../service-admin-portal.md#tenant-settings) a [Felügyeleti portálon](https://app.powerbi.com/admin-portal/tenantSettings) lehet elvégezni, a konfigurálást pedig a [Power BI-szolgáltatásgazda](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) végezheti el. Számos bérlői beállítás azt eredményezheti, hogy a képességek és a funkciók csak adott felhasználók számára lesznek elérhetőek. Ezért javasoljuk, hogy először ismerkedjen meg a beállításokkal, mielőtt megtervezné a szükséges biztonsági csoportokat. Előfordulhat, hogy ugyanazt a biztonsági csoportot több beállításra is alkalmazhatja.
+A [bérlői beállításokat](../admin/service-admin-portal.md#tenant-settings) a [Felügyeleti portálon](https://app.powerbi.com/admin-portal/tenantSettings) lehet elvégezni, a konfigurálást pedig a [Power BI-szolgáltatásgazda](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) végezheti el. Számos bérlői beállítás azt eredményezheti, hogy a képességek és a funkciók csak adott felhasználók számára lesznek elérhetőek. Ezért javasoljuk, hogy először ismerkedjen meg a beállításokkal, mielőtt megtervezné a szükséges biztonsági csoportokat. Előfordulhat, hogy ugyanazt a biztonsági csoportot több beállításra is alkalmazhatja.
 
 ## <a name="improve-power-bi-experience"></a>A Power BI-élmény javítása
 
@@ -88,7 +88,7 @@ Javasoljuk, hogy rendeljen hozzá egy vagy több biztonsági csoportot. Ezeknek 
 
 ### <a name="publish-to-web"></a>Webes közzététel
 
-A [Webes közzététel](../service-publish-to-web.md) funkció lehetővé teszi a nyilvános jelentések weben történő közzétételét. Ha nem megfelelően használják, fennáll a veszélye, hogy a bizalmas információk elérhetővé válnak az interneten.
+A [Webes közzététel](../collaborate-share/service-publish-to-web.md) funkció lehetővé teszi a nyilvános jelentések weben történő közzétételét. Ha nem megfelelően használják, fennáll a veszélye, hogy a bizalmas információk elérhetővé válnak az interneten.
 
 A **Webes közzététel** beállítás alapértelmezés szerint engedélyezve van a teljes szervezet számára, de a nem rendszergazda felhasználók nem hozhatnak létre beágyazási kódokat. Ezt az **Exportálási és megosztási beállítások** csoportban találja meg.
 
@@ -109,7 +109,7 @@ Az **Adatok exportálása** beállítás alapértelmezés szerint engedélyezve 
 Javasoljuk, hogy rendeljen hozzá egy vagy több biztonsági csoportot. Ezeknek a csoportoknak engedélyezheti _vagy letilthatja_ a jelentések közzétételének lehetőségét.
 
 > [!IMPORTANT]
-> Ha letiltja ezt a beállítást, akkor korlátozza az [Elemzés az Excelben](../service-analyze-in-excel.md) és a Power BI szolgáltatás [élő kapcsolatok](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) funkcióit is.
+> Ha letiltja ezt a beállítást, akkor korlátozza az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md) és a Power BI szolgáltatás [élő kapcsolatok](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) funkcióit is.
 
 ![Megjelenik az „Adatok exportálása” beállítás.](media/admin-tenant-settings/export-data.png)
 
@@ -118,7 +118,7 @@ Javasoljuk, hogy rendeljen hozzá egy vagy több biztonsági csoportot. Ezeknek 
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat
 
-Lehetőség van arra, hogy a külső vendégfelhasználók szerkeszthessék és kezeljék a Power BI-tartalmakat. További információt a [Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak](../service-admin-azure-ad-b2b.md) című témakörben talál.
+Lehetőség van arra, hogy a külső vendégfelhasználók szerkeszthessék és kezeljék a Power BI-tartalmakat. További információt a [Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak](../admin/service-admin-azure-ad-b2b.md) című témakörben talál.
 
 Az **Annak engedélyezése, hogy külső vendégfelhasználók is szerkeszthessék és kezelhessék a szervezeti tartalmakat** beállítás alapértelmezés szerint le van tiltva a teljes szervezet számára. Ezt az **Exportálási és megosztási beállítások** csoportban találja meg.
 
@@ -141,7 +141,8 @@ Ha nem tervezi használni a fejlesztői API-kat a tartalmak beágyazásához, ja
 
 Ezzel a cikkel kapcsolatosan a következő forrásanyagokban talál további információt:
 
-- [Mit jelent a Power BI-felügyelet?](../service-admin-administering-power-bi-in-your-organization.md)
-- [A Power BI felügyelete a felügyeleti portálon](../service-admin-portal.md)
+- [Mit jelent a Power BI-felügyelet?](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [A Power BI felügyelete a felügyeleti portálon](../admin/service-admin-portal.md)
 - Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
 - Javaslatai vannak? [A Power BI javítására vonatkozó ötletek beküldése](https://ideas.powerbi.com)
+

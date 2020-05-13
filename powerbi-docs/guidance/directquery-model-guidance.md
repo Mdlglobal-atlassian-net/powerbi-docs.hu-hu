@@ -8,26 +8,26 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75223643"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279595"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Útmutató a DirectQuery-modellhez a Power BI Desktopban
 
 Ez a cikk a Power BI Desktopban vagy a Power BI szolgáltatásban Power BI DirectQuery-modelleket fejlesztő adatmodellezőknek készült. Ismerteti a DirectQuery felhasználási területeit és korlátait, és útmutatást nyújt. Az útmutató célja, hogy segítsen eldönteni, vajon a DirectQuery-e a modellhez megfelelő mód, és javítani a DirectQuery-modellre épülő jelentések teljesítményét. Ez a cikk a Power BI szolgáltatásban vagy a Power BI jelentéskészítő kiszolgálón üzemeltetett DirectQuery-modellekre vonatkozik.
 
-A cikknek nem célja a DirectQuery-modellek tervezésének teljes körű leírása. Bevezetésként elolvashatja a [DirectQuery-modellek a Power BI Desktopban](../desktop-directquery-about.md) című cikket. A téma alaposabb tárgyalását közvetlenül a [DirectQuery az SQL Server 2016 Analysis Services szolgáltatásban](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf) című tanulmányban találhatja meg. Vegye figyelembe, hogy a tanulmány a DirectQuery SQL Server Analysis Services szolgáltatásban való használatát írja le. A tartalom nagy része azonban a Power BI DirectQuery-modelljeire is érvényes.
+A cikknek nem célja a DirectQuery-modellek tervezésének teljes körű leírása. Bevezetésként elolvashatja a [DirectQuery-modellek a Power BI Desktopban](../connect-data/desktop-directquery-about.md) című cikket. A téma alaposabb tárgyalását közvetlenül a [DirectQuery az SQL Server 2016 Analysis Services szolgáltatásban](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf) című tanulmányban találhatja meg. Vegye figyelembe, hogy a tanulmány a DirectQuery SQL Server Analysis Services szolgáltatásban való használatát írja le. A tartalom nagy része azonban a Power BI DirectQuery-modelljeire is érvényes.
 
-Ez a cikk nem foglalkozik közvetlenül az összetett modellekkel. Egy összetett modell legalább egy, de akár több DirectQuery-forrást is tartalmaz. Az ebben a cikkben nyújtott útmutatás ennek ellenére felhasználható – legalábbis részben – az összetett modellek tervezése során. Az importálási táblák DirectQuery-táblákkal történő kombinálásának következményei e cikk hatókörén kívül esnek. További információ: [Összetett modellek használata a Power BI Desktopban](../desktop-composite-models.md).
+Ez a cikk nem foglalkozik közvetlenül az összetett modellekkel. Egy összetett modell legalább egy, de akár több DirectQuery-forrást is tartalmaz. Az ebben a cikkben nyújtott útmutatás ennek ellenére felhasználható – legalábbis részben – az összetett modellek tervezése során. Az importálási táblák DirectQuery-táblákkal történő kombinálásának következményei e cikk hatókörén kívül esnek. További információ: [Összetett modellek használata a Power BI Desktopban](../transform-model/desktop-composite-models.md).
 
 Fontos tisztában lennie azzal, hogy a DirectQuery-modellek különböző számítási terhelést jelentenek a Power BI-környezet (a Power BI szolgáltatás vagy a Power BI jelentéskészítő kiszolgáló) és az alapul szolgáló adatforrások számára. Ha úgy ítéli, hogy a DirectQuery a megfelelő tervezési alap, ajánlott a megfelelő személyeket bevonni a projektbe. Gyakori tapasztalat, hogy egy DirectQuery-modell sikeres üzembe helyezése egy informatikai szakemberekből álló csapat szoros együttműködésének eredménye. A csapat általában modellfejlesztőkből és a forrásadatbázis rendszergazdáiból áll. A tagjai között lehetnek adattervezők, valamint adattárház- és ETL-fejlesztők is. A jó teljesítmény eléréséhez gyakran közvetlenül az adatforrásban kell optimalizálást végezni.
 
 ## <a name="design-in-power-bi-desktop"></a>Tervezés a Power BI Desktopban
 
-Azure SQL Data Warehouse- és Azure HDInsight Spark-adatforráshoz is lehet közvetlenül csatlakozni anélkül, hogy használni kellene a Power BI Desktopot. Ez az Adatok lekérése területen az Adatbázisok csempe kiválasztásával történik a Power BI szolgáltatásban. További információ: [Az Azure SQL Data Warehouse használata a DirectQueryvel](../service-azure-sql-data-warehouse-with-direct-connect.md).
+Azure SQL Data Warehouse- és Azure HDInsight Spark-adatforráshoz is lehet közvetlenül csatlakozni anélkül, hogy használni kellene a Power BI Desktopot. Ez az Adatok lekérése területen az Adatbázisok csempe kiválasztásával történik a Power BI szolgáltatásban. További információ: [Az Azure SQL Data Warehouse használata a DirectQueryvel](../connect-data/service-azure-sql-data-warehouse-with-direct-connect.md).
 
 Bár a közvetlen kapcsolat kényelmes, nem ajánlott ezt a módszert használni. Ennek fő indoka az, hogy a mögöttes adatforrás sémaváltozása esetén nem lehet frissíteni a modellstruktúrát.
 
@@ -77,8 +77,8 @@ Egy DirectQuery-modell több módon is optimalizálható, az alábbi felsorolás
     Ez alól az irányelv alól egyedül a [COMBINEVALUES](/dax/combinevalues-function-dax) DAX-függvény használata képez kivételt. Ennek a függvénynek a rendeltetése a többoszlopos modellkapcsolatok támogatása. A kapcsolatban használandó kifejezés helyett ez egy többoszlopos illesztési SQL-predikátumot generál.
 - **Az „egyedi azonosító” típusú oszlopokra épülő kapcsolatok kerülése:** A Power BI nem támogatja natív módon az egyedi azonosító (GUID) adattípust. Ilyen típusú oszlopok közötti kapcsolat definiálásakor a Power BI egy explicit típuskonverziót tartalmazó forráslekérdezést generál. Az a lekérdezés során végzett adatkonverzió általában alacsony teljesítményt eredményez. Amíg nem kerül sor ennek az esetnek az optimalizálására, az egyetlen megkerülő megoldás az lesz, ha az alapul szolgáló adatbázisban más adattípust adunk meg az oszlopokhoz.
 - **A kapcsolatok egy-oldalához tartozó oszlop elrejtése:** A kapcsolatok egy-oldalához tartozó oszlopot érdemes elrejteni. (Ez általában a dimenziótáblák elsődleges kulcsoszlopa.) Ha ez el van rejtve, akkor nem érhető el a **Mezők** panelen, így nem használható vizualizációk konfigurálásához. A több-oldali oszlop látható maradhat, ha hasznos a jelentéseknek az oszlop értékei alapján történő csoportosítása vagy szűrése. Tegyük fel például, hogy egy modellben kapcsolat áll fenn az **Értékesítések** és a **Termék** tábla között. A kapcsolat oszlopai SKU (termékváltozat) értékeket tartalmaznak. Ha termékváltozatot is fel kell venni a vizualizációkhoz, annak csak az **Értékesítések** táblában szabad látszania. Ha ennek az oszlopnak a használatával szűr vagy csoportosít egy vizualizációt, a Power BI olyan lekérdezést generál, amelynek nem kell összekapcsolnia az **Értékesítések** és a **Termék** táblát.
-- **A kapcsolatok beállítása az integritás biztosításához:** A DirectQuery-kapcsolatok **Hivatkozási integritás feltételezése** tulajdonsága határozza meg, hogy a Power BI külső illesztés helyett belső illesztéssel generálja a forráslekérdezéseket. Ez rendszerint javítja a lekérdezések teljesítményét, bár ez a relációs adatbázis forrásának pontos jellemzőitől is függ. További információ: [Hivatkozási integritás feltételezésének beállításai a Power BI Desktopban](../desktop-assume-referential-integrity.md).
-- **Kapcsolatok kétirányú szűrésének elkerülése:** A kapcsolatok kétirányú szűrése olyan lekérdezési utasításokhoz vezethet, melyek teljesítménye nem megfelelő. Ezt a kapcsolati funkciót csak szükség esetén használja, ami általában akkor fordul elő, ha több-a-többhöz kapcsolatot implementál egy áthidaló táblában. További információ: [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](../desktop-many-to-many-relationships.md).
+- **A kapcsolatok beállítása az integritás biztosításához:** A DirectQuery-kapcsolatok **Hivatkozási integritás feltételezése** tulajdonsága határozza meg, hogy a Power BI külső illesztés helyett belső illesztéssel generálja a forráslekérdezéseket. Ez rendszerint javítja a lekérdezések teljesítményét, bár ez a relációs adatbázis forrásának pontos jellemzőitől is függ. További információ: [Hivatkozási integritás feltételezésének beállításai a Power BI Desktopban](../connect-data/desktop-assume-referential-integrity.md).
+- **Kapcsolatok kétirányú szűrésének elkerülése:** A kapcsolatok kétirányú szűrése olyan lekérdezési utasításokhoz vezethet, melyek teljesítménye nem megfelelő. Ezt a kapcsolati funkciót csak szükség esetén használja, ami általában akkor fordul elő, ha több-a-többhöz kapcsolatot implementál egy áthidaló táblában. További információ: [Több-a-többhöz számosságú kapcsolatok a Power BI Desktopban](../transform-model/desktop-many-to-many-relationships.md).
 - **Párhuzamos lekérdezések korlátozása:** Beállíthatja a DirectQuery által az egyes mögöttes adatforrások felé megnyitott kapcsolatok maximális számát. Ez az adatforrásba egyidejűleg küldött lekérdezések számát szabályozza.
 
     ![A Power BI Desktop megnyitott ablaka, amelyen a Aktuális fájl DirectQuery oldala van kiválasztva. A Kapcsolatok maximális száma adatforrásonként tulajdonság ki van emelve.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
@@ -121,9 +121,9 @@ A fenti optimalizálási technikák mellett a következő jelentéskészítési 
 
 ## <a name="convert-to-a-composite-model"></a>Összetett modellre konvertálás
 
-Az Importálás és a DirectQuery modell előnyei egyetlen modellben egyesíthetők a modelltáblák tárolási módjának konfigurálásával. A tábla tárolási módja lehet Importálás, DirectQuery vagy mindkettő, az úgynevezett Kettős módban. Az eltérő tárolási módú táblákat tartalmazó modelleket összetett modellnek nevezzük. További információ: [Összetett modellek használata a Power BI Desktopban](../desktop-composite-models.md).
+Az Importálás és a DirectQuery modell előnyei egyetlen modellben egyesíthetők a modelltáblák tárolási módjának konfigurálásával. A tábla tárolási módja lehet Importálás, DirectQuery vagy mindkettő, az úgynevezett Kettős módban. Az eltérő tárolási módú táblákat tartalmazó modelleket összetett modellnek nevezzük. További információ: [Összetett modellek használata a Power BI Desktopban](../transform-model/desktop-composite-models.md).
 
-Sokféle funkcionális és teljesítménybeli javítás érhető el egy DirectQuery-modell összetett modellé konvertálásával. Az összetett modellek több DirectQuery-forrást is integrálhatnak, és összesítéseket is tartalmazhatnak. Felvehetők a DirectQuery-táblák összesítő táblái a tábla összesített megfelelőjének importálásához. Ezekkel jelentősen javítható a teljesítmény, ha a vizualizációk magasabb szintű összesítéseket kérdeznek le. További információ: [Összesítések a Power BI Desktopban](../desktop-aggregations.md).
+Sokféle funkcionális és teljesítménybeli javítás érhető el egy DirectQuery-modell összetett modellé konvertálásával. Az összetett modellek több DirectQuery-forrást is integrálhatnak, és összesítéseket is tartalmazhatnak. Felvehetők a DirectQuery-táblák összesítő táblái a tábla összesített megfelelőjének importálásához. Ezekkel jelentősen javítható a teljesítmény, ha a vizualizációk magasabb szintű összesítéseket kérdeznek le. További információ: [Összesítések a Power BI Desktopban](../transform-model/desktop-aggregations.md).
 
 ## <a name="educate-users"></a>Felhasználók oktatása
 
@@ -137,7 +137,7 @@ Ha gyakran változó adatforrásokra épülő jelentéseket ad át, mindenképpe
 
 Ha többet szeretne megtudni a DirectQueryről, tekintse át a következő forrásanyagokat:
 
-- [DirectQuery-modellek a Power BI Desktopban](../desktop-directquery-about.md)
-- [A DirectQuery használata a Power BI Desktopban](../desktop-use-directquery.md)
-- [DirectQuery-modell hibaelhárítása a Power BI Desktopban](../desktop-directquery-troubleshoot.md)
+- [DirectQuery-modellek a Power BI Desktopban](../connect-data/desktop-directquery-about.md)
+- [A DirectQuery használata a Power BI Desktopban](../connect-data/desktop-use-directquery.md)
+- [DirectQuery-modell hibaelhárítása a Power BI Desktopban](../connect-data/desktop-directquery-troubleshoot.md)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
