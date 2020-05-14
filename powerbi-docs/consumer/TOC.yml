@@ -72,6 +72,8 @@
               href: end-user-bookmarks.md
             - name: Kiemelés hozzáadása jelentéshez
               href: end-user-spotlight.md
+            - name: Vizualizáció személyre szabása
+              href: end-user-personalize-visuals.md
             - name: Többoldalas jelentések a Power BI-ban
               items:
                 - name: Oldalakra osztott jelentések
