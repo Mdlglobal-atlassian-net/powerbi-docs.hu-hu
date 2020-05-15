@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: ff8b6a139d0088b2ff2acc8f73b75431e500ba51
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4454269803c45948c21c4448ab76b5397d3388b2
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279089"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407518"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -29,7 +29,7 @@ ms.locfileid: "83279089"
 > [!NOTE]
 > A tanulmányt a böngésző **Nyomtatás** > **Mentés PDF-ként** lehetőségével mentheti vagy kinyomtathatja.
 
-## <a name="introduction"></a>Introduction (Bevezetés)
+## <a name="introduction"></a>Bevezetés
 
 A **Power BI** a Microsoft egy online szoftverszolgáltatása (_SaaS_ vagy szolgáltatott szoftver), amellyel könnyen és gyorsan létrehozhat önkiszolgáló üzletiintelligencia-irányítópultokat, jelentéseket, adatkészleteket és vizualizációkat. A Power BI szolgáltatással számos különböző adatforráshoz csatlakozhat, egyesítheti és formálhatja a kapcsolatokból származó adatokat, valamint másokkal megosztható jelentéseket és irányítópultokat hozhat létre.
 
@@ -263,7 +263,7 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
     &ensp;&ensp;a. Az Office 365-höz készült Excel-jelentések esetében semmit nem gyorsítótáraz a rendszer.
 
-    &ensp;&ensp;b. A Power BI-jelentések esetében a megjelenített vizualizációk adatainak gyorsítótárazása titkosítva történik az Azure SQL Database szolgáltatásban.
+    &ensp;&ensp;b. Power BI jelentésekben a jelentések vizualizációinak adattartalmát a rendszer gyorsítótárazza, és az alábbi szakaszban ismertetett vizualizációs adatgyorsítótárban tárolja.
  
 
 4. A Power BI-ban közzétett eredeti Power BI Desktop (.pbix) vagy Excel (.xlsx) fájlok
@@ -272,11 +272,20 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Irányítópultok és irányítópult-csempék
 
-1. Gyorsítótárak – Az irányítópultok vizualizációihoz szükséges adatok általában az Azure SQL Database szolgáltatásban vannak titkosítva gyorsítótárazva és tárolva. Más csempéket, mint például az Excelből vagy SQL Server Reporting Services-ből (SSRS) kitűzött vizualizációkat a rendszer kép formájában, szintén titkosítva tárolja az Azure Blobban.
+1. Gyorsítótárak – az irányítópulton található vizualizációk által igényelt információk általában gyorsítótárazva vannak, és az alábbi szakaszban ismertetett vizualizációs adatgyorsítótárban tárolódnak. Más csempéket, mint például az Excelből vagy SQL Server Reporting Services-ből (SSRS) kitűzött vizualizációkat a rendszer kép formájában, szintén titkosítva tárolja az Azure Blobban.
 
 2. Statikus adattárolók – olyan összetevőket tartalmaz, mint például a háttérképek, valamint az Azure Blob Storage-ban tárolt, titkosított Power BI vizualizációk.
 
-Az alkalmazott titkosítási módszertől függetlenül, az ügyfelek nevében a Microsoft a kulcstitkosítás felügyeletéhez vagy egy titkoskód-tárolót, vagy az Azure Key Vaultot használja.
+A használt titkosítási módszertől függetlenül a Microsoft kezeli a kulcs titkosítását az ügyfelek nevében.
+
+#### <a name="visual-data-cache"></a>Vizualizációs adatgyorsítótár
+
+A vizualizációs adatokat a rendszer a különböző helyszíneken gyorsítótárazza attól függően, hogy az adatkészlet Power BI Premium kapacitáson fut-e. A kapacitáson kívüli adatkészletek esetében a rendszer gyorsítótárazza és titkosítja a vizualizációs adatokat egy Azure SQL Database. A kapacitásban üzemeltetett adatkészletek esetében a vizualizációs adatokat a következő helyszíneken lehet gyorsítótárazni:
+
+* Azure Blob Storage
+* Prémium szintű Azure-fájlok
+* A Power BI Premium kapacitás csomópont
+
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Permanens eszközökön tárolt ideiglenes adatok
 
