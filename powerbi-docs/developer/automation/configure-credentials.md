@@ -135,7 +135,7 @@ Az alábbi lépések végrehajtásával programozott módon konfigurálhat hitel
 
 ## <a name="credential-types"></a>Hitelesítő adatok típusai
 
-Ha egy [vállalati helyszíni átjárón](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) a [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) használatával az **Adatforrás létrehozása** vagy az [Adatforrás frissítése](https://docs.microsoft.com/rest/api/power-bi/) utasítást hívja, a hitelesítő adatokat az átjáró nyilvános kulcsával kell titkosítani.
+Ha egy **vállalati helyszíni átjárón[ a [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/) használatával az ](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource)Adatforrás létrehozása[ vagy az ](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource)Adatforrás frissítése** utasítást hívja, a hitelesítő adatokat az átjáró nyilvános kulcsával kell titkosítani.
 
 >[!NOTE]
 >A .NET SDK v3 az alább felsorolt .NET SDK v2-példákat is futtathatja.

@@ -49,7 +49,7 @@ A teljes példáért lásd a [Power BI-vizualizációk](https://github.com/micro
 ## <a name="css-framework"></a>CSS-keretrendszer
 
 1. Telepítsen egy külső CSS-keretrendszert egy tetszőleges csomagkezelő, például az *npm* vagy a *yarn* használatával.
-2. Foglalja bele az `.less` utasítást a vizualizáció `import` fájljába.
+2. Foglalja bele az `import` utasítást a vizualizáció `.less` fájljába.
 
 ### <a name="installing-bootstrap"></a>Bootstrap telepítése
 

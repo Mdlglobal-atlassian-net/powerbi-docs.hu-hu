@@ -150,7 +150,7 @@ export class Visual implements IVisual {
 }
 ```
 
-`update` létrehozásához frissítse a vizualizáció `button` metódusát:
+`button` létrehozásához frissítse a vizualizáció `update` metódusát:
 
 ```typescript
 export class Visual implements IVisual {

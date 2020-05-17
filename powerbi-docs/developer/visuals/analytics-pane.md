@@ -25,7 +25,7 @@ Ez a cikk azt ismerteti, hogy hogyan jeleníthetik meg és kezelhetik tulajdons�
 
 ## <a name="manage-the-analytics-pane"></a>Az Elemzés panel kezelése
 
-Az [Elemzés**panel kezelése a tulajdonságok**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options)Formátum **panelen** végzett kezeléséhez hasonlóan, a vizualizáció *capabilities.json* fájljában definiált objektummal végezhető.
+Az **Elemzés** panel kezelése a tulajdonságok [**Formátum** panelen](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options) végzett kezeléséhez hasonlóan, a vizualizáció *capabilities.json* fájljában definiált objektummal végezhető.
 
 Az **Elemzés** panel esetében az eltérések a következők:
 

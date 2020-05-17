@@ -18,7 +18,7 @@ ms.locfileid: "79380755"
 ---
 # <a name="add-context-menu-to-power-bi-visual"></a>Környezeti menü felvétele Power BI-vizualizációba
 
-A `selectionManager.showContextMenu()` paraméterekkel és pozícióval (például `selectionId` objektummal) használt `{x:, y:}` metódussal elérheti, hogy a Power BI helyi menüt jelenítsen meg a vizualizációhoz.
+A `selectionId` paraméterekkel és pozícióval (például `{x:, y:}` objektummal) használt `selectionManager.showContextMenu()` metódussal elérheti, hogy a Power BI helyi menüt jelenítsen meg a vizualizációhoz.
 
 > [!IMPORTANT]
 > A `selectionManager.showContextMenu()` a Vizualizációk API 2.2.0 verziójában lett bevezetve.

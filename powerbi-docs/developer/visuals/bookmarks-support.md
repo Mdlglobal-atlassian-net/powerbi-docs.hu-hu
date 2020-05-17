@@ -29,7 +29,7 @@ Ha a vizualizáció más vizualizációkkal áll kölcsönhatásban, más vizual
 
 1. Telepítse (vagy frissítse) a szükséges segédprogramot ([powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/)) a 3.0.0 vagy újabb verzióra. Ez további, állapotkijelöléssel vagy szűréssel kezelhető osztályokat tartalmaz. Szűrővizualizációkhoz és az `InteractivityService` modult használó vizualizációkhoz szükséges.
 
-2. Frissítse a vizualizáció API-ját az 1.11.0 verzióra, hogy használhassa a `registerOnSelectCallback`-et a `SelectionManager` egy példányában. Olyan nem szűrő vizualizációkhoz szükséges, amelyek az `SelectionManager` helyett a `InteractivityService`-t használják.
+2. Frissítse a vizualizáció API-ját az 1.11.0 verzióra, hogy használhassa a `registerOnSelectCallback`-et a `SelectionManager` egy példányában. Olyan nem szűrő vizualizációkhoz szükséges, amelyek az `InteractivityService` helyett a `SelectionManager`-t használják.
 
 ### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Power BI-vizualizációk kölcsönhatása a Power BI-jal a jelentések könyvjelzőkiben
 
@@ -80,7 +80,7 @@ visualDataPoints.push({
 });
 ```
 
-Most már adott a `visualDataPoints` adatpontokként, valamint a `ids` függvénynek átadott `callback` tömb.
+Most már adott a `visualDataPoints` adatpontokként, valamint a `callback` függvénynek átadott `ids` tömb.
 
 Ezen a ponton a vizualizációnak össze kell hasonlítania az `ISelectionId[]` tömböt a `visualDataPoints` tömbben lévő kijelölésekkel, és kijelöltként kell megjelölnie a megfelelő adatpontokat.
 

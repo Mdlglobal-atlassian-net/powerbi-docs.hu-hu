@@ -25,7 +25,7 @@ Segítségre van szüksége a Power BI szolgáltatás Jelentéskészítőjének 
   
 ## <a name="system-requirements"></a>System requirements (Rendszerkövetelmények)
   
- Tekintse meg a **Jelentéskészítő letöltési oldalának** [Rendszerkövetelmények](https://go.microsoft.com/fwlink/?LinkID=734968) szakaszát a Microsoft letöltőközpontban.
+ Tekintse meg a [Jelentéskészítő letöltési oldalának](https://go.microsoft.com/fwlink/?LinkID=734968)**Rendszerkövetelmények** szakaszát a Microsoft letöltőközpontban.
  
 ## <a name="install-report-builder-from-a-web-portal"></a>A Jelentéskészítő telepítése egy webportálról
   

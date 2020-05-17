@@ -46,7 +46,7 @@ Az elérhető műveletek a tartalom *tervezője* által hozzárendelt beállít�
 * [Irányítópult, jelentés vagy alkalmazás kedvencként való megjelöléséhez](end-user-favorite.md) kattintson a ![csillag ikonra](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Egyes irányítópultok és jelentések újból megoszthatók  ![megosztás ikon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Jelentés megnyitása az Excelben](end-user-export.md) ![exportálás az Excelbe ikon](./media/end-user-shared-with-me/power-bi-excel.png) 
-* Az [elemzések ikonnal](end-user-insights.md) megtekintheti a Power BI által az adatokon végzett ![elemzéseket](./media/end-user-shared-with-me/power-bi-insights.png).
+* Az ![elemzések ikonnal](./media/end-user-shared-with-me/power-bi-insights.png) megtekintheti a Power BI által az adatokon végzett [elemzéseket](end-user-insights.md).
 * Emellett, hosszú listák esetén [a keresőmező és a szűrési lehetőségek használatával kereshet](end-user-search-sort.md). Ha meg szeretné tudni, hogy egy oszlop rendezhető-e, helyezze fölé a kurzort, és várja meg, hogy megjelenik-e egy nyíl. Ebben a példában a **Legutóbbi hozzáférés** fölé helyezett kurzor megjelenít egy nyilat, a legutóbbi tartalmak így a hozzáférés dátuma szerint rendezhetők. 
 
     ![az összes legutóbbi tartalom rendezése](./media/end-user-recent/power-bi-recent-sort.png)

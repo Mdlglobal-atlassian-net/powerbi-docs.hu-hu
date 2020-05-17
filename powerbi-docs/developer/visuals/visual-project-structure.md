@@ -102,7 +102,7 @@ Ha egy metaadat-bejegyzéseket ismertető megjegyzésekkel ellátott `pbiviz.jso
 
 Konfigurációs fájl a [TypeScripthez](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-A fájlnak tartalmaznia annak a **\*.ts** fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `visualClassName` fájlban, a `pbiviz.json` tulajdonság által megadott helyen.
+A fájlnak tartalmaznia annak a **\*.ts** fájlnak az elérési útját, ahol a vizualizáció fő osztálya megtalálható a `pbiviz.json` fájlban, a `visualClassName` tulajdonság által megadott helyen.
 
 ### <a name="tslintjson"></a>tslint.json
 

@@ -203,7 +203,7 @@ A `SelectableDataPoint` már tartalmazza az alább ismertetett tulajdonságokat.
     }
     ```
 
-6. A kijelöléskezelő `contextmenu` metódusának meghívásához adjon hozzá egy hasonló kezelőt a `showContextMenu` eseményhez.
+6. A kijelöléskezelő `showContextMenu` metódusának meghívásához adjon hozzá egy hasonló kezelőt a `contextmenu` eseményhez.
 
     ```typescript
     protected bindContextMenu() {

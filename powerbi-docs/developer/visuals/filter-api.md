@@ -19,7 +19,7 @@ ms.locfileid: "80114106"
 
 A Vizualizációs szűrők API az adatok szűrését teszi lehetővé Power BI-vizualizációkban. A más kijelölésekkel szembeni fő különbség az, hogy más vizualizációk a kiemelés támogatása ellenére is tetszőlegesen szűrhetők.
 
-A vizualizáció szűrésének engedélyezéséhez annak tartalmaznia kell egy `filter` objektumot a `general`capabilities.json*kód* szakaszában.
+A vizualizáció szűrésének engedélyezéséhez annak tartalmaznia kell egy `filter` objektumot a *capabilities.json* kód `general` szakaszában.
 
 ```json
 "objects": {

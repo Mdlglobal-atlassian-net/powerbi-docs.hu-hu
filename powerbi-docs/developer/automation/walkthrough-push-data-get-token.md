@@ -23,7 +23,7 @@ Az 1. lépésben [regisztrált egy ügyfélalkalmazást az Azure AD-ben](../embe
 
 ## <a name="get-an-authentication-access-token"></a>Hitelesítési hozzáférési jogkivonat beszerzése
 
-A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](../embedded/register-app.md) sorozat [előző lépését](walkthrough-push-data.md). 
+A kezdés előtt győződjön meg róla, hogy elvégezte az [Adatok leküldése Power BI-adatkészletekbe](walkthrough-push-data.md) sorozat [előző lépését](../embedded/register-app.md). 
 
 Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
@@ -39,7 +39,7 @@ Ehhez az eljáráshoz a Visual Studio 2015 vagy újabb verziója szükséges.
 
 3. Adja hozzá a lépések után található mintakódot a Program.cs fájlhoz.
 
-4. Cserélje le a „{ClientID}” kifejezést az **előző cikkben** az alkalmazás regisztrálásakor kapott [ügyfél-azonosítóra](../embedded/register-app.md).
+4. Cserélje le a „{ClientID}” kifejezést az [előző cikkben](../embedded/register-app.md) az alkalmazás regisztrálásakor kapott **ügyfél-azonosítóra**.
 
 5. Futtassa a Konzolalkalmazást, és jelentkezzen be a Power BI-fiókjába. 
 
