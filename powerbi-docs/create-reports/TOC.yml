@@ -339,6 +339,8 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Paraméterek létrehozása
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Jelentésnézetek beállítása
+              href: ../paginated-reports/page-view.md
             - name: Segédjelentések
               href: ../paginated-reports/subreports.md
             - name: Segédjelentések hibaelhárítása

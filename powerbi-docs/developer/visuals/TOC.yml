@@ -20,7 +20,7 @@
           href: custom-visual-develop-tutorial-format-options.md
         - name: Egységtesztek hozzáadása vizualizációs projekthez
           href: unit-tests-introduction.md
-    - name: Fogalmak
+    - name: Alapelvek
       items:
         - name: A Power BI-vizualizáció projekt szerkezete
           href: visual-project-structure.md
@@ -44,7 +44,7 @@
           href: advanced-edit-mode.md
         - name: A supportsKeyboardFocus funkció
           href: supportskeyboardfocus-feature.md
-        - name: supportsMultiVisualSelection-feature.md
+        - name: A supportsMultiVisualSelection funkció
           href: supportsmultivisualselection-feature.md
     - name: Útmutató
       items:
@@ -88,7 +88,7 @@
           href: mobile-development.md
         - name: Power BI-vizualizációk hibáinak elhárítása
           href: power-bi-custom-visuals-troubleshoot.md
-    - name: Hivatkozás
+    - name: Referencia
       items:
         - name: Változásnapló
           href: changelog.md
@@ -130,9 +130,9 @@
               href: utils-tooltip.md
             - name: Adatnézeti eszközök
               href: utils-dataview.md
-    - name: Erőforrások
+    - name: További források
       items:
-        - name: Fejlesztői központ
+        - name: Fejlesztési központ
           href: 'https://powerbi.microsoft.com/developers/'
         - name: Minták a Power BI-vizualizációkhoz
           href: samples.md
