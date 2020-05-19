@@ -13,12 +13,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/31/2020
-  ms.openlocfilehash: 57fd08720d908ac67e383b91239e44373b1e586f
-  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+  ms.openlocfilehash: 1c5195e94752f0eead4b123d6a4055696e0f7d31
+  ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
   ms.translationtype: HT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 05/13/2020
-  ms.locfileid: "83348758"
+  ms.lasthandoff: 05/19/2020
+  ms.locfileid: "83565948"
 highlightedContent:
   items:
   - title: COVID-19-jelentés létrehozása USA-beli adatokkal
@@ -35,7 +35,7 @@ highlightedContent:
     url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
 conceptualContent:
   items:
-  - title: 'A Power BI: Első lépések'
+  - title: 'A Power BI: Bevezetés'
     links:
     - url: fundamentals/power-bi-overview.md
       itemType: overview
@@ -43,12 +43,12 @@ conceptualContent:
     - url: fundamentals/desktop-what-is-desktop.md
       itemType: overview
       text: Mi az a Power BI Desktop?
-    - url: fundamentals/power-bi-service-overview.md
+    - url: fundamentals/power-bi-overview.md
       itemType: overview
       text: Mi az a Power BI szolgáltatás?
     footerLink:
       url: fundamentals/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: A Power BI felhasználók számára
     links:
     - url: consumer/end-user-consumer.md
@@ -62,7 +62,7 @@ conceptualContent:
       text: Mi az az irányítópult?
     footerLink:
       url: consumer/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Power BI felügyelete
     links:
     - url: admin/service-admin-administering-power-bi-in-your-organization.md
@@ -76,7 +76,7 @@ conceptualContent:
       text: Felügyeleti portál
     footerLink:
       url: admin/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Fejlesztés a Power BI-ban
     links:
     - url: developer/embedded/index.yml
@@ -87,10 +87,10 @@ conceptualContent:
       text: Power BI-vizualizációk
     - url: developer/automation/index.yml
       itemType: overview
-      text: Automatizálás
+      text: Automation
     footerLink:
       url: developer/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Csatlakozás adatokhoz
     links:
     - url: connect-data/desktop-quickstart-connect-to-data.md
@@ -104,7 +104,7 @@ conceptualContent:
       text: Adatfrissítés
     footerLink:
       url: connect-data/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Adatok átalakítása
     links:
     - url: transform-model/desktop-analytics-pane.md
@@ -118,7 +118,7 @@ conceptualContent:
       text: Adatok formázása és egyesítése
     footerLink:
       url: transform-model/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Adatmodellezés
     links:
     - url: create-reports/desktop-add-custom-column.md
@@ -132,7 +132,7 @@ conceptualContent:
       text: Kapcsolatok létrehozása és kezelése
     footerLink:
       url: transform-model/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Jelentések és irányítópultok létrehozása
     links:
     - url: create-reports/desktop-report-themes.md
@@ -146,7 +146,7 @@ conceptualContent:
       text: Irányítópult létrehozása
     footerLink:
       url: create-reports/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Közös használat és tartalommegosztás
     links:
     - url: collaborate-share/service-share-dashboards.md
@@ -160,7 +160,7 @@ conceptualContent:
       text: Megosztott adatkészletek – bevezetés
     footerLink:
       url: collaborate-share/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Integrálás termékek között
     links:
     - url: connect-data/service-azure-and-power-bi.md
@@ -174,7 +174,7 @@ conceptualContent:
       text: Beágyazás SharePoint Online-ba
     footerLink:
       url: collaborate-share/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: A Power BI mobilalkalmazásokban
     links:
     - url: consumer/mobile/mobile-apps-for-mobile-devices.md
@@ -188,12 +188,12 @@ conceptualContent:
       text: Helyszíni jelentések megtekintése
     footerLink:
       url: consumer/mobile/index.yml
-      text: Több megjelenítése
-  - title: Nagyvállalati szektor
+      text: Részletek
+  - title: Enterprise
     links:
     - url: admin/service-premium-what-is.md
       itemType: overview
-      text: Mi az a Power BI Premium?
+      text: Mi a Power BI Premium?
     - url: admin/service-admin-power-bi-security.md
       itemType: concept
       text: Biztonság
@@ -202,7 +202,7 @@ conceptualContent:
       text: Adatvédelem
     footerLink:
       url: admin/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Útmutató az ajánlott eljárásokhoz
     links:
     - url: guidance/overview.md
@@ -216,7 +216,7 @@ conceptualContent:
       text: Az adatmodell méretének csökkentése
     footerLink:
       url: guidance/index.yml
-      text: Több megjelenítése
+      text: Részletek
   - title: Learning-katalógus
     links:
     - url: learning-catalog/learning-catalog-bdm.md
@@ -230,7 +230,7 @@ conceptualContent:
       text: Megoldáskészítők
     footerLink:
       url: learning-catalog/index.yml
-      text: Több megjelenítése
+      text: Részletek
 additionalContent:
   sections:
   - title: Kapcsolódó eszközök
@@ -238,7 +238,7 @@ additionalContent:
     - title: Power BI jelentéskészítő kiszolgáló
       summary: Ismerje meg a Power BI jelentéskészítő kiszolgálót, amely helyszíni jelentéskészítő kiszolgáló olyan webes portállal, amelyen megjeleníthetők és kezelhetők a Power BI-jelentések, a lapszámozott jelentések és a főbb teljesítménymutatók (KPI-k).
       url: report-server/index.yml
-    - title: Power BI REST API-k
+    - title: A Power BI REST API-jai
       summary: A Power BI REST API-k szolgáltatásvégpontokat biztosítanak a beágyazáshoz, a felügyelethez és a felhasználói erőforrásokhoz.
       url: https://docs.microsoft.com/rest/api/power-bi/
     - title: A Power Platform dokumentációja

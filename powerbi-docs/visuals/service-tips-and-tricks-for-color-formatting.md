@@ -6,20 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895000"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276605"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tippek és trükkök a színformázáshoz a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 A Power BI sokféle lehetőséget kínál, amelyekkel egyedivé tehetők az irányítópultok és a jelentések. Ez a cikk néhány olyan ötletet fejt ki részletesen, amelyek segítségével meggyőzőbb, érdekesebb és az Ön igényeinek jobban megfelelő Power BI-vizualizációkat készíthet.
 
-A következő tippeket kínáljuk Önnek. Van egy másik remek ötlete? Kitűnő! Küldje el nekünk, és talán hozzáadjuk ehhez a listához.
+A következő tippeket kínáljuk Önnek. Van egy másik remek ötlete? Nagyszerű! Küldje el nekünk, és talán hozzáadjuk ehhez a listához.
 
 * Téma alkalmazása a teljes jelentésre
 * Egy adatpont színének módosítása
@@ -40,7 +43,7 @@ Amikor a jelentésvászon jobb oldalán megjelenik a **Szűrők** és **Vizualiz
 ![jelentésvászon szerkesztési nézetben](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="apply-a-theme"></a>Téma alkalmazása
-A jelentéstémák használatával olyan tervezési módosításokat hajthat végre az egész jelentésen, mint a vállalati színek, a változó ikonkészletek, vagy egy új alapértelmezett vizualizációs formázás. Jelentéstéma alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit és formázását fogja használni. További információért olvassa el a [Jelentéstémák használata](../desktop-report-themes.md) szakaszt
+A jelentéstémák használatával olyan tervezési módosításokat hajthat végre az egész jelentésen, mint a vállalati színek, a változó ikonkészletek, vagy egy új alapértelmezett vizualizációs formázás. Jelentéstéma alkalmazásakor a jelentésben szereplő összes vizualizáció a kiválasztott téma színeit és formázását fogja használni. További információért olvassa el a [Jelentéstémák használata](../create-reports/desktop-report-themes.md) szakaszt
 
 ![Téma ikon módosítása a menüsávon](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
 
@@ -149,6 +152,8 @@ Ha el szeretné vetni a Formázás kártyán végzett összes módosítást, vá
 ## <a name="feedback"></a>Visszajelzés
 Van egy tippje, amelyet szívesen megosztana másokkal? Kérjük, küldje el nekünk, és megvizsgáljuk, hozzáadhatjuk-e ehhez a listához.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+[Jelentések megosztása](../collaborate-share/service-share-reports.md).
 

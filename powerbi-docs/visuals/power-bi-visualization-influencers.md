@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e7c59ddd15a85eeabe0edae6d6a9649f56092ab7
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885332"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141424"
 ---
 # <a name="create-key-influencers-visualizations"></a>Főbb befolyásolók vizualizációinak létrehozása
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -401,7 +403,7 @@ A vizualizáció az összes magyarázó tényezőt együttesen értékeli. Mikö
 - Lehetséges, hogy a hálószoba ebben az esetben nem annyira fontos tényező, mint mielőtt figyelembe vettük a ház méretét. 
 
 
-
+A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie. Lásd a [jelentések megosztását](../collaborate-share/service-share-reports.md) ismertető szakaszt.
 
 ## <a name="next-steps"></a>Következő lépések
 - [Kombinált diagramok a Power BI-ban](power-bi-visualization-combo-chart.md)

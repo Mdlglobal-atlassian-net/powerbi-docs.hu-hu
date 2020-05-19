@@ -7,18 +7,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 59685b4c3ceab4b60cba92ec1d3924b902c1426a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5783df071830cdb19ef124ebb908f53955823c69
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77115308"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83130954"
 ---
 # <a name="interact-with-arcgis-maps-in-power-bi"></a>ArcGIS-térképek használata a Power BI-ban
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
+
 Ez a témakör az ArcGIS-térképet a Power BI szolgáltatás, a Desktop alkalmazás vagy a mobilalkalmazás felületén használó felhasználó szemszögéből van megírva. Ha egy ArcGIS Maps for Power BI-vizualizációt a tervezője megoszt Önnel, számos különféle módon használhatja a vizualizációt.  További információ az ArcGIS-térképek létrehozásáról: [Az Esri ArcGIS-térképeinek oktatóanyaga](../visuals/power-bi-visualization-arcgis.md).
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie. Lásd a [jelentések megosztását](../collaborate-share/service-share-reports.md) ismertető szakaszt.
 
 Az ArcGIS-térképek és a Power BI együttes használata új lehetőségeket kínál a térképkezelésben, amelyek messze túlmutatnak a pontok térképeken való elhelyezésén. A jelentéstervezők egy térképpel kezdenek, amelyhez demográfiai adatok rétegeit csatolják. A térképen megjelenített helyalapú adatrétegek (például népszámlálási adatok) és a térbeli elemzés egyesítésével jobban megértheti a vizualizációkban szereplő adatokat.
 

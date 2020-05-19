@@ -12,7 +12,7 @@
       expanded: true
       items:
         - name: 'Online kurzus: Oldalakra osztott jelentések'
-          href: ../paginated-reports/paginated-reports-online-course.md
+          href: ../learning-catalog/paginated-reports-online-course.md
         - name: Többoldalas jelentés készítése és feltöltése
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Minták

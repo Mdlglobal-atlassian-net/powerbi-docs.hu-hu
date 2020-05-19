@@ -7,23 +7,26 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4cad37b9d4a7bf9e74a29312786a02b26fce5463
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496516"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83382761"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Oktatóanyag: Riasztások beállítása Power BI-irányítópultokon
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai a beállított korlátok alá vagy fölé esnek. A riasztások működnek a mérőműszereken, KPI-ken és a kártyákon. Ezt a funkciót még fejlesztjük, ezért olvassa el [az alábbi Tippek és hibaelhárítás szakaszt](#tips-and-troubleshooting).
+Riasztásokat állíthat be, amelyek figyelmeztetik, ha az irányítópultjain lévő adatok változásai a beállított korlátok alá vagy fölé esnek. Csak a jelentések vizualizációiról rögzített csempéken, és kizárólag mérőműszerekhez, KPI-khez és kártyákhoz állíthatók be riasztások. 
+
+A *felhasználók* riasztásokat adhatnak hozzá a **Saját munkaterületen** létrehozott irányítópultokon található csempékhez. A *felhasználók* a [prémium szintű kapacitásban](end-user-license.md) velük megosztott irányítópultokon található csempékhez is hozzáadhatnak riasztásokat. Ha Power BI Pro-licenccel rendelkezik, bármely más munkaterületen lévő csempékhez is állíthat be riasztásokat.
+Ezt a funkciót még fejlesztjük, ezért olvassa el [az alábbi Tippek és hibaelhárítás szakaszt](#tips-and-troubleshooting).
 
 ![csempe, kártya, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
@@ -44,12 +47,12 @@ Ez az oktatóanyag a következőket mutatja be.
 
 Ha még nem regisztrált a Power BI-ra, a kezdés előtt [hozzon létre egy ingyenes próbaverziós fiókot](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-Ebben a példában egy irányítópult kártyacsempéjét használjuk az Értékesítés és Marketing mintaalkalmazásból. Ez az alkalmazás a [Microsoft AppSource-on](https://appsource.microsoft.com) érhető el. Az alkalmazás beszerzésével kapcsolatban az [Alkalmazások telepítése és használata a Power BI-ban](end-user-app-view.md) című témakörben tájékozódhat.
+Ebben a példában egy irányítópult kártyacsempéjét használjuk az Értékesítés és Marketing mintaalkalmazásból. Ez az alkalmazás a [Microsoft AppSource-on](https://appsource.microsoft.com) érhető el. Az alkalmazás beszerzéséhez az [értékesítési és marketingalkalmazás telepítését és használatát](end-user-app-marketing.md) ismertető cikk nyújt segítséget.
 
 1. Az irányítópult egyik mérőműszer-, KPI- vagy kártyacsempéjén kattintson a három pontra (…).
    
    ![kártyacsempe](media/end-user-alerts/power-bi-cards.png)
-2. A harang ikon ![riasztás ikon](media/end-user-alerts/power-bi-bell-icon.png) vagy a **Riasztások kezelése** kiválasztásával adhat hozzá egy vagy több riasztást a **Total Stores** (Összes üzlet) csempéhez.
+2. A harang ikon ![riasztás ikon](media/end-user-alerts/power-bi-bell-icon.png) vagy a **Riasztások kezelése** lehetőség kiválasztásával adhat hozzá egy vagy több riasztást a **% Units market share** (Egységek piaci részesedése %-ban) csempéhez.
 
    ![kártya csempéje kijelölt ellipszisekkel](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -85,7 +88,7 @@ Ezután a Power BI egy riasztást küld az Értesítési központba, valamint v�
 
 ## <a name="managing-alerts"></a>Riasztások kezelése
 
-A riasztásokat többféle módon is kezelheti: Magán az irányítópult csempén, a Power BI Beállítások menüből, az egyes csempéken a [Power BI mobilalkalmazásban iPhone-on](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), vagy [Windows 10-en a Power BI mobilalkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+A riasztásokat többféle módon is kezelheti: Az irányítópult csempéjén, a Power BI-beállítások menüjében, illetve egy adott csempén az [iPhone-on futó Power BI Mobile alkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) vagy a [Windows 10-hez készült Power BI Mobile alkalmazásban](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Magáról a csempéről
 
@@ -111,10 +114,10 @@ A riasztásokat többféle módon is kezelheti: Magán az irányítópult csemp�
 
 ## <a name="tips-and-troubleshooting"></a>Tippek és hibaelhárítás 
 
-* Riasztásokat csak mérőműszereken, KPI-ken és kártyákon lehet beállítani.
-* Ha nem tud riasztást beállítani mérőműszerre, KPI-re vagy kártyára, kérjen segítséget a rendszergazdától. Időnként a riasztások ki vannak kapcsolva, vagy nem érhetők el az irányítópulthoz vagy az irányítópult-csempék bizonyos típusaihoz.
+* Ha nem tud egy kijelzőre, KPI-re vagy kártyára vonatkozó riasztást beállítani, kérjen segítséget a bérlői rendszergazdától. Időnként a riasztások ki vannak kapcsolva, vagy nem érhetők el az irányítópulthoz vagy az irányítópult-csempék bizonyos típusaihoz.
 * A riasztások kizárólag a frissített adatokon működnek. Statikus adatokon nem. A Microsoft által megadott minták többsége statikus. 
-* Nem a *fogyasztók* hozzák létre saját irányítópultjaikat, irányítópultokat a *készítők* hoznak létre és osztanak meg a fogyasztókkal. Megosztott tartalom fogadásához és megtekintéséhez Power BI Pro vagy Prémium licenc szükséges. További információ: [Milyen licenccel rendelkezem?](end-user-license.md) 
+* Megosztott tartalom fogadásához és megtekintéséhez Power BI Pro vagy Prémium licenc szükséges. További információ: [Milyen licencem van?](end-user-license.md).
+* A riasztások olyan vizualizációkon állíthatók be, amelyeket egy jelentésből egy irányítópulton rögzített streamelési adathalmazokból hozott létre. Nem állíthatók be riasztások a közvetlenül az irányítópulton, a **Csempe hozzáadása** > **Egyéni streamelési adatok** funkcióval létrehozott csempéken.
 
 
 ## <a name="clean-up-resources"></a>Erőforrások felszabadítása

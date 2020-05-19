@@ -1,134 +1,204 @@
 ---
-title: SSL-tanúsítvány létrehozása
-description: Megoldási útmutató a tanúsítványok manuális létrehozásához a fejlesztői kiszolgáló számára
+title: SSL-tanúsítványok létrehozása Power BI-vizualizációkhoz
+description: A cikk azt ismerteti, hogyan hozhat létre SSL-tanúsítványokat a Power BI vizualizációs eszközeivel Windows, Mac és Linux rendszerű gépeken vagy manuálisan.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2019
-ms.openlocfilehash: fab40863d7beae4892a56975aa5e92c4fe5486ac
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/08/2020
+ms.openlocfilehash: 37bd8f15dcf17cd0f967e819338a719edf2a3054
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380272"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276375"
 ---
 # <a name="create-an-ssl-certificate"></a>SSL-tanúsítvány létrehozása
 
-Ez a cikk az SSL-tanúsítványok létrehozását ismerteti.
+Ez a cikk azt ismerteti, hogyan hozhat létre és telepíthet SSL- (Secure Sockets Layer-) tanúsítványokat a Power BI-vizualizációkhoz.
 
-A tanúsítvány Windows 8 vagy újabb rendszeren a PowerShell `New-SelfSignedCertificate` parancsmagjával generálható az alábbi parancsot futtatásával:
+Windows-, macOS X-és Linux-eljárások esetén telepítve kell lennie a Power BI vizualizációs eszközeit tartalmazó **pbiviz** csomagnak. További információ: [A fejlesztői környezet beállítása](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#setting-up-the-developer-environment). 
+
+## <a name="create-a-certificate-on-windows"></a>Tanúsítvány létrehozása Windows rendszeren
+
+Ha Windows 8 vagy újabb rendszeren a `New-SelfSignedCertificate` PowerShell-parancsmaggal kíván létrehozni egy tanúsítványt, futtassa a következő parancsot:
+
+```powershell
+pbiviz --install-cert
+```
+
+Windows 7 esetén az `pbiviz` eszköz megköveteli, hogy az OpenSSL segédprogram elérhető legyen a parancssorból. Az OpenSSL telepítéséhez keresse fel az [OpenSSL](https://www.openssl.org) vagy az [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) webhelyet.
+
+A tanúsítványok telepítésével kapcsolatos további információért és utasításokért lásd: [Tanúsítvány létrehozása és telepítése Windows rendszeren](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#windows).
+
+## <a name="create-a-certificate-on-macos-x"></a>Tanúsítvány létrehozása macOS X rendszeren
+
+Az OpenSSL segédprogram általában elérhető a macOS X operációs rendszerben.
+
+Az OpenSSL segédprogram az alábbi parancsok valamelyikének futtatásával is telepíthető:
+
+- A *Brew* csomagkezelőből:
+  
+  ```cmd
+  brew install openssl
+  brew link openssl --force
+  ```
+
+- A *MacPorts* használatával:
+  
+  ```cmd
+  sudo port install openssl
+  ```
+
+Miután telepítette az OpenSSL segédprogramot, futtassa az alábbi parancsot egy új tanúsítvány létrehozásához:
 
 ```cmd
 pbiviz --install-cert
 ```
 
-Windows 7 rendszerhez az eszköz az OpenSSL telepítését igényli. Az OpenSSL segédprogramnak elérhetőnek kell lennie a parancssorból.
+További információért és utasításokért lásd: [Tanúsítvány létrehozása és telepítése macOS X rendszeren](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#osx).
 
-Az OpenSSL telepítéséhez nyissa meg az [OpenSSL](https://www.openssl.org) vagy az [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) webhelyet.
+## <a name="create-a-certificate-on-linux"></a>Tanúsítvány létrehozása Linuxon
 
-## <a name="create-a-certificate-mac-os-x"></a>Tanúsítvány létrehozása (Mac OS X)
+Az OpenSSL segédprogram általában elérhető a Linux operációs rendszerben.
 
-Az OpenSSL segédprogram általában elérhető a Linux vagy a Mac OS X operációs rendszerben.
+Mielőtt elkezdené, az alábbi parancsok futtatásával győződjön meg arról, hogy az `openssl` és a `certutil` telepítve van:
 
-A segédprogram az alábbi parancsok valamelyikével is telepíthető:
-
-* A *Brew* csomagkezelőből:
-
-    ```cmd
-    brew install openssl
-    brew link openssl --force
-    ```
-
-* A *MacPorts* használatával:
-
-    ```cmd
-    sudo port install openssl
-    ```
-
-Miután telepítette az OpenSSL segédprogramot az új tanúsítvány generálásához, futtassa az alábbi parancsot:
-
-```cmd
-pbiviz --install-cert
+```sh
+which openssl
+which certutil
 ```
 
-## <a name="create-a-certificate-linux"></a>Tanúsítvány létrehozása (Linux)
+Ha az `openssl` és a `certutil` nincs telepítve, telepítse az `openssl` és a `libnss3` segédprogramokat.
 
-Ha az OpenSSL segédprogram nem érhető el a Linux operációs rendszeren, a következő parancsok valamelyikével telepítheti:
+### <a name="create-the-ssl-configuration-file"></a>SSL-konfigurációs fájl létrehozása
 
-* Az *APT* csomagkezelővel:
+Hozzon létre egy */tmp/openssl.cnf* nevű fájlt, amely az alábbi szöveget tartalmazza:
 
-    ```cmd
-    sudo apt-get install openssl
-    ```
+```
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
 
-* A *Yellowdog Updater* használatával:
-
-    ```cmd
-    yum install openssl
-    ```
-
-* A *Redhat-csomagkezelővel*:
-
-    ```cmd
-    rpm install openssl
-    ```
-
-Ha az OpenSSL segédprogram már elérhető az operációs rendszerben, a következő paranccsal generálhat új tanúsítványt:
-
-```cmd
-pbiviz --install-cert
+[ alt_names ]
+DNS.1=localhost
 ```
 
-Az OpenSSL segédprogram az [OpenSSL](https://www.openssl.org) vagy az [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) webhelyről is beszerezhető.
+### <a name="generate-root-certificate-authority"></a>Legfelső szintű hitelesítésszolgáltató létrehozása
 
-## <a name="generate-the-certificate-manually"></a>A tanúsítvány manuális generálása
+A helyi tanúsítványok aláírására szolgáló legfelső szintű hitelesítésszolgáltató (CA) létrehozásához futtassa az alábbi parancsokat:
 
-A tanúsítványok generálására bármilyen eszközt megadhat.
-
-Ha az OpenSSL segédprogram már telepítve van a rendszeren, az alábbi parancsok futtatásával generálhat új tanúsítványt:
-
-```cmd
-openssl req -x509 -newkey rsa:4096 -keyout PowerBICustomVisualTest_private.key -out PowerBICustomVisualTest_public.crt -days 365
+```sh
+touch $HOME/.rnd
+openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 -keyout /tmp/local-root-ca.key -out /tmp/local-root-ca.pem -subj "/C=US/CN=Local Root CA/O=Local Root CA"
+openssl x509 -outform pem -in /tmp/local-root-ca.pem -out /tmp/local-root-ca.crt
 ```
 
-A PowerBI-visuals-tools webkiszolgáló tanúsítványait általában a következő futtatásával találhatja meg:
+### <a name="generate-a-certificate-for-localhost"></a>Állítson elő egy tanúsítványt a helyi gazdagép részére 
 
-* Az eszközök globális példányaihoz:
+Ha létre kíván hozni egy tanúsítványt a `localhost` számára a létrehozott CA és az *openssl.cnf* használatával, futtassa a következő parancsokat:
 
-    ```cmd
-    %appdata%\npm\node_modules\PowerBI-visuals-tools\certs
-    ```
+```sh
+PBIVIZ=`which pbiviz`
+PBIVIZ=`dirname $PBIVIZ`
+PBIVIZ="$PBIVIZ/../lib/node_modules/powerbi-visuals-tools/certs"
+# Make sure that $PBIVIZ contains the correct certificate directory path. ls $PBIVIZ should list 'blank' file.
+openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBIVisualTest_private.key -out $PBIVIZ/PowerBIVisualTest.csr -subj "/C=US/O=PowerBI Visuals/CN=localhost"
+openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBIVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBIVisualTest_public.crt
+```
 
-* Az eszközök helyi példányaihoz:
+### <a name="add-root-certificates"></a>Főtanúsítványok hozzáadása
 
-    ```cmd
-    <custom visual project root>\node_modules\PowerBI-visuals-tools\certs
-    ```
+A főtanúsítványt az alábbi parancs futtatásával adhatja hozzá a Chrome böngésző adatbázisához:
 
-Ha a PEM formátumot használja, a tanúsítványfájlt *PowerBICustomVisualTest_public.crt* néven, a privát kulcsot (privateKey) pedig *PowerBICustomVisualTest_public.key* néven mentse.
+```sh
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:$HOME/.pki/nssdb
+```
 
-Ha a PFX formátumot használja, a tanúsítványfájlt *PowerBICustomVisualTest_public.pfx* néven mentse.
+A főtanúsítványt az alábbi parancs futtatásával adhatja hozzá a Mozilla Firefox böngésző adatbázisához:
 
-Ha a PFX-tanúsítványfájlhoz jelszó szükséges, hajtsa végre a következő lépéseket:
+```sh
+for certDB in $(find $HOME/.mozilla* -name "cert*.db")
+do
+certDir=$(dirname ${certDB});
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:${certDir}
+done
+```
+
+Rendszerszintű főtanúsítvány hozzáadásához futtassa a következőt:
+
+```sh
+sudo cp /tmp/local-root-ca.pem /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+```
+
+### <a name="remove-root-certificates"></a>Főtanúsítványok eltávolítása
+
+A főtanúsítvány eltávolításához futtassa a következőt:
+
+```sh
+sudo rm /usr/local/share/ca-certificates/local-root-ca.pem
+sudo update-ca-certificates --fresh
+```
+
+## <a name="generate-a-certificate-manually"></a>Tanúsítvány manuális létrehozása
+
+Az SSL-tanúsítványt manuálisan is létrehozhatja az OpenSSL használatával. Bármilyen eszközt megadhat a tanúsítványok előállításához.
+
+Ha az OpenSSL segédprogram már telepítve van, hozzon létre egy új tanúsítványt az alábbi parancs futtatásával:
+
+```cmd
+openssl req -x509 -newkey rsa:4096 -keyout PowerBIVisualTest_private.key -out PowerBIVisualTest_public.crt -days 365
+```
+
+A `PowerBI-visuals-tools` webkiszolgáló-tanúsítványokat általában megtalálhatja az alábbi parancsok egyikének futtatásával:
+
+- Az eszközök globális példányaihoz:
+  
+  ```cmd
+  %appdata%\npm\node_modules\PowerBI-visuals-tools\certs
+  ```
+
+- Az eszközök helyi példányaihoz:
+  
+  ```cmd
+  <Power BI visual project root>\node_modules\PowerBI-visuals-tools\certs
+  ```
+
+### <a name="pem-format"></a>PEM formátum
+
+Ha a Privacy Enhanced Mail (PEM) tanúsítványformátumot használja, mentse a tanúsítványfájlt *PowerBIVisualTest_public.crt*, a titkos kulcsot pedig *PowerBIVisualTest_private.key* néven.
+
+### <a name="pfx-format"></a>PFX-formátum
+
+Ha a Personal Information Exchange (PFX) tanúsítványformátumot használja, mentse a tanúsítványfájlt *PowerBIVisualTest_public.pfx* néven.
+
+Ha a PFX-tanúsítványfájlhoz jelszó szükséges:
+
 1. A konfigurációs fájlban adja meg a következőt:
-
-    ```cmd
-    \PowerBI-visuals-tools\config.json
-    ```
-
-1. A `server` szakaszban adja meg a jelszót a "*YOUR PASSPHRASE*" helyőrző felülírásával:
+   
+   ```cmd
+   \PowerBI-visuals-tools\config.json
+   ```
+   
+1. A `server` szakaszban adja meg a jelszót a \<YOUR PASSPHRASE> helyőrző felülírásával:
 
     ```cmd
     "server":{
         "root":"webRoot",
         "assetsRoute":"/assets",
-        "privateKey":"certs/PowerBICustomVisualTest_private.key",
-        "certificate":"certs/PowerBICustomVisualTest_public.crt",
-        "pfx":"certs/PowerBICustomVisualTest_public.pfx",
+        "privateKey":"certs/PowerBIVisualTest_private.key",
+        "certificate":"certs/PowerBIVisualTest_public.crt",
+        "pfx":"certs/PowerBIVisualTest_public.pfx",
         "port":"8080",
-        "passphrase":"YOUR PASSPHRASE"
+        "passphrase":"<YOUR PASSPHRASE>"
     }
     ```
+
+## <a name="next-steps"></a>Következő lépések
+- [Power BI-vizualizáció fejlesztése](custom-visual-develop-tutorial.md)
+- [Minta Power BI-vizualizációk](samples.md)
+- [Power BI-vizualizáció közzététele az AppSource-ban](office-store.md)

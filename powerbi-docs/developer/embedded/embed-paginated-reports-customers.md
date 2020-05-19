@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: d9ebab8c52be8872865b0c308e8629c92603bbaa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403777"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276053"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Oktatóanyag: Oldalakra osztott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára (előzetes verzió)
 
@@ -34,14 +34,14 @@ Első lépésként, rendelkeznie kell az alábbiakkal:
 * Egy [szolgáltatásnév (csak alkalmazásra vonatkozó jogkivonat)](embed-service-principal.md)
 * Egy [Microsoft Azure](https://azure.microsoft.com/)-előfizetés
 * Az Ön saját [Azure Active Directory-bérlőjének](create-an-azure-active-directory-tenant.md) beállítása
-* Legalább egy A4-es vagy P1 [kapacitás](#create-a-dedicated-capacity)[, amelyen engedélyezve vannak az oldalakra osztott jelentés](../../service-admin-premium-workloads.md#paginated-reports) típusú számítási feladatok
+* Legalább egy A4-es vagy P1 [kapacitás](#create-a-dedicated-capacity)[, amelyen engedélyezve vannak az oldalakra osztott jelentés](../../admin/service-admin-premium-workloads.md#paginated-reports) típusú számítási feladatok
 
 Ha még nincs Azure-előfizetése, kezdés előtt hozzon létre egy [ingyenes fiókot](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 > [!IMPORTANT]
 > * **Szolgáltatásnevet** kell használnia. A fő felhasználó nem támogatott.
 > * Az egyszeri bejelentkezést (SSO-t) igénylő adatforrások nem támogatottak.
-> * A Power BI-adatkészlet nem támogatott [adatforrásként](../../service-get-data.md).
+> * A Power BI-adatkészlet nem támogatott [adatforrásként](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>A Power BI-környezet beállítása
 
@@ -49,12 +49,12 @@ Az oldalakra osztott jelentés beágyazásához a munkaterületet dedikált kapa
 
 ### <a name="create-an-app-workspace"></a>Alkalmazás-munkaterület létrehozása
 
-Ha azonban [szolgáltatásnevet](embed-service-principal.md) használ az alkalmazásába történő bejelentkezéshez, az [új munkaterületeket](../../service-create-the-new-workspaces.md) kell használnia. *Szolgáltatásnév* használata esetén Önnek rendszergazdának vagy tagnak kell lennie az alkalmazásával kapcsolatban érintett alkalmazás-munkaterületekben.
+Ha azonban [szolgáltatásnevet](embed-service-principal.md) használ az alkalmazásába történő bejelentkezéshez, az [új munkaterületeket](../../collaborate-share/service-create-the-new-workspaces.md) kell használnia. *Szolgáltatásnév* használata esetén Önnek rendszergazdának vagy tagnak kell lennie az alkalmazásával kapcsolatban érintett alkalmazás-munkaterületekben.
 
 ### <a name="create-a-dedicated-capacity"></a>Dedikált kapacitás létrehozása
 
 Mielőtt importálna vagy feltöltene egy oldalakra osztott jelentést a beágyazáshoz, a jelentést tartalmazó munkaterületet legalább egy A4-es vagy P1-es kapacitáshoz kell rendelni. Két típusú kapacitás közül választhat:
-* **Power BI Premium** – Oldalakra osztott jelentés beágyazásához*P* termékváltozat kapacitás szükséges. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. További információ erről az előfizetésről: [Mi az a Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – Oldalakra osztott jelentés beágyazásához*P* termékváltozat kapacitás szükséges. Power BI-tartalom beágyazásakor ezt a megoldást *Power BI-beágyazásnak* nevezzük. További információ erről az előfizetésről: [Mi az a Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – Dedikált kapacitást a [Microsoft Azure Portalon](https://portal.azure.com) vásárolhat. Ez az előfizetés az *A* termékváltozatokat használja. Az oldalakra osztott jelentések beágyazásához legalább egy *A4* előfizetésre van szüksége. A Power BI Embedded-kapacitások létrehozásával kapcsolatos részletekért tekintse meg a [Power BI Embedded-kapacitás az Azure Portalon való létrehozásával](azure-pbie-create-capacity.md) kapcsolatos cikket.
 
 Az alábbi táblázat az egyes termékváltozatok erőforrásait és korlátait ismerteti. Annak megállapításához, hogy melyik kapacitás felel meg legjobban az igényeinek, tekintse meg a [melyik termékváltozatot vásároljam meg a forgatókönyvemhez](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose) táblázatát.
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>A beágyazási token létrehozása
 
-Generáljon egy beágyazási tokent, amely a JavaScript API-ból használható. Oldalakra osztott Power BI-jelentések beágyazására szolgáló beágyazott jogkivonat létrehozásához használja a [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API-t.
+Generáljon egy beágyazási tokent, amely a JavaScript API-ból használható. Oldalakra osztott Power BI-jelentések beágyazására szolgáló beágyazott jogkivonat létrehozásához használja a [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API-t.
 
 A beágyazási jogkivonat létrehozásáról a [mintaalkalmazásban](https://github.com/Microsoft/PowerBI-Developer-Samples) lévő *Services\EmbedService.cs* fájlban talál példát.
 

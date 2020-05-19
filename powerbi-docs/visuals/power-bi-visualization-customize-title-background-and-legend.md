@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5a55fca07e4a0e5f9c027bcd17c3fba66a09958e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78893432"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277134"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>A vizualizáció címeinek, háttereinek és jelmagyarázatainak testreszabása
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 Ezen oktatóanyag segítségével elsajátíthatja a vizualizációk testre szabására szolgáló különböző módszereket. A vizualizációk testreszabására számtalan lehetőség áll rendelkezésre. Ezek megismerésére a legjobb módszer a **Formázás** panel felfedezése (válassza a festőhenger ikont). Az első lépésekhez megtételéhez ez a cikk bemutatja, hogyan szabhatja testre a vizualizáció címét, jelmagyarázatát és hátterét, valamint hogyan adhat hozzá témát.
 
@@ -28,14 +31,17 @@ Nem minden vizualizáció szabható testre. A részleteket a vizualizációk [te
 
 - A Power BI szolgáltatás vagy a Power BI Desktop
 
-- A Kiskereskedelmi elemzési minta jelentés
+- Kiskereskedelmi elemzési mintajelentés
+
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie. Lásd a [jelentések megosztását](../collaborate-share/service-share-reports.md) ismertető szakaszt.
 
 ## <a name="customize-visualization-titles-in-reports"></a>Vizualizáció címének testreszabása jelentésekben
 
-Hogy követni tudja a lépéseket, jelentkezzen be a Power BI Desktop szolgáltatásba, és nyissa meg a [Kiskereskedelmi elemzési minta](../sample-datasets.md) jelentést.
+Hogy követni tudja a lépéseket, jelentkezzen be a Power BI Desktop szolgáltatásba, és nyissa meg a [Kiskereskedelmi elemzési minta](../create-reports/sample-datasets.md) jelentést.
 
 > [!NOTE]
-> Ha rögzít egy vizualizációt az irányítópulton, az irányítópult-csempévé válik. Maguk a csempék is testre szabhatók [új címekkel és alcímekkel és hiperhivatkozásokkal, és átméretezhetők](../service-dashboard-edit-tile.md).
+> Ha rögzít egy vizualizációt az irányítópulton, az irányítópult-csempévé válik. Maguk a csempék is testre szabhatók [új címekkel és alcímekkel és hiperhivatkozásokkal, és átméretezhetők](../create-reports/service-dashboard-edit-tile.md).
 
 1. Nyissa meg a **Kiskereskedelmi elemzési minta** **Új üzletek** oldalát.
 
@@ -112,7 +118,7 @@ Az összes módosítás visszavonásához válassza a **Visszaállítás alapér
 
 1. Adjon címet a jelmagyarázathoz a **Cím** lehetőség **Bekapcsolásával**.
 
-1. A *Jelmagyarázat neve* mezőbe írja be a **Vezető** nevet.
+1. A **Jelmagyarázat neve** mezőbe írja be a *Vezető* nevet.
 
 1. Módosítsa a **színt** feketére.
 
@@ -155,15 +161,17 @@ Az alábbi lista a vizualizációkat és az azokhoz elérhető testreszabási le
 | Pont | igen | igen | igen |
 | Alakzat | igen | igen | igen |
 | Szeletelő | igen | igen | n.a. |
-| Tábla | igen | igen | n.a. |
+| Táblázat | igen | igen | n.a. |
 | Szövegmező | nem | igen | n.a. |
-| Treemap | igen | igen | igen |
+| Fatérkép | igen | igen | igen |
 | Vízesés | igen | igen | igen |
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 - [X és Y tengely tulajdonságainak testreszabása](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Bevezetés a színformázás és tengelytulajdonságok használatába](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+
+

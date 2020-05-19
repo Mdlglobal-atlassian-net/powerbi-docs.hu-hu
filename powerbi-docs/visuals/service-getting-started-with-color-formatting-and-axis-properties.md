@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895231"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276582"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>A Formázás panel bemutatása
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Ha egy jelentéshez szerkesztési engedélyekkel rendelkezik, számos formázási lehetőséget érhet el. A Power BI-jelentésekben módosíthatja az adatsorozatok és adatpontok színét, sőt akár a vizualizációk hátterét is. Megváltoztathatja az X és az Y tengely megjelenését. Emellett a vizualizációk, alakzatok és címek betűtípus-tulajdonságait is beállíthatja. A Power BI-jelentések megjelenését teljes körűen vezérelheti.
 
 Első lépésként nyisson meg egy jelentést a Power BI Desktopban vagy a Power BI szolgáltatásban. Mindkettő szinte azonos formázási beállításokat kínál. Ha a Power BI szolgáltatásban nyit meg jelentést, mindenképpen válassza a menüsáv **Szerkesztés** elemét. 
@@ -154,8 +157,10 @@ Kiválasztottuk a vizualizációt, hogy aktív legyen, és megnyitottuk a Formá
 Ez csak néhány példa az elérhető formázási lehetőségek közül. Nyisson meg egy jelentést Szerkesztési módban, és ismerkedjen meg a Formázási panellel, hogy gyönyörű és informatív vizualizációkat hozhasson létre.
 
 ## <a name="next-steps"></a>Következő lépések
-További információkat a következő cikkekben talál:  
+További információkat a következő cikkekben talál: 
+
+* [Jelentések megosztása](../collaborate-share/service-share-reports.md)
 
 * [Tippek és trükkök a színformázáshoz a Power BI-ban](service-tips-and-tricks-for-color-formatting.md)  
-* [Táblázatok feltételes formázása](../desktop-conditional-table-formatting.md)
+* [Táblázatok feltételes formázása](../create-reports/desktop-conditional-table-formatting.md)
 

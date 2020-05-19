@@ -1,4 +1,4 @@
-- name: A Power BI beágyazott elemzési dokumentációja
+- name: A Power BI Embedded elemzési dokumentációja
   href: index.yml
   expanded: true
   items:
@@ -9,7 +9,7 @@
           href: embedding.md
         - name: A Power BI Embedded az Azure-ban ismertetése
           href: azure-pbie-what-is-power-bi-embedded.md
-    - name: oktatóanyagokat
+    - name: Oktatóanyagok
       expanded: true
       items:
         - name: Tartalom beágyazása ügyfelek számára
@@ -20,13 +20,13 @@
           href: embed-paginated-reports-customers.md
         - name: Tartalom beágyazása országos felhőknél
           href: embed-sample-for-customers-national-clouds.md
-    - name: Alapelvek
+    - name: Fogalmak
       items:
         - name: Kapacitás és SKU a Power BI Embedded Analyticsben
           href: embedded-capacity.md
         - name: Kapacitástervezés
           href: embedded-capacity-planning.md
-        - name: A teljesítménnyel kapcsolatos ajánlott eljárások
+        - name: Ajánlott eljárások teljesítményének javításához
           href: embedded-performance-best-practices.md
         - name: Szolgáltatásnév
           href: embed-service-principal.md
@@ -42,7 +42,7 @@
           href: embedded-faq.md
         - name: Power BI-engedélyek
           href: power-bi-permissions.md
-    - name: 'Útmutató:'
+    - name: Útmutató
       items:
         - name: Beágyazás alkalmazásból
           href: embed-from-apps.md
@@ -54,13 +54,13 @@
           href: embed-auto-install-app.md
         - name: Azure Active Directory-bérlő létrehozása
           href: create-an-azure-active-directory-tenant.md
-        - name: Egy alkalmazás regisztrálása
+        - name: Alkalmazás regisztrálása
           href: register-app.md
         - name: Azure AD hozzáférési token beszerzése
           href: get-azuread-access-token.md
         - name: Jelentés csatlakoztatása dinamikus kötéssel
           href: embed-dynamic-binding.md
-        - name: Kérdések és válaszok szolgáltatás beágyazása
+        - name: Beágyazással kapcsolatos GYIK
           href: qanda.md
         - name: Beágyazott alkalmazás hibaelhárítása
           href: embedded-troubleshoot.md
@@ -72,24 +72,24 @@
               href: embedded-multi-geo.md
             - name: Kapacitás méretezése az Azure-ban
               href: azure-pbie-scale-capacity.md
-            - name: Kapacitás szüneteltetése és elindítása az Azure-ban
+            - name: Kapacitás szünetelése és elindítása az Azure-ban
               href: azure-pbie-pause-start.md
-        - name: Migrálás a Munkaterületi gyűjteményekből
+        - name: Áttelepítés munkaterület-csoportokból
           items:
-            - name: Migrálás Power BI munkaterületi gyűjteményekből
+            - name: Áttelepítés Power BI-beli munkaterület-csoportokból
               href: migrate-from-powerbi-embedded.md
-            - name: Migrálási eszköz
+            - name: Áttelepítési eszköz
               href: migrate-tool.md
-            - name: Migrálási kódrészletek
+            - name: Migrálási kódtöredékek
               href: migrate-code-snippets.md
-    - name: Referencia
+    - name: Hivatkozás
       items:
         - name: API-k
           items:
-            - name: Az Azure erőforrás-kezelési REST API-jai
+            - name: Azure Resource Management REST API-k
               href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
-            - name: A Power BI REST API-jai
-              href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+            - name: Power BI REST API-k
+              href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: Power BI-kódtárak
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Egyéni elrendezések beágyazása alkalmazásokba
@@ -100,9 +100,9 @@
           href: 'https://powerbi.microsoft.com/en-us/developers/'
         - name: Beágyazáshoz szükséges telepítési eszköz
           href: 'https://aka.ms/embedsetup'
-        - name: JavaScript-játszótér – minta
+        - name: JavaScript Playground-minta
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
-        - name: Power BI JavaScript – wiki
+        - name: Power BI JavaScript wiki
           href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
         - name: Fejlesztői minták és szkriptek
           href: 'https://go.microsoft.com/fwlink/?linkid=851293'

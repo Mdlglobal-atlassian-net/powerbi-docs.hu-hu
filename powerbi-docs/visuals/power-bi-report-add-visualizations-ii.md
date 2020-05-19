@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8b0012224d145f40cb6b9784da1a40957efce50
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758422"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277778"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Vizualizációk hozzáadása Power BI-jelentéshez (2. rész)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -30,13 +32,13 @@ Ebben az oktatóanyagban a Kiskereskedelmi elemzés adathalmaz felhasználásáv
 
 Ez az oktatóanyag a [Kiskereskedelmi elemzési minta PBIX-fájlt](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) használja.
 
-1. A Power BI Desktop menüsorának bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget
+1. A Power BI Desktop menüsorának bal felső részén válassza a **Fájl** > **Megnyitás** lehetőséget.
    
 2. Keresse meg a **Kiskereskedelmi elemzési minta PBIX-fájlt**
 
 1. Nyissa meg a **Kiskereskedelmi elemzési minta PBIX-fájlt** jelentésnézetben ![A jelentésnézet ikon képernyőképe.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Válassza ki ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
+1. Kiválasztás ![A sárga fül képernyőképe.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) új oldal hozzáadásához.
 
 ## <a name="add-visualizations-to-the-report"></a>Vizualizációk hozzáadása a jelentéshez
 
@@ -59,7 +61,7 @@ A vizualizáció létrehozásához válasszon egy mezőt a **Mezők** panelen. A
 5. [A képi megjelenítés átméretezéséhez](power-bi-visualization-move-and-resize.md) jelölje ki a képi megjelenítést, majd fogja meg és húzza a külső körvonalak valamelyikét. Legyen elég széles ahhoz, hogy a görgetősáv már eltűnjön, de egy másik képi megjelenítés még elférjen mellette.
    
    ![képernyőkép a területdiagram vizualizációról](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Mentse a jelentést](../service-report-save.md).
+6. [Mentse a jelentést](../create-reports/service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Térképi megjelenítés hozzáadása az értékesítések helyek szerinti megjelenítéséhez
 
@@ -69,7 +71,10 @@ A vizualizáció létrehozásához válasszon egy mezőt a **Mezők** panelen. A
 2. Adjon hozzá egy jelmagyarázatot.  Ha az adatokat az üzletek neve szerint szeretné ábrázolni, húzza a Jelmagyarázat területre a **Store** > **Chain** (Üzlet>Üzletlánc) elemet.  
    ![jelentésvászon a mezőlistában a Láncból a Jelmagyarázat gyűjtő láncba](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
-## <a name="next-steps"></a>További lépések
+> [!NOTE]
+> A jelentés egy Power BI-munkatárssal való megosztásához mindkettőjüknek Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek egy Premium kapacitásban kell lennie. Lásd a [jelentések megosztását](../collaborate-share/service-share-reports.md) ismertető szakaszt.
+
+## <a name="next-steps"></a>Következő lépések
 * További információk [a Power BI-jelentésekben lévő vizualizációkról](power-bi-report-visualizations.md).  
-* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

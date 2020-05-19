@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7bb3dc401fedbb55f5ed81fa5e859cbfee5a1a26
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274443"
+ms.locfileid: "83382738"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Adatkészlet-kapcsolat az XMLA-végponttal (előzetes verzió)
 
@@ -29,6 +29,9 @@ A legalább 1500-es kompatibilitási szintű Power BI Premium-munkaterületek é
 A Power BI Premium az [XML for Analysis](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current) (XMLA) protokoll használja az ügyfélalkalmazások és a Power BI-munkaterületeket és -adathalmazokat kezelő motor közötti kommunikációhoz. Ez a kommunikáció az úgynevezett XMLA-végpontok között zajlik. Az XMLA ugyanaz a kommunikációs protokoll, amelyet a Microsoft Analysis Services motorja használ, a háttérben pedig ez működteti a Power BI-beli szemantikai modellezést, irányítást, életciklusokat és adatkezelést.
 
 A végpontot használó *csak olvasási* kapcsolat alapértelmezés szerint engedélyezve van a kapacitásban lévő **Adathalmazok számítási feladathoz**. Csak olvasási kapcsolattal az adatvizualizációs alkalmazások és eszközök adathalmazmodell-adatokat, metaadatokat, eseményeket és sémákat kérdezhetnek le. A végpontot használó *olvasási/írási* műveletek is engedélyezhetők, további adathalmaz-felügyeleti és -irányítási, fejlett szemantikai modellezési, hibakeresési és figyelési lehetőségeket biztosítva. Az olvasás és írás engedélyezése esetén a Power BI Premium-adathalmazok jobban megfelelnek az Azure Analysis Services és az SQL Server Analysis Services nagyvállalati szintű táblázatos modellezési eszközeinek és folyamatainak.
+
+> [!NOTE]
+> Ajánlott a modern munkaterületi felhasználói felület használata, különösen, ha az XMLA-végponttal csatlakozik az adathalmazokhoz. A klasszikus munkaterületek esetén nem támogatottak olyan műveletek, mint az adathalmazok létrehozása vagy törlése. A klasszikus munkaterületek a modern felhasználói felületre való frissítéséhez tekintse meg a [Power BI klasszikus munkaterületeinek frissítését](../collaborate-share/service-upgrade-workspaces.md) ismertető cikket.
 
 ## <a name="data-modeling-and-management-tools"></a>Adatmodellezési és -felügyeleti eszközök
 

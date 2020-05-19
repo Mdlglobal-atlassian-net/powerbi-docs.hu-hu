@@ -7,17 +7,19 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/3/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 830fbe945405f8ad7aadd7ceac9fb1967daad22b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6504e49c67d3c2344033f0cad53394ec5ae87e21
+ms.sourcegitcommit: 52177142c3e1f49147dff08fe48600a85a814a2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758106"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82944820"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X és Y tengely tulajdonságainak testreszabása
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -216,13 +218,12 @@ Az összetett vizualizációk esetében sokat segíthet, ha címeket adunk a ten
 
 1. Formázza meg a címeket. Ebben a példában az egyik címet rövidítettük, és mindkettőnek csökkentettük a betűméretét. 
     - Betűméret: **9**
-    - Lerövidítettük az első Y tengely (az oszlopdiagram) **tengelycímét**: Tavalyi és idei év értékesítései
+    - Lerövidítettük az első Y tengely (az oszlopdiagram) **tengelycímét**: Tavalyi és idei év értékesítései. 
+    
+     ![Képernyőkép a kombinált diagramról, amelyen a teljes címek megjelennek.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-    ![Képernyőkép a kombinált diagramról, amelyen a teljes címek megjelennek.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
-
-
-
-További információkért lásd a [Tippek és trükkök a színformázáshoz a Power BI-ban](service-tips-and-tricks-for-color-formatting.md), illetve [A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása](power-bi-visualization-customize-title-background-and-legend.md) cikket. Hamarosan újabb frissítések is elérhetővé válnak a címek formázásához kapcsolódóan. 
+    További információkért lásd a [Tippek és trükkök a színformázáshoz a Power BI-ban](service-tips-and-tricks-for-color-formatting.md), illetve [A vizualizáció címeinek, jelmagyarázatainak és háttereinek testreszabása](power-bi-visualization-customize-title-background-and-legend.md) című cikket. 
+    
 
 ## <a name="next-steps"></a>Következő lépések
 

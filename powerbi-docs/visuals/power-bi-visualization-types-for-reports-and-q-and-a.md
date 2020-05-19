@@ -7,14 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7210e2f2f6fa3581744a5400bcdeb795d8883120
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381422"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276812"
 ---
 # <a name="visualization-types-in-power-bi"></a>Vizualizációtípusok a Power BI-ban
 ## <a name="power-bi-visualizations"></a>Power BI-vizualizációk
@@ -157,7 +157,7 @@ További információért lásd: [Power Apps-vizualizáció hozzáadása a jelen
 ![Q&A-vizualizációk](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
 
 >[!TIP]
->Az [irányítópultok Q&A-felületéhez](../power-bi-tutorial-q-and-a.md) hasonlóan a Q&A-vizualizációk lehetővé teszik, hogy természetes nyelven tegyen fel kérdéseket az adataival kapcsolatban. 
+>Az [irányítópultok Q&A-felületéhez](../create-reports/power-bi-tutorial-q-and-a.md) hasonlóan a Q&A-vizualizációk lehetővé teszik, hogy természetes nyelven tegyen fel kérdéseket az adataival kapcsolatban. 
 
 További információért lásd: [Q&A-vizualizációk a Power BI-ban](power-bi-visualization-q-and-a.md).
 
@@ -191,19 +191,19 @@ További információt a [Power BI pontdiagramjait](power-bi-visualization-scatt
 >[!TIP]
 >Ha a vizualizációban túl sok adatpont van, az lelassíthatja és túl zsúfolttá teheti, ezért egy kifinomult mintavételezési algoritmus biztosítja a vizualizáció pontosságát.
 
-További információt a [Power BI nagy sűrűségű pontdiagramjait](desktop-high-density-scatter-charts.md) ismertető cikkben talál.
+További információt a [Power BI nagy sűrűségű pontdiagramjait](../create-reports/desktop-high-density-scatter-charts.md) ismertető cikkben talál.
 
 ### <a name="slicers"></a>Szeletelők
-![szeletelő](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
 További információt a [Power BI szeletelőit](power-bi-visualization-slicers.md) ismertető cikkben talál.
 
 ### <a name="standalone-images"></a>Önálló képek
 ![önálló képvizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-További információkért lásd: [Képwidget hozzáadása egy irányítópulthoz](../service-dashboard-add-widget.md).
+További információkért lásd: [Képwidget hozzáadása egy irányítópulthoz](../create-reports/service-dashboard-add-widget.md).
 
-### <a name="tables"></a>Táblázatok
+### <a name="tables"></a>Táblák
 ![táblavizualizáció](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
@@ -228,12 +228,15 @@ További információt a [Power BI fatérképeit](power-bi-visualization-treemap
 További információt a [Power BI vízesésdiagramjait](power-bi-visualization-waterfall-charts.md) ismertető cikkben talál.
 
 ## <a name="tell-qa-which-visualization-to-use"></a>A Q&A által használt vizualizáció megadása
-Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Példa:
+Ha természetes nyelvű lekérdezéseket ír a Power BI Q&A használatával, megadhatja a vizualizáció típusát a lekérdezésben.  Például:
 
 „***értékesítés államonként fatérképen***”
 
+Ha az irányítópulton nincs Kérdések és válaszok mező, akkor lehetséges, hogy a bérlői rendszergazda letiltotta. 
+
 ![A Q&A kérdésmezője a megadott vizualizációtípussal](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 [Vizualizációk Power BI-jelentésekben](power-bi-report-visualizations.md)    
 [A megfelelő vizualizáció – referenciaanyag az sqlbi.com-on](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+
