@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: a22bba65b44446e7027627a24ebcf316f8f073d4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 39d30cc7949565872fd638f289756be6541eee0d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348390"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564986"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Gyakori kérdések – Power BI
 
@@ -89,7 +89,7 @@ Az alábbi erőforrások állnak rendelkezésre az első lépések megtételéhe
 
 ## <a name="what-browsers-does-power-bi-support"></a>Milyen böngészőket támogat a Power BI?
 
-Íme a [Power BI által támogatott böngészők](../service-browser-support.md) teljes listája.
+Íme a [Power BI által támogatott böngészők](../fundamentals/power-bi-browsers.md) teljes listája.
 
 ## <a name="what-regions-and-languages-does-power-bi-support"></a>Milyen régiókat és nyelveket támogat a Power BI?
 

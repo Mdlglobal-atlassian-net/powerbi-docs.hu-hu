@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a6ba7f171f462fe6fe0d386305c82b486db5ed4
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276835"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565026"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pontdiagramok, buborékdiagramok és pöttydiagramok a Power BI-ban
 
@@ -128,7 +128,7 @@ Most adjunk hozzá egy harmadik dimenziót.
     > [!NOTE]
     > A több adatpont miatt a betöltés tovább tarthat. Ha a felső korlátokat megközelítő jelentéseket tesz közzé, mindenképpen tesztelje azokat a weben és mobileszközön is. Ajánlatos meggyőződni arról, hogy a diagram teljesítménye megfelel a felhasználói elvárásoknak.
 
-1. Folytathatja a vizualizáció színeinek, a címkéknek, a címeknek, a háttereknek és egyebeknek a formázását. A [kisegítő lehetőségek javítása](../desktop-accessibility.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** elemet, válassza a **Jelölőalakzat** lehetőséget, majd válasszon ki egy alakzatot.
+1. Folytathatja a vizualizáció színeinek, a címkéknek, a címeknek, a háttereknek és egyebeknek a formázását. A [kisegítő lehetőségek javítása](../create-reports/desktop-accessibility-overview.md) érdekében érdemes lehet minden vonalhoz jelölőalakzatokat hozzáadni. Ha a jelölőalakzatot szeretné kiválasztani, bontsa ki az **Alakzatok** elemet, válassza a **Jelölőalakzat** lehetőséget, majd válasszon ki egy alakzatot.
 
     ![Az Alakzatok legördülő menü képernyőképe a Jelölőalakzat beállításainak kiemelésével.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 

@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349609"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564449"
 ---
 # <a name="what-is-power-bi"></a>A Power BI bemutatása
 A **Power BI** olyan szoftverszolgáltatások, alkalmazások és összekötők gyűjteménye, amellyel az egymástól független adatforrásokat egymással együttműködő, vizuálisan megragadó, interaktív elemzésekké alakítja. Az adatok lehetnek akár egy Excel-táblában, vagy felhőalapú és helyszíni hibrid adattárházak gyűjteményében is. A Power BI-jal egyszerűen csatlakozhat az adatforrásokhoz, vizuálisan megjelenítheti és feltárhatja a fontos részeket, és ezt bárkivel meg is oszthatja.
@@ -70,6 +70,6 @@ A Power BI jelentéskészítő kiszolgálót tűzfal mögött lehet üzembe hely
 További információ: [Power BI jelentéskészítő kiszolgáló](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Következő lépések
-- [Rövid útmutató:: Eligazodás a Power BI szolgáltatásban](../service-the-new-power-bi-experience.md)   
+- [Rövid útmutató:: Eligazodás a Power BI szolgáltatásban](../consumer/end-user-experience.md)   
 - [Oktatóanyag: Első lépések a Power BI szolgáltatással](service-get-started.md)
 - [Rövid útmutató:: Csatlakozás adatokhoz a Power BI Desktopban](../connect-data/desktop-quickstart-connect-to-data.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b89c64caa7a4f8fe846cca488164758550a4869a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 78031bb4f8326b50917b5c299948518717cc18a9
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361198"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566063"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>A Power BI szolgáltatás újdonságai
 Ezen az oldalon a **Power BI szolgáltatás** ismert problémáit és új funkcióit ismertetjük. Az újdonságokra vonatkozó kapcsolódó információk:
@@ -224,7 +224,7 @@ Az újdonságokról és a funkciókról az alábbi YouTube-csatornákon is táj�
 
 ### <a name="june-2017"></a>2017. június
 * Általánosan elérhető a [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/).
-* Több API-fejlesztés az [ütemezett frissítés automatizálásához](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), a [jelentések klónozása és újrakötése](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), az [átjárókötések frissítése](https://msdn.microsoft.com/library/mt784650.aspx), valamint számos egyéb fejlesztés
+* Több API-fejlesztés az [ütemezett frissítés automatizálásához](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), a [jelentések klónozása és újrakötése](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), az [átjárókötések frissítése](/rest/api/power-bi/), valamint számos egyéb fejlesztés
 * Relatív kapcsolatok a Power BI alkalmazások irányítópult-csempéi és más irányítópultok és jelentések között.
 * Általánosan elérhető az [Impala-összekötő](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) a Power BI Desktopban.
 * A Power BI vizuális funkcióinak bővítése az [R interaktív Power BI-vizualizációival](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).

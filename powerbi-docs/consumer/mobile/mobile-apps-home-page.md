@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 16d62af90855c99f9d50c35dd411ef50f2a9a4e6
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205665"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565169"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>A mobilalkalmazás kezdőlapjának rövid bemutatása
 A bemutató során megismerkedhet a Power BI mobilalkalmazás kezdőlapjával és azokkal a navigációs segédeszközökkel, amelyekkel gyorsan elérheti, amire szüksége van.
@@ -41,7 +41,7 @@ A tevékenység-hírcsatornával nyomon követheti mindazt, ami a Power BI-tarta
 A hírcsatorna frissítéseiben szerepelnek a következők:
 * **Frissített adatok**: ha a kedvenc vagy legutóbbi jelentések és irányítópultok egyikében frissítve vannak a mögöttes adatok.
 * **Új megjegyzések**: ha valaki megjegyzést hoz létre egy olyan jelentéshez vagy irányítópulthoz, amely az Ön kedvencei vagy a legutóbbiak között szerepel, vagy ha valaki megemlíti Önt egy megjegyzésben.
-* **Adatriasztások**: amikor az adatok elérnek egy küszöböt, amelyet korábban Ön határozott meg egy [adatriasztásban](../../mobile-set-data-alerts-in-the-mobile-apps.md).
+* **Adatriasztások**: amikor az adatok elérnek egy küszöböt, amelyet korábban Ön határozott meg egy [adatriasztásban](mobile-set-data-alerts-in-the-mobile-apps.md).
 * **Alkalmazás-frissítések**: amikor egy alkalmazás készítője frissítést tesz közzé egy Ön által használt alkalmazáshoz.
 
  A további vizsgálódáshoz a tevékenységelemre koppintva ugorhat a megfelelő helyre.
@@ -57,13 +57,13 @@ A navigációs sáv az oldal alján található.
 A navigációs sáv a következőkhöz kínál gyors hozzáférést:
 
 * ![kezdőlap ikon](./media/mobile-apps-home-page/powerbi-mobile-app-home-icon.png) **Kezdőlap** – visszalépteti a kezdőlapra.
-* ![kedvencek ikon](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Kedvencek** – az Ön által [kedvencekként](../../mobile-apps-favorites.md) megjelölt jelentések, irányítópultok és alkalmazások.
+* ![kedvencek ikon](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Kedvencek** – az Ön által [kedvencekként](mobile-apps-favorites.md) megjelölt jelentések, irányítópultok és alkalmazások.
 * ![alkalmazások ikon](./media/mobile-apps-home-page/powerbi-mobile-app-apps-icon.png) **Alkalmazások** – azok az alkalmazások, amelyeket Ön telepített a fiókjában.
 * ![munkaterületek ikon](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Munkaterületek** – a tartalomkészítők által készített jelentéseket és irányítópultokat egy helyen tartó munkamappák.
 * ![legutóbbiak ikon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Legutóbbiak** – a közelmúltban megtekintett elemek.
 * ![velem megosztva ikon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Velem megosztva** – azok az elemek, amelyeket mások osztottak meg Önnel.
 * ![minták ikon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Minták** – Power BI-minták, amelyek segítségével megismerheti a Power BI képességeit.
-* ![szkenner ikon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Szkenner** – az eszköz kamerája, amelyet szkennerként használhat [vonalkódok](../../mobile-apps-scan-barcode-iphone.md) és [QR-kódok](../../mobile-apps-qr-code.md) beolvasására.
+* ![szkenner ikon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Szkenner** – az eszköz kamerája, amelyet szkennerként használhat [vonalkódok](mobile-apps-scan-barcode-iphone.md) és [QR-kódok](mobile-apps-qr-code.md) beolvasására.
 
 ## <a name="header"></a>Fejléc
 
@@ -72,11 +72,11 @@ Az oldal tetején található fejlécen látható az aktuális Power BI-oldal, -
 ![fejléc](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 A fejlécen a következő navigációs elemek találhatók:
-* **Profilkép vagy avatar** – oldalpanelt nyit meg, amelyen [váltani tud a Power BI szolgáltatás és a Jelentéskészítő kiszolgáló fiókjai között](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), valamint hozzáférhet a Power BI mobilalkalmazás beállításaihoz.
+* **Profilkép vagy avatar** – oldalpanelt nyit meg, amelyen [váltani tud a Power BI szolgáltatás és a Jelentéskészítő kiszolgáló fiókjai között](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), valamint hozzáférhet a Power BI mobilalkalmazás beállításaihoz.
 
     ![oldalpanel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 
-* **Értesítések** – megnyitja az [Értesítések oldalt](../../mobile-apps-notification-center.md), ahol az értesítéseket tekintheti meg és érheti el. Az értesítés harangján látható pont azt jelzi, hogy új értesítései vannak.
+* **Értesítések** – megnyitja az [Értesítések oldalt](mobile-apps-notification-center.md), ahol az értesítéseket tekintheti meg és érheti el. Az értesítés harangján látható pont azt jelzi, hogy új értesítései vannak.
 
     ![értesítések oldal](./media/mobile-apps-home-page/powerbi-mobile-app-notifications-page.png)
 
@@ -86,5 +86,5 @@ A fejlécen a következő navigációs elemek találhatók:
 
 ## <a name="next-steps"></a>További lépések
 Ebben a bemutatóban a Power BI mobilalkalmazás kezdőlapját ismerhette meg. A Power BI mobilalkalmazás használatáról további információk állnak rendelkezésére. 
-* [Irányítópultok és jelentések felfedezése](../../mobile-apps-quickstart-view-dashboard-report.md)
-* [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](../../mobile-reports-in-the-mobile-apps.md)
+* [Irányítópultok és jelentések felfedezése](mobile-apps-quickstart-view-dashboard-report.md)
+* [Jelentések vizsgálata a Power BI-mobilalkalmazásokban](mobile-reports-in-the-mobile-apps.md)

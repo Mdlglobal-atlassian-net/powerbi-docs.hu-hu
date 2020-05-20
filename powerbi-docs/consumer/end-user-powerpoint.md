@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1dbb35ab45a1172044cedb7fbe484ed4da6c43db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348367"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565741"
 ---
 # <a name="export-reports-to-powerpoint"></a>Jelentések exportálása PowerPointba
 
@@ -31,7 +31,7 @@ A Power BI szolgáltatás (app.powerbi.com) segítségével közzéteheti jelent
 
 A **Power BI-jelentést** gyorsan exportálhatja a **PowerPointba**. Kövesse az alábbi szakaszban leírt lépéseket.
 
-Másolhat egyszerre egy vizualizációt is a Power BI szolgáltatásból, és beillesztheti a PowerPointba (vagy bármely más, a beillesztést támogató programba). A vágólapra másoláshoz válassza a **Másolás képként** ikont. Ezután nyissa meg a PowerPointot, és illessze be a vizualizációt. További információt a [vizualizációk statikus képként történő másolását](../power-bi-visualization-copy-paste.md) ismertető cikkben tekinthet meg.
+Másolhat egyszerre egy vizualizációt is a Power BI szolgáltatásból, és beillesztheti a PowerPointba (vagy bármely más, a beillesztést támogató programba). A vágólapra másoláshoz válassza a **Másolás képként** ikont. Ezután nyissa meg a PowerPointot, és illessze be a vizualizációt. További információt a [vizualizációk statikus képként történő másolását](../visuals/power-bi-visualization-copy-paste.md) ismertető cikkben tekinthet meg.
 
 ![Válassza a Másolás képként ikont](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -87,12 +87,12 @@ Most már csak Önön múlik, hogy miképpen használja fel a PowerPoint-bemutat
 Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell vennie néhány megfontolást és korlátozást.
  
 
-* Az [URL-szűrők](../service-url-filters.md) jelenleg nem érvényesek az exportálás **Aktuális értékek** beállítása esetén.
+* Az [URL-szűrők](../collaborate-share/service-url-filters.md) jelenleg nem érvényesek az exportálás **Aktuális értékek** beállítása esetén.
 
 * Ha a PowerPointba való exportáláskor a jelentés egyéni betűkészletet használ, a rendszer az alapértelmezett betűkészletre cseréli az egyéni betűkészletet.
 
 * Az alábbi vizualizációtípusok nem támogatottak, és nem lesznek a PowerPointba exportálva:
-   - A [nem minősített egyéni vizualizációk](../developer/power-bi-custom-visuals-certified.md) nem támogatottak. 
+   - A [nem minősített egyéni vizualizációk](../developer/visuals/power-bi-custom-visuals-certified.md) nem támogatottak. 
    - Az [ESRI ArcGIS vizualizáció](../visuals/power-bi-visualizations-arcgis.md) nem támogatott
    - Az R- és a Python-vizualizációk nem támogatottak.
    - A háttérképek szélét a program a diagram határoló területével együtt levágja. A PowerPointba való exportálás előtt ajánlott eltávolítani a háttérképeket.
@@ -109,5 +109,5 @@ Az **Exportálás a PowerPointba** funkció használatakor figyelembe kell venni
 
 
 ## <a name="next-steps"></a>Következő lépések
-[Vizualizációk másolása statikus képként](../power-bi-visualization-copy-paste.md)    
+[Vizualizációk másolása statikus képként](../visuals/power-bi-visualization-copy-paste.md)    
 [Jelentés nyomtatása](end-user-print.md)

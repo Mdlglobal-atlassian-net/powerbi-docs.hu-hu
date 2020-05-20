@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: deb72b1b66d4cbc87c2e317bb1fe1428c079cfea
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2c71f26949f19ed1beb29a162c18dc36ed689c21
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83308946"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565346"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Az adatforrás kezelése – Analysis Services
 
@@ -54,9 +54,9 @@ Ha szeretné, konfigurálhatja az adatforrás adatvédelmi szintjét is. Ez a be
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-Amikor egy felhasználó az Analysis Serviceshez csatlakoztatott jelentéssel dolgozik, a rendszer az érvényes felhasználónevet átadja az átjárónak, majd a helyszíni Analysis Services-kiszolgálónak. A Power BI-ba való bejelentkezéshez használt e-mail-címet adja át az Analysis Services-nek érvényes felhasználóként. Ezt a rendszer továbbadja az [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth) kapcsolati tulajdonságnak. 
+Amikor egy felhasználó az Analysis Serviceshez csatlakoztatott jelentéssel dolgozik, a rendszer az érvényes felhasználónevet átadja az átjárónak, majd a helyszíni Analysis Services-kiszolgálónak. A Power BI-ba való bejelentkezéshez használt e-mail-címet adja át az Analysis Services-nek érvényes felhasználóként. Ezt a rendszer továbbadja az [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth) kapcsolati tulajdonságnak. 
 
-Ennek az e-mail-címnek egyeznie kell a helyi Active Directory-tartományban meghatározott egyszerű felhasználónévvel (UPN). Az UPN az Active Directory-fiókok egy tulajdonsága. A Windows-fióknak ekkor szerepelnie kell egy Analysis Services-szerepkörben. Ha nem található egyezés az Active Directoryban, sikertelen lesz a bejelentkezés. Az Active Directoryval és a felhasználók elnevezésével kapcsolatban a [Felhasználónév-attribútumok](https://msdn.microsoft.com/library/ms677605.aspx) című cikkből tájékozódhat.
+Ennek az e-mail-címnek egyeznie kell a helyi Active Directory-tartományban meghatározott egyszerű felhasználónévvel (UPN). Az UPN az Active Directory-fiókok egy tulajdonsága. A Windows-fióknak ekkor szerepelnie kell egy Analysis Services-szerepkörben. Ha nem található egyezés az Active Directoryban, sikertelen lesz a bejelentkezés. Az Active Directoryval és a felhasználók elnevezésével kapcsolatban a [Felhasználónév-attribútumok](/windows/win32/ad/naming-properties) című cikkből tájékozódhat.
 
 [Le is képezheti a Power BI-ban használt bejelentkezési nevet egy helyi címtár UPN-jére](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -203,7 +203,7 @@ A felhasználók modelladatokra vonatkozó lekérdezési és megtekintési képe
 - Azok a szerepkörök, amelyekhez a Windows-felhasználói fiókjuk tartozik.
 - A dinamikus sorszintű biztonság, amennyiben ez konfigurálva van.
 
-A szerepkörök és a dinamikus sorszintű biztonság megvalósítása a modellekben meghaladja e cikk kereteit. Erről további információt talál az MSDN [Szerepkörök (táblázatos SSAS)](https://msdn.microsoft.com/library/hh213165.aspx) és [Biztonsági szerepkörök (Analysis Services - többdimenziós adatok)](https://msdn.microsoft.com/library/ms174840.aspx) című cikkeiben. A táblázatos modellek biztonságának legrészletesebb tárgyalását a letölthető [A táblázatos BI szemantikus modell biztosítása](https://msdn.microsoft.com/library/jj127437.aspx) című tanulmányban olvashatja.
+A szerepkörök és a dinamikus sorszintű biztonság megvalósítása a modellekben meghaladja e cikk kereteit. Erről további információt talál az MSDN [Szerepkörök (táblázatos SSAS)](/analysis-services/tabular-models/roles-ssas-tabular) és [Biztonsági szerepkörök (Analysis Services - többdimenziós adatok)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) című cikkeiben. A táblázatos modellek biztonságának legrészletesebb tárgyalását a letölthető [A táblázatos BI szemantikus modell biztosítása](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) című tanulmányban olvashatja.
 
 ## <a name="what-about-azure-ad"></a>Mi az Azure AD szerepe?
 

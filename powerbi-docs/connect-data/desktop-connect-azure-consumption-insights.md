@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5cc566798d53a29ef1f205c34d7e97d9331a164d
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8959e703da2587b7633df4313606bdb11a8c983b
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347976"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407500"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Kapcsolódás Azure Consumption Insights-adatokhoz a Power BI Desktopban
 
@@ -184,7 +184,7 @@ Az Azure Portalbeli oszlopok és részletek nevei hasonlóak az API-ban és az �
 | --- | --- | --- | --- |
 | AccountName |accountName |Account Name |Nem |
 | AccountId |accountId | |Igen |
-| AcccountOwnerId |accountOwnerEmail |AccountOwnerId |Nem |
+| AccountOwnerId |accountOwnerEmail |AccountOwnerId |Nem |
 | AdditionalInfo |additionalInfo |AdditionalInfo |Nem |
 | AdditionalInfold | | |Igen |
 | Consumed Quantity |consumedQuantity |Consumed Quantity |Nem |

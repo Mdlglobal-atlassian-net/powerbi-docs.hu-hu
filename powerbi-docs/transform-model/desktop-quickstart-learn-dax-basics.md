@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9ff04510a786fa89e1e461e6eefee1af90e58a8e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 783a9bdce34345afd87be379aff7e073ff8c548d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83313385"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565856"
 ---
 # <a name="apply-dax-basics-in-power-bi-desktop"></a>A DAX alapszintű alkalmazása a Power BI Desktopban
 Ez a cikk a Power BI Desktoppal még csak most ismerkedő felhasználóknak szól. Azt mutatja be röviden és egyszerűen, hogyan lehet a Data Analysis Expressions (DAX) nyelv segítségével néhány alapszintű számítási és adatelemzési problémát megoldani. Ismerteti az alapvető fogalmakat, továbbá tartalmaz néhány elvégezhető feladatot és egy tudáspróbát az elsajátított ismeretek felmérésére, így segít a DAX nyelvvel kapcsolatos legfontosabb alapvető tudnivalók elsajátításában.
@@ -66,7 +66,7 @@ Ha ezt a mértéket egy jelentéshez adjuk, kiszámítja az összes többi szere
 
 Most talán azt gondolja, hogy „Nem ugyanazt csinálja ez a mérték, mintha hozzáadnám a SalesAmount mezőt a jelentéshez?” Voltaképpen igen. Megvan azonban az oka, hogy miért hozunk létre egy külön saját mértéket, amely összegzi a SalesAmount mező értékeit: Ezt a mértéket ugyanis használhatjuk argumentumként más képletekben. Lehet, hogy ez elsőre nem egyértelmű, ahogy azonban jobban megismeri a DAX-képleteket, ezzel a mértékkel sokkal hatékonyabbá teheti a képleteket és a modelleket. A későbbiekben viszont is fogja látni a Total Sales mértéket más képletek argumentumaként.
 
-Lássunk még néhány dolgot ezzel a képlettel kapcsolatban. Kiemelendő, hogy a részeként egy függvényt is bemutattunk, a [SUM](https://msdn.microsoft.com/library/ee634387.aspx) függvényt. A függvények előre megírt képletek, amelyek használatával bonyolultabb számításokat és átalakításokat végezhet többek között számokkal, dátum- és időértékekkel, valamint szövegekkel. A függvényekkel a későbbiekben foglalkozunk részletesebben.
+Lássunk még néhány dolgot ezzel a képlettel kapcsolatban. Kiemelendő, hogy a részeként egy függvényt is bemutattunk, a [SUM](/dax/sum-function-dax) függvényt. A függvények előre megírt képletek, amelyek használatával bonyolultabb számításokat és átalakításokat végezhet többek között számokkal, dátum- és időértékekkel, valamint szövegekkel. A függvényekkel a későbbiekben foglalkozunk részletesebben.
 
 Azt is láttuk, hogy a [SalesAmount] ([ÉrtékesítésekÖsszege]) oszlopnév előtt szerepelt a Sales (Értékesítések) tábla is, amelyhez az oszlop tartozik. Ezt a nevet teljesen minősített oszlopnévnek nevezik, mivel az oszlop neve előtt a tábla neve is szerepel benne. Az ugyanabban a táblában található hivatkozott oszlopok esetében nem szükséges megadni a tábla nevét a képletben; így könnyebben olvashatók lehetnek a hosszú képletek, amelyek sok oszlopra hivatkoznak. A mértékképletek esetében azonban hasznos a tábla nevét is szerepeltetni, még ha a saját táblájukon belül hivatkozunk is rájuk.
 
@@ -121,7 +121,7 @@ Hozzunk létre egy egyszerű képletet. Ez a feladat segít jobban megérteni a 
 
 Most több fontos dolgot is megtanult a DAX-képletekkel kapcsolatban: 
 
-- Ez a képlet két függvényt tartalmazott. A [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx) időintelligencia-függvény a [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx) szűrőfüggvénynek átadott argumentumként van beágyazva. 
+- Ez a képlet két függvényt tartalmazott. A [PREVIOUSQUARTER](/dax/previousquarter-function-dax) időintelligencia-függvény a [CALCULATE](/dax/calculate-function-dax) szűrőfüggvénynek átadott argumentumként van beágyazva. 
 
    A DAX-képletek legfeljebb 64 beágyazott függvényt tartalmazhatnak. Valószínűtlen, hogy bármelyik képlet valaha is tartalmazna ennyi beágyazott függvényt. Egyébként is nehéz egy ilyen képletet létrehozni és abban hibákat keresni, és valószínűleg nem is lenne valami gyors.
 
@@ -142,7 +142,7 @@ A válaszokat a cikk végén találja.
 ### <a name="functions"></a>Függvények
 A függvények előre definiált képletek, amelyek adott sorrendben vagy struktúrában megadott értékek, az úgynevezett argumentumok alapján végeznek számításokat. Az argumentumok lehetnek más függvények, egy másik képlet vagy kifejezés, oszlophivatkozások, számok, szövegek, logikai értékek (IGAZ vagy HAMIS) vagy konstansok.
 
-A DAX a következő függvénykategóriákat tartalmazza: [Dátum és idő](https://msdn.microsoft.com/library/ee634786.aspx), [Időintelligencia](https://msdn.microsoft.com/library/ee634763.aspx), [Információs](https://msdn.microsoft.com/library/ee634552.aspx), [Logikai](https://msdn.microsoft.com/library/ee634365.aspx), [Matematikai](https://msdn.microsoft.com/library/ee634241.aspx), [Statisztikai](https://msdn.microsoft.com/library/ee634822.aspx), [Szöveg](https://msdn.microsoft.com/library/ee634938.aspx), [Szülő/gyermek](https://msdn.microsoft.com/library/mt150102.aspx) és [Egyéb](https://msdn.microsoft.com/library/mt150101.aspx) függvények. Ha már ismeri az Excel-képletekben használt függvényeket, a DAX-függvények nagy része ismerősnek fog hatni, azonban a DAX-függvények a következő szempontokból egyedinek tekinthetők:
+A DAX a következő függvénykategóriákat tartalmazza: [Dátum és idő](/dax/date-and-time-functions-dax), [Időintelligencia](/dax/time-intelligence-functions-dax), [Információs](/dax/information-functions-dax), [Logikai](/dax/logical-functions-dax), [Matematikai](/dax/math-and-trig-functions-dax), [Statisztikai](/dax/statistical-functions-dax), [Szöveg](/dax/text-functions-dax), [Szülő/gyermek](/dax/parent-and-child-functions-dax) és [Egyéb](/dax/other-functions-dax) függvények. Ha már ismeri az Excel-képletekben használt függvényeket, a DAX-függvények nagy része ismerősnek fog hatni, azonban a DAX-függvények a következő szempontokból egyedinek tekinthetők:
 
 * A DAX-függvény minden esetben egy oszlopra vagy táblára hivatkozik. Ha csak bizonyos értékeket szeretne egy táblából vagy oszlopból használni, kiegészítheti szűrőkkel a képletet.
 * Ha a számításokat soronként testre szeretné szabni, a DAX-ben léteznek olyan függvények, amelyeknek az aktuális sor értékét vagy egy kapcsolódó értéket átadhat argumentumként, így környezetfüggő számításokat végezhet. A környezetekre a későbbiekben térünk vissza.
@@ -150,7 +150,7 @@ A DAX a következő függvénykategóriákat tartalmazza: [Dátum és idő](http
 * A DAX különböző időintelligencia-függvényeket is tartalmaz. Ezekkel a függvényekkel megadhat vagy kiválaszthat dátumtartományokat, és azokon dinamikus számításokat hajthat végre. Például összehasonlíthat párhuzamos időszakokra vonatkozó összegeket.
 * Az Excel egyik népszerű függvénye a HKERES. Ellentétben az Excel HKERES függvényével, a DAX-függvényeknek nem adható át hivatkozásként cella vagy cellatartomány. A DAX-függvényeknek oszlopok vagy táblák adhatók át hivatkozásként. Mindig tartsa szem előtt, hogy a Power BI Desktopban relációs adatmodellekkel dolgozik. Könnyedén megkereshet egy értéket egy másik táblában, és ehhez legtöbbször még csak képlet sem kell.
   
-  Amint látható, a DAX függvényeivel hatékony képletek hozhatóak létre. Eddig még csak alapszinten tekintettük át a képleteket. Ahogy egyre jobban elsajátítja a DAX használatát, számos különböző függvényt alkalmaz majd a képletekben. A DAX-függvényekkel kapcsolatos információkért leginkább a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference) érdemes tanulmányoznia.
+  Amint látható, a DAX függvényeivel hatékony képletek hozhatóak létre. Eddig még csak alapszinten tekintettük át a képleteket. Ahogy egyre jobban elsajátítja a DAX használatát, számos különböző függvényt alkalmaz majd a képletekben. A DAX-függvényekkel kapcsolatos információkért leginkább a [DAX-függvények referencia-útmutatóját](/dax/) érdemes tanulmányoznia.
 
 ### <a name="functions-quickquiz"></a>Függvények-gyorsteszt
 1. Mire hivatkoznak minden esetben a függvények?
@@ -210,7 +210,7 @@ Ha belegondolunk, láthatjuk, hogy a szűrőkörnyezetek képletekben való mega
 A válaszokat a cikk végén találja.
 
 ## <a name="summary"></a>Összefoglalás
-Most, hogy valamelyest megismerte a DAX legfontosabb alapfogalmait, elkezdhet kísérletezgetni mértékek DAX-képleteinek létrehozásával. A DAX elsajátítása talán nem a legegyszerűbb dolog, de rengeteg forrásanyag áll rendelkezésre. A cikk átolvasása után, és miután már kísérletezgetett saját képletek összeállításával is, a DAX más fogalmaival és képleteivel is megismerkedhet, amelyek segíthetnek megoldást találni üzleti problémáira. A számos elérhető DAX-forrásanyag közül a legfontosabb a [Data Analysis Expressions (DAX) referencia-útmutatója](https://msdn.microsoft.com/library/gg413422.aspx).
+Most, hogy valamelyest megismerte a DAX legfontosabb alapfogalmait, elkezdhet kísérletezgetni mértékek DAX-képleteinek létrehozásával. A DAX elsajátítása talán nem a legegyszerűbb dolog, de rengeteg forrásanyag áll rendelkezésre. A cikk átolvasása után, és miután már kísérletezgetett saját képletek összeállításával is, a DAX más fogalmaival és képleteivel is megismerkedhet, amelyek segíthetnek megoldást találni üzleti problémáira. A számos elérhető DAX-forrásanyag közül a legfontosabb a [Data Analysis Expressions (DAX) referencia-útmutatója](/dax/).
 
 Mivel a DAX néhány éve már jelen van a Microsoft más üzletiintelligencia-eszközeiben, például a Power Pivot és az Analysis Services táblázatos modelljeiben, rengeteg további nagyszerű forrásanyag is elérhető. További információkat találhat még a mind a Microsoft, mind a vezető üzletiintelligencia-szakemberek tollából született könyvekben, tanulmányokban és blogokon. [A TechNeten a DAX-forrásanyagközpont wikije](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) szintén nagyszerű kiindulópontot jelenthet.
 
@@ -224,11 +224,10 @@ Függvények:
 
 1. Egy táblára és egy oszlopra.
 2. Igen. Az egyes képletek akár 64 beágyazott függvényt is tartalmazhatnak.
-3. A [szöveges függvények](https://msdn.microsoft.com/library/ee634938.aspx) kategóriájáét.
+3. A [szöveges függvények](/dax/text-functions-dax) kategóriájáét.
 
 Környezet:
 
 1. A sorkörnyezet és a szűrőkörnyezet.
 2. Egy adott számításban alkalmazott egy vagy több szűrő, amely egy értéket határoz meg.
 3. Az aktuális sor.
-

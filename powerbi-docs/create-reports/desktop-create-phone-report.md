@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 593847d229dcd4e2081843523a0a988415a9ef81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297975"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564746"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Power BI-jelentések optimalizálása mobilalkalmazásokhoz
 Álló elrendezés létrehozásával javíthatja a felhasználói élményt a jelentések mobilalkalmazással történő megtekintésénél. A Power BI Desktopban és a Power BI szolgáltatásban átrendezheti és átméretezheti a jelentések vizualizációit az optimális, álló elrendezésű élmény érdekében.  
@@ -58,7 +58,7 @@ A vizualizáció méretének változásával a Power BI átrangsorolja az adatn�
 
 ![Rugalmas vizualizációk átméretezése](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Vizualizációnként külön eldöntheti, hogy bekapcsolja-e a rugalmasságot. További információk a [vizualizációk optimalizálásáról](../visuals/desktop-create-responsive-visuals.md).
+Vizualizációnként külön eldöntheti, hogy bekapcsolja-e a rugalmasságot. További információk a [vizualizációk optimalizálásáról](../visuals/power-bi-report-visualizations.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Megfontolandó szempontok jelentések telefonos elrendezésének létrehozásához
 * A többoldalas jelentések esetében eldöntheti, hogy mindegyik oldalt optimalizálja-e, vagy csak egyes oldalakat. 
@@ -108,5 +108,5 @@ A jelentések olvasói a telefont vagy a táblagépet oldalra fordítva fekvő t
 ## <a name="next-steps"></a>További lépések
 * [Power BI-irányítópult telefonos nézetének létrehozása](service-create-dashboard-mobile-phone-view.md).
 * [Telefonra optimalizált Power BI-jelentések megtekintése](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Bármely méretre optimalizált rugalmas vizualizációk létrehozása](../visuals/desktop-create-responsive-visuals.md).
+* [Bármely méretre optimalizált rugalmas vizualizációk létrehozása](../visuals/power-bi-report-visualizations.md).
 * Több kérdése van? [Kérdés feltevése a Power BI közösségének](https://community.powerbi.com/).

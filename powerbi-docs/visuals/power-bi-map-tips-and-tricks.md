@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8a7b5785712aeac318b3d8a2bbd14ab7170a435f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277824"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565902"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tippek és trükkök térképes vizuális elemekhez a Power BI-ban
 
@@ -55,7 +55,7 @@ A Power BI Desktopban biztosíthatja a mezők helyes geokódolását úgy, hogy 
 **2. Több helyoszlop használata.**     
  Időnként az adatkategóriák beállítása a térképekhez nem elég, hogy a Bing helyesen megállapítsa a szándékait. Néhány megjelölés nem egyértelmű, mivel a hely több országban vagy régióban is megtalálható. Például ***Southampton*** Angliában, Pennsylvaniában és New Yorkban is található.
 
-A Power BI a Bing [strukturálatlan URL-sablon szolgáltatását](https://msdn.microsoft.com/library/ff701714.aspx) használja a bármely ország címérték-készletein alapuló szélességi és hosszúsági koordináták lekéréséhez. Ha az adatok nem tartalmaznak elég helyadatot, adja hozzá azokat az oszlopokat, és kategorizálja őket megfelelően.
+A Power BI a Bing [strukturálatlan URL-sablon szolgáltatását](/bingmaps/rest-services/locations/find-a-location-by-address) használja a bármely ország címérték-készletein alapuló szélességi és hosszúsági koordináták lekéréséhez. Ha az adatok nem tartalmaznak elég helyadatot, adja hozzá azokat az oszlopokat, és kategorizálja őket megfelelően.
 
  Például ha csak Város oszloppal rendelkezik, a Bing nehezen tudja elvégezni a geokódolást. Adjon hozzá további geooszlopokat, hogy egyértelművé tegye a helyet.  Néha egyetlen további helyoszlop hozzáadása is elég az adatkészlethez – ebben az esetben ez az állam/megye. Ne felejtse el helyesen kategorizálni, ehhez lásd az 1. lépést.
 
@@ -97,5 +97,3 @@ Ha a geohierarchiákkal végez le- vagy felhatolást, fontos tudnia, hogyan műk
 [Power BI-vizualizációk](power-bi-report-visualizations.md)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
-

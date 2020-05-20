@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 04b5bfbc08295974efcb7d583036d96274754bad
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349356"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565695"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10-hez készült Power BI mobilalkalmazás – első lépések
 A Windows 10-hez készült Power BI alkalmazással táblagépen és mobilon is használhatja a Power BI-t. Naprakész, érintéses használatra optimalizált mobil hozzáférést kaphat a vállalati információkhoz. Bárhol megtekintheti és használhatja a vállalati irányítópultjait – közvetlenül a [Windows kezdőképernyőjéről](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -118,8 +118,8 @@ A Windows 10-eszközökhöz készült Power BI alkalmazásban többek között a
 
 ### <a name="reporting-services-mobile-reports-and-kpis"></a>Reporting Services mobiljelentések és KPI-k
 * [Reporting Services mobiljelentések és KPI-k megtekintése](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) a Windows 10-eszközökhöz készült Power BI alkalmazásban.
-* [KPI-k létrehozása a Reporting Services webes portálon](https://msdn.microsoft.com/library/mt683632.aspx).
-* [Saját mobiljelentések létrehozása az SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx) segítségével, illetve közzététele a Reporting Services webes portálon.
+* [KPI-k létrehozása a Reporting Services webes portálon](/sql/reporting-services/working-with-kpis-in-reporting-services).
+* [Saját mobiljelentések létrehozása az SQL Server Mobile Report Publisher](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) segítségével, illetve közzététele a Reporting Services webes portálon.
 
 ## <a name="next-steps"></a>Következő lépések
 * [A Power BI alkalmazás letöltése](https://go.microsoft.com/fwlink/?LinkID=526478) a Windows Áruházból  

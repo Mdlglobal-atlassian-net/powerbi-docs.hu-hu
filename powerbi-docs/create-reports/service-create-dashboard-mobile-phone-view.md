@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 93d94aadb8e7606fd6d55c463a2be88f87e48047
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2aa75d1cbe04f33197bf8941fd101c66384142dd
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83314857"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565810"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Irányítópultok optimalizálása mobiltelefonokra – Power BI 
 Amikor a telefonján irányítópultokat tekint meg álló elrendezésben, észreveheti, hogy az irányítópult-csempék egymás után sorakoznak, egyforma méretben. A Power BI szolgáltatásban bármely irányítópultnak létrehozható az egyéni nézete, különösképp telefonokon, álló elrendezésben. A telefont oldalra fordítva az irányítópult elrendezése olyan lesz, mint a szolgáltatásban, akkor is, ha telefonos nézetet hoz létre.
@@ -57,5 +57,5 @@ Irányítópultok mobileszközökön való megtekintéséről szeretne többet m
 
 ## <a name="next-steps"></a>További lépések
 * [A Power BI telefonos alkalmazásokhoz optimalizált jelentések létrehozása](desktop-create-phone-report.md)
-* [Tetszőleges méretre optimalizált, rugalmas vizualizációk létrehozása](../visuals/desktop-create-responsive-visuals.md)
+* [Tetszőleges méretre optimalizált, rugalmas vizualizációk létrehozása](../visuals/power-bi-report-visualizations.md)
 * Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)

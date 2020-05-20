@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 858ecc07deabf5b91295220c2b92791b998ecf3a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349241"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565833"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Oktatóanyag: Számított oszlopok létrehozása a Power BI Desktopban
 
@@ -46,7 +46,7 @@ Ez az oktatóanyag bemutatja néhány számított oszlop létrehozását és jel
 
 2. Alapértelmezés szerint az új számított oszlop neve **Oszlop** lesz. Ha nem nevezi át, akkor a további új oszlopok neve **Oszlop 2**, **Oszlop 3** lesz, és így tovább. Az oszlopnak célszerű informatívabb nevet adni, ezért mivel az **Oszlop** neve már ki van jelölve a szerkesztőlécen, a **ProductFullCategory** név beírásával nevezze át, majd írjon be egy egyenlőségjelet ( **=** ).
 
-3. Az a cél, hogy az új oszlopban lévő értékek a **ProductCategory** mezőben található névvel kezdődjenek. Mivel ez az oszlop egy másik, de kapcsolódó táblában található, a lekéréséhez a [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) függvény használható.
+3. Az a cél, hogy az új oszlopban lévő értékek a **ProductCategory** mezőben található névvel kezdődjenek. Mivel ez az oszlop egy másik, de kapcsolódó táblában található, a lekéréséhez a [RELATED](/dax/related-function-dax) függvény használható.
 
    Az egyenlőségjel után írja be: **r**. Egy legördülő javaslati lista megjeleníti az összes R betűvel kezdődő DAX-függvényt. Az egyes függvényeket kijelölve megjelenik a függvény hatásának leírása. A függvénynév beírása közben a javaslatok listája a keresett függvényhez közeli lehetőségekre szűkül. Jelölje ki a **RELATED** függvényt, majd nyomja meg az **Enter** billentyűt.
 
@@ -97,7 +97,7 @@ Mostantól az új **ProductFullCategory** oszlop használatával a **SalesAmount
 
 A Contoso értékesítési minta aktív és inaktív üzletekre vonatkozó értékesítési adatokat is tartalmaz. Egy **Active StoreName** (aktív üzlet név) mező létrehozásával biztosíthatja, hogy a jelentésében az aktív üzletek értékesítései egyértelműen elkülönüljenek az inaktív üzletek értékesítéseitől. Az új **Active StoreName** számított oszlopban mindegyik aktív üzlet megjelenik az üzlet teljes nevével, míg az inaktív üzletek értékesítéseit egyetlen „**Inaktív**” sorelem alatt csoportosítja a rendszer.
 
-Szerencsére a **Stores** (Üzletek) táblának van egy **Status** (Állapot) nevű oszlopa, amelyben az aktív üzleteket „Be”, az inaktív üzleteket „Ki” érték jelzi, amelyek használatával értékek hozhatók létre az új **Active StoreName** oszlop számára. A DAX-képlet a logikai [IF](https://msdn.microsoft.com/library/ee634824.aspx) függvényt fogja használni az egyes üzletek **Status** értékének ellenőrzése, és az eredménytől függően fog egy bizonyos értéket kiadni. Ha egy üzlet **Status** értéke „On” („Be”), akkor a képlet kiadja az üzlet nevét. Ha az észlelt érték „Off” („Ki”), akkor a képlet „Inactive”(„Inaktív”) **Active StoreName** értéket fog hozzárendelni.
+Szerencsére a **Stores** (Üzletek) táblának van egy **Status** (Állapot) nevű oszlopa, amelyben az aktív üzleteket „Be”, az inaktív üzleteket „Ki” érték jelzi, amelyek használatával értékek hozhatók létre az új **Active StoreName** oszlop számára. A DAX-képlet a logikai [IF](/dax/if-function-dax) függvényt fogja használni az egyes üzletek **Status** értékének ellenőrzése, és az eredménytől függően fog egy bizonyos értéket kiadni. Ha egy üzlet **Status** értéke „On” („Be”), akkor a képlet kiadja az üzlet nevét. Ha az észlelt érték „Off” („Ki”), akkor a képlet „Inactive”(„Inaktív”) **Active StoreName** értéket fog hozzárendelni.
 
 1. A **Stores** táblában hozzon létre egy új számított oszlopot, és a szerkesztőlécen adja neki az **Active StoreName** nevet.
 
@@ -133,4 +133,4 @@ A számított oszlopok tovább gazdagíthatják az adatokat, és megkönnyíthet
 
 Ha szeretné a DAX-képleteket részletesebben megismerni, és összetettebb képletekkel szeretne létrehozni számított oszlopokat, olvassa el a cikket, amely [a DAX alapszintű használatát ismerteti a Power BI Desktopban](desktop-quickstart-learn-dax-basics.md). Ez a cikk a DAX alapvető fogalmaira, a szintaxisra, a függvényekre és a környezet alaposabb megértésére összpontosít.
 
-Mindenképp vegye fel a [Data Analysis Expressions (DAX) referenciát](https://msdn.microsoft.com/library/gg413422.aspx) a kedvencei közé. Ebben találja részletesen leírva a DAX-szintaxist, az operátorokat, valamint a több mint 200 DAX-függvényt.
+Mindenképp vegye fel a [Data Analysis Expressions (DAX) referenciát](/dax/) a kedvencei közé. Ebben találja részletesen leírva a DAX-szintaxist, az operátorokat, valamint a több mint 200 DAX-függvényt.
