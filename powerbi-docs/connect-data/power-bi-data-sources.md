@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: a29dcd8c89d064678e558d5ebfee7ccb3cc8a8e0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2aa12ec3d55e491535d12107fc70709f9d41c3f0
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83330106"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438085"
 ---
 # <a name="power-bi-data-sources"></a>Adatforrások a Power BI-hoz
 
@@ -66,7 +66,7 @@ Az alábbi táblázat bemutatja a Power BI által támogatott adatforrásokat ad
 | Mappa | Igen | Igen | Nem | Igen | Igen |
 | GitHub | Igen | Igen | Nem | Nem | Nem |
 | Google Analytics | Igen | Igen | Nem | Nem | Nem |
-| Google BigQuery | Igen | Igen | Nem | Nem | Nem |
+| Google BigQuery | Igen | Igen | Igen | Nem | Nem |
 | Hadoop-fájl (HDFS) | Igen | Nem | Nem | Nem | Nem |
 | HDInsight interaktív lekérdezés | Igen | Igen | Igen | Nem | Nem |
 | IBM DB2 | Igen | Igen | Igen | Igen | Nem |

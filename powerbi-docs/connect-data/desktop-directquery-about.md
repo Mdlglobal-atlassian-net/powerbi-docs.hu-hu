@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cf937ea36727ec036e3799cb0ac48dfbb5740325
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292915"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563287"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>DirectQuery használata a Power BI-ban
 
@@ -371,7 +371,7 @@ E mappa szülőmappáját megnyitva az *AnalysisServicesWorkspaces* mappa jeleni
 
 A mappán belül egy *\\Data* mappa található. Ez tartalmazza az aktuális Power BI-munkamenet *FlightRecorderCurrent.trc* nyomkövetési fájlját. A Power BI Desktop-munkamenet befejezésekor az ahhoz tartozó munkaterületi mappa törlődik.
 
-A nyomkövetési fájlok az *SQL Server Profiler* eszközzel olvashatók. Ehhez az ingyenesen letölthető [SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) részeként juthat hozzá.
+A nyomkövetési fájlok az *SQL Server Profiler* eszközzel olvashatók. Ehhez az ingyenesen letölthető [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) részeként juthat hozzá.
 
 Ha letöltötte és telepítette az SQL Server Management Studio eszközt, futtassa az SQL Server Profilert.
 

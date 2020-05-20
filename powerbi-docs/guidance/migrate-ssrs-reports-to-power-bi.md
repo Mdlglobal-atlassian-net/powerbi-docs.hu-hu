@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d9fd23a0cf5c3ed26c78e4c53ae600bf74daca91
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 06bff0a199db9955f11487a05ba78268bb8a942d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348183"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561593"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services-jelentések migrálása a Power BI-ba
 
@@ -194,7 +194,7 @@ Erről a cikkről a következő forrásanyagokban talál további információt:
 - [Adatlekérési útmutató lapszámozott jelentésekhez](report-paginated-data-retrieval.md)
 - [Többoldalas jelentések használata a Power BI-ban](report-paginated-or-power-bi.md)
 - [Lapszámozott jelentések a Power BI-ban: GYIK](../paginated-reports/paginated-reports-faq.md)
-- [Online kurzus: Lapszámozott jelentések egy nap alatt](../paginated-reports/paginated-reports-online-course.md)
+- [Online kurzus: Lapszámozott jelentések egy nap alatt](../learning-catalog/paginated-reports-online-course.md)
 - [Power BI Premium – gyakori kérdések](../admin/service-premium-faq.md)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 27509d42b09b9524b204da5ab0ce76f3d180a057
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293168"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561570"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Adattípusok a Power BI Desktopban
 A cikk a Power BI Desktop és a Data Analysis Expressions (DAX) által támogatott adattípusokat ismerteti. 
@@ -72,7 +72,7 @@ A Power BI Desktop öt Dátum/idő adattípust támogat a Lekérdezésnézetben.
 **Igaz/hamis** – Egy logikai érték, amely vagy Igaz vagy Hamis.
 
 ### <a name="blanksnulls-type"></a>Üres/null érték típus
-**Üres** – DAX-adattípus, amely az SQL nullértékeit jelöli és helyettesíti. Üres értékeket a [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) függvénnyel hozhat létre, a meglévőket pedig az [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logikai függvénnyel ellenőrizheti.
+**Üres** – DAX-adattípus, amely az SQL nullértékeit jelöli és helyettesíti. Üres értékeket a [BLANK](/dax/blank-function-dax) függvénnyel hozhat létre, a meglévőket pedig az [ISBLANK](/dax/isblank-function-dax) logikai függvénnyel ellenőrizheti.
 
 ### <a name="binary-data-type"></a>Bináris adattípus
 
@@ -86,7 +86,7 @@ A bináris adattípus használatával bármely más adattípus bináris formátu
 > 
 
 ### <a name="table-data-type"></a>Tábla adattípus
-A DAX a tábla adattípust sok függvényben használja, például összesítésekben és időintelligencia-számításokban. Egyes függvényekben táblára mutató hivatkozást kell megadni, más függvények pedig táblákat adnak vissza, amelyek más függvényeknek átadhatók. Egyes táblát váró függvényeknek átadhatók függvényt visszaadó kifejezések, míg más függvényeknek csak alaptáblák adhatók át. Az egyes függvények követelményeivel kapcsolatos információkért lásd a [DAX-függvények referencia-útmutatóját](https://msdn.microsoft.com/library/ee634396.aspx).
+A DAX a tábla adattípust sok függvényben használja, például összesítésekben és időintelligencia-számításokban. Egyes függvényekben táblára mutató hivatkozást kell megadni, más függvények pedig táblákat adnak vissza, amelyek más függvényeknek átadhatók. Egyes táblát váró függvényeknek átadhatók függvényt visszaadó kifejezések, míg más függvényeknek csak alaptáblák adhatók át. Az egyes függvények követelményeivel kapcsolatos információkért lásd a [DAX-függvények referencia-útmutatóját](/dax/dax-function-reference).
 
 ## <a name="implicit-and-explicit-data-type-conversion-in-dax-formulas"></a>Implicit és explicit adattípus-konverzió a DAX-képletekben
 Mindegyik DAX-függvény saját követelményekkel rendelkezik a bemeneti és kimeneti adatok típusát illetően. Például egyes függvények egész számot várnak egyes argumentumokra, dátumokat másokra, más függvények pedig szövegeket vagy táblákat várnak.
@@ -197,4 +197,3 @@ Az üres értékek viselkedését a különféle műveletekben, például össze
 | IGAZ ÉS ÜRES |HAMIS |IGAZ |
 | ÜRES VAGY ÜRES |ÜRES |Hiba |
 | ÜRES ÉS ÜRES |BLANK |Hiba |
-

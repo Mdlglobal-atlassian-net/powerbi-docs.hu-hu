@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e303d85083624bb67e73729024875d0f6f44fc42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d8872499bb54e23aabe642f88a541b85948d6656
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377144"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561989"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>A Power BI szolgáltatás alapfogalmai felhasználók számára
 
@@ -116,7 +116,7 @@ A Power BI-ban többet között az alábbi vizualizációkkal találkozhat: víz
 
    ![Nyolc vizualizációmintát ábrázoló képernyőkép.](media/end-user-basic-concepts/power-bi-visuals.png)
 
-Részletes információkért tekintse meg a [Power BI-ban használt vizualizációk teljes listáját](../power-bi-visualization-types-for-reports-and-q-and-a.md).
+Részletes információkért tekintse meg a [Power BI-ban használt vizualizációk teljes listáját](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 A közösségtől is beszerezhetők úgynevezett *Power BI-vizualizációk*. Ha olyan vizualizációt tartalmazó jelentést kap, amelyet nem ismer fel, akkor valószínűleg egyéni vizualizációról van szó. Ha az egyéni vizualizáció értelmezéséhez segítségre van szüksége, keresse meg a jelentés vagy az irányítópult *tervezőjének* nevét, és lépjen kapcsolatba vele.
 

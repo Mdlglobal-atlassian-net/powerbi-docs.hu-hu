@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e03a453b95a797b281f789e8aed40b3879b54e02
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277157"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563862"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Alapszintű területdiagram létrehozása és használata
 
@@ -82,11 +82,8 @@ További információt a [Vizualizációk interakciói a jelentésekben](../crea
 
 
 ## <a name="considerations-and-troubleshooting"></a>Megfontolandó szempontok és hibaelhárítás   
-* [Jelentés nevének akadálymentesítése a fogyatékkal élők számára](../desktop-accessibility.md)
+* [Jelentés nevének akadálymentesítése a fogyatékkal élők számára](../create-reports/desktop-accessibility-overview.md)
 * Az alapszintű területdiagramok az értékek összehasonlításához nem jól használhatóak, mivel a rétegzett területek kitakarják egymást. A Power BI átlátszósággal jelzi a területek fedését. Ez azonban csak két vagy három külön terület esetén működik. Ha háromnál több mérték trendjeit szeretné összehasonlítani, próbáljon inkább vonaldiagramokat alkalmazni. Ha háromnál több mérték mennyiségét szeretné összehasonlítani, próbáljon inkább faszerkezetes térképet alkalmazni.
 
 ## <a name="next-step"></a>Következő lépés
 [Power BI-jelentések](power-bi-visualization-card.md)  
-
-
-

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b0bf61672d383900dad50e5fe7404f7f4a7f0bc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 96a780d7d7b100acb283623107d4ec841666bb8f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348919"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561662"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Irányítópultcsempék a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -23,7 +23,7 @@ A csempék az adatokról készített és az irányítópultra kitűzött pillana
 
 ![Power BI-irányítópult](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Az irányítópultok és az irányítópulton található csempék nem a Power BI Desktophoz, hanem a Power BI szolgáltatáshoz tartozó funkciók. Mobileszközökön nem hozhat létre irányítópultokat, de [megtekintheti és megoszthatja]../consumer/mobile/mobile-apps-view-dashboard.md) az irányítópultokat rajtuk.
+Az irányítópultok és az irányítópulton található csempék nem a Power BI Desktophoz, hanem a Power BI szolgáltatáshoz tartozó funkciók. Mobileszközön nem hozhat létre irányítópultokat, azonban [megtekintheti és megoszthatja](../consumer/mobile/mobile-apps-view-dashboard.md) őket.
 
 A csempék rögzítése mellett önálló csempéket is létrehozhat közvetlenül az irányítópulton a [Csempe hozzáadása](service-dashboard-add-widget.md) vezérlő használatával. Önmagukban álló csempék lehetnek többek között szövegmezők, képek, videók, streaming-adatok, webtartalmak.
 
@@ -98,6 +98,6 @@ Az, hogy mi történik, amikor rákattint valamelyik csempére, attól függ, ho
 - [Adatfrissítés a Power BI-ban](../connect-data/refresh-data.md)
 - [A Power BI szolgáltatás alapfogalmai tervezők számára](../fundamentals/service-basic-concepts.md)
 - [Power BI-csempe Office-dokumentumba integrálása](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Reporting Services-elem rögzítése Power BI-irányítópulton](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Reporting Services-elem rögzítése Power BI-irányítópulton](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/).

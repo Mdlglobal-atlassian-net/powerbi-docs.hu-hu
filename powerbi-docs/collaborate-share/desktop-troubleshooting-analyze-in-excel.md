@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 45395fbb9d815580132ea254812fddec4cec4ba5
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 555d203cfa8bd00e745c0dcff5de7f7e8d48f06c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275271"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563184"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Az Elemzés az Excelben hibaelhárítása
 
@@ -84,7 +84,7 @@ Ha **a token lejárt** hibaüzenetet kap, akkor mostanában nem használta az **
 Ha olyan adatkészlethez próbál hozzáférni, amely helyszíni Analysis Services-adatokhoz kapcsolódik, előfordulhat, hogy hibaüzenetet kap. Az **Elemzés az Excelben** nem támogatja a helyszíni **Analysis Services** szolgáltatásban található adatkészletekhez és jelentésekhez történő kapcsolódást kapcsolati sztring segítségével, ha a számítógép és az **Analysis Services**-kiszolgáló ugyanabban a tartományban található, és a fiókja hozzáféréssel rendelkezik az adott **Analysis Services**-kiszolgálóhoz.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Semmi nem húzható a Kimutatási értékek területre (nincsenek mértékek)
-Amikor az **Elemzés az Excelben** egy külső OLAP-modellhez kapcsolódik (azaz ahogyan az Excel a Power BI szolgáltatáshoz kapcsolódik), a *PivotTable*[ megköveteli **mértékek** megadását a külső modellben](https://support.microsoft.com/kb/234700), mivel minden számítás elvégzése a kiszolgálón történik. Ez eltér attól, amikor helyi adatforrással dolgozik (pl. Excel-táblákkal, vagy amikor adatkészletekkel dolgozik a **Power BI Desktopban** vagy a **Power BI szolgáltatásban**), mert ebben az esetben a táblázatos modell helyileg elérhető, és [implicit mértékek is használható](https://msdn.microsoft.com/library/gg399077.aspx). Ezek olyan dinamikusan előállított mértékek, amelyek nem az adatmodellben vannak tárolva. Ezekben az esetekben az Excel viselkedése eltér a **Power BI Desktop** vagy a **Power BI szolgáltatás** viselkedésétől: lehetnek olyan oszlopok az adatok között, amelyek mértékekként kezelhetők a Power BI szolgáltatásban, de nem használhatók értékként (mértékkén) az Excelben.
+Amikor az **Elemzés az Excelben** egy külső OLAP-modellhez kapcsolódik (azaz ahogyan az Excel a Power BI szolgáltatáshoz kapcsolódik), a *PivotTable*[ megköveteli **mértékek** megadását a külső modellben](https://support.microsoft.com/kb/234700), mivel minden számítás elvégzése a kiszolgálón történik. Ez eltér attól, amikor helyi adatforrással dolgozik (pl. Excel-táblákkal, vagy amikor adatkészletekkel dolgozik a **Power BI Desktopban** vagy a **Power BI szolgáltatásban**), mert ebben az esetben a táblázatos modell helyileg elérhető, és [implicit mértékek is használható](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4). Ezek olyan dinamikusan előállított mértékek, amelyek nem az adatmodellben vannak tárolva. Ezekben az esetekben az Excel viselkedése eltér a **Power BI Desktop** vagy a **Power BI szolgáltatás** viselkedésétől: lehetnek olyan oszlopok az adatok között, amelyek mértékekként kezelhetők a Power BI szolgáltatásban, de nem használhatók értékként (mértékkén) az Excelben.
 
 A probléma megoldására több lehetőség van:
 
@@ -99,7 +99,7 @@ Ha meghatározta a modell mértékeit a Power BI szolgáltatásban, használhatj
 
 [Oktatóanyag: Saját mértékek létrehozása a Power BI Desktopban](../transform-model/desktop-tutorial-create-measures.md)
 
-[Mértékek a PowerPivotban](https://msdn.microsoft.com/library/gg399077.aspx)
+[Mértékek a PowerPivotban](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
 
 [Mérték létrehozása a PowerPivotban](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 

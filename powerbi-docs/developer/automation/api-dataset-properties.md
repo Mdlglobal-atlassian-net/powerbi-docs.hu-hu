@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079669"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561501"
 ---
 # <a name="dataset-properties"></a>Adatkészlet tulajdonságai
 
@@ -46,8 +46,8 @@ isHidden     | Logikai érték        | Ha az értéke igaz, a tábla rejtett le
 Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
 név     |  Sztring        | Az oszlop felhasználó által meghatározott neve.        |  Hamis       | Igaz       
-dataType     |  Sztring       |  Támogatott [EDM-adattípusok](https://msdn.microsoft.com/library/ee382832.aspx) és korlátozások. Lásd: [Adattípus-korlátozások](#data-type-restrictions).      |  Hamis       | Igaz        
-formatString     | Sztring        | Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).      | Hamis        | Hamis        
+dataType     |  Sztring       |  Támogatott [EDM-adattípusok](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) és korlátozások. Lásd: [Adattípus-korlátozások](#data-type-restrictions).      |  Hamis       | Igaz        
+formatString     | Sztring        | Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).      | Hamis        | Hamis        
 sortByColumn    | Sztring        |   Ugyanazon tábla oszlopának a sztringneve, amelyet a jelenlegi oszlop elrendezésére használ.     | Hamis        | Hamis       
 dataCategory     | Sztring        |  Az ebben az oszlopban lévő adatokat leíró adatkategóriához használható sztringérték. Néhány gyakori érték például: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Hamis       | Hamis        
 isHidden    |  Logikai érték       |  Tulajdonság, amely azt jelzi, hogy az oszlop rejtett-e a nézetben. Az alapértelmezett érték a false.       | Hamis        | Hamis        
@@ -59,7 +59,7 @@ Name (Név)  |Típus  |Description (Leírás)  |Csak olvasható  |Kötelező
 ---------|---------|---------|---------|---------
 név     | Sztring        |  A mérték felhasználó által meghatározott neve.       |  Hamis       | Igaz        
 kifejezés     | Sztring        | Egy érvényes DAX-kifejezés.        | Hamis        |  Igaz       
-formatString     | Sztring        |  Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](https://msdn.microsoft.com/library/ms146084.aspx).       | Hamis        | Hamis        
+formatString     | Sztring        |  Egy sztring, amely leírja, hogyan kell formázni az értéket a megjelenésekor. A sztringek formázásáról további információért olvassa el a [FORMAT_STRING tartalmakat](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).       | Hamis        | Hamis        
 isHidden     | Sztring        |  Ha az értéke igaz, a tábla rejtett lesz az ügyféleszközök elől.       |  Hamis       | Hamis       
 
 ## <a name="relationship"></a>Kapcsolat
