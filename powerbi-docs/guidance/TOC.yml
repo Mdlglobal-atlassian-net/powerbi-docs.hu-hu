@@ -110,6 +110,8 @@
               href: monitor-report-performance.md
             - name: Jelentésteljesítménnyel kapcsolatos problémák elhárítása
               href: report-performance-troubleshoot.md
+            - name: Ajánlott eljárások az üzembehelyezési folyamatokhoz
+              href: ../create-reports/deployment-pipelines-best-practices.md
     - name: Tanulmányok
       items:
         - name: Tanulmányok áttekintése
