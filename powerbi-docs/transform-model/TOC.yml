@@ -83,6 +83,8 @@
               href: service-dataflows-create-use.md
             - name: Adatfolyamok előléptetése vagy hitelesítése
               href: service-dataflows-promote-certify.md
+            - name: DirectQuery használata adatfolyamokkal a Power BI-ban (előzetes verzió)
+              href: service-dataflows-directquery.md
             - name: A továbbfejlesztett számítási motor használata adatfolyamokkal
               href: service-dataflows-enhanced-compute-engine.md
             - name: Számított entitások a Power BI Premiummal

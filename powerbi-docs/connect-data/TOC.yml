@@ -208,8 +208,8 @@
               href: refresh-data.md
             - name: Ütemezett frissítés beállítása
               href: refresh-scheduled-refresh.md
-            - name: Frissítési központ
-              href: refresh-center.md
+            - name: Összegzések frissítése
+              href: refresh-summaries.md
             - name: A növekményes frissítés konfigurálása
               href: ../admin/service-premium-incremental-refresh.md
             - name: Helyi Power BI Desktop-fájlból létrehozott adatkészlet frissítése

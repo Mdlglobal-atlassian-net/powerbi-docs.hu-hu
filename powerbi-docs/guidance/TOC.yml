@@ -118,7 +118,9 @@
           href: whitepapers.md
         - name: A Power BI biztonsága – tanulmány
           href: whitepaper-powerbi-security.md
-        - name: A Power BI prémium üzembe helyezése
+        - name: A Power BI vállalati bevezetése – tanulmány
+          href: whitepaper-powerbi-enterprise-deployment.md
+        - name: A Power BI Premium üzembe helyezése
           href: whitepaper-powerbi-premium-deployment.md
         - name: Power BI-tartalom külső terjesztése az Azure Active Directory B2B használatával
           href: whitepaper-azure-b2b-power-bi.md
