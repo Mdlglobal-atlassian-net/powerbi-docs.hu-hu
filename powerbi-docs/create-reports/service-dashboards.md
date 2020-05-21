@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 35e5d3b93305f8f2271db6343164cad8b57a4bfd
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c687486af1293660af5496e27ea707bb1afeec80
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348850"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564552"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Irányítópultok a Power BI szolgáltatás tervezői számára – bevezetés
 
@@ -22,7 +22,7 @@ A *Power BI-irányítópult* egy gyakran vászonnak is nevezett oldal, amely viz
 
 ![Irányítópult](media/service-dashboards/power-bi-dashboard2.png)
 
-Az irányítópult funkció csak a Power BI szolgáltatásban érhető el. A Power BI Desktopban nem érhetők el. Bár mobileszközökön nem hozhat létre irányítópultokat, [megtekintheti és megoszthatja]../consumer/mobile/mobile-apps-view-dashboard.md) az irányítópultokat rajtuk.
+Az irányítópult funkció csak a Power BI szolgáltatásban érhető el. A Power BI Desktopban nem érhetők el. Mobileszközön nem hozhat létre irányítópultokat, azonban [megtekintheti és megoszthatja](../consumer/mobile/mobile-apps-view-dashboard.md) őket.
 
 ## <a name="dashboard-basics"></a>Irányítópult – alapok 
 
