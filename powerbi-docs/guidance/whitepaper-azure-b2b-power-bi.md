@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82843641"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565437"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI-tartalom terjesztése külső vendégfelhasználóknak az Azure Active Directory B2B használatával
 
@@ -306,7 +306,7 @@ Power BI az Azure AD B2B-vel való integrációja zökkenőmentes, zavartalan ho
 
     A vendég felhasználók ezt követően az e-mailben szereplő hivatkozásra kattintva vagy a hivatkozás könyvjelzővel érhetik el a contoso alkalmazást. A contoso azt is megkönnyíti a vendég felhasználók számára, hogy hozzáadja ezt a hivatkozást a meglévő extranetes portálra, amelyet a vendég felhasználó már használ.
 
-4. További lépések
+4. Következő lépések
 
     A contoso a Power BI alkalmazás és az Azure AD B2B használatával gyorsan létrehozhat egy BI-portált a beszállítók számára, kód nélküli módon. Ez nagymértékben leegyszerűsíti a szabványosított elemzések terjesztését az összes szükséges szolgáltatóhoz.
 
@@ -415,7 +415,7 @@ Most, amikor a felhasználó megnyitta a velük megosztott alkalmazást, csak az
 
 Egy másik érdekes téma, hogy megtudhatja, hogyan működik az Azure AD B2B a dinamikus sorok szintjének biztonsága (RLS).
 
-A dinamikus sorok szintjének biztonsága úgy működik, hogy a modellben lévő, a Power BIhoz csatlakozó személy felhasználóneve alapján szűri az adattípust. Ahelyett, hogy több szerepkört adna hozzá a felhasználói csoportokhoz, meg kell határoznia a modellben lévő felhasználókat. Itt részletesen ismertetjük a mintát. A Kasper de Jong részletesen leírja az [Power bi Desktop dinamikus biztonsági Cheat Sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)-ben [és ebben a](https://msdn.microsoft.com/library/jj127437.aspx) tanulmányban, a sor szintű biztonság összes ízeit.
+A dinamikus sorok szintjének biztonsága úgy működik, hogy a modellben lévő, a Power BIhoz csatlakozó személy felhasználóneve alapján szűri az adattípust. Ahelyett, hogy több szerepkört adna hozzá a felhasználói csoportokhoz, meg kell határoznia a modellben lévő felhasználókat. Itt részletesen ismertetjük a mintát. A Kasper de Jong részletesen leírja az [Power bi Desktop dinamikus biztonsági Cheat Sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/)-ben [és ebben a](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) tanulmányban, a sor szintű biztonság összes ízeit.
 
 Lássunk egy kis példát – a contoso egy egyszerű jelentést készít az értékesítésekről csoportok szerint:
 
@@ -504,7 +504,7 @@ Azok a vendégek, akik engedélyezik a külső vendég felhasználók számára 
 
 - Közvetlen közzététel a Power BI Desktopból a Power BI szolgáltatásba
 - A vendégfelhasználók nem csatlakozhatnak a Power BI szolgáltatás szolgáltatói adatkészleteihez a Power BI Desktoppal
-- Office 365-csoportokhoz kötött klasszikus munkaterületek: a vendég felhasználó nem hozhat létre, illetve nem lehet a munkaterületek rendszergazdái. Csak tagok lehetnek.
+- Microsoft 365 csoportokhoz kötött klasszikus munkaterületek: a vendég felhasználó nem hozhat létre és nem lehet a munkaterületek rendszergazdái. Csak tagok lehetnek.
 - Az ad-hoc meghívások nem támogatottak a munkaterületek hozzáférési listáiban
 - A vendégfelhasználók számára nem támogatott a Power BI Publisher for Excel
 - A vendégfelhasználók nem telepíthetik a Power BI Gateway szolgáltatást, és nem csatlakoztathatják az Ön szervezetéhez

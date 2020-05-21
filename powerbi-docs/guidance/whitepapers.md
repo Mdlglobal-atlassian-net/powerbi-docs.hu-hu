@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 05/19/2020
 ms.author: maggies
-ms.openlocfilehash: 8b103902f7a151dcbfee9fa6ff54830129a65c14
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 98b5323efa8b6c6c0e1d6f1dbab640fe5f4cae4c
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279066"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693973"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI-tanulmányok
 
@@ -21,7 +21,7 @@ A tanulmányokkal behatóbban ismerheti meg a Power BI témaköreit. Itt találj
 
 | Tanulmány | Leírás | Dátum |
 | --- | --- | --- |
-| [A Power BI Enterprise üzembehelyezési előkészületei](https://go.microsoft.com/fwlink/?linkid=2057861) |Ez egy technikai tanulmány, amely a jól teljesítő és biztonságos céges Power BI-környezettel kapcsolatos szempontokat ismerteti. | 2018. július |
+| [A Power BI Enterprise üzembehelyezési előkészületei](https://aka.ms/PBIEnterpriseDeploymentWP) |Ez a frissített technikai tanulmány a jól teljesítő és biztonságos szervezeti Power BI üzembe helyezésével kapcsolatos szempontokat és ajánlott eljárásokat ismerteti. | 2020. május |
 | [A Power BI és az adatfolyamok](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Ez a tanulmány technikai részletességgel ismerteti az adatfolyamokat, valamint az adatfolyamok szolgáltatásainak és funkcióinak hátterében álló képességeket és törekvéseket. | 2018. november |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Leírja a Power BI Premium kiadáskori állapotát, valamint a várható fejlődési útját is. | 2017. október |
 | [A Power BI Premium tervezése és üzembe helyezése](whitepaper-powerbi-premium-deployment.md)| Ez a tanulmány útmutatást nyújt és ajánlott eljárásokat mutat be a prémium szintű kapacitás meghatározott számítási feladatokhoz történő tervezéséhez és üzembe helyezéséhez.| 2019. március |
