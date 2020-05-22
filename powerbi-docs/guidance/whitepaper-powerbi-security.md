@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565277"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792910"
 ---
 # <a name="power-bi-security-whitepaper"></a>A Power BI biztonsága – tanulmány
 
@@ -91,11 +91,11 @@ A felhasználók Power BI-előfizetéseivel kapcsolatos metaadatokat (például 
 
 ## <a name="tenant-creation"></a>Bérlőlétrehozás
 
-A bérlő az Azure AD szolgáltatás egy dedikált példánya, amelyet a szervezetek megkapnak és a tulajdonukban áll, amikor regisztrálnak egy Microsoft-felhőszolgáltatásra, például az Azure, a Microsoft Intune, a Power BI vagy az Office 365 szolgáltatásra. Mindegyik Azure AD-bérlő önálló, és elkülönül a többi Azure AD-bérlőtől.
+A bérlő az Azure AD szolgáltatás egy dedikált példánya, amelyet a szervezet a Microsoft Cloud Service, például az Azure, a Microsoft Intune, a Power BI vagy a Microsoft 365 regisztrálásakor kap és birtokol. Mindegyik Azure AD-bérlő önálló, és elkülönül a többi Azure AD-bérlőtől.
 
 A bérlők a vállalatnál tárolják a felhasználóikat és azok információit – a jelszavaikat, a felhasználói profiljuk adatait, az engedélyeiket stb. Csoportokat, alkalmazásokat és a szervezethez és annak biztonságához kapcsolódó egyéb információkat is tartalmazzák. További információ: [Mi az az Azure ad-bérlő](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-A Power BI-bérlő az Azure Active Directoryban megadott országhoz (vagy régióhoz) és államhoz legközelebbi adatközpontban jön létre. Ezeket az adatokat az Office 365 vagy a Power BI szolgáltatás első kiépítésekor adhatta meg. A Power BI-bérlő ezután nem hagyja el a megadott adatközpontot.
+Az adatközpontban egy Power BI bérlő jön létre, amely a legközelebb az országhoz (vagy régióhoz) és az állami információkhoz van megadva a Azure Active Directory bérlője számára, amelyet a Microsoft 365 vagy a Power BI szolgáltatás üzembe helyezésekor adott meg. A Power BI-bérlő ezután nem hagyja el a megadott adatközpontot.
 
 ### <a name="multiple-geographies-multi-geo"></a>Több földrajzi hely (multi-geo)
 
@@ -129,7 +129,7 @@ Adatai tárolási helyével és használatának módjáról a [Microsoft Adatvé
 
 ## <a name="user-authentication"></a>Felhasználók hitelesítése
 
-A Power BI szolgáltatásban a felhasználó hitelesítése a felhasználó böngészője és a Power BI szolgáltatás vagy a Power BI által használt Azure-szolgáltatások közötti kérések, válaszok és átirányítások sorozatából áll. Ez a műveletsor írja le a felhasználó Power BI-beli hitelesítésének folyamatát. A vállalati felhasználók számára választható hitelesítési (bejelentkezési) modellekről a [Bejelentkezési modell választása az Office 365-höz](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/) című cikkből tájékozódhat.
+A Power BI szolgáltatásban a felhasználó hitelesítése a felhasználó böngészője és a Power BI szolgáltatás vagy a Power BI által használt Azure-szolgáltatások közötti kérések, válaszok és átirányítások sorozatából áll. Ez a műveletsor írja le a felhasználó Power BI-beli hitelesítésének folyamatát. A szervezeti felhasználói hitelesítési modellek (bejelentkezési modellek) lehetőségeivel kapcsolatos további információkért lásd: [bejelentkezési modell kiválasztása Microsoft 365hoz](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### <a name="authentication-sequence"></a>Hitelesítési műveletsor
 
@@ -245,9 +245,9 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
 1. Metaadatok (jelentésdefiníció)
 
-   a. A jelentések lehetnek Office 365-höz készült Excel-, illetve Power BI-jelentések. Az alábbiak érvényesek a metaadatokra a jelentés típusától függően:
+   a. A jelentések lehetnek Excelek Microsoft 365 jelentésekhez vagy Power BI jelentésekhez. Az alábbiak érvényesek a metaadatokra a jelentés típusától függően:
         
-    &ensp;&ensp;a. Az Excel-jelentés metaadatait a rendszer titkosított formában tárolja SQL Azureban. A metaadatokat az Office 365 is tárolja.
+    &ensp;&ensp;a. Az Excel-jelentés metaadatait a rendszer titkosított formában tárolja SQL Azureban. A metaadatokat Microsoft 365 is tárolja a rendszer.
 
     &ensp;&ensp;b. Power BI a jelentések tárolása titkosított az Azure SQL Database-ben.
 
@@ -255,13 +255,13 @@ A Power BI a következő módon biztosítja az adatok adatintegritási monitoroz
 
    A statikus adatelemek olyan összetevőket tartalmaznak, mint például a háttérképek és a Power BI vizualizációk.
 
-    &ensp;&ensp;a. Az Office 365-höz készült Excel esetében semmit nem tárol a rendszer.
+    &ensp;&ensp;a. A Microsoft 365 Excelrel létrehozott jelentések esetében semmi nincs tárolva.
 
     &ensp;&ensp;b. A Power BI-jelentések esetében a statikus adatok titkosítva vannak tárolva az Azure Blob-tárolóban.
 
 3. Gyorsítótárak
 
-    &ensp;&ensp;a. Az Office 365-höz készült Excel-jelentések esetében semmit nem gyorsítótáraz a rendszer.
+    &ensp;&ensp;a. A Microsoft 365 Excelrel létrehozott jelentések esetében semmi nincs gyorsítótárazva.
 
     &ensp;&ensp;b. Power BI jelentésekben a jelentések vizualizációinak adattartalmát a rendszer gyorsítótárazza, és az alábbi szakaszban ismertetett vizualizációs adatgyorsítótárban tárolja.
  
