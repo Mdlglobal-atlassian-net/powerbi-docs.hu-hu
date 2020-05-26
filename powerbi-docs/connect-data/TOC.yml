@@ -174,7 +174,7 @@
           items:
             - name: Adathalmazok használata több munkaterülettel
               href: service-datasets-across-workspaces.md
-            - name: Adatkészletek megosztása (előzetes verzió)
+            - name: Adatkészletek megosztása
               href: service-datasets-share.md
             - name: Megosztott adathalmazokra vonatkozó összeállítási engedélyek
               href: service-datasets-build-permissions.md

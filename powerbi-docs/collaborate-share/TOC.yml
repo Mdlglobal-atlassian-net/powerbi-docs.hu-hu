@@ -43,7 +43,7 @@
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Együttműködés klasszikus munkaterületen
               href: service-collaborate-power-bi-workspace.md
-            - name: Csoport kezelése a Power BI-ban és az Office 365-ben
+            - name: Csoport kezelése a Power BI-ban és a Microsoft 365-ben
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: A munka közzététele és megosztása
           items:
@@ -71,6 +71,8 @@
           items:
             - name: Elemzés az Excelben
               href: service-analyze-in-excel.md
+            - name: Kiemelt Power BI-táblázatok az Excelben
+              href: service-excel-featured-tables.md
             - name: Az Elemzés az Excelben hibaelhárítása
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Hiba: Nem található adat az Excel-munkafüzetben'
