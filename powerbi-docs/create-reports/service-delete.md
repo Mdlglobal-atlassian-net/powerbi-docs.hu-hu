@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3fdb969888d023ca9683c2460086f2fb8157c3c3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a48d83223ab02d2f9f043dde2facebd6ad73c27a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83304553"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565672"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>A Power BI szinte bármelyik elemének törlése
 Ebből a cikkből megtudhatja, hogyan törölhet egy irányítópultot, jelentést, munkafüzetet, adatkészletet, alkalmazást, vizualizációt vagy munkaterületet a Power BI szolgáltatásból.
@@ -82,7 +82,7 @@ Ha az adatkészlet egy vagy több [szervezeti tartalomcsomag](../collaborate-sha
 
 ## <a name="delete-a-workspace"></a>Munkaterület törlése
 > [!WARNING]
-> Egy munkaterület létrehozásakor létrehoz egy Office 365-csoportot. A munkaterület törlésekor pedig ezt az Office 365-csoportot is törli. Ez azt jelenti, hogy ha törli a csoportot, akkor törlődik a többi O365 termékből is, például a SharePointból vagy a Microsoft Teams szolgáltatásból.
+> Egy munkaterület létrehozásakor létrehoz egy Microsoft 365-csoportot. Egy munkaterület létrehozásakor létrehoz egy Microsoft 365-csoportot. Ez azt jelenti, hogy ha törli a csoportot, akkor törlődik a többi Microsoft 365-termékből is, például a SharePointból vagy a Microsoft Teams szolgáltatásból.
 >
 >
 
