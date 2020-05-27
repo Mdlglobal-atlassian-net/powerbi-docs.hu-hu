@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ba0e04ff4cd56566f7d33445fafa7c8cfcc6b7ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284796"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565460"
 ---
 # <a name="share-a-dataset-preview"></a>Adathalmaz megosztása (előzetes verzió)
 
@@ -24,7 +24,7 @@ Ha *adatmodelleket* készít a Power BI Desktopban, a Power BI szolgáltatásban
 
 1. Először egy .pbix-fájlt hoz létre egy adatmodellel a Power BI Desktopban. Ha azt tervezi, hogy ezt az adathalmazt másoknak kínálja fel jelentések készítéséhez, akkor talán már nem is tervez jelentést a .pbix-fájlban.
 
-    A .pbix-fájlt ajánlott egy Office 365-csoportba menteni.
+    A .pbix-fájlt ajánlott egy Microsoft 365-csoportba menteni.
 
 1. Tegye közzé a .pbix-fájlt egy [új felületű munkaterületen](../collaborate-share/service-create-the-new-workspaces.md) a Power BI szolgáltatásban.
     
@@ -51,7 +51,7 @@ Ha munkaterületén megosztott adathalmazzal rendelkezik, érdemes lehet tudni, 
  
     ![Kapcsolódó tartalom párbeszédpanel](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 - [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
+- Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

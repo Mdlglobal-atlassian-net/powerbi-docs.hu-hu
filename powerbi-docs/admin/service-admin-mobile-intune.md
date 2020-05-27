@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e621deb2cc2db74d8836900aa65105a075d4cd3c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c7d1c9a29c95cb039c90fd339f6e6a38de111916
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139318"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563695"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobilalkalmazások konfigurálása a Microsoft Intune-nal
 
@@ -24,7 +24,7 @@ A Microsoft Intune lehetővé teszi a cégek számára az eszközök és alkalma
 
 A jelen cikk feltételezi, hogy az Intune megfelelően van konfigurálva, és az Intune-ban regisztrált eszközökkel rendelkezik. A cikk nem tekintendő teljes konfigurációs útmutatónak a Microsoft Intune-hoz. További információkért az Intune-nal kapcsolatban lásd: [Mi az Intune?](/intune/introduction-intune/).
 
-A Microsoft Intune létezhet egyidejűleg az Office 365 mobileszköz-kezelési (MDM) összetevőjével. MDM használata esetén az eszköz regisztráltként jelenik meg az MDM-en belül, de elérhető az Intune-on belüli felügyelethez.
+A Microsoft Intune létezhet egyidejűleg a Microsoft 365 mobileszköz-kezelési (MDM) összetevőjével. MDM használata esetén az eszköz regisztráltként jelenik meg az MDM-en belül, de elérhető az Intune-on belüli felügyelethez.
 
 > [!NOTE]
 > Az Intune konfigurálása után a háttéradatok frissítése ki lesz kapcsolva a Power BI mobilalkalmazásban az iOS vagy Android rendszerű eszközön. A Power BI a weben futó Power BI szolgáltatásból frissíti az adatokat, amikor belép az alkalmazásba.
@@ -91,7 +91,7 @@ Az alkalmazás vagy a szabályzat létrehozásával egyaránt kezdheti. A hozzá
 
 1. Adjon meg egy **kiadót**, **nevet** és **leírást**. Opcionálisan megadhat egy **ikont** is. A **Kategória** a Céges portál alkalmazásra vonatkozik. Ha elkészült, kattintson a **Tovább** gombra.
 
-1. Eldöntheti, hogy az alkalmazást **bármely** (alapértelmezett), **iPad** vagy **iPhone** eszközökre szeretné-e kiadni. Alapértelmezés szerint a **Bármely** jelenik meg, és mindkét eszköztípus esetében működik. A Power BI alkalmazás URL-címe iPhone és iPad esetén is azonos. Válassza a **Tovább** gombot.
+1. Eldöntheti, hogy az alkalmazást **bármely** (alapértelmezett), **iPad** vagy **iPhone** eszközökre szeretné-e kiadni. Alapértelmezés szerint a **Bármely** jelenik meg, és mindkét eszköztípus esetében működik. A Power BI alkalmazás URL-címe iPhone és iPad esetén is azonos. Válassza a **Tovább** lehetőséget.
 
 1. Válassza a **Feltöltés** lehetőséget.
 
@@ -125,17 +125,17 @@ Miután hozzáadta az alkalmazást, üzembe kell helyeznie azt, hogy a végfelha
 
     ![Üzeme helyezés kezelése](media/service-admin-mobile-intune/intune-deploy-ios1.png)
 
-1. A **Csoportok kiválasztása** képernyőn eldöntheti, hogy mely csoportokban szeretné az alkalmazást üzembe helyezni. Válassza a **Tovább** gombot.
+1. A **Csoportok kiválasztása** képernyőn eldöntheti, hogy mely csoportokban szeretné az alkalmazást üzembe helyezni. Válassza a **Tovább** lehetőséget.
 
 1. A **Központi telepítési művelet** képernyőn eldöntheti, hogy miként szeretné az alkalmazást üzembe helyezni. Az **Elérhető telepítés** vagy **Szükséges telepítés** lehetőséget választva az alkalmazás igény szerint lesz üzembe helyezve a céges portálon a felhasználók részére. Miután befejezte a kijelölést, kattintson a **Tovább** gombra.
 
     ![Üzembe helyezési művelet](media/service-admin-mobile-intune/intune-deploy-ios2.png)
 
-1. A **Mobilalkalmazás-kezelés** képernyőn kiválaszthatja a [2. lépés](#step-2-create-a-mobile-application-management-policy) során létrehozott mobilalkalmazás-kezelési szabályzatot. Az alapértelmezés az Ön által létrehozott szabályzat lesz, ha ez az egyetlen rendelkezésre álló iOS-szabályzat. Válassza a **Tovább** gombot.
+1. A **Mobilalkalmazás-kezelés** képernyőn kiválaszthatja a [2. lépés](#step-2-create-a-mobile-application-management-policy) során létrehozott mobilalkalmazás-kezelési szabályzatot. Az alapértelmezés az Ön által létrehozott szabályzat lesz, ha ez az egyetlen rendelkezésre álló iOS-szabályzat. Válassza a **Tovább** lehetőséget.
 
     ![Mobilalkalmazás kezelése](media/service-admin-mobile-intune/intune-deploy-ios3.png)
 
-1. A **VPN-profil** képernyőn kiválaszthat egy szabályzatot, ha munkahelye rendelkezik ilyennel. A beállítás alapértelmezett értéke a **Nincs**. Válassza a **Tovább** gombot.
+1. A **VPN-profil** képernyőn kiválaszthat egy szabályzatot, ha munkahelye rendelkezik ilyennel. A beállítás alapértelmezett értéke a **Nincs**. Válassza a **Tovább** lehetőséget.
 
 1. A **Mobilalkalmazás konfigurálása** képernyőn kiválaszthat egy **alkalmazáskonfigurálási szabályzatot**, ha van ilyen. A beállítás alapértelmezett értéke a **Nincs**. Ez nem kötelező. Válassza a **Befejezés** gombot.
 
@@ -146,7 +146,7 @@ Miután telepítette az alkalmazást, mellette az **Igen** feliratnak kell megje
 1. Az alkalmazások képernyőn válassza ki a létrehozott alkalmazást. Válassza az **Üzembe helyezés kezelése...**  hivatkozást.
 
     ![Üzeme helyezés kezelése](media/service-admin-mobile-intune/intune-deploy-android1.png)
-1. A **Csoportok kiválasztása** képernyőn eldöntheti, hogy mely csoportokban szeretné az alkalmazást üzembe helyezni. Válassza a **Tovább** gombot.
+1. A **Csoportok kiválasztása** képernyőn eldöntheti, hogy mely csoportokban szeretné az alkalmazást üzembe helyezni. Válassza a **Tovább** lehetőséget.
 
 1. A **Központi telepítési művelet** képernyőn eldöntheti, hogy miként szeretné az alkalmazást üzembe helyezni. Az **Elérhető telepítés** vagy **Szükséges telepítés** lehetőséget választva az alkalmazás igény szerint lesz üzembe helyezve a céges portálon a felhasználók részére. Miután befejezte a kijelölést, kattintson a **Tovább** gombra.
 
@@ -184,10 +184,10 @@ Az alkalmazást a *Céges portál* alkalmazáson keresztül fogja telepíteni. H
 
     ![Adja meg a PIN-kódot](media/service-admin-mobile-intune/intune-powerbi-pin.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 [Mobilalkalmazás-felügyeleti szabályzatok konfigurálása és üzembe helyezése a Microsoft Intune-konzolon](/intune/app-protection-policies/)  
 
 [Power BI-alkalmazások mobileszközökre](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)  
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)  

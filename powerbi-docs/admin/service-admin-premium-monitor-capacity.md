@@ -7,47 +7,43 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 05/18/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 84ce61c98048690c1560a2c49aed07591a22119f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 8bea8c2fc59deeb6aec4817f27d10371518f523e
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83137677"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564326"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Prémium szintű kapacitások monitorozása az alkalmazással
 
 A kapacitások figyelése elengedhetetlen a megalapozott döntések meghozatalához, hogy a prémium szintű kapacitás erőforrásait a legjobban használhassa ki. A kapacitás monitorozható a felügyeleti portálon vagy a **Power BI Premium kapacitásmetrikák** alkalmazással. Ez a cikk a Prémium szintű kapacitásmetrikák alkalmazás használatát ismerteti. Az alkalmazás adja a legmélyrehatóbb információkat a kapacitások teljesítményéről. Az elmúlt hét nap átlagos használatára vonatkozó metrikák magasabb szintű áttekintésére használhatja a felügyeleti portált. A monitorozás portálon történő használatáról további információt a [Prémium szintű kapacitások monitorozása a felügyeleti portálon](service-admin-premium-monitor-portal.md) szakaszban talál.
 
-Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha az alkalmazásnak már telepítve van egy korábbi verziója, célszerű törölni az alkalmazások közül, majd lenyomni a CTRL+F5 billentyűket a frissítéshez.
+Az alkalmazás rendszeresen új szolgáltatásokkal és funkciókkal frissül. Győződjön meg róla, hogy a legújabb verziót futtatja. Ha új verzió válik elérhetővé, [értesítést](../connect-data/service-template-apps-install-distribute.md#update-a-template-app) küldünk Önnek.
 
 > [!IMPORTANT]
 > Ha a Power BI Premium-kapacitásban magas erőforráshasználat tapasztalható, amely teljesítménnyel vagy megbízhatósággal kapcsolatos problémákat eredményez, e-mail-értesítést kaphat a probléma azonosítása és megoldása érdekében. Ez egyszerű módot kínálhat a kapacitások túlterheléséből eredő hibák elhárítására. További információ: [kapacitási és megbízhatósági értesítések](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítse
 
-A [Premium Capacity Metrics alkalmazást](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) közvetlenül is megnyithatja, de ha szeretné, ugyanúgy telepítheti is, mint bármely más alkalmazást a Power BI-ban.
-
-1. A Power BI-ban kattintson az **Alkalmazások** elemre.
-
-    ![Ugrás az alkalmazásokra](media/service-admin-premium-monitor-capacity/apps.png)
-
-2. A jobb oldalon kattintson az **Alkalmazások beszerzése** lehetőségre.
-3. Az **Alkalmazások** kategóriában keresse meg a **Power BI Premium Capacity Metrics alkalmazást**.
-4. Az alkalmazás telepítéséhez regisztrálnia kell.
-
-Legyen türelemmel. A metrikák telepítése és frissítése eltart néhány percig. Ha az alkalmazás üres metrikákat jelenít meg, nyomja le az F5 billentyűt a böngésző frissítéséhez.
+A [Csatlakozás a Power BI Premium kapacitásmetrikáihoz](../connect-data/service-connect-to-pbi-premium-capacity-metrics.md) című cikkben információt talál arról, hogyan telepítheti az alkalmazást, és hogyan csatlakozhat az adatokhoz. De [közvetlenül az alkalmazást is megnyithatja](https://go.microsoft.com/fwlink/?linkid=2114036).
 
 ## <a name="get-app-refresh-history"></a>Alkalmazásfrissítési előzmények lekérése
 
-A Premium Capacity Metrics alkalmazás legutóbbi frissítési időpontjának ellenőrzéséhez kattintson a **Beállítások** > **Adatkészletek** > **Power BI Premium-kapacitásmetrikák** > **Frissítési előzmények** elemre. 
+A prémium szintű kapacitásmetrikák alkalmazás legutóbbi frissítésének idejét így ellenőrizheti:
 
-![Frissítési előzmények a beállításokban](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
+1. Lépjen az alkalmazással telepített munkaterületre.
 
-A legutóbbi frissítés jelenik meg, vagy kattintson a **Frissítési előzmények** elemre az ütemezett és az igény szerinti frissítések megtekintéséhez.
+   ![Az alkalmazás munkaterületének megnyitása](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
-![Utolsó frissítés](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
+1. Az adatkészlet sorban kattintson a **Frissítés ütemezése** gombra.
+
+   ![Frissítés ütemezése gomb](media/service-admin-premium-monitor-capacity/schedule-refresh.png)
+
+   Megjelenik az utolsó frissítés ideje. Kattintson a **Frissítési előzmények** elemre az ütemezett és az igény szerinti frissítések megtekintéséhez.
+
+   ![Utolsó frissítés](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
 
 ## <a name="monitor-capacities-with-the-app"></a>Kapacitások monitorozása az alkalmazással
 

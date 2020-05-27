@@ -10,22 +10,22 @@ ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8ff022c09fc58f5ebeadbb869039c00c6dd28533
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275593"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564472"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>A Power BI felügyelete a felügyeleti portálon
 
 A felügyeleti portál segítségével kezelheti a szervezetéhez tartozó Power BI-*bérlőt*. A portál olyan lehetőségeket kínál, mint például a használati metrikák, hozzáférés a Microsoft 365 Felügyeleti központjához, valamint a beállítások.
 
-Az Office 365 minden globális rendszergazdája hozzáférhet a teljes felügyeleti portálhoz, valamint olyan felhasználók is, akik Power BI-szolgáltatásadminisztrátori szerepkört kaptak. Ha még nem kapott ilyen szerepkörbe, csak a **kapacitásbeállításokat** láthatja a portálon. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
+Minden globális rendszergazda hozzáférhet a teljes felügyeleti portálhoz, valamint olyan felhasználók is, akik Power BI-szolgáltatásadminisztrátori szerepkört kaptak. Ha még nem kapott ilyen szerepkörbe, csak a **kapacitásbeállításokat** láthatja a portálon. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz.
 
 ## <a name="how-to-get-to-the-admin-portal"></a>A felügyeleti portál elérése
 
-A fiókját **Globális rendszergazda** fiókként kell megjelölni az Office 365 vagy az Azure Active Directory (Azure AD) szolgáltatáson belül, vagy a Power BI szolgáltatás rendszergazdai szerepkörét kell hozzárendelni, hogy hozzá tudjon férni a Power BI felügyeleti portáljához. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz. A Power BI felügyeleti portál eléréséhez tegye az alábbiakat.
+A fiókját **Globális rendszergazda** fiókként kell megjelölni a Microsoft 365 vagy az Azure Active Directory (Azure AD) szolgáltatáson belül, vagy a Power BI szolgáltatás rendszergazdai szerepkörét kell hozzárendelni, hogy hozzá tudjon férni a Power BI felügyeleti portáljához. A Power BI szolgáltatás rendszergazdai szerepkörére vonatkozó további információkat [a Power BI rendszergazdai szerepkörét ismertető](service-admin-role.md) témakör tartalmaz. A Power BI felügyeleti portál eléréséhez tegye az alábbiakat.
 
 1. Válassza ki a Beállítások fogaskereket a Power BI szolgáltatás jobb felső sarkában.
 
@@ -85,7 +85,7 @@ Ezek az információk valós betekintést nyújtanak abba, hogy a felhasználók
 
 ## <a name="control-usage-metrics"></a>Használati metrikák szabályozása
 
-A használati metrikai jelentés olyan funkció, amelyet a Power BI vagy Office 365 rendszergazdája kapcsolhat be vagy ki. A rendszergazdák részletesen szabályozhatják, hogy mely felhasználók férnek hozzá használati metrikákhoz. Ezek alapértelmezés szerint minden vállalati felhasználó számára **engedélyezve** vannak.
+A használati metrikai jelentés olyan funkció, amelyet a Power BI vagy Microsoft 365 rendszergazdája kapcsolhat be vagy ki. A rendszergazdák részletesen szabályozhatják, hogy mely felhasználók férnek hozzá használati metrikákhoz. Ezek alapértelmezés szerint minden vállalati felhasználó számára **engedélyezve** vannak.
 
 A rendszergazdák azt is meghatározhatják, hogy a tartalomkészítők láthatják-e a felhasználónkénti adatokat a használati metrikák között. 
 
@@ -189,10 +189,10 @@ A munkaterületeken a felhasználók együttműködhetnek az irányítópultokon
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Új munkaterületi felhasználói felületek létrehozása":::
 
-Az Office 365-csoportokon alapuló klasszikus munkaterületek felügyelete továbbra is az Office 365 felügyeleti portálján és az Azure Active Directoryban történik.
+A Microsoft 365-csoportokon alapuló klasszikus munkaterületek felügyelete továbbra is a felügyeleti portálon és az Azure Active Directoryban történik.
 
 > [!NOTE]
-> A **Munkaterületek létrehozása (új munkaterületi felhasználói felület)** beállítás alapértelmezett értéke, hogy csak az Office 365-csoportok létrehozására jogosult felhasználóknak engedélyezett új Power BI-munkaterületek létrehozása. A Power BI felügyeleti portálján a megfelelő érték beállításával gondoskodjon arról, hogy a megfelelő felhasználók hozhassanak létre munkaterületeket.
+> A **Munkaterületek létrehozása (új munkaterületi felhasználói felület)** beállítás alapértelmezett értéke, hogy csak a Microsoft 365-csoportok létrehozására jogosult felhasználóknak engedélyezett új Power BI-munkaterületek létrehozása. A Power BI felügyeleti portálján a megfelelő érték beállításával gondoskodjon arról, hogy a megfelelő felhasználók hozhassanak létre munkaterületeket.
 
 **Munkaterületek listája**
 
@@ -334,7 +334,7 @@ Az alábbi képen a **Teljes saját szervezet** lehetőség látható a tartalom
 
 ### <a name="create-template-apps-and-organizational-content-packs"></a>Vállalati tartalomcsomagok és alkalmazások sablonjainak létrehozása
 
-A munkahelyi felhasználók sablonalkalmazásokat és vállalati sablon tartalomcsomagokat készíthetnek, amelyek a Power BI Desktop adott adatforrására épülő adathalmazokat használják. További információ a [sablonalkalmazásokról](../template-content-pack-authoring.md).
+A munkahelyi felhasználók sablonalkalmazásokat és vállalati sablon tartalomcsomagokat készíthetnek, amelyek a Power BI Desktop adott adatforrására épülő adathalmazokat használják. További információ a [sablonalkalmazásokról](../connect-data/service-template-apps-create.md).
 
 ### <a name="push-apps-to-end-users"></a>Alkalmazások küldése a végfelhasználóknak
 
@@ -625,7 +625,3 @@ További információt a kiemelt tartalmak használatáról a cikk [Kiemelt tart
 [A Power BI-naplózás használata a munkahelyen](service-admin-auditing.md)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-
-
-
-

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: b6b84d9e6c5f0dee912ccf80cf6949618b16d8c5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5df9ddd44bdc8952dab14809ce3facd74e5d3753
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148994"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564178"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded migrálási eszköz
 
@@ -49,7 +49,7 @@ Első lépésként érdemes létrehoznia egy új migrálási tervet. Új migrál
 3. A rendszer felszólítja, hogy jelentkezzen be. A bejelentkezéshez az Azure-előfizetését kell használnia.
 
    > [!IMPORTANT]
-   > Ez **nem** az Office 365 azon szervezeti fiókja, amellyel a Power BI-ba jelentkezik be.
+   > Ez **nem** a Microsoft 365 azon szervezeti fiókja, amellyel a Power BI-ba jelentkezik be.
 
 4. Válassza azt az Azure-előfizetést, amely a Power BI Embedded-munkaterületcsoportokat tárolja.
 

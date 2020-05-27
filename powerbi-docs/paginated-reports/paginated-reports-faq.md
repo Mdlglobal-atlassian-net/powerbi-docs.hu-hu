@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0089a38c852d82acaebc8cab0f0fb653c6a304cb
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584996"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565626"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Többoldalas jelentések a Power BI-ban: Gyakori kérdések 
 
@@ -41,7 +41,7 @@ A kapacitás-rendszergazda engedélyezheti vagy letilthatja a lapszámozott jele
 
 ### <a name="how-can-i-monitor-usage-of-paginated-reports-in-my-tenant"></a>Hogyan tudom monitorozni a bérlőm lapszámozott jelentéseinek használatát?
 
-Az Office 365-naplók a részletesen vezetik eme jelentéstípus használatát a következő eseményekben: 
+Az auditnaplók a részletesen tartalmazzák ennek a jelentéstípusnak a használatát a következő eseményeknél:
 
 - Power BI-jelentés megtekintése
 - Power BI-jelentés törlése
@@ -152,7 +152,7 @@ Igen, az SSRS-hez hasonlóan itt is támogatjuk kódok futtatását.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Használhatom a Power BI Embedded szolgáltatást lapszámozott jelentések egy általam üzemeltetett alkalmazásba történő beágyazásához?
 
-Már elérhető a SaaS-beágyazás, beleértve a biztonságos beágyazás támogatását. A PaaS-beágyazás elsajátításához tekintse meg a [Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embed-paginated-reports-customers.md) című oktatóanyagot.
+Már elérhető a SaaS-beágyazás, beleértve a biztonságos beágyazás támogatását. A PaaS-beágyazás elsajátításához tekintse meg a [Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embedded/embed-paginated-reports-customers.md) című oktatóanyagot.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Végezhetek részletezést egy Power BI-jelentésből egy lapszámozott jelentésbe?
 

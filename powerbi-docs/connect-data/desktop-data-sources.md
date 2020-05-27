@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb1b96f46761bf0c724abb8e36de8bb93634fdc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f84fcc4b32468ab8ffddbb593ae97ea8fb20442a
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347654"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693624"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Adatforrások a Power BI Desktopban
 
@@ -99,6 +99,7 @@ Az **Adatbázis** kategória a következő adatkapcsolatokat biztosítja:
 * InterSystems IRIS (bétaverzió)
 * Jethro (bétaverzió)
 * Kyligence
+* Linkar PICK Style / MultiValue Databases (bétaverzió)
 * MarkLogic
 
 > [!NOTE]
@@ -139,6 +140,7 @@ Az **Azure** kategória a következő adatkapcsolatokat biztosítja:
 * HDInsight interaktív lekérdezés
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
+* Azure Time Series Insights (bétaverzió)
 
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Azure** kategória ki van választva.
@@ -187,12 +189,13 @@ Az **Online szolgáltatások** kategória a következő adatkapcsolatokat biztos
 * Industrial App Store
 * Intune Data Warehouse (bétaverzió)
 * Microsoft Graph Security (bétaverzió)
+* Projectplace a Power BI-hoz (bétaverzió)
 * Product Insights (bétaverzió)
 * Quick Base
 * TeamDesk (bétaverzió)
-* Munkahelyi elemzés (bétaverzió)
-* Projectplace a Power BI-hoz (bétaverzió)
 * WebTrends Analytics (bétaverzió)
+* Witivio (bétaverzió)
+* Munkahelyi elemzés (bétaverzió)
 * Zoho Creator (bétaverzió)
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Online szolgáltatások** kategória ki van választva.
@@ -215,7 +218,7 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Python-szkript
 * ODBC
 * OLE DB
-* BI360 - Budgeting & Financial Reporting (bétaverzió)
+* Solver
 * Cognite Data Fusion (bétaverzió)
 * FHIR
 * Information Grid (bétaverzió)
@@ -224,15 +227,14 @@ Az **Egyéb** kategória a következő adatkapcsolatokat biztosítja:
 * Paxata
 * QubolePresto (bétaverzió)
 * Roamler (bétaverzió)
+* Shortcuts Business Insights (bétaverzió)
 * Siteimprove
 * SurveyMonkey (bétaverzió)
+* Tenforce (Smart)List
 * TIBCO (R) adatvirtualizálás (bétaverzió)
 * Vena (bétaverzió)
 * Workforce Dimensions (bétaverzió)
 * Zucchetti HR Infinity (bétaverzió)
-* Tenforce (Smart)List
-* Shortcuts Business Insights (bétaverzió)
-* Vessel Insight (bétaverzió)
 * Üres lekérdezés
 
 A következő képen a **Lekérdezés** ablak látható, amelyen az **Egyéb** kategória ki van választva.

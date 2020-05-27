@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 08b9585195e805548546e832915e07f0e02265f5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dd474da6a3fb61b6fd78dc55a6b0313e51bbb773
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348275"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693570"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Alkalmazás közzététele a Power BI-ban
 
@@ -64,7 +64,7 @@ Ha a munkaterület irányítópultjai és jelentései elkészültek, kiválaszth
 5. A **Jogosultságok** panelen adhatja meg, hogy ki férhet hozzá az alkalmazáshoz, és mit tehet vele. 
 
     - [Klasszikus munkaterületeken](service-create-workspaces.md): a vállalatnál mindenki, megadott személyek vagy Azure Active Directory (Azure AD) biztonsági csoportok.
-    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, Azure AD biztonsági csoportok és terjesztési listák, valamint Office 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
+    - [Új felületű munkaterületeken](service-create-the-new-workspaces.md): megadott személyek, Azure AD biztonsági csoportok és terjesztési listák, valamint Microsoft 365-csoportok. A munkaterület minden felhasználója automatikusan hozzáférést kap az alkalmazáshoz a munkaterületen.
     - Az Összeállítási engedély megadásával engedélyezheti az alkalmazás felhasználóinak, hogy az alkalmazás mögöttes adathalmazaihoz csatlakozzanak. Így ők látni fogják ezeket az adathalmazokat, amikor megosztott adathalmazokat keresnek. Ebben a cikkben több információt is talál [az alkalmazás adathalmazaihoz való kapcsolódás engedélyezéséről felhasználók számára](#allow-users-to-connect-to-datasets).
     - Az összeállítási engedéllyel rendelkező felhasználóknak arra is lehet engedélye, hogy a jelentéseket az alkalmazásból egy másik munkaterületre másolják. Ebben a cikkben több információt is talál [az alkalmazásbeli jelentések másolásának engedélyezéséről felhasználók számára](#allow-users-to-copy-reports).
     

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 18ca1b58d37fedb2c8246b91dc765168002e163e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a6cb8575ef5265264cf0c15c4cfcfc4207726a07
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275938"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565580"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás összehasonlítása
 
@@ -22,9 +22,9 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>A Power BI jelentéskészítő kiszolgáló és a Power BI szolgáltatás funkciói
 
-| Funkciók | Power BI jelentéskészítő kiszolgáló | Power BI szolgáltatás | Megjegyzések |
+| Szolgáltatások | Power BI jelentéskészítő kiszolgáló | Power BI szolgáltatás | Megjegyzések |
 |---------|---------|---------|---------|
-| Telepítés | Helyszíni vagy üzemeltetett felhőbeli | Felhő | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése frissítési garanciával, a Power BI Premiummal vagy az SQL Server Enterprise-zal történt|
+| Üzembe helyezés | Helyszíni vagy üzemeltetett felhőbeli | Felhő | A Power BI jelentéskészítő kiszolgáló akkor helyezhető üzembe Azure-beli virtuális gépeken (üzemeltetett felhőbeli) ha licencelése frissítési garanciával, a Power BI Premiummal vagy az SQL Server Enterprise-zal történt|
 | Forrásadatok | Felhőbeli és/vagy helyszíni | Felhőbeli és/vagy helyszíni |  |
 | Licenc | Power BI Premium vagy SQL Server EE frissítési garanciával (SA) | Power BI Pro és/vagy Power BI Premium | |  
 | Életciklus | Modern életciklus-szabályzat | Teljes körűen felügyelt szolgáltatás |  |
@@ -34,9 +34,9 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Megosztott Power BI-adatkészletek üzemeltetése és ezekhez való csatlakozás | Nem | Igen | [Adathalmazok használata több munkaterületen](../connect-data/service-datasets-across-workspaces.md) |
 | Átjáró szükséges | Nem | Helyszíni adatforrásokhoz igen |  |
 | Valós idejű streamelés | Nem | Igen | [Valós idejű streamelés a Power BI-ban](../connect-data/service-real-time-streaming.md) |
-| Dashboards | Nem | Igen | [Irányítópultok a Power BI szolgáltatásban](../consumer/end-user-dashboards.md) |
+| Irányítópultok | Nem | Igen | [Irányítópultok a Power BI szolgáltatásban](../consumer/end-user-dashboards.md) |
 | Jelentéscsoportok terjesztése alkalmazások használatával | Nem | Igen | [Irányítópultokat és jelentéseket tartalmazó alkalmazások létrehozása és közzététele](../collaborate-share/service-create-distribute-apps.md) |
-| Tartalomcsomagok | Nem | Igen | [Céges tartalomcsomagok: bevezetés](../collaborate-share/service-organizational-content-pack-introduction.md) |
+| Tartalomcsomagok | Nem | Igen | [Céges tartalomcsomagok: Bevezetés](../collaborate-share/service-organizational-content-pack-introduction.md) |
 | Csatlakozás olyan szolgáltatásokhoz, mint a Salesforce | Igen | Igen | [Csatlakozhat a használt szolgáltatásokhoz](../connect-data/service-connect-to-services.md) a Power BI szolgáltatás tartalomcsomagjaival. A Power BI jelentéskészítő kiszolgálón a hitelesített összekötők használatával csatlakozhat szolgáltatásokhoz. További információt [A Power BI-jelentések adatforrásai a Power BI jelentéskészítő kiszolgálón](data-sources.md) című témakörben talál. |
 | Q&A | Nem | Igen | [A Q&A a Power BI szolgáltatásban és a Power BI Desktopban](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Gyors elemzések | Nem | Igen | [Adatelemzések automatikus generálása a Power BI-jal](../consumer/end-user-insights.md) |
@@ -49,7 +49,7 @@ A Power BI jelentéskészítő kiszolgálónak és a Power BI szolgáltatásnak 
 | Adatriasztások | Nem | Igen | [Adatriasztások](../create-reports/service-set-data-alerts.md) a Power BI szolgáltatásban
 | Sorszintű biztonság (RLS) | Igen | Igen | Elérhető DirectQuery- (adatforrással) és Import-módban is <br><br>Sorszintű biztonság (RLS) a [Power BI szolgáltatásban](../admin/service-admin-rls.md) <br><br>Sorszintű biztonság (RLS) a [Power BI jelentéskészítő kiszolgálóban](row-level-security-report-server.md) |
 | Teljes képernyős mód | Nem | Igen | [Teljes képernyős mód](../consumer/end-user-focus.md) a Power BI szolgáltatásban |
-| Fejlett Office 365-együttműködés | Nem | Igen | [Együttműködés egy munkaterületen](../collaborate-share/service-collaborate-power-bi-workspace.md) az Office 365-tel |
+| Speciális Microsoft 365-együttműködés | Nem | Igen | [Együttműködés egy munkaterületen](../collaborate-share/service-collaborate-power-bi-workspace.md) a Microsoft 365-tel |
 | R vizualizációk | Nem | Igen | A Power BI Desktopban [R-vizualizációkat](../create-reports/desktop-r-visuals.md) hozhat létre, és közzéteheti őket a Power BI szolgáltatásban. Az R-vizualizációt tartalmazó Power BI-jelentéseket nem lehet menteni a Power BI jelentéskészítő kiszolgálón.  |
 | Előzetes verziójú funkciók | Nem | Igen | [Feliratkozás a Power BI szolgáltatás előzetes verziójú](../consumer/end-user-preview-features.md) funkcióira |
 | Power BI-vizualizációk | Igen | Igen | [Power BI-vizualizációk](../developer/visuals/power-bi-custom-visuals.md) |

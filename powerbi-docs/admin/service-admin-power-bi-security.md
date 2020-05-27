@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 4524e7c6cb8297f3c9bf71284140ddc31b38e33f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275409"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564386"
 ---
 # <a name="power-bi-security"></a>A Power BI és a biztonság
 
@@ -45,9 +45,9 @@ A fenti ábrán a **háttérbeli** fürt képén lévő szaggatott vonal a felha
 
 ## <a name="user-authentication"></a>Felhasználók hitelesítése
 
-A Power BI az Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) használatával hitelesíti a Power BI szolgáltatásba bejelentkező felhasználókat, és azután a Power BI bejelentkezési hitelesítő adatait használja, amikor egy felhasználó hitelesítést igénylő erőforrásokat próbál meg elérni. A felhasználók a Power BI-fiók létrehozásához használt e-mail-címmel jelentkeznek be a Power BI szolgáltatásba. A Power BI ezt a bejelentkezési e-mail-címet használja az *érvényes felhasználónévként*, amelyet az erőforrásoknak ad át, amikor a felhasználó adatokhoz próbál csatlakozni. Az *érvényes felhasználónév* hozzárendelődik az *egyszerű felhasználónévhez* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)), és a hozzá társított Windows-tartományi fiókká oldódik fel, amelyen megtörténik a hitelesítés.
+A Power BI az Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) használatával hitelesíti a Power BI szolgáltatásba bejelentkező felhasználókat, és azután a Power BI bejelentkezési hitelesítő adatait használja, amikor egy felhasználó hitelesítést igénylő erőforrásokat próbál meg elérni. A felhasználók a Power BI-fiók létrehozásához használt e-mail-címmel jelentkeznek be a Power BI szolgáltatásba. A Power BI ezt a bejelentkezési e-mail-címet használja az *érvényes felhasználónévként*, amelyet az erőforrásoknak ad át, amikor a felhasználó adatokhoz próbál csatlakozni. Az *érvényes felhasználónév* hozzárendelődik az [*egyszerű felhasználónévhez* (UPN)](/windows/win32/secauthn/user-name-formats), és a hozzá társított Windows-tartományi fiókká oldódik fel, amelyen megtörténik a hitelesítés.
 
-Az olyan szervezeteknél, ahol vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.com</em>) az *érvényes felhasználónév* magától értetődően rendelődik hozzá az egyszerű névhez. Az olyan szervezeteknél, ahol nem vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.onmicrosoft.com</em>), az AAD és a helyszíni hitelesítő adatok egymáshoz rendelésének helyes működése [címtár-szinkronizálást](https://technet.microsoft.com/library/jj573653.aspx) kíván.
+Az olyan szervezeteknél, ahol vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.com</em>) az *érvényes felhasználónév* magától értetődően rendelődik hozzá az egyszerű névhez. Az olyan szervezeteknél, ahol nem vállalati e-mail-címeket használnak a Power BI-bejelentkezéshez (például <em>david@contoso.onmicrosoft.com</em>), az AAD és a helyszíni hitelesítő adatok egymáshoz rendelésének helyes működése [címtár-szinkronizálást](/azure/active-directory-domain-services/synchronization) kíván.
 
 A Power BI platform-szintű biztonsága magában foglalja a több-bérlős környezet biztonságát, a hálózati biztonságot és további AAD-alapú biztonsági elemek hozzáadásának lehetőségét.
 
@@ -68,4 +68,3 @@ Ez a kényszerítés a beállításkulcsok felügyeleti beállításával érhet
 A **Power BI Desktop** figyelembe veszi az ezekben a cikkekben leírt beállításkulcs-beállításokat, és csak az engedélyezett TLS-verzióval hoz létre kapcsolatokat ezekkel a beállításjegyzék-beállításokkal, amikor jelen vannak.
 
 Ezen beállításkulcsok beállításáról további információt a [TLS-beállításjegyzék beállításaival](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) kapcsolatos cikkben talál.
-

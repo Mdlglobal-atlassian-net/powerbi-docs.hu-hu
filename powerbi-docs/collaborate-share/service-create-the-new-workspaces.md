@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0a362861aecda7fc9f7cac4820d4826d640a9dd6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144106"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693765"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Új munkaterületek létrehozása a Power BI-ban
 
@@ -22,8 +22,8 @@ A Power BI új munkaterületi felhasználói felületet mutat be. A munkaterüle
 
 A különbségek a következők. Az új munkaterületeken a következőket végezheti el:
 
-- Munkaterület-szerepköröket rendelhet felhasználói csoportokhoz: biztonsági csoportokhoz, terjesztési listákhoz, Office 365-csoportokhoz és egyéni felhasználókhoz.
-- Office 365-csoport létrehozása nélkül hozhat létre egy Power BI-munkaterületet.
+- Munkaterület-szerepköröket rendelhet felhasználói csoportokhoz: biztonsági csoportokhoz, terjesztési listákhoz, Microsoft 365-csoportokhoz és egyéni felhasználókhoz.
+- Microsoft 365-csoport létrehozása nélkül hozhat létre egy Power BI-munkaterületet.
 - Részletesebb munkaterület-szerepköröket használhat, amelyekkel rugalmasabb engedélykezelést érhet el a munkaterületeken.
 
 Készen áll a klasszikus munkaterülete migrálására? A részletekért lásd [a Power BI klasszikus munkaterületeinek új munkaterületekre frissítését](service-upgrade-workspaces.md) bemutató cikket.
@@ -43,7 +43,7 @@ További háttér-információkat talál az [új munkaterületekről](service-ne
    
      ![Az új munkaterületi felhasználói felület](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Ha a **Visszaállítás klasszikusra** beállítást választja, egy [Office 365-csoport alapján hoz létre munkaterületet](service-create-workspaces.md). 
+     Ha a **Visszaállítás klasszikusra** beállítást választja, egy [Microsoft 365-csoport alapján hoz létre munkaterületet](service-create-workspaces.md). 
 
 2. Nevezze el a munkaterületet. Ha a név nem használható, szerkesztéssel hozzon létre egy egyedi nevet.
    
@@ -55,7 +55,7 @@ További háttér-információkat talál az [új munkaterületekről](service-ne
     
     [Felvehet egy **Címlistát**](#workspace-contact-list). Az alapértelmezett partnerek a munkaterület rendszergazdái. 
     
-    [Megadhat egy **munkaterületi OneDrive-ot**](#workspace-onedrive). Ehhez elég egy meglévő Office 365-csoport nevét megadni, az URL-cím nem szükséges. Így a munkaterület használhatja az Office 365-csoport fájltárolási helyét. 
+    [Megadhat egy **munkaterületi OneDrive-ot**](#workspace-onedrive). Ehhez elég egy meglévő Microsoft 365-csoport nevét megadni, az URL-cím nem szükséges. Így a munkaterület használhatja a Microsoft 365-csoport fájltárolási helyét.
 
     ![OneDrive-hely megadása](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -87,9 +87,9 @@ Meghatározhatja, hogy mely felhasználók kapjanak értesítést a munkaterüle
 
 ## <a name="workspace-onedrive"></a>Munkaterületi OneDrive
 
-A munkaterületi OneDrive funkcióval olyan Office 365-csoportot konfigurálhat, amelynek SharePoint-dokumnetumtárbeli fájltárolója elérhető a munkaterület felhasználói számára. A csoportot először a Power BI-on kívül kell létrehoznia. 
+A munkaterületi OneDrive funkcióval olyan Microsoft 365-csoportot konfigurálhat, amelynek SharePoint-dokumnetumtárbeli fájltárolója elérhető a munkaterület felhasználói számára. A csoportot először a Power BI-on kívül kell létrehoznia.
 
-A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait, akik számára Office 365-csoporttagsággal van konfigurálva a munkaterülethez való hozzáférés. Annak az Office 365-csoportnak, amelynek a fájltárolóját ebben a beállításban konfigurálja, ajánlott [hozzáférést adni a munkaterülethez](#give-access-to-your-workspace). A munkaterület-hozzáférés ekkor az Office 365-csoport tagságán keresztül kezelhető. 
+A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait, akik számára Microsoft 365-csoporttagsággal van konfigurálva a munkaterülethez való hozzáférés. Annak a Microsoft 365-csoportnak, amelynek a fájltárolóját ebben a beállításban konfigurálja, ajánlott [hozzáférést adni a munkaterülethez](#give-access-to-your-workspace). A munkaterület-hozzáférés ekkor a Microsoft 365-csoport tagságán keresztül kezelhető.
 
 1. Az új **Munkaterületi OneDrive** beállítás két módon érhető el:
 
@@ -99,7 +99,7 @@ A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait
 
     ![Munkaterület beállításai](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. A **Speciális** > **Munkaterületi OneDrive** területen gépelje be a korábban létrehozott Office 365-csoport nevét. A Power BI automatikusan felveszi a csoporthoz tartozó OneDrive-ot.
+2. A **Speciális** > **Munkaterületi OneDrive** területen gépelje be a korábban létrehozott Microsoft 365-csoport nevét. A Power BI automatikusan felveszi a csoporthoz tartozó OneDrive-ot.
 
     ![OneDrive-hely megadása](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -129,7 +129,7 @@ Az új munkaterületi felületen nem lehet céges tartalomcsomagokat létrehozni
 
     ![Munkaterületek tartalomlistája](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Hozzáadhat biztonsági csoportokat, terjesztési listákat, Office 365-csoportokat vagy egyéni felhasználókat a munkaterületekhez megtekintőként, tagként, közreműködőként vagy rendszergazdaként. A különböző szerepkörök ismertetését [Az új munkaterületek szerepkörei](service-new-workspaces.md#roles-in-the-new-workspaces) című szakaszban találhatja.
+1. Hozzáadhat biztonsági csoportokat, terjesztési listákat, Microsoft 365-csoportokat vagy egyéni felhasználókat a munkaterületekhez megtekintőként, tagként, közreműködőként vagy rendszergazdaként. A különböző szerepkörök ismertetését [Az új munkaterületek szerepkörei](service-new-workspaces.md#roles-in-the-new-workspaces) című szakaszban találhatja.
 
     ![Munkaterületek – tagok, rendszergazdák és közreműködők hozzáadása](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 

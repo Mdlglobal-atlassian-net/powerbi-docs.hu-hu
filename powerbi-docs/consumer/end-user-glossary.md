@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 101cdbc7ad7ea5d07edf182765d305ad2f1fa8c7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ebdd84dd4de054df08ac79dc2d28f7862cbb284b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120114"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564895"
 ---
 # <a name="glossary-for-power-bi-service"></a>Szószedet a Power BI szolgáltatáshoz
 A Power BI-ban használt terminológia esetenként újszerű vagy félrevezető lehet. Ez a szószedet remek forrásanyag az egyes kifejezések kikereséséhez, ezért érdemes lehet könyvjelzőként mentenie. Egy másik nagyszerű segédanyag a Power BI alapvető alkotóelemeinek megismeréséhez [az alapfogalmakat ismertető cikk](end-user-basic-concepts.md). Ez a cikk a Power BI egyes *elemeinek* és a köztük fennálló kapcsolatoknak az átfogó áttekintését tartalmazza.
@@ -26,7 +26,7 @@ A szószedet közösségi összefogás eredményeként jött létre.  Nem talál
 
 A *Premium* (más néven *Premium-kapacitás*) szervezeti előfizetés számos további szolgáltatást nyújt a felhasználónkénti licencekhez képest. Az *ingyenes* felhasználónkénti fiókok tulajdonosai például egy olyan szervezeten belül, amely *Premium* előfizetéssel rendelkezik, sokkal több feladatot tudnak elvégezni a Power BI segítségével, mint a *Premium* nélküli *ingyenes* felhasználók. A *Premium* szervezeti fiókkal rendelkező *ingyenes* felhasználók például együttműködhetnek a kollégáikkal, és megtekinthetik a Power BI Premium-kapacitáson üzemeltetett tartalmakat. 
 
-**admin portal (felügyeleti portál)** A felület, amelyen a Power BI-rendszergazda a céges Power BI felhasználóit, funkcióit és beállításait kezeli. (Megjegyzés: Az Office 365, az Azure és a PowerApps a felügyeleti központot használja.)
+**admin portal (felügyeleti portál)** A felület, amelyen a Power BI-rendszergazda a céges Power BI felhasználóit, funkcióit és beállításait kezeli. (Megjegyzés: A Microsoft 365, az Azure és a PowerApps a felügyeleti központot használja.)
 
 **aggregates (összesítések)** Az a jelenség, amikor több sor értéke egyetlen, nagyobb jelentőséggel bíró bemeneti értékként van csoportosítva.
 
@@ -54,7 +54,7 @@ Az **automatikus elemzéseket** mostantól *gyorselemzéseknek* nevezzük.
   
 **breadcrumbs (útkövetés)** A bal felső navigációs sáv, amelynek segítségével gyorsan navigálhat a jelentések és irányítópultok között.
 
-## <a name="c"></a>C
+## <a name="c"></a>C#
 
 **calculation (számítás)** Valamely elem méretének vagy mennyiségének matematikai meghatározása.
 

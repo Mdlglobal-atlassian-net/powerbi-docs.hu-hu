@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: 762d88789bb68777886a126589802b9e8d854879
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347447"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693064"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Sablonalkalmazások telepítése és terjesztése a vállalatnál
 
@@ -59,11 +59,19 @@ Sablonalkalmazás telepítéséhez, testreszabásához és terjesztéséhez a k�
 
 ## <a name="connect-to-data"></a>Csatlakozás adatokhoz
 
-1. Válassza az **Ugrás az alkalmazásra** lehetőséget. Megjelenik **Az új alkalmazás használatának első lépései** ablak.
+1. Válassza az **Ugrás az alkalmazásra** lehetőséget.
 
-   ![Az alkalmazás használatának első lépései](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+1. Az **Új alkalmazás használatának első lépései** ablakban válassza a **Böngészés** lehetőséget.
 
-1. Kattintson a **Csatlakozás** lehetőségre.
+   ![Sablonalkalmazás üdvözlőképernyője](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+
+   Ekkor az alkalmazás megnyílik és mintaadatokat jelenít meg.
+
+1. Kattintson az **Adatok csatlakoztatása** hivatkozásra az oldal tetején látható szalagcímen.
+
+   ![GitHub-alkalmazás – csatlakozás az adatkapcsolathoz](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+
+
     
     Ekkor egy vagy több egymást követő párbeszédpanel nyílik meg, amelyeken a mintaadatokról a saját adatforrására módosítja az adatforrást. Ehhez általában az adathalmaz paramétereit és az adatforrásbeli hitelesítő adatokat kell újra megadni. Lásd: [Ismert korlátozások](service-template-apps-overview.md#known-limitations).
     
@@ -71,19 +79,20 @@ Sablonalkalmazás telepítéséhez, testreszabásához és terjesztéséhez a k�
 
    ![Párbeszédpanelek az adatokhoz való kapcsolódáshoz](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Ha végzett a kapcsolódási párbeszédpanelek kitöltésével, megkezdődik a kapcsolódás folyamata. Egy értesítésszalag tájékoztatja arról, hogy mintaadatokat tekint meg.
+    Ha végzett a kapcsolódási párbeszédpanelek kitöltésével, megkezdődik a kapcsolódás folyamata. A szalagcím tájékoztatja, hogy az adatgyűjtés folyamatban van, és addig mintaadatok jelennek meg.
 
     ![Mintaadatok megtekintése](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Várjon a kapcsolódás és az adatfrissítés befejeződéséig. A folyamat befejeződését úgy az adathalmaz sorában (új felület) vagy lapfülén (régi felület) látható folyamatjelzőn figyelheti meg.
-
-   A kapcsolódás és az adatfrissítés befejeződése után frissítse a böngésző tartalmát. Az értesítésszalag ekkor arról tájékoztatja, hogy az alkalmazáson végzett módosítások alkalmazásához és megosztásához frissítenie kell az alkalmazást.
-
-    ![Alkalmazás testreszabása és megosztása](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
+   A jelentés adatai naponta egyszer automatikusan frissülnek, kivéve, ha letiltotta ezt a bejelentkezési folyamat során. Lehetőség van [a frissítési ütemezés beállítására](./refresh-scheduled-refresh.md) is, hogy szükség szerint frissen tartsa a jelentésadatokat.
 
 ## <a name="customize-and-share-the-app"></a>Az alkalmazás testreszabása és megosztása
 
-A böngészőnek az adatkapcsolat és az adatok frissítése utáni frissítésekor más az alkalmazással társított munkaterületet láthatja. Ekkor már az összes ottani elemet ugyanúgy szerkesztheti, mint bármely munkaterületen. Tartsa azonban szem előtt, hogy a végzett módosítások felül lesznek írva, ha új verzióra frissíti az alkalmazást, hacsak nem menti más néven a módosított elemeket. [Tájékozódjon a felülírás részleteiről](#overwrite-behavior).
+Miután csatlakozott az adataihoz és az adatfrissítés befejeződött, testre szabhatja az alkalmazások által használt jelentéseket és irányítópultokat, és megoszthatja az alkalmazást a munkatársaival. Ne feledje azonban, hogy a végzett módosítások felül lesznek írva, ha új verzióra frissíti az alkalmazást, hacsak nem menti más néven a módosított elemeket. [Tájékozódjon a felülírás részleteiről](#overwrite-behavior).
+
+Az alkalmazás testre szabásához és megosztásához kattintson a lap jobb felső sarkában található ceruza ikonra.
+
+![Alkalmazás szerkesztése](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 További információk a munkaterületen lévő elemek szerkesztéséről:
 * [A Power BI jelentésszerkesztőjének bemutatása](../create-reports/service-the-report-editor-take-a-tour.md)
@@ -132,4 +141,4 @@ Ha eredetileg az AppSource-ról töltötte le az alkalmazást, amikor új verzi�
 
 ## <a name="next-steps"></a>Következő lépések
 
-[Munkaterületek létrehozása a munkatársakkal a Power BI-ban](../collaborate-share/service-create-workspaces.md)
+[Munkaterületek létrehozása a munkatársakkal a Power BI-ban](../collaborate-share/service-create-the-new-workspaces.md)

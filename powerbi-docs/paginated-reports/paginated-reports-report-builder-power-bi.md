@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 11/27/2019
-ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 05/14/2020
+ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144733"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565506"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mik a lapszámozott jelentések a Power BI Premiumban?
 
@@ -76,7 +76,7 @@ További információ: [Feliratkozás és mások feliratkoztatása lapszámozott
 
 - Jelentésoldalak és vizualizációk rögzítése a Power BI irányítópultjain. Továbbra is rögzíthet vizualizációkat Power BI-irányítópultokra helyszíni lapszámozott jelentésből egy Power BI, vagy Reporting Services jelentéskészítő kiszolgálón. További információ: [Reporting Services-elemek rögzítése Power BI-irányítópultokra](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Dokumentumtérképek.
-- Segédjelentések és részletezések.  A részletezés lehetőségének biztosításához azonban érdemes lehet URL-paramétereket használni.
+- Részletezési jelentések.  A részletezési jelentésekhez érdemes lehet URL-paramétereket használni többoldalas jelentésekkel.
 - Megosztott adatforrások és a megosztott adathalmazok.
 
  
@@ -85,4 +85,4 @@ További információ: [Feliratkozás és mások feliratkoztatása lapszámozott
 - [A Power BI Jelentéskészítő telepítése a Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Oktatóanyag: Lapszámozott jelentés létrehozása](paginated-reports-quickstart-aw.md)
 - [Adatok megadása közvetlenül többoldalas jelentésben](paginated-reports-enter-data.md)
-- [Oktatóanyag: Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embed-paginated-reports-customers.md)
+- [Oktatóanyag: Lapszámozott Power BI-jelentések beágyazása egy alkalmazásba az ügyfelek számára](../developer/embedded/embed-paginated-reports-customers.md)

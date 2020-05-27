@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 09b2f8afd78eda244a6862459a85558efa0fa1c2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129401"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564495"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI tartalmak terjesztése Azure AD B2B külső vendégfelhasználóknak
 
@@ -130,7 +130,7 @@ Ha elő szeretné segíteni az engedélyezett vendégek könnyebb bejelentkezés
 * Egyes felületek nem érhetők el [azon vendégfelhasználók számára, akik tartalmakat szerkeszthetnek és kezelhetnek a vállalatnál](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). Jelentések frissítéséhez vagy közzétételéhez nekik a Power BI szolgáltatás webes felületét kell használniuk, így a Power BI Desktop-fájlok feltöltéséhez az Adatok lekérése lehetőséget.  Az alábbi használati módok nem támogatottak:
     * Közvetlen közzététel a Power BI Desktopból a Power BI szolgáltatásba
     * A vendégfelhasználók nem csatlakozhatnak a Power BI szolgáltatás szolgáltatói adathalmazaihoz a Power BI Desktoppal
-    * Office 365-csoportokhoz kötött klasszikus munkaterületek:
+    * Microsoft 365-csoportokhoz kötött klasszikus munkaterületek:
         * A vendégfelhasználók nem hozhatnak létre ilyen munkaterületeket, és nem lehetnek ezek rendszergazdái
         * A vendégfelhasználók lehetnek tagok
     * Alkalmi meghívók küldése munkaterület-hozzáférési listák esetén nem támogatott

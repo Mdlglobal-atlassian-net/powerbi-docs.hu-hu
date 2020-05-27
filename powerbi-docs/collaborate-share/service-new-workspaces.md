@@ -9,34 +9,34 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c534a72594692c5cf404b095492e7d6425f23329
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 701f478ce4dd59d77c1722b1386cd79ad3fbf2a0
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273661"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693776"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Munka szervezése az új munkaterületeken a Power BI-ban
 
 A *munkaterületeken* együttműködhet a munkatársaival irányítópultok, jelentések, adathalmazok és oldalakra osztott jelentések gyűjteményeinek készítésén. Az új munkaterületi felhasználói felület segítségével jobban kezelhető a tartalomhoz való hozzáférés. Ez a cikk bemutatja az új munkaterületeket, és hogy miben térnek el a klasszikus munkaterületektől.  Ahogyan a klasszikus munkaterületek, ezek is alkalmazások létrehozására és terjesztésére szolgálnak. Készen áll egy új munkaterület létrehozására? Olvassa el az [új munkaterületi felhasználói felület létrehozását](service-create-the-new-workspaces.md) ismertető cikket.
 
-Az új, frissített munkaterületek a meglévő klasszikus munkaterületekkel egyidejűleg használhatóak. Az alapértelmezett munkaterület-típus az új felületű. Igény szerint továbbra is létrehozhat és használhat [klasszikus munkaterületeket](service-create-workspaces.md) Office 365-csoportok alapján. Készen áll a klasszikus munkaterülete migrálására? A részletekért lásd [a Power BI klasszikus munkaterületeinek új munkaterületekre frissítését](service-upgrade-workspaces.md) bemutató cikket.
+Az új, frissített munkaterületek a meglévő klasszikus munkaterületekkel egyidejűleg használhatóak. Az alapértelmezett munkaterület-típus az új felületű. Igény szerint továbbra is létrehozhat és használhat [klasszikus munkaterületeket](service-create-workspaces.md) Microsoft 365-csoportok alapján. Készen áll a klasszikus munkaterülete migrálására? A részletekért lásd [a Power BI klasszikus munkaterületeinek új munkaterületekre frissítését](service-upgrade-workspaces.md) bemutató cikket.
 
 Az új munkaterületekkel a következőket végezheti el:
 
-- Munkaterület-szerepköröket rendelhet felhasználói csoportokhoz: biztonsági csoportokhoz, terjesztési listákhoz, Office 365-csoportokhoz és egyéni felhasználókhoz.
-- A Power BI-ban anélkül is létrehozhat munkaterületeket, hogy egy alapul szolgáló, társított Office 365-csoportot kellene létrehoznia. A munkaterület felügyelete kizárólag a Power BI-ban zajlik.
-- Ha kívánja, továbbra is az Office 365-csoportokon keresztül kezelheti a tartalmakhoz való felhasználói hozzáférést. Ehhez egyszerűen adjon hozzá egy Office 365-csoportot a munkaterület hozzáférési listájához.
+- Munkaterület-szerepköröket rendelhet felhasználói csoportokhoz: biztonsági csoportokhoz, terjesztési listákhoz, Microsoft 365-csoportokhoz és egyéni felhasználókhoz.
+- A Power BI-ban anélkül is létrehozhat munkaterületeket, hogy egy alapul szolgáló, társított Microsoft 365-csoportot kellene létrehoznia. A munkaterület felügyelete kizárólag a Power BI-ban zajlik, nem pedig a Microsoft 365-ben.
+- Ha kívánja, továbbra is a Microsoft 365-csoportokon keresztül kezelheti a tartalmakhoz való felhasználói hozzáférést. Ehhez egyszerűen adjon hozzá egy Microsoft 365-csoportot a munkaterület hozzáférési listájához.
 - Részletesebb munkaterület-szerepköröket használhat, amelyekkel rugalmasabb engedélykezelést érhet el a munkaterületeken.
 
-A Power BI továbbra is felsorolja az összes olyan Office 365-csoportot, amelynek Ön tagja. Ezzel elkerülhető a meglévő munkafolyamatok módosítása.
+A Power BI továbbra is felsorolja az összes olyan Microsoft 365-csoportot, amelynek Ön tagja. Ezzel elkerülhető a meglévő munkafolyamatok módosítása.
 
 ## <a name="new-and-classic-workspace-differences"></a>Az új és a klasszikus munkaterületek közötti különbség
 
 Az új munkaterületekkel újraterveztünk néhány funkciót. A főbb különbségek a következők.
 
-* Ezeknek a munkaterületeknek a létrehozása nem hoz létre Office 365-csoportokat, ahogyan a klasszikus munkaterületek esetén történt. Egy Office 365-csoport viszont már felhasználható arra, hogy hozzáférést adjon a felhasználóknak a munkaterülethez, ha szerepkört rendel hozzá. 
-* A klasszikus munkaterületeken csak egyéneket vehet fel a tagok és rendszergazdák listájára. Az új munkaterületeken több Active Directory-alapú biztonsági csoportot, terjesztési listát vagy Office 365-csoportot vehet fel ezekre a listákra, így könnyebben kezelheti a felhasználókat. 
+- Ezeknek a munkaterületeknek a létrehozása nem hoz létre Microsoft 365-csoportokat, ahogyan a klasszikus munkaterületek esetén történt. Egy Microsoft 365-csoport viszont már felhasználható arra, hogy hozzáférést adjon a felhasználóknak a munkaterülethez, ha szerepkört rendel hozzá.
+- A klasszikus munkaterületeken csak egyéneket vehet fel a tagok és rendszergazdák listájára. Az új munkaterületeken több Active Directory-alapú biztonsági csoportot, terjesztési listát vagy Microsoft 365-csoportot vehet fel ezekre a listákra, így könnyebben kezelheti a felhasználókat.
 - A klasszikus munkaterületeken létrehozhat vállalati tartalomcsomagot. Az új munkaterületen ezt nem teheti meg.
 - A klasszikus munkaterületeken használhat szervezeti tartalomcsomagot. Az új munkaterületen ezt nem teheti meg.
 
@@ -47,7 +47,7 @@ A jelenlegi munkaterületek egyes funkciói másképp működnek, mint az új mu
 - **Licencelés kikényszerítése**: A jelentések az új munkaterületi felhasználói felületen való közzététele kikényszeríti a meglévő licencelési szabályok betartását. Ahhoz, hogy a felhasználók a munkaterületeken együttműködhessenek, vagy tartalmat oszthassanak meg egymással a Power BI szolgáltatásban, Power BI Pro-licenccel kell rendelkezniük. A Pro-licenccel nem rendelkező felhasználók a „Csak Power BI Pro-licenccel rendelkező felhasználók tehetnek közzé tartalmakat ezen a munkaterületen.” hibaüzenetet kapják.
 - **A tagok ismételt megosztásra vonatkozó jogosultsága**: A közreműködői szerepkör váltja fel ezt a beállítást.
 - **Csak olvasható munkaterületek**: Ahelyett, hogy a felhasználóknak csak olvasási hozzáférést biztosít a munkaterülethez, rendelje hozzájuk a Megtekintő szerepkört. Ez hasonló, csak olvasói hozzáférést biztosít a munkaterületen lévő tartalmakhoz.
-- **A Pro-licenccel nem rendelkező felhasználók** akkor is hozzáférnek a Power BI Premium-kapacitásban lévő munkaterülethez, ha csak Megtekintő szerepkörrel rendelkeznek.
+- **A Pro-licenccel nem rendelkező felhasználók** is hozzáférnek a Power BI Premium-kapacitásban lévő munkaterülethez, de csak ha csak Megtekintő szerepkörrel rendelkeznek.
 - **Adatok exportálásának engedélyezése a felhasználók számára**: A Megtekintő szerepkörrel rendelkező felhasználók akkor exportálhatnak adatokat, ha összeállítási engedélyt biztosít nekik a munkaterületen lévő adathalmazokra vonatkozóan. További információ az [adathalmazok összeállítási engedélyéről](../connect-data/service-datasets-build-permissions.md).
 - Nincs **Kilépés a munkaterületből** gomb.
 
@@ -59,9 +59,9 @@ Tovább tájékozódhat a [munkaterületi címlista beállításáról](service-
 
 ### <a name="workspace-onedrive"></a>Munkaterületi OneDrive
 
-A munkaterületi OneDrive funkcióval olyan Office 365-csoportot konfigurálhat, amelynek SharePoint-dokumnetumtárbeli fájltárolója elérhető a munkaterület felhasználói számára. A csoportot a Power BI-on kívül hozza létre.
+A munkaterületi OneDrive funkcióval olyan Microsoft 365-csoportot konfigurálhat, amelynek SharePoint-dokumnetumtárbeli fájltárolója elérhető a munkaterület felhasználói számára. A csoportot a Power BI-on kívül hozza létre.
 
-A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait, akik számára Office 365-csoporttagsággal van konfigurálva a munkaterülethez való hozzáférés. Ajánlott a munkaterülethez való hozzáférést ugyanazzal az Office 365-csoporttal kezelni, amelynek fájltárolóját ebben a beállításban konfigurálja. 
+A Power BI nem szinkronizálja azon felhasználók és csoportok jogosultságait, akik számára Microsoft 365-csoporttagsággal van konfigurálva a munkaterülethez való hozzáférés. Ajánlott a munkaterülethez való hozzáférést ugyanazzal a Microsoft 365-csoporttal kezelni, amelynek fájltárolóját ebben a beállításban konfigurálja.
 
 Tovább tájékozódhat a [munkaterületi OneDrive beállításáról és eléréséről](service-create-the-new-workspaces.md#workspace-onedrive).  
 
@@ -69,7 +69,7 @@ Tovább tájékozódhat a [munkaterületi OneDrive beállításáról és elér�
 
 Új munkaterülethez úgy adhat hozzáférést, hogy felhasználói csoportokat vagy személyeket vesz fel a munkaterületi szerepkörök (rendszergazdák, tagok, közreműködők vagy megtekintők) egyikébe. A meghatározott szerepkört a felhasználói csoport minden tagja megkapja. Ha egy felhasználó több felhasználói csoportnak is tagja, a szerepkörei nyújtotta legmagasabb szintű engedéllyel fog rendelkezni.
 
-A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket végezhetnek a munkaterületeken, így elősegítheti a csapatok együttműködését. Az új munkaterületekkel szerepköröket rendelhet egyénekhez és felhasználói csoportokhoz: biztonsági csoportokhoz, Office 365-csoportokhoz és terjesztési listákhoz. 
+A szerepkörökkel kezelheti, hogy mely felhasználók milyen műveleteket végezhetnek a munkaterületeken, így elősegítheti a csapatok együttműködését. Az új munkaterületekkel szerepköröket rendelhet egyénekhez és felhasználói csoportokhoz: biztonsági csoportokhoz, Microsoft 365-csoportokhoz és terjesztési listákhoz.
 
 Szerepkörök felhasználói csoportokhoz való hozzárendelésekor a csoport felhasználói hozzáférnek a tartalomhoz. Ha beágyaz felhasználói csoportokat, minden tag jogosultságot kap.
 
@@ -125,11 +125,11 @@ Nem. A klasszikus munkaterületeken már meglévő elemeket az új munkaterület
 
 **Együtt jár az általános elérhetőség a meglévő munkaterületek új felületre való frissítésével?**
 
-Nem. Az új munkaterületi felület általános elérhetőségével csak a munkaterületek alapértelmezése módosul az új felületű munkaterületre. Az Office 365-csoportokon alapul meglévő klasszikus munkaterületek változatlanok maradnak.
+Nem. Az új munkaterületi felület általános elérhetőségével csak a munkaterületek alapértelmezése módosul az új felületű munkaterületre. A Microsoft 365-csoportokon alapul meglévő klasszikus munkaterületek változatlanok maradnak.
 
-**Továbbra is automatikusan létre vannak hozva munkaterületek az Office 365-csoportokhoz?**
+**Továbbra is automatikusan létre vannak hozva munkaterületek a Microsoft 365-csoportokhoz?**
 
-Igen. Mivel a két munkaterület-típust párhuzamosan támogatjuk, a munkaterületek listájában továbbra is megtalálható az összes Office 365-csoport felsorolása, amelyhez a felhasználónak hozzáférése van.
+Igen. Mivel a két munkaterület-típust párhuzamosan támogatjuk, a munkaterületek listájában továbbra is megtalálható az összes Microsoft 365-csoport felsorolása, amelyhez a felhasználónak hozzáférése van.
 
 ## <a name="next-steps"></a>Következő lépések
 
