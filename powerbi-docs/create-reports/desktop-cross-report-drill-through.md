@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c9f9c0f24ad40fadb7d0bd61cd6a6ce7d318e74
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 178ad340a9a3ccd9d6427dc6bad03b6d8d08ce90
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297837"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694071"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Jelentésközi részletezés a Power BI-ban
 
@@ -31,7 +31,7 @@ A részletezési művelet megnyitja a *céljelentés* *céloldalát*.
 Ez a cikk azt mutatja be, hogy miképpen állíthatja be és használhatja a jelentésrészletezést a Power BI-jelentésekhez.
 
 > [!NOTE]
-> A jelentésközi részletezést nem használhatja a [Saját munkaterületen](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) belüli **Velem megosztott jelentésekhez**. A jelentésközi részletezés használatához azon a munkaterületen kell hozzáférnie a jelentésekhez, ahonnan megosztásra kerültek.
+> A jelentésközi részletezést nem használhatja az egyedileg megosztott [Velem megosztott jelentésekhez](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report). A jelentésközi részletezés használatához azon a munkaterületen kell hozzáférnie a jelentésekhez, amelynek Ön tagja.
 
 ## <a name="enable-cross-report-drillthrough"></a>Jelentésközi részletezés engedélyezése
 

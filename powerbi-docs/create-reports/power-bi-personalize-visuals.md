@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/09/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: abc936c6ea4b61e4837e05fbde110e5159296815
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ab232d4e5b6d17e7f20ed8a41875ca47693eb285
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867116"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407593"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Vizualizációk személyre szabásának engedélyezése a felhasználók számára jelentésekben
 
@@ -26,7 +26,7 @@ Amikor széles közönséggel oszt meg egy jelentést, előfordulhat, hogy néh�
  
 ## <a name="what-report-consumers-can-change"></a>A jelentésfelhasználók által módosítható elemek
 
-Ezzel a funkcióval a felhasználók további elemzéseket készíthetnek a Power BI-jelentések vizualizációinak ad-hoc szintű feltárásával. A funkció ideális azon jelentéskészítőknek, akik alapszintű feltárási forgatókönyveket szeretnének lehetővé tenni az olvasók számára. A jelentésolvasók az alábbi módosításokat végezhetik el:
+Ezzel a funkcióval a felhasználók további elemzéseket készíthetnek a Power BI-jelentések vizualizációinak ad-hoc szintű feltárásával. Ennek a funkciónak a használatát a [Vizualizációk személyre szabása a jelentésekben](../consumer/end-user-personalize-visuals.md) című témakörben ismerheti meg. A funkció ideális azon jelentéskészítőknek, akik alapszintű feltárási forgatókönyveket szeretnének lehetővé tenni az olvasók számára. A jelentésolvasók az alábbi módosításokat végezhetik el:
 
 - Vizualizáció típusának módosítása
 - Mérték vagy dimenzió cseréje
@@ -84,69 +84,6 @@ Kapcsolja **be** vagy **ki** **A vizualizáció testreszabása** >   lehetőség
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="A vizualizáció testreszabása csúszka be- vagy kikapcsolása":::
 
-## <a name="personalize-visuals-in-the-power-bi-service"></a>Vizualizációk testreszabása a Power BI szolgáltatásban
-
-Vizualizációk testreszabásával a felhasználók számos módon feltárhatják az adatokat anélkül, hogy kilépnének az olvasó nézetből. Az alábbi példák a különböző módosítási lehetőségeket mutatják be. 
-
-1. A Power BI szolgáltatásban nyisson meg egy jelentést olvasó nézetben.
-
-2. A vizualizáció jobb felső sarkában válassza **A vizualizáció testreszabása** ![A vizualizáció testreszabása ikon](media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png) lehetőséget. 
-
-### <a name="change-the-visualization-type"></a>Vizualizáció típusának módosítása
-
-A vizualizációt más megjelenítésre válthatja a **vizualizáció típusának** módosításával.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Vizualizációtípus módosítása":::
- 
-### <a name="swap-out-a-measure-or-dimension"></a>Mérték vagy dimenzió cseréje
-Az X tengely mértékeinek vagy dimenzióinak cseréjéhez jelölje ki a lecserélni kívánt mezőt, majd egy másik mértéket vagy dimenziót.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Tengely módosítása":::
- 
-### <a name="add-or-remove-a-legend"></a>Jelmagyarázat hozzáadása vagy eltávolítása
-Jelmagyarázat hozzáadásával színkóddal láthat el egy vizualizációt a kategóriák szerint,. A kategorikus színkódolást a **Személyre szabás** panel **Jelmagyarázat** mezőjének törlésével szüntetheti meg. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Jelmagyarázat hozzáadása vagy eltávolítása":::
-
-### <a name="compare-two-or-more-different-measures"></a>Kettő vagy több eltérő mérték összehasonlítása
-A + ikonnal több mértéket adhat hozzá egy vizualizációhoz, így összehasonlíthatja azok értékeit.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Mértékek összehasonlítása":::
-
-### <a name="change-aggregations"></a>Összesítések módosítása
-A mérték kiszámításának módját módosíthatja, ha a **Személyre szabás** panelben módosítja az összesítést.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Összesítések módosítása":::
-
-### <a name="capture-changes"></a>Változások rögzítése 
-Személyes könyvjelzőkkel rögzítheti a változtatásokat, így visszatérhet a személyre szabott nézethez. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Könyvjelző létrehozása":::
- 
-A könyvjelzőt beállíthatja alapértelmezett nézetként.
-
-### <a name="share-changes"></a>Módosítások megosztása 
-Ha olvasási és újramegosztási engedéllyel is rendelkezik, a jelentés megosztásakor dönthet úgy, hogy belefoglalja a módosításokat.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Módosítások megosztása":::
- 
-### <a name="reset-all-your-changes-to-a-report"></a>Egy jelentés összes módosításának visszaállítása
-
-Válassza az **Alaphelyzetbe állítás** lehetőséget, így a jelentésen végzett összes módosítást eltávolíthatja, és visszaállíthatja a szerző által legutóbb mentett nézetre.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Az összes módosítás visszaállítása":::
- 
-### <a name="reset-all-your-changes-to-a-visual"></a>Egy vizualizáció összes módosításának visszaállítása
-
-Válassza az **Vizualizáció alaphelyzetbe állítása** lehetőséget, így a vizualizáción végzett összes módosítást eltávolíthatja, és visszaállíthatja a szerző által legutóbb mentett nézetre.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Az összes vizualizáció módosításainak visszaállítása":::
- 
-### <a name="clear-recent-changes"></a>Legutóbbi módosítások törlése
-
-A radír ikonnal minden módosítást törölhet, amelyet a **Személyre szabás** panel megnyitása óta végzett.  
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Legutóbbi módosítások visszaállítása":::
 
 ## <a name="limitations-and-known-issues"></a>Korlátozások és ismert problémák
 
@@ -164,7 +101,8 @@ Emellett tisztában vagyunk néhány problémával, amelyeknek már dolgozunk a 
 
 ## <a name="next-steps"></a>Következő lépések
 
+[Vizualizációk személyre szabása a jelentésekben](../consumer/end-user-personalize-visuals.md).     
+
 Próbálja ki a vizualizációk új személyre szabási funkcióját. Küldjön visszajelzést erről a funkcióról, és arról, hogy hogyan tehetnénk még jobbá ezt a felületet a [Power BI Ideas webhelyen](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
-

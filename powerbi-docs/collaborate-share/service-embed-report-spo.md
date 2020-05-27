@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: 60232b81633542d28b4cd52baf171557e95074c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 046ebacc69642c1e7f399f0a44d7c5a32e411cb1
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143488"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693869"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Jelentéskijelző beágyazása a SharePoint Online-ban
 
@@ -79,7 +79,7 @@ Egy jelentés beágyazása a SharePoint Online-ba még nem ad automatikusan enge
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-A Power BI-ban két módon adhat hozzáférést a jelentésekhez. Az első, hogy ha a SharePoint Online-csoportwebhely létrehozásához Office 365-csoportot használ, akkor a felhasználót hozzáadhatja tagként a **munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
+A Power BI-ban két módon adhat hozzáférést a jelentésekhez. Az első, hogy ha a SharePoint Online-csoportwebhely létrehozásához Microsoft 365-csoportot használ, akkor a felhasználót hozzáadhatja tagként a **munkaterülethez a Power BI szolgáltatásban** és a **SharePoint-oldalon**. További információkért lásd: [Munkaterület kezelése](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 A másik lehetőség, hogy egy alkalmazásban ágyaz be egy jelentést, és közvetlenül megosztja azt a felhasználókkal:  
 
@@ -157,7 +157,7 @@ Egy jelentést SharePointban megtekintő felhasználónak vagy **Power BI Pro**-
 
 * A Power BI nem ugyanazokat a honosított nyelveket támogatja mint a SharePoint Online. Emiatt előfordulhat, hogy a beágyazott jelentés nem megfelelően honosított nyelven jelenik meg.
 
-* Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+* Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * A Power BI jelentéskijelzője nem érhető el az [országos felhőkben](https://powerbi.microsoft.com/clouds/).
 

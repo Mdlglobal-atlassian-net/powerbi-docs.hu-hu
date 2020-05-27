@@ -10,22 +10,22 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8fc1f2a668a0dfff4418749e7f3de7e0379b603f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129143"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564615"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Felhasználói tevékenységek nyomon követése a Power BI-ban
 
-Ha tisztában van azzal, hogy a Power BI-bérlőn ki, milyen műveletet és mely elemeken végez el, sokat segíthet a munkahelyének a követelményeknek (például a jogszabályi követelményeknek és a rekordkezelésnek) való megfelelésben. A Power BI-jal két lehetősége van a felhasználói tevékenység nyomon követésére: A [Power BI tevékenységnaplója](#use-the-activity-log) és az [egyesített Office 365-auditnapló](#use-the-audit-log). Mindkét napló tartalmazza a [Power BI naplózási adatainak](#operations-available-in-the-audit-and-activity-logs) teljes másolatát, de fontos különbségek is vannak köztük, melyeket a következő táblázatban összefoglaltunk.
+Ha tisztában van azzal, hogy a Power BI-bérlőn ki, milyen műveletet és mely elemeken végez el, sokat segíthet a munkahelyének a követelményeknek (például a jogszabályi követelményeknek és a rekordkezelésnek) való megfelelésben. A Power BI-jal két lehetősége van a felhasználói tevékenység nyomon követésére: A [Power BI tevékenységnaplója](#use-the-activity-log) és az [egyesített auditnapló](#use-the-audit-log). Mindkét napló tartalmazza a [Power BI naplózási adatainak](#operations-available-in-the-audit-and-activity-logs) teljes másolatát, de fontos különbségek is vannak köztük, melyeket a következő táblázatban összefoglaltunk.
 
-| **Egyesített Office 365-auditnapló** | **Power BI-tevékenységnapó** |
+| **Egyesített auditnapló** | **Power BI-tevékenységnapó** |
 | --- | --- |
 | A Power BI naplózási események mellett tartalmazza a SharePoint Online, az Exchange Online, a Dynamics 365 és más szolgáltatások eseményeit is. | Csak a Power BI naplózási eseményeit tartalmazza. |
 | Csak a csak megtekintési auditnaplókhoz vagy az auditnaplókhoz jogosultsággal rendelkező felhasználók férhetnek hozzá, például a globális rendszergazdák és az auditorok. | A globális rendszergazdák és a Power BI szolgáltatás adminisztrátorai férhetnek hozzá. |
-| A globális rendszergazdák és az auditorok kereshetnek az egyesített auditnaplóban az Office 365 Biztonsági és megfelelőségi központ, a Microsoft 365 Security Center és a Microsoft 365 megfelelőségi központ használatával. | A tevékenységnaplóban való kereséshez még nincs felhasználói felület. |
+| A globális rendszergazdák és az auditorok kereshetnek az egyesített auditnaplóban a Microsoft 365 Security Center és a Microsoft 365 megfelelőségi központ használatával. | A tevékenységnaplóban való kereséshez még nincs felhasználói felület. |
 | A globális rendszergazdák és az auditorok az Office 365 Management API-k és a parancsmagok használatával tölthetik le az auditnapló bejegyzéseit. | A globális rendszergazdák és a Power BI szolgáltatás rendszergazdái a Power BI REST API és a felügyeleti parancsmag használatával tölthetik le a tevékenységnapló bejegyzéseit. |
 | 90 napig őrzi meg a naplózási adatokat | 30 napig őrzi meg a tevékenységadatokat (nyilvános előzetes verzió). |
 | Megőrzi a naplózási adatokat akkor is, ha a bérlő egy másik Azure-régióba lett áthelyezve. | Nem őrzi meg a tevékenységadatokat, ha a bérlő egy másik Azure-régióba lett áthelyezve. |
@@ -105,7 +105,7 @@ $activities[0]
 
 ## <a name="use-the-audit-log"></a>Az auditnapló használata
 
-Ha az a feladata, hogy a felhasználói tevékenységeket kövesse nyomon a Power BI-ban és az Office 365-ben, akkor az Office 365 biztonsági és megfelelőségi központ vagy a PowerShell használatával dolgozhat a naplózással. A naplózás az Exchange Online funkcióin alapul, amelynek automatikusan megtörténik a kiépítése a Power BI támogatásához.
+Ha az a feladata, hogy a felhasználói tevékenységeket kövesse nyomon a Power BI-ban és a Microsoft 365-ben, akkor az Office 365 biztonsági és megfelelőségi központ vagy a PowerShell használatával dolgozhat a naplózással. A naplózás az Exchange Online funkcióin alapul, amelynek automatikusan megtörténik a kiépítése a Power BI támogatásához.
 
 A naplózási adatokat dátumtartomány, felhasználó, irányítópult, jelentés, adathalmaz és tevékenységtípus szerint szűrheti. A tevékenységeket le is töltheti egy CSV-fájlban (vesszővel tagolt szövegfájl), és offline elemezheti.
 
@@ -184,7 +184,7 @@ Az **Eredmények** terület az alábbi adatokat tartalmazza a keresés által vi
 
 #### <a name="view-the-details-for-an-event"></a>Az esemény részleteinek megtekintése
 
-Ha további részletekre kíváncsi egy eseménnyel kapcsolatban, válassza az esemény rekordját a keresési eredmények listájában. Ekkor megjelenik a **Részletek** oldal, rajta az eseményrekord részletes tulajdonságaival. A **Részletek** oldalon attól függően jelennek meg tulajdonságok, hogy melyik Office 365-szolgáltatásban történik az esemény.
+Ha további részletekre kíváncsi egy eseménnyel kapcsolatban, válassza az esemény rekordját a keresési eredmények listájában. Ekkor megjelenik a **Részletek** oldal, rajta az eseményrekord részletes tulajdonságaival. A **Részletek** oldalon attól függően jelennek meg tulajdonságok, hogy melyik Microsoft 365-szolgáltatásban történik az esemény.
 
 Ezeknek a részleteknek a megjelenítéséhez válassza a **További információ** lehetőséget. Minden Power BI-bejegyzés RecordType tulajdonságának értéke 20. Más tulajdonságokkal kapcsolatban a [Tulajdonságok részletei az auditnaplóban](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/) című szakasz tartalmaz további információkat.
 

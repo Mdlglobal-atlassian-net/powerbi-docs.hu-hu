@@ -5,18 +5,20 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/25/2020
+ms.date: 05/19/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1be2d3db9dbf341def86c087344ef7a32cd006a0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2d5a2f319753323dd391cf6f5dceb970de1720b5
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83337719"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693325"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Csatlakozás a GitHubhoz a Power BI használatával
 Ez a cikk bemutatja, hogyan kérhet le adatokat a GitHub-fiókjáról egy Power BI-sablonalkalmazással. A sablonalkalmazás egy irányítópulttal, több jelentéssel, és egy adathalmazzal rendelkező munkaterületet, amely segítségével elemezheti és megismerheti a GitHub-adatokat. A Power BI-hoz készült GitHub alkalmazással betekintést nyerhet GitHub-adattárakba, amelyek hozzájárulásokra, problémákra, lekéréses kérelmekre és aktív felhasználókra vonatkozó adatokat tartalmaznak.
+
+![GitHub-sablonalkalmazás](media/service-connect-to-github/service-github-app-report.png)
 
 A sablonalkalmazás telepítése után módosíthatja az irányítópultot és a jelentést. Ezután alkalmazásként terjesztheti a szervezeti munkatársai között.
 
@@ -27,55 +29,69 @@ Kipróbálhatja a [GitHub-oktatóanyagot](service-tutorial-connect-to-github.md)
 >[!NOTE]
 >A sablonalkalmazás használatához a GitHub-fióknak hozzá kell férnie az adattárhoz. A követelményekről alább talál további információkat.
 >
->Ez a sablonalkalmazás nem támogatja a GitHub Enterprise-t. 
+>Ez a sablonalkalmazás nem támogatja a GitHub Enterprise-t.
 
-## <a name="how-to-connect"></a>Csatlakozás
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
-   
-3. Válassza a **GitHub** \> **Letöltés most** lehetőséget.
-4. A **Telepíti ezt a Power BI-alkalmazást?** területen válassza a **Telepítés** lehetőséget.
-4. Az **Alkalmazások** területen válassza a **GitHub** csempét.
+## <a name="install-the-app"></a>Az alkalmazás telepítse
 
-    ![Power BI – GitHub csempe](media/service-connect-to-github/power-bi-github-tile.png)
+1. Az alkalmazás beszerzéséhez kattintson a következő hivatkozásra: [GitHub-sablonalkalmazás](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-6. **Az új alkalmazás használatának első lépései** résznél válassza az **Csatlakozás** lehetőséget.
+1. Az alkalmazás AppSource-oldalán válassza az [**AZONNALI BESZERZÉS**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) lehetőséget.
 
-    ![Első lépések az új alkalmazással](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
+    [![GitHub-sablonalkalmazás az AppSource-on](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-5. Adja meg az adattár nevét és tulajdonosát. A [paraméterek fellelhetőségével](#FindingParams) kapcsolatos információt lásd alább.
-   
-    ![Power BI – GitHub adattár neve](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+1. Válassza az **Install** (Telepítés) lehetőséget. 
 
-5. Adja meg a GitHub-hitelesítő adatait. (Ha már bejelentkezett a böngészőjében, akkor lehet, hogy ez a lépés kimarad). 
-6. A **Hitelesítési módszer** értékeként válassza az **oAuth2** lehetőséget \> **Bejelentkezés**. 
-7. Kövesse a GitHub-hitelesítés lépéseit. Engedélyezze a hozzáférést a Power BI-hoz készült GitHub-sablonalkalmazás részére a GitHub-adatokhoz.
-   
-   ![Power BI – GitHub-engedélyezés](media/service-connect-to-github/github_authorize.png)
-   
-    A Power BI csatlakozik a GitHubhoz és az adataihoz.  Az adatok naponta egyszer frissülnek. Miután a Power BI importálta az adatokat, megjelenik az új GitHub-munkaterület tartalma.
+    ![A GitHub-sablonalkalmazás telepítése](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
 
-## <a name="modify-and-distribute-your-app"></a>Az alkalmazás módosítása és terjesztése
+    A telepítést követően megtekintheti az alkalmazást az Alkalmazások oldalon.
 
-Telepítette a GitHub-sablonalkalmazást. Ez azt jelenti, hogy létrehozta a GitHub-munkaterületet is. A munkaterületen módosíthatja a jelentést és az irányítópultot, majd *alkalmazásként* terjesztheti azt a szervezet munkatársainak. 
+   ![GitHub-alkalmazás az alkalmazások oldalon](media/service-connect-to-github/service-github-app-apps-page-icon.png)
 
-1. Kattintson a munkaterület neve melletti nyílra a navigációs panelen. Láthatja, hogy a munkaterület egy irányítópultot és egy jelentést tartalmaz.
+## <a name="connect-to-data-sources"></a>Kapcsolódás adatforrásokhoz
 
-    ![Alkalmazás a navigációs panelen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+1. Az alkalmazás megnyitásához kattintson az Alkalmazás oldalon lévő ikonra.
 
-8. Válassza ki az új [GitHub-irányítópultot](https://powerbi.microsoft.com/integrations/github).    
-    ![GitHub-irányítópult a Power BI-ban](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+1. A kezdőképernyőn válassza az **Alkalmazás felfedezése** lehetőséget.
 
-3. Az új GitHub-munkaterület tartalmának megtekintéséhez a navigációs ablaktáblán válassza a **Munkaterületek** > **GitHub** lehetőséget.
- 
-   ![GitHub-munkaterület a navigációs ablaktáblán](media/service-connect-to-github/power-bi-github-left-nav.png)
+   ![Sablonalkalmazás üdvözlőképernyője](media/service-connect-to-github/service-github-app-splash-screen.png)
 
-    Ez a nézet a munkaterület tartalomlistája. A jobb felső sarokban látható az **App frissítése** elem. Ha készen áll terjeszteni az alkalmazást a munkatársainak, nekiláthat. 
+   Ekkor az alkalmazás megnyílik és mintaadatokat jelenít meg.
 
-    ![GitHub-tartalomlista](media/service-connect-to-github/power-bi-github-content-list.png)
+1. Kattintson az **Adatok csatlakoztatása** hivatkozásra az oldal tetején látható szalagcímen.
 
-2. Válassza a **Jelentések** és az **Adatkészletek** lehetőséget a munkaterület egyéb elemeinek megtekintéséhez.
+   ![GitHub-alkalmazás – csatlakozás az adatkapcsolathoz](media/service-connect-to-github/service-github-app-connect-data.png)
 
-    További információ az [alkalmazások terjesztéséről](../collaborate-share/service-create-distribute-apps.md).
+1. A megjelenő párbeszédpanelen adja meg az adattár nevét és tulajdonosát. A [paraméterek fellelhetőségével](#FindingParams) kapcsolatos információt lásd alább. Ha befejezte, kattintson a **Tovább** elemre.
+
+   ![Power BI – GitHub adattár neve](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+
+1. Az ekkor megjelenő párbeszédpanelen állítsa be az **OAuth2** hitelesítési módszert. Az adatvédelmi szint beállításával nem kell foglalkoznia. Amikor elkészült, kattintson az **Bejelentkezés** gombra.
+
+   ![A Power BI GitHubos hitelesítési módszere](media/service-connect-to-github/power-bi-github-authentication.png)
+
+1. Adja meg a GitHub-hitelesítő adatait, és kövesse a GitHub hitelesítési folyamatát. (Ha már bejelentkezett a böngészőjében, akkor lehet, hogy ez a lépés kimarad).
+
+   ![A Power BI GitHubos hitelesítési módszere](media/service-connect-to-github/power-bi-github-authenticate-process.png)
+
+
+Miután bejelentkezett, a jelentés csatlakozik az adatforrásokhoz, és naprakész adatokkal töltődik fel. Eközben forog a tevékenységfigyelő.
+
+![A Power BI GitHub-alkalmazás frissítése folyamatban van](media/service-connect-to-github/service-github-app-refresh-monitor.png)
+
+A jelentés adatai naponta egyszer automatikusan frissülnek, kivéve, ha letiltotta ezt a bejelentkezési folyamat során. Lehetőség van [a frissítési ütemezés beállítására](./refresh-scheduled-refresh.md) is, hogy szükség szerint frissen tartsa a jelentésadatokat.
+
+## <a name="customize-and-share"></a>Testreszabás és megosztás
+
+Az alkalmazás testre szabásához és megosztásához kattintson a lap jobb felső sarkában található ceruza ikonra.
+
+![Alkalmazás szerkesztése](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
+
+További információk a munkaterületen lévő elemek szerkesztéséről:
+* [A Power BI jelentésszerkesztőjének bemutatása](../create-reports/service-the-report-editor-take-a-tour.md)
+* [A Power BI szolgáltatás alapfogalmai tervezők számára](../fundamentals/service-basic-concepts.md)
+
+Ha végzett a munkaterületi elemeken végrehajtani kívánt módosításokkal, már készen áll az alkalmazás közzétételére és megosztására. Ennek módjáról az [Alkalmazás közzététele](../collaborate-share/service-create-distribute-apps.md#publish-your-app) szakaszban tájékozódhat.
 
 ## <a name="whats-included-in-the-app"></a>Az alkalmazás tartalma
 A GitHubból az alábbi adatok érhetők el a Power BI szolgáltatásban:     
@@ -115,13 +131,13 @@ Az első rész, az „Azure” a tulajdonos, a második rész, az „azure-sdk-f
 Ha szükséges, ellenőrizheti a GitHub-hitelesítő adatait.  
 
 1. Egy másik böngészőablakban navigáljon a GitHub weboldalára, és jelentkezzen be. Ha bejelentkezett, azt a GitHub oldalának jobb felső sarkában láthatja.    
-2. A GitHub webhelyen navigáljon annak az adattárnak az URL-címére, amelyet el kíván érni a Power BI-ból. Példa: https://github.com/dotnet/corefx.  
+2. A GitHub webhelyen navigáljon annak az adattárnak az URL-címére, amelyet el kíván érni a Power BI-ból. Például: https://github.com/dotnet/corefx.  
 3. A Power BI-ba visszatérve próbáljon csatlakozni a GitHubhoz. A GitHub beállítása párbeszédpanelen adja meg a szóban forgó adattár nevét és tulajdonosát.  
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [Oktatóanyag: Csatlakozás GitHub-adattárhoz a Power BI segítségével](service-tutorial-connect-to-github.md)
 * [Új munkaterületek létrehozása a Power BI-ban](../collaborate-share/service-create-the-new-workspaces.md)
 * [Alkalmazások telepítése és használata a Power BI-ban](../consumer/end-user-apps.md)
 * [Csatlakozás külső szolgáltatások Power BI-alkalmazásaihoz](service-connect-to-services.md)
-* Kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* Kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

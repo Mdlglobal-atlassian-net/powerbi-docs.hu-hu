@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 05/18/2020
 ms.author: kfollis
-ms.openlocfilehash: 7ed9f22f262e03885681cf2fdc36867533837cdc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1a90a9826d794f84933a75213043c31a9a67a4b5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83360922"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566040"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webináriumok
 [//]: # "Tatevik Tatero szállító, aki Chauncy Freelsszel is dolgozik, és segít ennek a webinárium-listának a fenntartásában"
@@ -22,13 +22,20 @@ Regisztráljon a soron következő élő előadásokra, vagy tekintse meg őket 
 
 ## <a name="upcoming-webinars"></a>Közelgő webináriumok
 
-Még nincs tervezett webinárium. Látogasson vissza később közelgő eseményekért.
+**Mi a különbség az elemzés és az üzleti elemzés között?**
+<br>készítette: Nate Findley és Charles Feddersen, Microsoft
+<br>[Regisztráljon 2020 június 3-i megtekintéshez 10:00–11:00 Csendes-óceáni téli idő]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
+
 
 >[A Power BI-közösség közelgő webináriumai](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Kiemelt előadások
 
 Igény szerint elérhető népszerű előadások az első lépésekhez
+
+**Ismerje meg a Microsoft Power BI teljes gazdasági hatását**
+<br>készítette: Megan Tomlin, Microsoft és Jonathan Lipsitz, Forrester Consulting
+<br>[Megtekintés]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
 
 **Elemzés virtuális Azure-eseményben: Gyorsabb elemzési eredmények az Azure Synapse Analytics szolgáltatással**
 <br>szerző: Gayle Sheppard és John Macintyre
@@ -86,7 +93,7 @@ Igény szerint elérhető népszerű előadások az első lépésekhez
 <br>szerző: Nimrod Shalit
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
-**Power BI, Excel és Office 365: Vállalati adatforrások optimalizálása**
+**Power BI, Excel és Microsoft 365: Vállalati adatforrások optimalizálása**
 <br>előadó: Olaf Hubel és Miguel Martinez
 <br>[Regisztráció és megtekintés](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 

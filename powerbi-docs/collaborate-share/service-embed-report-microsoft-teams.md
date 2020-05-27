@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: c424572cf222e4b2f65354e7b9a0959b60a56fca
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7034bd544ee9c14dd5f32df9335faefd4221e4ac
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143898"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693910"
 ---
 # <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Jelentések beágyazása a Microsoft Teamsbe a Power BI lappal
 
@@ -28,11 +28,12 @@ A **Microsoft Teams Power BI lapjának** működéséhez a következők szüksé
 - A felhasználóknak Power BI Pro-licenccel kell rendelkezniük, vagy a jelentésnek Power BI-licenccel rendelkező [Power BI Premium-kapacitásban (EM vagy P SKU)](../admin/service-premium-what-is.md) kell lennie.
 - A Microsoft Teamsben meg kell lennie a Power BI lapnak.
 - A jelentés használatához a felhasználóknak be kell jelentkezniük a Power BI szolgáltatásba, hogy aktiválják a Power BI-licencüket.
-- A felhasználóknak rendelkezniük kell a jelentés megtekintéséhez szükséges engedéllyel.
+- Ha a Microsoft Teams szolgáltatásban szeretne jelentést hozzáadni a Power BI lapon, legalább megtekintői szerepkörrel kell rendelkeznie a jelentést futtató munkaterületen. A különböző szerepkörök ismertetését [Az új munkaterületek szerepkörei](service-new-workspaces.md#roles-in-the-new-workspaces) című szakaszban találhatja.
+- Ahhoz, hogy megtekinthessék a jelentést a Microsoft Teams Power BI lapján, a felhasználóknak engedéllyel kell rendelkezniük a jelentés megtekintéséhez.
 
 A **hivatkozások előnézetének** működéséhez ezeken felül a következők szükségesek:
 - A felhasználóknak eleget kell tenniük a Microsoft Teams Power BI lapjának használatára vonatkozó követelményeknek.
-- A felhasználóknak be kell jelentkezniük a Power BI-robotszolgáltatásba. 
+- A felhasználóknak be kell jelentkezniük a Power BI szolgáltatásba. 
 
 
 ## <a name="embed-your-report"></a>A jelentés beágyazása
@@ -90,12 +91,12 @@ A Power BI szolgáltatásbeli tartalom hivatkozáshoz tartozó előnézetét az 
 
 ## <a name="grant-access-to-reports"></a>Hozzáférés biztosítása a jelentésekhez
 
-Egy jelentés beágyazása a Microsoft Teamsbe, vagy egy elemre mutató hivatkozás elküldése még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést – [a megtekintést a Power BI-ban kell engedélyeznie](service-share-dashboards.md). Az egyszerűség kedvéért használhat Office 365-csoportot a csapat számára. 
+Egy jelentés beágyazása a Microsoft Teamsbe, vagy egy elemre mutató hivatkozás elküldése még nem ad automatikusan engedélyt a felhasználóknak arra, hogy megtekinthessék a jelentést – [a megtekintést a Power BI-ban kell engedélyeznie](service-share-dashboards.md). Az egyszerűség kedvéért használhat Microsoft 365-csoportot a csapat számára.
 
 > [!IMPORTANT]
 > Tekintse át kik láthatják a jelentést a Power BI szolgáltatásban, és adjon hozzáférést azoknak, akik még nem szerepelnek a listában.
 
-Azt, hogy a csapat hozzáférjen a jelentésekhez úgy is biztosíthatja, hogy egyetlen munkaterületre helyezi a jelentéseket a Power BI-ban, majd a csapat Office 365-csoportjának hozzáférést ad a munkaterülethez.
+Azt, hogy a csapat hozzáférjen a jelentésekhez úgy is biztosíthatja, hogy egyetlen munkaterületre helyezi a jelentéseket a Power BI-ban, majd a csapat Microsoft 365-csoportjának hozzáférést ad a munkaterülethez.
 
 ## <a name="link-previews"></a>Hivatkozások előnézete 
 
@@ -123,7 +124,7 @@ Amikor Power BI-jelentéslapot vesz fel a Teamsbe, a Teams automatikusan létreh
 - A Power BI nem ugyanazokat a honosított nyelveket támogatja mint a Microsoft Teams. Emiatt előfordulhat, hogy a beágyazott jelentés nem megfelelően honosított nyelven jelenik meg.
 - Power BI-irányítópultok nem ágyazhatók be a Microsoft Teams Power BI lapján.
 - Power BI-licenccel vagy a jelentésre vonatkozó engedéllyel nem rendelkező felhasználók „A tartalom nem érhető el” üzenetet kapják.
-- Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- Ha Internet Explorer 10-es böngészőt használ, előfordulhat, hogy problémákba ütközik. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - A Microsoft Teams Power BI lapja nem támogatja az [URL-szűrőket](service-url-filters.md).
 - Az új Power BI lap országos felhőkben nem érhető el. Régebbi verziók elérhetők lehetnek, de azok nem támogatják az új munkaterületi felületeket és a Power BI-alkalmazásokban lévő jelentéseket. 
 - A lap mentése után a lap neve már nem módosítható a lap beállításaiban. A módosításhoz használja az átnevezés lehetőséget.

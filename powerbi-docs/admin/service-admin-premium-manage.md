@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: f4bf863d7d87bd908165976940b868be55e367f9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6155453f00ae64eee2cf74db7426b36248def796
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83138605"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564409"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>A Power BI Premium kapacitásainak konfigurálása és kezelése
 
@@ -24,11 +24,11 @@ Megtudhatja, hogyan kezelheti a Power BI Premium és a Power BI Embedded kapacit
 
 ![A Power BI Kapacitásbeállítások képernyője](media/service-admin-premium-manage/premium-capacity-management.png)
 
-A *kapacitás* a Power BI Premium- és a Power BI Embedded-ajánlatok legfontosabb eleme. Ez egy olyan erőforráskészlet, amely kizárólag az Ön intézménye számára van fenntartva. A dedikált kapacitással irányítópultokat, jelentéseket és adathalmazokat tehet közzé a szervezet felhasználóinak anélkül, hogy felhasználónkénti licenceket kellene vásárolnia számukra. A dedikált kapacitás emellett megbízható, egyenletes teljesítményt biztosít az így üzemeltetett tartalmakhoz. További információ: [A Power BI Premium bemutatása](../service-premium.md).
+A *kapacitás* a Power BI Premium- és a Power BI Embedded-ajánlatok legfontosabb eleme. Ez egy olyan erőforráskészlet, amely kizárólag az Ön intézménye számára van fenntartva. A dedikált kapacitással irányítópultokat, jelentéseket és adathalmazokat tehet közzé a szervezet felhasználóinak anélkül, hogy felhasználónkénti licenceket kellene vásárolnia számukra. A dedikált kapacitás emellett megbízható, egyenletes teljesítményt biztosít az így üzemeltetett tartalmakhoz. További információ: [A Power BI Premium bemutatása](service-premium-what-is.md).
 
 ## <a name="manage-capacity"></a>Kapacitás kezelése
 
-A kapacitás-csomópontok Office 365-ben való megvásárlása után a kapacitást a Power BI felügyeleti portálján hozhatja létre. A Power BI Premium-kapacitásokat a portál **Kapacitásbeállítások** területén kezelheti.
+A kapacitás-csomópontok Microsoft 365-ben való megvásárlása után a kapacitást a Power BI felügyeleti portálján hozhatja létre. A Power BI Premium-kapacitásokat a portál **Kapacitásbeállítások** területén kezelheti.
 
 ![Kapacitásbeállítások a felügyeleti portálon](media/service-admin-premium-manage/admin-portal-premium.png)
 
@@ -60,7 +60,7 @@ Ha rendelkezik szabad virtuális magokkal, az új kapacitást az alábbi lépés
 
     ![Új kapacitás beállítása](media/service-admin-premium-manage/set-up-capacity.png)
 
-A kapacitás-rendszergazdák, a Power BI-rendszergazdák és az Office 365 globális rendszergazdái ettől kezdve látják a kapacitást a felügyeleti portálon.
+A kapacitás-rendszergazdák, a Power BI-rendszergazdák és a globális rendszergazdái ettől kezdve látják a kapacitást a felügyeleti portálon.
 
 ### <a name="capacity-settings"></a>Kapacitásbeállítások
 
@@ -81,7 +81,7 @@ A kapacitás-rendszergazdák, a Power BI-rendszergazdák és az Office 365 glob�
 
 ### <a name="change-capacity-size"></a>Kapacitás méretének módosítása
 
-A Power BI Premium-kapacitásokat a Power BI-rendszergazdák és az Office 365 globális rendszergazdái módosíthatják. Más kapacitás-rendszergazdák erre nem jogosultak.
+A Power BI Premium-kapacitásokat a Power BI-rendszergazdák és a globális rendszergazdák módosíthatják. Más kapacitás-rendszergazdák, akik nem Power BI-rendszergazdák vagy globális rendszergazdák, erre nem jogosultak.
 
 1. Válassza a **Kapacitás méretének módosítása** elemet.
 
@@ -118,7 +118,7 @@ Kétféle módon rendelhető munkaterület egy kapacitáshoz: a felügyeleti por
 
 ### <a name="assign-from-the-admin-portal"></a>Hozzárendelés a felügyeleti portálról
 
-A kapacitás-rendszergazdák, a Power BI-rendszergazdák és az Office 365 globális rendszergazdái tömegesen is hozzárendelhetnek munkaterületeket a felügyeleti portál prémium szintű kapacitáskezelési területén. A kapacitáskezeléskor látható a **Munkaterületek** szakasz, amelyen hozzárendelheti a munkaterületeket.
+A kapacitás-rendszergazdák, a Power BI-rendszergazdák és a globális rendszergazdák tömegesen is hozzárendelhetnek munkaterületeket a felügyeleti portál prémium szintű kapacitáskezelési területén. A kapacitáskezeléskor látható a **Munkaterületek** szakasz, amelyen hozzárendelheti a munkaterületeket.
 
 ![A kapacitáskezelés munkaterület-hozzárendelési területe](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 

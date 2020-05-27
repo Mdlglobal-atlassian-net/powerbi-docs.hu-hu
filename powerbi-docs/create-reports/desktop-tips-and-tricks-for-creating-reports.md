@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: f66e564091c30e11604d0ab3fe58ba1f93addb28
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349103"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564575"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tippek és trükkök jelentések létrehozásához a Power BI Desktopban
 Ahhoz, hogy a legtöbbet hozza ki az adataiból, néha szüksége van egy kis extra segítségre. Összegyűjtöttünk néhány tippet és trükköt, amelyek segítségére lehetnek, amikor jelentéseket hoz létre a Microsoft Power BI Desktopban *és* a Microsoft Excel 2016 vagy Excel 2013 Pro-Plus kiadásokban, amelyekben engedélyezve van a Power Pivot bővítmény, illetve telepítve és engedélyezve van a Power Query. 
@@ -92,7 +92,7 @@ A folyamat elindításához használja a „Hivatkozás” lehetőséget azon le
 >[!NOTE]
 >A vizualizációk létrehozása előtt érdemes kigondolni, hogy milyen rendezési sorrendet szeretne. 
 
-A folyamat következő lépése egy kapcsolat meghatározása a „Buckets” (Gyűjtők) és a „Details” (Részletek) lekérdezések között a gyűjtők oszlopában. A Power BI Desktopban kattintson a menüszalag **Kapcsolatok kezelése** lehetőségére. Hozzon létre egy kapcsolatot, ahol a Buckets a bal oldali táblában, a Details pedig a jobb oldali táblában található, és válassza ki a hisztogramhoz használni kívánt mezőt. 
+A folyamat következő lépése egy kapcsolat meghatározása a „Buckets” (Gyűjtők) és a „Details” (Részletek) lekérdezések között a gyűjtők oszlopában. A Power BI Desktopban kattintson a menüszalag **Kapcsolatok kezelése** lehetőségére. Hozzon létre egy relációt amelyben a Gyűjtők a bal, a Részletek pedig a jobb oldali táblában van, és válassza ki a hisztogramhoz használt mezőt. 
 
 Az utolsó lépés a hisztogram létrehozása. Húzza ki a Bucket mezőt a „Buckets” táblából. Távolítsa el az alapértelmezett mezőt az így kapott oszlopdiagramból. Húzza át a hisztogram mezőt a „Details” táblából ugyanabba a vizualizációba. A Mezők területen módosítsa az alapértelmezett összesítést Számra. Az eredmény a hisztogram. Ha létrehoz egy másik vizualizációt, például egy faszerkezetes térképet a Details táblából, válasszon ki egy adatpontot a faszerkezetes térképen, hogy megjelenjen a hisztogram-kiemelés, és megmutassa a kiválasztott adatponthoz tartozó hisztogramot a teljes adatkészlet trendjéhez képest.
 
@@ -158,7 +158,7 @@ A DAX a Power BI Desktop számításokhoz használt képletnyelve. Ez a nyelv BI
 
 [A DAX alapszintű használata a Power BI Desktopban](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Data Analysis Expressions-referencia (DAX)](https://msdn.microsoft.com/library/gg413422.aspx)
+[Data Analysis Expressions-referencia (DAX)](/dax/)
 
 [DAX forrásanyagközpont](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
@@ -215,8 +215,8 @@ Itt van néhány kedvenc könyveink közül:
 * Edward Tufte *Envisioning Information* című könyve  
 * Andrew Abela: *Advanced Presentations Design*   
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 * [A Power BI szolgáltatás alapfogalmai tervezők számára](../fundamentals/service-basic-concepts.md)
 * [Power BI-jelentések](../consumer/end-user-reports.md)
 
-További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+További kérdései vannak? [Tegye próbára a Power BI közösségét](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a9880eea0511b942c3c7310a059caf5cd9415e1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 68dce4919dcc15cfcdd6a7c6776d569e43f9666b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292064"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561740"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Excel-munkafüzetek importálása a Power BI Desktopba
 A Power BI Desktop segítségével egyszerűen importálhatja a Power Query-lekérdezéseket, Power Pivot-modelleket és Power View-munkalapokat tartalmazó Excel-munkafüzeteket a Power BI Desktopba. A Power BI Desktop automatikusan elkészíti a jelentéseket és a vizualizációkat az Excel-munkafüzet alapján. Ha importálta, tovább is fejlesztheti ezeket a jelentéseket a Power BI Desktoppal a meglévő szolgáltatások és a Power BI Desktop havi frissítéseivel megjelenő új szolgáltatások segítségével.
@@ -30,7 +30,7 @@ A Power BI Desktop segítségével egyszerűen importálhatja a Power Query-lek�
    Jelenleg nincs korlátozás érvényben a munkafüzet méretére vagy a benne található objektumok számára vonatkozóan, de a nagyobb munkafüzetek elemzése és importálása tovább tart a Power BI Desktop számára.
 
    > [!NOTE]
-   > Ha a megosztott OneDrive Vállalati verzió mappáiból vagy az Office 365-csoport mappáiból szeretne Excel-fájlokat betölteni vagy importálni, használja az Excel-fájl URL-jét, és adja meg be a Power BI Desktop webes adatforrásában. Néhány lépést el kell végezni a OneDrive Vállalati verzió URL-jének megfelelő formázásához. További információ és a lépések helyes sorrendje: [OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban](desktop-use-onedrive-business-links.md).
+   > Ha a megosztott OneDrive Vállalati verzió mappáiból vagy a Microsoft 365-csoport mappáiból szeretne Excel-fájlokat betölteni vagy importálni, használja az Excel-fájl URL-jét, és adja meg be a Power BI Desktop webes adatforrásában. Néhány lépést el kell végezni a OneDrive Vállalati verzió URL-jének megfelelő formázásához. További információ és a lépések helyes sorrendje: [OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban](desktop-use-onedrive-business-links.md).
    > 
    > 
 

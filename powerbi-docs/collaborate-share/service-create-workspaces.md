@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d70b291b4ff2b157c15967d602cfbee8e12965a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1d37225e1de1ffdf0617a84c3b0514d32494c563
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144355"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693952"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Klasszikus munkaterületek létrehozása a Power BI-ban
 
@@ -22,30 +22,30 @@ A Power BI-ban létrehozhat *munkaterületeket*, amelyeken együttműködhet mun
 
 **Tudta?** A Power BI új munkaterületekkel szolgál, amelyek mostantól az alapértelmezett beállítás részét képezik. Az új munkaterületekről a [Munka szervezése az új munkaterületeken](service-new-workspaces.md) című cikkből tájékozódhat részletesen. Készen áll a klasszikus munkaterülete migrálására? A részletekért lásd [a Power BI klasszikus munkaterületeinek új munkaterületekre frissítését](service-upgrade-workspaces.md) bemutató cikket.
 
-Amikor létrehoz egy klasszikus munkaterületet, egy mögöttes, társított Office 365-csoportot is létrehoz. A munkaterület felügyelete az Office 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. A munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége. 
+Amikor létrehoz egy klasszikus munkaterületet, egy mögöttes, társított Microsoft 365-csoportot is létrehoz. A munkaterület felügyelete a Microsoft 365-ben zajlik. A kollégákat hozzáadhatja tagként vagy rendszergazdaként ezekhez a munkaterületekhez. A munkaterületen együttműködhetnek az irányítópultokon, jelentéseken és más cikkeken, amelyeket a szélesebb közönség elé szeretne tárni. A munkaterületekhez adott tagoknak Power BI Pro-licencre van szüksége.
 
 ## <a name="video-apps-and-workspaces"></a>Videó: Alkalmazások és munkaterületek
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Klasszikus munkaterület létrehozása Office 365-csoport alapján
+## <a name="create-a-classic-workspace-based-on-a-microsoft-365-group"></a>Klasszikus munkaterület létrehozása Microsoft 365-csoport alapján
 
-Ha munkaterületet hoz létre, az egy Office 365-csoportra épül.
+Ha munkaterületet hoz létre, az egy Microsoft 365-csoportra épül.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-Az első létrehozáskor akár egy órát is kell várnia, hogy a rendszer propagálja a munkaterületet az Office 365 szolgáltatásba. 
+Az első létrehozáskor akár egy órát is kell várnia, hogy a rendszer propagálja a munkaterületet a Microsoft 365 szolgáltatásba.
 
-### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Kép hozzáadása az Office 365-munkaterülethez (választható)
+### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Kép hozzáadása a Microsoft 365-munkaterülethez (választható)
 A Power BI alapértelmezés szerint egy kis színes kört hoz létre az alkalmazáshoz, benne az alkalmazás kezdőbetűivel. Ha szeretné, ezt testreszabhatja egy képpel. A kép felvételéhez Exchange Online-licenc szükséges.
 
 1. Válassza a **Munkaterületek** lehetőséget, a munkaterület neve melletti **További lehetőségek** (...) elemet, majd a **Tagok** menüpontot. 
    
      ![Munkaterület tagjainak kiválasztása](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
-    Megnyílik a munkaterülethez tartozó Office 365 Outlook-fiók egy új böngészőablakban.
+    Megnyílik a munkaterülethez tartozó Microsoft 365 Outlook-fiók egy új böngészőablakban.
 2. Válassza a **Szerkesztés** ikont (ceruza).
    
-     ![Office 365 ceruza ikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![A Microsoft 365 ceruza ikonja](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Válassza a kamera képét, és keresse meg a használni kívánt képet.
    
      ![A kamera kép kiválasztása](media/service-create-workspaces/power-bi-workspace-old-camera.png)
@@ -54,7 +54,7 @@ A Power BI alapértelmezés szerint egy kis színes kört hoz létre az alkalmaz
 
 4. Válassza az **OK**, majd a **Mentés** lehetőséget.
    
-    A kép az Office 365 Outlook ablakban szereplő színes kör helyére kerül. 
+    A kép a Microsoft 365 Outlook ablakban szereplő színes kör helyére kerül.
    
      ![Testreszabott kép](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4995671fe5a3a4af0e74ce97d3227f73f005dc3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 62d0282af47b0d57a0b9ac307b422191b440b45c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348528"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564089"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Csatlakozás a Power BI-munkaterülethez tartozó OneDrive-ban tárolt fájlokhoz
 Miután [létrehozott egy munkaterületet a Power BI-ban](../collaborate-share/service-create-distribute-apps.md), a Power BI-munkaterülethez tartozó OneDrive Vállalati verzióban tárolhatja az Excel-, CSV- és Power BI Desktop-fájlokat. A OneDrive-ban tárolt fájljait továbbra is frissítheti. A frissítések automatikusan megjelennek a fájlokon alapuló Power BI-jelentésekben és irányítópultokon. 
 
 > [!NOTE]
-> Az új felhasználói felületű munkaterületen megváltozik a Power BI-munkaterületek és az Office 365-csoportok közötti kapcsolat. A rendszer nem hoz automatikusan létre Office 365-csoportokat minden alkalommal, amikor egy új munkaterület jön létre. Tudnivalók [az új munkaterületek létrehozásáról](../collaborate-share/service-create-the-new-workspaces.md)
+> Az új felhasználói felületű munkaterületen megváltozik a Power BI-munkaterületek és a Microsoft 365-csoportok közötti kapcsolat. A rendszer nem hoz automatikusan létre Microsoft 365-csoportokat minden alkalommal, amikor egy új munkaterület jön létre. Tudnivalók [az új munkaterületek létrehozásáról](../collaborate-share/service-create-the-new-workspaces.md)
 
 A fájlokat két lépésben adhatja hozzá a munkaterülethez: 
 
@@ -31,13 +31,13 @@ A fájlokat két lépésben adhatja hozzá a munkaterülethez:
 > 
 
 ## <a name="1-upload-files-to-the-onedrive-for-business-for-your-workspace"></a>1 Fájlok feltöltése a munkaterülethez tartozó OneDrive Vállalati verzióba
-1. A Power BI szolgáltatásban válassza a Munkaterületek elem melletti nyilat, majd a munkaterület neve melletti három pontot ( **...** ). 
+1. A Power BI szolgáltatásban kattintson a Munkaterületek melletti nyílra > kattintson a három pontra ( **…** ) a munkaterület neve mellett. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
-2. Válassza a **Fájlok** elemet a munkaterülethez tartozó OneDrive Vállalati verzió Office 365-ben való megnyitásához.
+2. Válassza a **Fájlok** elemet a munkaterülethez tartozó OneDrive Vállalati verzió Microsoft 365-ben való megnyitásához.
    
    > [!NOTE]
-   > Ha a munkaterület menüjében nem jelenik meg a **Fájlok** lehetőség, a munkaterülethez tartozó OneDrive Vállalati verzió megnyitásához kattintson a **Tagok** lehetőségre. Itt kattintson a **Fájlok** elemre. Az Office 365 beállít egy OneDrive-tárhelyet az alkalmazás csoportos munkaterületének fájljai számára. Ez a folyamat hosszabb időbe telhet. 
+   > Ha a munkaterület menüjében nem jelenik meg a **Fájlok** lehetőség, a munkaterülethez tartozó OneDrive Vállalati verzió megnyitásához kattintson a **Tagok** lehetőségre. Itt kattintson a **Fájlok** elemre. A Microsoft 365 beállít egy OneDrive-tárhelyet az alkalmazás csoportos munkaterületének fájljai számára. Ez a folyamat hosszabb időbe telhet.
    > 
    > 
 3. Itt feltöltheti a fájlokat a munkaterülethez tartozó OneDrive Vállalati verzióba. Kattintson a **Feltöltés** elemre, és keresse meg a fájlokat.
@@ -75,9 +75,9 @@ Miután a fájlok bekerültek a munkaterülethez tartozó OneDrive Vállalati ve
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 * [Alkalmazások és munkaterületek létrehozása a Power BI-ban](../collaborate-share/service-create-distribute-apps.md)
 * [Adatok importálása Excel-munkafüzetekből](service-get-data-from-files.md)
 * [Csatlakozás teljes Excel-munkafüzetekhez](service-excel-workbook-files.md)
-* Több kérdése van? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
+* További kérdései vannak? [Kérdezze a Power BI-közösséget!](https://community.powerbi.com/)
 * Visszajelzést szeretne küldeni? Keresse fel a [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi) fórumot.

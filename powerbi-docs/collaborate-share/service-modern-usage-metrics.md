@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fdb6ee8f50eaf70c9180e2c5a01cefef1143aa0d
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 183fceb6877109960ea1fb7e6f36bd74588f8f10
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143032"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693848"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Használati metrikák figyelése az új munkaterületi felhasználói felületen
 
@@ -132,7 +132,7 @@ Az alábbi eljárással tulajdonba vehet egy Usage Metrics Report adathalmazt, �
 
 ## <a name="disable-usage-metrics-reports"></a>Használatimetrika-jelentések letiltása
 
-A használati metrikai jelentés olyan funkció, amelyet a Power BI vagy Office 365 rendszergazdája kapcsolhat be vagy ki. A rendszergazdák részletesen szabályozhatják, hogy mely felhasználók férnek hozzá a használati metrikákhoz. Ez alapértelmezés szerint a szervezet összes felhasználójánál engedélyezve van. Ezeket a beállításokat a Felügyeleti portálról szóló cikk [Használati metrikák szabályozása](../admin/service-admin-portal.md#control-usage-metrics) című szakasza ismerteti részletesen.
+A használati metrikai jelentés olyan funkció, amelyet a Power BI vagy a Microsoft 365 rendszergazdája kapcsolhat be vagy ki. A rendszergazdák részletesen szabályozhatják, hogy mely felhasználók férnek hozzá a használati metrikákhoz. Ez alapértelmezés szerint a szervezet összes felhasználójánál engedélyezve van. Ezeket a beállításokat a Felügyeleti portálról szóló cikk [Használati metrikák szabályozása](../admin/service-admin-portal.md#control-usage-metrics) című szakasza ismerteti részletesen.
 
 > [!NOTE]
 > Csak a Power BI-bérlő rendszergazdái látják a Felügyeleti portált és a szerkesztési beállításokat.

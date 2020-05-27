@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
-ms.openlocfilehash: 0a0964f82c80017b53feb668cca8399b18a72cfc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d7642dfbac40b3a31190bc02835a4132ee12e11
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268512"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564071"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Funkcionális alkalmazási tanácsadó – képzési katalógus
 
@@ -82,7 +82,7 @@ A munka–feladat elemzési kutatásaink szerint a funkcionális tanácsadóknak
 | [Együtt még jobb: A Power BI öt előnye az Excel-felhasználók számára](https://info.microsoft.com/excel-powerbi-better-together-ondemand.html)  | Az Excel az egyik legnépszerűbb program a világon. Több millió személy és vállalat használja számos célra az egyszerű adatbeviteltől és könyveléstől a fejlett statisztikai és adatelemzésig. Sokan azonban nem tudják, hogy az Excel ennél sokkal többre is képes, és akár időt is megtakaríthat, és növelheti a hatékonyságot, ha együtt használják egy másik Microsoft-programmal: Power BI. Bemutatunk öt okot arra, hogy miért érdemes együtt használni az Excelt és a Power BI-t. A webinárium végére minden ismerettel rendelkezni fog, amire szüksége lehet a szervezet elemzési, értelmezési és adatfeldolgozási folyamataihoz. | Webinárium |   |
 | [A táblázatokon túl](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_02OnDemandRegistration-ForminBody.html)  | Figyelem, Excel-felhasználók és elemzők: mostantól intelligensebben, több értéket szolgáltatva, csak a lényegre koncentrálva dolgozhatnak. Megtudhatja, hogyan hozhat létre gyönyörű, vonzó jelentéseket; hogyan oszthat meg adatokat úgy, hogy a munkatársai is könnyen, magyarázat nélkül megértsék őket; és hogyan teheti elérhetővé az elemzéseket mindenki számára, akinek szüksége van az adatokra, bárhol is vannak. Tekintse meg működés közben a Microsoft Power BI-t ebben az online munkamenetben.  | Webinárium |   |
 | [Pontos elemzések a Power BI és a Visio használatával](https://info.microsoft.com/ww-ondemand-powerbi-and-visio.html) | Tartson velünk ezen a webináriumon, és ismerje meg, hogyan kombinálhatja a Power BI irányítópultjait a Microsoft Visio grafikonjaival a hatásos vizuális elemzések elkészítéséhez. A Visio és a Power BI egyaránt sok látványelemet használ, és természetes kiegészítői egymásnak. A Visio segítségével grafikonokon szemléltethet például összekapcsolt munkafolyamatokat és valós elrendezéseket. A Power BI-ban intuitív irányítópultokat hozhat létre, amelyek a fő teljesítménymutatókat és célkitűzéseket mutatják be grafikonokkal és térképekkel.| Webinárium |   |
-| [Power BI, Excel és Office 365: Vállalati adatforrások optimalizálása](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | Ez a webinárium bőséges illusztrációkkal szemlélteti azt a kivételes hatékonyságot, amellyel a Microsoft Excel segítheti az üzleti elemzések és információk kezelését a Power BI-ban.  | Webinárium |   |
+| [Power BI, Excel és Microsoft 365: Vállalati adatforrások optimalizálása](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)  | Ez a webinárium bőséges illusztrációkkal szemlélteti azt a kivételes hatékonyságot, amellyel a Microsoft Excel segítheti az üzleti elemzések és információk kezelését a Power BI-ban.  | Webinárium |   |
 | [A Power BI használata a Dynamics 365 Finance and Operations szolgáltatással](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations-OnDemand.html)   | Ha regisztrál erre a webináriumra, megismerheti a Power BI jelentéskészítési megoldásainak beágyazását a Dynamics 365 Finance and Operations szolgáltatásba, és kezelésüket az Azure Data Lake segítségével. Megtudhatja, hogy a Power BI miképpen segíti a gyakorlatban hasznosítható elemzések gyors és fennakadásmentes átadását és az elemzési megoldások megosztását a cégen belül.  | Webinárium |   |
 ## <a name="security"></a>Biztonság<a name="security"></a>
 | Tartalom   | Leírás  | Formátum   | Hossz   |

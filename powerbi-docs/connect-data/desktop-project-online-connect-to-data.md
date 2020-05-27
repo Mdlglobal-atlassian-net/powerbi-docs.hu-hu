@@ -1,5 +1,5 @@
 ---
-title: 'Project Online: kapcsolódás adatokhoz a Power BI Desktoppal'
+title: 'Project Online: kapcsolódás az adatokhoz a Power BI Desktopon keresztül'
 description: 'Project Online: kapcsolódás adatokhoz a Power BI Desktoppal'
 author: davidiseminger
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4244253faa3160b515a02b598988072117d982ed
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291926"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563052"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Kapcsolódás Project Online-adatokhoz a Power BI Desktopon keresztül
 A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
@@ -35,7 +35,7 @@ A Project Online-adatokhoz kapcsolódhat a Power BI Desktopon keresztül.
 
     `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 
-5. A Power BI Desktop megkéri, hogy jelentkezzen be az Office 365-fiókjával. Válassza a Szervezeti fiók elemet, és adja meg a hitelesítő adatait.
+5. A Power BI Desktop megkéri, hogy végezze el a hitelesítést a munkahelyi vagy iskolai fiókjával. Válassza a Szervezeti fiók elemet, és adja meg a hitelesítő adatait.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 

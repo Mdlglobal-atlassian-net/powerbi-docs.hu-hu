@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 459eaf6ba8b4f6e09b2df5f55956dc77adee9667
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344389"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563745"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>A Power BI felügyelete – gyakori kérdések (GYIK)
 
@@ -81,7 +81,7 @@ Három forgatókönyv vonatkozhat a cégen belüli felhasználókra:
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Hogyan gátolható meg, hogy a felhasználók csatlakozzanak a meglévő Microsoft 365-bérlőhöz?
 
-A Microsoft 365 globális rendszergazdájaként tehet olyan lépéseket, amelyek meggátolják, hogy a felhasználók csatlakozzanak a meglévő Microsoft 365-bérlőhöz. Ha letiltja a hozzáférést, a regisztrációs kísérletek meghiúsulnak, és egy üzenet a cég rendszergazdájával való kapcsolatfelvételhez vezeti a felhasználókat. Nem kell megismételnie ezt a folyamatot, ha már letiltotta az automatikus licencterjesztést (például az Office 365 for Education for Students, Faculty és Staff esetén).
+Globális rendszergazdaként tehet olyan lépéseket, amelyek meggátolják, hogy a felhasználók csatlakozzanak a meglévő Microsoft 365-bérlőhöz. Ha letiltja a hozzáférést, a regisztrációs kísérletek meghiúsulnak, és egy üzenet a cég rendszergazdájával való kapcsolatfelvételhez vezeti a felhasználókat. Nem kell megismételnie ezt a folyamatot, ha már letiltotta az automatikus licencterjesztést (például az Office 365 for Education for Students, Faculty és Staff esetén).
 
 A következő PowerShell-paranccsal meggátolhatja, hogy az új felhasználók a felügyelt bérlőhöz csatlakozzanak. ([További információ a PowerShellről][1].)
 
@@ -184,7 +184,7 @@ Amikor egy önkiszolgáló felhasználó olyan felhőszolgáltatásban regisztr�
 Ha nem választ műveletet, a szolgáltatás egy bérlőt hoz létre minden felhasználói e-mail-tartományhoz és -altartományhoz. Ha azt szeretné, hogy az e-mail-cím bővítményétől függetlenül mindegyik felhasználó ugyanabban a bérlőben legyen: Előre hozzon létre egy célbérlőt, vagy használjon egy meglévő bérlőt. Adja hozzá az összes meglévő tartományt és altartományt, amelyet szeretne a bérlőben egyesíteni. Ezután az összes olyan felhasználó, akinek az e-mail-címe ezekre a tartományokra és altartományokra végződik, automatikusan a célbérlőhöz lesz csatlakoztatva, amikor regisztrál.
 
 > [!IMPORTANT]
-> Nem áll rendelkezésre automatikus támogatott mechanizmus a felhasználók bérlők közötti mozgatásához, miután létrejöttek. A tartományok egyetlen Microsoft 365-bérlőhöz való hozzáadásával kapcsolatban lásd: [Felhasználók és tartományok hozzáadása az Office 365-höz](/office365/admin/setup/add-domain/).
+> Nem áll rendelkezésre automatikus támogatott mechanizmus a felhasználók bérlők közötti mozgatásához, miután létrejöttek. A tartományok egyetlen Microsoft 365-bérlőhöz való hozzáadásával kapcsolatban lásd: [Felhasználók és tartományok hozzáadása a Microsoft 365-höz](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hogyan távolítható el a Power BI a már regisztrált felhasználóktól?
 
@@ -259,9 +259,9 @@ A Microsoft Power BI a Microsoft 365 alapjára épül, amely viszont Azure-szolg
 [Mi a Power BI Premium?](service-premium-what-is.md)  
 [A Power BI Premium megvásárlása](service-admin-premium-purchase.md)  
 [Power BI Premium-tanulmány](https://aka.ms/pbipremiumwhitepaper)  
-[Csoportok kezelése a Power BI és az Office 365 szolgáltatásban](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Office 365 felhasználói fiókok kezelése](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
-[Office 365 csoportfelügyelet](/office365/admin/email/create-edit-or-delete-a-security-group/)  
+[Csoport kezelése a Power BI-ban és a Microsoft 365-ben](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Munkahelyi vagy iskolai fiók kezelése](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Microsoft 365-csoportok kezelése](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
 

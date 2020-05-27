@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/19/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: d3cb3c8093446d4417a59c5f64ab6b85a765e3c8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 562e011bf280930fdcaf19cc87edc97b2bec131b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301517"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694026"
 ---
-# <a name="create-a-drill-through-button-in-power-bi-preview"></a>Részletezési gomb létrehozása a Power BI-ban (előzetes verzió)
+# <a name="create-a-drill-through-button-in-power-bi"></a>Részletezési gomb létrehozása a Power BI-ban
 
-Amikor a Power BI-ban hoz létre egy gombot, kiválaszthatja a **Részletezés (előzetes verzió)** műveletet. Ez a művelettípus egy olyan gombot hoz létre, amely egy fókuszba helyezett oldalt részletez, egy adott kontextus szerint szűrt adatokhoz.
+Amikor a Power BI-ban hoz létre egy gombot, kiválaszthatja a **Részletezés** műveletet. Ez a művelettípus egy olyan gombot hoz létre, amely egy fókuszba helyezett oldalt részletez, egy adott kontextus szerint szűrt adatokhoz.
 
 A részletezési gomb akkor lehet hasznos, ha szeretné könnyebben megismerhetővé tenni a jelentések fontos részletezési forgatókönyveit.
 
@@ -90,7 +90,7 @@ A gomb ugyanúgy működik, mint a normál részletezés, így Ön további mez�
 
 A részletezési gomb kiválasztásakor a Store és a Termék szűrői is a céloldalhoz kerülnek:
 
-![Az ezen az oldalon megtalálható szűrők](media/desktop-drill-through-buttons/power-bi-button-filters-passed-through.png)
+![Szűrők ezen az oldalon](media/desktop-drill-through-buttons/power-bi-button-filters-passed-through.png)
 
 ### <a name="ambiguous-filter-context"></a>Kétértelmű szűrőkörnyezet
 
@@ -107,7 +107,7 @@ Ebben a példában a gomb le van tiltva, mert két vizualizáció egyaránt tart
 - A gomb letiltott állapotának formázása a jelentés témájának színosztályaihoz van kötve. További információ a [színosztályokról](desktop-report-themes.md#setting-structural-colors).
 - A részletezési művelet az összes beépített vizualizációval használható, és *néhány*, az AppSource-ból importált vizualizációval is működik. Azonban nem biztos, hogy az AppSource-ból importált *összes* vizualizációval használható.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 A gombokhoz hasonló vagy azokkal együtt használható funkciókkal kapcsolatos részletesebb információkat az alábbi cikkekben talál:
 
 * [Gombok létrehozása](desktop-buttons.md)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2b7c442ef39bba58b7ac7f8224928d29ea56d9c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348137"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693831"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Jelentés beágyazása egy biztonságos portálon vagy webhelyen
 
@@ -50,9 +50,9 @@ A **Beágyazás** lehetőség az [URL-szűrőket](service-url-filters.md) és az
 
 A **Beágyazás** lehetőség nem engedélyezi automatikusan a felhasználóknak a jelentés megtekintését. A megtekintési engedélyek a Power BI szolgáltatásban vannak meghatározva.
 
-A Power BI szolgáltatásban megoszthatja a beágyazott jelentéseket a hozzáférést igénylő felhasználókkal. Office 365-csoport használata esetén felveheti a felhasználót munkaterületek tagjaként. További információért lásd [a munkaterület Power BI-ban és Office 365-ben való kezelését](service-manage-app-workspace-in-power-bi-and-office-365.md).
+A Power BI szolgáltatásban megoszthatja a beágyazott jelentéseket a hozzáférést igénylő felhasználókkal. Microsoft 365-csoport használata esetén felveheti a felhasználót munkaterületek tagjaként. További információért lásd [a munkaterület Power BI-ban és Microsoft 365-ben való kezelését](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-## <a name="licensing"></a>Licencelés
+## <a name="licensing"></a>Licencek
 
 Ahhoz, hogy a beágyazott jelentést megtekinthesse, a felhasználónak vagy Power BI Pro-licencre van szüksége, vagy a tartalomnak kell [Power BI prémium szintű kapacitáson (EM vagy P termékváltozat)](../admin/service-admin-premium-purchase.md) lévő munkaterületen lennie.
 
@@ -115,7 +115,7 @@ report.src = newUrl;
 }
 ```
 
-![Szűrő](media/service-embed-secure/secure-embed-filter.png)
+![Szűrés](media/service-embed-secure/secure-embed-filter.png)
 
 Tetszőleges számú gombot hozzáadhat, így alacsony kódigényű megoldást készíthet. 
 
@@ -141,7 +141,7 @@ Tetszőleges számú gombot hozzáadhat, így alacsony kódigényű megoldást k
 
 * A hitelesítési jogkivonat élettartama az AAD-beállítások alapján van szabályozva. Amikor a hitelesítési jogkivonat lejár, a felhasználónak frissítenie kell a böngésző tartalmát, hogy friss hitelesítési jogkivonatot kapjon. Az alapértelmezett élettartam egy óra, de az Ön vállalatánál ennél rövidebb vagy hosszabb is lehet.
 
-## <a name="next-steps"></a>Következő lépések
+## <a name="next-steps"></a>További lépések
 
 * [A munka megosztásának módjai a Power BI-ban](service-how-to-collaborate-distribute-dashboards-reports.md)
 

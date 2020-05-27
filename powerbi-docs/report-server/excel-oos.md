@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/21/2018
-ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.date: 05/14/2020
+ms.openlocfilehash: 8d2efebcfd2d4bc4289f0c8136ef060507fe0a86
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73874082"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438269"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>A jelentéskészítő kiszolgáló konfigurálása Excel-munkafüzetek üzemeltetéséhez az Office Online Server (OOS) használatával
 
@@ -177,9 +177,10 @@ Csak a **Rendszergazda** szerepkörrel rendelkező felhasználók láthatják az
 
 A webes portálon a felderítési URL-cím beírása, az **Alkalmazás** gomb, majd egy Excel-munkafüzet kiválasztása után meg kell jelennie a munkafüzetnek.
 
-## <a name="limitations-and-considerations"></a>Korlátozások és megfontolandó szempontok
+## <a name="limitations-and-considerations"></a>Korlátozások és szempontok
 
-* A munkafüzetekben csak olvasási képességgel fog rendelkezni.
+- A munkafüzetekben csak olvasási képességgel fog rendelkezni.
+- Az ütemezett frissítés nem támogatott az Excel-munkafüzetekhez a Power BI jelentéskészítő kiszolgálón.
 
 ## <a name="next-steps"></a>További lépések
 
@@ -188,4 +189,4 @@ A webes portálon a felderítési URL-cím beírása, az **Alkalmazás** gomb, m
 [A Jelentéskészítő letöltése](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Az SQL Server Data Tools (SSDT) letöltése](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Több kérdése van? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
+További kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)

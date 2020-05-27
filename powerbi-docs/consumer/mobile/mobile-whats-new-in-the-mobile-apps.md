@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349264"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565300"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>A Power BI mobilalkalmazásainak újdonságai
 Az újdonságokra vonatkozó kapcsolódó információk:
@@ -274,7 +274,7 @@ A jelentésben lévő, lekérdezési sztringet tartalmazó hivatkozások a mobil
 
 ### <a name="shared-credentials-now-in-android"></a>Megosztott hitelesítő adatok (már Androidon)
 
-Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Office 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
+Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Microsoft 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
 
 ### <a name="in-app-urls-now-in-android"></a>Alkalmazásbeli URL-címek (már Androidon) 
 
@@ -294,7 +294,7 @@ Olvassa el a Power BI [mobileszközökön használható lapszámozott jelentése
 
 ### <a name="shared-credentials-ios"></a>Megosztott hitelesítő adatok (iOS)
 
-Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Office 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
+Mobilalkalmazásából minden eddiginél könnyebben jelentkezhet be a Power BI-ba. A megosztott hitelesítő adatokkal a bejelentkezési folyamat egyszerűbbé vált azáltal, hogy az eszközön más Microsoft 365-ös alkalmazáshitelesítő adatokkal hitesítjük Önt a Power BI szolgáltatásban.
 
 ### <a name="in-app-urls-ios"></a>Alkalmazáson belüli URL-címek (iOS) 
 

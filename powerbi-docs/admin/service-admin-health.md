@@ -1,5 +1,5 @@
 ---
-title: A Power BI szolgáltatás állapotának nyomon követése az Office 365-ben
+title: A Power BI szolgáltatás állapotának követése a Microsoft 365-ben
 description: 'Útmutató: hogyan tekintheti meg a szolgáltatás állapotának jelenlegi és előzményadatait a Microsoft 365 Felügyeleti központban.'
 author: kfollis
 ms.reviewer: ''
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9d0ed841da3f398b8e0a8dc0a35ed040ccf3cab6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3498b893d7916c37d21e66908cbea4e6a919f978
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139769"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563716"
 ---
-# <a name="track-power-bi-service-health-in-office-365"></a>A Power BI szolgáltatás állapotának nyomon követése az Office 365-ben
+# <a name="track-power-bi-service-health-in-microsoft-365"></a>A Power BI szolgáltatás állapotának követése a Microsoft 365-ben
 
 A Microsoft 365 Felügyeleti központ fontos eszközöket biztosít Power BI-rendszergazdáknak. Az eszközök a szolgáltatás állapotával kapcsolatos aktuális és korábbi információkat nyújtanak. A szolgáltatás állapotával kapcsolatos adatok eléréséhez a következő szerepkörök egyikével kell rendelkeznie:
 
 * Power BI-szolgáltatásadminisztrátor
 
-* Office 365 globális rendszergazda
+* Globális rendszergazda
 
 További információk a szerepkörökről: [A Power BI-jal kapcsolatos rendszergazdai szerepkörök](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 

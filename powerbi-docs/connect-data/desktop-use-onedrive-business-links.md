@@ -1,6 +1,6 @@
 ---
-title: A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
-description: A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
+title: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
+description: OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 706703985242284725fb4fc2d42bf46e54c605c7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e5effe6f397dd53fe6347708774118e9c491abc1
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285808"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564153"
 ---
-# <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>A OneDrive Vállalati verzió hivatkozásainak használata a Power BI Desktopban
+# <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>OneDrive Vállalati verzióra mutató hivatkozások használata a Power BI Desktopban
 Sokan tárolnak olyan Excel-munkafüzeteket a OneDrive Vállalati verziójában, amelyeket kiválóan tudnának a Power BI Desktopban használni. A Power BI Desktopban használhat a OneDrive Vállalati verziójában tárolt Excel-fájlokra mutató online hivatkozásokat jelentések és vizualizációk létrehozásához. Ehhez használhat OneDrive Vállalati verzió-csoportfiókot, vagy a saját OneDrive Vállalati verzió-fiókját.
 
 Egy OneDrive Vállalati verzióra mutató online hivatkozás beállításához szükség van néhány konkrét lépésre. Az alábbi szakaszok ismertetik ezeket a lépéseket, amelyek segítségével megoszthatja a fájlhivatkozást különböző csoportokkal, gépekkel és munkatársakkal.
@@ -44,7 +44,7 @@ A Power BI Desktopban használhatja az imént a vágólapra másolt hivatkozást
 3. A hivatkozás végéről távolítsa el a *?web=1* sztringet, hogy a Power BI Desktop megfelelően állapíthassa meg a fájl helyét, majd válassza az **OK** lehetőséget.
    
     ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
-4. Ha a Power BI Desktop hitelesítő adatokat kér, válassza a **Windows** (helyszíni SharePoint-helyeknél) vagy a **Vállalati fiók**(Office 365- vagy OneDrive Vállalati verzióhoz tartozó helyeknél) lehetőséget.
+4. Ha a Power BI Desktop hitelesítő adatokat kér, válassza a **Windows** (helyszíni SharePoint-helyeknél) vagy a **Vállalati fiók**(Microsoft 365- vagy OneDrive Vállalati verzióhoz tartozó helyeknél) lehetőséget.
    
    ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
 

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9e9ed930cc557250a9e1702d6010536ed069cd7b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: afa8513267be4ec2de18a9adda7995c88f4f2aa8
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129528"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438039"
 ---
 # <a name="what-is-power-bi-administration"></a>Mit jelent a Power BI-felügyelet?
 
@@ -36,17 +36,17 @@ A Power BI-adminisztrációhoz számos szerepkör kapcsolódik, amelyeket az al�
 
 | **Rendszergazdatípus** | **Felügyeleti hatókör** | **Power BI-hatókör** |
 | --- | --- | --- |
-| Office 365 globális rendszergazda | Office 365 | Felügyelheti a Power BI-bérlő és más szolgáltatások minden aspektusát. |
-| Office 365 számlázási adminisztrátor | Office 365 | Power BI-licenceket szerezhet be az Office 365-előfizetéseken keresztül. |
+| Globális rendszergazda | Microsoft 365 | Felügyelheti a Power BI-bérlő és más szolgáltatások minden aspektusát. |
+| Számlázási adminisztrátor | Microsoft 365 | Power BI-licenceket szerezhet be az Office 365-előfizetéseken keresztül. |
 | Power BI-szolgáltatásadminisztrátor | Power BI-bérlő | Teljes felügyeleti jogosultsága van a Power BI-bérlőre és annak felügyeleti funkcióira vonatkozóan (kivéve a licencelést). |
 | Power BI Prémium kapacitásadminisztrátor | Egy Prémium-kapacitás | Teljes körű felügyelettel rendelkezik a prémium szintű kapacitás és annak adminisztratív funkciói fölött. |
 | Power BI Embedded kapacitásadminisztrátor | Egy Embedded-kapacitás | Teljes körű felügyelettel rendelkezik az embedded szintű kapacitás és annak adminisztratív funkciói fölött. |
 
-Az Office 365 és az Azure Active Directory globális rendszergazdáinak rendszergazdai jogosultságai vannak a Power BI-ban. Az Office 365 globális rendszergazdája más felhasználókhoz rendelhetnek Power BI-rendszergazdai szerepköröket, amely csak a Power BI-funkciókra vonatkozó felügyeleti jogosultságot biztosít.
+A Microsoft 365 és az Azure Active Directory globális rendszergazdáinak rendszergazdai jogosultságai vannak a Power BI-ban. A globális rendszergazdák más felhasználókhoz rendelhetnek Power BI-rendszergazdai szerepköröket, amely csak a Power BI-funkciókra vonatkozó felügyeleti jogosultságot biztosít.
 
 A Power BI szolgáltatás-rendszergazdáinak hozzáférése van a Power BI portálhoz, ahol a működéssel, a biztonsággal és a figyeléssel kapcsolatos különféle bérlőszintű beállítások érhetőek el. A szolgáltatás-rendszergazdák teljes hozzáféréssel rendelkeznek a Power BI-bérlő összes erőforrásához. A szolgáltatás-rendszergazdák a legtöbb esetben azonosítják a problémákat, majd az erőforrás tulajdonosát kérik fel a hiba elhárítására.
 
-A Power BI szolgáltatás-rendszergazdai szerepköre nem tartalmaz jogosultságot licencek felhasználókhoz való hozzárendeléséhez vagy az auditnaplók megtekintéséhez az Office 365-ben. Ezért jelenleg a Power BI nem felügyelhető teljes mértékben olyan felhasználók által, akik kizárólag Power BI-szolgáltatásrendszergazdai szerepkörrel rendelkeznek.
+A Power BI szolgáltatás-rendszergazdai szerepköre nem tartalmaz jogosultságot licencek felhasználókhoz való hozzárendeléséhez vagy az auditnaplók megtekintéséhez a Microsoft 365-ben. Ezért jelenleg a Power BI nem felügyelhető teljes mértékben olyan felhasználók által, akik kizárólag Power BI-szolgáltatásrendszergazdai szerepkörrel rendelkeznek.
 
 ## <a name="administrative-tasks"></a>Felügyeleti feladatok
 

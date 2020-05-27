@@ -1,6 +1,6 @@
 ---
 title: Vizualizációk a Power BI-ban
-description: Egyéni vizuális elemek a Power BI-ban
+description: Egyéni vizualizációk a Power BI-ban
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 22c367dbc6160928541570bf2de37c51edcbfc14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550884"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561639"
 ---
 # <a name="visuals-in-power-bi"></a>Vizualizációk a Power BI-ban
 
@@ -41,7 +41,7 @@ A Microsoft, valamint a közösség tagjai is nyilvánosan megosztották Power B
 
 ### <a name="what-is-appsource"></a>Mi az az AppSource?
 
-Az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az AppSource többek között az Office 365, az Azure, a Dynamics 365, Cortana és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, mélyebb betekintéssel és látványosabban dolgozhatnak.
+Az [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) az a hely, ahol a Microsoft-szoftverekhez alkalmazásokat, beépülő modulokat és bővítményeket találhat. Az AppSource többek között a Microsoft 365, az Azure, a Dynamics 365, Cortana és a Power BI több millió felhasználóját köti össze olyan megoldásokkal, amelyekkel minden eddiginél hatékonyabban, mélyebb betekintéssel és látványosabban dolgozhatnak.
 
 ### <a name="certified-power-bi-visuals"></a>Minősített Power BI-vizualizációk
 
@@ -72,7 +72,7 @@ Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az A
 > [!WARNING]
 > A Power BI-vizualizációk biztonsági és adatvédelmi kockázatokat tartalmazó kódot is tartalmazhatnak. Fontolja meg, hogy megbízik-e a szerzőben és a Power BI-vizualizációban, mielőtt importálná azt a jelentésébe.
 
-## <a name="next-steps"></a>További lépések
+## <a name="next-steps"></a>Következő lépések
 
 * Ha Ön fejlesztő, elsőként tekintse meg a [Power BI-vizualizációk fejlesztésének](custom-visual-develop-tutorial.md) útmutatóját.
 
@@ -80,4 +80,4 @@ Ha Ön webfejlesztő, és saját vizualizációt szeretne létrehozni, majd az A
 
 * A [Power BI-vizualizációk útmutatójának](guidelines-powerbi-visuals.md) feltárása.
 
-Több kérdése van? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](https://community.powerbi.com/) találhat.
+További kérdései vannak? További információt [a Power BI-vizualizációkkal kapcsolatos gyakori kérdések](power-bi-custom-visuals-faq.md) oldalán vagy a [Power BI-közösségben](https://community.powerbi.com/) találhat.

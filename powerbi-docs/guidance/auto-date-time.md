@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a143a9b158d8a00fc129953a601f9e4c8f19875f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279710"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565994"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Útmutató automatikus dátum/időhöz a Power BI Desktopban
 
@@ -34,7 +34,10 @@ Az alábbi felsorolási lista az _automatikus dátum/idő_ lehetőséghez kapcso
     Ezért fontos, hogy a szűrés és a csoportosítás az **Év** oszlopban menjen végbe. Hierarchia alapján végzett lefúrás esetén a szűrés az évre vonatkozik, kivéve ha az **Év** szintje szándékosan el lett távolítva. Ha nincs évre vonatkozó szűrő vagy csoport, akkor például egy havi csoportosítás az összes év adott hónapjára vonatkozó értékeket összegzi.
 - **Dátumszűrés egyetlen táblázatban:** Mivel minden dátumoszlop létrehozza a saját (rejtett) automatikus dátum/idő táblázatát, nem lehet egy táblázatra időszűrőt alkalmazni és több modelltáblázatra kiterjeszteni. Ez a szűrésforma általános modellezési követelmény az olyan többszörös tárgyú jelentések (tény típusú táblázatok) létrehozásakor, mint az értékesítés és az értékesítési költségkeret. A jelentéskészítőnek az automatikus dátum/idő használatakor minden dátumoszlophoz külön szűrőt kell alkalmaznia.
 - **A modell mérete:** Ez minden egyes (rejtett) automatikus dátum/idő táblázatot létrehozó dátumoszlop esetén nagyobb modellméretet és hosszabb adatfrissítési időt eredményez.
-- **Egyéb jelentéskészítő eszközök:** Nem lehet az automatikus dátum- és időtáblákkal dolgozni az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md) használatakor, vagy amikor a modellhez nem Power BI-tervezők használatával csatlakoznak.
+- **Egyéb jelentéskészítő eszközök:** A következő esetekben nem lehetséges az automatikus dátum/idő táblák használata:
+  - Az [Elemzés az Excelben](../collaborate-share/service-analyze-in-excel.md) használatakor.
+  - A Power BI többoldalas jelentés Analysis Services-lekérdezéstervező használatakor.
+  - Ha a modellhez nem Power BI-jelentéskészítők használatával csatlakoznak.
 
 ## <a name="recommendations"></a>Javaslatok
 
