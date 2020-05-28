@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d52b3b00902b350ebb81c66c516b5f84e97fb3d0
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 5203f2676409de28cfa9faf9442beaeb324b6f54
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83694007"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812887"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>A Power BI Desktop korábbi havi frissítései
 
@@ -162,7 +162,7 @@ Ebben a hónapban az alábbi frissítések kerültek be a Power BI Desktopba:
 
 
 ### <a name="modeling"></a>Modellezés
-* Új DAX-függvény: COALESCE [[videó]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[cikk]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+* Új DAX-függvény: COALESCE [[videó]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[cikk]](https://docs.microsoft.com/dax/coalesce-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
 ) 
 
 ### <a name="visuals"></a>Vizualizációk

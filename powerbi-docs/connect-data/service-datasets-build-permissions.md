@@ -1,22 +1,22 @@
 ---
-title: Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
+title: Megosztott adathalmazokra vonatkozó összeállítási engedélyek
 description: Útmutató az adatokhoz való hozzáférés összeállítási engedéllyel való szabályozásához.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af2e4c865609846d8fcfc792eee4f483afef2160
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 84f6a9d152151c6d6f44bcbad9e0a4d54fc0c293
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285348"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793014"
 ---
-# <a name="build-permission-for-shared-datasets-preview"></a>Megosztott adathalmazokra vonatkozó összeállítási engedély (előzetes verzió)
+# <a name="build-permission-for-shared-datasets"></a>Megosztott adathalmazokra vonatkozó összeállítási engedélyek
 
 Amikor jelentést hoz létre a Power BI Desktopban, a jelentésbeli adatok egy *adatmodellben* vannak tárolva. Amikor közzéteszi jelentéseit a Power BI szolgáltatásban, egyben az adatokat is közzéteszi *adathalmazként*. *Összeállítási engedélyt* adhat másoknak a jelentéshez, hogy felfedezhessék és újra felhasználhassák a megosztott adathalmazt. Ez a cikk azt írja le, hogy hogyan szabályozhatja Összeállítási engedély használatával az adatokhoz való hozzáférést.
 
@@ -71,7 +71,7 @@ Tegyük fel, hogy egy munkaterületről egy alkalmazást terjesztett egy csoport
 
 1. A munkaterület listaoldalán válassza az **Alkalmazás frissítése** lehetőséget. 
 
-    ![App frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
+    ![Alkalmazás frissítése](media/service-datasets-build-permissions/power-bi-app-update.png)
 
 1. Az **Engedélyek** lapon válassza az **X** jelet a személy vagy csoport eltávolításához. 
 
@@ -107,5 +107,5 @@ Az Összeállítási engedélyt el is távolíthatja. Ilyen esetben azok, akikne
 
 ## <a name="next-steps"></a>További lépések
 
-- [Adathalmazok használata több munkaterületen (előzetes verzió)](service-datasets-across-workspaces.md)
-- Kérdései vannak? [Kérdezze meg a Power BI-közösséget](https://community.powerbi.com/)
+- [Adatkészletek használata munkaterületek között](service-datasets-across-workspaces.md)
+- Kérdései vannak? [Kérdezze meg a Power BI közösségét](https://community.powerbi.com/)
